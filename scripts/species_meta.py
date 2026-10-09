@@ -49,6 +49,7 @@ TEMPLATES: dict[str, dict[str, Any]] = {
             "depth": None,
             "speed_cm_s": None,
             "turn_rate": None,
+            "territory_cm": None,
         },
         "night": None,
         "feeding_response": None,

@@ -28,7 +28,7 @@ from pathlib import Path
 from typing import Any
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from validate import KINDS, check_catalog, shipped_files
+from validate import DESCRIPTORS, check_catalog, shipped_files
 
 MANIFEST_FORMAT = 1
 DEFAULT_MIN_INTEGRATION = "0.1.0"
@@ -50,9 +50,8 @@ def entry_archive(folder: Path) -> bytes:
 def entry_name(folder: Path) -> str:
     """Display name of an entry (English, else its id)."""
     try:
-        names = json.loads((folder / "species.json").read_text(encoding="utf-8")).get(
-            "names", {}
-        )
+        descriptor = folder / DESCRIPTORS.get(folder.parent.name, "species.json")
+        names = json.loads(descriptor.read_text(encoding="utf-8")).get("names", {})
     except (OSError, ValueError, AttributeError):
         names = {}
     name = names.get("en") if isinstance(names, dict) else None
@@ -72,7 +71,7 @@ def build(
     entries: dict[str, Any] = {}
     added: list[str] = []
     updated: list[str] = []
-    for kind in KINDS:
+    for kind in DESCRIPTORS:
         folder = root / kind
         if not folder.is_dir():
             continue

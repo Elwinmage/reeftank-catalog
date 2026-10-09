@@ -1,0 +1,16 @@
+{
+  "kind": "texture",
+  "role": "rock",
+  "image": "live_rock_pink.webp",
+  "scale_cm": 25,
+  "names": {
+    "en": "Live rock, pink",
+    "fr": "Pierre vivante, rose",
+    "de": "Lebendgestein, rosa",
+    "es": "Roca viva, rosa",
+    "it": "Roccia viva, rosa",
+    "nl": "Levend steen, roze",
+    "pl": "Żywa skała, różowa",
+    "pt": "Rocha viva, rosa"
+  }
+}

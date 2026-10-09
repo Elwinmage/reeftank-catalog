@@ -209,3 +209,67 @@ def test_release_command(tmp_path: Path, capsys: Any) -> None:
         == 1
     )
     assert "frame must be" in capsys.readouterr().out
+
+
+def texture(root: Path, entry_id: str, **overrides: Any) -> Path:
+    """A valid rock texture."""
+    folder = root / "textures" / entry_id
+    folder.mkdir(parents=True)
+    Image.new("RGB", (16, 16), (120, 110, 100)).save(folder / f"{entry_id}.webp")
+    desc: dict[str, Any] = {
+        "kind": "texture",
+        "role": "rock",
+        "image": f"{entry_id}.webp",
+        "scale_cm": 30,
+        "names": {"en": "Live rock"},
+        **overrides,
+    }
+    (folder / "texture.json").write_text(json.dumps(desc), encoding="utf-8")
+    return folder
+
+
+def test_textures(tmp_path: Path, monkeypatch: Any) -> None:
+    root = tmp_path / "catalog"
+    rock = texture(root, "live_rock")
+    (rock / "notes.txt").write_text("not shipped")
+    texture(root, "white_sand", role="sand", names={})
+    assert validate.check_catalog(root) == {}
+    assert [p.name for p in validate.shipped_files(rock)] == [
+        "live_rock.webp",
+        "texture.json",
+    ]
+    # released like the species
+    manifest = make_release.build(root, "1", tmp_path / "dist")
+    assert set(manifest["entries"]) == {"textures/live_rock", "textures/white_sand"}
+    assert "Live rock (`live_rock`)" in manifest["notes"]
+
+    texture(root, "Bad", role="wall", scale_cm=0, kind="x", names={"en": ""})
+    texture(root, "no_image", image=None)
+    big = texture(root, "big")
+    Image.new("RGB", (4096, 8)).save(big / "big.webp")
+    texture(root, "gone", image="missing.webp")
+    for name, content in (("no_desc", None), ("bad_json", "{"), ("listy", "[]")):
+        folder = root / "textures" / name
+        folder.mkdir()
+        if content is not None:
+            (folder / "texture.json").write_text(content)
+    problems = validate.check_catalog(root)
+    assert len(problems["textures/Bad"]) == 5
+    assert problems["textures/no_image"] == ["no image"]
+    assert problems["textures/big"] == ["image: 2048 pixels at most"]
+    assert problems["textures/gone"] == ["image: missing.webp missing"]
+    assert problems["textures/no_desc"] == ["no texture.json"]
+    assert problems["textures/bad_json"][0].startswith("texture.json:")
+    assert problems["textures/listy"] == ["texture.json is not an object"]
+    monkeypatch.setattr(validate, "MAX_ENTRY_BYTES", 10)
+    assert "bytes" in validate.check_texture(rock)[0]
+
+
+def test_territory(tmp_path: Path) -> None:
+    good = {**described("fish", "goby")}
+    good["behavior"] = {**good["behavior"], "profile": "sand", "territory_cm": 12}
+    assert validate.check_description(good, "fish") == []
+    good["behavior"]["territory_cm"] = -1
+    assert "behavior.territory_cm must be a positive number" in (
+        validate.check_description(good, "fish")
+    )

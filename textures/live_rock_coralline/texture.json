@@ -1,0 +1,16 @@
+{
+  "kind": "texture",
+  "role": "rock",
+  "image": "live_rock_coralline.webp",
+  "scale_cm": 25,
+  "names": {
+    "en": "Live rock, coralline",
+    "fr": "Pierre vivante, coralline",
+    "de": "Lebendgestein, Kalkrotalgen",
+    "es": "Roca viva, coralina",
+    "it": "Roccia viva, corallina",
+    "nl": "Levend steen, koraalalg",
+    "pl": "Żywa skała, koralowce wapienne",
+    "pt": "Rocha viva, coralina"
+  }
+}

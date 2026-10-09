@@ -1,0 +1,16 @@
+{
+  "kind": "texture",
+  "role": "rock",
+  "image": "live_rock_purple.webp",
+  "scale_cm": 20,
+  "names": {
+    "en": "Live rock, purple",
+    "fr": "Pierre vivante, violette",
+    "de": "Lebendgestein, violett",
+    "es": "Roca viva, violeta",
+    "it": "Roccia viva, viola",
+    "nl": "Levend steen, paars",
+    "pl": "Żywa skała, fioletowa",
+    "pt": "Rocha viva, roxa"
+  }
+}

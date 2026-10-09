@@ -20,7 +20,10 @@ HAND = "# reeftank-catalog\n\nIntro\n\n{markers}\n\n## Contents\n\nHand written.
 
 def catalog(root: Path) -> Path:
     """A catalog with a fish, a coral, and an English README."""
-    entry(root, "fish", "siganus_vulpinus", scientific="Siganus vulpinus")
+    fox = entry(root, "fish", "siganus_vulpinus", scientific="Siganus vulpinus")
+    desc = json.loads((fox / "species.json").read_text(encoding="utf-8"))
+    desc["behavior"]["territory_cm"] = 20
+    (fox / "species.json").write_text(json.dumps(desc), encoding="utf-8")
     entry(root, "corals", "euphyllia")
     (root / "README.md").write_text(
         HAND.format(markers=f"{make_readme.BEGIN}\n{make_readme.END}"),
@@ -57,20 +60,28 @@ def test_writes_one_readme_per_language(
     # the hand written parts are kept around the block
     assert english.startswith("# reeftank-catalog\n\nIntro\n\n<!-- species:begin")
     assert english.endswith("<!-- species:end -->\n\n## Contents\n\nHand written.\n")
-    assert "**English** · [Français](README.fr.md)" in english
+    assert (
+        '[<img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" width="5%" '
+        'alt="English" title="English"/>](README.md) '
+        '[<img src="https://flagicons.lipis.dev/flags/4x3/fr.svg" width="5%" '
+        'alt="Français" title="Français"/>](README.fr.md)'
+    ) in english
     assert "## Fish (1)" in english and "## Corals (1)" in english
     assert (
         '| <img src="fish/siganus_vulpinus/thumb.webp" width="72" alt=""> '
         "| Siganus_Vulpinus<br>`siganus_vulpinus` | *Siganus vulpinus* | 5–8 cm "
-        "| Shoaling · hides at night |"
+        "| Shoaling · stays near its home · hides at night |"
     ) in english
     # corals have no behaviour column
     assert "| Name | Scientific name | Size |\n|---|---|---|---|\n" in english
     assert "documentation en anglais" not in english
 
     french = (root / "README.fr.md").read_text(encoding="utf-8")
-    assert "[English](README.md) · **Français**" in french
-    assert "Siganus_Vulpinus fr" in french and "En banc · se cache la nuit" in french
+    assert "flags/4x3/nl.svg" in french
+    assert (
+        "Siganus_Vulpinus fr" in french
+        and "En banc · reste près de son abri · se cache la nuit" in french
+    )
     assert "[documentation en anglais](README.md)" in french
 
     # once written: up to date, nothing rewritten

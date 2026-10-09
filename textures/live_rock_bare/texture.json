@@ -1,0 +1,16 @@
+{
+  "kind": "texture",
+  "role": "rock",
+  "image": "live_rock_bare.webp",
+  "scale_cm": 25,
+  "names": {
+    "en": "Live rock, bare",
+    "fr": "Pierre vivante, nue",
+    "de": "Lebendgestein, kahl",
+    "es": "Roca viva, desnuda",
+    "it": "Roccia viva, nuda",
+    "nl": "Levend steen, kaal",
+    "pl": "Żywa skała, naga",
+    "pt": "Rocha viva, nua"
+  }
+}

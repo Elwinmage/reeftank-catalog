@@ -10,6 +10,9 @@ For every `fish/<id>/` and `corals/<id>/` folder:
 - only the files a release ships (species.json, webp, png) are counted, and
   they stay under the size and count limits of the integration.
 
+For every `textures/<id>/` folder: `texture.json` names a role (rock, sand),
+a tileable picture that exists, and the tank length it covers (`scale_cm`).
+
 Other files (a recipe, notes) are allowed in a folder: they are not shipped.
 
     python scripts/validate.py [catalog root]
@@ -27,8 +30,14 @@ from typing import Any
 
 from PIL import Image
 
+#: Species folders, with the `kind` of their descriptor
 KINDS = {"fish": "fish", "corals": "coral"}
 DESCRIPTOR = "species.json"
+TEXTURES = "textures"
+TEXTURE_DESCRIPTOR = "texture.json"
+TEXTURE_ROLES = ("rock", "sand")
+#: Every folder of entries a release ships, with their descriptor
+DESCRIPTORS = {"fish": DESCRIPTOR, "corals": DESCRIPTOR, TEXTURES: TEXTURE_DESCRIPTOR}
 SHIPPED_SUFFIXES = (".webp", ".png")
 #: Limits of the integration (pack.py)
 MAX_ENTRY_BYTES = 32 * 1024 * 1024
@@ -39,11 +48,12 @@ FILE_RE = re.compile(r"^[A-Za-z0-9_@.-]{1,120}$")
 
 def shipped_files(folder: Path) -> list[Path]:
     """Files of an entry that go in its release archive."""
+    descriptor = DESCRIPTORS.get(folder.parent.name, DESCRIPTOR)
     return sorted(
         p
         for p in folder.iterdir()
         if p.is_file()
-        and (p.name == DESCRIPTOR or p.suffix.lower() in SHIPPED_SUFFIXES)
+        and (p.name == descriptor or p.suffix.lower() in SHIPPED_SUFFIXES)
     )
 
 
@@ -60,7 +70,7 @@ def _picture(path: Path, errors: list[str], what: str) -> Image.Image | None:
     return image
 
 
-PROFILES = ("shoal", "cruiser", "benthic", "hover")
+PROFILES = ("shoal", "cruiser", "benthic", "hover", "sand")
 #: Languages every species is named in
 LANGUAGES = ("en", "fr", "de", "es", "it", "nl", "pl", "pt")
 #: Fields a species must describe (dotted: inside `behavior`)
@@ -153,6 +163,9 @@ def check_description(desc: dict[str, Any], kind: str) -> list[str]:
                 errors.append(f"behavior.{key} must be [a, b] within 0..1")
         if "speed_cm_s" in behavior and not _pair(behavior["speed_cm_s"], 0.1):
             errors.append("behavior.speed_cm_s must be [min, max] in cm/s")
+        territory = behavior.get("territory_cm")
+        if territory is not None and (not _number(territory) or territory <= 0):
+            errors.append("behavior.territory_cm must be a positive number")
         rate = behavior.get("turn_rate", 1)
         if not _number(rate) or rate <= 0:
             errors.append("behavior.turn_rate must be a positive number")
@@ -267,15 +280,58 @@ def check_entry(folder: Path, kind: str) -> list[str]:
     return errors
 
 
+def check_texture(folder: Path) -> list[str]:
+    """Problems of one texture (empty when fine)."""
+    errors: list[str] = []
+    if not ID_RE.match(folder.name):
+        errors.append("id must be lowercase letters, digits, - and _")
+    try:
+        desc: Any = json.loads(
+            (folder / TEXTURE_DESCRIPTOR).read_text(encoding="utf-8")
+        )
+    except FileNotFoundError:
+        return [*errors, f"no {TEXTURE_DESCRIPTOR}"]
+    except ValueError as err:
+        return [*errors, f"{TEXTURE_DESCRIPTOR}: {err}"]
+    if not isinstance(desc, dict):
+        return [*errors, f"{TEXTURE_DESCRIPTOR} is not an object"]
+    if desc.get("kind") != "texture":
+        errors.append("kind must be 'texture'")
+    if desc.get("role") not in TEXTURE_ROLES:
+        errors.append(f"role must be one of {', '.join(TEXTURE_ROLES)}")
+    scale = desc.get("scale_cm")
+    if not _number(scale) or scale <= 0:
+        errors.append("scale_cm must be a positive number (cm the picture covers)")
+    image = desc.get("image")
+    if not isinstance(image, str) or not FILE_RE.match(image):
+        errors.append("no image")
+    else:
+        picture = _picture(folder / image, errors, "image")
+        if picture is not None and max(picture.size) > 2048:
+            errors.append("image: 2048 pixels at most")
+    names = desc.get("names", {})
+    if not isinstance(names, dict) or not all(
+        isinstance(v, str) and v.strip() for v in names.values()
+    ):
+        errors.append("names: language -> non empty text")
+    files = shipped_files(folder)
+    size = sum(p.stat().st_size for p in files)
+    if size > MAX_ENTRY_BYTES:
+        errors.append(f"{size} bytes (at most {MAX_ENTRY_BYTES})")
+    return errors
+
+
 def check_catalog(root: Path) -> dict[str, list[str]]:
     """Problems of every entry, by `kind/id`."""
     problems: dict[str, list[str]] = {}
-    for kind in KINDS:
+    for kind in DESCRIPTORS:
         folder = root / kind
         if not folder.is_dir():
             continue
         for entry in sorted(p for p in folder.iterdir() if p.is_dir()):
-            errors = check_entry(entry, kind)
+            errors = (
+                check_texture(entry) if kind == TEXTURES else check_entry(entry, kind)
+            )
             if errors:
                 problems[f"{kind}/{entry.name}"] = errors
     return problems
@@ -291,7 +347,7 @@ def main(argv: list[str] | None = None) -> int:
             print(f"{key}: {error}")
     count = sum(
         1
-        for kind in KINDS
+        for kind in DESCRIPTORS
         if (root / kind).is_dir()
         for p in (root / kind).iterdir()
         if p.is_dir()
