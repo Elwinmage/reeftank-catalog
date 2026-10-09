@@ -70,6 +70,15 @@ repos:
         pass_filenames: false
         always_run: true
 
+      # Writes the READMEs; pre-commit fails when it changed one
+      - id: make-readme
+        name: Species tables of the READMEs (make_readme.py)
+        entry: python scripts/make_readme.py
+        language: python
+        additional_dependencies: *deps
+        pass_filenames: false
+        always_run: true
+
       - id: pytest
         name: pytest (100% coverage)
         entry: >-

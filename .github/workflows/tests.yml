@@ -21,5 +21,7 @@ jobs:
         run: ruff check . && ruff format --check .
       - name: Check the catalog
         run: python scripts/validate.py
+      - name: Check the READMEs
+        run: python scripts/make_readme.py --check
       - name: Tests
         run: pytest --cov=scripts --cov-report=term-missing --cov-fail-under=100

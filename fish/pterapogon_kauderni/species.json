@@ -62,5 +62,6 @@
     "turn_rate": 1.5
   },
   "night": "hover",
-  "feeding_response": 0.7
+  "feeding_response": 0.7,
+  "scientific": "Pterapogon kauderni"
 }

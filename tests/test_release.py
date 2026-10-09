@@ -23,9 +23,11 @@ def described(kind: str, entry_id: str) -> dict[str, Any]:
     """A complete description (names in every language, size, behaviour)."""
     names = {lang: f"{entry_id.title()} {lang}" for lang in validate.LANGUAGES}
     names["en"] = entry_id.title()
+    scientific = f"{entry_id.split('_')[0].title()} sp."
     if kind == "fish":
         return {
             "names": names,
+            "scientific": scientific,
             "size_cm": [5, 8],
             "behavior": {
                 "profile": "shoal",
@@ -37,7 +39,12 @@ def described(kind: str, entry_id: str) -> dict[str, Any]:
             "night": "hide",
             "feeding_response": 0.8,
         }
-    return {"names": names, "size_cm": [5, 20], "palette": [{"default": "#ff0000"}]}
+    return {
+        "names": names,
+        "scientific": scientific,
+        "size_cm": [5, 20],
+        "palette": [{"default": "#ff0000"}],
+    }
 
 
 def entry(root: Path, folder_kind: str, entry_id: str, **overrides: Any) -> Path:

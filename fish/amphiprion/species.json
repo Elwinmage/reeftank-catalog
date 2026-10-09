@@ -62,5 +62,6 @@
     "turn_rate": 3.5
   },
   "night": "hover",
-  "feeding_response": 1.0
+  "feeding_response": 1.0,
+  "scientific": "Amphiprion sp."
 }

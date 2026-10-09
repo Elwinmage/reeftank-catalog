@@ -33,15 +33,15 @@ from typing import Any
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_atlas import GENERATED_KEYS
-from validate import ID_RE, KINDS
+from validate import ID_RE, KINDS, LANGUAGES
 
 META_FILE = "meta.json"
-LANGUAGES = ("en", "fr", "de", "es", "it", "nl", "pl", "pt")
 
 #: Fields shown in an export, so that nothing is forgotten
 TEMPLATES: dict[str, dict[str, Any]] = {
     "fish": {
         "names": {},
+        "scientific": None,
         "size_cm": None,
         "behavior": {
             "profile": None,
@@ -53,7 +53,7 @@ TEMPLATES: dict[str, dict[str, Any]] = {
         "night": None,
         "feeding_response": None,
     },
-    "corals": {"names": {}, "size_cm": None, "palette": None},
+    "corals": {"names": {}, "scientific": None, "size_cm": None, "palette": None},
 }
 
 

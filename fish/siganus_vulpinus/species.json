@@ -62,5 +62,6 @@
     "turn_rate": 2.0
   },
   "night": "rest_bottom",
-  "feeding_response": 1.0
+  "feeding_response": 1.0,
+  "scientific": "Siganus vulpinus"
 }

@@ -67,5 +67,6 @@
     }
   },
   "night": "hide",
-  "feeding_response": 0.9
+  "feeding_response": 0.9,
+  "scientific": "Chromis viridis"
 }

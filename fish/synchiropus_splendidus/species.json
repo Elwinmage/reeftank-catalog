@@ -62,5 +62,6 @@
     "turn_rate": 2.5
   },
   "night": "hide",
-  "feeding_response": 0.1
+  "feeding_response": 0.1,
+  "scientific": "Synchiropus splendidus"
 }

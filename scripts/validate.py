@@ -66,6 +66,7 @@ LANGUAGES = ("en", "fr", "de", "es", "it", "nl", "pl", "pt")
 #: Fields a species must describe (dotted: inside `behavior`)
 REQUIRED = {
     "fish": (
+        "scientific",
         "size_cm",
         "behavior.profile",
         "behavior.band",
@@ -75,10 +76,12 @@ REQUIRED = {
         "night",
         "feeding_response",
     ),
-    "corals": ("size_cm", "palette"),
+    "corals": ("scientific", "size_cm", "palette"),
 }
 NIGHT_MODES = ("hide", "hover", "rest_bottom")
 _HEX_RE = re.compile(r"^#[0-9a-fA-F]{6}$")
+#: "Genus species", "Genus species subspecies", or "Genus sp." for a genus
+SCIENTIFIC_RE = re.compile(r"^[A-Z][a-z]+ (sp\.|[a-z]+(-[a-z]+)?( [a-z]+)?)$")
 
 
 def _number(value: Any) -> bool:
@@ -131,6 +134,11 @@ def check_description(desc: dict[str, Any], kind: str) -> list[str]:
         or not all(isinstance(v, str) and v.strip() for v in names.values())
     ):
         errors.append("names: language -> non empty text")
+    scientific = desc.get("scientific")
+    if scientific is not None and (
+        not isinstance(scientific, str) or not SCIENTIFIC_RE.match(scientific)
+    ):
+        errors.append('scientific must be "Genus species" or "Genus sp." (for a genus)')
     if "size_cm" in desc and not _pair(desc["size_cm"], 0.1):
         errors.append("size_cm must be [min, max] in cm")
     if kind == "fish":

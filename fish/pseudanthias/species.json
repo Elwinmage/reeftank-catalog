@@ -67,5 +67,6 @@
     }
   },
   "night": "hide",
-  "feeding_response": 1.0
+  "feeding_response": 1.0,
+  "scientific": "Pseudanthias sp."
 }

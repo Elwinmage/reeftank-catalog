@@ -62,5 +62,6 @@
     "turn_rate": 1.8
   },
   "night": "hide",
-  "feeding_response": 0.9
+  "feeding_response": 0.9,
+  "scientific": "Pomacanthus imperator"
 }
