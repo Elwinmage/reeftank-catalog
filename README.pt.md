@@ -14,7 +14,7 @@ A integração descarrega as versões publicadas deste repositório e mantém-na
 |---|---|---|---|---|
 | <img src="fish/pseudanthias/thumb.webp" width="72" alt=""> | Antias<br>`pseudanthias` | *Pseudanthias sp.* | 8–14 cm | Em cardume · esconde-se à noite |
 | <img src="fish/chromis_viridis/thumb.webp" width="72" alt=""> | Cromis-verde<br>`chromis_viridis` | *Chromis viridis* | 5–8 cm | Em cardume · esconde-se à noite |
-| <img src="fish/valenciennea/thumb.webp" width="72" alt=""> | Góbio-dorminhoco<br>`valenciennea` | *Valenciennea sp.* | 10–16 cm | Vive junto ao fundo · descansa no fundo à noite |
+| <img src="fish/valenciennea/thumb.webp" width="72" alt=""> | Góbio-dorminhoco<br>`valenciennea` | *Valenciennea sp.* | 10–16 cm | Vive na areia · vive numa toca · descansa no fundo à noite |
 | <img src="fish/pomacanthus_imperator_adult/thumb.webp" width="72" alt=""> | Peixe-anjo-imperador (adulto)<br>`pomacanthus_imperator_adult` | *Pomacanthus imperator* | 25–38 cm | Nadador de águas abertas · esconde-se à noite |
 | <img src="fish/pomacanthus_imperator/thumb.webp" width="72" alt=""> | Peixe-anjo-imperador (juvenil)<br>`pomacanthus_imperator` | *Pomacanthus imperator* | 6–12 cm | Nadador de águas abertas · esconde-se à noite |
 | <img src="fish/pterapogon_kauderni/thumb.webp" width="72" alt=""> | Peixe-cardeal-de-Banggai<br>`pterapogon_kauderni` | *Pterapogon kauderni* | 5–8 cm | Estacionário · paira na água à noite |

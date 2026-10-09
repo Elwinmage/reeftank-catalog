@@ -166,6 +166,8 @@ def check_description(desc: dict[str, Any], kind: str) -> list[str]:
         territory = behavior.get("territory_cm")
         if territory is not None and (not _number(territory) or territory <= 0):
             errors.append("behavior.territory_cm must be a positive number")
+        if not isinstance(behavior.get("burrow", False), bool):
+            errors.append("behavior.burrow must be true or false")
         rate = behavior.get("turn_rate", 1)
         if not _number(rate) or rate <= 0:
             errors.append("behavior.turn_rate must be a positive number")

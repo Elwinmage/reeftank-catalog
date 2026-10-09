@@ -269,6 +269,13 @@ def test_territory(tmp_path: Path) -> None:
     good = {**described("fish", "goby")}
     good["behavior"] = {**good["behavior"], "profile": "sand", "territory_cm": 12}
     assert validate.check_description(good, "fish") == []
+    good["behavior"]["burrow"] = True
+    assert validate.check_description(good, "fish") == []
+    good["behavior"]["burrow"] = "yes"
+    assert "behavior.burrow must be true or false" in (
+        validate.check_description(good, "fish")
+    )
+    good["behavior"]["burrow"] = False
     good["behavior"]["territory_cm"] = -1
     assert "behavior.territory_cm must be a positive number" in (
         validate.check_description(good, "fish")

@@ -14,7 +14,7 @@ L'integrazione scarica le release di questo repository e le mantiene aggiornate 
 |---|---|---|---|---|
 | <img src="fish/pseudanthias/thumb.webp" width="72" alt=""> | Anthias<br>`pseudanthias` | *Pseudanthias sp.* | 8–14 cm | In banco · si nasconde di notte |
 | <img src="fish/chromis_viridis/thumb.webp" width="72" alt=""> | Castagnola verde<br>`chromis_viridis` | *Chromis viridis* | 5–8 cm | In banco · si nasconde di notte |
-| <img src="fish/valenciennea/thumb.webp" width="72" alt=""> | Ghiozzo dormiente<br>`valenciennea` | *Valenciennea sp.* | 10–16 cm | Vive vicino al fondo · riposa sul fondo di notte |
+| <img src="fish/valenciennea/thumb.webp" width="72" alt=""> | Ghiozzo dormiente<br>`valenciennea` | *Valenciennea sp.* | 10–16 cm | Vive sulla sabbia · vive in una tana · riposa sul fondo di notte |
 | <img src="fish/pomacanthus_imperator_adult/thumb.webp" width="72" alt=""> | Pesce angelo imperatore (adulto)<br>`pomacanthus_imperator_adult` | *Pomacanthus imperator* | 25–38 cm | Nuotatore di acque libere · si nasconde di notte |
 | <img src="fish/pomacanthus_imperator/thumb.webp" width="72" alt=""> | Pesce angelo imperatore (giovane)<br>`pomacanthus_imperator` | *Pomacanthus imperator* | 6–12 cm | Nuotatore di acque libere · si nasconde di notte |
 | <img src="fish/pterapogon_kauderni/thumb.webp" width="72" alt=""> | Pesce cardinale di Banggai<br>`pterapogon_kauderni` | *Pterapogon kauderni* | 5–8 cm | Stazionario · resta sospeso di notte |

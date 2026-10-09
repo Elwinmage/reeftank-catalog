@@ -65,6 +65,7 @@ TEXTS: dict[str, dict[str, Any]] = {
             "sand": "Lives on the sand",
         },
         "territorial": "stays near its home",
+        "burrow": "lives in a burrow",
         "night": {
             "hide": "hides at night",
             "hover": "hovers at night",
@@ -101,6 +102,7 @@ TEXTS: dict[str, dict[str, Any]] = {
             "sand": "Vit sur le sable",
         },
         "territorial": "reste près de son abri",
+        "burrow": "vit dans un terrier",
         "night": {
             "hide": "se cache la nuit",
             "hover": "reste en pleine eau la nuit",
@@ -140,6 +142,7 @@ TEXTS: dict[str, dict[str, Any]] = {
             "sand": "Lebt auf dem Sand",
         },
         "territorial": "bleibt nahe seinem Unterschlupf",
+        "burrow": "lebt in einer Höhle im Sand",
         "night": {
             "hide": "versteckt sich nachts",
             "hover": "schwebt nachts im Wasser",
@@ -179,6 +182,7 @@ TEXTS: dict[str, dict[str, Any]] = {
             "sand": "Vive sobre la arena",
         },
         "territorial": "se queda cerca de su refugio",
+        "burrow": "vive en una madriguera",
         "night": {
             "hide": "se esconde de noche",
             "hover": "flota en el agua de noche",
@@ -218,6 +222,7 @@ TEXTS: dict[str, dict[str, Any]] = {
             "sand": "Vive sulla sabbia",
         },
         "territorial": "resta vicino al suo rifugio",
+        "burrow": "vive in una tana",
         "night": {
             "hide": "si nasconde di notte",
             "hover": "resta sospeso di notte",
@@ -257,6 +262,7 @@ TEXTS: dict[str, dict[str, Any]] = {
             "sand": "Leeft op het zand",
         },
         "territorial": "blijft bij zijn schuilplaats",
+        "burrow": "leeft in een hol",
         "night": {
             "hide": "verstopt zich 's nachts",
             "hover": "zweeft 's nachts",
@@ -296,6 +302,7 @@ TEXTS: dict[str, dict[str, Any]] = {
             "sand": "Żyje na piasku",
         },
         "territorial": "trzyma się swojej kryjówki",
+        "burrow": "żyje w norze",
         "night": {
             "hide": "chowa się w nocy",
             "hover": "unosi się w toni w nocy",
@@ -335,6 +342,7 @@ TEXTS: dict[str, dict[str, Any]] = {
             "sand": "Vive na areia",
         },
         "territorial": "fica perto do seu abrigo",
+        "burrow": "vive numa toca",
         "night": {
             "hide": "esconde-se à noite",
             "hover": "paira na água à noite",
@@ -407,7 +415,9 @@ def behaviour(desc: dict[str, Any], lang: str) -> str:
     parts = []
     if profile in texts["profiles"]:
         parts.append(texts["profiles"][profile])
-    if isinstance(behavior, dict) and behavior.get("territory_cm"):
+    if isinstance(behavior, dict) and behavior.get("burrow"):
+        parts.append(texts["burrow"])
+    elif isinstance(behavior, dict) and behavior.get("territory_cm"):
         parts.append(texts["territorial"])
     if desc.get("night") in texts["night"]:
         parts.append(texts["night"][desc["night"]])

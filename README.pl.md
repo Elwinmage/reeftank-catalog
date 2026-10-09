@@ -12,7 +12,7 @@ Integracja pobiera wydania tego repozytorium i aktualizuje je (`update.reeftank_
 
 |  | Nazwa | Nazwa naukowa | Rozmiar | Zachowanie |
 |---|---|---|---|---|
-| <img src="fish/valenciennea/thumb.webp" width="72" alt=""> | Babka piaskowa<br>`valenciennea` | *Valenciennea sp.* | 10–16 cm | Przydenny · odpoczywa w nocy na dnie |
+| <img src="fish/valenciennea/thumb.webp" width="72" alt=""> | Babka piaskowa<br>`valenciennea` | *Valenciennea sp.* | 10–16 cm | Żyje na piasku · żyje w norze · odpoczywa w nocy na dnie |
 | <img src="fish/amphiprion/thumb.webp" width="72" alt=""> | Błazenek<br>`amphiprion` | *Amphiprion sp.* | 7–11 cm | Stoi w miejscu · unosi się w toni w nocy |
 | <img src="fish/chromis_viridis/thumb.webp" width="72" alt=""> | Chromis zielony<br>`chromis_viridis` | *Chromis viridis* | 5–8 cm | Ławica · chowa się w nocy |
 | <img src="fish/pterapogon_kauderni/thumb.webp" width="72" alt=""> | Kardynał z Banggai<br>`pterapogon_kauderni` | *Pterapogon kauderni* | 5–8 cm | Stoi w miejscu · unosi się w toni w nocy |

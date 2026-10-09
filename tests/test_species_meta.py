@@ -65,6 +65,7 @@ def test_export_shows_every_field(tmp_path: Path) -> None:
         "speed_cm_s": None,
         "turn_rate": None,
         "territory_cm": None,
+        "burrow": None,
     }
     assert fox["night"] is None and fox["feeding_response"] is None
     assert fox["names"]["en"] == "Fox" and fox["names"]["fr"] is None

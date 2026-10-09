@@ -20,7 +20,7 @@ The integration downloads the releases of this repository and keeps them up to d
 | <img src="fish/pomacanthus_imperator/thumb.webp" width="72" alt=""> | Emperor angelfish (juvenile)<br>`pomacanthus_imperator` | *Pomacanthus imperator* | 6–12 cm | Open-water cruiser · hides at night |
 | <img src="fish/siganus_vulpinus/thumb.webp" width="72" alt=""> | Foxface rabbitfish<br>`siganus_vulpinus` | *Siganus vulpinus* | 15–22 cm | Open-water cruiser · rests on the bottom at night |
 | <img src="fish/synchiropus_splendidus/thumb.webp" width="72" alt=""> | Mandarin dragonet<br>`synchiropus_splendidus` | *Synchiropus splendidus* | 5–8 cm | Bottom dweller · hides at night |
-| <img src="fish/valenciennea/thumb.webp" width="72" alt=""> | Sleeper goby<br>`valenciennea` | *Valenciennea sp.* | 10–16 cm | Bottom dweller · rests on the bottom at night |
+| <img src="fish/valenciennea/thumb.webp" width="72" alt=""> | Sleeper goby<br>`valenciennea` | *Valenciennea sp.* | 10–16 cm | Lives on the sand · lives in a burrow · rests on the bottom at night |
 
 ## Corals (0)
 
@@ -204,6 +204,7 @@ Next to the clips, a `meta.json` merged into the descriptor:
 | `behavior.speed_cm_s` | cruising speed range |
 | `behavior.turn_rate` | how fast it turns, radians per second |
 | `behavior.territory_cm` | optional: the species stays within this distance of its home (a burrow, a host anemone), placed per inventory line in the editor, else picked at random |
+| `behavior.burrow` | optional, `true`: lives in a burrow in the sand at its home (watchman gobies, sleeper gobies): in it at night, mostly only its head out during the day, sometimes out around it, sometimes back in; out for the food |
 | `behavior.shoal` | `cohesion` (1), `alignment` (0.8), `separation` (1.2) for a school |
 | `night` | `hide` (behind the decor), `hover`, `rest_bottom` |
 | `feeding_response` | 0 ignores the food … 1 rushes to it |

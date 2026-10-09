@@ -14,7 +14,7 @@ La integración descarga las versiones publicadas de este repositorio y las mant
 |---|---|---|---|---|
 | <img src="fish/pseudanthias/thumb.webp" width="72" alt=""> | Antias<br>`pseudanthias` | *Pseudanthias sp.* | 8–14 cm | En cardumen · se esconde de noche |
 | <img src="fish/chromis_viridis/thumb.webp" width="72" alt=""> | Cromis verde<br>`chromis_viridis` | *Chromis viridis* | 5–8 cm | En cardumen · se esconde de noche |
-| <img src="fish/valenciennea/thumb.webp" width="72" alt=""> | Gobio durmiente<br>`valenciennea` | *Valenciennea sp.* | 10–16 cm | Vive cerca del fondo · descansa en el fondo de noche |
+| <img src="fish/valenciennea/thumb.webp" width="72" alt=""> | Gobio durmiente<br>`valenciennea` | *Valenciennea sp.* | 10–16 cm | Vive sobre la arena · vive en una madriguera · descansa en el fondo de noche |
 | <img src="fish/pterapogon_kauderni/thumb.webp" width="72" alt=""> | Pez cardenal de Banggai<br>`pterapogon_kauderni` | *Pterapogon kauderni* | 5–8 cm | Estacionario · flota en el agua de noche |
 | <img src="fish/siganus_vulpinus/thumb.webp" width="72" alt=""> | Pez conejo cara de zorro<br>`siganus_vulpinus` | *Siganus vulpinus* | 15–22 cm | Nadador de aguas abiertas · descansa en el fondo de noche |
 | <img src="fish/synchiropus_splendidus/thumb.webp" width="72" alt=""> | Pez mandarín<br>`synchiropus_splendidus` | *Synchiropus splendidus* | 5–8 cm | Vive cerca del fondo · se esconde de noche |

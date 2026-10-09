@@ -50,6 +50,7 @@ TEMPLATES: dict[str, dict[str, Any]] = {
             "speed_cm_s": None,
             "turn_rate": None,
             "territory_cm": None,
+            "burrow": None,
         },
         "night": None,
         "feeding_response": None,

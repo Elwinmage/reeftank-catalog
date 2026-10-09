@@ -20,7 +20,7 @@ Die Integration lädt die Releases dieses Repositorys herunter und hält sie akt
 | <img src="fish/pomacanthus_imperator_adult/thumb.webp" width="72" alt=""> | Imperator-Kaiserfisch (adult)<br>`pomacanthus_imperator_adult` | *Pomacanthus imperator* | 25–38 cm | Freiwasserschwimmer · versteckt sich nachts |
 | <img src="fish/pomacanthus_imperator/thumb.webp" width="72" alt=""> | Imperator-Kaiserfisch (Jungtier)<br>`pomacanthus_imperator` | *Pomacanthus imperator* | 6–12 cm | Freiwasserschwimmer · versteckt sich nachts |
 | <img src="fish/synchiropus_splendidus/thumb.webp" width="72" alt=""> | Mandarinfisch<br>`synchiropus_splendidus` | *Synchiropus splendidus* | 5–8 cm | Bodenbewohner · versteckt sich nachts |
-| <img src="fish/valenciennea/thumb.webp" width="72" alt=""> | Schläfergrundel<br>`valenciennea` | *Valenciennea sp.* | 10–16 cm | Bodenbewohner · ruht nachts am Boden |
+| <img src="fish/valenciennea/thumb.webp" width="72" alt=""> | Schläfergrundel<br>`valenciennea` | *Valenciennea sp.* | 10–16 cm | Lebt auf dem Sand · lebt in einer Höhle im Sand · ruht nachts am Boden |
 
 ## Korallen (0)
 

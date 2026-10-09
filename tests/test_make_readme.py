@@ -121,6 +121,8 @@ def test_table_of_partly_described_species(tmp_path: Path) -> None:
     # English name when the language is missing, pipes escaped
     assert "| Odd \\| fish<br>`odd` | — | — | — |" in table
     assert make_readme.species_table([], "pl", fish=True) == "Brak gatunków."
+    goby = {"behavior": {"profile": "sand", "burrow": True, "territory_cm": 9}}
+    assert make_readme.behaviour(goby, "en") == "Lives on the sand · lives in a burrow"
 
 
 def test_kind_folder_missing(tmp_path: Path) -> None:

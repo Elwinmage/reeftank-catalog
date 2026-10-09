@@ -14,7 +14,7 @@ L'intégration télécharge les versions publiées de ce dépôt et les tient à
 |---|---|---|---|---|
 | <img src="fish/pseudanthias/thumb.webp" width="72" alt=""> | Anthias<br>`pseudanthias` | *Pseudanthias sp.* | 8–14 cm | En banc · se cache la nuit |
 | <img src="fish/chromis_viridis/thumb.webp" width="72" alt=""> | Chromis vert<br>`chromis_viridis` | *Chromis viridis* | 5–8 cm | En banc · se cache la nuit |
-| <img src="fish/valenciennea/thumb.webp" width="72" alt=""> | Gobie dormeur<br>`valenciennea` | *Valenciennea sp.* | 10–16 cm | Vit près du fond · se pose au fond la nuit |
+| <img src="fish/valenciennea/thumb.webp" width="72" alt=""> | Gobie dormeur<br>`valenciennea` | *Valenciennea sp.* | 10–16 cm | Vit sur le sable · vit dans un terrier · se pose au fond la nuit |
 | <img src="fish/synchiropus_splendidus/thumb.webp" width="72" alt=""> | Poisson mandarin<br>`synchiropus_splendidus` | *Synchiropus splendidus* | 5–8 cm | Vit près du fond · se cache la nuit |
 | <img src="fish/pomacanthus_imperator_adult/thumb.webp" width="72" alt=""> | Poisson-ange empereur (adulte)<br>`pomacanthus_imperator_adult` | *Pomacanthus imperator* | 25–38 cm | Nageur de pleine eau · se cache la nuit |
 | <img src="fish/pomacanthus_imperator/thumb.webp" width="72" alt=""> | Poisson-ange empereur (juvénile)<br>`pomacanthus_imperator` | *Pomacanthus imperator* | 6–12 cm | Nageur de pleine eau · se cache la nuit |

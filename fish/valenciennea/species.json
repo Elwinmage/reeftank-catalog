@@ -46,7 +46,7 @@
     16
   ],
   "behavior": {
-    "profile": "benthic",
+    "profile": "sand",
     "band": [
       0.85,
       1
@@ -59,7 +59,9 @@
       1.5,
       5
     ],
-    "turn_rate": 2.5
+    "turn_rate": 2.5,
+    "burrow": true,
+    "territory_cm": 15
   },
   "night": "rest_bottom",
   "feeding_response": 0.6,

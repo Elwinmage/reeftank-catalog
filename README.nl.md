@@ -19,7 +19,7 @@ De integratie downloadt de releases van deze repository en houdt ze up-to-date (
 | <img src="fish/pomacanthus_imperator/thumb.webp" width="72" alt=""> | Keizer-engelvis (juveniel)<br>`pomacanthus_imperator` | *Pomacanthus imperator* | 6–12 cm | Openwaterzwemmer · verstopt zich 's nachts |
 | <img src="fish/pomacanthus_imperator_adult/thumb.webp" width="72" alt=""> | Keizer-engelvis (volwassen)<br>`pomacanthus_imperator_adult` | *Pomacanthus imperator* | 25–38 cm | Openwaterzwemmer · verstopt zich 's nachts |
 | <img src="fish/synchiropus_splendidus/thumb.webp" width="72" alt=""> | Mandarijnvis<br>`synchiropus_splendidus` | *Synchiropus splendidus* | 5–8 cm | Bodembewoner · verstopt zich 's nachts |
-| <img src="fish/valenciennea/thumb.webp" width="72" alt=""> | Slaapgrondel<br>`valenciennea` | *Valenciennea sp.* | 10–16 cm | Bodembewoner · rust 's nachts op de bodem |
+| <img src="fish/valenciennea/thumb.webp" width="72" alt=""> | Slaapgrondel<br>`valenciennea` | *Valenciennea sp.* | 10–16 cm | Leeft op het zand · leeft in een hol · rust 's nachts op de bodem |
 | <img src="fish/siganus_vulpinus/thumb.webp" width="72" alt=""> | Vossengezicht konijnvis<br>`siganus_vulpinus` | *Siganus vulpinus* | 15–22 cm | Openwaterzwemmer · rust 's nachts op de bodem |
 
 ## Koralen (0)
