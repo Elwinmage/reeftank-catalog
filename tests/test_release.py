@@ -19,6 +19,27 @@ make_release = importlib.import_module("make_release")
 REPO = Path(__file__).parent.parent
 
 
+def described(kind: str, entry_id: str) -> dict[str, Any]:
+    """A complete description (names in every language, size, behaviour)."""
+    names = {lang: f"{entry_id.title()} {lang}" for lang in validate.LANGUAGES}
+    names["en"] = entry_id.title()
+    if kind == "fish":
+        return {
+            "names": names,
+            "size_cm": [5, 8],
+            "behavior": {
+                "profile": "shoal",
+                "band": [0.1, 0.7],
+                "depth": [0.2, 0.8],
+                "speed_cm_s": [4, 10],
+                "turn_rate": 2.5,
+            },
+            "night": "hide",
+            "feeding_response": 0.8,
+        }
+    return {"names": names, "size_cm": [5, 20], "palette": [{"default": "#ff0000"}]}
+
+
 def entry(root: Path, folder_kind: str, entry_id: str, **overrides: Any) -> Path:
     """A valid entry (2 frames of 10x10 on 2 columns)."""
     kind = folder_kind
@@ -33,7 +54,7 @@ def entry(root: Path, folder_kind: str, entry_id: str, **overrides: Any) -> Path
         "clips": {"swim" if kind == "fish" else "day": {"from": 0, "to": 1, "fps": 24}},
         "atlas": {"1x" if kind == "fish" else "shade": "atlas.webp"},
         "thumbnail": "thumb.webp",
-        "names": {"en": entry_id.title()},
+        **described(kind, entry_id),
     }
     desc.update(overrides)
     (folder / "species.json").write_text(json.dumps(desc), encoding="utf-8")

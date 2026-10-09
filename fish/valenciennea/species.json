@@ -30,5 +30,37 @@
   },
   "facing": "right",
   "length_frac": 0.8571,
-  "thumbnail": "thumb.webp"
+  "thumbnail": "thumb.webp",
+  "names": {
+    "en": "Sleeper goby",
+    "fr": "Gobie dormeur",
+    "de": "Schläfergrundel",
+    "es": "Gobio durmiente",
+    "it": "Ghiozzo dormiente",
+    "nl": "Slaapgrondel",
+    "pl": "Babka piaskowa",
+    "pt": "Góbio-dorminhoco"
+  },
+  "size_cm": [
+    10,
+    16
+  ],
+  "behavior": {
+    "profile": "benthic",
+    "band": [
+      0.85,
+      1
+    ],
+    "depth": [
+      0.1,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.5,
+      5
+    ],
+    "turn_rate": 2.5
+  },
+  "night": "rest_bottom",
+  "feeding_response": 0.6
 }

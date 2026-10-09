@@ -966,6 +966,23 @@ def save_webp(image: Image.Image, path: Path) -> None:
 
 THUMB_SIZE = (96, 64)
 
+#: Descriptor keys written by the build; the others (names, size, behaviour,
+#: palette...) describe the species and survive a rebuild
+GENERATED_KEYS = frozenset(
+    {"kind", "frame", "columns", "clips", "atlas", "thumbnail", "facing", "length_frac"}
+)
+
+
+def described(descriptor_file: Path) -> dict[str, Any]:
+    """The descriptive fields of an existing descriptor (none when absent)."""
+    try:
+        data = json.loads(descriptor_file.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    if not isinstance(data, dict):
+        return {}
+    return {k: v for k, v in data.items() if k not in GENERATED_KEYS}
+
 
 def _palette_rgb(palette: Any) -> list[tuple[float, float, float]]:
     """Default colours of a coral palette (4 entries, grey when missing)."""
@@ -1078,7 +1095,12 @@ def write_entry(
             mask2.save(folder / f"{entry_id}.mask@2x.png", optimize=True)
             descriptor["atlas"]["shade_2x"] = f"{entry_id}.shade@2x.webp"
             descriptor["atlas"]["mask_2x"] = f"{entry_id}.mask@2x.png"
+    # The species described in the catalog wins over the meta file of the
+    # clips, which only seeds a new species: names, behaviour... edited in
+    # the catalog (species_meta.py import) survive a rebuild
+    previous = described(folder / "species.json")
     descriptor.update(meta)
+    descriptor.update(previous)
 
     # Small picture for the editor's lists: the first frame of the swim (or
     # day) clip, a coral in its default colours

@@ -192,6 +192,33 @@ Next to the clips, a `meta.json` merged into the descriptor:
 | `feeding_response` | 0 ignores the food … 1 rushes to it |
 | `names` | display names by language |
 
+### Editing the descriptions of the catalog
+
+Once a species is in the catalog, its `species.json` is the reference: a
+rebuild keeps its names, size, behaviour and palette (the `meta.json` of the
+clips only seeds a new species). To edit them all at once, or to hand them
+over (translations, behaviour):
+
+```bash
+python scripts/species_meta.py export                 # -> species-meta.tgz
+# edit fish/<id>/meta.json, corals/<id>/meta.json (null = to fill)
+python scripts/species_meta.py import species-meta.tgz --dry-run   # what would change
+python scripts/species_meta.py import species-meta.tgz
+python scripts/validate.py
+```
+
+The export holds only the hand written fields (no picture, no clip), with
+every field shown, `null` when unknown, and the 8 languages of the names.
+On import, the fields given replace the current ones (names and behaviour
+key by key); `null` or missing fields leave the current value, and the built
+fields (clips, atlas, frame…) are never touched.
+
+`validate.py` (so pre-commit, and the release) refuses a species not fully
+described: names in the 8 languages, size, and for a fish the behaviour
+(profile, band, depth, speed, turn rate), night mode and feeding response,
+for a coral its palette. It checks the values too (profile, night mode,
+ranges, palette colours).
+
 ### 3. Build
 
 Tools, once, in a virtual environment (so that numpy and scipy match):

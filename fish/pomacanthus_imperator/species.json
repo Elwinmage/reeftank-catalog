@@ -30,5 +30,37 @@
   },
   "facing": "right",
   "length_frac": 0.9412,
-  "thumbnail": "thumb.webp"
+  "thumbnail": "thumb.webp",
+  "names": {
+    "en": "Emperor angelfish (juvenile)",
+    "fr": "Poisson-ange empereur (juvénile)",
+    "de": "Imperator-Kaiserfisch (Jungtier)",
+    "es": "Pez ángel emperador (juvenil)",
+    "it": "Pesce angelo imperatore (giovane)",
+    "nl": "Keizer-engelvis (juveniel)",
+    "pl": "Ustniczek cesarski (młody)",
+    "pt": "Peixe-anjo-imperador (juvenil)"
+  },
+  "size_cm": [
+    6,
+    12
+  ],
+  "behavior": {
+    "profile": "cruiser",
+    "band": [
+      0.35,
+      0.9
+    ],
+    "depth": [
+      0.3,
+      0.9
+    ],
+    "speed_cm_s": [
+      3,
+      8
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.8
 }

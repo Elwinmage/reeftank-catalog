@@ -30,5 +30,37 @@
   },
   "facing": "right",
   "length_frac": 0.9231,
-  "thumbnail": "thumb.webp"
+  "thumbnail": "thumb.webp",
+  "names": {
+    "en": "Clownfish",
+    "fr": "Poisson-clown",
+    "de": "Anemonenfisch",
+    "es": "Pez payaso",
+    "it": "Pesce pagliaccio",
+    "nl": "Anemoonvis",
+    "pl": "Błazenek",
+    "pt": "Peixe-palhaço"
+  },
+  "size_cm": [
+    7,
+    11
+  ],
+  "behavior": {
+    "profile": "hover",
+    "band": [
+      0.3,
+      0.8
+    ],
+    "depth": [
+      0.2,
+      0.8
+    ],
+    "speed_cm_s": [
+      2,
+      6
+    ],
+    "turn_rate": 3.5
+  },
+  "night": "hover",
+  "feeding_response": 1.0
 }

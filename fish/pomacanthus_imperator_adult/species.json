@@ -30,5 +30,37 @@
   },
   "facing": "right",
   "length_frac": 0.9412,
-  "thumbnail": "thumb.webp"
+  "thumbnail": "thumb.webp",
+  "names": {
+    "en": "Emperor angelfish (adult)",
+    "fr": "Poisson-ange empereur (adulte)",
+    "de": "Imperator-Kaiserfisch (adult)",
+    "es": "Pez ángel emperador (adulto)",
+    "it": "Pesce angelo imperatore (adulto)",
+    "nl": "Keizer-engelvis (volwassen)",
+    "pl": "Ustniczek cesarski (dorosły)",
+    "pt": "Peixe-anjo-imperador (adulto)"
+  },
+  "size_cm": [
+    25,
+    38
+  ],
+  "behavior": {
+    "profile": "cruiser",
+    "band": [
+      0.2,
+      0.85
+    ],
+    "depth": [
+      0.3,
+      0.9
+    ],
+    "speed_cm_s": [
+      4,
+      10
+    ],
+    "turn_rate": 1.8
+  },
+  "night": "hide",
+  "feeding_response": 0.9
 }

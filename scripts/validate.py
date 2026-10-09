@@ -60,6 +60,121 @@ def _picture(path: Path, errors: list[str], what: str) -> Image.Image | None:
     return image
 
 
+PROFILES = ("shoal", "cruiser", "benthic", "hover")
+#: Languages every species is named in
+LANGUAGES = ("en", "fr", "de", "es", "it", "nl", "pl", "pt")
+#: Fields a species must describe (dotted: inside `behavior`)
+REQUIRED = {
+    "fish": (
+        "size_cm",
+        "behavior.profile",
+        "behavior.band",
+        "behavior.depth",
+        "behavior.speed_cm_s",
+        "behavior.turn_rate",
+        "night",
+        "feeding_response",
+    ),
+    "corals": ("size_cm", "palette"),
+}
+NIGHT_MODES = ("hide", "hover", "rest_bottom")
+_HEX_RE = re.compile(r"^#[0-9a-fA-F]{6}$")
+
+
+def _number(value: Any) -> bool:
+    return isinstance(value, int | float) and not isinstance(value, bool)
+
+
+def _pair(value: Any, low: float, high: float | None = None) -> bool:
+    """[a, b] with low <= a <= b (<= high)."""
+    return (
+        isinstance(value, list)
+        and len(value) == 2
+        and all(_number(v) for v in value)
+        and low <= value[0] <= value[1]
+        and (high is None or value[1] <= high)
+    )
+
+
+def missing_fields(desc: dict[str, Any], kind: str) -> list[str]:
+    """Description fields still to fill (names in every language too)."""
+    missing: list[str] = []
+    for field in REQUIRED[kind]:
+        value: Any = desc
+        for part in field.split("."):
+            value = value.get(part) if isinstance(value, dict) else None
+        if value is None:
+            missing.append(field)
+    names = desc.get("names")
+    names = names if isinstance(names, dict) else {}
+    missing += [
+        f"names.{lang}"
+        for lang in LANGUAGES
+        if not isinstance(names.get(lang), str) or not names[lang].strip()
+    ]
+    return missing
+
+
+def check_description(desc: dict[str, Any], kind: str) -> list[str]:
+    """Problems of the hand written fields (names, size, behaviour...)."""
+    errors: list[str] = []
+    missing = missing_fields(desc, kind)
+    if missing:
+        errors.append(
+            "to describe: "
+            + ", ".join(missing)
+            + " (scripts/species_meta.py export, fill, import)"
+        )
+    names = desc.get("names")
+    if names is not None and (
+        not isinstance(names, dict)
+        or not all(isinstance(v, str) and v.strip() for v in names.values())
+    ):
+        errors.append("names: language -> non empty text")
+    if "size_cm" in desc and not _pair(desc["size_cm"], 0.1):
+        errors.append("size_cm must be [min, max] in cm")
+    if kind == "fish":
+        behavior = desc.get("behavior", {})
+        if not isinstance(behavior, dict):
+            errors.append("behavior must be an object")
+            behavior = {}
+        if behavior.get("profile", "shoal") not in PROFILES:
+            errors.append(f"behavior.profile must be one of {', '.join(PROFILES)}")
+        for key in ("band", "depth"):
+            if key in behavior and not _pair(behavior[key], 0, 1):
+                errors.append(f"behavior.{key} must be [a, b] within 0..1")
+        if "speed_cm_s" in behavior and not _pair(behavior["speed_cm_s"], 0.1):
+            errors.append("behavior.speed_cm_s must be [min, max] in cm/s")
+        rate = behavior.get("turn_rate", 1)
+        if not _number(rate) or rate <= 0:
+            errors.append("behavior.turn_rate must be a positive number")
+        shoal = behavior.get("shoal", {})
+        if not isinstance(shoal, dict) or not all(
+            _number(v) and v >= 0 for v in shoal.values()
+        ):
+            errors.append("behavior.shoal: weights must be positive numbers")
+        if desc.get("night", "hide") not in NIGHT_MODES:
+            errors.append(f"night must be one of {', '.join(NIGHT_MODES)}")
+        response = desc.get("feeding_response", 1)
+        if not _number(response) or not 0 <= response <= 1:
+            errors.append("feeding_response must be within 0..1")
+    else:
+        palette = desc.get("palette")
+        if palette is not None and (
+            not isinstance(palette, list)
+            or not 1 <= len(palette) <= 4
+            or not all(
+                isinstance(c, dict)
+                and isinstance(c.get("default"), str)
+                and _HEX_RE.match(c["default"])
+                and isinstance(c.get("fluo", False), bool)
+                for c in palette
+            )
+        ):
+            errors.append('palette: 1 to 4 {"default": "#rrggbb", "fluo": bool}')
+    return errors
+
+
 def check_entry(folder: Path, kind: str) -> list[str]:
     """Problems of one entry (empty when fine)."""
     errors: list[str] = []
@@ -75,6 +190,7 @@ def check_entry(folder: Path, kind: str) -> list[str]:
         return [*errors, f"{DESCRIPTOR} is not an object"]
     if desc.get("kind") != KINDS[kind]:
         errors.append(f"kind must be {KINDS[kind]!r}")
+    errors += check_description(desc, kind)
 
     atlas = desc.get("atlas")
     if not isinstance(atlas, dict) or not atlas:
