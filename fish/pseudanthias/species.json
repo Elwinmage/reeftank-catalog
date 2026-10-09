@@ -1,0 +1,33 @@
+{
+  "kind": "fish",
+  "frame": [
+    240,
+    104
+  ],
+  "columns": 10,
+  "clips": {
+    "swim": {
+      "from": 0,
+      "to": 47,
+      "fps": 24,
+      "loop": true
+    },
+    "idle": {
+      "from": 48,
+      "to": 168,
+      "fps": 12,
+      "loop": true
+    },
+    "turn": {
+      "from": 169,
+      "to": 201,
+      "fps": 24,
+      "loop": false
+    }
+  },
+  "atlas": {
+    "1x": "pseudanthias.webp"
+  },
+  "facing": "right",
+  "length_frac": 0.8
+}

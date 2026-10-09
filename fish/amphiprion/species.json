@@ -1,0 +1,33 @@
+{
+  "kind": "fish",
+  "frame": [
+    208,
+    112
+  ],
+  "columns": 8,
+  "clips": {
+    "swim": {
+      "from": 0,
+      "to": 42,
+      "fps": 24,
+      "loop": true
+    },
+    "idle": {
+      "from": 43,
+      "to": 87,
+      "fps": 12,
+      "loop": true
+    },
+    "turn": {
+      "from": 88,
+      "to": 113,
+      "fps": 24,
+      "loop": false
+    }
+  },
+  "atlas": {
+    "1x": "amphiprion.webp"
+  },
+  "facing": "right",
+  "length_frac": 0.9231
+}

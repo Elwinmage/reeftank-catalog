@@ -1,0 +1,33 @@
+{
+  "kind": "fish",
+  "frame": [
+    216,
+    120
+  ],
+  "columns": 9,
+  "clips": {
+    "swim": {
+      "from": 0,
+      "to": 47,
+      "fps": 12,
+      "loop": true
+    },
+    "idle": {
+      "from": 48,
+      "to": 95,
+      "fps": 12,
+      "loop": true
+    },
+    "turn": {
+      "from": 96,
+      "to": 125,
+      "fps": 24,
+      "loop": false
+    }
+  },
+  "atlas": {
+    "1x": "synchiropus_splendidus.webp"
+  },
+  "facing": "right",
+  "length_frac": 0.8889
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "fish",
+  "frame": [
+    268,
+    148
+  ],
+  "columns": 8,
+  "clips": {
+    "swim": {
+      "from": 0,
+      "to": 27,
+      "fps": 24,
+      "loop": true
+    },
+    "idle": {
+      "from": 28,
+      "to": 74,
+      "fps": 12,
+      "loop": true
+    },
+    "turn": {
+      "from": 75,
+      "to": 104,
+      "fps": 24,
+      "loop": false
+    }
+  },
+  "atlas": {
+    "1x": "pterapogon_kauderni.webp"
+  },
+  "facing": "right",
+  "length_frac": 0.7164
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "fish",
+  "frame": [
+    204,
+    116
+  ],
+  "columns": 8,
+  "clips": {
+    "swim": {
+      "from": 0,
+      "to": 23,
+      "fps": 24,
+      "loop": true
+    },
+    "idle": {
+      "from": 24,
+      "to": 66,
+      "fps": 12,
+      "loop": true
+    },
+    "turn": {
+      "from": 67,
+      "to": 99,
+      "fps": 24,
+      "loop": false
+    }
+  },
+  "atlas": {
+    "1x": "siganus_vulpinus.webp"
+  },
+  "facing": "right",
+  "length_frac": 0.9412
+}

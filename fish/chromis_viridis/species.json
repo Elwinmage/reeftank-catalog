@@ -1,0 +1,33 @@
+{
+  "kind": "fish",
+  "frame": [
+    220,
+    116
+  ],
+  "columns": 9,
+  "clips": {
+    "swim": {
+      "from": 0,
+      "to": 71,
+      "fps": 24,
+      "loop": true
+    },
+    "idle": {
+      "from": 72,
+      "to": 120,
+      "fps": 12,
+      "loop": true
+    },
+    "turn": {
+      "from": 121,
+      "to": 145,
+      "fps": 24,
+      "loop": false
+    }
+  },
+  "atlas": {
+    "1x": "chromis_viridis.webp"
+  },
+  "facing": "right",
+  "length_frac": 0.8727
+}

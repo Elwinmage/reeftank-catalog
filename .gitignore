@@ -1,0 +1,11 @@
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.coverage
+dist/
+prev/
+# Source clips stay on the author's computer
+clips/
+*.mp4
+*.mov
+*.webm

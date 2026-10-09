@@ -1,0 +1,53 @@
+name: Release
+
+# Publishes the catalog: one archive per species and a manifest, read by the
+# ReefTank integration (update.reeftank_catalog). Only the species whose
+# archive changed since the previous release are downloaded again.
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Release version (ex: 2026.10.0)"
+        required: true
+      min_integration:
+        description: "Oldest ReefTank integration able to use it"
+        required: true
+        default: "0.1.0"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Check the catalog
+        run: python scripts/validate.py
+      - name: Previous manifest
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p prev
+          gh release download --repo "${{ github.repository }}" \
+            --pattern manifest.json --dir prev || echo "first release"
+      - name: Build the release files
+        run: |
+          python scripts/make_release.py "${{ inputs.version }}" --out dist \
+            --previous prev/manifest.json \
+            --min-integration "${{ inputs.min_integration }}"
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${{ inputs.version }}" dist/*.zip dist/manifest.json \
+            --repo "${{ github.repository }}" \
+            --title "Catalog ${{ inputs.version }}" \
+            --notes-file dist/notes.md \
+            --target "${{ github.sha }}"

@@ -1,0 +1,33 @@
+{
+  "kind": "fish",
+  "frame": [
+    204,
+    128
+  ],
+  "columns": 8,
+  "clips": {
+    "swim": {
+      "from": 0,
+      "to": 23,
+      "fps": 24,
+      "loop": true
+    },
+    "idle": {
+      "from": 24,
+      "to": 72,
+      "fps": 12,
+      "loop": true
+    },
+    "turn": {
+      "from": 73,
+      "to": 101,
+      "fps": 24,
+      "loop": false
+    }
+  },
+  "atlas": {
+    "1x": "pomacanthus_imperator_adult.webp"
+  },
+  "facing": "right",
+  "length_frac": 0.9412
+}

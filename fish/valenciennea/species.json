@@ -1,0 +1,33 @@
+{
+  "kind": "fish",
+  "frame": [
+    224,
+    84
+  ],
+  "columns": 7,
+  "clips": {
+    "swim": {
+      "from": 0,
+      "to": 47,
+      "fps": 24,
+      "loop": true
+    },
+    "idle": {
+      "from": 48,
+      "to": 94,
+      "fps": 12,
+      "loop": true
+    },
+    "turn": {
+      "from": 95,
+      "to": 123,
+      "fps": 24,
+      "loop": false
+    }
+  },
+  "atlas": {
+    "1x": "valenciennea.webp"
+  },
+  "facing": "right",
+  "length_frac": 0.8571
+}
