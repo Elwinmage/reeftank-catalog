@@ -29,5 +29,6 @@
     "1x": "pterapogon_kauderni.webp"
   },
   "facing": "right",
-  "length_frac": 0.7164
+  "length_frac": 0.7164,
+  "thumbnail": "thumb.webp"
 }

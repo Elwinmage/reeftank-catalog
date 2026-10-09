@@ -29,5 +29,6 @@
     "1x": "chromis_viridis.webp"
   },
   "facing": "right",
-  "length_frac": 0.8727
+  "length_frac": 0.8727,
+  "thumbnail": "thumb.webp"
 }

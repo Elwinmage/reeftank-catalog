@@ -29,5 +29,6 @@
     "1x": "siganus_vulpinus.webp"
   },
   "facing": "right",
-  "length_frac": 0.9412
+  "length_frac": 0.9412,
+  "thumbnail": "thumb.webp"
 }

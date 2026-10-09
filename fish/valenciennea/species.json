@@ -29,5 +29,6 @@
     "1x": "valenciennea.webp"
   },
   "facing": "right",
-  "length_frac": 0.8571
+  "length_frac": 0.8571,
+  "thumbnail": "thumb.webp"
 }

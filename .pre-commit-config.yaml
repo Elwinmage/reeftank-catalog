@@ -1,0 +1,81 @@
+# Checks run before every commit (pre-commit install), and on demand:
+#   pre-commit run --all-files
+fail_fast: true
+repos:
+  - repo: local
+    hooks:
+      - id: display_banner
+        name: Header Banner
+        language: system
+        verbose: true
+        pass_filenames: false
+        always_run: true
+        entry: bash -c 'echo -e "\033[1;36m========================================================================\n                   EXÉCUTION DES VÉRIFICATIONS PRE-COMMIT\n                   $(date)\n========================================================================\033[0m"'
+      - id: check-packages-versions
+        #  ne pas oublier le -v : pre-commit run check-packages-versions --all-files -v
+        name: Afficher les versions des dépendances
+        entry: >-
+          python -c "import sys, importlib.metadata; print(f'Python {sys.version.split()[0]:<33} = {sys.version.split()[0]}'); pkgs=['pillow','numpy','scipy','pytest','pytest-cov']; [print(f'{pkg:<40} = {importlib.metadata.version(pkg)}') for pkg in pkgs]"
+        language: python
+        pass_filenames: false
+        always_run: true
+        verbose: true
+        additional_dependencies: &deps
+          - pillow>=11.0
+          - numpy>=2.0
+          - scipy>=1.14
+          - pytest>=8.3
+          - pytest-cov>=6.0
+
+      # Source clips stay on the author's computer: never in the repository
+      - id: no-source-clips
+        name: No source clips (videos)
+        language: fail
+        entry: "Source clips are not committed (keep them locally):"
+        files: '(?i)\.(mp4|mov|webm|mkv|avi|m4v)$'
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-json
+      - id: check-yaml
+      - id: check-merge-conflict
+      - id: end-of-file-fixer
+        exclude: '\.(webp|png)$'
+      - id: trailing-whitespace
+        exclude: '\.(webp|png)$'
+      - id: mixed-line-ending
+        args: [--fix=lf]
+      # An atlas is ~1 MB; anything much bigger is a mistake (a video, a
+      # double resolution atlas of a long clip...)
+      - id: check-added-large-files
+        args: [--maxkb=4096]
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.16.10
+    hooks:
+      - id: ruff-check
+        args: [--fix]
+        files: ^(scripts|tests)/.*\.py$
+      - id: ruff-format
+        files: ^(scripts|tests)/.*\.py$
+
+  - repo: local
+    hooks:
+      - id: validate-catalog
+        name: Check the species (validate.py)
+        entry: python scripts/validate.py
+        language: python
+        additional_dependencies: *deps
+        pass_filenames: false
+        always_run: true
+
+      - id: pytest
+        name: pytest (100% coverage)
+        entry: >-
+          pytest -q --cov=scripts --cov-report=term-missing
+          --cov-report=xml:reports/coverage.xml --cov-fail-under=100
+        language: python
+        additional_dependencies: *deps
+        pass_filenames: false
+        always_run: true

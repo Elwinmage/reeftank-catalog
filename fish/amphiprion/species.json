@@ -29,5 +29,6 @@
     "1x": "amphiprion.webp"
   },
   "facing": "right",
-  "length_frac": 0.9231
+  "length_frac": 0.9231,
+  "thumbnail": "thumb.webp"
 }

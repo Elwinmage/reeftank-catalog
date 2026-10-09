@@ -3,6 +3,7 @@ __pycache__/
 .ruff_cache/
 .coverage
 dist/
+reports/
 prev/
 # Source clips stay on the author's computer
 clips/

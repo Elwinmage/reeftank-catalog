@@ -4,7 +4,7 @@
     240,
     104
   ],
-  "columns": 10,
+  "columns": 8,
   "clips": {
     "swim": {
       "from": 0,
@@ -14,13 +14,13 @@
     },
     "idle": {
       "from": 48,
-      "to": 168,
-      "fps": 12,
+      "to": 108,
+      "fps": 6,
       "loop": true
     },
     "turn": {
-      "from": 169,
-      "to": 201,
+      "from": 109,
+      "to": 141,
       "fps": 24,
       "loop": false
     }
@@ -29,5 +29,6 @@
     "1x": "pseudanthias.webp"
   },
   "facing": "right",
-  "length_frac": 0.8
+  "length_frac": 0.8,
+  "thumbnail": "thumb.webp"
 }

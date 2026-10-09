@@ -29,5 +29,6 @@
     "1x": "synchiropus_splendidus.webp"
   },
   "facing": "right",
-  "length_frac": 0.8889
+  "length_frac": 0.8889,
+  "thumbnail": "thumb.webp"
 }

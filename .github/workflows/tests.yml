@@ -22,4 +22,4 @@ jobs:
       - name: Check the catalog
         run: python scripts/validate.py
       - name: Tests
-        run: pytest --cov=scripts --cov-report=term-missing
+        run: pytest --cov=scripts --cov-report=term-missing --cov-fail-under=100

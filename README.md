@@ -327,7 +327,19 @@ Read by the integration (`custom_components/reeftank/pack.py`):
 
 ```bash
 pip install -r requirements.test.txt
-pytest --cov=scripts
-ruff check . && ruff format --check .
-python scripts/validate.py
+pre-commit install          # checks before every commit
+pre-commit run --all-files  # the same, on demand
 ```
+
+Before each commit, pre-commit:
+
+- refuses video files (source clips stay on your computer) and files over
+  4 MB;
+- checks JSON and YAML, line endings and trailing spaces;
+- lints and formats the scripts (ruff);
+- checks every species (`scripts/validate.py`);
+- runs the tests, with 100 % coverage of the scripts.
+
+Its hooks install their own environment (Pillow, numpy, scipy): no conflict
+with the Python packages of the system. The same checks run on GitHub for
+every push.

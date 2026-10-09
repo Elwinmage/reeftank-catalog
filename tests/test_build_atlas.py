@@ -591,3 +591,53 @@ def test_palette_fallbacks() -> None:
 def test_thumbnail_of_empty_frame() -> None:
     thumb = build_atlas.thumbnail(Image.new("RGBA", (30, 10)))
     assert thumb.size == build_atlas.THUMB_SIZE
+
+
+# ---------------------------------------------------------------------------
+# Edge cases
+# ---------------------------------------------------------------------------
+
+
+def test_video_without_ffmpeg(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    video = tmp_path / "clip.mp4"
+    video.write_bytes(b"not a picture")
+    monkeypatch.setattr(build_atlas.shutil, "which", lambda name: None)
+    with pytest.raises(SystemExit, match="install ffmpeg"):
+        build_atlas.read_frames(video)
+
+
+def test_blank_frames() -> None:
+    blank = Image.new("RGBA", (20, 10))
+    clip = build_atlas.Clip("swim", [blank, fish_frame(40, 20, 20)], 24, True)
+    place = build_atlas.Placement(20.0, 10.0, 1.0)
+    width, height = build_atlas.frame_size([clip], [place])
+    assert width % 4 == 0 and height % 4 == 0
+    # a fully transparent clip keeps its size when fitted
+    fitted = build_atlas.fit([blank, blank], (10, 5))
+    assert fitted[0].size == (10, 5)
+    assert build_atlas.common_box([blank]) == (0, 0, 20, 10)
+
+
+def test_still_and_short_clips() -> None:
+    still = [Image.new("RGBA", (16, 16), (40, 40, 40, 255))] * 30
+    assert build_atlas.find_loops(still, min_len=24)["loops"] == []
+    short = build_atlas.find_loops(_wave(8, 8), min_len=2, max_len=6)
+    assert short["frames"] == 8
+
+
+def test_coral_double_resolution_and_recipe_frame(tmp_path: Path) -> None:
+    frames = tmp_path / "day"
+    frames.mkdir()
+    Image.new("RGBA", (16, 8), (0, 0, 255, 255)).save(frames / "000.png")
+    recipe = tmp_path / "coral.json"
+    recipe.write_text(
+        json.dumps({"frame": [16, 8], "clips": {"day": {"source": "day"}}}),
+        encoding="utf-8",
+    )
+    out = tmp_path / "out"
+    args = ["coral", "c", "--recipe", str(recipe), "--out", str(out), "--hd"]
+    assert build_atlas.main(args) == 0
+    desc = json.loads((out / "c" / "species.json").read_text(encoding="utf-8"))
+    assert desc["frame"] == [16, 8]
+    assert desc["atlas"]["shade_2x"] == "c.shade@2x.webp"
+    assert (out / "c" / "c.mask@2x.png").is_file()
