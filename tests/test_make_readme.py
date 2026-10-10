@@ -139,3 +139,23 @@ def test_english_readme_needs_its_markers(tmp_path: Path) -> None:
     )
     with pytest.raises(SystemExit, match="no generated block"):
         make_readme.render(tmp_path)
+
+
+def test_translations_keep_the_ecosystem_block(tmp_path: Path) -> None:
+    root = catalog(tmp_path)
+    assert make_readme.main(["--root", str(root)]) == 0
+    french = root / "README.fr.md"
+    text = french.read_text(encoding="utf-8")
+    # written with empty markers, after the generated block
+    assert text.endswith(
+        f"{make_readme.END}\n\n{make_readme.ECO_BEGIN}\n{make_readme.ECO_END}\n"
+    )
+    assert "> Fait partie de l'[**écosystème ReefTech**]" in text
+    # filled by gen_ecosystem.py: kept as it is
+    filled = f"{make_readme.ECO_BEGIN}\n\n## Projets liés\n\n{make_readme.ECO_END}"
+    french.write_text(
+        text.replace(f"{make_readme.ECO_BEGIN}\n{make_readme.ECO_END}", filled),
+        encoding="utf-8",
+    )
+    assert make_readme.main(["--root", str(root), "--check"]) == 0
+    assert filled in french.read_text(encoding="utf-8")

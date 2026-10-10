@@ -4,7 +4,8 @@
 `README.md` (English) holds a generated block between two markers, followed
 by the documentation written by hand (adding a species, release format...).
 `README.<lang>.md` is generated entirely, for every other language of the
-catalog: the same block, and a link to the English documentation.
+catalog: the same block, a link to the English documentation, and the
+"Related projects" block of the ReefTech ecosystem (kept as it is).
 
 The block holds a language bar, a short introduction, and a table of the
 fish and of the corals: thumbnail, common name, scientific name, size, and
@@ -37,10 +38,16 @@ FLAG_URL = "https://flagicons.lipis.dev/flags/4x3/{}.svg"
 FLAGS = {"en": "gb"}
 REPO_CARD = "https://github.com/Elwinmage/ha-reef-card"
 REPO_INTEGRATION = "https://github.com/Elwinmage/ha-reeftank-component"
+SITE = "https://elwinmage.github.io/reeftank/"
+#: Markers of the "Related projects" block, written by
+#: reeftank/scripts/gen_ecosystem.py (another repository): kept as they are
+ECO_BEGIN = "<!-- ecosystem:start -->"
+ECO_END = "<!-- ecosystem:end -->"
 
 #: Texts of the generated part, by language
 TEXTS: dict[str, dict[str, Any]] = {
     "en": {
+        "ecosystem": f"Part of the [**ReefTech Project Ecosystem**]({SITE})",
         "language": "English",
         "intro": (
             "Fish and coral species for the aquarium view of "
@@ -78,6 +85,7 @@ TEXTS: dict[str, dict[str, Any]] = {
         ),
     },
     "fr": {
+        "ecosystem": f"Fait partie de l'[**écosystème ReefTech**]({SITE})",
         "language": "Français",
         "intro": (
             "Espèces de poissons et de coraux pour la vue aquarium de "
@@ -118,6 +126,7 @@ TEXTS: dict[str, dict[str, Any]] = {
         ),
     },
     "de": {
+        "ecosystem": f"Teil des [**ReefTech-Projekt-Ökosystems**]({SITE})",
         "language": "Deutsch",
         "intro": (
             "Fisch- und Korallenarten für die Aquariumansicht von "
@@ -158,6 +167,7 @@ TEXTS: dict[str, dict[str, Any]] = {
         ),
     },
     "es": {
+        "ecosystem": f"Parte del [**ecosistema de proyectos ReefTech**]({SITE})",
         "language": "Español",
         "intro": (
             "Especies de peces y corales para la vista de acuario de "
@@ -198,6 +208,7 @@ TEXTS: dict[str, dict[str, Any]] = {
         ),
     },
     "it": {
+        "ecosystem": f"Parte dell'[**ecosistema di progetti ReefTech**]({SITE})",
         "language": "Italiano",
         "intro": (
             "Specie di pesci e coralli per la vista acquario di "
@@ -238,6 +249,7 @@ TEXTS: dict[str, dict[str, Any]] = {
         ),
     },
     "nl": {
+        "ecosystem": f"Onderdeel van het [**ReefTech-projectecosysteem**]({SITE})",
         "language": "Nederlands",
         "intro": (
             "Vissen- en koraalsoorten voor de aquariumweergave van "
@@ -278,6 +290,7 @@ TEXTS: dict[str, dict[str, Any]] = {
         ),
     },
     "pl": {
+        "ecosystem": f"Część [**ekosystemu projektów ReefTech**]({SITE})",
         "language": "Polski",
         "intro": (
             "Gatunki ryb i koralowców do widoku akwarium "
@@ -318,6 +331,7 @@ TEXTS: dict[str, dict[str, Any]] = {
         ),
     },
     "pt": {
+        "ecosystem": f"Parte do [**ecossistema de projetos ReefTech**]({SITE})",
         "language": "Português",
         "intro": (
             "Espécies de peixes e corais para a vista de aquário do "
@@ -472,7 +486,7 @@ def language_bar(lang: str) -> str:
 def block(species: dict[str, list[dict[str, Any]]], lang: str) -> str:
     """Generated part of a README, markers included."""
     texts = TEXTS[lang]
-    parts = [BEGIN, language_bar(lang), texts["intro"]]
+    parts = [BEGIN, f"> {texts['ecosystem']}", language_bar(lang), texts["intro"]]
     for kind, title in (("fish", texts["fish"]), ("corals", texts["corals"])):
         entries = species.get(kind, [])
         parts.append(f"## {title} ({len(entries)})")
@@ -499,10 +513,31 @@ def render(root: Path) -> dict[str, str]:
     }
     for lang in LANGUAGES:
         if lang != "en":
-            files[readme_name(lang)] = (
-                "# reeftank-catalog\n\n" + block(species, lang) + "\n"
+            name = readme_name(lang)
+            existing = root / name
+            files[name] = (
+                "# reeftank-catalog\n\n"
+                + block(species, lang)
+                + "\n\n"
+                + ecosystem(
+                    existing.read_text(encoding="utf-8") if existing.is_file() else ""
+                )
+                + "\n"
             )
     return files
+
+
+def ecosystem(current: str) -> str:
+    """The "Related projects" block of a README, or its empty markers.
+
+    The block is filled by gen_ecosystem.py of the reeftank repository, which
+    CI does not have: a translated README, written entirely here, carries it
+    over rather than dropping it.
+    """
+    start, end = current.find(ECO_BEGIN), current.find(ECO_END)
+    if start < 0 or end < start:
+        return f"{ECO_BEGIN}\n{ECO_END}"
+    return current[start : end + len(ECO_END)]
 
 
 def outdated(root: Path) -> dict[str, str]:
