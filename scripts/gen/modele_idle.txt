@@ -1,0 +1,42 @@
+Side view of a single [SPECIE] hovering in place, almost motionless,
+for a looping game sprite (idle animation).
+
+Subject
+- Exactly one fish, adult, natural colors and patterns, anatomically accurate
+  fins and tail.
+- Strict lateral (profile) view, head pointing to the RIGHT, body parallel to
+  the image plane. No rotation, no turning toward the camera.
+- Idle hovering: the fish stays still in the water, holding its position.
+  The pectoral fins scull gently and continuously, the dorsal and anal fins
+  ripple slightly, the tail barely moves (small, slow corrections only).
+  Subtle breathing: gill covers and mouth open and close slowly.
+- No forward swimming motion, no strong tail beat, no drifting.
+  The body stays in the same place, same size, same height, centered.
+- The whole fish (including the tail and every fin) stays inside the frame,
+  with a margin of at least 15% on every side.
+
+Background and lighting
+- Perfectly flat, uniform magenta (#FF00FF) background, filling the whole
+  frame. No gradient, no texture, no vignette.
+- No water, no bubbles, no particles, no plants, no rocks, no sand.
+- Neutral white studio lighting, soft and even, as for a product photo.
+  True colors: no blue or green color cast, no underwater haze,
+  no caustics, no light rays.
+- No shadow and no reflection on the background. The fish casts nothing.
+- No magenta (#FF00FF) tint on the fish edges.
+
+Camera
+- Fixed camera: no zoom, no pan, no shake, no depth of field change.
+- Orthographic-like framing, the fish in sharp focus from head to tail.
+- No motion blur.
+
+Animation
+- Calm, slow, continuous motion, always moving forward in time: never played
+  in reverse, no back-and-forth playback.
+- The clip must loop seamlessly: the last frame matches the first one.
+- Duration: 3 to 4 seconds, two or three slow fin-sculling cycles.
+
+Output
+- Highest available resolution, landscape framing with the fish filling about
+  70% of the width.
+- No text, no watermark, no logo, no frame border.
