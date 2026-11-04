@@ -1,0 +1,57 @@
+{
+  "kind": "coral",
+  "frame": [
+    256,
+    160
+  ],
+  "columns": 9,
+  "clips": {
+    "day": {
+      "from": 0,
+      "to": 59,
+      "fps": 12,
+      "loop": true,
+      "pingpong": true
+    },
+    "close": {
+      "from": 60,
+      "to": 110,
+      "fps": 12,
+      "loop": false
+    }
+  },
+  "atlas": {
+    "shade": "euphyllia_glabrescens.shade.webp",
+    "mask": "euphyllia_glabrescens.mask.png"
+  },
+  "thumbnail": "thumb.webp",
+  "names": {
+    "en": "Torch coral",
+    "fr": "Euphyllie torche",
+    "de": "Fackelkoralle",
+    "es": "Coral antorcha",
+    "it": "Corallo torcia",
+    "nl": "Fakkelkoraal",
+    "pl": "Koral pochodnia",
+    "pt": "Coral-tocha"
+  },
+  "scientific": "Euphyllia glabrescens",
+  "size_cm": [
+    10,
+    30
+  ],
+  "palette": [
+    {
+      "default": "#e1ccbf",
+      "fluo": false
+    },
+    {
+      "default": "#b9edb4",
+      "fluo": true
+    },
+    {
+      "default": "#dee2ec",
+      "fluo": false
+    }
+  ]
+}
