@@ -1,0 +1,23 @@
+Generate a realistic image.
+Side view of a single fish: [SPECIE]
+
+Subject
+- Exactly one fish, adult, natural colors and patterns, anatomically accurate
+  fins and tail.
+- Strict lateral (profile) view, head pointing to the RIGHT, body parallel to
+  the image plane. No rotation, no turning toward the camera.
+
+Background and lighting
+- Perfectly flat, uniform magenta (#FF00FF) background, filling the whole frame.
+  No gradient, no texture, no vignette.
+- No water, no bubbles, no particles, no plants, no rocks, no sand.
+- Neutral white studio lighting, soft and even, as for a product photo.
+  True colors: no blue or green color cast, no underwater haze,
+  no caustics, no light rays.
+- No shadow and no reflection on the background. The fish casts nothing.
+- No  magenta (#FF00FF) tint on the fish edges.
+
+Output
+- Highest available resolution, landscape framing with the fish filling about
+  70% of the width.
+- No text, no watermark, no logo, no frame border.
