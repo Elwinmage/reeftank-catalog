@@ -34,6 +34,8 @@ END = "<!-- species:end -->"
 THUMB_WIDTH = 72
 #: Flag pictures of the language bar, by country code
 FLAG_URL = "https://flagicons.lipis.dev/flags/4x3/{}.svg"
+#: Same banner as the READMEs of the other repositories
+ICON = '<p align="center">\n  <img src="icon.png"  width="50%"/>\n</p>'
 #: Country of a language, when its code differs
 FLAGS = {"en": "gb"}
 REPO_CARD = "https://github.com/Elwinmage/ha-reef-card"
@@ -486,7 +488,13 @@ def language_bar(lang: str) -> str:
 def block(species: dict[str, list[dict[str, Any]]], lang: str) -> str:
     """Generated part of a README, markers included."""
     texts = TEXTS[lang]
-    parts = [BEGIN, f"> {texts['ecosystem']}", language_bar(lang), texts["intro"]]
+    parts = [
+        BEGIN,
+        f"> {texts['ecosystem']}",
+        ICON,
+        language_bar(lang),
+        texts["intro"],
+    ]
     for kind, title in (("fish", texts["fish"]), ("corals", texts["corals"])):
         entries = species.get(kind, [])
         parts.append(f"## {title} ({len(entries)})")
