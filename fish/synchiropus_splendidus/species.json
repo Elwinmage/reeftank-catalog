@@ -63,5 +63,8 @@
   },
   "night": "hide",
   "feeding_response": 0.1,
-  "scientific": "Synchiropus splendidus"
+  "scientific": "Synchiropus splendidus",
+  "water_types": [
+    "marine"
+  ]
 }

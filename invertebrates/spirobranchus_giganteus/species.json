@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Christmas tree worm",
+    "fr": "Ver sapin de Noël",
+    "de": "Christmas tree worm",
+    "es": "Christmas tree worm",
+    "it": "Christmas tree worm",
+    "nl": "Christmas tree worm",
+    "pl": "Christmas tree worm",
+    "pt": "Christmas tree worm"
+  },
+  "scientific": "Spirobranchus giganteus",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    3,
+    5
+  ],
+  "role": [
+    "filter_feeder"
+  ],
+  "movement": "sessile"
+}

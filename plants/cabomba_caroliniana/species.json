@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Carolina fanwort",
+    "fr": "Cabomba",
+    "de": "Carolina fanwort",
+    "es": "Carolina fanwort",
+    "it": "Carolina fanwort",
+    "nl": "Carolina fanwort",
+    "pl": "Carolina fanwort",
+    "pt": "Carolina fanwort"
+  },
+  "scientific": "Cabomba caroliniana",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    30,
+    60
+  ],
+  "zone": "background"
+}

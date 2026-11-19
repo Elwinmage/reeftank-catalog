@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Ambulia",
+    "fr": "Limnophila",
+    "de": "Ambulia",
+    "es": "Ambulia",
+    "it": "Ambulia",
+    "nl": "Ambulia",
+    "pl": "Ambulia",
+    "pt": "Ambulia"
+  },
+  "scientific": "Limnophila sessiliflora",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    20,
+    40
+  ],
+  "zone": "background"
+}

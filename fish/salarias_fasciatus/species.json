@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Lawnmower blenny",
+    "fr": "Blennie tondeuse",
+    "de": "Lawnmower blenny",
+    "es": "Lawnmower blenny",
+    "it": "Lawnmower blenny",
+    "nl": "Lawnmower blenny",
+    "pl": "Lawnmower blenny",
+    "pt": "Lawnmower blenny"
+  },
+  "scientific": "Salarias fasciatus",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    12,
+    14
+  ],
+  "behavior": {
+    "profile": "benthic",
+    "band": [
+      0.75,
+      1
+    ],
+    "depth": [
+      0.1,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.5,
+      5.6
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.7
+}

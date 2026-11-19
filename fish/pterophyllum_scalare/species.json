@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Angelfish",
+    "fr": "Scalaire",
+    "de": "Angelfish",
+    "es": "Angelfish",
+    "it": "Angelfish",
+    "nl": "Angelfish",
+    "pl": "Angelfish",
+    "pt": "Angelfish"
+  },
+  "scientific": "Pterophyllum scalare",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    12,
+    15
+  ],
+  "behavior": {
+    "profile": "cruiser",
+    "band": [
+      0.15,
+      0.85
+    ],
+    "depth": [
+      0.2,
+      0.9
+    ],
+    "speed_cm_s": [
+      2.2,
+      7.5
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.9
+}

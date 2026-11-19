@@ -89,7 +89,11 @@ def test_import_merges_descriptions(tmp_path: Path) -> None:
     fox["behavior"].update(full["behavior"])
     assert fox["scientific"] is None  # shown, to fill
     fox.update(
-        scientific="Vulpes sp.", size_cm=[3, 4], night="hover", feeding_response=0.2
+        scientific="Vulpes sp.",
+        water_types=["marine"],
+        size_cm=[3, 4],
+        night="hover",
+        feeding_response=0.2,
     )
     fox["clips"] = {"swim": "not imported"}  # generated: ignored
     (edited / "fish/fox/meta.json").write_text(json.dumps(fox))
@@ -98,8 +102,8 @@ def test_import_merges_descriptions(tmp_path: Path) -> None:
 
     report = species_meta.import_meta(root, edited, dry_run=True)
     assert (
-        "fish/fox: behavior, feeding_response, names, night, scientific, size_cm"
-        in report
+        "fish/fox: behavior, feeding_response, names, night, scientific, size_cm, "
+        "water_types" in report
     )
     assert _read(root, "fish/fox")["names"] == {"en": "Fox"}  # dry run
 
@@ -124,7 +128,7 @@ def test_import_from_archive(tmp_path: Path) -> None:
         for name, text in (
             ("./fish/fox/meta.json", '{"names": {"en": "Fox", "de": "Fuchs"}}'),
             ("fish/fox/notes.txt", "ignored"),
-            ("plants/x/meta.json", "{}"),
+            ("shells/x/meta.json", "{}"),
         ):
             blob = text.encode()
             info = tarfile.TarInfo(name)
@@ -163,6 +167,7 @@ def test_description_checks(tmp_path: Path) -> None:
     good = {
         "names": {lang: "Fox" for lang in validate.LANGUAGES},
         "scientific": "Siganus vulpinus",
+        "water_types": ["marine"],
         "size_cm": [15, 22],
         "behavior": {
             "profile": "shoal",
@@ -179,6 +184,7 @@ def test_description_checks(tmp_path: Path) -> None:
     bad = {
         "names": {"en": ""},
         "scientific": "siganus",
+        "water_types": [],
         "size_cm": [5],
         "behavior": {
             "profile": "swimmer",
@@ -191,7 +197,7 @@ def test_description_checks(tmp_path: Path) -> None:
         "feeding_response": 2,
     }
     errors = validate.check_description(bad, "fish")
-    assert len(errors) == 11
+    assert len(errors) == 12
     assert "scientific must be" in errors[2]
     assert errors[0].startswith("to describe: behavior.depth, names.en, names.fr")
     assert "behavior must be an object" in validate.check_description(
@@ -200,14 +206,15 @@ def test_description_checks(tmp_path: Path) -> None:
     coral_ok = {
         "names": good["names"],
         "scientific": "Euphyllia glabrescens",
+        "water_types": ["marine"],
         "size_cm": [5, 20],
         "palette": [{"default": "#ff0000", "fluo": True}, {"default": "#00ff00"}],
     }
     assert validate.check_description(coral_ok, "corals") == []
     assert validate.missing_fields({}, "corals")[:3] == [
         "scientific",
+        "water_types",
         "size_cm",
-        "palette",
     ]
     for name in ("Amphiprion sp.", "Amphiprion ocellaris", "Acropora millepora x"):
         assert validate.SCIENTIFIC_RE.match(name)

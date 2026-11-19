@@ -1,0 +1,23 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Red mangrove",
+    "fr": "Palétuvier rouge",
+    "de": "Red mangrove",
+    "es": "Red mangrove",
+    "it": "Red mangrove",
+    "nl": "Red mangrove",
+    "pl": "Red mangrove",
+    "pt": "Red mangrove"
+  },
+  "scientific": "Rhizophora mangle",
+  "water_types": [
+    "brackish",
+    "marine"
+  ],
+  "size_cm": [
+    30,
+    100
+  ],
+  "zone": "midground"
+}

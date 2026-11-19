@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Scopas tang",
+    "fr": "Chirurgien brun",
+    "de": "Scopas tang",
+    "es": "Scopas tang",
+    "it": "Scopas tang",
+    "nl": "Scopas tang",
+    "pl": "Scopas tang",
+    "pt": "Scopas tang"
+  },
+  "scientific": "Zebrasoma scopas",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    15,
+    20
+  ],
+  "behavior": {
+    "profile": "cruiser",
+    "band": [
+      0.15,
+      0.85
+    ],
+    "depth": [
+      0.2,
+      0.9
+    ],
+    "speed_cm_s": [
+      3,
+      10
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.9
+}

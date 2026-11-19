@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Staurogyne",
+    "fr": "Staurogyne",
+    "de": "Staurogyne",
+    "es": "Staurogyne",
+    "it": "Staurogyne",
+    "nl": "Staurogyne",
+    "pl": "Staurogyne",
+    "pt": "Staurogyne"
+  },
+  "scientific": "Staurogyne repens",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    5,
+    10
+  ],
+  "zone": "foreground"
+}

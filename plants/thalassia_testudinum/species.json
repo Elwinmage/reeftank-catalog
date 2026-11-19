@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Turtle grass",
+    "fr": "Herbier de tortue",
+    "de": "Turtle grass",
+    "es": "Turtle grass",
+    "it": "Turtle grass",
+    "nl": "Turtle grass",
+    "pl": "Turtle grass",
+    "pt": "Turtle grass"
+  },
+  "scientific": "Thalassia testudinum",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    10,
+    30
+  ],
+  "zone": "foreground"
+}

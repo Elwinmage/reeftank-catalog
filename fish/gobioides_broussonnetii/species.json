@@ -1,0 +1,41 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Violet goby",
+    "fr": "Gobie violet",
+    "de": "Violet goby",
+    "es": "Violet goby",
+    "it": "Violet goby",
+    "nl": "Violet goby",
+    "pl": "Violet goby",
+    "pt": "Violet goby"
+  },
+  "scientific": "Gobioides broussonnetii",
+  "water_types": [
+    "brackish"
+  ],
+  "size_cm": [
+    30,
+    50
+  ],
+  "behavior": {
+    "profile": "sand",
+    "band": [
+      0.85,
+      1
+    ],
+    "depth": [
+      0.1,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.5,
+      10
+    ],
+    "turn_rate": 2.5,
+    "burrow": true,
+    "territory_cm": 15
+  },
+  "night": "rest_bottom",
+  "feeding_response": 0.6
+}

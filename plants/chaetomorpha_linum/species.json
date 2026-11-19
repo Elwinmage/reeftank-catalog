@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Chaeto",
+    "fr": "Chaetomorpha",
+    "de": "Chaeto",
+    "es": "Chaeto",
+    "it": "Chaeto",
+    "nl": "Chaeto",
+    "pl": "Chaeto",
+    "pt": "Chaeto"
+  },
+  "scientific": "Chaetomorpha linum",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    5,
+    30
+  ],
+  "zone": "foreground"
+}

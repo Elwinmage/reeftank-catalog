@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Cherry shrimp",
+    "fr": "Crevette cerise",
+    "de": "Cherry shrimp",
+    "es": "Cherry shrimp",
+    "it": "Cherry shrimp",
+    "nl": "Cherry shrimp",
+    "pl": "Cherry shrimp",
+    "pt": "Cherry shrimp"
+  },
+  "scientific": "Neocaridina davidi",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    2,
+    3.5
+  ],
+  "role": [
+    "detritivore"
+  ],
+  "movement": "ground"
+}

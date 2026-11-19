@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Caulerpa",
+    "fr": "Caulerpa",
+    "de": "Caulerpa",
+    "es": "Caulerpa",
+    "it": "Caulerpa",
+    "nl": "Caulerpa",
+    "pl": "Caulerpa",
+    "pt": "Caulerpa"
+  },
+  "scientific": "Caulerpa prolifera",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    5,
+    20
+  ],
+  "zone": "foreground"
+}

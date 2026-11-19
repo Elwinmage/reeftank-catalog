@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Scarlet cleaner shrimp",
+    "fr": "Crevette nettoyeuse",
+    "de": "Scarlet cleaner shrimp",
+    "es": "Scarlet cleaner shrimp",
+    "it": "Scarlet cleaner shrimp",
+    "nl": "Scarlet cleaner shrimp",
+    "pl": "Scarlet cleaner shrimp",
+    "pt": "Scarlet cleaner shrimp"
+  },
+  "scientific": "Lysmata amboinensis",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    5,
+    6
+  ],
+  "role": [
+    "cleaner"
+  ],
+  "movement": "decor"
+}

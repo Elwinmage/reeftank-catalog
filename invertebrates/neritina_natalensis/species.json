@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Zebra nerite",
+    "fr": "Néritine zébrée",
+    "de": "Zebra nerite",
+    "es": "Zebra nerite",
+    "it": "Zebra nerite",
+    "nl": "Zebra nerite",
+    "pl": "Zebra nerite",
+    "pt": "Zebra nerite"
+  },
+  "scientific": "Neritina natalensis",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    2,
+    3
+  ],
+  "role": [
+    "algae_eater"
+  ],
+  "movement": "glass"
+}

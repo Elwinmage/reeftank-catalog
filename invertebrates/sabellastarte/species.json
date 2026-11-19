@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Feather duster worm",
+    "fr": "Ver plumeau",
+    "de": "Feather duster worm",
+    "es": "Feather duster worm",
+    "it": "Feather duster worm",
+    "nl": "Feather duster worm",
+    "pl": "Feather duster worm",
+    "pt": "Feather duster worm"
+  },
+  "scientific": "Sabellastarte sp.",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    5,
+    10
+  ],
+  "role": [
+    "filter_feeder"
+  ],
+  "movement": "sessile"
+}

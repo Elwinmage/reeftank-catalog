@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Bamboo shrimp",
+    "fr": "Crevette bambou",
+    "de": "Bamboo shrimp",
+    "es": "Bamboo shrimp",
+    "it": "Bamboo shrimp",
+    "nl": "Bamboo shrimp",
+    "pl": "Bamboo shrimp",
+    "pt": "Bamboo shrimp"
+  },
+  "scientific": "Atyopsis moluccensis",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    6,
+    8
+  ],
+  "role": [
+    "filter_feeder"
+  ],
+  "movement": "decor"
+}

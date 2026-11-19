@@ -1,0 +1,40 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Orchid dottyback",
+    "fr": "Pseudochromis orchidée",
+    "de": "Orchid dottyback",
+    "es": "Orchid dottyback",
+    "it": "Orchid dottyback",
+    "nl": "Orchid dottyback",
+    "pl": "Orchid dottyback",
+    "pt": "Orchid dottyback"
+  },
+  "scientific": "Pseudochromis fridmani",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    6,
+    7
+  ],
+  "behavior": {
+    "profile": "hover",
+    "band": [
+      0.3,
+      0.8
+    ],
+    "depth": [
+      0.2,
+      0.8
+    ],
+    "speed_cm_s": [
+      1,
+      3
+    ],
+    "turn_rate": 3.0,
+    "territory_cm": 20
+  },
+  "night": "hover",
+  "feeding_response": 1.0
+}

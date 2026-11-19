@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Nassarius snail",
+    "fr": "Nassarius",
+    "de": "Nassarius snail",
+    "es": "Nassarius snail",
+    "it": "Nassarius snail",
+    "nl": "Nassarius snail",
+    "pl": "Nassarius snail",
+    "pt": "Nassarius snail"
+  },
+  "scientific": "Nassarius sp.",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    2,
+    4
+  ],
+  "role": [
+    "scavenger"
+  ],
+  "movement": "ground"
+}

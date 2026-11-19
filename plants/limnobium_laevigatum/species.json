@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Amazon frogbit",
+    "fr": "Limnobium",
+    "de": "Amazon frogbit",
+    "es": "Amazon frogbit",
+    "it": "Amazon frogbit",
+    "nl": "Amazon frogbit",
+    "pl": "Amazon frogbit",
+    "pt": "Amazon frogbit"
+  },
+  "scientific": "Limnobium laevigatum",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    5,
+    10
+  ],
+  "zone": "floating"
+}

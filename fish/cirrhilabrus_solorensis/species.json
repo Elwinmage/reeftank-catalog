@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Solor fairy wrasse",
+    "fr": "Labre de Solor",
+    "de": "Solor fairy wrasse",
+    "es": "Solor fairy wrasse",
+    "it": "Solor fairy wrasse",
+    "nl": "Solor fairy wrasse",
+    "pl": "Solor fairy wrasse",
+    "pt": "Solor fairy wrasse"
+  },
+  "scientific": "Cirrhilabrus solorensis",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    10,
+    12
+  ],
+  "behavior": {
+    "profile": "cruiser",
+    "band": [
+      0.15,
+      0.85
+    ],
+    "depth": [
+      0.2,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.8,
+      6
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.9
+}

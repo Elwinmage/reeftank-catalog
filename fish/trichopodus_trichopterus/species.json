@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Three-spot gourami",
+    "fr": "Gourami bleu",
+    "de": "Three-spot gourami",
+    "es": "Three-spot gourami",
+    "it": "Three-spot gourami",
+    "nl": "Three-spot gourami",
+    "pl": "Three-spot gourami",
+    "pt": "Three-spot gourami"
+  },
+  "scientific": "Trichopodus trichopterus",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    10,
+    15
+  ],
+  "behavior": {
+    "profile": "cruiser",
+    "band": [
+      0.15,
+      0.85
+    ],
+    "depth": [
+      0.2,
+      0.9
+    ],
+    "speed_cm_s": [
+      2.2,
+      7.5
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.9
+}

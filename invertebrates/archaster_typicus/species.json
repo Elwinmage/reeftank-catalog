@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Sand-sifting starfish",
+    "fr": "Étoile de sable",
+    "de": "Sand-sifting starfish",
+    "es": "Sand-sifting starfish",
+    "it": "Sand-sifting starfish",
+    "nl": "Sand-sifting starfish",
+    "pl": "Sand-sifting starfish",
+    "pt": "Sand-sifting starfish"
+  },
+  "scientific": "Archaster typicus",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    6,
+    10
+  ],
+  "role": [
+    "detritivore"
+  ],
+  "movement": "ground"
+}

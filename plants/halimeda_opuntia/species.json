@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Halimeda",
+    "fr": "Halimeda",
+    "de": "Halimeda",
+    "es": "Halimeda",
+    "it": "Halimeda",
+    "nl": "Halimeda",
+    "pl": "Halimeda",
+    "pt": "Halimeda"
+  },
+  "scientific": "Halimeda opuntia",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    5,
+    15
+  ],
+  "zone": "foreground"
+}

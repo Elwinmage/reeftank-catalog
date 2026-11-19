@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Sailfin tang",
+    "fr": "Chirurgien à voile",
+    "de": "Sailfin tang",
+    "es": "Sailfin tang",
+    "it": "Sailfin tang",
+    "nl": "Sailfin tang",
+    "pl": "Sailfin tang",
+    "pt": "Sailfin tang"
+  },
+  "scientific": "Zebrasoma veliferum",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    25,
+    40
+  ],
+  "behavior": {
+    "profile": "cruiser",
+    "band": [
+      0.15,
+      0.85
+    ],
+    "depth": [
+      0.2,
+      0.9
+    ],
+    "speed_cm_s": [
+      6,
+      20
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.9
+}

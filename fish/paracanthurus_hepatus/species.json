@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Regal blue tang",
+    "fr": "Chirurgien bleu",
+    "de": "Regal blue tang",
+    "es": "Regal blue tang",
+    "it": "Regal blue tang",
+    "nl": "Regal blue tang",
+    "pl": "Regal blue tang",
+    "pt": "Regal blue tang"
+  },
+  "scientific": "Paracanthurus hepatus",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    20,
+    30
+  ],
+  "behavior": {
+    "profile": "cruiser",
+    "band": [
+      0.15,
+      0.85
+    ],
+    "depth": [
+      0.2,
+      0.9
+    ],
+    "speed_cm_s": [
+      4.5,
+      15
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.9
+}

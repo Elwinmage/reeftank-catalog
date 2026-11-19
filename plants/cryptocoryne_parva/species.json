@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Dwarf cryptocoryne",
+    "fr": "Cryptocoryne parva",
+    "de": "Dwarf cryptocoryne",
+    "es": "Dwarf cryptocoryne",
+    "it": "Dwarf cryptocoryne",
+    "nl": "Dwarf cryptocoryne",
+    "pl": "Dwarf cryptocoryne",
+    "pt": "Dwarf cryptocoryne"
+  },
+  "scientific": "Cryptocoryne parva",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    5,
+    8
+  ],
+  "zone": "foreground"
+}

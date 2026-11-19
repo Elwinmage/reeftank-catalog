@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Clown loach",
+    "fr": "Botia clown",
+    "de": "Clown loach",
+    "es": "Clown loach",
+    "it": "Clown loach",
+    "nl": "Clown loach",
+    "pl": "Clown loach",
+    "pt": "Clown loach"
+  },
+  "scientific": "Chromobotia macracanthus",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    15,
+    30
+  ],
+  "behavior": {
+    "profile": "benthic",
+    "band": [
+      0.75,
+      1
+    ],
+    "depth": [
+      0.1,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.5,
+      10
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.7
+}

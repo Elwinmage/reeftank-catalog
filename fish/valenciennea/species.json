@@ -65,5 +65,8 @@
   },
   "night": "rest_bottom",
   "feeding_response": 0.6,
-  "scientific": "Valenciennea sp."
+  "scientific": "Valenciennea sp.",
+  "water_types": [
+    "marine"
+  ]
 }

@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Bristlenose pleco",
+    "fr": "Ancistrus",
+    "de": "Bristlenose pleco",
+    "es": "Bristlenose pleco",
+    "it": "Bristlenose pleco",
+    "nl": "Bristlenose pleco",
+    "pl": "Bristlenose pleco",
+    "pt": "Bristlenose pleco"
+  },
+  "scientific": "Ancistrus sp.",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    10,
+    14
+  ],
+  "behavior": {
+    "profile": "benthic",
+    "band": [
+      0.75,
+      1
+    ],
+    "depth": [
+      0.1,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.5,
+      5.6
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.7
+}

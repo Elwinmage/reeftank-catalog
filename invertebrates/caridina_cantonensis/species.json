@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Crystal red shrimp",
+    "fr": "Crevette cristal rouge",
+    "de": "Crystal red shrimp",
+    "es": "Crystal red shrimp",
+    "it": "Crystal red shrimp",
+    "nl": "Crystal red shrimp",
+    "pl": "Crystal red shrimp",
+    "pt": "Crystal red shrimp"
+  },
+  "scientific": "Caridina cantonensis",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    2,
+    3
+  ],
+  "role": [
+    "detritivore"
+  ],
+  "movement": "ground"
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Anubias",
+    "fr": "Anubias",
+    "de": "Anubias",
+    "es": "Anubias",
+    "it": "Anubias",
+    "nl": "Anubias",
+    "pl": "Anubias",
+    "pt": "Anubias"
+  },
+  "scientific": "Anubias barteri",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    10,
+    25
+  ],
+  "zone": "epiphyte"
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Pixy hawkfish",
+    "fr": "Poisson-faucon pixie",
+    "de": "Pixy hawkfish",
+    "es": "Pixy hawkfish",
+    "it": "Pixy hawkfish",
+    "nl": "Pixy hawkfish",
+    "pl": "Pixy hawkfish",
+    "pt": "Pixy hawkfish"
+  },
+  "scientific": "Cirrhitichthys oxycephalus",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    8,
+    10
+  ],
+  "behavior": {
+    "profile": "benthic",
+    "band": [
+      0.75,
+      1
+    ],
+    "depth": [
+      0.1,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.5,
+      4
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.7
+}

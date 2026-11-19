@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Mystery snail",
+    "fr": "Ampullaire",
+    "de": "Mystery snail",
+    "es": "Mystery snail",
+    "it": "Mystery snail",
+    "nl": "Mystery snail",
+    "pl": "Mystery snail",
+    "pt": "Mystery snail"
+  },
+  "scientific": "Pomacea bridgesii",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    4,
+    5
+  ],
+  "role": [
+    "scavenger"
+  ],
+  "movement": "ground"
+}

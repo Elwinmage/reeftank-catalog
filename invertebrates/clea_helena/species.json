@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Assassin snail",
+    "fr": "Escargot assassin",
+    "de": "Assassin snail",
+    "es": "Assassin snail",
+    "it": "Assassin snail",
+    "nl": "Assassin snail",
+    "pl": "Assassin snail",
+    "pt": "Assassin snail"
+  },
+  "scientific": "Clea helena",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    2,
+    3
+  ],
+  "role": [
+    "predator"
+  ],
+  "movement": "ground"
+}

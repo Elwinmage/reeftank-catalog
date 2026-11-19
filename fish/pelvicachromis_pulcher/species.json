@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Kribensis",
+    "fr": "Kribensis",
+    "de": "Kribensis",
+    "es": "Kribensis",
+    "it": "Kribensis",
+    "nl": "Kribensis",
+    "pl": "Kribensis",
+    "pt": "Kribensis"
+  },
+  "scientific": "Pelvicachromis pulcher",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    8,
+    10
+  ],
+  "behavior": {
+    "profile": "benthic",
+    "band": [
+      0.75,
+      1
+    ],
+    "depth": [
+      0.1,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.5,
+      4
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.7
+}

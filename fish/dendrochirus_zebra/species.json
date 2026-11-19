@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Zebra lionfish",
+    "fr": "Poisson-lion zèbre",
+    "de": "Zebra lionfish",
+    "es": "Zebra lionfish",
+    "it": "Zebra lionfish",
+    "nl": "Zebra lionfish",
+    "pl": "Zebra lionfish",
+    "pt": "Zebra lionfish"
+  },
+  "scientific": "Dendrochirus zebra",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    12,
+    18
+  ],
+  "behavior": {
+    "profile": "cruiser",
+    "band": [
+      0.15,
+      0.85
+    ],
+    "depth": [
+      0.2,
+      0.9
+    ],
+    "speed_cm_s": [
+      2.7,
+      9
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.9
+}

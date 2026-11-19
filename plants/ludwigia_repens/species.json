@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Creeping primrose willow",
+    "fr": "Ludwigia",
+    "de": "Creeping primrose willow",
+    "es": "Creeping primrose willow",
+    "it": "Creeping primrose willow",
+    "nl": "Creeping primrose willow",
+    "pl": "Creeping primrose willow",
+    "pt": "Creeping primrose willow"
+  },
+  "scientific": "Ludwigia repens",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    20,
+    40
+  ],
+  "zone": "midground"
+}

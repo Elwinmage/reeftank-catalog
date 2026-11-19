@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Spotted mandarin",
+    "fr": "Dragonnet psychédélique",
+    "de": "Spotted mandarin",
+    "es": "Spotted mandarin",
+    "it": "Spotted mandarin",
+    "nl": "Spotted mandarin",
+    "pl": "Spotted mandarin",
+    "pt": "Spotted mandarin"
+  },
+  "scientific": "Synchiropus picturatus",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    6,
+    8
+  ],
+  "behavior": {
+    "profile": "benthic",
+    "band": [
+      0.75,
+      1
+    ],
+    "depth": [
+      0.1,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.5,
+      3.2
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.7
+}

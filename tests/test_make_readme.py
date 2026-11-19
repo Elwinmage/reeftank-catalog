@@ -69,11 +69,13 @@ def test_writes_one_readme_per_language(
     assert "## Fish (1)" in english and "## Corals (1)" in english
     assert (
         '| <img src="fish/siganus_vulpinus/thumb.webp" width="72" alt=""> '
-        "| Siganus_Vulpinus<br>`siganus_vulpinus` | *Siganus vulpinus* | 5–8 cm "
+        "| Siganus_Vulpinus<br>`siganus_vulpinus` | *Siganus vulpinus* | Marine | 5–8 cm "
         "| Shoaling · stays near its home · hides at night |"
     ) in english
-    # corals have no behaviour column
-    assert "| Name | Scientific name | Size |\n|---|---|---|---|\n" in english
+    # corals have no details column
+    assert (
+        "| Name | Scientific name | Water | Size |\n|---|---|---|---|---|\n" in english
+    )
     assert "documentation en anglais" not in english
 
     french = (root / "README.fr.md").read_text(encoding="utf-8")
@@ -115,12 +117,15 @@ def test_table_of_partly_described_species(tmp_path: Path) -> None:
     (root / "fish" / "empty").mkdir()
     species = make_readme.load_species(root)
     assert [d["id"] for d in species["fish"]] == ["odd", "plain", "siganus_vulpinus"]
-    table = make_readme.species_table(species["fish"], "de", fish=True)
+    table = make_readme.species_table(species["fish"], "de", "fish")
     # no name: the id; no scientific name, size or behaviour: a dash
-    assert "|  | plain<br>`plain` | — | 4 cm | — |" in table
+    assert (
+        '| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> '
+        "| plain<br>`plain` | — | — | 4 cm | — |"
+    ) in table
     # English name when the language is missing, pipes escaped
-    assert "| Odd \\| fish<br>`odd` | — | — | — |" in table
-    assert make_readme.species_table([], "pl", fish=True) == "Brak gatunków."
+    assert "| Odd \\| fish<br>`odd` | — | — | — | — |" in table
+    assert make_readme.species_table([], "pl", "fish") == "Brak gatunków."
     goby = {"behavior": {"profile": "sand", "burrow": True, "territory_cm": 9}}
     assert make_readme.behaviour(goby, "en") == "Lives on the sand · lives in a burrow"
 

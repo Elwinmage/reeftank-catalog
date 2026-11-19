@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Yellow coris wrasse",
+    "fr": "Labre chrysus",
+    "de": "Yellow coris wrasse",
+    "es": "Yellow coris wrasse",
+    "it": "Yellow coris wrasse",
+    "nl": "Yellow coris wrasse",
+    "pl": "Yellow coris wrasse",
+    "pt": "Yellow coris wrasse"
+  },
+  "scientific": "Halichoeres chrysus",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    10,
+    12
+  ],
+  "behavior": {
+    "profile": "cruiser",
+    "band": [
+      0.15,
+      0.85
+    ],
+    "depth": [
+      0.2,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.8,
+      6
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "rest_bottom",
+  "feeding_response": 0.9
+}

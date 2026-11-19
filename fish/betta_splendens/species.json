@@ -1,0 +1,40 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Siamese fighting fish",
+    "fr": "Combattant",
+    "de": "Siamese fighting fish",
+    "es": "Siamese fighting fish",
+    "it": "Siamese fighting fish",
+    "nl": "Siamese fighting fish",
+    "pl": "Siamese fighting fish",
+    "pt": "Siamese fighting fish"
+  },
+  "scientific": "Betta splendens",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    5,
+    7
+  ],
+  "behavior": {
+    "profile": "hover",
+    "band": [
+      0.3,
+      0.8
+    ],
+    "depth": [
+      0.2,
+      0.8
+    ],
+    "speed_cm_s": [
+      1,
+      3
+    ],
+    "turn_rate": 3.0,
+    "territory_cm": 20
+  },
+  "night": "hover",
+  "feeding_response": 1.0
+}

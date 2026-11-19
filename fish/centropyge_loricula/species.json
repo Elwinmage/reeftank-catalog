@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Flame angelfish",
+    "fr": "Poisson-ange flamme",
+    "de": "Flame angelfish",
+    "es": "Flame angelfish",
+    "it": "Flame angelfish",
+    "nl": "Flame angelfish",
+    "pl": "Flame angelfish",
+    "pt": "Flame angelfish"
+  },
+  "scientific": "Centropyge loricula",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    8,
+    10
+  ],
+  "behavior": {
+    "profile": "hover",
+    "band": [
+      0.3,
+      0.8
+    ],
+    "depth": [
+      0.2,
+      0.8
+    ],
+    "speed_cm_s": [
+      1,
+      4
+    ],
+    "turn_rate": 3.0
+  },
+  "night": "hover",
+  "feeding_response": 1.0
+}

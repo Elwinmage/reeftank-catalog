@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Six line wrasse",
+    "fr": "Labre à six lignes",
+    "de": "Six line wrasse",
+    "es": "Six line wrasse",
+    "it": "Six line wrasse",
+    "nl": "Six line wrasse",
+    "pl": "Six line wrasse",
+    "pt": "Six line wrasse"
+  },
+  "scientific": "Pseudocheilinus hexataenia",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    7,
+    10
+  ],
+  "behavior": {
+    "profile": "cruiser",
+    "band": [
+      0.15,
+      0.85
+    ],
+    "depth": [
+      0.2,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.5,
+      5
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.9
+}

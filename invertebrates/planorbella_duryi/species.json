@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Ramshorn snail",
+    "fr": "Planorbe",
+    "de": "Ramshorn snail",
+    "es": "Ramshorn snail",
+    "it": "Ramshorn snail",
+    "nl": "Ramshorn snail",
+    "pl": "Ramshorn snail",
+    "pt": "Ramshorn snail"
+  },
+  "scientific": "Planorbella duryi",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    2,
+    3
+  ],
+  "role": [
+    "detritivore"
+  ],
+  "movement": "glass"
+}

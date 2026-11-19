@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Bucephalandra",
+    "fr": "Bucéphalandra",
+    "de": "Bucephalandra",
+    "es": "Bucephalandra",
+    "it": "Bucephalandra",
+    "nl": "Bucephalandra",
+    "pl": "Bucephalandra",
+    "pt": "Bucephalandra"
+  },
+  "scientific": "Bucephalandra sp.",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    5,
+    15
+  ],
+  "zone": "epiphyte"
+}

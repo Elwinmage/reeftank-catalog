@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Bicolor blenny",
+    "fr": "Blennie bicolore",
+    "de": "Bicolor blenny",
+    "es": "Bicolor blenny",
+    "it": "Bicolor blenny",
+    "nl": "Bicolor blenny",
+    "pl": "Bicolor blenny",
+    "pt": "Bicolor blenny"
+  },
+  "scientific": "Ecsenius bicolor",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    8,
+    10
+  ],
+  "behavior": {
+    "profile": "benthic",
+    "band": [
+      0.75,
+      1
+    ],
+    "depth": [
+      0.1,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.5,
+      4
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.7
+}

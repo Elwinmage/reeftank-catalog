@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Kuhli loach",
+    "fr": "Loche kuhli",
+    "de": "Kuhli loach",
+    "es": "Kuhli loach",
+    "it": "Kuhli loach",
+    "nl": "Kuhli loach",
+    "pl": "Kuhli loach",
+    "pt": "Kuhli loach"
+  },
+  "scientific": "Pangio kuhlii",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    8,
+    12
+  ],
+  "behavior": {
+    "profile": "benthic",
+    "band": [
+      0.75,
+      1
+    ],
+    "depth": [
+      0.1,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.5,
+      4.8
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.7
+}

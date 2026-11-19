@@ -68,5 +68,8 @@
   },
   "night": "hide",
   "feeding_response": 0.9,
-  "scientific": "Chromis viridis"
+  "scientific": "Chromis viridis",
+  "water_types": [
+    "marine"
+  ]
 }

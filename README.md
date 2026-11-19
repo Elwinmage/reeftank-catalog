@@ -6,29 +6,190 @@
 
 [<img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" width="5%" alt="English" title="English"/>](README.md) [<img src="https://flagicons.lipis.dev/flags/4x3/fr.svg" width="5%" alt="Français" title="Français"/>](README.fr.md) [<img src="https://flagicons.lipis.dev/flags/4x3/de.svg" width="5%" alt="Deutsch" title="Deutsch"/>](README.de.md) [<img src="https://flagicons.lipis.dev/flags/4x3/es.svg" width="5%" alt="Español" title="Español"/>](README.es.md) [<img src="https://flagicons.lipis.dev/flags/4x3/it.svg" width="5%" alt="Italiano" title="Italiano"/>](README.it.md) [<img src="https://flagicons.lipis.dev/flags/4x3/nl.svg" width="5%" alt="Nederlands" title="Nederlands"/>](README.nl.md) [<img src="https://flagicons.lipis.dev/flags/4x3/pl.svg" width="5%" alt="Polski" title="Polski"/>](README.pl.md) [<img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" width="5%" alt="Português" title="Português"/>](README.pt.md)
 
-Fish and coral species for the aquarium view of [ha-reef-card](https://github.com/Elwinmage/ha-reef-card), served by the [ReefTank integration](https://github.com/Elwinmage/ha-reeftank-component).
+Fish, coral, plant and invertebrate species for the aquarium view of [ha-reef-card](https://github.com/Elwinmage/ha-reef-card), served by the [ReefTank integration](https://github.com/Elwinmage/ha-reeftank-component).
 
 The integration downloads the releases of this repository and keeps them up to date (`update.reeftank_catalog`, automatic by default): nothing to do on the Home Assistant side.
 
-## Fish (9)
+## Fish (99)
 
-|  | Name | Scientific name | Size | Behaviour |
-|---|---|---|---|---|
-| <img src="fish/pseudanthias/thumb.webp" width="72" alt=""> | Anthias<br>`pseudanthias` | *Pseudanthias sp.* | 8–14 cm | Shoaling · hides at night |
-| <img src="fish/pterapogon_kauderni/thumb.webp" width="72" alt=""> | Banggai cardinalfish<br>`pterapogon_kauderni` | *Pterapogon kauderni* | 5–8 cm | Hovers in place · hovers at night |
-| <img src="fish/chromis_viridis/thumb.webp" width="72" alt=""> | Blue-green chromis<br>`chromis_viridis` | *Chromis viridis* | 5–8 cm | Shoaling · hides at night |
-| <img src="fish/amphiprion/thumb.webp" width="72" alt=""> | Clownfish<br>`amphiprion` | *Amphiprion sp.* | 7–11 cm | Hovers in place · hovers at night |
-| <img src="fish/pomacanthus_imperator_adult/thumb.webp" width="72" alt=""> | Emperor angelfish (adult)<br>`pomacanthus_imperator_adult` | *Pomacanthus imperator* | 25–38 cm | Open-water cruiser · hides at night |
-| <img src="fish/pomacanthus_imperator/thumb.webp" width="72" alt=""> | Emperor angelfish (juvenile)<br>`pomacanthus_imperator` | *Pomacanthus imperator* | 6–12 cm | Open-water cruiser · hides at night |
-| <img src="fish/siganus_vulpinus/thumb.webp" width="72" alt=""> | Foxface rabbitfish<br>`siganus_vulpinus` | *Siganus vulpinus* | 15–22 cm | Open-water cruiser · rests on the bottom at night |
-| <img src="fish/synchiropus_splendidus/thumb.webp" width="72" alt=""> | Mandarin dragonet<br>`synchiropus_splendidus` | *Synchiropus splendidus* | 5–8 cm | Bottom dweller · hides at night |
-| <img src="fish/valenciennea/thumb.webp" width="72" alt=""> | Sleeper goby<br>`valenciennea` | *Valenciennea sp.* | 10–16 cm | Lives on the sand · lives in a burrow · rests on the bottom at night |
+|  | Name | Scientific name | Water | Size | Behaviour |
+|---|---|---|---|---|---|
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Angelfish<br>`pterophyllum_scalare` | *Pterophyllum scalare* | Freshwater | 12–15 cm | Open-water cruiser · hides at night |
+| <img src="fish/pseudanthias/thumb.webp" width="72" alt=""> | Anthias<br>`pseudanthias` | *Pseudanthias sp.* | Marine | 8–14 cm | Shoaling · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Atlantic mudskipper<br>`periophthalmus_barbarus` | *Periophthalmus barbarus* | Brackish | 10–15 cm | Bottom dweller · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Banded archerfish<br>`toxotes_jaculatrix` | *Toxotes jaculatrix* | Brackish | 15–25 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Banded goby<br>`amblygobius_phalaena` | *Amblygobius phalaena* | Marine | 8–10 cm | Lives on the sand · rests on the bottom at night |
+| <img src="fish/pterapogon_kauderni/thumb.webp" width="72" alt=""> | Banggai cardinalfish<br>`pterapogon_kauderni` | *Pterapogon kauderni* | Marine | 5–8 cm | Hovers in place · hovers at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Bicolor angelfish<br>`centropyge_bicolor` | *Centropyge bicolor* | Marine | 10–15 cm | Hovers in place · hovers at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Bicolor blenny<br>`ecsenius_bicolor` | *Ecsenius bicolor* | Marine | 8–10 cm | Bottom dweller · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Black skirt tetra<br>`gymnocorymbus_ternetzi` | *Gymnocorymbus ternetzi* | Freshwater | 5–6 cm | Shoaling · hides at night |
+| <img src="fish/chromis_viridis/thumb.webp" width="72" alt=""> | Blue-green chromis<br>`chromis_viridis` | *Chromis viridis* | Marine | 5–8 cm | Shoaling · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Bluestreak cleaner wrasse<br>`labroides_dimidiatus` | *Labroides dimidiatus* | Marine | 10–12 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Bristlenose pleco<br>`ancistrus` | *Ancistrus sp.* | Freshwater | 10–14 cm | Bottom dweller · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Bronze corydoras<br>`corydoras_aeneus` | *Corydoras aeneus* | Freshwater | 6–7 cm | Bottom dweller · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Bumblebee goby<br>`brachygobius_xanthozonus` | *Brachygobius xanthozonus* | Brackish | 3–4 cm | Bottom dweller · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Cardinal tetra<br>`paracheirodon_axelrodi` | *Paracheirodon axelrodi* | Freshwater | 3–5 cm | Shoaling · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Celestial pearl danio<br>`danio_margaritatus` | *Danio margaritatus* | Freshwater | 2–3 cm | Shoaling · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Cherry barb<br>`pethia_titteya` | *Pethia titteya* | Freshwater | 4–5 cm | Shoaling · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Citron coral goby<br>`gobiodon_citrinus` | *Gobiodon citrinus* | Marine | 3–5 cm | Bottom dweller · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Clown loach<br>`chromobotia_macracanthus` | *Chromobotia macracanthus* | Freshwater | 15–30 cm | Bottom dweller · hides at night |
+| <img src="fish/amphiprion/thumb.webp" width="72" alt=""> | Clownfish<br>`amphiprion` | *Amphiprion sp.* | Marine | 7–11 cm | Hovers in place · hovers at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Cockatoo dwarf cichlid<br>`apistogramma_cacatuoides` | *Apistogramma cacatuoides* | Freshwater | 5–9 cm | Bottom dweller · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Common molly<br>`poecilia_sphenops` | *Poecilia sphenops* | Freshwater, Brackish | 6–10 cm | Shoaling · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Copperband butterflyfish<br>`chelmon_rostratus` | *Chelmon rostratus* | Marine | 15–20 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Demasoni cichlid<br>`pseudotropheus_demasoni` | *Pseudotropheus demasoni* | Freshwater | 7–8 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Discus<br>`symphysodon_aequifasciatus` | *Symphysodon aequifasciatus* | Freshwater | 15–20 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Dwarf gourami<br>`trichogaster_lalius` | *Trichogaster lalius* | Freshwater | 5–8 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Electric yellow cichlid<br>`labidochromis_caeruleus` | *Labidochromis caeruleus* | Freshwater | 8–10 cm | Open-water cruiser · hides at night |
+| <img src="fish/pomacanthus_imperator_adult/thumb.webp" width="72" alt=""> | Emperor angelfish (adult)<br>`pomacanthus_imperator_adult` | *Pomacanthus imperator* | Marine | 25–38 cm | Open-water cruiser · hides at night |
+| <img src="fish/pomacanthus_imperator/thumb.webp" width="72" alt=""> | Emperor angelfish (juvenile)<br>`pomacanthus_imperator` | *Pomacanthus imperator* | Marine | 6–12 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Emperor tetra<br>`nematobrycon_palmeri` | *Nematobrycon palmeri* | Freshwater | 4–6 cm | Shoaling · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Endler's livebearer<br>`poecilia_wingei` | *Poecilia wingei* | Freshwater | 2–4 cm | Shoaling · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Figure-eight puffer<br>`dichotomyctere_biocellatus` | *Dichotomyctere biocellatus* | Brackish | 5–6.5 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Firefish goby<br>`nemateleotris_magnifica` | *Nemateleotris magnifica* | Marine | 8–10 cm | Hovers in place · hovers at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Flame angelfish<br>`centropyge_loricula` | *Centropyge loricula* | Marine | 8–10 cm | Hovers in place · hovers at night |
+| <img src="fish/siganus_vulpinus/thumb.webp" width="72" alt=""> | Foxface rabbitfish<br>`siganus_vulpinus` | *Siganus vulpinus* | Marine | 15–22 cm | Open-water cruiser · rests on the bottom at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Goldfish<br>`carassius_auratus` | *Carassius auratus* | Freshwater | 10–25 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Green spotted puffer<br>`dichotomyctere_nigroviridis` | *Dichotomyctere nigroviridis* | Brackish | 10–17 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Green swordtail<br>`xiphophorus_hellerii` | *Xiphophorus hellerii* | Freshwater | 6–12 cm | Shoaling · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Guppy<br>`poecilia_reticulata` | *Poecilia reticulata* | Freshwater | 3–6 cm | Shoaling · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Harlequin rasbora<br>`trigonostigma_heteromorpha` | *Trigonostigma heteromorpha* | Freshwater | 3–4.5 cm | Shoaling · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Knight goby<br>`stigmatogobius_sadanundio` | *Stigmatogobius sadanundio* | Brackish | 6–8 cm | Bottom dweller · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Kole tang<br>`ctenochaetus_strigosus` | *Ctenochaetus strigosus* | Marine | 12–18 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Kribensis<br>`pelvicachromis_pulcher` | *Pelvicachromis pulcher* | Freshwater | 8–10 cm | Bottom dweller · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Kuhli loach<br>`pangio_kuhlii` | *Pangio kuhlii* | Freshwater | 8–12 cm | Bottom dweller · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Lawnmower blenny<br>`salarias_fasciatus` | *Salarias fasciatus* | Marine | 12–14 cm | Bottom dweller · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Lemon tetra<br>`hyphessobrycon_pulchripinnis` | *Hyphessobrycon pulchripinnis* | Freshwater | 3–4.5 cm | Shoaling · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Lined seahorse<br>`hippocampus_erectus` | *Hippocampus erectus* | Marine | 10–15 cm | Hovers in place · hovers at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Lyretail killifish<br>`aphyosemion_australe` | *Aphyosemion australe* | Freshwater | 5–6 cm | Hovers in place · hovers at night |
+| <img src="fish/synchiropus_splendidus/thumb.webp" width="72" alt=""> | Mandarin dragonet<br>`synchiropus_splendidus` | *Synchiropus splendidus* | Marine | 5–8 cm | Bottom dweller · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Marbled hatchetfish<br>`carnegiella_strigata` | *Carnegiella strigata* | Freshwater | 4–5 cm | Shoaling · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Maroon clownfish<br>`premnas_biaculeatus` | *Premnas biaculeatus* | Marine | 10–15 cm | Hovers in place · hovers at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Neon goby<br>`elacatinus_oceanops` | *Elacatinus oceanops* | Marine | 4–6 cm | Bottom dweller · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Neon tetra<br>`paracheirodon_innesi` | *Paracheirodon innesi* | Freshwater | 3–4 cm | Shoaling · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Orchid dottyback<br>`pseudochromis_fridmani` | *Pseudochromis fridmani* | Marine | 6–7 cm | Hovers in place · stays near its home · hovers at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Oscar<br>`astronotus_ocellatus` | *Astronotus ocellatus* | Freshwater | 25–35 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Otocinclus<br>`otocinclus_affinis` | *Otocinclus affinis* | Freshwater | 3–5 cm | Bottom dweller · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Pajama cardinalfish<br>`sphaeramia_nematoptera` | *Sphaeramia nematoptera* | Marine | 8–10 cm | Hovers in place · hovers at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Panda corydoras<br>`corydoras_panda` | *Corydoras panda* | Freshwater | 4–5 cm | Bottom dweller · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Pearl danio<br>`danio_albolineatus` | *Danio albolineatus* | Freshwater | 4–6 cm | Shoaling · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Pearl gourami<br>`trichopodus_leerii` | *Trichopodus leerii* | Freshwater | 10–12 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Picasso triggerfish<br>`rhinecanthus_aculeatus` | *Rhinecanthus aculeatus* | Marine | 20–25 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Pixy hawkfish<br>`cirrhitichthys_oxycephalus` | *Cirrhitichthys oxycephalus* | Marine | 8–10 cm | Bottom dweller · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Powder blue tang<br>`acanthurus_leucosternon` | *Acanthurus leucosternon* | Marine | 20–23 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Purple firefish<br>`nemateleotris_decora` | *Nemateleotris decora* | Marine | 8–10 cm | Hovers in place · hovers at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Ram cichlid<br>`mikrogeophagus_ramirezi` | *Mikrogeophagus ramirezi* | Freshwater | 5–7 cm | Hovers in place · hovers at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Red lionfish<br>`pterois_volitans` | *Pterois volitans* | Marine | 25–35 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Regal angelfish<br>`pygoplites_diacanthus` | *Pygoplites diacanthus* | Marine | 20–25 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Regal blue tang<br>`paracanthurus_hepatus` | *Paracanthurus hepatus* | Marine | 20–30 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Royal gramma<br>`gramma_loreto` | *Gramma loreto* | Marine | 7–8 cm | Hovers in place · hovers at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Rummy-nose tetra<br>`hemigrammus_bleheri` | *Hemigrammus bleheri* | Freshwater | 4–5 cm | Shoaling · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Sailfin molly<br>`poecilia_velifera` | *Poecilia velifera* | Brackish, Freshwater | 10–15 cm | Shoaling · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Sailfin tang<br>`zebrasoma_veliferum` | *Zebrasoma veliferum* | Marine | 25–40 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Scopas tang<br>`zebrasoma_scopas` | *Zebrasoma scopas* | Marine | 15–20 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Serpae tetra<br>`hyphessobrycon_eques` | *Hyphessobrycon eques* | Freshwater | 3–4.5 cm | Shoaling · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Siamese algae eater<br>`crossocheilus_oblongus` | *Crossocheilus oblongus* | Freshwater | 10–15 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Siamese fighting fish<br>`betta_splendens` | *Betta splendens* | Freshwater | 5–7 cm | Hovers in place · stays near its home · hovers at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Silver moony<br>`monodactylus_argenteus` | *Monodactylus argenteus* | Brackish, Marine | 15–25 cm | Shoaling · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Six line wrasse<br>`pseudocheilinus_hexataenia` | *Pseudocheilinus hexataenia* | Marine | 7–10 cm | Open-water cruiser · hides at night |
+| <img src="fish/valenciennea/thumb.webp" width="72" alt=""> | Sleeper goby<br>`valenciennea` | *Valenciennea sp.* | Marine | 10–16 cm | Lives on the sand · lives in a burrow · rests on the bottom at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Solor fairy wrasse<br>`cirrhilabrus_solorensis` | *Cirrhilabrus solorensis* | Marine | 10–12 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Southern platyfish<br>`xiphophorus_maculatus` | *Xiphophorus maculatus* | Freshwater | 4–6 cm | Shoaling · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Spotted mandarin<br>`synchiropus_picturatus` | *Synchiropus picturatus* | Marine | 6–8 cm | Bottom dweller · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Spotted scat<br>`scatophagus_argus` | *Scatophagus argus* | Brackish, Marine | 15–30 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Three-spot gourami<br>`trichopodus_trichopterus` | *Trichopodus trichopterus* | Freshwater | 10–15 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Threespot dascyllus<br>`dascyllus_trimaculatus` | *Dascyllus trimaculatus* | Marine | 10–14 cm | Hovers in place · hovers at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Tiger barb<br>`puntigrus_tetrazona` | *Puntigrus tetrazona* | Freshwater | 5–7 cm | Shoaling · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Turquoise rainbowfish<br>`melanotaenia_lacustris` | *Melanotaenia lacustris* | Freshwater | 8–12 cm | Shoaling · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Valentini puffer<br>`canthigaster_valentini` | *Canthigaster valentini* | Marine | 8–10 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Violet goby<br>`gobioides_broussonnetii` | *Gobioides broussonnetii* | Brackish | 30–50 cm | Lives on the sand · lives in a burrow · rests on the bottom at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | White cloud mountain minnow<br>`tanichthys_albonubes` | *Tanichthys albonubes* | Freshwater | 3–4 cm | Shoaling · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Yasha goby<br>`stonogobiops_yasha` | *Stonogobiops yasha* | Marine | 6–8 cm | Lives on the sand · lives in a burrow · rests on the bottom at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Yellow coris wrasse<br>`halichoeres_chrysus` | *Halichoeres chrysus* | Marine | 10–12 cm | Open-water cruiser · rests on the bottom at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Yellow tang<br>`zebrasoma_flavescens` | *Zebrasoma flavescens* | Marine | 15–20 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Yellow-striped cardinalfish<br>`ostorhinchus_cyanosoma` | *Ostorhinchus cyanosoma* | Marine | 7–8 cm | Hovers in place · hovers at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Yellowhead jawfish<br>`opistognathus_aurifrons` | *Opistognathus aurifrons* | Marine | 10–12 cm | Lives on the sand · lives in a burrow · rests on the bottom at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Yellowtail blue damselfish<br>`chrysiptera_parasema` | *Chrysiptera parasema* | Marine | 5–6 cm | Hovers in place · stays near its home · hovers at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Zebra lionfish<br>`dendrochirus_zebra` | *Dendrochirus zebra* | Marine | 12–18 cm | Open-water cruiser · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Zebra pleco<br>`hypancistrus_zebra` | *Hypancistrus zebra* | Freshwater | 7–10 cm | Bottom dweller · hides at night |
+| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Zebrafish<br>`danio_rerio` | *Danio rerio* | Freshwater | 4–5 cm | Shoaling · hides at night |
 
 ## Corals (1)
 
-|  | Name | Scientific name | Size |
-|---|---|---|---|
-| <img src="corals/euphyllia_glabrescens/thumb.webp" width="72" alt=""> | Torch coral<br>`euphyllia_glabrescens` | *Euphyllia glabrescens* | 10–30 cm |
+|  | Name | Scientific name | Water | Size |
+|---|---|---|---|---|
+| <img src="corals/euphyllia_glabrescens/thumb.webp" width="72" alt=""> | Torch coral<br>`euphyllia_glabrescens` | *Euphyllia glabrescens* | Marine | 10–30 cm |
+
+## Plants (29)
+
+|  | Name | Scientific name | Water | Size | Zone |
+|---|---|---|---|---|---|
+|  | Amazon frogbit<br>`limnobium_laevigatum` | *Limnobium laevigatum* | Freshwater | 5–10 cm | Floating |
+|  | Amazon sword<br>`echinodorus_bleheri` | *Echinodorus bleheri* | Freshwater | 30–50 cm | Midground |
+|  | Ambulia<br>`limnophila_sessiliflora` | *Limnophila sessiliflora* | Freshwater | 20–40 cm | Background |
+|  | Anubias<br>`anubias_barteri` | *Anubias barteri* | Freshwater | 10–25 cm | Epiphyte |
+|  | Brazilian waterweed<br>`egeria_densa` | *Egeria densa* | Freshwater | 30–100 cm | Background |
+|  | Bucephalandra<br>`bucephalandra` | *Bucephalandra sp.* | Freshwater | 5–15 cm | Epiphyte |
+|  | Carolina fanwort<br>`cabomba_caroliniana` | *Cabomba caroliniana* | Freshwater | 30–60 cm | Background |
+|  | Caulerpa<br>`caulerpa_prolifera` | *Caulerpa prolifera* | Marine | 5–20 cm | Foreground |
+|  | Chaeto<br>`chaetomorpha_linum` | *Chaetomorpha linum* | Marine | 5–30 cm | Foreground |
+|  | Ciliated cryptocoryne<br>`cryptocoryne_ciliata` | *Cryptocoryne ciliata* | Brackish, Freshwater | 20–40 cm | Midground |
+|  | Creeping primrose willow<br>`ludwigia_repens` | *Ludwigia repens* | Freshwater | 20–40 cm | Midground |
+|  | Duckweed<br>`lemna_minor` | *Lemna minor* | Freshwater | 0.5–1 cm | Floating |
+|  | Dwarf baby tears<br>`hemianthus_callitrichoides` | *Hemianthus callitrichoides* | Freshwater | 2–5 cm | Foreground |
+|  | Dwarf cryptocoryne<br>`cryptocoryne_parva` | *Cryptocoryne parva* | Freshwater | 5–8 cm | Foreground |
+|  | Dwarf hairgrass<br>`eleocharis_parvula` | *Eleocharis parvula* | Freshwater | 5–10 cm | Foreground |
+|  | Dwarf sagittaria<br>`sagittaria_subulata` | *Sagittaria subulata* | Freshwater | 10–30 cm | Foreground |
+|  | Eelgrass<br>`vallisneria_spiralis` | *Vallisneria spiralis* | Freshwater, Brackish | 30–60 cm | Background |
+|  | Halimeda<br>`halimeda_opuntia` | *Halimeda opuntia* | Marine | 5–15 cm | Foreground |
+|  | Indian swampweed<br>`hygrophila_polysperma` | *Hygrophila polysperma* | Freshwater | 20–50 cm | Background |
+|  | Java fern<br>`microsorum_pteropus` | *Microsorum pteropus* | Freshwater | 20–30 cm | Epiphyte |
+|  | Java moss<br>`vesicularia_dubyana` | *Vesicularia dubyana* | Freshwater | 3–5 cm | Epiphyte |
+|  | Marimo moss ball<br>`aegagropila_linnaei` | *Aegagropila linnaei* | Freshwater | 3–10 cm | Foreground |
+|  | Mud mudwort<br>`glossostigma_elatinoides` | *Glossostigma elatinoides* | Freshwater | 2–5 cm | Foreground |
+|  | Red mangrove<br>`rhizophora_mangle` | *Rhizophora mangle* | Brackish, Marine | 30–100 cm | Midground |
+|  | Roundleaf toothcup<br>`rotala_rotundifolia` | *Rotala rotundifolia* | Freshwater | 20–50 cm | Background |
+|  | Staurogyne<br>`staurogyne_repens` | *Staurogyne repens* | Freshwater | 5–10 cm | Foreground |
+|  | Turtle grass<br>`thalassia_testudinum` | *Thalassia testudinum* | Marine | 10–30 cm | Foreground |
+|  | Water lettuce<br>`pistia_stratiotes` | *Pistia stratiotes* | Freshwater | 5–15 cm | Floating |
+|  | Wendt's cryptocoryne<br>`cryptocoryne_wendtii` | *Cryptocoryne wendtii* | Freshwater | 10–20 cm | Midground |
+
+## Invertebrates (32)
+
+|  | Name | Scientific name | Water | Size | Role |
+|---|---|---|---|---|---|
+|  | Amano shrimp<br>`caridina_multidentata` | *Caridina multidentata* | Freshwater | 3–5 cm | Algae eater · crawls on the bottom |
+|  | Assassin snail<br>`clea_helena` | *Clea helena* | Freshwater | 2–3 cm | Predator · crawls on the bottom |
+|  | Astraea snail<br>`astraea_tecta` | *Astraea tecta* | Marine | 2–4 cm | Algae eater · lives on the decor |
+|  | Bamboo shrimp<br>`atyopsis_moluccensis` | *Atyopsis moluccensis* | Freshwater | 6–8 cm | Filter feeder · lives on the decor |
+|  | Banded coral shrimp<br>`stenopus_hispidus` | *Stenopus hispidus* | Marine | 6–8 cm | Cleaner · lives on the decor |
+|  | Blue-legged hermit crab<br>`clibanarius_tricolor` | *Clibanarius tricolor* | Marine | 2–3 cm | Scavenger · crawls on the bottom |
+|  | Boring giant clam<br>`tridacna_crocea` | *Tridacna crocea* | Marine | 5–15 cm | Filter feeder · sessile |
+|  | Cerith snail<br>`cerithium` | *Cerithium sp.* | Marine | 2–3 cm | Detritivore · crawls on the bottom |
+|  | Cherry shrimp<br>`neocaridina_davidi` | *Neocaridina davidi* | Freshwater | 2–3.5 cm | Detritivore · crawls on the bottom |
+|  | Christmas tree worm<br>`spirobranchus_giganteus` | *Spirobranchus giganteus* | Marine | 3–5 cm | Filter feeder · sessile |
+|  | Collector urchin<br>`tripneustes_gratilla` | *Tripneustes gratilla* | Marine | 10–15 cm | Algae eater · lives on the decor |
+|  | Crystal red shrimp<br>`caridina_cantonensis` | *Caridina cantonensis* | Freshwater | 2–3 cm | Detritivore · crawls on the bottom |
+|  | Emerald crab<br>`mithraculus_sculptus` | *Mithraculus sculptus* | Marine | 3–4 cm | Algae eater · lives on the decor |
+|  | Feather duster worm<br>`sabellastarte` | *Sabellastarte sp.* | Marine | 5–10 cm | Filter feeder · sessile |
+|  | Fire shrimp<br>`lysmata_debelius` | *Lysmata debelius* | Marine | 5–6 cm | Cleaner · lives on the decor |
+|  | Harlequin shrimp<br>`hymenocera_picta` | *Hymenocera picta* | Marine | 4–6 cm | Predator · crawls on the bottom |
+|  | Malaysian trumpet snail<br>`melanoides_tuberculata` | *Melanoides tuberculata* | Freshwater | 2–3 cm | Detritivore · crawls on the bottom |
+|  | Marbled shrimp<br>`saron_marmoratus` | *Saron marmoratus* | Marine | 5–7 cm | Scavenger · lives on the decor |
+|  | Marine nerite<br>`nerita` | *Nerita sp.* | Marine | 2–3 cm | Algae eater · climbs the glass |
+|  | Mystery snail<br>`pomacea_bridgesii` | *Pomacea bridgesii* | Freshwater | 4–5 cm | Scavenger · crawls on the bottom |
+|  | Nassarius snail<br>`nassarius` | *Nassarius sp.* | Marine | 2–4 cm | Scavenger · crawls on the bottom |
+|  | Pencil urchin<br>`prionocidaris_baculosa` | *Prionocidaris baculosa* | Marine | 8–10 cm | Algae eater · lives on the decor |
+|  | Peppermint shrimp<br>`lysmata_wurdemanni` | *Lysmata wurdemanni* | Marine | 3–5 cm | Cleaner · lives on the decor |
+|  | Ramshorn snail<br>`planorbella_duryi` | *Planorbella duryi* | Freshwater | 2–3 cm | Detritivore · climbs the glass |
+|  | Sand-sifting starfish<br>`archaster_typicus` | *Archaster typicus* | Marine | 6–10 cm | Detritivore · crawls on the bottom |
+|  | Scarlet cleaner shrimp<br>`lysmata_amboinensis` | *Lysmata amboinensis* | Marine | 5–6 cm | Cleaner · lives on the decor |
+|  | Scarlet reef hermit<br>`paguristes_cadenati` | *Paguristes cadenati* | Marine | 3–4 cm | Scavenger · crawls on the bottom |
+|  | Sea cucumber<br>`holothuria` | *Holothuria sp.* | Marine | 15–30 cm | Detritivore · crawls on the bottom |
+|  | Serpent star<br>`ophiolepis_superba` | *Ophiolepis superba* | Marine | 8–12 cm | Scavenger · crawls on the bottom |
+|  | Trochus snail<br>`tectus_fenestratus` | *Tectus fenestratus* | Marine | 4–6 cm | Algae eater · lives on the decor |
+|  | Turbo snail<br>`turbo_fluctuosus` | *Turbo fluctuosus* | Marine | 4–8 cm | Algae eater · climbs the glass |
+|  | Zebra nerite<br>`neritina_natalensis` | *Neritina natalensis* | Freshwater | 2–3 cm | Algae eater · climbs the glass |
 
 Species assets are under **CC BY 4.0**, scripts under MIT: see [LICENSE.md](LICENSE.md).
 

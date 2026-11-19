@@ -63,5 +63,8 @@
   },
   "night": "hover",
   "feeding_response": 0.7,
-  "scientific": "Pterapogon kauderni"
+  "scientific": "Pterapogon kauderni",
+  "water_types": [
+    "marine"
+  ]
 }

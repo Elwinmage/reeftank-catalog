@@ -1,0 +1,44 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Southern platyfish",
+    "fr": "Platy",
+    "de": "Southern platyfish",
+    "es": "Southern platyfish",
+    "it": "Southern platyfish",
+    "nl": "Southern platyfish",
+    "pl": "Southern platyfish",
+    "pt": "Southern platyfish"
+  },
+  "scientific": "Xiphophorus maculatus",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    4,
+    6
+  ],
+  "behavior": {
+    "profile": "shoal",
+    "band": [
+      0.2,
+      0.8
+    ],
+    "depth": [
+      0.2,
+      0.8
+    ],
+    "speed_cm_s": [
+      1.5,
+      4
+    ],
+    "turn_rate": 3.0,
+    "shoal": {
+      "cohesion": 1.0,
+      "alignment": 0.9,
+      "separation": 1.2
+    }
+  },
+  "night": "hide",
+  "feeding_response": 0.9
+}

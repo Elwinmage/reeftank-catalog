@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Powder blue tang",
+    "fr": "Chirurgien bleu poudré",
+    "de": "Powder blue tang",
+    "es": "Powder blue tang",
+    "it": "Powder blue tang",
+    "nl": "Powder blue tang",
+    "pl": "Powder blue tang",
+    "pt": "Powder blue tang"
+  },
+  "scientific": "Acanthurus leucosternon",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    20,
+    23
+  ],
+  "behavior": {
+    "profile": "cruiser",
+    "band": [
+      0.15,
+      0.85
+    ],
+    "depth": [
+      0.2,
+      0.9
+    ],
+    "speed_cm_s": [
+      3.4,
+      11.5
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.9
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Brazilian waterweed",
+    "fr": "Élodée dense",
+    "de": "Brazilian waterweed",
+    "es": "Brazilian waterweed",
+    "it": "Brazilian waterweed",
+    "nl": "Brazilian waterweed",
+    "pl": "Brazilian waterweed",
+    "pt": "Brazilian waterweed"
+  },
+  "scientific": "Egeria densa",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    30,
+    100
+  ],
+  "zone": "background"
+}

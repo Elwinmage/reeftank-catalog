@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Boring giant clam",
+    "fr": "Bénitier",
+    "de": "Boring giant clam",
+    "es": "Boring giant clam",
+    "it": "Boring giant clam",
+    "nl": "Boring giant clam",
+    "pl": "Boring giant clam",
+    "pt": "Boring giant clam"
+  },
+  "scientific": "Tridacna crocea",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    5,
+    15
+  ],
+  "role": [
+    "filter_feeder"
+  ],
+  "movement": "sessile"
+}

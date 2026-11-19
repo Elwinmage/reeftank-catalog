@@ -1,0 +1,41 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Yellowhead jawfish",
+    "fr": "Opistognathe à tête jaune",
+    "de": "Yellowhead jawfish",
+    "es": "Yellowhead jawfish",
+    "it": "Yellowhead jawfish",
+    "nl": "Yellowhead jawfish",
+    "pl": "Yellowhead jawfish",
+    "pt": "Yellowhead jawfish"
+  },
+  "scientific": "Opistognathus aurifrons",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    10,
+    12
+  ],
+  "behavior": {
+    "profile": "sand",
+    "band": [
+      0.85,
+      1
+    ],
+    "depth": [
+      0.1,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.5,
+      4.8
+    ],
+    "turn_rate": 2.5,
+    "burrow": true,
+    "territory_cm": 15
+  },
+  "night": "rest_bottom",
+  "feeding_response": 0.6
+}

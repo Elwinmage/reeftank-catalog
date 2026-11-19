@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Indian swampweed",
+    "fr": "Hygrophila",
+    "de": "Indian swampweed",
+    "es": "Indian swampweed",
+    "it": "Indian swampweed",
+    "nl": "Indian swampweed",
+    "pl": "Indian swampweed",
+    "pt": "Indian swampweed"
+  },
+  "scientific": "Hygrophila polysperma",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    20,
+    50
+  ],
+  "zone": "background"
+}

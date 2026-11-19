@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Citron coral goby",
+    "fr": "Gobie de corail citron",
+    "de": "Citron coral goby",
+    "es": "Citron coral goby",
+    "it": "Citron coral goby",
+    "nl": "Citron coral goby",
+    "pl": "Citron coral goby",
+    "pt": "Citron coral goby"
+  },
+  "scientific": "Gobiodon citrinus",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    3,
+    5
+  ],
+  "behavior": {
+    "profile": "benthic",
+    "band": [
+      0.75,
+      1
+    ],
+    "depth": [
+      0.1,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.5,
+      3
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.7
+}

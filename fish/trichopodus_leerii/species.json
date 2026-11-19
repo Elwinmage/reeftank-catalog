@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Pearl gourami",
+    "fr": "Gourami perlé",
+    "de": "Pearl gourami",
+    "es": "Pearl gourami",
+    "it": "Pearl gourami",
+    "nl": "Pearl gourami",
+    "pl": "Pearl gourami",
+    "pt": "Pearl gourami"
+  },
+  "scientific": "Trichopodus leerii",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    10,
+    12
+  ],
+  "behavior": {
+    "profile": "cruiser",
+    "band": [
+      0.15,
+      0.85
+    ],
+    "depth": [
+      0.2,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.8,
+      6
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.9
+}

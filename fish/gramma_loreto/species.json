@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Royal gramma",
+    "fr": "Gramma royal",
+    "de": "Royal gramma",
+    "es": "Royal gramma",
+    "it": "Royal gramma",
+    "nl": "Royal gramma",
+    "pl": "Royal gramma",
+    "pt": "Royal gramma"
+  },
+  "scientific": "Gramma loreto",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    7,
+    8
+  ],
+  "behavior": {
+    "profile": "hover",
+    "band": [
+      0.3,
+      0.8
+    ],
+    "depth": [
+      0.2,
+      0.8
+    ],
+    "speed_cm_s": [
+      1,
+      3.2
+    ],
+    "turn_rate": 3.0
+  },
+  "night": "hover",
+  "feeding_response": 1.0
+}

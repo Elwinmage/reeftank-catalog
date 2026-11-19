@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Copperband butterflyfish",
+    "fr": "Poisson-papillon cuivré",
+    "de": "Copperband butterflyfish",
+    "es": "Copperband butterflyfish",
+    "it": "Copperband butterflyfish",
+    "nl": "Copperband butterflyfish",
+    "pl": "Copperband butterflyfish",
+    "pt": "Copperband butterflyfish"
+  },
+  "scientific": "Chelmon rostratus",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    15,
+    20
+  ],
+  "behavior": {
+    "profile": "cruiser",
+    "band": [
+      0.15,
+      0.85
+    ],
+    "depth": [
+      0.2,
+      0.9
+    ],
+    "speed_cm_s": [
+      3,
+      10
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.9
+}

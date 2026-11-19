@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Amano shrimp",
+    "fr": "Crevette Amano",
+    "de": "Amano shrimp",
+    "es": "Amano shrimp",
+    "it": "Amano shrimp",
+    "nl": "Amano shrimp",
+    "pl": "Amano shrimp",
+    "pt": "Amano shrimp"
+  },
+  "scientific": "Caridina multidentata",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    3,
+    5
+  ],
+  "role": [
+    "algae_eater"
+  ],
+  "movement": "ground"
+}

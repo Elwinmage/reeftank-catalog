@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Electric yellow cichlid",
+    "fr": "Labidochromis jaune",
+    "de": "Electric yellow cichlid",
+    "es": "Electric yellow cichlid",
+    "it": "Electric yellow cichlid",
+    "nl": "Electric yellow cichlid",
+    "pl": "Electric yellow cichlid",
+    "pt": "Electric yellow cichlid"
+  },
+  "scientific": "Labidochromis caeruleus",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    8,
+    10
+  ],
+  "behavior": {
+    "profile": "cruiser",
+    "band": [
+      0.15,
+      0.85
+    ],
+    "depth": [
+      0.2,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.5,
+      5
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.9
+}

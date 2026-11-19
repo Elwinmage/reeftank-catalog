@@ -1,0 +1,23 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Eelgrass",
+    "fr": "Vallisnérie",
+    "de": "Eelgrass",
+    "es": "Eelgrass",
+    "it": "Eelgrass",
+    "nl": "Eelgrass",
+    "pl": "Eelgrass",
+    "pt": "Eelgrass"
+  },
+  "scientific": "Vallisneria spiralis",
+  "water_types": [
+    "freshwater",
+    "brackish"
+  ],
+  "size_cm": [
+    30,
+    60
+  ],
+  "zone": "background"
+}

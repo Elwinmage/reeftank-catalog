@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Pajama cardinalfish",
+    "fr": "Cardinal pyjama",
+    "de": "Pajama cardinalfish",
+    "es": "Pajama cardinalfish",
+    "it": "Pajama cardinalfish",
+    "nl": "Pajama cardinalfish",
+    "pl": "Pajama cardinalfish",
+    "pt": "Pajama cardinalfish"
+  },
+  "scientific": "Sphaeramia nematoptera",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    8,
+    10
+  ],
+  "behavior": {
+    "profile": "hover",
+    "band": [
+      0.3,
+      0.8
+    ],
+    "depth": [
+      0.2,
+      0.8
+    ],
+    "speed_cm_s": [
+      1,
+      4
+    ],
+    "turn_rate": 3.0
+  },
+  "night": "hover",
+  "feeding_response": 1.0
+}

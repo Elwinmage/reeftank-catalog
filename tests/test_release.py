@@ -28,6 +28,7 @@ def described(kind: str, entry_id: str) -> dict[str, Any]:
         return {
             "names": names,
             "scientific": scientific,
+            "water_types": ["marine"],
             "size_cm": [5, 8],
             "behavior": {
                 "profile": "shoal",
@@ -39,9 +40,27 @@ def described(kind: str, entry_id: str) -> dict[str, Any]:
             "night": "hide",
             "feeding_response": 0.8,
         }
+    if kind == "plants":
+        return {
+            "names": names,
+            "scientific": scientific,
+            "water_types": ["freshwater"],
+            "size_cm": [5, 20],
+            "zone": "midground",
+        }
+    if kind == "invertebrates":
+        return {
+            "names": names,
+            "scientific": scientific,
+            "water_types": ["marine", "brackish"],
+            "size_cm": [2, 4],
+            "role": ["detritivore"],
+            "movement": "ground",
+        }
     return {
         "names": names,
         "scientific": scientific,
+        "water_types": ["marine"],
         "size_cm": [5, 20],
         "palette": [{"default": "#ff0000"}],
     }

@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Sea cucumber",
+    "fr": "Concombre de mer",
+    "de": "Sea cucumber",
+    "es": "Sea cucumber",
+    "it": "Sea cucumber",
+    "nl": "Sea cucumber",
+    "pl": "Sea cucumber",
+    "pt": "Sea cucumber"
+  },
+  "scientific": "Holothuria sp.",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    15,
+    30
+  ],
+  "role": [
+    "detritivore"
+  ],
+  "movement": "ground"
+}

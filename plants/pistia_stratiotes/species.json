@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Water lettuce",
+    "fr": "Laitue d'eau",
+    "de": "Water lettuce",
+    "es": "Water lettuce",
+    "it": "Water lettuce",
+    "nl": "Water lettuce",
+    "pl": "Water lettuce",
+    "pt": "Water lettuce"
+  },
+  "scientific": "Pistia stratiotes",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    5,
+    15
+  ],
+  "zone": "floating"
+}

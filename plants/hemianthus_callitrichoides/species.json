@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Dwarf baby tears",
+    "fr": "Hemianthus",
+    "de": "Dwarf baby tears",
+    "es": "Dwarf baby tears",
+    "it": "Dwarf baby tears",
+    "nl": "Dwarf baby tears",
+    "pl": "Dwarf baby tears",
+    "pt": "Dwarf baby tears"
+  },
+  "scientific": "Hemianthus callitrichoides",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    2,
+    5
+  ],
+  "zone": "foreground"
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Emerald crab",
+    "fr": "Crabe émeraude",
+    "de": "Emerald crab",
+    "es": "Emerald crab",
+    "it": "Emerald crab",
+    "nl": "Emerald crab",
+    "pl": "Emerald crab",
+    "pt": "Emerald crab"
+  },
+  "scientific": "Mithraculus sculptus",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    3,
+    4
+  ],
+  "role": [
+    "algae_eater"
+  ],
+  "movement": "decor"
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Mud mudwort",
+    "fr": "Glossostigma",
+    "de": "Mud mudwort",
+    "es": "Mud mudwort",
+    "it": "Mud mudwort",
+    "nl": "Mud mudwort",
+    "pl": "Mud mudwort",
+    "pt": "Mud mudwort"
+  },
+  "scientific": "Glossostigma elatinoides",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    2,
+    5
+  ],
+  "zone": "foreground"
+}

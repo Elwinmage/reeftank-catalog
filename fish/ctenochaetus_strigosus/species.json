@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Kole tang",
+    "fr": "Chirurgien kole",
+    "de": "Kole tang",
+    "es": "Kole tang",
+    "it": "Kole tang",
+    "nl": "Kole tang",
+    "pl": "Kole tang",
+    "pt": "Kole tang"
+  },
+  "scientific": "Ctenochaetus strigosus",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    12,
+    18
+  ],
+  "behavior": {
+    "profile": "cruiser",
+    "band": [
+      0.15,
+      0.85
+    ],
+    "depth": [
+      0.2,
+      0.9
+    ],
+    "speed_cm_s": [
+      2.7,
+      9
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.9
+}

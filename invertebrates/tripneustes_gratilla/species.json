@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Collector urchin",
+    "fr": "Oursin collecteur",
+    "de": "Collector urchin",
+    "es": "Collector urchin",
+    "it": "Collector urchin",
+    "nl": "Collector urchin",
+    "pl": "Collector urchin",
+    "pt": "Collector urchin"
+  },
+  "scientific": "Tripneustes gratilla",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    10,
+    15
+  ],
+  "role": [
+    "algae_eater"
+  ],
+  "movement": "decor"
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Banded archerfish",
+    "fr": "Archer",
+    "de": "Banded archerfish",
+    "es": "Banded archerfish",
+    "it": "Banded archerfish",
+    "nl": "Banded archerfish",
+    "pl": "Banded archerfish",
+    "pt": "Banded archerfish"
+  },
+  "scientific": "Toxotes jaculatrix",
+  "water_types": [
+    "brackish"
+  ],
+  "size_cm": [
+    15,
+    25
+  ],
+  "behavior": {
+    "profile": "cruiser",
+    "band": [
+      0,
+      0.25
+    ],
+    "depth": [
+      0.2,
+      0.9
+    ],
+    "speed_cm_s": [
+      3.8,
+      12.5
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.9
+}

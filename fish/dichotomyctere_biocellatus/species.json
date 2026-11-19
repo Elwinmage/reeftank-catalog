@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Figure-eight puffer",
+    "fr": "Tétraodon à huit",
+    "de": "Figure-eight puffer",
+    "es": "Figure-eight puffer",
+    "it": "Figure-eight puffer",
+    "nl": "Figure-eight puffer",
+    "pl": "Figure-eight puffer",
+    "pt": "Figure-eight puffer"
+  },
+  "scientific": "Dichotomyctere biocellatus",
+  "water_types": [
+    "brackish"
+  ],
+  "size_cm": [
+    5,
+    6.5
+  ],
+  "behavior": {
+    "profile": "cruiser",
+    "band": [
+      0.15,
+      0.85
+    ],
+    "depth": [
+      0.2,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.5,
+      4
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.9
+}

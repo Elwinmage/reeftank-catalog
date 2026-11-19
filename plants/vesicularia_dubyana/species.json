@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Java moss",
+    "fr": "Mousse de Java",
+    "de": "Java moss",
+    "es": "Java moss",
+    "it": "Java moss",
+    "nl": "Java moss",
+    "pl": "Java moss",
+    "pt": "Java moss"
+  },
+  "scientific": "Vesicularia dubyana",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    3,
+    5
+  ],
+  "zone": "epiphyte"
+}

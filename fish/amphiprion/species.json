@@ -63,5 +63,8 @@
   },
   "night": "hover",
   "feeding_response": 1.0,
-  "scientific": "Amphiprion sp."
+  "scientific": "Amphiprion sp.",
+  "water_types": [
+    "marine"
+  ]
 }

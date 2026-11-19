@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Ram cichlid",
+    "fr": "Ramirezi",
+    "de": "Ram cichlid",
+    "es": "Ram cichlid",
+    "it": "Ram cichlid",
+    "nl": "Ram cichlid",
+    "pl": "Ram cichlid",
+    "pt": "Ram cichlid"
+  },
+  "scientific": "Mikrogeophagus ramirezi",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    5,
+    7
+  ],
+  "behavior": {
+    "profile": "hover",
+    "band": [
+      0.3,
+      0.8
+    ],
+    "depth": [
+      0.2,
+      0.8
+    ],
+    "speed_cm_s": [
+      1,
+      3
+    ],
+    "turn_rate": 3.0
+  },
+  "night": "hover",
+  "feeding_response": 1.0
+}

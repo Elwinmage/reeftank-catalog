@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Malaysian trumpet snail",
+    "fr": "Mélanie",
+    "de": "Malaysian trumpet snail",
+    "es": "Malaysian trumpet snail",
+    "it": "Malaysian trumpet snail",
+    "nl": "Malaysian trumpet snail",
+    "pl": "Malaysian trumpet snail",
+    "pt": "Malaysian trumpet snail"
+  },
+  "scientific": "Melanoides tuberculata",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    2,
+    3
+  ],
+  "role": [
+    "detritivore"
+  ],
+  "movement": "ground"
+}

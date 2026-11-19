@@ -1,0 +1,23 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Ciliated cryptocoryne",
+    "fr": "Cryptocoryne ciliata",
+    "de": "Ciliated cryptocoryne",
+    "es": "Ciliated cryptocoryne",
+    "it": "Ciliated cryptocoryne",
+    "nl": "Ciliated cryptocoryne",
+    "pl": "Ciliated cryptocoryne",
+    "pt": "Ciliated cryptocoryne"
+  },
+  "scientific": "Cryptocoryne ciliata",
+  "water_types": [
+    "brackish",
+    "freshwater"
+  ],
+  "size_cm": [
+    20,
+    40
+  ],
+  "zone": "midground"
+}

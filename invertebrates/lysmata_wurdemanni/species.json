@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Peppermint shrimp",
+    "fr": "Crevette peppermint",
+    "de": "Peppermint shrimp",
+    "es": "Peppermint shrimp",
+    "it": "Peppermint shrimp",
+    "nl": "Peppermint shrimp",
+    "pl": "Peppermint shrimp",
+    "pt": "Peppermint shrimp"
+  },
+  "scientific": "Lysmata wurdemanni",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    3,
+    5
+  ],
+  "role": [
+    "cleaner"
+  ],
+  "movement": "decor"
+}

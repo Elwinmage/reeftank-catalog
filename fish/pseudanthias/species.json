@@ -68,5 +68,8 @@
   },
   "night": "hide",
   "feeding_response": 1.0,
-  "scientific": "Pseudanthias sp."
+  "scientific": "Pseudanthias sp.",
+  "water_types": [
+    "marine"
+  ]
 }

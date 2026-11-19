@@ -53,5 +53,8 @@
       "default": "#dee2ec",
       "fluo": false
     }
+  ],
+  "water_types": [
+    "marine"
   ]
 }

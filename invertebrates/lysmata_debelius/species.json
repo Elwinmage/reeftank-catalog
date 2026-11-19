@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Fire shrimp",
+    "fr": "Crevette sang de feu",
+    "de": "Fire shrimp",
+    "es": "Fire shrimp",
+    "it": "Fire shrimp",
+    "nl": "Fire shrimp",
+    "pl": "Fire shrimp",
+    "pt": "Fire shrimp"
+  },
+  "scientific": "Lysmata debelius",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    5,
+    6
+  ],
+  "role": [
+    "cleaner"
+  ],
+  "movement": "decor"
+}

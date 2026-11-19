@@ -969,7 +969,18 @@ THUMB_SIZE = (96, 64)
 #: Descriptor keys written by the build; the others (names, size, behaviour,
 #: palette...) describe the species and survive a rebuild
 GENERATED_KEYS = frozenset(
-    {"kind", "frame", "columns", "clips", "atlas", "thumbnail", "facing", "length_frac"}
+    {
+        "kind",
+        "frame",
+        "columns",
+        "clips",
+        "atlas",
+        "thumbnail",
+        "facing",
+        "length_frac",
+        "degraded",
+        "source",
+    }
 )
 
 

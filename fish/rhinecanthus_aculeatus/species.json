@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Picasso triggerfish",
+    "fr": "Baliste Picasso",
+    "de": "Picasso triggerfish",
+    "es": "Picasso triggerfish",
+    "it": "Picasso triggerfish",
+    "nl": "Picasso triggerfish",
+    "pl": "Picasso triggerfish",
+    "pt": "Picasso triggerfish"
+  },
+  "scientific": "Rhinecanthus aculeatus",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    20,
+    25
+  ],
+  "behavior": {
+    "profile": "cruiser",
+    "band": [
+      0.15,
+      0.85
+    ],
+    "depth": [
+      0.2,
+      0.9
+    ],
+    "speed_cm_s": [
+      3.8,
+      12.5
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.9
+}

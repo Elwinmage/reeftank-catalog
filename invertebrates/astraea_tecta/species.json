@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Astraea snail",
+    "fr": "Astrée",
+    "de": "Astraea snail",
+    "es": "Astraea snail",
+    "it": "Astraea snail",
+    "nl": "Astraea snail",
+    "pl": "Astraea snail",
+    "pt": "Astraea snail"
+  },
+  "scientific": "Astraea tecta",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    2,
+    4
+  ],
+  "role": [
+    "algae_eater"
+  ],
+  "movement": "decor"
+}

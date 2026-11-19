@@ -1,0 +1,41 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Yasha goby",
+    "fr": "Gobie à crevette",
+    "de": "Yasha goby",
+    "es": "Yasha goby",
+    "it": "Yasha goby",
+    "nl": "Yasha goby",
+    "pl": "Yasha goby",
+    "pt": "Yasha goby"
+  },
+  "scientific": "Stonogobiops yasha",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    6,
+    8
+  ],
+  "behavior": {
+    "profile": "sand",
+    "band": [
+      0.85,
+      1
+    ],
+    "depth": [
+      0.1,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.5,
+      3.2
+    ],
+    "turn_rate": 2.5,
+    "burrow": true,
+    "territory_cm": 15
+  },
+  "night": "rest_bottom",
+  "feeding_response": 0.6
+}

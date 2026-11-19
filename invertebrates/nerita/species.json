@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Marine nerite",
+    "fr": "Néritine marine",
+    "de": "Marine nerite",
+    "es": "Marine nerite",
+    "it": "Marine nerite",
+    "nl": "Marine nerite",
+    "pl": "Marine nerite",
+    "pt": "Marine nerite"
+  },
+  "scientific": "Nerita sp.",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    2,
+    3
+  ],
+  "role": [
+    "algae_eater"
+  ],
+  "movement": "glass"
+}

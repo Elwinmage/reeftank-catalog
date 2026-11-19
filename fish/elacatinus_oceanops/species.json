@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Neon goby",
+    "fr": "Gobie néon",
+    "de": "Neon goby",
+    "es": "Neon goby",
+    "it": "Neon goby",
+    "nl": "Neon goby",
+    "pl": "Neon goby",
+    "pt": "Neon goby"
+  },
+  "scientific": "Elacatinus oceanops",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    4,
+    6
+  ],
+  "behavior": {
+    "profile": "benthic",
+    "band": [
+      0.75,
+      1
+    ],
+    "depth": [
+      0.1,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.5,
+      3
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.7
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Red lionfish",
+    "fr": "Poisson-lion volitans",
+    "de": "Red lionfish",
+    "es": "Red lionfish",
+    "it": "Red lionfish",
+    "nl": "Red lionfish",
+    "pl": "Red lionfish",
+    "pt": "Red lionfish"
+  },
+  "scientific": "Pterois volitans",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    25,
+    35
+  ],
+  "behavior": {
+    "profile": "cruiser",
+    "band": [
+      0.15,
+      0.85
+    ],
+    "depth": [
+      0.2,
+      0.9
+    ],
+    "speed_cm_s": [
+      5.2,
+      17.5
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.9
+}

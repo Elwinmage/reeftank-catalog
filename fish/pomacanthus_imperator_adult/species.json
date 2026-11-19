@@ -63,5 +63,8 @@
   },
   "night": "hide",
   "feeding_response": 0.9,
-  "scientific": "Pomacanthus imperator"
+  "scientific": "Pomacanthus imperator",
+  "water_types": [
+    "marine"
+  ]
 }

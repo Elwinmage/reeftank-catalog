@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Green spotted puffer",
+    "fr": "Tétraodon vert",
+    "de": "Green spotted puffer",
+    "es": "Green spotted puffer",
+    "it": "Green spotted puffer",
+    "nl": "Green spotted puffer",
+    "pl": "Green spotted puffer",
+    "pt": "Green spotted puffer"
+  },
+  "scientific": "Dichotomyctere nigroviridis",
+  "water_types": [
+    "brackish"
+  ],
+  "size_cm": [
+    10,
+    17
+  ],
+  "behavior": {
+    "profile": "cruiser",
+    "band": [
+      0.15,
+      0.85
+    ],
+    "depth": [
+      0.2,
+      0.9
+    ],
+    "speed_cm_s": [
+      2.5,
+      8.5
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.9
+}

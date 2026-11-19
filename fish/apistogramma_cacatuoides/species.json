@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Cockatoo dwarf cichlid",
+    "fr": "Apistogramma",
+    "de": "Cockatoo dwarf cichlid",
+    "es": "Cockatoo dwarf cichlid",
+    "it": "Cockatoo dwarf cichlid",
+    "nl": "Cockatoo dwarf cichlid",
+    "pl": "Cockatoo dwarf cichlid",
+    "pt": "Cockatoo dwarf cichlid"
+  },
+  "scientific": "Apistogramma cacatuoides",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    5,
+    9
+  ],
+  "behavior": {
+    "profile": "benthic",
+    "band": [
+      0.75,
+      1
+    ],
+    "depth": [
+      0.1,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.5,
+      3.6
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.7
+}

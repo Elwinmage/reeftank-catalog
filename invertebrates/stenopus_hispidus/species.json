@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Banded coral shrimp",
+    "fr": "Crevette boxer",
+    "de": "Banded coral shrimp",
+    "es": "Banded coral shrimp",
+    "it": "Banded coral shrimp",
+    "nl": "Banded coral shrimp",
+    "pl": "Banded coral shrimp",
+    "pt": "Banded coral shrimp"
+  },
+  "scientific": "Stenopus hispidus",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    6,
+    8
+  ],
+  "role": [
+    "cleaner"
+  ],
+  "movement": "decor"
+}

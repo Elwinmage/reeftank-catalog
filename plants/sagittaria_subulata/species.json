@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Dwarf sagittaria",
+    "fr": "Sagittaire naine",
+    "de": "Dwarf sagittaria",
+    "es": "Dwarf sagittaria",
+    "it": "Dwarf sagittaria",
+    "nl": "Dwarf sagittaria",
+    "pl": "Dwarf sagittaria",
+    "pt": "Dwarf sagittaria"
+  },
+  "scientific": "Sagittaria subulata",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    10,
+    30
+  ],
+  "zone": "foreground"
+}

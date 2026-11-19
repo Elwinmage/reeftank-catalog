@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Amazon sword",
+    "fr": "Echinodorus",
+    "de": "Amazon sword",
+    "es": "Amazon sword",
+    "it": "Amazon sword",
+    "nl": "Amazon sword",
+    "pl": "Amazon sword",
+    "pt": "Amazon sword"
+  },
+  "scientific": "Echinodorus bleheri",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    30,
+    50
+  ],
+  "zone": "midground"
+}

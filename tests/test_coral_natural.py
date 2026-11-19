@@ -63,6 +63,7 @@ def clips(tmp_path: Path) -> dict[str, Path]:
             {
                 "names": names,
                 "scientific": "Euphyllia glabrescens",
+                "water_types": ["marine"],
                 "size_cm": [10, 30],
                 "palette": [
                     {"fluo": False},

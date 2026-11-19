@@ -2,12 +2,14 @@
 """Export and import the description of the species (not their pictures).
 
 The description is the part of `species.json` written by hand: names, size,
-behaviour, night mode, feeding response, coral palette... The rest (clips,
-atlas, frame) comes from the build and is left alone.
+water types, behaviour, night mode, feeding response, palette, plant zone,
+invertebrate role... The rest (clips, atlas, frame, degraded, source) comes
+from the build and is left alone.
 
     python scripts/species_meta.py export [--out species-meta.tgz]
 
-writes an archive holding `fish/<id>/meta.json` and `corals/<id>/meta.json`,
+writes an archive holding `<folder>/<id>/meta.json` (fish, corals, plants,
+invertebrates),
 with every field to fill shown (null when unknown), to edit or to hand over
 (translations, behaviour).
 
@@ -42,6 +44,7 @@ TEMPLATES: dict[str, dict[str, Any]] = {
     "fish": {
         "names": {},
         "scientific": None,
+        "water_types": None,
         "size_cm": None,
         "behavior": {
             "profile": None,
@@ -55,7 +58,29 @@ TEMPLATES: dict[str, dict[str, Any]] = {
         "night": None,
         "feeding_response": None,
     },
-    "corals": {"names": {}, "scientific": None, "size_cm": None, "palette": None},
+    "corals": {
+        "names": {},
+        "scientific": None,
+        "water_types": None,
+        "size_cm": None,
+        "palette": None,
+    },
+    "plants": {
+        "names": {},
+        "scientific": None,
+        "water_types": None,
+        "size_cm": None,
+        "zone": None,
+    },
+    "invertebrates": {
+        "names": {},
+        "scientific": None,
+        "water_types": None,
+        "size_cm": None,
+        "role": None,
+        "movement": None,
+        "palette": None,
+    },
 }
 
 

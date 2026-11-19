@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Yellow-striped cardinalfish",
+    "fr": "Cardinal à bande jaune",
+    "de": "Yellow-striped cardinalfish",
+    "es": "Yellow-striped cardinalfish",
+    "it": "Yellow-striped cardinalfish",
+    "nl": "Yellow-striped cardinalfish",
+    "pl": "Yellow-striped cardinalfish",
+    "pt": "Yellow-striped cardinalfish"
+  },
+  "scientific": "Ostorhinchus cyanosoma",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    7,
+    8
+  ],
+  "behavior": {
+    "profile": "hover",
+    "band": [
+      0.3,
+      0.8
+    ],
+    "depth": [
+      0.2,
+      0.8
+    ],
+    "speed_cm_s": [
+      1,
+      3.2
+    ],
+    "turn_rate": 3.0
+  },
+  "night": "hover",
+  "feeding_response": 1.0
+}

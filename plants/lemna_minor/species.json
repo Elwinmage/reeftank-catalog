@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Duckweed",
+    "fr": "Lentille d'eau",
+    "de": "Duckweed",
+    "es": "Duckweed",
+    "it": "Duckweed",
+    "nl": "Duckweed",
+    "pl": "Duckweed",
+    "pt": "Duckweed"
+  },
+  "scientific": "Lemna minor",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    0.5,
+    1
+  ],
+  "zone": "floating"
+}

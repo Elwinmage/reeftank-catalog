@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Wendt's cryptocoryne",
+    "fr": "Cryptocoryne wendtii",
+    "de": "Wendt's cryptocoryne",
+    "es": "Wendt's cryptocoryne",
+    "it": "Wendt's cryptocoryne",
+    "nl": "Wendt's cryptocoryne",
+    "pl": "Wendt's cryptocoryne",
+    "pt": "Wendt's cryptocoryne"
+  },
+  "scientific": "Cryptocoryne wendtii",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    10,
+    20
+  ],
+  "zone": "midground"
+}

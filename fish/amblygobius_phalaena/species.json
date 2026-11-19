@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Banded goby",
+    "fr": "Gobie rayé",
+    "de": "Banded goby",
+    "es": "Banded goby",
+    "it": "Banded goby",
+    "nl": "Banded goby",
+    "pl": "Banded goby",
+    "pt": "Banded goby"
+  },
+  "scientific": "Amblygobius phalaena",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    8,
+    10
+  ],
+  "behavior": {
+    "profile": "sand",
+    "band": [
+      0.85,
+      1
+    ],
+    "depth": [
+      0.1,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.5,
+      4
+    ],
+    "turn_rate": 2.5
+  },
+  "night": "rest_bottom",
+  "feeding_response": 0.6
+}

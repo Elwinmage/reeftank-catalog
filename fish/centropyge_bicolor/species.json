@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Bicolor angelfish",
+    "fr": "Poisson-ange bicolore",
+    "de": "Bicolor angelfish",
+    "es": "Bicolor angelfish",
+    "it": "Bicolor angelfish",
+    "nl": "Bicolor angelfish",
+    "pl": "Bicolor angelfish",
+    "pt": "Bicolor angelfish"
+  },
+  "scientific": "Centropyge bicolor",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    10,
+    15
+  ],
+  "behavior": {
+    "profile": "hover",
+    "band": [
+      0.3,
+      0.8
+    ],
+    "depth": [
+      0.2,
+      0.8
+    ],
+    "speed_cm_s": [
+      1,
+      6
+    ],
+    "turn_rate": 3.0
+  },
+  "night": "hover",
+  "feeding_response": 1.0
+}

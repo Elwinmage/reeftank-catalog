@@ -63,5 +63,8 @@
   },
   "night": "rest_bottom",
   "feeding_response": 1.0,
-  "scientific": "Siganus vulpinus"
+  "scientific": "Siganus vulpinus",
+  "water_types": [
+    "marine"
+  ]
 }

@@ -1,0 +1,40 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Spotted scat",
+    "fr": "Scat",
+    "de": "Spotted scat",
+    "es": "Spotted scat",
+    "it": "Spotted scat",
+    "nl": "Spotted scat",
+    "pl": "Spotted scat",
+    "pt": "Spotted scat"
+  },
+  "scientific": "Scatophagus argus",
+  "water_types": [
+    "brackish",
+    "marine"
+  ],
+  "size_cm": [
+    15,
+    30
+  ],
+  "behavior": {
+    "profile": "cruiser",
+    "band": [
+      0.15,
+      0.85
+    ],
+    "depth": [
+      0.2,
+      0.9
+    ],
+    "speed_cm_s": [
+      4.5,
+      15
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.9
+}

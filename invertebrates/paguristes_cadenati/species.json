@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Scarlet reef hermit",
+    "fr": "Bernard-l'ermite à pattes rouges",
+    "de": "Scarlet reef hermit",
+    "es": "Scarlet reef hermit",
+    "it": "Scarlet reef hermit",
+    "nl": "Scarlet reef hermit",
+    "pl": "Scarlet reef hermit",
+    "pt": "Scarlet reef hermit"
+  },
+  "scientific": "Paguristes cadenati",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    3,
+    4
+  ],
+  "role": [
+    "scavenger"
+  ],
+  "movement": "ground"
+}

@@ -1,0 +1,44 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Serpae tetra",
+    "fr": "Tétra serpae",
+    "de": "Serpae tetra",
+    "es": "Serpae tetra",
+    "it": "Serpae tetra",
+    "nl": "Serpae tetra",
+    "pl": "Serpae tetra",
+    "pt": "Serpae tetra"
+  },
+  "scientific": "Hyphessobrycon eques",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    3,
+    4.5
+  ],
+  "behavior": {
+    "profile": "shoal",
+    "band": [
+      0.2,
+      0.8
+    ],
+    "depth": [
+      0.2,
+      0.8
+    ],
+    "speed_cm_s": [
+      1.5,
+      4
+    ],
+    "turn_rate": 3.0,
+    "shoal": {
+      "cohesion": 1.0,
+      "alignment": 0.9,
+      "separation": 1.2
+    }
+  },
+  "night": "hide",
+  "feeding_response": 0.9
+}

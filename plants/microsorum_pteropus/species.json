@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Java fern",
+    "fr": "Fougère de Java",
+    "de": "Java fern",
+    "es": "Java fern",
+    "it": "Java fern",
+    "nl": "Java fern",
+    "pl": "Java fern",
+    "pt": "Java fern"
+  },
+  "scientific": "Microsorum pteropus",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    20,
+    30
+  ],
+  "zone": "epiphyte"
+}

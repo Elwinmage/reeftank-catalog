@@ -1,0 +1,25 @@
+{
+  "kind": "invertebrate",
+  "names": {
+    "en": "Trochus snail",
+    "fr": "Trochus",
+    "de": "Trochus snail",
+    "es": "Trochus snail",
+    "it": "Trochus snail",
+    "nl": "Trochus snail",
+    "pl": "Trochus snail",
+    "pt": "Trochus snail"
+  },
+  "scientific": "Tectus fenestratus",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    4,
+    6
+  ],
+  "role": [
+    "algae_eater"
+  ],
+  "movement": "decor"
+}

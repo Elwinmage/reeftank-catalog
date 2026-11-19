@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Lyretail killifish",
+    "fr": "Killi du Cap Lopez",
+    "de": "Lyretail killifish",
+    "es": "Lyretail killifish",
+    "it": "Lyretail killifish",
+    "nl": "Lyretail killifish",
+    "pl": "Lyretail killifish",
+    "pt": "Lyretail killifish"
+  },
+  "scientific": "Aphyosemion australe",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    5,
+    6
+  ],
+  "behavior": {
+    "profile": "hover",
+    "band": [
+      0.3,
+      0.8
+    ],
+    "depth": [
+      0.2,
+      0.8
+    ],
+    "speed_cm_s": [
+      1,
+      3
+    ],
+    "turn_rate": 3.0
+  },
+  "night": "hover",
+  "feeding_response": 1.0
+}

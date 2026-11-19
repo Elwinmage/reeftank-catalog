@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Firefish goby",
+    "fr": "Poisson-flamme",
+    "de": "Firefish goby",
+    "es": "Firefish goby",
+    "it": "Firefish goby",
+    "nl": "Firefish goby",
+    "pl": "Firefish goby",
+    "pt": "Firefish goby"
+  },
+  "scientific": "Nemateleotris magnifica",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    8,
+    10
+  ],
+  "behavior": {
+    "profile": "hover",
+    "band": [
+      0.3,
+      0.8
+    ],
+    "depth": [
+      0.2,
+      0.8
+    ],
+    "speed_cm_s": [
+      1,
+      4
+    ],
+    "turn_rate": 3.0
+  },
+  "night": "hover",
+  "feeding_response": 1.0
+}

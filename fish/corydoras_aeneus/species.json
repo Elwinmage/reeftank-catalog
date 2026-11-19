@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Bronze corydoras",
+    "fr": "Corydoras bronzé",
+    "de": "Bronze corydoras",
+    "es": "Bronze corydoras",
+    "it": "Bronze corydoras",
+    "nl": "Bronze corydoras",
+    "pl": "Bronze corydoras",
+    "pt": "Bronze corydoras"
+  },
+  "scientific": "Corydoras aeneus",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    6,
+    7
+  ],
+  "behavior": {
+    "profile": "benthic",
+    "band": [
+      0.75,
+      1
+    ],
+    "depth": [
+      0.1,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.5,
+      3
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.7
+}

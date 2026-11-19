@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Roundleaf toothcup",
+    "fr": "Rotala",
+    "de": "Roundleaf toothcup",
+    "es": "Roundleaf toothcup",
+    "it": "Roundleaf toothcup",
+    "nl": "Roundleaf toothcup",
+    "pl": "Roundleaf toothcup",
+    "pt": "Roundleaf toothcup"
+  },
+  "scientific": "Rotala rotundifolia",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    20,
+    50
+  ],
+  "zone": "background"
+}

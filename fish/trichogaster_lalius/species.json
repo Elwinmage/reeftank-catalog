@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Dwarf gourami",
+    "fr": "Gourami nain",
+    "de": "Dwarf gourami",
+    "es": "Dwarf gourami",
+    "it": "Dwarf gourami",
+    "nl": "Dwarf gourami",
+    "pl": "Dwarf gourami",
+    "pt": "Dwarf gourami"
+  },
+  "scientific": "Trichogaster lalius",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    5,
+    8
+  ],
+  "behavior": {
+    "profile": "cruiser",
+    "band": [
+      0.15,
+      0.85
+    ],
+    "depth": [
+      0.2,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.5,
+      4
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.9
+}

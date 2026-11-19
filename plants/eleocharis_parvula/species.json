@@ -1,0 +1,22 @@
+{
+  "kind": "plant",
+  "names": {
+    "en": "Dwarf hairgrass",
+    "fr": "Eleocharis",
+    "de": "Dwarf hairgrass",
+    "es": "Dwarf hairgrass",
+    "it": "Dwarf hairgrass",
+    "nl": "Dwarf hairgrass",
+    "pl": "Dwarf hairgrass",
+    "pt": "Dwarf hairgrass"
+  },
+  "scientific": "Eleocharis parvula",
+  "water_types": [
+    "freshwater"
+  ],
+  "size_cm": [
+    5,
+    10
+  ],
+  "zone": "foreground"
+}

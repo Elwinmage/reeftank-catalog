@@ -1,0 +1,39 @@
+{
+  "kind": "fish",
+  "names": {
+    "en": "Knight goby",
+    "fr": "Gobie chevalier",
+    "de": "Knight goby",
+    "es": "Knight goby",
+    "it": "Knight goby",
+    "nl": "Knight goby",
+    "pl": "Knight goby",
+    "pt": "Knight goby"
+  },
+  "scientific": "Stigmatogobius sadanundio",
+  "water_types": [
+    "brackish"
+  ],
+  "size_cm": [
+    6,
+    8
+  ],
+  "behavior": {
+    "profile": "benthic",
+    "band": [
+      0.75,
+      1
+    ],
+    "depth": [
+      0.1,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.5,
+      3.2
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.7
+}
