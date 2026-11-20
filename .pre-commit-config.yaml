@@ -26,6 +26,9 @@ repos:
           - scipy>=1.14
           - pytest>=8.3
           - pytest-cov>=6.0
+          # the shared rules of client/ (tests/test_client.py)
+          - jsonschema>=4.23
+          - referencing>=0.35
 
       # Source clips stay on the author's computer: never in the repository
       - id: no-source-clips

@@ -1,0 +1,167 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Elwinmage/reeftank-catalog/schema/common.schema.json",
+  "title": "Shared definitions",
+  "$defs": {
+    "id": {
+      "description": "Stable identifier (the folder name): lower case, digits, - and _. Never renamed once released.",
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]{0,79}$",
+      "maxLength": 80
+    },
+    "i18n": {
+      "description": "Name per language. Every language is required (an untranslated name may repeat the English one).",
+      "type": "object",
+      "required": [
+        "en",
+        "fr",
+        "de",
+        "es",
+        "it",
+        "nl",
+        "pl",
+        "pt"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "en": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120,
+          "pattern": "\\S"
+        },
+        "fr": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120,
+          "pattern": "\\S"
+        },
+        "de": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120,
+          "pattern": "\\S"
+        },
+        "es": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120,
+          "pattern": "\\S"
+        },
+        "it": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120,
+          "pattern": "\\S"
+        },
+        "nl": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120,
+          "pattern": "\\S"
+        },
+        "pl": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120,
+          "pattern": "\\S"
+        },
+        "pt": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120,
+          "pattern": "\\S"
+        }
+      }
+    },
+    "scientific": {
+      "description": "Scientific name: \"Genus species\", or \"Genus sp.\" for a whole genus.",
+      "type": "string",
+      "pattern": "^[A-Z][a-z]+ (sp\\.|[a-z]+(-[a-z]+)?( [a-z]+)?)$",
+      "maxLength": 80
+    },
+    "water_types": {
+      "description": "Where the species lives.",
+      "type": "array",
+      "items": {
+        "enum": [
+          "marine",
+          "freshwater",
+          "brackish"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "size_cm": {
+      "description": "Adult size in cm: [smallest, largest].",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "minimum": 0.1
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "unit_range": {
+      "description": "[a, b] within 0..1 with a <= b.",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "color": {
+      "description": "Colour, as #rrggbb.",
+      "type": "string",
+      "pattern": "^#[0-9a-fA-F]{6}$"
+    },
+    "degraded": {
+      "description": "Picture animated from a still photo (built by the tools, not edited by hand).",
+      "type": "boolean"
+    },
+    "source": {
+      "description": "Where the picture comes from (built by the tools, not edited by hand).",
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "enum": [
+            "video",
+            "photo",
+            "ai-generated"
+          ]
+        },
+        "model": {
+          "type": "string",
+          "minLength": 1
+        },
+        "author": {
+          "type": "string",
+          "minLength": 1
+        },
+        "license": {
+          "enum": [
+            "CC BY 4.0",
+            "CC0",
+            "public domain"
+          ]
+        },
+        "date": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        }
+      }
+    },
+    "picture": {
+      "description": "What an animated picture is made of (built by the tools, not edited by hand).",
+      "type": "object"
+    }
+  }
+}

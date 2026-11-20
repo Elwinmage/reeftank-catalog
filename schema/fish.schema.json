@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Elwinmage/reeftank-catalog/schema/fish.schema.json",
+  "title": "Fish (fish/<id>/species.json)",
+  "description": "A fish: how it looks is its atlas, how it moves is its behaviour.",
+  "type": "object",
+  "required": [
+    "kind",
+    "names",
+    "scientific",
+    "water_types",
+    "size_cm",
+    "behavior",
+    "night",
+    "feeding_response"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "kind": {
+      "const": "fish"
+    },
+    "names": {
+      "$ref": "common.schema.json#/$defs/i18n"
+    },
+    "scientific": {
+      "$ref": "common.schema.json#/$defs/scientific"
+    },
+    "water_types": {
+      "$ref": "common.schema.json#/$defs/water_types"
+    },
+    "size_cm": {
+      "$ref": "common.schema.json#/$defs/size_cm"
+    },
+    "behavior": {
+      "description": "How the fish moves in the tank.",
+      "type": "object",
+      "required": [
+        "profile",
+        "band",
+        "depth",
+        "speed_cm_s",
+        "turn_rate"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "profile": {
+          "description": "shoal: swims in a group; cruiser: patrols; benthic: stays near the bottom; hover: stays in place; sand: lives on the sand.",
+          "enum": [
+            "shoal",
+            "cruiser",
+            "benthic",
+            "hover",
+            "sand"
+          ]
+        },
+        "band": {
+          "description": "Share of the tank length the fish uses: [from, to] within 0..1.",
+          "$ref": "common.schema.json#/$defs/unit_range"
+        },
+        "depth": {
+          "description": "Share of the tank height the fish uses: [from, to] within 0..1 (0 top, 1 bottom).",
+          "$ref": "common.schema.json#/$defs/unit_range"
+        },
+        "speed_cm_s": {
+          "description": "Swimming speed in cm/s: [min, max].",
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0.1
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "turn_rate": {
+          "description": "How fast it turns (higher is faster).",
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "territory_cm": {
+          "description": "Radius of the territory it defends, in cm.",
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "burrow": {
+          "description": "Digs into the sand.",
+          "type": "boolean"
+        },
+        "shoal": {
+          "description": "Weights of the shoal behaviour (cohesion, alignment...), as numbers >= 0.",
+          "type": "object",
+          "additionalProperties": {
+            "type": "number",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "night": {
+      "description": "What it does at night: hide, hover in place, or rest on the bottom.",
+      "enum": [
+        "hide",
+        "hover",
+        "rest_bottom"
+      ]
+    },
+    "feeding_response": {
+      "description": "How eagerly it comes to food, within 0..1.",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "atlas": {
+      "description": "Atlas files by name (built).",
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "thumbnail": {
+      "description": "Thumbnail file (built).",
+      "type": "string"
+    },
+    "frame": {
+      "description": "Frame size [width, height] (built).",
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "columns": {
+      "description": "Columns of the atlas (built).",
+      "type": "integer",
+      "minimum": 1
+    },
+    "clips": {
+      "description": "Clips of the atlas (built).",
+      "type": "object"
+    },
+    "facing": {
+      "description": "Side the animal faces in the atlas (built).",
+      "enum": [
+        "left",
+        "right"
+      ]
+    },
+    "length_frac": {
+      "description": "Share of the frame the animal fills (built).",
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "maximum": 1
+    },
+    "degraded": {
+      "$ref": "common.schema.json#/$defs/degraded"
+    },
+    "source": {
+      "$ref": "common.schema.json#/$defs/source"
+    }
+  }
+}

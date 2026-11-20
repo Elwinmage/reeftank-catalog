@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Elwinmage/reeftank-catalog/schema/plant.schema.json",
+  "title": "Plant (plants/<id>/species.json)",
+  "description": "An aquarium plant.",
+  "type": "object",
+  "required": [
+    "kind",
+    "names",
+    "scientific",
+    "water_types",
+    "size_cm",
+    "zone"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "kind": {
+      "const": "plant"
+    },
+    "names": {
+      "$ref": "common.schema.json#/$defs/i18n"
+    },
+    "scientific": {
+      "$ref": "common.schema.json#/$defs/scientific"
+    },
+    "water_types": {
+      "$ref": "common.schema.json#/$defs/water_types"
+    },
+    "size_cm": {
+      "$ref": "common.schema.json#/$defs/size_cm"
+    },
+    "zone": {
+      "description": "Where the plant grows in the tank.",
+      "enum": [
+        "background",
+        "midground",
+        "foreground",
+        "floating",
+        "epiphyte"
+      ]
+    },
+    "atlas": {
+      "description": "Atlas files by name (built).",
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "thumbnail": {
+      "description": "Thumbnail file (built).",
+      "type": "string"
+    },
+    "frame": {
+      "description": "Frame size [width, height] (built).",
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "columns": {
+      "description": "Columns of the atlas (built).",
+      "type": "integer",
+      "minimum": 1
+    },
+    "clips": {
+      "description": "Clips of the atlas (built).",
+      "type": "object"
+    },
+    "facing": {
+      "description": "Side the animal faces in the atlas (built).",
+      "enum": [
+        "left",
+        "right"
+      ]
+    },
+    "length_frac": {
+      "description": "Share of the frame the animal fills (built).",
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "maximum": 1
+    },
+    "degraded": {
+      "$ref": "common.schema.json#/$defs/degraded"
+    },
+    "source": {
+      "$ref": "common.schema.json#/$defs/source"
+    }
+  }
+}

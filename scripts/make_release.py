@@ -9,6 +9,9 @@ writes into `dist/`:
 - `<kind>-<id>.zip` for every entry: species.json and its pictures, flat.
   Archives are reproducible (sorted names, fixed dates), so an unchanged
   entry keeps its sha256 and the integration does not download it again;
+- `schema.zip`: the JSON Schemas of the species (`schema/`), for the tools that
+  edit the catalog; the manifest names it in its `schema` record. The
+  integration ignores both;
 - `manifest.json` (read by the integration, see pack.py there);
 - `notes.md`: entries added, updated and removed since `--previous`.
 
@@ -31,6 +34,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from validate import DESCRIPTORS, check_catalog, shipped_files
 
 MANIFEST_FORMAT = 1
+SCHEMA_FOLDER = "schema"
+SCHEMA_ARCHIVE = "schema.zip"
 DEFAULT_MIN_INTEGRATION = "0.1.0"
 _FIXED_DATE = (2020, 1, 1, 0, 0, 0)
 
@@ -40,6 +45,18 @@ def entry_archive(folder: Path) -> bytes:
     buffer = io.BytesIO()
     with zipfile.ZipFile(buffer, "w", zipfile.ZIP_DEFLATED) as archive:
         for path in shipped_files(folder):
+            info = zipfile.ZipInfo(path.name, date_time=_FIXED_DATE)
+            info.compress_type = zipfile.ZIP_DEFLATED
+            info.external_attr = 0o644 << 16
+            archive.writestr(info, path.read_bytes())
+    return buffer.getvalue()
+
+
+def schema_archive(folder: Path) -> bytes:
+    """Reproducible zip of the JSON Schemas (flat, like an entry)."""
+    buffer = io.BytesIO()
+    with zipfile.ZipFile(buffer, "w", zipfile.ZIP_DEFLATED) as archive:
+        for path in sorted(folder.glob("*.schema.json")):
             info = zipfile.ZipInfo(path.name, date_time=_FIXED_DATE)
             info.compress_type = zipfile.ZIP_DEFLATED
             info.external_attr = 0o644 << 16
@@ -109,13 +126,22 @@ def build(
     notes = "\n".join(lines)
     (out / "notes.md").write_text(notes, encoding="utf-8")
 
-    manifest = {
+    manifest: dict[str, Any] = {
         "format": MANIFEST_FORMAT,
         "version": version,
         "min_integration": min_integration,
         "notes": notes.strip(),
         "entries": entries,
     }
+    schemas = root / SCHEMA_FOLDER
+    if schemas.is_dir():
+        blob = schema_archive(schemas)
+        (out / SCHEMA_ARCHIVE).write_bytes(blob)
+        manifest["schema"] = {
+            "sha256": hashlib.sha256(blob).hexdigest(),
+            "size": len(blob),
+            "file": SCHEMA_ARCHIVE,
+        }
     (out / "manifest.json").write_text(
         json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
     )
