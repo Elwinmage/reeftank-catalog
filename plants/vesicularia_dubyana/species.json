@@ -26,12 +26,12 @@
   "names": {
     "en": "Java moss",
     "fr": "Mousse de Java",
-    "de": "Java moss",
-    "es": "Java moss",
-    "it": "Java moss",
-    "nl": "Java moss",
-    "pl": "Java moss",
-    "pt": "Java moss"
+    "de": "Javamoos",
+    "es": "Musgo de Java",
+    "it": "Muschio di Giava",
+    "nl": "Javamos",
+    "pl": "Mech jawajski",
+    "pt": "Musgo-de-Java"
   },
   "scientific": "Vesicularia dubyana",
   "water_types": [

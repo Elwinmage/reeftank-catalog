@@ -40,12 +40,12 @@
   "names": {
     "en": "Knight goby",
     "fr": "Gobie chevalier",
-    "de": "Knight goby",
-    "es": "Knight goby",
-    "it": "Knight goby",
-    "nl": "Knight goby",
-    "pl": "Knight goby",
-    "pt": "Knight goby"
+    "de": "Ritter-Grundel",
+    "es": "Gobio caballero",
+    "it": "Ghiozzo cavaliere",
+    "nl": "Ridder-grondel",
+    "pl": "Babka rycerska",
+    "pt": "Góbio-cavaleiro"
   },
   "scientific": "Stigmatogobius sadanundio",
   "water_types": [

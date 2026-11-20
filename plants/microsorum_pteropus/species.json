@@ -26,12 +26,12 @@
   "names": {
     "en": "Java fern",
     "fr": "Fougère de Java",
-    "de": "Java fern",
-    "es": "Java fern",
-    "it": "Java fern",
-    "nl": "Java fern",
-    "pl": "Java fern",
-    "pt": "Java fern"
+    "de": "Javafarn",
+    "es": "Helecho de Java",
+    "it": "Felce di Giava",
+    "nl": "Javavaren",
+    "pl": "Paproć jawajska",
+    "pt": "Samambaia-de-Java"
   },
   "scientific": "Microsorum pteropus",
   "water_types": [

@@ -40,12 +40,12 @@
   "names": {
     "en": "Banded archerfish",
     "fr": "Archer",
-    "de": "Banded archerfish",
-    "es": "Banded archerfish",
-    "it": "Banded archerfish",
-    "nl": "Banded archerfish",
-    "pl": "Banded archerfish",
-    "pt": "Banded archerfish"
+    "de": "Schützenfisch",
+    "es": "Pez arquero",
+    "it": "Pesce arciere",
+    "nl": "Gebandeerde schietvis",
+    "pl": "Strzelec prążkowany",
+    "pt": "Peixe-arqueiro"
   },
   "scientific": "Toxotes jaculatrix",
   "water_types": [

@@ -3,12 +3,12 @@
   "names": {
     "en": "Astraea snail",
     "fr": "Astrée",
-    "de": "Astraea snail",
-    "es": "Astraea snail",
-    "it": "Astraea snail",
-    "nl": "Astraea snail",
-    "pl": "Astraea snail",
-    "pt": "Astraea snail"
+    "de": "Astraea-Schnecke",
+    "es": "Caracol Astraea",
+    "it": "Lumaca Astraea",
+    "nl": "Astraea-slak",
+    "pl": "Ślimak Astraea",
+    "pt": "Caracol Astraea"
   },
   "scientific": "Astraea tecta",
   "water_types": [

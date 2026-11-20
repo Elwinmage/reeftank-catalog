@@ -22,108 +22,108 @@ Cada pez es una hoja de imágenes (un atlas WebP) y un descriptor con sus clips:
 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Nombre | Nombre científico | Agua | Tamaño | Comportamiento | HD |
 |---|---|---|---|---|---|---|
-| <img src="fish/pterophyllum_scalare/thumb.webp" width="160" alt=""> | Angelfish<br>`pterophyllum_scalare` | *Pterophyllum scalare* | Agua dulce | 12–15 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/ancistrus.webp" width="240" alt=""> | Ancistrus<br>`ancistrus` | *Ancistrus sp.* | Agua dulce | 10–14 cm | Vive cerca del fondo · se esconde de noche |  |
 | <img src="docs/thumbs/fish/pseudanthias.webp" width="240" alt=""> | Antias<br>`pseudanthias` | *Pseudanthias sp.* | Marino | 8–14 cm | En cardumen · se esconde de noche | ✔ |
-| <img src="fish/periophthalmus_barbarus/thumb.webp" width="160" alt=""> | Atlantic mudskipper<br>`periophthalmus_barbarus` | *Periophthalmus barbarus* | Salobre | 10–15 cm | Vive cerca del fondo · se esconde de noche |  |
-| <img src="fish/toxotes_jaculatrix/thumb.webp" width="160" alt=""> | Banded archerfish<br>`toxotes_jaculatrix` | *Toxotes jaculatrix* | Salobre | 15–25 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/amblygobius_phalaena/thumb.webp" width="160" alt=""> | Banded goby<br>`amblygobius_phalaena` | *Amblygobius phalaena* | Marino | 8–10 cm | Vive sobre la arena · descansa en el fondo de noche |  |
-| <img src="fish/centropyge_bicolor/thumb.webp" width="160" alt=""> | Bicolor angelfish<br>`centropyge_bicolor` | *Centropyge bicolor* | Marino | 10–15 cm | Estacionario · flota en el agua de noche |  |
-| <img src="fish/ecsenius_bicolor/thumb.webp" width="160" alt=""> | Bicolor blenny<br>`ecsenius_bicolor` | *Ecsenius bicolor* | Marino | 8–10 cm | Vive cerca del fondo · se esconde de noche |  |
-| <img src="fish/gymnocorymbus_ternetzi/thumb.webp" width="160" alt=""> | Black skirt tetra<br>`gymnocorymbus_ternetzi` | *Gymnocorymbus ternetzi* | Agua dulce | 5–6 cm | En cardumen · se esconde de noche |  |
-| <img src="fish/labroides_dimidiatus/thumb.webp" width="160" alt=""> | Bluestreak cleaner wrasse<br>`labroides_dimidiatus` | *Labroides dimidiatus* | Marino | 10–12 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/ancistrus/thumb.webp" width="160" alt=""> | Bristlenose pleco<br>`ancistrus` | *Ancistrus sp.* | Agua dulce | 10–14 cm | Vive cerca del fondo · se esconde de noche |  |
-| <img src="fish/corydoras_aeneus/thumb.webp" width="160" alt=""> | Bronze corydoras<br>`corydoras_aeneus` | *Corydoras aeneus* | Agua dulce | 6–7 cm | Vive cerca del fondo · se esconde de noche |  |
-| <img src="fish/brachygobius_xanthozonus/thumb.webp" width="160" alt=""> | Bumblebee goby<br>`brachygobius_xanthozonus` | *Brachygobius xanthozonus* | Salobre | 3–4 cm | Vive cerca del fondo · se esconde de noche |  |
-| <img src="fish/paracheirodon_axelrodi/thumb.webp" width="160" alt=""> | Cardinal tetra<br>`paracheirodon_axelrodi` | *Paracheirodon axelrodi* | Agua dulce | 3–5 cm | En cardumen · se esconde de noche |  |
-| <img src="fish/danio_margaritatus/thumb.webp" width="160" alt=""> | Celestial pearl danio<br>`danio_margaritatus` | *Danio margaritatus* | Agua dulce | 2–3 cm | En cardumen · se esconde de noche |  |
-| <img src="fish/pethia_titteya/thumb.webp" width="160" alt=""> | Cherry barb<br>`pethia_titteya` | *Pethia titteya* | Agua dulce | 4–5 cm | En cardumen · se esconde de noche |  |
-| <img src="fish/gobiodon_citrinus/thumb.webp" width="160" alt=""> | Citron coral goby<br>`gobiodon_citrinus` | *Gobiodon citrinus* | Marino | 3–5 cm | Vive cerca del fondo · se esconde de noche |  |
-| <img src="fish/chromobotia_macracanthus/thumb.webp" width="160" alt=""> | Clown loach<br>`chromobotia_macracanthus` | *Chromobotia macracanthus* | Agua dulce | 15–30 cm | Vive cerca del fondo · se esconde de noche |  |
-| <img src="fish/apistogramma_cacatuoides/thumb.webp" width="160" alt=""> | Cockatoo dwarf cichlid<br>`apistogramma_cacatuoides` | *Apistogramma cacatuoides* | Agua dulce | 5–9 cm | Vive cerca del fondo · se esconde de noche |  |
-| <img src="fish/poecilia_sphenops/thumb.webp" width="160" alt=""> | Common molly<br>`poecilia_sphenops` | *Poecilia sphenops* | Agua dulce, Salobre | 6–10 cm | En cardumen · se esconde de noche |  |
-| <img src="fish/chelmon_rostratus/thumb.webp" width="160" alt=""> | Copperband butterflyfish<br>`chelmon_rostratus` | *Chelmon rostratus* | Marino | 15–20 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/apistogramma_cacatuoides.webp" width="240" alt=""> | Apistogramma cacatúa<br>`apistogramma_cacatuoides` | *Apistogramma cacatuoides* | Agua dulce | 5–9 cm | Vive cerca del fondo · se esconde de noche |  |
+| <img src="docs/thumbs/fish/pethia_titteya.webp" width="240" alt=""> | Barbo cereza<br>`pethia_titteya` | *Pethia titteya* | Agua dulce | 4–5 cm | En cardumen · se esconde de noche |  |
+| <img src="docs/thumbs/fish/puntigrus_tetrazona.webp" width="240" alt=""> | Barbo de Sumatra<br>`puntigrus_tetrazona` | *Puntigrus tetrazona* | Agua dulce | 5–7 cm | En cardumen · se esconde de noche |  |
+| <img src="docs/thumbs/fish/ecsenius_bicolor.webp" width="240" alt=""> | Blenio bicolor<br>`ecsenius_bicolor` | *Ecsenius bicolor* | Marino | 8–10 cm | Vive cerca del fondo · se esconde de noche |  |
+| <img src="docs/thumbs/fish/salarias_fasciatus.webp" width="240" alt=""> | Blenio cortacésped<br>`salarias_fasciatus` | *Salarias fasciatus* | Marino | 12–14 cm | Vive cerca del fondo · se esconde de noche |  |
+| <img src="docs/thumbs/fish/hippocampus_erectus.webp" width="240" alt=""> | Caballito de mar rayado<br>`hippocampus_erectus` | *Hippocampus erectus* | Marino | 10–15 cm | Estacionario · flota en el agua de noche |  |
+| <img src="docs/thumbs/fish/zebrasoma_flavescens.webp" width="240" alt=""> | Cirujano amarillo<br>`zebrasoma_flavescens` | *Zebrasoma flavescens* | Marino | 15–20 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/paracanthurus_hepatus.webp" width="240" alt=""> | Cirujano azul<br>`paracanthurus_hepatus` | *Paracanthurus hepatus* | Marino | 20–30 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/acanthurus_leucosternon.webp" width="240" alt=""> | Cirujano azul polvo<br>`acanthurus_leucosternon` | *Acanthurus leucosternon* | Marino | 20–23 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/ctenochaetus_strigosus.webp" width="240" alt=""> | Cirujano kole<br>`ctenochaetus_strigosus` | *Ctenochaetus strigosus* | Marino | 12–18 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/zebrasoma_scopas.webp" width="240" alt=""> | Cirujano marrón<br>`zebrasoma_scopas` | *Zebrasoma scopas* | Marino | 15–20 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/zebrasoma_veliferum.webp" width="240" alt=""> | Cirujano velero<br>`zebrasoma_veliferum` | *Zebrasoma veliferum* | Marino | 25–40 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/xiphophorus_hellerii.webp" width="240" alt=""> | Cola de espada<br>`xiphophorus_hellerii` | *Xiphophorus hellerii* | Agua dulce | 6–12 cm | En cardumen · se esconde de noche |  |
+| <img src="docs/thumbs/fish/crossocheilus_oblongus.webp" width="240" alt=""> | Come algas siamés<br>`crossocheilus_oblongus` | *Crossocheilus oblongus* | Agua dulce | 10–15 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/corydoras_aeneus.webp" width="240" alt=""> | Corydoras bronceado<br>`corydoras_aeneus` | *Corydoras aeneus* | Agua dulce | 6–7 cm | Vive cerca del fondo · se esconde de noche |  |
+| <img src="docs/thumbs/fish/corydoras_panda.webp" width="240" alt=""> | Corydoras panda<br>`corydoras_panda` | *Corydoras panda* | Agua dulce | 4–5 cm | Vive cerca del fondo · se esconde de noche |  |
 | <img src="docs/thumbs/fish/chromis_viridis.webp" width="240" alt=""> | Cromis verde<br>`chromis_viridis` | *Chromis viridis* | Marino | 5–8 cm | En cardumen · se esconde de noche | ✔ |
-| <img src="fish/chrysiptera_taupou/thumb.webp" width="160" alt=""> | Damisela de Fiji<br>`chrysiptera_taupou` | *Chrysiptera taupou* | Marino | 6–8 cm | Estacionario · se queda cerca de su refugio · flota en el agua de noche |  |
-| <img src="fish/pseudotropheus_demasoni/thumb.webp" width="160" alt=""> | Demasoni cichlid<br>`pseudotropheus_demasoni` | *Pseudotropheus demasoni* | Agua dulce | 7–8 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/symphysodon_aequifasciatus/thumb.webp" width="160" alt=""> | Discus<br>`symphysodon_aequifasciatus` | *Symphysodon aequifasciatus* | Agua dulce | 15–20 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/trichogaster_lalius/thumb.webp" width="160" alt=""> | Dwarf gourami<br>`trichogaster_lalius` | *Trichogaster lalius* | Agua dulce | 5–8 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/labidochromis_caeruleus/thumb.webp" width="160" alt=""> | Electric yellow cichlid<br>`labidochromis_caeruleus` | *Labidochromis caeruleus* | Agua dulce | 8–10 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/nematobrycon_palmeri/thumb.webp" width="160" alt=""> | Emperor tetra<br>`nematobrycon_palmeri` | *Nematobrycon palmeri* | Agua dulce | 4–6 cm | En cardumen · se esconde de noche |  |
-| <img src="fish/poecilia_wingei/thumb.webp" width="160" alt=""> | Endler's livebearer<br>`poecilia_wingei` | *Poecilia wingei* | Agua dulce | 2–4 cm | En cardumen · se esconde de noche |  |
-| <img src="fish/dichotomyctere_biocellatus/thumb.webp" width="160" alt=""> | Figure-eight puffer<br>`dichotomyctere_biocellatus` | *Dichotomyctere biocellatus* | Salobre | 5–6.5 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/nemateleotris_magnifica/thumb.webp" width="160" alt=""> | Firefish goby<br>`nemateleotris_magnifica` | *Nemateleotris magnifica* | Marino | 8–10 cm | Estacionario · flota en el agua de noche |  |
-| <img src="fish/centropyge_loricula/thumb.webp" width="160" alt=""> | Flame angelfish<br>`centropyge_loricula` | *Centropyge loricula* | Marino | 8–10 cm | Estacionario · flota en el agua de noche |  |
-| <img src="fish/cryptocentrus_cinctus/thumb.webp" width="160" alt=""> | Gobio centinela amarillo<br>`cryptocentrus_cinctus` | *Cryptocentrus cinctus* | Marino | 8–10 cm | Vive sobre la arena · vive en una madriguera · descansa en el fondo de noche |  |
-| <img src="fish/gobiodon_okinawae/thumb.webp" width="160" alt=""> | Gobio de Okinawa<br>`gobiodon_okinawae` | *Gobiodon okinawae* | Marino | 2.5–3.5 cm | Vive cerca del fondo · se esconde de noche |  |
+| <img src="docs/thumbs/fish/labidochromis_caeruleus.webp" width="240" alt=""> | Cíclido amarillo eléctrico<br>`labidochromis_caeruleus` | *Labidochromis caeruleus* | Agua dulce | 8–10 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/pseudotropheus_demasoni.webp" width="240" alt=""> | Cíclido Demasoni<br>`pseudotropheus_demasoni` | *Pseudotropheus demasoni* | Agua dulce | 7–8 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/chrysiptera_parasema.webp" width="240" alt=""> | Damisela de cola amarilla<br>`chrysiptera_parasema` | *Chrysiptera parasema* | Marino | 5–6 cm | Estacionario · se queda cerca de su refugio · flota en el agua de noche |  |
+| <img src="docs/thumbs/fish/chrysiptera_taupou.webp" width="240" alt=""> | Damisela de Fiji<br>`chrysiptera_taupou` | *Chrysiptera taupou* | Marino | 6–8 cm | Estacionario · se queda cerca de su refugio · flota en el agua de noche |  |
+| <img src="docs/thumbs/fish/danio_margaritatus.webp" width="240" alt=""> | Danio galaxia<br>`danio_margaritatus` | *Danio margaritatus* | Agua dulce | 2–3 cm | En cardumen · se esconde de noche |  |
+| <img src="docs/thumbs/fish/danio_albolineatus.webp" width="240" alt=""> | Danio perla<br>`danio_albolineatus` | *Danio albolineatus* | Agua dulce | 4–6 cm | En cardumen · se esconde de noche |  |
+| <img src="docs/thumbs/fish/dascyllus_trimaculatus.webp" width="240" alt=""> | Dascilo de tres manchas<br>`dascyllus_trimaculatus` | *Dascyllus trimaculatus* | Marino | 10–14 cm | Estacionario · flota en el agua de noche |  |
+| <img src="docs/thumbs/fish/symphysodon_aequifasciatus.webp" width="240" alt=""> | Discus<br>`symphysodon_aequifasciatus` | *Symphysodon aequifasciatus* | Agua dulce | 15–20 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/pterophyllum_scalare.webp" width="240" alt=""> | Escalar<br>`pterophyllum_scalare` | *Pterophyllum scalare* | Agua dulce | 12–15 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/scatophagus_argus.webp" width="240" alt=""> | Escáter moteado<br>`scatophagus_argus` | *Scatophagus argus* | Salobre, Marino | 15–30 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/brachygobius_xanthozonus.webp" width="240" alt=""> | Gobio abejorro<br>`brachygobius_xanthozonus` | *Brachygobius xanthozonus* | Salobre | 3–4 cm | Vive cerca del fondo · se esconde de noche |  |
+| <img src="docs/thumbs/fish/amblygobius_phalaena.webp" width="240" alt=""> | Gobio bandeado<br>`amblygobius_phalaena` | *Amblygobius phalaena* | Marino | 8–10 cm | Vive sobre la arena · descansa en el fondo de noche |  |
+| <img src="docs/thumbs/fish/stigmatogobius_sadanundio.webp" width="240" alt=""> | Gobio caballero<br>`stigmatogobius_sadanundio` | *Stigmatogobius sadanundio* | Salobre | 6–8 cm | Vive cerca del fondo · se esconde de noche |  |
+| <img src="docs/thumbs/fish/cryptocentrus_cinctus.webp" width="240" alt=""> | Gobio centinela amarillo<br>`cryptocentrus_cinctus` | *Cryptocentrus cinctus* | Marino | 8–10 cm | Vive sobre la arena · vive en una madriguera · descansa en el fondo de noche |  |
+| <img src="docs/thumbs/fish/gobiodon_citrinus.webp" width="240" alt=""> | Gobio de coral limón<br>`gobiodon_citrinus` | *Gobiodon citrinus* | Marino | 3–5 cm | Vive cerca del fondo · se esconde de noche |  |
+| <img src="docs/thumbs/fish/gobiodon_okinawae.webp" width="240" alt=""> | Gobio de Okinawa<br>`gobiodon_okinawae` | *Gobiodon okinawae* | Marino | 2.5–3.5 cm | Vive cerca del fondo · se esconde de noche |  |
 | <img src="docs/thumbs/fish/valenciennea.webp" width="240" alt=""> | Gobio durmiente<br>`valenciennea` | *Valenciennea sp.* | Marino | 10–16 cm | Vive sobre la arena · vive en una madriguera · descansa en el fondo de noche | ✔ |
-| <img src="fish/carassius_auratus/thumb.webp" width="160" alt=""> | Goldfish<br>`carassius_auratus` | *Carassius auratus* | Agua dulce | 10–25 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/dichotomyctere_nigroviridis/thumb.webp" width="160" alt=""> | Green spotted puffer<br>`dichotomyctere_nigroviridis` | *Dichotomyctere nigroviridis* | Salobre | 10–17 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/xiphophorus_hellerii/thumb.webp" width="160" alt=""> | Green swordtail<br>`xiphophorus_hellerii` | *Xiphophorus hellerii* | Agua dulce | 6–12 cm | En cardumen · se esconde de noche |  |
-| <img src="fish/poecilia_reticulata/thumb.webp" width="160" alt=""> | Guppy<br>`poecilia_reticulata` | *Poecilia reticulata* | Agua dulce | 3–6 cm | En cardumen · se esconde de noche |  |
-| <img src="fish/trigonostigma_heteromorpha/thumb.webp" width="160" alt=""> | Harlequin rasbora<br>`trigonostigma_heteromorpha` | *Trigonostigma heteromorpha* | Agua dulce | 3–4.5 cm | En cardumen · se esconde de noche |  |
-| <img src="fish/stigmatogobius_sadanundio/thumb.webp" width="160" alt=""> | Knight goby<br>`stigmatogobius_sadanundio` | *Stigmatogobius sadanundio* | Salobre | 6–8 cm | Vive cerca del fondo · se esconde de noche |  |
-| <img src="fish/ctenochaetus_strigosus/thumb.webp" width="160" alt=""> | Kole tang<br>`ctenochaetus_strigosus` | *Ctenochaetus strigosus* | Marino | 12–18 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/pelvicachromis_pulcher/thumb.webp" width="160" alt=""> | Kribensis<br>`pelvicachromis_pulcher` | *Pelvicachromis pulcher* | Agua dulce | 8–10 cm | Vive cerca del fondo · se esconde de noche |  |
-| <img src="fish/pangio_kuhlii/thumb.webp" width="160" alt=""> | Kuhli loach<br>`pangio_kuhlii` | *Pangio kuhlii* | Agua dulce | 8–12 cm | Vive cerca del fondo · se esconde de noche |  |
-| <img src="fish/salarias_fasciatus/thumb.webp" width="160" alt=""> | Lawnmower blenny<br>`salarias_fasciatus` | *Salarias fasciatus* | Marino | 12–14 cm | Vive cerca del fondo · se esconde de noche |  |
-| <img src="fish/hyphessobrycon_pulchripinnis/thumb.webp" width="160" alt=""> | Lemon tetra<br>`hyphessobrycon_pulchripinnis` | *Hyphessobrycon pulchripinnis* | Agua dulce | 3–4.5 cm | En cardumen · se esconde de noche |  |
-| <img src="fish/hippocampus_erectus/thumb.webp" width="160" alt=""> | Lined seahorse<br>`hippocampus_erectus` | *Hippocampus erectus* | Marino | 10–15 cm | Estacionario · flota en el agua de noche |  |
-| <img src="fish/aphyosemion_australe/thumb.webp" width="160" alt=""> | Lyretail killifish<br>`aphyosemion_australe` | *Aphyosemion australe* | Agua dulce | 5–6 cm | Estacionario · flota en el agua de noche |  |
-| <img src="fish/carnegiella_strigata/thumb.webp" width="160" alt=""> | Marbled hatchetfish<br>`carnegiella_strigata` | *Carnegiella strigata* | Agua dulce | 4–5 cm | En cardumen · se esconde de noche |  |
-| <img src="fish/premnas_biaculeatus/thumb.webp" width="160" alt=""> | Maroon clownfish<br>`premnas_biaculeatus` | *Premnas biaculeatus* | Marino | 10–15 cm | Estacionario · flota en el agua de noche |  |
-| <img src="fish/elacatinus_oceanops/thumb.webp" width="160" alt=""> | Neon goby<br>`elacatinus_oceanops` | *Elacatinus oceanops* | Marino | 4–6 cm | Vive cerca del fondo · se esconde de noche |  |
-| <img src="fish/paracheirodon_innesi/thumb.webp" width="160" alt=""> | Neon tetra<br>`paracheirodon_innesi` | *Paracheirodon innesi* | Agua dulce | 3–4 cm | En cardumen · se esconde de noche |  |
-| <img src="fish/pseudochromis_fridmani/thumb.webp" width="160" alt=""> | Orchid dottyback<br>`pseudochromis_fridmani` | *Pseudochromis fridmani* | Marino | 6–7 cm | Estacionario · se queda cerca de su refugio · flota en el agua de noche |  |
-| <img src="fish/astronotus_ocellatus/thumb.webp" width="160" alt=""> | Oscar<br>`astronotus_ocellatus` | *Astronotus ocellatus* | Agua dulce | 25–35 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/otocinclus_affinis/thumb.webp" width="160" alt=""> | Otocinclus<br>`otocinclus_affinis` | *Otocinclus affinis* | Agua dulce | 3–5 cm | Vive cerca del fondo · se esconde de noche |  |
-| <img src="fish/sphaeramia_nematoptera/thumb.webp" width="160" alt=""> | Pajama cardinalfish<br>`sphaeramia_nematoptera` | *Sphaeramia nematoptera* | Marino | 8–10 cm | Estacionario · flota en el agua de noche |  |
-| <img src="fish/corydoras_panda/thumb.webp" width="160" alt=""> | Panda corydoras<br>`corydoras_panda` | *Corydoras panda* | Agua dulce | 4–5 cm | Vive cerca del fondo · se esconde de noche |  |
-| <img src="fish/danio_albolineatus/thumb.webp" width="160" alt=""> | Pearl danio<br>`danio_albolineatus` | *Danio albolineatus* | Agua dulce | 4–6 cm | En cardumen · se esconde de noche |  |
-| <img src="fish/trichopodus_leerii/thumb.webp" width="160" alt=""> | Pearl gourami<br>`trichopodus_leerii` | *Trichopodus leerii* | Agua dulce | 10–12 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/elacatinus_oceanops.webp" width="240" alt=""> | Gobio neón<br>`elacatinus_oceanops` | *Elacatinus oceanops* | Marino | 4–6 cm | Vive cerca del fondo · se esconde de noche |  |
+| <img src="docs/thumbs/fish/gobioides_broussonnetii.webp" width="240" alt=""> | Gobio violeta<br>`gobioides_broussonnetii` | *Gobioides broussonnetii* | Salobre | 30–50 cm | Vive sobre la arena · vive en una madriguera · descansa en el fondo de noche |  |
+| <img src="docs/thumbs/fish/stonogobiops_yasha.webp" width="240" alt=""> | Gobio yasha<br>`stonogobiops_yasha` | *Stonogobiops yasha* | Marino | 6–8 cm | Vive sobre la arena · vive en una madriguera · descansa en el fondo de noche |  |
+| <img src="docs/thumbs/fish/gramma_loreto.webp" width="240" alt=""> | Gramma real<br>`gramma_loreto` | *Gramma loreto* | Marino | 7–8 cm | Estacionario · flota en el agua de noche |  |
+| <img src="docs/thumbs/fish/poecilia_reticulata.webp" width="240" alt=""> | Guppy<br>`poecilia_reticulata` | *Poecilia reticulata* | Agua dulce | 3–6 cm | En cardumen · se esconde de noche |  |
+| <img src="docs/thumbs/fish/poecilia_wingei.webp" width="240" alt=""> | Guppy de Endler<br>`poecilia_wingei` | *Poecilia wingei* | Agua dulce | 2–4 cm | En cardumen · se esconde de noche |  |
+| <img src="docs/thumbs/fish/trichopodus_trichopterus.webp" width="240" alt=""> | Gurami azul<br>`trichopodus_trichopterus` | *Trichopodus trichopterus* | Agua dulce | 10–15 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/trichogaster_lalius.webp" width="240" alt=""> | Gurami enano<br>`trichogaster_lalius` | *Trichogaster lalius* | Agua dulce | 5–8 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/trichopodus_leerii.webp" width="240" alt=""> | Gurami perla<br>`trichopodus_leerii` | *Trichopodus leerii* | Agua dulce | 10–12 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/aphyosemion_australe.webp" width="240" alt=""> | Killi del Cabo López<br>`aphyosemion_australe` | *Aphyosemion australe* | Agua dulce | 5–6 cm | Estacionario · flota en el agua de noche |  |
+| <img src="docs/thumbs/fish/pelvicachromis_pulcher.webp" width="240" alt=""> | Kribensis<br>`pelvicachromis_pulcher` | *Pelvicachromis pulcher* | Agua dulce | 8–10 cm | Vive cerca del fondo · se esconde de noche |  |
+| <img src="docs/thumbs/fish/labroides_dimidiatus.webp" width="240" alt=""> | Limpiador común<br>`labroides_dimidiatus` | *Labroides dimidiatus* | Marino | 10–12 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/pangio_kuhlii.webp" width="240" alt=""> | Locha de Kuhl<br>`pangio_kuhlii` | *Pangio kuhlii* | Agua dulce | 8–12 cm | Vive cerca del fondo · se esconde de noche |  |
+| <img src="docs/thumbs/fish/chromobotia_macracanthus.webp" width="240" alt=""> | Locha payaso<br>`chromobotia_macracanthus` | *Chromobotia macracanthus* | Agua dulce | 15–30 cm | Vive cerca del fondo · se esconde de noche |  |
+| <img src="docs/thumbs/fish/halichoeres_chrysus.webp" width="240" alt=""> | Lábrido amarillo<br>`halichoeres_chrysus` | *Halichoeres chrysus* | Marino | 10–12 cm | Nadador de aguas abiertas · descansa en el fondo de noche |  |
+| <img src="docs/thumbs/fish/pseudocheilinus_hexataenia.webp" width="240" alt=""> | Lábrido de seis líneas<br>`pseudocheilinus_hexataenia` | *Pseudocheilinus hexataenia* | Marino | 7–10 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/cirrhilabrus_solorensis.webp" width="240" alt=""> | Lábrido hada de Solor<br>`cirrhilabrus_solorensis` | *Cirrhilabrus solorensis* | Marino | 10–12 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/poecilia_sphenops.webp" width="240" alt=""> | Molly común<br>`poecilia_sphenops` | *Poecilia sphenops* | Agua dulce, Salobre | 6–10 cm | En cardumen · se esconde de noche |  |
+| <img src="docs/thumbs/fish/poecilia_velifera.webp" width="240" alt=""> | Molly vela<br>`poecilia_velifera` | *Poecilia velifera* | Salobre, Agua dulce | 10–15 cm | En cardumen · se esconde de noche |  |
+| <img src="docs/thumbs/fish/monodactylus_argenteus.webp" width="240" alt=""> | Monodáctilo plateado<br>`monodactylus_argenteus` | *Monodactylus argenteus* | Salobre, Marino | 15–25 cm | En cardumen · se esconde de noche |  |
+| <img src="docs/thumbs/fish/astronotus_ocellatus.webp" width="240" alt=""> | Oscar<br>`astronotus_ocellatus` | *Astronotus ocellatus* | Agua dulce | 25–35 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/otocinclus_affinis.webp" width="240" alt=""> | Otocinclus<br>`otocinclus_affinis` | *Otocinclus affinis* | Agua dulce | 3–5 cm | Vive cerca del fondo · se esconde de noche |  |
+| <img src="docs/thumbs/fish/melanotaenia_lacustris.webp" width="240" alt=""> | Pez arcoíris turquesa<br>`melanotaenia_lacustris` | *Melanotaenia lacustris* | Agua dulce | 8–12 cm | En cardumen · se esconde de noche |  |
+| <img src="docs/thumbs/fish/toxotes_jaculatrix.webp" width="240" alt=""> | Pez arquero<br>`toxotes_jaculatrix` | *Toxotes jaculatrix* | Salobre | 15–25 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/rhinecanthus_aculeatus.webp" width="240" alt=""> | Pez ballesta Picasso<br>`rhinecanthus_aculeatus` | *Rhinecanthus aculeatus* | Marino | 20–25 cm | Nadador de aguas abiertas · se esconde de noche |  |
 | <img src="docs/thumbs/fish/pterapogon_kauderni.webp" width="240" alt=""> | Pez cardenal de Banggai<br>`pterapogon_kauderni` | *Pterapogon kauderni* | Marino | 5–8 cm | Estacionario · flota en el agua de noche | ✔ |
+| <img src="docs/thumbs/fish/ostorhinchus_cyanosoma.webp" width="240" alt=""> | Pez cardenal de rayas amarillas<br>`ostorhinchus_cyanosoma` | *Ostorhinchus cyanosoma* | Marino | 7–8 cm | Estacionario · flota en el agua de noche |  |
+| <img src="docs/thumbs/fish/sphaeramia_nematoptera.webp" width="240" alt=""> | Pez cardenal pijama<br>`sphaeramia_nematoptera` | *Sphaeramia nematoptera* | Marino | 8–10 cm | Estacionario · flota en el agua de noche |  |
+| <img src="docs/thumbs/fish/danio_rerio.webp" width="240" alt=""> | Pez cebra<br>`danio_rerio` | *Danio rerio* | Agua dulce | 4–5 cm | En cardumen · se esconde de noche |  |
 | <img src="docs/thumbs/fish/siganus_vulpinus.webp" width="240" alt=""> | Pez conejo cara de zorro<br>`siganus_vulpinus` | *Siganus vulpinus* | Marino | 15–22 cm | Nadador de aguas abiertas · descansa en el fondo de noche | ✔ |
+| <img src="docs/thumbs/fish/nemateleotris_magnifica.webp" width="240" alt=""> | Pez de fuego<br>`nemateleotris_magnifica` | *Nemateleotris magnifica* | Marino | 8–10 cm | Estacionario · flota en el agua de noche |  |
+| <img src="docs/thumbs/fish/nemateleotris_decora.webp" width="240" alt=""> | Pez de fuego púrpura<br>`nemateleotris_decora` | *Nemateleotris decora* | Marino | 8–10 cm | Estacionario · flota en el agua de noche |  |
+| <img src="docs/thumbs/fish/tanichthys_albonubes.webp" width="240" alt=""> | Pez de las nubes<br>`tanichthys_albonubes` | *Tanichthys albonubes* | Agua dulce | 3–4 cm | En cardumen · se esconde de noche |  |
+| <img src="docs/thumbs/fish/carassius_auratus.webp" width="240" alt=""> | Pez dorado<br>`carassius_auratus` | *Carassius auratus* | Agua dulce | 10–25 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/dichotomyctere_biocellatus.webp" width="240" alt=""> | Pez globo de ocho<br>`dichotomyctere_biocellatus` | *Dichotomyctere biocellatus* | Salobre | 5–6.5 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/canthigaster_valentini.webp" width="240" alt=""> | Pez globo de Valentin<br>`canthigaster_valentini` | *Canthigaster valentini* | Marino | 8–10 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/dichotomyctere_nigroviridis.webp" width="240" alt=""> | Pez globo verde<br>`dichotomyctere_nigroviridis` | *Dichotomyctere nigroviridis* | Salobre | 10–17 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/carnegiella_strigata.webp" width="240" alt=""> | Pez hacha marmoleado<br>`carnegiella_strigata` | *Carnegiella strigata* | Agua dulce | 4–5 cm | En cardumen · se esconde de noche |  |
+| <img src="docs/thumbs/fish/cirrhitichthys_oxycephalus.webp" width="240" alt=""> | Pez halcón pixie<br>`cirrhitichthys_oxycephalus` | *Cirrhitichthys oxycephalus* | Marino | 8–10 cm | Vive cerca del fondo · se esconde de noche |  |
+| <img src="docs/thumbs/fish/dendrochirus_zebra.webp" width="240" alt=""> | Pez león cebra<br>`dendrochirus_zebra` | *Dendrochirus zebra* | Marino | 12–18 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/pterois_volitans.webp" width="240" alt=""> | Pez león rojo<br>`pterois_volitans` | *Pterois volitans* | Marino | 25–35 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/betta_splendens.webp" width="240" alt=""> | Pez luchador de Siam<br>`betta_splendens` | *Betta splendens* | Agua dulce | 5–7 cm | Estacionario · se queda cerca de su refugio · flota en el agua de noche |  |
 | <img src="docs/thumbs/fish/synchiropus_splendidus.webp" width="240" alt=""> | Pez mandarín<br>`synchiropus_splendidus` | *Synchiropus splendidus* | Marino | 5–8 cm | Vive cerca del fondo · se esconde de noche | ✔ |
+| <img src="docs/thumbs/fish/synchiropus_picturatus.webp" width="240" alt=""> | Pez mandarín psicodélico<br>`synchiropus_picturatus` | *Synchiropus picturatus* | Marino | 6–8 cm | Vive cerca del fondo · se esconde de noche |  |
+| <img src="docs/thumbs/fish/opistognathus_aurifrons.webp" width="240" alt=""> | Pez mandíbula de cabeza amarilla<br>`opistognathus_aurifrons` | *Opistognathus aurifrons* | Marino | 10–12 cm | Vive sobre la arena · vive en una madriguera · descansa en el fondo de noche |  |
+| <img src="docs/thumbs/fish/chelmon_rostratus.webp" width="240" alt=""> | Pez mariposa de franjas cobrizas<br>`chelmon_rostratus` | *Chelmon rostratus* | Marino | 15–20 cm | Nadador de aguas abiertas · se esconde de noche |  |
 | <img src="docs/thumbs/fish/amphiprion.webp" width="240" alt=""> | Pez payaso<br>`amphiprion` | *Amphiprion sp.* | Marino | 7–11 cm | Estacionario · flota en el agua de noche | ✔ |
+| <img src="docs/thumbs/fish/premnas_biaculeatus.webp" width="240" alt=""> | Pez payaso granate<br>`premnas_biaculeatus` | *Premnas biaculeatus* | Marino | 10–15 cm | Estacionario · flota en el agua de noche |  |
+| <img src="docs/thumbs/fish/centropyge_bicolor.webp" width="240" alt=""> | Pez ángel bicolor<br>`centropyge_bicolor` | *Centropyge bicolor* | Marino | 10–15 cm | Estacionario · flota en el agua de noche |  |
 | <img src="docs/thumbs/fish/pomacanthus_imperator_adult.webp" width="240" alt=""> | Pez ángel emperador (adulto)<br>`pomacanthus_imperator_adult` | *Pomacanthus imperator* | Marino | 25–38 cm | Nadador de aguas abiertas · se esconde de noche | ✔ |
 | <img src="docs/thumbs/fish/pomacanthus_imperator.webp" width="240" alt=""> | Pez ángel emperador (juvenil)<br>`pomacanthus_imperator` | *Pomacanthus imperator* | Marino | 6–12 cm | Nadador de aguas abiertas · se esconde de noche | ✔ |
-| <img src="fish/rhinecanthus_aculeatus/thumb.webp" width="160" alt=""> | Picasso triggerfish<br>`rhinecanthus_aculeatus` | *Rhinecanthus aculeatus* | Marino | 20–25 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/cirrhitichthys_oxycephalus/thumb.webp" width="160" alt=""> | Pixy hawkfish<br>`cirrhitichthys_oxycephalus` | *Cirrhitichthys oxycephalus* | Marino | 8–10 cm | Vive cerca del fondo · se esconde de noche |  |
-| <img src="fish/acanthurus_leucosternon/thumb.webp" width="160" alt=""> | Powder blue tang<br>`acanthurus_leucosternon` | *Acanthurus leucosternon* | Marino | 20–23 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/nemateleotris_decora/thumb.webp" width="160" alt=""> | Purple firefish<br>`nemateleotris_decora` | *Nemateleotris decora* | Marino | 8–10 cm | Estacionario · flota en el agua de noche |  |
-| <img src="fish/mikrogeophagus_ramirezi/thumb.webp" width="160" alt=""> | Ram cichlid<br>`mikrogeophagus_ramirezi` | *Mikrogeophagus ramirezi* | Agua dulce | 5–7 cm | Estacionario · flota en el agua de noche |  |
-| <img src="fish/pterois_volitans/thumb.webp" width="160" alt=""> | Red lionfish<br>`pterois_volitans` | *Pterois volitans* | Marino | 25–35 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/pygoplites_diacanthus/thumb.webp" width="160" alt=""> | Regal angelfish<br>`pygoplites_diacanthus` | *Pygoplites diacanthus* | Marino | 20–25 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/paracanthurus_hepatus/thumb.webp" width="160" alt=""> | Regal blue tang<br>`paracanthurus_hepatus` | *Paracanthurus hepatus* | Marino | 20–30 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/gramma_loreto/thumb.webp" width="160" alt=""> | Royal gramma<br>`gramma_loreto` | *Gramma loreto* | Marino | 7–8 cm | Estacionario · flota en el agua de noche |  |
-| <img src="fish/hemigrammus_bleheri/thumb.webp" width="160" alt=""> | Rummy-nose tetra<br>`hemigrammus_bleheri` | *Hemigrammus bleheri* | Agua dulce | 4–5 cm | En cardumen · se esconde de noche |  |
-| <img src="fish/poecilia_velifera/thumb.webp" width="160" alt=""> | Sailfin molly<br>`poecilia_velifera` | *Poecilia velifera* | Salobre, Agua dulce | 10–15 cm | En cardumen · se esconde de noche |  |
-| <img src="fish/zebrasoma_veliferum/thumb.webp" width="160" alt=""> | Sailfin tang<br>`zebrasoma_veliferum` | *Zebrasoma veliferum* | Marino | 25–40 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/zebrasoma_scopas/thumb.webp" width="160" alt=""> | Scopas tang<br>`zebrasoma_scopas` | *Zebrasoma scopas* | Marino | 15–20 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/hyphessobrycon_eques/thumb.webp" width="160" alt=""> | Serpae tetra<br>`hyphessobrycon_eques` | *Hyphessobrycon eques* | Agua dulce | 3–4.5 cm | En cardumen · se esconde de noche |  |
-| <img src="fish/crossocheilus_oblongus/thumb.webp" width="160" alt=""> | Siamese algae eater<br>`crossocheilus_oblongus` | *Crossocheilus oblongus* | Agua dulce | 10–15 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/betta_splendens/thumb.webp" width="160" alt=""> | Siamese fighting fish<br>`betta_splendens` | *Betta splendens* | Agua dulce | 5–7 cm | Estacionario · se queda cerca de su refugio · flota en el agua de noche |  |
-| <img src="fish/monodactylus_argenteus/thumb.webp" width="160" alt=""> | Silver moony<br>`monodactylus_argenteus` | *Monodactylus argenteus* | Salobre, Marino | 15–25 cm | En cardumen · se esconde de noche |  |
-| <img src="fish/pseudocheilinus_hexataenia/thumb.webp" width="160" alt=""> | Six line wrasse<br>`pseudocheilinus_hexataenia` | *Pseudocheilinus hexataenia* | Marino | 7–10 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/cirrhilabrus_solorensis/thumb.webp" width="160" alt=""> | Solor fairy wrasse<br>`cirrhilabrus_solorensis` | *Cirrhilabrus solorensis* | Marino | 10–12 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/xiphophorus_maculatus/thumb.webp" width="160" alt=""> | Southern platyfish<br>`xiphophorus_maculatus` | *Xiphophorus maculatus* | Agua dulce | 4–6 cm | En cardumen · se esconde de noche |  |
-| <img src="fish/synchiropus_picturatus/thumb.webp" width="160" alt=""> | Spotted mandarin<br>`synchiropus_picturatus` | *Synchiropus picturatus* | Marino | 6–8 cm | Vive cerca del fondo · se esconde de noche |  |
-| <img src="fish/scatophagus_argus/thumb.webp" width="160" alt=""> | Spotted scat<br>`scatophagus_argus` | *Scatophagus argus* | Salobre, Marino | 15–30 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/trichopodus_trichopterus/thumb.webp" width="160" alt=""> | Three-spot gourami<br>`trichopodus_trichopterus` | *Trichopodus trichopterus* | Agua dulce | 10–15 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/dascyllus_trimaculatus/thumb.webp" width="160" alt=""> | Threespot dascyllus<br>`dascyllus_trimaculatus` | *Dascyllus trimaculatus* | Marino | 10–14 cm | Estacionario · flota en el agua de noche |  |
-| <img src="fish/puntigrus_tetrazona/thumb.webp" width="160" alt=""> | Tiger barb<br>`puntigrus_tetrazona` | *Puntigrus tetrazona* | Agua dulce | 5–7 cm | En cardumen · se esconde de noche |  |
-| <img src="fish/melanotaenia_lacustris/thumb.webp" width="160" alt=""> | Turquoise rainbowfish<br>`melanotaenia_lacustris` | *Melanotaenia lacustris* | Agua dulce | 8–12 cm | En cardumen · se esconde de noche |  |
-| <img src="fish/canthigaster_valentini/thumb.webp" width="160" alt=""> | Valentini puffer<br>`canthigaster_valentini` | *Canthigaster valentini* | Marino | 8–10 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/gobioides_broussonnetii/thumb.webp" width="160" alt=""> | Violet goby<br>`gobioides_broussonnetii` | *Gobioides broussonnetii* | Salobre | 30–50 cm | Vive sobre la arena · vive en una madriguera · descansa en el fondo de noche |  |
-| <img src="fish/tanichthys_albonubes/thumb.webp" width="160" alt=""> | White cloud mountain minnow<br>`tanichthys_albonubes` | *Tanichthys albonubes* | Agua dulce | 3–4 cm | En cardumen · se esconde de noche |  |
-| <img src="fish/stonogobiops_yasha/thumb.webp" width="160" alt=""> | Yasha goby<br>`stonogobiops_yasha` | *Stonogobiops yasha* | Marino | 6–8 cm | Vive sobre la arena · vive en una madriguera · descansa en el fondo de noche |  |
-| <img src="fish/halichoeres_chrysus/thumb.webp" width="160" alt=""> | Yellow coris wrasse<br>`halichoeres_chrysus` | *Halichoeres chrysus* | Marino | 10–12 cm | Nadador de aguas abiertas · descansa en el fondo de noche |  |
-| <img src="fish/zebrasoma_flavescens/thumb.webp" width="160" alt=""> | Yellow tang<br>`zebrasoma_flavescens` | *Zebrasoma flavescens* | Marino | 15–20 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/ostorhinchus_cyanosoma/thumb.webp" width="160" alt=""> | Yellow-striped cardinalfish<br>`ostorhinchus_cyanosoma` | *Ostorhinchus cyanosoma* | Marino | 7–8 cm | Estacionario · flota en el agua de noche |  |
-| <img src="fish/opistognathus_aurifrons/thumb.webp" width="160" alt=""> | Yellowhead jawfish<br>`opistognathus_aurifrons` | *Opistognathus aurifrons* | Marino | 10–12 cm | Vive sobre la arena · vive en una madriguera · descansa en el fondo de noche |  |
-| <img src="fish/chrysiptera_parasema/thumb.webp" width="160" alt=""> | Yellowtail blue damselfish<br>`chrysiptera_parasema` | *Chrysiptera parasema* | Marino | 5–6 cm | Estacionario · se queda cerca de su refugio · flota en el agua de noche |  |
-| <img src="fish/dendrochirus_zebra/thumb.webp" width="160" alt=""> | Zebra lionfish<br>`dendrochirus_zebra` | *Dendrochirus zebra* | Marino | 12–18 cm | Nadador de aguas abiertas · se esconde de noche |  |
-| <img src="fish/hypancistrus_zebra/thumb.webp" width="160" alt=""> | Zebra pleco<br>`hypancistrus_zebra` | *Hypancistrus zebra* | Agua dulce | 7–10 cm | Vive cerca del fondo · se esconde de noche |  |
-| <img src="fish/danio_rerio/thumb.webp" width="160" alt=""> | Zebrafish<br>`danio_rerio` | *Danio rerio* | Agua dulce | 4–5 cm | En cardumen · se esconde de noche |  |
+| <img src="docs/thumbs/fish/centropyge_loricula.webp" width="240" alt=""> | Pez ángel flama<br>`centropyge_loricula` | *Centropyge loricula* | Marino | 8–10 cm | Estacionario · flota en el agua de noche |  |
+| <img src="docs/thumbs/fish/pygoplites_diacanthus.webp" width="240" alt=""> | Pez ángel real<br>`pygoplites_diacanthus` | *Pygoplites diacanthus* | Marino | 20–25 cm | Nadador de aguas abiertas · se esconde de noche |  |
+| <img src="docs/thumbs/fish/xiphophorus_maculatus.webp" width="240" alt=""> | Platy<br>`xiphophorus_maculatus` | *Xiphophorus maculatus* | Agua dulce | 4–6 cm | En cardumen · se esconde de noche |  |
+| <img src="docs/thumbs/fish/hypancistrus_zebra.webp" width="240" alt=""> | Pleco cebra<br>`hypancistrus_zebra` | *Hypancistrus zebra* | Agua dulce | 7–10 cm | Vive cerca del fondo · se esconde de noche |  |
+| <img src="docs/thumbs/fish/pseudochromis_fridmani.webp" width="240" alt=""> | Pseudocromis orquídea<br>`pseudochromis_fridmani` | *Pseudochromis fridmani* | Marino | 6–7 cm | Estacionario · se queda cerca de su refugio · flota en el agua de noche |  |
+| <img src="docs/thumbs/fish/mikrogeophagus_ramirezi.webp" width="240" alt=""> | Ramirezi<br>`mikrogeophagus_ramirezi` | *Mikrogeophagus ramirezi* | Agua dulce | 5–7 cm | Estacionario · flota en el agua de noche |  |
+| <img src="docs/thumbs/fish/trigonostigma_heteromorpha.webp" width="240" alt=""> | Rasbora arlequín<br>`trigonostigma_heteromorpha` | *Trigonostigma heteromorpha* | Agua dulce | 3–4.5 cm | En cardumen · se esconde de noche |  |
+| <img src="docs/thumbs/fish/periophthalmus_barbarus.webp" width="240" alt=""> | Saltarín del fango atlántico<br>`periophthalmus_barbarus` | *Periophthalmus barbarus* | Salobre | 10–15 cm | Vive cerca del fondo · se esconde de noche |  |
+| <img src="docs/thumbs/fish/paracheirodon_axelrodi.webp" width="240" alt=""> | Tetra cardenal<br>`paracheirodon_axelrodi` | *Paracheirodon axelrodi* | Agua dulce | 3–5 cm | En cardumen · se esconde de noche |  |
+| <img src="docs/thumbs/fish/nematobrycon_palmeri.webp" width="240" alt=""> | Tetra emperador<br>`nematobrycon_palmeri` | *Nematobrycon palmeri* | Agua dulce | 4–6 cm | En cardumen · se esconde de noche |  |
+| <img src="docs/thumbs/fish/hyphessobrycon_pulchripinnis.webp" width="240" alt=""> | Tetra limón<br>`hyphessobrycon_pulchripinnis` | *Hyphessobrycon pulchripinnis* | Agua dulce | 3–4.5 cm | En cardumen · se esconde de noche |  |
+| <img src="docs/thumbs/fish/hemigrammus_bleheri.webp" width="240" alt=""> | Tetra nariz roja<br>`hemigrammus_bleheri` | *Hemigrammus bleheri* | Agua dulce | 4–5 cm | En cardumen · se esconde de noche |  |
+| <img src="docs/thumbs/fish/gymnocorymbus_ternetzi.webp" width="240" alt=""> | Tetra negro<br>`gymnocorymbus_ternetzi` | *Gymnocorymbus ternetzi* | Agua dulce | 5–6 cm | En cardumen · se esconde de noche |  |
+| <img src="docs/thumbs/fish/paracheirodon_innesi.webp" width="240" alt=""> | Tetra neón<br>`paracheirodon_innesi` | *Paracheirodon innesi* | Agua dulce | 3–4 cm | En cardumen · se esconde de noche |  |
+| <img src="docs/thumbs/fish/hyphessobrycon_eques.webp" width="240" alt=""> | Tetra serpae<br>`hyphessobrycon_eques` | *Hyphessobrycon eques* | Agua dulce | 3–4.5 cm | En cardumen · se esconde de noche |  |
 
 ## Corales (1)
 
@@ -135,72 +135,72 @@ Cada pez es una hoja de imágenes (un atlas WebP) y un descriptor con sus clips:
 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Nombre | Nombre científico | Agua | Tamaño | Zona |
 |---|---|---|---|---|---|
-| <img src="plants/limnobium_laevigatum/thumb.webp" width="160" alt=""> | Amazon frogbit<br>`limnobium_laevigatum` | *Limnobium laevigatum* | Agua dulce | 5–10 cm | Flotante |
-| <img src="plants/echinodorus_bleheri/thumb.webp" width="160" alt=""> | Amazon sword<br>`echinodorus_bleheri` | *Echinodorus bleheri* | Agua dulce | 30–50 cm | Plano medio |
-| <img src="plants/limnophila_sessiliflora/thumb.webp" width="160" alt=""> | Ambulia<br>`limnophila_sessiliflora` | *Limnophila sessiliflora* | Agua dulce | 20–40 cm | Fondo |
-| <img src="plants/anubias_barteri/thumb.webp" width="160" alt=""> | Anubias<br>`anubias_barteri` | *Anubias barteri* | Agua dulce | 10–25 cm | Epífita |
-| <img src="plants/egeria_densa/thumb.webp" width="160" alt=""> | Brazilian waterweed<br>`egeria_densa` | *Egeria densa* | Agua dulce | 30–100 cm | Fondo |
-| <img src="plants/bucephalandra/thumb.webp" width="160" alt=""> | Bucephalandra<br>`bucephalandra` | *Bucephalandra sp.* | Agua dulce | 5–15 cm | Epífita |
-| <img src="plants/cabomba_caroliniana/thumb.webp" width="160" alt=""> | Carolina fanwort<br>`cabomba_caroliniana` | *Cabomba caroliniana* | Agua dulce | 30–60 cm | Fondo |
-| <img src="plants/caulerpa_prolifera/thumb.webp" width="160" alt=""> | Caulerpa<br>`caulerpa_prolifera` | *Caulerpa prolifera* | Marino | 5–20 cm | Primer plano |
-| <img src="plants/chaetomorpha_linum/thumb.webp" width="160" alt=""> | Chaeto<br>`chaetomorpha_linum` | *Chaetomorpha linum* | Marino | 5–30 cm | Primer plano |
-| <img src="plants/cryptocoryne_ciliata/thumb.webp" width="160" alt=""> | Ciliated cryptocoryne<br>`cryptocoryne_ciliata` | *Cryptocoryne ciliata* | Salobre, Agua dulce | 20–40 cm | Plano medio |
-| <img src="plants/ludwigia_repens/thumb.webp" width="160" alt=""> | Creeping primrose willow<br>`ludwigia_repens` | *Ludwigia repens* | Agua dulce | 20–40 cm | Plano medio |
-| <img src="plants/lemna_minor/thumb.webp" width="160" alt=""> | Duckweed<br>`lemna_minor` | *Lemna minor* | Agua dulce | 0.5–1 cm | Flotante |
-| <img src="plants/hemianthus_callitrichoides/thumb.webp" width="160" alt=""> | Dwarf baby tears<br>`hemianthus_callitrichoides` | *Hemianthus callitrichoides* | Agua dulce | 2–5 cm | Primer plano |
-| <img src="plants/cryptocoryne_parva/thumb.webp" width="160" alt=""> | Dwarf cryptocoryne<br>`cryptocoryne_parva` | *Cryptocoryne parva* | Agua dulce | 5–8 cm | Primer plano |
-| <img src="plants/eleocharis_parvula/thumb.webp" width="160" alt=""> | Dwarf hairgrass<br>`eleocharis_parvula` | *Eleocharis parvula* | Agua dulce | 5–10 cm | Primer plano |
-| <img src="plants/sagittaria_subulata/thumb.webp" width="160" alt=""> | Dwarf sagittaria<br>`sagittaria_subulata` | *Sagittaria subulata* | Agua dulce | 10–30 cm | Primer plano |
-| <img src="plants/vallisneria_spiralis/thumb.webp" width="160" alt=""> | Eelgrass<br>`vallisneria_spiralis` | *Vallisneria spiralis* | Agua dulce, Salobre | 30–60 cm | Fondo |
-| <img src="plants/halimeda_opuntia/thumb.webp" width="160" alt=""> | Halimeda<br>`halimeda_opuntia` | *Halimeda opuntia* | Marino | 5–15 cm | Primer plano |
-| <img src="plants/hygrophila_polysperma/thumb.webp" width="160" alt=""> | Indian swampweed<br>`hygrophila_polysperma` | *Hygrophila polysperma* | Agua dulce | 20–50 cm | Fondo |
-| <img src="plants/microsorum_pteropus/thumb.webp" width="160" alt=""> | Java fern<br>`microsorum_pteropus` | *Microsorum pteropus* | Agua dulce | 20–30 cm | Epífita |
-| <img src="plants/vesicularia_dubyana/thumb.webp" width="160" alt=""> | Java moss<br>`vesicularia_dubyana` | *Vesicularia dubyana* | Agua dulce | 3–5 cm | Epífita |
-| <img src="plants/aegagropila_linnaei/thumb.webp" width="160" alt=""> | Marimo moss ball<br>`aegagropila_linnaei` | *Aegagropila linnaei* | Agua dulce | 3–10 cm | Primer plano |
-| <img src="plants/glossostigma_elatinoides/thumb.webp" width="160" alt=""> | Mud mudwort<br>`glossostigma_elatinoides` | *Glossostigma elatinoides* | Agua dulce | 2–5 cm | Primer plano |
-| <img src="plants/rhizophora_mangle/thumb.webp" width="160" alt=""> | Red mangrove<br>`rhizophora_mangle` | *Rhizophora mangle* | Salobre, Marino | 30–100 cm | Plano medio |
-| <img src="plants/rotala_rotundifolia/thumb.webp" width="160" alt=""> | Roundleaf toothcup<br>`rotala_rotundifolia` | *Rotala rotundifolia* | Agua dulce | 20–50 cm | Fondo |
-| <img src="plants/staurogyne_repens/thumb.webp" width="160" alt=""> | Staurogyne<br>`staurogyne_repens` | *Staurogyne repens* | Agua dulce | 5–10 cm | Primer plano |
-| <img src="plants/thalassia_testudinum/thumb.webp" width="160" alt=""> | Turtle grass<br>`thalassia_testudinum` | *Thalassia testudinum* | Marino | 10–30 cm | Primer plano |
-| <img src="plants/pistia_stratiotes/thumb.webp" width="160" alt=""> | Water lettuce<br>`pistia_stratiotes` | *Pistia stratiotes* | Agua dulce | 5–15 cm | Flotante |
-| <img src="plants/cryptocoryne_wendtii/thumb.webp" width="160" alt=""> | Wendt's cryptocoryne<br>`cryptocoryne_wendtii` | *Cryptocoryne wendtii* | Agua dulce | 10–20 cm | Plano medio |
+| <img src="docs/thumbs/plants/limnophila_sessiliflora.webp" width="240" alt=""> | Ambulia<br>`limnophila_sessiliflora` | *Limnophila sessiliflora* | Agua dulce | 20–40 cm | Fondo |
+| <img src="docs/thumbs/plants/anubias_barteri.webp" width="240" alt=""> | Anubias<br>`anubias_barteri` | *Anubias barteri* | Agua dulce | 10–25 cm | Epífita |
+| <img src="docs/thumbs/plants/bucephalandra.webp" width="240" alt=""> | Bucephalandra<br>`bucephalandra` | *Bucephalandra sp.* | Agua dulce | 5–15 cm | Epífita |
+| <img src="docs/thumbs/plants/cabomba_caroliniana.webp" width="240" alt=""> | Cabomba<br>`cabomba_caroliniana` | *Cabomba caroliniana* | Agua dulce | 30–60 cm | Fondo |
+| <img src="docs/thumbs/plants/caulerpa_prolifera.webp" width="240" alt=""> | Caulerpa<br>`caulerpa_prolifera` | *Caulerpa prolifera* | Marino | 5–20 cm | Primer plano |
+| <img src="docs/thumbs/plants/chaetomorpha_linum.webp" width="240" alt=""> | Chaetomorpha<br>`chaetomorpha_linum` | *Chaetomorpha linum* | Marino | 5–30 cm | Primer plano |
+| <img src="docs/thumbs/plants/cryptocoryne_ciliata.webp" width="240" alt=""> | Cryptocoryne ciliata<br>`cryptocoryne_ciliata` | *Cryptocoryne ciliata* | Salobre, Agua dulce | 20–40 cm | Plano medio |
+| <img src="docs/thumbs/plants/cryptocoryne_parva.webp" width="240" alt=""> | Cryptocoryne parva<br>`cryptocoryne_parva` | *Cryptocoryne parva* | Agua dulce | 5–8 cm | Primer plano |
+| <img src="docs/thumbs/plants/cryptocoryne_wendtii.webp" width="240" alt=""> | Cryptocoryne wendtii<br>`cryptocoryne_wendtii` | *Cryptocoryne wendtii* | Agua dulce | 10–20 cm | Plano medio |
+| <img src="docs/thumbs/plants/eleocharis_parvula.webp" width="240" alt=""> | Eleocharis enana<br>`eleocharis_parvula` | *Eleocharis parvula* | Agua dulce | 5–10 cm | Primer plano |
+| <img src="docs/thumbs/plants/egeria_densa.webp" width="240" alt=""> | Elodea densa<br>`egeria_densa` | *Egeria densa* | Agua dulce | 30–100 cm | Fondo |
+| <img src="docs/thumbs/plants/echinodorus_bleheri.webp" width="240" alt=""> | Espada amazónica<br>`echinodorus_bleheri` | *Echinodorus bleheri* | Agua dulce | 30–50 cm | Plano medio |
+| <img src="docs/thumbs/plants/glossostigma_elatinoides.webp" width="240" alt=""> | Glossostigma<br>`glossostigma_elatinoides` | *Glossostigma elatinoides* | Agua dulce | 2–5 cm | Primer plano |
+| <img src="docs/thumbs/plants/halimeda_opuntia.webp" width="240" alt=""> | Halimeda<br>`halimeda_opuntia` | *Halimeda opuntia* | Marino | 5–15 cm | Primer plano |
+| <img src="docs/thumbs/plants/microsorum_pteropus.webp" width="240" alt=""> | Helecho de Java<br>`microsorum_pteropus` | *Microsorum pteropus* | Agua dulce | 20–30 cm | Epífita |
+| <img src="docs/thumbs/plants/hemianthus_callitrichoides.webp" width="240" alt=""> | Hemianthus<br>`hemianthus_callitrichoides` | *Hemianthus callitrichoides* | Agua dulce | 2–5 cm | Primer plano |
+| <img src="docs/thumbs/plants/thalassia_testudinum.webp" width="240" alt=""> | Hierba de tortuga<br>`thalassia_testudinum` | *Thalassia testudinum* | Marino | 10–30 cm | Primer plano |
+| <img src="docs/thumbs/plants/hygrophila_polysperma.webp" width="240" alt=""> | Hygrophila<br>`hygrophila_polysperma` | *Hygrophila polysperma* | Agua dulce | 20–50 cm | Fondo |
+| <img src="docs/thumbs/plants/pistia_stratiotes.webp" width="240" alt=""> | Lechuga de agua<br>`pistia_stratiotes` | *Pistia stratiotes* | Agua dulce | 5–15 cm | Flotante |
+| <img src="docs/thumbs/plants/lemna_minor.webp" width="240" alt=""> | Lenteja de agua<br>`lemna_minor` | *Lemna minor* | Agua dulce | 0.5–1 cm | Flotante |
+| <img src="docs/thumbs/plants/limnobium_laevigatum.webp" width="240" alt=""> | Limnobium<br>`limnobium_laevigatum` | *Limnobium laevigatum* | Agua dulce | 5–10 cm | Flotante |
+| <img src="docs/thumbs/plants/ludwigia_repens.webp" width="240" alt=""> | Ludwigia<br>`ludwigia_repens` | *Ludwigia repens* | Agua dulce | 20–40 cm | Plano medio |
+| <img src="docs/thumbs/plants/rhizophora_mangle.webp" width="240" alt=""> | Mangle rojo<br>`rhizophora_mangle` | *Rhizophora mangle* | Salobre, Marino | 30–100 cm | Plano medio |
+| <img src="docs/thumbs/plants/aegagropila_linnaei.webp" width="240" alt=""> | Marimo<br>`aegagropila_linnaei` | *Aegagropila linnaei* | Agua dulce | 3–10 cm | Primer plano |
+| <img src="docs/thumbs/plants/vesicularia_dubyana.webp" width="240" alt=""> | Musgo de Java<br>`vesicularia_dubyana` | *Vesicularia dubyana* | Agua dulce | 3–5 cm | Epífita |
+| <img src="docs/thumbs/plants/rotala_rotundifolia.webp" width="240" alt=""> | Rotala<br>`rotala_rotundifolia` | *Rotala rotundifolia* | Agua dulce | 20–50 cm | Fondo |
+| <img src="docs/thumbs/plants/sagittaria_subulata.webp" width="240" alt=""> | Sagitaria enana<br>`sagittaria_subulata` | *Sagittaria subulata* | Agua dulce | 10–30 cm | Primer plano |
+| <img src="docs/thumbs/plants/staurogyne_repens.webp" width="240" alt=""> | Staurogyne<br>`staurogyne_repens` | *Staurogyne repens* | Agua dulce | 5–10 cm | Primer plano |
+| <img src="docs/thumbs/plants/vallisneria_spiralis.webp" width="240" alt=""> | Vallisneria<br>`vallisneria_spiralis` | *Vallisneria spiralis* | Agua dulce, Salobre | 30–60 cm | Fondo |
 
 ## Invertebrados (32)
 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Nombre | Nombre científico | Agua | Tamaño | Función |
 |---|---|---|---|---|---|
-|  | Amano shrimp<br>`caridina_multidentata` | *Caridina multidentata* | Agua dulce | 3–5 cm | Comedor de algas · se desplaza por el fondo |
-|  | Assassin snail<br>`clea_helena` | *Clea helena* | Agua dulce | 2–3 cm | Depredador · se desplaza por el fondo |
-|  | Astraea snail<br>`astraea_tecta` | *Astraea tecta* | Marino | 2–4 cm | Comedor de algas · vive en la decoración |
-|  | Bamboo shrimp<br>`atyopsis_moluccensis` | *Atyopsis moluccensis* | Agua dulce | 6–8 cm | Filtrador · vive en la decoración |
-|  | Banded coral shrimp<br>`stenopus_hispidus` | *Stenopus hispidus* | Marino | 6–8 cm | Limpiador · vive en la decoración |
-|  | Blue-legged hermit crab<br>`clibanarius_tricolor` | *Clibanarius tricolor* | Marino | 2–3 cm | Carroñero · se desplaza por el fondo |
-|  | Boring giant clam<br>`tridacna_crocea` | *Tridacna crocea* | Marino | 5–15 cm | Filtrador · sésil |
-|  | Cerith snail<br>`cerithium` | *Cerithium sp.* | Marino | 2–3 cm | Detritívoro · se desplaza por el fondo |
-|  | Cherry shrimp<br>`neocaridina_davidi` | *Neocaridina davidi* | Agua dulce | 2–3.5 cm | Detritívoro · se desplaza por el fondo |
-|  | Christmas tree worm<br>`spirobranchus_giganteus` | *Spirobranchus giganteus* | Marino | 3–5 cm | Filtrador · sésil |
-|  | Collector urchin<br>`tripneustes_gratilla` | *Tripneustes gratilla* | Marino | 10–15 cm | Comedor de algas · vive en la decoración |
-|  | Crystal red shrimp<br>`caridina_cantonensis` | *Caridina cantonensis* | Agua dulce | 2–3 cm | Detritívoro · se desplaza por el fondo |
-|  | Emerald crab<br>`mithraculus_sculptus` | *Mithraculus sculptus* | Marino | 3–4 cm | Comedor de algas · vive en la decoración |
-|  | Feather duster worm<br>`sabellastarte` | *Sabellastarte sp.* | Marino | 5–10 cm | Filtrador · sésil |
-|  | Fire shrimp<br>`lysmata_debelius` | *Lysmata debelius* | Marino | 5–6 cm | Limpiador · vive en la decoración |
-|  | Harlequin shrimp<br>`hymenocera_picta` | *Hymenocera picta* | Marino | 4–6 cm | Depredador · se desplaza por el fondo |
-|  | Malaysian trumpet snail<br>`melanoides_tuberculata` | *Melanoides tuberculata* | Agua dulce | 2–3 cm | Detritívoro · se desplaza por el fondo |
-|  | Marbled shrimp<br>`saron_marmoratus` | *Saron marmoratus* | Marino | 5–7 cm | Carroñero · vive en la decoración |
-|  | Marine nerite<br>`nerita` | *Nerita sp.* | Marino | 2–3 cm | Comedor de algas · trepa por el cristal |
-|  | Mystery snail<br>`pomacea_bridgesii` | *Pomacea bridgesii* | Agua dulce | 4–5 cm | Carroñero · se desplaza por el fondo |
-|  | Nassarius snail<br>`nassarius` | *Nassarius sp.* | Marino | 2–4 cm | Carroñero · se desplaza por el fondo |
-|  | Pencil urchin<br>`prionocidaris_baculosa` | *Prionocidaris baculosa* | Marino | 8–10 cm | Comedor de algas · vive en la decoración |
-|  | Peppermint shrimp<br>`lysmata_wurdemanni` | *Lysmata wurdemanni* | Marino | 3–5 cm | Limpiador · vive en la decoración |
-|  | Ramshorn snail<br>`planorbella_duryi` | *Planorbella duryi* | Agua dulce | 2–3 cm | Detritívoro · trepa por el cristal |
-|  | Sand-sifting starfish<br>`archaster_typicus` | *Archaster typicus* | Marino | 6–10 cm | Detritívoro · se desplaza por el fondo |
-|  | Scarlet cleaner shrimp<br>`lysmata_amboinensis` | *Lysmata amboinensis* | Marino | 5–6 cm | Limpiador · vive en la decoración |
-|  | Scarlet reef hermit<br>`paguristes_cadenati` | *Paguristes cadenati* | Marino | 3–4 cm | Carroñero · se desplaza por el fondo |
-|  | Sea cucumber<br>`holothuria` | *Holothuria sp.* | Marino | 15–30 cm | Detritívoro · se desplaza por el fondo |
-|  | Serpent star<br>`ophiolepis_superba` | *Ophiolepis superba* | Marino | 8–12 cm | Carroñero · se desplaza por el fondo |
-|  | Trochus snail<br>`tectus_fenestratus` | *Tectus fenestratus* | Marino | 4–6 cm | Comedor de algas · vive en la decoración |
-|  | Turbo snail<br>`turbo_fluctuosus` | *Turbo fluctuosus* | Marino | 4–8 cm | Comedor de algas · trepa por el cristal |
-|  | Zebra nerite<br>`neritina_natalensis` | *Neritina natalensis* | Agua dulce | 2–3 cm | Comedor de algas · trepa por el cristal |
+|  | Almeja gigante perforadora<br>`tridacna_crocea` | *Tridacna crocea* | Marino | 5–15 cm | Filtrador · sésil |
+|  | Cangrejo ermitaño de patas azules<br>`clibanarius_tricolor` | *Clibanarius tricolor* | Marino | 2–3 cm | Carroñero · se desplaza por el fondo |
+|  | Cangrejo ermitaño escarlata<br>`paguristes_cadenati` | *Paguristes cadenati* | Marino | 3–4 cm | Carroñero · se desplaza por el fondo |
+|  | Cangrejo esmeralda<br>`mithraculus_sculptus` | *Mithraculus sculptus* | Marino | 3–4 cm | Comedor de algas · vive en la decoración |
+|  | Caracol asesino<br>`clea_helena` | *Clea helena* | Agua dulce | 2–3 cm | Depredador · se desplaza por el fondo |
+|  | Caracol Astraea<br>`astraea_tecta` | *Astraea tecta* | Marino | 2–4 cm | Comedor de algas · vive en la decoración |
+|  | Caracol cerite<br>`cerithium` | *Cerithium sp.* | Marino | 2–3 cm | Detritívoro · se desplaza por el fondo |
+|  | Caracol cuerno de carnero<br>`planorbella_duryi` | *Planorbella duryi* | Agua dulce | 2–3 cm | Detritívoro · trepa por el cristal |
+|  | Caracol manzana<br>`pomacea_bridgesii` | *Pomacea bridgesii* | Agua dulce | 4–5 cm | Carroñero · se desplaza por el fondo |
+|  | Caracol Nassarius<br>`nassarius` | *Nassarius sp.* | Marino | 2–4 cm | Carroñero · se desplaza por el fondo |
+|  | Caracol nerita cebra<br>`neritina_natalensis` | *Neritina natalensis* | Agua dulce | 2–3 cm | Comedor de algas · trepa por el cristal |
+|  | Caracol nerita marino<br>`nerita` | *Nerita sp.* | Marino | 2–3 cm | Comedor de algas · trepa por el cristal |
+|  | Caracol trochus<br>`tectus_fenestratus` | *Tectus fenestratus* | Marino | 4–6 cm | Comedor de algas · vive en la decoración |
+|  | Caracol trompeta malayo<br>`melanoides_tuberculata` | *Melanoides tuberculata* | Agua dulce | 2–3 cm | Detritívoro · se desplaza por el fondo |
+|  | Caracol turbo<br>`turbo_fluctuosus` | *Turbo fluctuosus* | Marino | 4–8 cm | Comedor de algas · trepa por el cristal |
+|  | Erizo colector<br>`tripneustes_gratilla` | *Tripneustes gratilla* | Marino | 10–15 cm | Comedor de algas · vive en la decoración |
+|  | Erizo lápiz<br>`prionocidaris_baculosa` | *Prionocidaris baculosa* | Marino | 8–10 cm | Comedor de algas · vive en la decoración |
+|  | Estrella de arena<br>`archaster_typicus` | *Archaster typicus* | Marino | 6–10 cm | Detritívoro · se desplaza por el fondo |
+|  | Estrella serpiente<br>`ophiolepis_superba` | *Ophiolepis superba* | Marino | 8–12 cm | Carroñero · se desplaza por el fondo |
+|  | Gamba Amano<br>`caridina_multidentata` | *Caridina multidentata* | Agua dulce | 3–5 cm | Comedor de algas · se desplaza por el fondo |
+|  | Gamba arlequín<br>`hymenocera_picta` | *Hymenocera picta* | Marino | 4–6 cm | Depredador · se desplaza por el fondo |
+|  | Gamba boxeadora<br>`stenopus_hispidus` | *Stenopus hispidus* | Marino | 6–8 cm | Limpiador · vive en la decoración |
+|  | Gamba cereza<br>`neocaridina_davidi` | *Neocaridina davidi* | Agua dulce | 2–3.5 cm | Detritívoro · se desplaza por el fondo |
+|  | Gamba cristal roja<br>`caridina_cantonensis` | *Caridina cantonensis* | Agua dulce | 2–3 cm | Detritívoro · se desplaza por el fondo |
+|  | Gamba de bambú<br>`atyopsis_moluccensis` | *Atyopsis moluccensis* | Agua dulce | 6–8 cm | Filtrador · vive en la decoración |
+|  | Gamba fuego<br>`lysmata_debelius` | *Lysmata debelius* | Marino | 5–6 cm | Limpiador · vive en la decoración |
+|  | Gamba limpiadora escarlata<br>`lysmata_amboinensis` | *Lysmata amboinensis* | Marino | 5–6 cm | Limpiador · vive en la decoración |
+|  | Gamba marmoleada<br>`saron_marmoratus` | *Saron marmoratus* | Marino | 5–7 cm | Carroñero · vive en la decoración |
+|  | Gamba peppermint<br>`lysmata_wurdemanni` | *Lysmata wurdemanni* | Marino | 3–5 cm | Limpiador · vive en la decoración |
+|  | Gusano plumero<br>`sabellastarte` | *Sabellastarte sp.* | Marino | 5–10 cm | Filtrador · sésil |
+|  | Gusano árbol de Navidad<br>`spirobranchus_giganteus` | *Spirobranchus giganteus* | Marino | 3–5 cm | Filtrador · sésil |
+|  | Pepino de mar<br>`holothuria` | *Holothuria sp.* | Marino | 15–30 cm | Detritívoro · se desplaza por el fondo |
 
 Para añadir una especie (generación de los clips, construcción, publicación), ver la [documentación en inglés](README.md).
 

@@ -3,12 +3,12 @@
   "names": {
     "en": "Collector urchin",
     "fr": "Oursin collecteur",
-    "de": "Collector urchin",
-    "es": "Collector urchin",
-    "it": "Collector urchin",
-    "nl": "Collector urchin",
-    "pl": "Collector urchin",
-    "pt": "Collector urchin"
+    "de": "Sammler-Seeigel",
+    "es": "Erizo colector",
+    "it": "Riccio collezionista",
+    "nl": "Verzamelaarszee-egel",
+    "pl": "Jeżowiec kolekcjoner",
+    "pt": "Ouriço-coletor"
   },
   "scientific": "Tripneustes gratilla",
   "water_types": [

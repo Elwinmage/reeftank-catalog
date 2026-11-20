@@ -40,12 +40,12 @@
   "names": {
     "en": "Kuhli loach",
     "fr": "Loche kuhli",
-    "de": "Kuhli loach",
-    "es": "Kuhli loach",
-    "it": "Kuhli loach",
-    "nl": "Kuhli loach",
-    "pl": "Kuhli loach",
-    "pt": "Kuhli loach"
+    "de": "Kuhli-Schmerle",
+    "es": "Locha de Kuhl",
+    "it": "Botia anguilla",
+    "nl": "Kuhli-modderkruiper",
+    "pl": "Piskorz Kuhla",
+    "pt": "Kuhli"
   },
   "scientific": "Pangio kuhlii",
   "water_types": [

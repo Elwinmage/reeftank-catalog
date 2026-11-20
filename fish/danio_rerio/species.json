@@ -40,12 +40,12 @@
   "names": {
     "en": "Zebrafish",
     "fr": "Danio zébré",
-    "de": "Zebrafish",
-    "es": "Zebrafish",
-    "it": "Zebrafish",
-    "nl": "Zebrafish",
-    "pl": "Zebrafish",
-    "pt": "Zebrafish"
+    "de": "Zebrabärbling",
+    "es": "Pez cebra",
+    "it": "Pesce zebra",
+    "nl": "Zebravisje",
+    "pl": "Danio pręgowany",
+    "pt": "Peixe-zebra"
   },
   "scientific": "Danio rerio",
   "water_types": [

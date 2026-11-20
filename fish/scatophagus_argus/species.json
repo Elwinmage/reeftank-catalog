@@ -40,12 +40,12 @@
   "names": {
     "en": "Spotted scat",
     "fr": "Scat",
-    "de": "Spotted scat",
-    "es": "Spotted scat",
-    "it": "Spotted scat",
-    "nl": "Spotted scat",
-    "pl": "Spotted scat",
-    "pt": "Spotted scat"
+    "de": "Argusfisch",
+    "es": "Escáter moteado",
+    "it": "Scato argo",
+    "nl": "Scat",
+    "pl": "Scat cętkowany",
+    "pt": "Scat-malhado"
   },
   "scientific": "Scatophagus argus",
   "water_types": [

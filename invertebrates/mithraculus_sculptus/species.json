@@ -3,12 +3,12 @@
   "names": {
     "en": "Emerald crab",
     "fr": "Crabe émeraude",
-    "de": "Emerald crab",
-    "es": "Emerald crab",
-    "it": "Emerald crab",
-    "nl": "Emerald crab",
-    "pl": "Emerald crab",
-    "pt": "Emerald crab"
+    "de": "Smaragdkrabbe",
+    "es": "Cangrejo esmeralda",
+    "it": "Granchio smeraldo",
+    "nl": "Smaragdkrab",
+    "pl": "Krab szmaragdowy",
+    "pt": "Caranguejo-esmeralda"
   },
   "scientific": "Mithraculus sculptus",
   "water_types": [

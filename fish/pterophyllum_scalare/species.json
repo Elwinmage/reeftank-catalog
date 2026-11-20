@@ -40,12 +40,12 @@
   "names": {
     "en": "Angelfish",
     "fr": "Scalaire",
-    "de": "Angelfish",
-    "es": "Angelfish",
-    "it": "Angelfish",
-    "nl": "Angelfish",
-    "pl": "Angelfish",
-    "pt": "Angelfish"
+    "de": "Skalar",
+    "es": "Escalar",
+    "it": "Pesce angelo",
+    "nl": "Skalaar",
+    "pl": "Skalar",
+    "pt": "Acará-bandeira"
   },
   "scientific": "Pterophyllum scalare",
   "water_types": [

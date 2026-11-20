@@ -40,12 +40,12 @@
   "names": {
     "en": "Goldfish",
     "fr": "Poisson rouge",
-    "de": "Goldfish",
-    "es": "Goldfish",
-    "it": "Goldfish",
-    "nl": "Goldfish",
-    "pl": "Goldfish",
-    "pt": "Goldfish"
+    "de": "Goldfisch",
+    "es": "Pez dorado",
+    "it": "Pesce rosso",
+    "nl": "Goudvis",
+    "pl": "Złota rybka",
+    "pt": "Peixe-dourado"
   },
   "scientific": "Carassius auratus",
   "water_types": [

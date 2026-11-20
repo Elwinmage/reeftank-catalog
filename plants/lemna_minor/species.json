@@ -26,12 +26,12 @@
   "names": {
     "en": "Duckweed",
     "fr": "Lentille d'eau",
-    "de": "Duckweed",
-    "es": "Duckweed",
-    "it": "Duckweed",
-    "nl": "Duckweed",
-    "pl": "Duckweed",
-    "pt": "Duckweed"
+    "de": "Kleine Wasserlinse",
+    "es": "Lenteja de agua",
+    "it": "Lenticchia d'acqua",
+    "nl": "Klein kroos",
+    "pl": "Rzęsa drobna",
+    "pt": "Lentilha-d'água"
   },
   "scientific": "Lemna minor",
   "water_types": [

@@ -174,6 +174,42 @@ def missing_fields(desc: dict[str, Any], kind: str) -> list[str]:
     return missing
 
 
+def untranslated_names(desc: dict[str, Any]) -> list[str]:
+    """Languages whose name is only the English one copied (a hint, not an error).
+
+    Only multi-word English names are considered: a single word such as
+    "Anubias" or "Discus" is often the same in every language.
+    """
+    names = desc.get("names") if isinstance(desc, dict) else None
+    if not isinstance(names, dict):
+        return []
+    english = names.get("en")
+    if not isinstance(english, str) or " " not in english.strip():
+        return []
+    copied = [
+        lang
+        for lang in LANGUAGES
+        if lang not in ("en", "fr") and names.get(lang) == english
+    ]
+    # A name copied in a few languages only is probably deliberate.
+    return copied if len(copied) >= 3 else []
+
+
+def warnings_catalog(root: Path) -> dict[str, str]:
+    """Hints about names that look untranslated, by `kind/id`."""
+    hints: dict[str, str] = {}
+    for kind in KINDS:
+        for file in sorted((root / kind).glob("*/species.json")):
+            try:
+                desc = json.loads(file.read_text(encoding="utf-8"))
+            except ValueError:
+                continue  # reported as a problem by check_catalog
+            copied = untranslated_names(desc)
+            if copied:
+                hints[f"{kind}/{file.parent.name}"] = ", ".join(copied)
+    return hints
+
+
 def check_description(desc: dict[str, Any], kind: str) -> list[str]:
     """Problems of the hand written fields (names, size, behaviour...)."""
     errors: list[str] = []
@@ -470,6 +506,8 @@ def main(argv: list[str] | None = None) -> int:
         for p in (root / kind).iterdir()
         if p.is_dir()
     )
+    for key, langs in warnings_catalog(root).items():
+        print(f"warning: {key}: name copied from English in {langs}")
     print(f"{count} entries, {len(problems)} with problems")
     return 1 if problems else 0
 

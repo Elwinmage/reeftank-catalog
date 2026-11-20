@@ -3,12 +3,12 @@
   "names": {
     "en": "Fire shrimp",
     "fr": "Crevette sang de feu",
-    "de": "Fire shrimp",
-    "es": "Fire shrimp",
-    "it": "Fire shrimp",
-    "nl": "Fire shrimp",
-    "pl": "Fire shrimp",
-    "pt": "Fire shrimp"
+    "de": "Feuergarnele",
+    "es": "Gamba fuego",
+    "it": "Gambero fuoco",
+    "nl": "Vuurgarnaal",
+    "pl": "Krewetka ognista",
+    "pt": "Camarão-fogo"
   },
   "scientific": "Lysmata debelius",
   "water_types": [

@@ -26,12 +26,12 @@
   "names": {
     "en": "Turtle grass",
     "fr": "Herbier de tortue",
-    "de": "Turtle grass",
-    "es": "Turtle grass",
-    "it": "Turtle grass",
-    "nl": "Turtle grass",
-    "pl": "Turtle grass",
-    "pt": "Turtle grass"
+    "de": "Schildkrötengras",
+    "es": "Hierba de tortuga",
+    "it": "Erba delle tartarughe",
+    "nl": "Schildpadgras",
+    "pl": "Trawa żółwia",
+    "pt": "Erva-de-tartaruga"
   },
   "scientific": "Thalassia testudinum",
   "water_types": [

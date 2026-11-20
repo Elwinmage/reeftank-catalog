@@ -40,12 +40,12 @@
   "names": {
     "en": "Royal gramma",
     "fr": "Gramma royal",
-    "de": "Royal gramma",
-    "es": "Royal gramma",
-    "it": "Royal gramma",
-    "nl": "Royal gramma",
-    "pl": "Royal gramma",
-    "pt": "Royal gramma"
+    "de": "Königs-Gramma",
+    "es": "Gramma real",
+    "it": "Gramma reale",
+    "nl": "Koningsgramma",
+    "pl": "Gramma królewska",
+    "pt": "Gramma-real"
   },
   "scientific": "Gramma loreto",
   "water_types": [

@@ -40,12 +40,12 @@
   "names": {
     "en": "Yellow-striped cardinalfish",
     "fr": "Cardinal à bande jaune",
-    "de": "Yellow-striped cardinalfish",
-    "es": "Yellow-striped cardinalfish",
-    "it": "Yellow-striped cardinalfish",
-    "nl": "Yellow-striped cardinalfish",
-    "pl": "Yellow-striped cardinalfish",
-    "pt": "Yellow-striped cardinalfish"
+    "de": "Gelbstreifen-Kardinalbarsch",
+    "es": "Pez cardenal de rayas amarillas",
+    "it": "Pesce cardinale a strisce gialle",
+    "nl": "Geelgestreepte kardinaalbaars",
+    "pl": "Kardynał żółtopręgi",
+    "pt": "Peixe-cardeal-de-listras-amarelas"
   },
   "scientific": "Ostorhinchus cyanosoma",
   "water_types": [

@@ -40,12 +40,12 @@
   "names": {
     "en": "Cockatoo dwarf cichlid",
     "fr": "Apistogramma",
-    "de": "Cockatoo dwarf cichlid",
-    "es": "Cockatoo dwarf cichlid",
-    "it": "Cockatoo dwarf cichlid",
-    "nl": "Cockatoo dwarf cichlid",
-    "pl": "Cockatoo dwarf cichlid",
-    "pt": "Cockatoo dwarf cichlid"
+    "de": "Kakadu-Zwergbuntbarsch",
+    "es": "Apistogramma cacatúa",
+    "it": "Apistogramma cacatua",
+    "nl": "Kaketoe-dwergcichlide",
+    "pl": "Apistogramma kakadu",
+    "pt": "Apistogramma-cacatua"
   },
   "scientific": "Apistogramma cacatuoides",
   "water_types": [

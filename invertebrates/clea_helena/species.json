@@ -3,12 +3,12 @@
   "names": {
     "en": "Assassin snail",
     "fr": "Escargot assassin",
-    "de": "Assassin snail",
-    "es": "Assassin snail",
-    "it": "Assassin snail",
-    "nl": "Assassin snail",
-    "pl": "Assassin snail",
-    "pt": "Assassin snail"
+    "de": "Raubschnecke",
+    "es": "Caracol asesino",
+    "it": "Lumaca assassina",
+    "nl": "Moordenaarslak",
+    "pl": "Ślimak zabójca",
+    "pt": "Caracol-assassino"
   },
   "scientific": "Clea helena",
   "water_types": [

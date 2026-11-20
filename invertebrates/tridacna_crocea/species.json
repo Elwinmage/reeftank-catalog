@@ -3,12 +3,12 @@
   "names": {
     "en": "Boring giant clam",
     "fr": "Bénitier",
-    "de": "Boring giant clam",
-    "es": "Boring giant clam",
-    "it": "Boring giant clam",
-    "nl": "Boring giant clam",
-    "pl": "Boring giant clam",
-    "pt": "Boring giant clam"
+    "de": "Bohrende Riesenmuschel",
+    "es": "Almeja gigante perforadora",
+    "it": "Tridacna perforante",
+    "nl": "Boorende reuzenmossel",
+    "pl": "Tridakna wiercąca",
+    "pt": "Amêijoa-gigante-perfurante"
   },
   "scientific": "Tridacna crocea",
   "water_types": [

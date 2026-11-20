@@ -40,12 +40,12 @@
   "names": {
     "en": "Atlantic mudskipper",
     "fr": "Périophtalme",
-    "de": "Atlantic mudskipper",
-    "es": "Atlantic mudskipper",
-    "it": "Atlantic mudskipper",
-    "nl": "Atlantic mudskipper",
-    "pl": "Atlantic mudskipper",
-    "pt": "Atlantic mudskipper"
+    "de": "Atlantischer Schlammspringer",
+    "es": "Saltarín del fango atlántico",
+    "it": "Periofalmo atlantico",
+    "nl": "Atlantische slikspringer",
+    "pl": "Skoczek mułowy atlantycki",
+    "pt": "Saltador-do-lodo-atlântico"
   },
   "scientific": "Periophthalmus barbarus",
   "water_types": [

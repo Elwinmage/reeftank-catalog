@@ -40,12 +40,12 @@
   "names": {
     "en": "Zebra pleco",
     "fr": "Pléco zèbre",
-    "de": "Zebra pleco",
-    "es": "Zebra pleco",
-    "it": "Zebra pleco",
-    "nl": "Zebra pleco",
-    "pl": "Zebra pleco",
-    "pt": "Zebra pleco"
+    "de": "Zebra-Harnischwels",
+    "es": "Pleco cebra",
+    "it": "Pleco zebra",
+    "nl": "Zebra-harnasmeerval",
+    "pl": "Zbrojnik zebra",
+    "pt": "Cascudo-zebra"
   },
   "scientific": "Hypancistrus zebra",
   "water_types": [

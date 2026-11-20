@@ -40,12 +40,12 @@
   "names": {
     "en": "Lined seahorse",
     "fr": "Hippocampe",
-    "de": "Lined seahorse",
-    "es": "Lined seahorse",
-    "it": "Lined seahorse",
-    "nl": "Lined seahorse",
-    "pl": "Lined seahorse",
-    "pt": "Lined seahorse"
+    "de": "Nördliches Seepferdchen",
+    "es": "Caballito de mar rayado",
+    "it": "Cavalluccio marino striato",
+    "nl": "Gestreept zeepaardje",
+    "pl": "Konik morski prążkowany",
+    "pt": "Cavalo-marinho-listrado"
   },
   "scientific": "Hippocampus erectus",
   "water_types": [

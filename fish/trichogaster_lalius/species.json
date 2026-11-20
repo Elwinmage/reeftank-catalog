@@ -40,12 +40,12 @@
   "names": {
     "en": "Dwarf gourami",
     "fr": "Gourami nain",
-    "de": "Dwarf gourami",
-    "es": "Dwarf gourami",
-    "it": "Dwarf gourami",
-    "nl": "Dwarf gourami",
-    "pl": "Dwarf gourami",
-    "pt": "Dwarf gourami"
+    "de": "Zwergfadenfisch",
+    "es": "Gurami enano",
+    "it": "Gourami nano",
+    "nl": "Dwerggoerami",
+    "pl": "Gurami karłowaty",
+    "pt": "Gurami-anão"
   },
   "scientific": "Trichogaster lalius",
   "water_types": [

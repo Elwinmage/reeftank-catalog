@@ -26,12 +26,12 @@
   "names": {
     "en": "Eelgrass",
     "fr": "Vallisnérie",
-    "de": "Eelgrass",
-    "es": "Eelgrass",
-    "it": "Eelgrass",
-    "nl": "Eelgrass",
-    "pl": "Eelgrass",
-    "pt": "Eelgrass"
+    "de": "Wasserschraube",
+    "es": "Vallisneria",
+    "it": "Vallisneria",
+    "nl": "Vallisneria",
+    "pl": "Nurzaniec śrubowy",
+    "pt": "Vallisneria"
   },
   "scientific": "Vallisneria spiralis",
   "water_types": [

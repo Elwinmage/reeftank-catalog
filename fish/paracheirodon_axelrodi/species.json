@@ -40,12 +40,12 @@
   "names": {
     "en": "Cardinal tetra",
     "fr": "Néon cardinal",
-    "de": "Cardinal tetra",
-    "es": "Cardinal tetra",
-    "it": "Cardinal tetra",
-    "nl": "Cardinal tetra",
-    "pl": "Cardinal tetra",
-    "pt": "Cardinal tetra"
+    "de": "Roter Neon",
+    "es": "Tetra cardenal",
+    "it": "Tetra cardinale",
+    "nl": "Kardinaaltetra",
+    "pl": "Neonka czerwona",
+    "pt": "Tetra-cardinal"
   },
   "scientific": "Paracheirodon axelrodi",
   "water_types": [

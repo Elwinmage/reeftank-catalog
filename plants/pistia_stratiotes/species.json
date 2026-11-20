@@ -26,12 +26,12 @@
   "names": {
     "en": "Water lettuce",
     "fr": "Laitue d'eau",
-    "de": "Water lettuce",
-    "es": "Water lettuce",
-    "it": "Water lettuce",
-    "nl": "Water lettuce",
-    "pl": "Water lettuce",
-    "pt": "Water lettuce"
+    "de": "Muschelblume",
+    "es": "Lechuga de agua",
+    "it": "Lattuga d'acqua",
+    "nl": "Watersla",
+    "pl": "Salata wodna",
+    "pt": "Alface-d'água"
   },
   "scientific": "Pistia stratiotes",
   "water_types": [

@@ -40,12 +40,12 @@
   "names": {
     "en": "Sailfin molly",
     "fr": "Molly voile",
-    "de": "Sailfin molly",
-    "es": "Sailfin molly",
-    "it": "Sailfin molly",
-    "nl": "Sailfin molly",
-    "pl": "Sailfin molly",
-    "pt": "Sailfin molly"
+    "de": "Segelkärpfling",
+    "es": "Molly vela",
+    "it": "Molly vela",
+    "nl": "Zeilvin-molly",
+    "pl": "Molinezja żaglowa",
+    "pt": "Molinésia-vela"
   },
   "scientific": "Poecilia velifera",
   "water_types": [

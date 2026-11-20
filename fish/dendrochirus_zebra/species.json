@@ -40,12 +40,12 @@
   "names": {
     "en": "Zebra lionfish",
     "fr": "Poisson-lion zèbre",
-    "de": "Zebra lionfish",
-    "es": "Zebra lionfish",
-    "it": "Zebra lionfish",
-    "nl": "Zebra lionfish",
-    "pl": "Zebra lionfish",
-    "pt": "Zebra lionfish"
+    "de": "Zebra-Zwergfeuerfisch",
+    "es": "Pez león cebra",
+    "it": "Pesce leone zebra",
+    "nl": "Zebra-leeuwenvis",
+    "pl": "Skrzydlica zebra",
+    "pt": "Peixe-leão-zebra"
   },
   "scientific": "Dendrochirus zebra",
   "water_types": [

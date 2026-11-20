@@ -40,12 +40,12 @@
   "names": {
     "en": "Spotted mandarin",
     "fr": "Dragonnet psychédélique",
-    "de": "Spotted mandarin",
-    "es": "Spotted mandarin",
-    "it": "Spotted mandarin",
-    "nl": "Spotted mandarin",
-    "pl": "Spotted mandarin",
-    "pt": "Spotted mandarin"
+    "de": "Psychedelischer Mandarinfisch",
+    "es": "Pez mandarín psicodélico",
+    "it": "Pesce mandarino psichedelico",
+    "nl": "Psychedelische mandarijnvis",
+    "pl": "Mandaryn psychodeliczny",
+    "pt": "Peixe-mandarim-psicadélico"
   },
   "scientific": "Synchiropus picturatus",
   "water_types": [

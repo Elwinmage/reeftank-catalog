@@ -40,12 +40,12 @@
   "names": {
     "en": "Endler's livebearer",
     "fr": "Endler",
-    "de": "Endler's livebearer",
-    "es": "Endler's livebearer",
-    "it": "Endler's livebearer",
-    "nl": "Endler's livebearer",
-    "pl": "Endler's livebearer",
-    "pt": "Endler's livebearer"
+    "de": "Endler-Guppy",
+    "es": "Guppy de Endler",
+    "it": "Guppy di Endler",
+    "nl": "Endlers guppy",
+    "pl": "Gupik Endlera",
+    "pt": "Guppy-de-Endler"
   },
   "scientific": "Poecilia wingei",
   "water_types": [

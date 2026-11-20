@@ -3,12 +3,12 @@
   "names": {
     "en": "Sea cucumber",
     "fr": "Concombre de mer",
-    "de": "Sea cucumber",
-    "es": "Sea cucumber",
-    "it": "Sea cucumber",
-    "nl": "Sea cucumber",
-    "pl": "Sea cucumber",
-    "pt": "Sea cucumber"
+    "de": "Seegurke",
+    "es": "Pepino de mar",
+    "it": "Cetriolo di mare",
+    "nl": "Zeekomkommer",
+    "pl": "Strzykwa",
+    "pt": "Pepino-do-mar"
   },
   "scientific": "Holothuria sp.",
   "water_types": [

@@ -40,12 +40,12 @@
   "names": {
     "en": "Electric yellow cichlid",
     "fr": "Labidochromis jaune",
-    "de": "Electric yellow cichlid",
-    "es": "Electric yellow cichlid",
-    "it": "Electric yellow cichlid",
-    "nl": "Electric yellow cichlid",
-    "pl": "Electric yellow cichlid",
-    "pt": "Electric yellow cichlid"
+    "de": "Gelber Labidochromis",
+    "es": "Cíclido amarillo eléctrico",
+    "it": "Ciclide giallo elettrico",
+    "nl": "Elektrisch gele cichlide",
+    "pl": "Pyszczak żółty",
+    "pt": "Ciclídeo-amarelo-elétrico"
   },
   "scientific": "Labidochromis caeruleus",
   "water_types": [

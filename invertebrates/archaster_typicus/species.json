@@ -3,12 +3,12 @@
   "names": {
     "en": "Sand-sifting starfish",
     "fr": "Étoile de sable",
-    "de": "Sand-sifting starfish",
-    "es": "Sand-sifting starfish",
-    "it": "Sand-sifting starfish",
-    "nl": "Sand-sifting starfish",
-    "pl": "Sand-sifting starfish",
-    "pt": "Sand-sifting starfish"
+    "de": "Sand-Seestern",
+    "es": "Estrella de arena",
+    "it": "Stella di sabbia",
+    "nl": "Zandzeester",
+    "pl": "Rozgwiazda piaskowa",
+    "pt": "Estrela-do-mar-de-areia"
   },
   "scientific": "Archaster typicus",
   "water_types": [

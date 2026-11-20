@@ -40,12 +40,12 @@
   "names": {
     "en": "Green swordtail",
     "fr": "Xipho",
-    "de": "Green swordtail",
-    "es": "Green swordtail",
-    "it": "Green swordtail",
-    "nl": "Green swordtail",
-    "pl": "Green swordtail",
-    "pt": "Green swordtail"
+    "de": "Schwertträger",
+    "es": "Cola de espada",
+    "it": "Portaspada",
+    "nl": "Zwaarddrager",
+    "pl": "Mieczyk Hellera",
+    "pt": "Espadinha"
   },
   "scientific": "Xiphophorus hellerii",
   "water_types": [
