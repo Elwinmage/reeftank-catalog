@@ -23,107 +23,107 @@ Elke vis is een blad met beelden (een WebP-atlas) en een descriptor met zijn cli
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Naam | Wetenschappelijke naam | Water | Grootte | Gedrag | HD |
 |---|---|---|---|---|---|---|
 | <img src="docs/thumbs/fish/amphiprion.webp" width="240" alt=""> | Anemoonvis<br>`amphiprion` | *Amphiprion sp.* | Zeewater | 7–11 cm | Blijft op zijn plek · zweeft 's nachts | ✔ |
-| <img src="docs/thumbs/fish/pterophyllum_scalare.webp" width="240" alt=""> | Angelfish<br>`pterophyllum_scalare` | *Pterophyllum scalare* | Zoetwater | 12–15 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/pterophyllum_scalare/thumb.webp" width="160" alt=""> | Angelfish<br>`pterophyllum_scalare` | *Pterophyllum scalare* | Zoetwater | 12–15 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
 | <img src="docs/thumbs/fish/pseudanthias.webp" width="240" alt=""> | Anthias<br>`pseudanthias` | *Pseudanthias sp.* | Zeewater | 8–14 cm | Scholenvis · verstopt zich 's nachts | ✔ |
-| <img src="docs/thumbs/fish/periophthalmus_barbarus.webp" width="240" alt=""> | Atlantic mudskipper<br>`periophthalmus_barbarus` | *Periophthalmus barbarus* | Brakwater | 10–15 cm | Bodembewoner · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/toxotes_jaculatrix.webp" width="240" alt=""> | Banded archerfish<br>`toxotes_jaculatrix` | *Toxotes jaculatrix* | Brakwater | 15–25 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/amblygobius_phalaena.webp" width="240" alt=""> | Banded goby<br>`amblygobius_phalaena` | *Amblygobius phalaena* | Zeewater | 8–10 cm | Leeft op het zand · rust 's nachts op de bodem |  |
+| <img src="fish/periophthalmus_barbarus/thumb.webp" width="160" alt=""> | Atlantic mudskipper<br>`periophthalmus_barbarus` | *Periophthalmus barbarus* | Brakwater | 10–15 cm | Bodembewoner · verstopt zich 's nachts |  |
+| <img src="fish/toxotes_jaculatrix/thumb.webp" width="160" alt=""> | Banded archerfish<br>`toxotes_jaculatrix` | *Toxotes jaculatrix* | Brakwater | 15–25 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/amblygobius_phalaena/thumb.webp" width="160" alt=""> | Banded goby<br>`amblygobius_phalaena` | *Amblygobius phalaena* | Zeewater | 8–10 cm | Leeft op het zand · rust 's nachts op de bodem |  |
 | <img src="docs/thumbs/fish/pterapogon_kauderni.webp" width="240" alt=""> | Banggai-kardinaalbaars<br>`pterapogon_kauderni` | *Pterapogon kauderni* | Zeewater | 5–8 cm | Blijft op zijn plek · zweeft 's nachts | ✔ |
-| <img src="docs/thumbs/fish/centropyge_bicolor.webp" width="240" alt=""> | Bicolor angelfish<br>`centropyge_bicolor` | *Centropyge bicolor* | Zeewater | 10–15 cm | Blijft op zijn plek · zweeft 's nachts |  |
-| <img src="docs/thumbs/fish/ecsenius_bicolor.webp" width="240" alt=""> | Bicolor blenny<br>`ecsenius_bicolor` | *Ecsenius bicolor* | Zeewater | 8–10 cm | Bodembewoner · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/gymnocorymbus_ternetzi.webp" width="240" alt=""> | Black skirt tetra<br>`gymnocorymbus_ternetzi` | *Gymnocorymbus ternetzi* | Zoetwater | 5–6 cm | Scholenvis · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/labroides_dimidiatus.webp" width="240" alt=""> | Bluestreak cleaner wrasse<br>`labroides_dimidiatus` | *Labroides dimidiatus* | Zeewater | 10–12 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/ancistrus.webp" width="240" alt=""> | Bristlenose pleco<br>`ancistrus` | *Ancistrus sp.* | Zoetwater | 10–14 cm | Bodembewoner · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/corydoras_aeneus.webp" width="240" alt=""> | Bronze corydoras<br>`corydoras_aeneus` | *Corydoras aeneus* | Zoetwater | 6–7 cm | Bodembewoner · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/brachygobius_xanthozonus.webp" width="240" alt=""> | Bumblebee goby<br>`brachygobius_xanthozonus` | *Brachygobius xanthozonus* | Brakwater | 3–4 cm | Bodembewoner · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/paracheirodon_axelrodi.webp" width="240" alt=""> | Cardinal tetra<br>`paracheirodon_axelrodi` | *Paracheirodon axelrodi* | Zoetwater | 3–5 cm | Scholenvis · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/danio_margaritatus.webp" width="240" alt=""> | Celestial pearl danio<br>`danio_margaritatus` | *Danio margaritatus* | Zoetwater | 2–3 cm | Scholenvis · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/pethia_titteya.webp" width="240" alt=""> | Cherry barb<br>`pethia_titteya` | *Pethia titteya* | Zoetwater | 4–5 cm | Scholenvis · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/gobiodon_citrinus.webp" width="240" alt=""> | Citron coral goby<br>`gobiodon_citrinus` | *Gobiodon citrinus* | Zeewater | 3–5 cm | Bodembewoner · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/chromobotia_macracanthus.webp" width="240" alt=""> | Clown loach<br>`chromobotia_macracanthus` | *Chromobotia macracanthus* | Zoetwater | 15–30 cm | Bodembewoner · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/apistogramma_cacatuoides.webp" width="240" alt=""> | Cockatoo dwarf cichlid<br>`apistogramma_cacatuoides` | *Apistogramma cacatuoides* | Zoetwater | 5–9 cm | Bodembewoner · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/poecilia_sphenops.webp" width="240" alt=""> | Common molly<br>`poecilia_sphenops` | *Poecilia sphenops* | Zoetwater, Brakwater | 6–10 cm | Scholenvis · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/chelmon_rostratus.webp" width="240" alt=""> | Copperband butterflyfish<br>`chelmon_rostratus` | *Chelmon rostratus* | Zeewater | 15–20 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/pseudotropheus_demasoni.webp" width="240" alt=""> | Demasoni cichlid<br>`pseudotropheus_demasoni` | *Pseudotropheus demasoni* | Zoetwater | 7–8 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/symphysodon_aequifasciatus.webp" width="240" alt=""> | Discus<br>`symphysodon_aequifasciatus` | *Symphysodon aequifasciatus* | Zoetwater | 15–20 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/trichogaster_lalius.webp" width="240" alt=""> | Dwarf gourami<br>`trichogaster_lalius` | *Trichogaster lalius* | Zoetwater | 5–8 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/labidochromis_caeruleus.webp" width="240" alt=""> | Electric yellow cichlid<br>`labidochromis_caeruleus` | *Labidochromis caeruleus* | Zoetwater | 8–10 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/nematobrycon_palmeri.webp" width="240" alt=""> | Emperor tetra<br>`nematobrycon_palmeri` | *Nematobrycon palmeri* | Zoetwater | 4–6 cm | Scholenvis · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/poecilia_wingei.webp" width="240" alt=""> | Endler's livebearer<br>`poecilia_wingei` | *Poecilia wingei* | Zoetwater | 2–4 cm | Scholenvis · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/dichotomyctere_biocellatus.webp" width="240" alt=""> | Figure-eight puffer<br>`dichotomyctere_biocellatus` | *Dichotomyctere biocellatus* | Brakwater | 5–6.5 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/chrysiptera_taupou.webp" width="240" alt=""> | Fiji-juffertje<br>`chrysiptera_taupou` | *Chrysiptera taupou* | Zeewater | 6–8 cm | Blijft op zijn plek · blijft bij zijn schuilplaats · zweeft 's nachts |  |
-| <img src="docs/thumbs/fish/nemateleotris_magnifica.webp" width="240" alt=""> | Firefish goby<br>`nemateleotris_magnifica` | *Nemateleotris magnifica* | Zeewater | 8–10 cm | Blijft op zijn plek · zweeft 's nachts |  |
-| <img src="docs/thumbs/fish/centropyge_loricula.webp" width="240" alt=""> | Flame angelfish<br>`centropyge_loricula` | *Centropyge loricula* | Zeewater | 8–10 cm | Blijft op zijn plek · zweeft 's nachts |  |
-| <img src="docs/thumbs/fish/cryptocentrus_cinctus.webp" width="240" alt=""> | Gele symbiosegrondel<br>`cryptocentrus_cinctus` | *Cryptocentrus cinctus* | Zeewater | 8–10 cm | Leeft op het zand · leeft in een hol · rust 's nachts op de bodem |  |
-| <img src="docs/thumbs/fish/carassius_auratus.webp" width="240" alt=""> | Goldfish<br>`carassius_auratus` | *Carassius auratus* | Zoetwater | 10–25 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/dichotomyctere_nigroviridis.webp" width="240" alt=""> | Green spotted puffer<br>`dichotomyctere_nigroviridis` | *Dichotomyctere nigroviridis* | Brakwater | 10–17 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/xiphophorus_hellerii.webp" width="240" alt=""> | Green swordtail<br>`xiphophorus_hellerii` | *Xiphophorus hellerii* | Zoetwater | 6–12 cm | Scholenvis · verstopt zich 's nachts |  |
+| <img src="fish/centropyge_bicolor/thumb.webp" width="160" alt=""> | Bicolor angelfish<br>`centropyge_bicolor` | *Centropyge bicolor* | Zeewater | 10–15 cm | Blijft op zijn plek · zweeft 's nachts |  |
+| <img src="fish/ecsenius_bicolor/thumb.webp" width="160" alt=""> | Bicolor blenny<br>`ecsenius_bicolor` | *Ecsenius bicolor* | Zeewater | 8–10 cm | Bodembewoner · verstopt zich 's nachts |  |
+| <img src="fish/gymnocorymbus_ternetzi/thumb.webp" width="160" alt=""> | Black skirt tetra<br>`gymnocorymbus_ternetzi` | *Gymnocorymbus ternetzi* | Zoetwater | 5–6 cm | Scholenvis · verstopt zich 's nachts |  |
+| <img src="fish/labroides_dimidiatus/thumb.webp" width="160" alt=""> | Bluestreak cleaner wrasse<br>`labroides_dimidiatus` | *Labroides dimidiatus* | Zeewater | 10–12 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/ancistrus/thumb.webp" width="160" alt=""> | Bristlenose pleco<br>`ancistrus` | *Ancistrus sp.* | Zoetwater | 10–14 cm | Bodembewoner · verstopt zich 's nachts |  |
+| <img src="fish/corydoras_aeneus/thumb.webp" width="160" alt=""> | Bronze corydoras<br>`corydoras_aeneus` | *Corydoras aeneus* | Zoetwater | 6–7 cm | Bodembewoner · verstopt zich 's nachts |  |
+| <img src="fish/brachygobius_xanthozonus/thumb.webp" width="160" alt=""> | Bumblebee goby<br>`brachygobius_xanthozonus` | *Brachygobius xanthozonus* | Brakwater | 3–4 cm | Bodembewoner · verstopt zich 's nachts |  |
+| <img src="fish/paracheirodon_axelrodi/thumb.webp" width="160" alt=""> | Cardinal tetra<br>`paracheirodon_axelrodi` | *Paracheirodon axelrodi* | Zoetwater | 3–5 cm | Scholenvis · verstopt zich 's nachts |  |
+| <img src="fish/danio_margaritatus/thumb.webp" width="160" alt=""> | Celestial pearl danio<br>`danio_margaritatus` | *Danio margaritatus* | Zoetwater | 2–3 cm | Scholenvis · verstopt zich 's nachts |  |
+| <img src="fish/pethia_titteya/thumb.webp" width="160" alt=""> | Cherry barb<br>`pethia_titteya` | *Pethia titteya* | Zoetwater | 4–5 cm | Scholenvis · verstopt zich 's nachts |  |
+| <img src="fish/gobiodon_citrinus/thumb.webp" width="160" alt=""> | Citron coral goby<br>`gobiodon_citrinus` | *Gobiodon citrinus* | Zeewater | 3–5 cm | Bodembewoner · verstopt zich 's nachts |  |
+| <img src="fish/chromobotia_macracanthus/thumb.webp" width="160" alt=""> | Clown loach<br>`chromobotia_macracanthus` | *Chromobotia macracanthus* | Zoetwater | 15–30 cm | Bodembewoner · verstopt zich 's nachts |  |
+| <img src="fish/apistogramma_cacatuoides/thumb.webp" width="160" alt=""> | Cockatoo dwarf cichlid<br>`apistogramma_cacatuoides` | *Apistogramma cacatuoides* | Zoetwater | 5–9 cm | Bodembewoner · verstopt zich 's nachts |  |
+| <img src="fish/poecilia_sphenops/thumb.webp" width="160" alt=""> | Common molly<br>`poecilia_sphenops` | *Poecilia sphenops* | Zoetwater, Brakwater | 6–10 cm | Scholenvis · verstopt zich 's nachts |  |
+| <img src="fish/chelmon_rostratus/thumb.webp" width="160" alt=""> | Copperband butterflyfish<br>`chelmon_rostratus` | *Chelmon rostratus* | Zeewater | 15–20 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/pseudotropheus_demasoni/thumb.webp" width="160" alt=""> | Demasoni cichlid<br>`pseudotropheus_demasoni` | *Pseudotropheus demasoni* | Zoetwater | 7–8 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/symphysodon_aequifasciatus/thumb.webp" width="160" alt=""> | Discus<br>`symphysodon_aequifasciatus` | *Symphysodon aequifasciatus* | Zoetwater | 15–20 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/trichogaster_lalius/thumb.webp" width="160" alt=""> | Dwarf gourami<br>`trichogaster_lalius` | *Trichogaster lalius* | Zoetwater | 5–8 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/labidochromis_caeruleus/thumb.webp" width="160" alt=""> | Electric yellow cichlid<br>`labidochromis_caeruleus` | *Labidochromis caeruleus* | Zoetwater | 8–10 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/nematobrycon_palmeri/thumb.webp" width="160" alt=""> | Emperor tetra<br>`nematobrycon_palmeri` | *Nematobrycon palmeri* | Zoetwater | 4–6 cm | Scholenvis · verstopt zich 's nachts |  |
+| <img src="fish/poecilia_wingei/thumb.webp" width="160" alt=""> | Endler's livebearer<br>`poecilia_wingei` | *Poecilia wingei* | Zoetwater | 2–4 cm | Scholenvis · verstopt zich 's nachts |  |
+| <img src="fish/dichotomyctere_biocellatus/thumb.webp" width="160" alt=""> | Figure-eight puffer<br>`dichotomyctere_biocellatus` | *Dichotomyctere biocellatus* | Brakwater | 5–6.5 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/chrysiptera_taupou/thumb.webp" width="160" alt=""> | Fiji-juffertje<br>`chrysiptera_taupou` | *Chrysiptera taupou* | Zeewater | 6–8 cm | Blijft op zijn plek · blijft bij zijn schuilplaats · zweeft 's nachts |  |
+| <img src="fish/nemateleotris_magnifica/thumb.webp" width="160" alt=""> | Firefish goby<br>`nemateleotris_magnifica` | *Nemateleotris magnifica* | Zeewater | 8–10 cm | Blijft op zijn plek · zweeft 's nachts |  |
+| <img src="fish/centropyge_loricula/thumb.webp" width="160" alt=""> | Flame angelfish<br>`centropyge_loricula` | *Centropyge loricula* | Zeewater | 8–10 cm | Blijft op zijn plek · zweeft 's nachts |  |
+| <img src="fish/cryptocentrus_cinctus/thumb.webp" width="160" alt=""> | Gele symbiosegrondel<br>`cryptocentrus_cinctus` | *Cryptocentrus cinctus* | Zeewater | 8–10 cm | Leeft op het zand · leeft in een hol · rust 's nachts op de bodem |  |
+| <img src="fish/carassius_auratus/thumb.webp" width="160" alt=""> | Goldfish<br>`carassius_auratus` | *Carassius auratus* | Zoetwater | 10–25 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/dichotomyctere_nigroviridis/thumb.webp" width="160" alt=""> | Green spotted puffer<br>`dichotomyctere_nigroviridis` | *Dichotomyctere nigroviridis* | Brakwater | 10–17 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/xiphophorus_hellerii/thumb.webp" width="160" alt=""> | Green swordtail<br>`xiphophorus_hellerii` | *Xiphophorus hellerii* | Zoetwater | 6–12 cm | Scholenvis · verstopt zich 's nachts |  |
 | <img src="docs/thumbs/fish/chromis_viridis.webp" width="240" alt=""> | Groene chromis<br>`chromis_viridis` | *Chromis viridis* | Zeewater | 5–8 cm | Scholenvis · verstopt zich 's nachts | ✔ |
-| <img src="docs/thumbs/fish/poecilia_reticulata.webp" width="240" alt=""> | Guppy<br>`poecilia_reticulata` | *Poecilia reticulata* | Zoetwater | 3–6 cm | Scholenvis · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/trigonostigma_heteromorpha.webp" width="240" alt=""> | Harlequin rasbora<br>`trigonostigma_heteromorpha` | *Trigonostigma heteromorpha* | Zoetwater | 3–4.5 cm | Scholenvis · verstopt zich 's nachts |  |
+| <img src="fish/poecilia_reticulata/thumb.webp" width="160" alt=""> | Guppy<br>`poecilia_reticulata` | *Poecilia reticulata* | Zoetwater | 3–6 cm | Scholenvis · verstopt zich 's nachts |  |
+| <img src="fish/trigonostigma_heteromorpha/thumb.webp" width="160" alt=""> | Harlequin rasbora<br>`trigonostigma_heteromorpha` | *Trigonostigma heteromorpha* | Zoetwater | 3–4.5 cm | Scholenvis · verstopt zich 's nachts |  |
 | <img src="docs/thumbs/fish/pomacanthus_imperator.webp" width="240" alt=""> | Keizer-engelvis (juveniel)<br>`pomacanthus_imperator` | *Pomacanthus imperator* | Zeewater | 6–12 cm | Openwaterzwemmer · verstopt zich 's nachts | ✔ |
 | <img src="docs/thumbs/fish/pomacanthus_imperator_adult.webp" width="240" alt=""> | Keizer-engelvis (volwassen)<br>`pomacanthus_imperator_adult` | *Pomacanthus imperator* | Zeewater | 25–38 cm | Openwaterzwemmer · verstopt zich 's nachts | ✔ |
-| <img src="docs/thumbs/fish/stigmatogobius_sadanundio.webp" width="240" alt=""> | Knight goby<br>`stigmatogobius_sadanundio` | *Stigmatogobius sadanundio* | Brakwater | 6–8 cm | Bodembewoner · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/ctenochaetus_strigosus.webp" width="240" alt=""> | Kole tang<br>`ctenochaetus_strigosus` | *Ctenochaetus strigosus* | Zeewater | 12–18 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/pelvicachromis_pulcher.webp" width="240" alt=""> | Kribensis<br>`pelvicachromis_pulcher` | *Pelvicachromis pulcher* | Zoetwater | 8–10 cm | Bodembewoner · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/pangio_kuhlii.webp" width="240" alt=""> | Kuhli loach<br>`pangio_kuhlii` | *Pangio kuhlii* | Zoetwater | 8–12 cm | Bodembewoner · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/salarias_fasciatus.webp" width="240" alt=""> | Lawnmower blenny<br>`salarias_fasciatus` | *Salarias fasciatus* | Zeewater | 12–14 cm | Bodembewoner · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/hyphessobrycon_pulchripinnis.webp" width="240" alt=""> | Lemon tetra<br>`hyphessobrycon_pulchripinnis` | *Hyphessobrycon pulchripinnis* | Zoetwater | 3–4.5 cm | Scholenvis · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/hippocampus_erectus.webp" width="240" alt=""> | Lined seahorse<br>`hippocampus_erectus` | *Hippocampus erectus* | Zeewater | 10–15 cm | Blijft op zijn plek · zweeft 's nachts |  |
-| <img src="docs/thumbs/fish/aphyosemion_australe.webp" width="240" alt=""> | Lyretail killifish<br>`aphyosemion_australe` | *Aphyosemion australe* | Zoetwater | 5–6 cm | Blijft op zijn plek · zweeft 's nachts |  |
+| <img src="fish/stigmatogobius_sadanundio/thumb.webp" width="160" alt=""> | Knight goby<br>`stigmatogobius_sadanundio` | *Stigmatogobius sadanundio* | Brakwater | 6–8 cm | Bodembewoner · verstopt zich 's nachts |  |
+| <img src="fish/ctenochaetus_strigosus/thumb.webp" width="160" alt=""> | Kole tang<br>`ctenochaetus_strigosus` | *Ctenochaetus strigosus* | Zeewater | 12–18 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/pelvicachromis_pulcher/thumb.webp" width="160" alt=""> | Kribensis<br>`pelvicachromis_pulcher` | *Pelvicachromis pulcher* | Zoetwater | 8–10 cm | Bodembewoner · verstopt zich 's nachts |  |
+| <img src="fish/pangio_kuhlii/thumb.webp" width="160" alt=""> | Kuhli loach<br>`pangio_kuhlii` | *Pangio kuhlii* | Zoetwater | 8–12 cm | Bodembewoner · verstopt zich 's nachts |  |
+| <img src="fish/salarias_fasciatus/thumb.webp" width="160" alt=""> | Lawnmower blenny<br>`salarias_fasciatus` | *Salarias fasciatus* | Zeewater | 12–14 cm | Bodembewoner · verstopt zich 's nachts |  |
+| <img src="fish/hyphessobrycon_pulchripinnis/thumb.webp" width="160" alt=""> | Lemon tetra<br>`hyphessobrycon_pulchripinnis` | *Hyphessobrycon pulchripinnis* | Zoetwater | 3–4.5 cm | Scholenvis · verstopt zich 's nachts |  |
+| <img src="fish/hippocampus_erectus/thumb.webp" width="160" alt=""> | Lined seahorse<br>`hippocampus_erectus` | *Hippocampus erectus* | Zeewater | 10–15 cm | Blijft op zijn plek · zweeft 's nachts |  |
+| <img src="fish/aphyosemion_australe/thumb.webp" width="160" alt=""> | Lyretail killifish<br>`aphyosemion_australe` | *Aphyosemion australe* | Zoetwater | 5–6 cm | Blijft op zijn plek · zweeft 's nachts |  |
 | <img src="docs/thumbs/fish/synchiropus_splendidus.webp" width="240" alt=""> | Mandarijnvis<br>`synchiropus_splendidus` | *Synchiropus splendidus* | Zeewater | 5–8 cm | Bodembewoner · verstopt zich 's nachts | ✔ |
-| <img src="docs/thumbs/fish/carnegiella_strigata.webp" width="240" alt=""> | Marbled hatchetfish<br>`carnegiella_strigata` | *Carnegiella strigata* | Zoetwater | 4–5 cm | Scholenvis · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/premnas_biaculeatus.webp" width="240" alt=""> | Maroon clownfish<br>`premnas_biaculeatus` | *Premnas biaculeatus* | Zeewater | 10–15 cm | Blijft op zijn plek · zweeft 's nachts |  |
-| <img src="docs/thumbs/fish/elacatinus_oceanops.webp" width="240" alt=""> | Neon goby<br>`elacatinus_oceanops` | *Elacatinus oceanops* | Zeewater | 4–6 cm | Bodembewoner · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/paracheirodon_innesi.webp" width="240" alt=""> | Neon tetra<br>`paracheirodon_innesi` | *Paracheirodon innesi* | Zoetwater | 3–4 cm | Scholenvis · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/gobiodon_okinawae.webp" width="240" alt=""> | Okinawa-koraalgrondel<br>`gobiodon_okinawae` | *Gobiodon okinawae* | Zeewater | 2.5–3.5 cm | Bodembewoner · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/pseudochromis_fridmani.webp" width="240" alt=""> | Orchid dottyback<br>`pseudochromis_fridmani` | *Pseudochromis fridmani* | Zeewater | 6–7 cm | Blijft op zijn plek · blijft bij zijn schuilplaats · zweeft 's nachts |  |
-| <img src="docs/thumbs/fish/astronotus_ocellatus.webp" width="240" alt=""> | Oscar<br>`astronotus_ocellatus` | *Astronotus ocellatus* | Zoetwater | 25–35 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/otocinclus_affinis.webp" width="240" alt=""> | Otocinclus<br>`otocinclus_affinis` | *Otocinclus affinis* | Zoetwater | 3–5 cm | Bodembewoner · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/sphaeramia_nematoptera.webp" width="240" alt=""> | Pajama cardinalfish<br>`sphaeramia_nematoptera` | *Sphaeramia nematoptera* | Zeewater | 8–10 cm | Blijft op zijn plek · zweeft 's nachts |  |
-| <img src="docs/thumbs/fish/corydoras_panda.webp" width="240" alt=""> | Panda corydoras<br>`corydoras_panda` | *Corydoras panda* | Zoetwater | 4–5 cm | Bodembewoner · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/danio_albolineatus.webp" width="240" alt=""> | Pearl danio<br>`danio_albolineatus` | *Danio albolineatus* | Zoetwater | 4–6 cm | Scholenvis · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/trichopodus_leerii.webp" width="240" alt=""> | Pearl gourami<br>`trichopodus_leerii` | *Trichopodus leerii* | Zoetwater | 10–12 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/rhinecanthus_aculeatus.webp" width="240" alt=""> | Picasso triggerfish<br>`rhinecanthus_aculeatus` | *Rhinecanthus aculeatus* | Zeewater | 20–25 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/cirrhitichthys_oxycephalus.webp" width="240" alt=""> | Pixy hawkfish<br>`cirrhitichthys_oxycephalus` | *Cirrhitichthys oxycephalus* | Zeewater | 8–10 cm | Bodembewoner · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/acanthurus_leucosternon.webp" width="240" alt=""> | Powder blue tang<br>`acanthurus_leucosternon` | *Acanthurus leucosternon* | Zeewater | 20–23 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/nemateleotris_decora.webp" width="240" alt=""> | Purple firefish<br>`nemateleotris_decora` | *Nemateleotris decora* | Zeewater | 8–10 cm | Blijft op zijn plek · zweeft 's nachts |  |
-| <img src="docs/thumbs/fish/mikrogeophagus_ramirezi.webp" width="240" alt=""> | Ram cichlid<br>`mikrogeophagus_ramirezi` | *Mikrogeophagus ramirezi* | Zoetwater | 5–7 cm | Blijft op zijn plek · zweeft 's nachts |  |
-| <img src="docs/thumbs/fish/pterois_volitans.webp" width="240" alt=""> | Red lionfish<br>`pterois_volitans` | *Pterois volitans* | Zeewater | 25–35 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/pygoplites_diacanthus.webp" width="240" alt=""> | Regal angelfish<br>`pygoplites_diacanthus` | *Pygoplites diacanthus* | Zeewater | 20–25 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/paracanthurus_hepatus.webp" width="240" alt=""> | Regal blue tang<br>`paracanthurus_hepatus` | *Paracanthurus hepatus* | Zeewater | 20–30 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/gramma_loreto.webp" width="240" alt=""> | Royal gramma<br>`gramma_loreto` | *Gramma loreto* | Zeewater | 7–8 cm | Blijft op zijn plek · zweeft 's nachts |  |
-| <img src="docs/thumbs/fish/hemigrammus_bleheri.webp" width="240" alt=""> | Rummy-nose tetra<br>`hemigrammus_bleheri` | *Hemigrammus bleheri* | Zoetwater | 4–5 cm | Scholenvis · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/poecilia_velifera.webp" width="240" alt=""> | Sailfin molly<br>`poecilia_velifera` | *Poecilia velifera* | Brakwater, Zoetwater | 10–15 cm | Scholenvis · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/zebrasoma_veliferum.webp" width="240" alt=""> | Sailfin tang<br>`zebrasoma_veliferum` | *Zebrasoma veliferum* | Zeewater | 25–40 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/zebrasoma_scopas.webp" width="240" alt=""> | Scopas tang<br>`zebrasoma_scopas` | *Zebrasoma scopas* | Zeewater | 15–20 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/hyphessobrycon_eques.webp" width="240" alt=""> | Serpae tetra<br>`hyphessobrycon_eques` | *Hyphessobrycon eques* | Zoetwater | 3–4.5 cm | Scholenvis · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/crossocheilus_oblongus.webp" width="240" alt=""> | Siamese algae eater<br>`crossocheilus_oblongus` | *Crossocheilus oblongus* | Zoetwater | 10–15 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/betta_splendens.webp" width="240" alt=""> | Siamese fighting fish<br>`betta_splendens` | *Betta splendens* | Zoetwater | 5–7 cm | Blijft op zijn plek · blijft bij zijn schuilplaats · zweeft 's nachts |  |
-| <img src="docs/thumbs/fish/monodactylus_argenteus.webp" width="240" alt=""> | Silver moony<br>`monodactylus_argenteus` | *Monodactylus argenteus* | Brakwater, Zeewater | 15–25 cm | Scholenvis · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/pseudocheilinus_hexataenia.webp" width="240" alt=""> | Six line wrasse<br>`pseudocheilinus_hexataenia` | *Pseudocheilinus hexataenia* | Zeewater | 7–10 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/carnegiella_strigata/thumb.webp" width="160" alt=""> | Marbled hatchetfish<br>`carnegiella_strigata` | *Carnegiella strigata* | Zoetwater | 4–5 cm | Scholenvis · verstopt zich 's nachts |  |
+| <img src="fish/premnas_biaculeatus/thumb.webp" width="160" alt=""> | Maroon clownfish<br>`premnas_biaculeatus` | *Premnas biaculeatus* | Zeewater | 10–15 cm | Blijft op zijn plek · zweeft 's nachts |  |
+| <img src="fish/elacatinus_oceanops/thumb.webp" width="160" alt=""> | Neon goby<br>`elacatinus_oceanops` | *Elacatinus oceanops* | Zeewater | 4–6 cm | Bodembewoner · verstopt zich 's nachts |  |
+| <img src="fish/paracheirodon_innesi/thumb.webp" width="160" alt=""> | Neon tetra<br>`paracheirodon_innesi` | *Paracheirodon innesi* | Zoetwater | 3–4 cm | Scholenvis · verstopt zich 's nachts |  |
+| <img src="fish/gobiodon_okinawae/thumb.webp" width="160" alt=""> | Okinawa-koraalgrondel<br>`gobiodon_okinawae` | *Gobiodon okinawae* | Zeewater | 2.5–3.5 cm | Bodembewoner · verstopt zich 's nachts |  |
+| <img src="fish/pseudochromis_fridmani/thumb.webp" width="160" alt=""> | Orchid dottyback<br>`pseudochromis_fridmani` | *Pseudochromis fridmani* | Zeewater | 6–7 cm | Blijft op zijn plek · blijft bij zijn schuilplaats · zweeft 's nachts |  |
+| <img src="fish/astronotus_ocellatus/thumb.webp" width="160" alt=""> | Oscar<br>`astronotus_ocellatus` | *Astronotus ocellatus* | Zoetwater | 25–35 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/otocinclus_affinis/thumb.webp" width="160" alt=""> | Otocinclus<br>`otocinclus_affinis` | *Otocinclus affinis* | Zoetwater | 3–5 cm | Bodembewoner · verstopt zich 's nachts |  |
+| <img src="fish/sphaeramia_nematoptera/thumb.webp" width="160" alt=""> | Pajama cardinalfish<br>`sphaeramia_nematoptera` | *Sphaeramia nematoptera* | Zeewater | 8–10 cm | Blijft op zijn plek · zweeft 's nachts |  |
+| <img src="fish/corydoras_panda/thumb.webp" width="160" alt=""> | Panda corydoras<br>`corydoras_panda` | *Corydoras panda* | Zoetwater | 4–5 cm | Bodembewoner · verstopt zich 's nachts |  |
+| <img src="fish/danio_albolineatus/thumb.webp" width="160" alt=""> | Pearl danio<br>`danio_albolineatus` | *Danio albolineatus* | Zoetwater | 4–6 cm | Scholenvis · verstopt zich 's nachts |  |
+| <img src="fish/trichopodus_leerii/thumb.webp" width="160" alt=""> | Pearl gourami<br>`trichopodus_leerii` | *Trichopodus leerii* | Zoetwater | 10–12 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/rhinecanthus_aculeatus/thumb.webp" width="160" alt=""> | Picasso triggerfish<br>`rhinecanthus_aculeatus` | *Rhinecanthus aculeatus* | Zeewater | 20–25 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/cirrhitichthys_oxycephalus/thumb.webp" width="160" alt=""> | Pixy hawkfish<br>`cirrhitichthys_oxycephalus` | *Cirrhitichthys oxycephalus* | Zeewater | 8–10 cm | Bodembewoner · verstopt zich 's nachts |  |
+| <img src="fish/acanthurus_leucosternon/thumb.webp" width="160" alt=""> | Powder blue tang<br>`acanthurus_leucosternon` | *Acanthurus leucosternon* | Zeewater | 20–23 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/nemateleotris_decora/thumb.webp" width="160" alt=""> | Purple firefish<br>`nemateleotris_decora` | *Nemateleotris decora* | Zeewater | 8–10 cm | Blijft op zijn plek · zweeft 's nachts |  |
+| <img src="fish/mikrogeophagus_ramirezi/thumb.webp" width="160" alt=""> | Ram cichlid<br>`mikrogeophagus_ramirezi` | *Mikrogeophagus ramirezi* | Zoetwater | 5–7 cm | Blijft op zijn plek · zweeft 's nachts |  |
+| <img src="fish/pterois_volitans/thumb.webp" width="160" alt=""> | Red lionfish<br>`pterois_volitans` | *Pterois volitans* | Zeewater | 25–35 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/pygoplites_diacanthus/thumb.webp" width="160" alt=""> | Regal angelfish<br>`pygoplites_diacanthus` | *Pygoplites diacanthus* | Zeewater | 20–25 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/paracanthurus_hepatus/thumb.webp" width="160" alt=""> | Regal blue tang<br>`paracanthurus_hepatus` | *Paracanthurus hepatus* | Zeewater | 20–30 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/gramma_loreto/thumb.webp" width="160" alt=""> | Royal gramma<br>`gramma_loreto` | *Gramma loreto* | Zeewater | 7–8 cm | Blijft op zijn plek · zweeft 's nachts |  |
+| <img src="fish/hemigrammus_bleheri/thumb.webp" width="160" alt=""> | Rummy-nose tetra<br>`hemigrammus_bleheri` | *Hemigrammus bleheri* | Zoetwater | 4–5 cm | Scholenvis · verstopt zich 's nachts |  |
+| <img src="fish/poecilia_velifera/thumb.webp" width="160" alt=""> | Sailfin molly<br>`poecilia_velifera` | *Poecilia velifera* | Brakwater, Zoetwater | 10–15 cm | Scholenvis · verstopt zich 's nachts |  |
+| <img src="fish/zebrasoma_veliferum/thumb.webp" width="160" alt=""> | Sailfin tang<br>`zebrasoma_veliferum` | *Zebrasoma veliferum* | Zeewater | 25–40 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/zebrasoma_scopas/thumb.webp" width="160" alt=""> | Scopas tang<br>`zebrasoma_scopas` | *Zebrasoma scopas* | Zeewater | 15–20 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/hyphessobrycon_eques/thumb.webp" width="160" alt=""> | Serpae tetra<br>`hyphessobrycon_eques` | *Hyphessobrycon eques* | Zoetwater | 3–4.5 cm | Scholenvis · verstopt zich 's nachts |  |
+| <img src="fish/crossocheilus_oblongus/thumb.webp" width="160" alt=""> | Siamese algae eater<br>`crossocheilus_oblongus` | *Crossocheilus oblongus* | Zoetwater | 10–15 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/betta_splendens/thumb.webp" width="160" alt=""> | Siamese fighting fish<br>`betta_splendens` | *Betta splendens* | Zoetwater | 5–7 cm | Blijft op zijn plek · blijft bij zijn schuilplaats · zweeft 's nachts |  |
+| <img src="fish/monodactylus_argenteus/thumb.webp" width="160" alt=""> | Silver moony<br>`monodactylus_argenteus` | *Monodactylus argenteus* | Brakwater, Zeewater | 15–25 cm | Scholenvis · verstopt zich 's nachts |  |
+| <img src="fish/pseudocheilinus_hexataenia/thumb.webp" width="160" alt=""> | Six line wrasse<br>`pseudocheilinus_hexataenia` | *Pseudocheilinus hexataenia* | Zeewater | 7–10 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
 | <img src="docs/thumbs/fish/valenciennea.webp" width="240" alt=""> | Slaapgrondel<br>`valenciennea` | *Valenciennea sp.* | Zeewater | 10–16 cm | Leeft op het zand · leeft in een hol · rust 's nachts op de bodem | ✔ |
-| <img src="docs/thumbs/fish/cirrhilabrus_solorensis.webp" width="240" alt=""> | Solor fairy wrasse<br>`cirrhilabrus_solorensis` | *Cirrhilabrus solorensis* | Zeewater | 10–12 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/xiphophorus_maculatus.webp" width="240" alt=""> | Southern platyfish<br>`xiphophorus_maculatus` | *Xiphophorus maculatus* | Zoetwater | 4–6 cm | Scholenvis · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/synchiropus_picturatus.webp" width="240" alt=""> | Spotted mandarin<br>`synchiropus_picturatus` | *Synchiropus picturatus* | Zeewater | 6–8 cm | Bodembewoner · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/scatophagus_argus.webp" width="240" alt=""> | Spotted scat<br>`scatophagus_argus` | *Scatophagus argus* | Brakwater, Zeewater | 15–30 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/trichopodus_trichopterus.webp" width="240" alt=""> | Three-spot gourami<br>`trichopodus_trichopterus` | *Trichopodus trichopterus* | Zoetwater | 10–15 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/dascyllus_trimaculatus.webp" width="240" alt=""> | Threespot dascyllus<br>`dascyllus_trimaculatus` | *Dascyllus trimaculatus* | Zeewater | 10–14 cm | Blijft op zijn plek · zweeft 's nachts |  |
-| <img src="docs/thumbs/fish/puntigrus_tetrazona.webp" width="240" alt=""> | Tiger barb<br>`puntigrus_tetrazona` | *Puntigrus tetrazona* | Zoetwater | 5–7 cm | Scholenvis · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/melanotaenia_lacustris.webp" width="240" alt=""> | Turquoise rainbowfish<br>`melanotaenia_lacustris` | *Melanotaenia lacustris* | Zoetwater | 8–12 cm | Scholenvis · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/canthigaster_valentini.webp" width="240" alt=""> | Valentini puffer<br>`canthigaster_valentini` | *Canthigaster valentini* | Zeewater | 8–10 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/gobioides_broussonnetii.webp" width="240" alt=""> | Violet goby<br>`gobioides_broussonnetii` | *Gobioides broussonnetii* | Brakwater | 30–50 cm | Leeft op het zand · leeft in een hol · rust 's nachts op de bodem |  |
+| <img src="fish/cirrhilabrus_solorensis/thumb.webp" width="160" alt=""> | Solor fairy wrasse<br>`cirrhilabrus_solorensis` | *Cirrhilabrus solorensis* | Zeewater | 10–12 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/xiphophorus_maculatus/thumb.webp" width="160" alt=""> | Southern platyfish<br>`xiphophorus_maculatus` | *Xiphophorus maculatus* | Zoetwater | 4–6 cm | Scholenvis · verstopt zich 's nachts |  |
+| <img src="fish/synchiropus_picturatus/thumb.webp" width="160" alt=""> | Spotted mandarin<br>`synchiropus_picturatus` | *Synchiropus picturatus* | Zeewater | 6–8 cm | Bodembewoner · verstopt zich 's nachts |  |
+| <img src="fish/scatophagus_argus/thumb.webp" width="160" alt=""> | Spotted scat<br>`scatophagus_argus` | *Scatophagus argus* | Brakwater, Zeewater | 15–30 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/trichopodus_trichopterus/thumb.webp" width="160" alt=""> | Three-spot gourami<br>`trichopodus_trichopterus` | *Trichopodus trichopterus* | Zoetwater | 10–15 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/dascyllus_trimaculatus/thumb.webp" width="160" alt=""> | Threespot dascyllus<br>`dascyllus_trimaculatus` | *Dascyllus trimaculatus* | Zeewater | 10–14 cm | Blijft op zijn plek · zweeft 's nachts |  |
+| <img src="fish/puntigrus_tetrazona/thumb.webp" width="160" alt=""> | Tiger barb<br>`puntigrus_tetrazona` | *Puntigrus tetrazona* | Zoetwater | 5–7 cm | Scholenvis · verstopt zich 's nachts |  |
+| <img src="fish/melanotaenia_lacustris/thumb.webp" width="160" alt=""> | Turquoise rainbowfish<br>`melanotaenia_lacustris` | *Melanotaenia lacustris* | Zoetwater | 8–12 cm | Scholenvis · verstopt zich 's nachts |  |
+| <img src="fish/canthigaster_valentini/thumb.webp" width="160" alt=""> | Valentini puffer<br>`canthigaster_valentini` | *Canthigaster valentini* | Zeewater | 8–10 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/gobioides_broussonnetii/thumb.webp" width="160" alt=""> | Violet goby<br>`gobioides_broussonnetii` | *Gobioides broussonnetii* | Brakwater | 30–50 cm | Leeft op het zand · leeft in een hol · rust 's nachts op de bodem |  |
 | <img src="docs/thumbs/fish/siganus_vulpinus.webp" width="240" alt=""> | Vossengezicht konijnvis<br>`siganus_vulpinus` | *Siganus vulpinus* | Zeewater | 15–22 cm | Openwaterzwemmer · rust 's nachts op de bodem | ✔ |
-| <img src="docs/thumbs/fish/tanichthys_albonubes.webp" width="240" alt=""> | White cloud mountain minnow<br>`tanichthys_albonubes` | *Tanichthys albonubes* | Zoetwater | 3–4 cm | Scholenvis · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/stonogobiops_yasha.webp" width="240" alt=""> | Yasha goby<br>`stonogobiops_yasha` | *Stonogobiops yasha* | Zeewater | 6–8 cm | Leeft op het zand · leeft in een hol · rust 's nachts op de bodem |  |
-| <img src="docs/thumbs/fish/halichoeres_chrysus.webp" width="240" alt=""> | Yellow coris wrasse<br>`halichoeres_chrysus` | *Halichoeres chrysus* | Zeewater | 10–12 cm | Openwaterzwemmer · rust 's nachts op de bodem |  |
-| <img src="docs/thumbs/fish/zebrasoma_flavescens.webp" width="240" alt=""> | Yellow tang<br>`zebrasoma_flavescens` | *Zebrasoma flavescens* | Zeewater | 15–20 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/ostorhinchus_cyanosoma.webp" width="240" alt=""> | Yellow-striped cardinalfish<br>`ostorhinchus_cyanosoma` | *Ostorhinchus cyanosoma* | Zeewater | 7–8 cm | Blijft op zijn plek · zweeft 's nachts |  |
-| <img src="docs/thumbs/fish/opistognathus_aurifrons.webp" width="240" alt=""> | Yellowhead jawfish<br>`opistognathus_aurifrons` | *Opistognathus aurifrons* | Zeewater | 10–12 cm | Leeft op het zand · leeft in een hol · rust 's nachts op de bodem |  |
-| <img src="docs/thumbs/fish/chrysiptera_parasema.webp" width="240" alt=""> | Yellowtail blue damselfish<br>`chrysiptera_parasema` | *Chrysiptera parasema* | Zeewater | 5–6 cm | Blijft op zijn plek · blijft bij zijn schuilplaats · zweeft 's nachts |  |
-| <img src="docs/thumbs/fish/dendrochirus_zebra.webp" width="240" alt=""> | Zebra lionfish<br>`dendrochirus_zebra` | *Dendrochirus zebra* | Zeewater | 12–18 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/hypancistrus_zebra.webp" width="240" alt=""> | Zebra pleco<br>`hypancistrus_zebra` | *Hypancistrus zebra* | Zoetwater | 7–10 cm | Bodembewoner · verstopt zich 's nachts |  |
-| <img src="docs/thumbs/fish/danio_rerio.webp" width="240" alt=""> | Zebrafish<br>`danio_rerio` | *Danio rerio* | Zoetwater | 4–5 cm | Scholenvis · verstopt zich 's nachts |  |
+| <img src="fish/tanichthys_albonubes/thumb.webp" width="160" alt=""> | White cloud mountain minnow<br>`tanichthys_albonubes` | *Tanichthys albonubes* | Zoetwater | 3–4 cm | Scholenvis · verstopt zich 's nachts |  |
+| <img src="fish/stonogobiops_yasha/thumb.webp" width="160" alt=""> | Yasha goby<br>`stonogobiops_yasha` | *Stonogobiops yasha* | Zeewater | 6–8 cm | Leeft op het zand · leeft in een hol · rust 's nachts op de bodem |  |
+| <img src="fish/halichoeres_chrysus/thumb.webp" width="160" alt=""> | Yellow coris wrasse<br>`halichoeres_chrysus` | *Halichoeres chrysus* | Zeewater | 10–12 cm | Openwaterzwemmer · rust 's nachts op de bodem |  |
+| <img src="fish/zebrasoma_flavescens/thumb.webp" width="160" alt=""> | Yellow tang<br>`zebrasoma_flavescens` | *Zebrasoma flavescens* | Zeewater | 15–20 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/ostorhinchus_cyanosoma/thumb.webp" width="160" alt=""> | Yellow-striped cardinalfish<br>`ostorhinchus_cyanosoma` | *Ostorhinchus cyanosoma* | Zeewater | 7–8 cm | Blijft op zijn plek · zweeft 's nachts |  |
+| <img src="fish/opistognathus_aurifrons/thumb.webp" width="160" alt=""> | Yellowhead jawfish<br>`opistognathus_aurifrons` | *Opistognathus aurifrons* | Zeewater | 10–12 cm | Leeft op het zand · leeft in een hol · rust 's nachts op de bodem |  |
+| <img src="fish/chrysiptera_parasema/thumb.webp" width="160" alt=""> | Yellowtail blue damselfish<br>`chrysiptera_parasema` | *Chrysiptera parasema* | Zeewater | 5–6 cm | Blijft op zijn plek · blijft bij zijn schuilplaats · zweeft 's nachts |  |
+| <img src="fish/dendrochirus_zebra/thumb.webp" width="160" alt=""> | Zebra lionfish<br>`dendrochirus_zebra` | *Dendrochirus zebra* | Zeewater | 12–18 cm | Openwaterzwemmer · verstopt zich 's nachts |  |
+| <img src="fish/hypancistrus_zebra/thumb.webp" width="160" alt=""> | Zebra pleco<br>`hypancistrus_zebra` | *Hypancistrus zebra* | Zoetwater | 7–10 cm | Bodembewoner · verstopt zich 's nachts |  |
+| <img src="fish/danio_rerio/thumb.webp" width="160" alt=""> | Zebrafish<br>`danio_rerio` | *Danio rerio* | Zoetwater | 4–5 cm | Scholenvis · verstopt zich 's nachts |  |
 
 ## Koralen (1)
 
@@ -135,35 +135,35 @@ Elke vis is een blad met beelden (een WebP-atlas) en een descriptor met zijn cli
 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Naam | Wetenschappelijke naam | Water | Grootte | Zone |
 |---|---|---|---|---|---|
-| <img src="docs/thumbs/plants/limnobium_laevigatum.webp" width="240" alt=""> | Amazon frogbit<br>`limnobium_laevigatum` | *Limnobium laevigatum* | Zoetwater | 5–10 cm | Drijvend |
-| <img src="docs/thumbs/plants/echinodorus_bleheri.webp" width="240" alt=""> | Amazon sword<br>`echinodorus_bleheri` | *Echinodorus bleheri* | Zoetwater | 30–50 cm | Middengrond |
-| <img src="docs/thumbs/plants/limnophila_sessiliflora.webp" width="240" alt=""> | Ambulia<br>`limnophila_sessiliflora` | *Limnophila sessiliflora* | Zoetwater | 20–40 cm | Achtergrond |
-| <img src="docs/thumbs/plants/anubias_barteri.webp" width="240" alt=""> | Anubias<br>`anubias_barteri` | *Anubias barteri* | Zoetwater | 10–25 cm | Epifyt |
-| <img src="docs/thumbs/plants/egeria_densa.webp" width="240" alt=""> | Brazilian waterweed<br>`egeria_densa` | *Egeria densa* | Zoetwater | 30–100 cm | Achtergrond |
-| <img src="docs/thumbs/plants/bucephalandra.webp" width="240" alt=""> | Bucephalandra<br>`bucephalandra` | *Bucephalandra sp.* | Zoetwater | 5–15 cm | Epifyt |
-| <img src="docs/thumbs/plants/cabomba_caroliniana.webp" width="240" alt=""> | Carolina fanwort<br>`cabomba_caroliniana` | *Cabomba caroliniana* | Zoetwater | 30–60 cm | Achtergrond |
-| <img src="docs/thumbs/plants/caulerpa_prolifera.webp" width="240" alt=""> | Caulerpa<br>`caulerpa_prolifera` | *Caulerpa prolifera* | Zeewater | 5–20 cm | Voorgrond |
-| <img src="docs/thumbs/plants/chaetomorpha_linum.webp" width="240" alt=""> | Chaeto<br>`chaetomorpha_linum` | *Chaetomorpha linum* | Zeewater | 5–30 cm | Voorgrond |
-| <img src="docs/thumbs/plants/cryptocoryne_ciliata.webp" width="240" alt=""> | Ciliated cryptocoryne<br>`cryptocoryne_ciliata` | *Cryptocoryne ciliata* | Brakwater, Zoetwater | 20–40 cm | Middengrond |
-| <img src="docs/thumbs/plants/ludwigia_repens.webp" width="240" alt=""> | Creeping primrose willow<br>`ludwigia_repens` | *Ludwigia repens* | Zoetwater | 20–40 cm | Middengrond |
-| <img src="docs/thumbs/plants/lemna_minor.webp" width="240" alt=""> | Duckweed<br>`lemna_minor` | *Lemna minor* | Zoetwater | 0.5–1 cm | Drijvend |
-| <img src="docs/thumbs/plants/hemianthus_callitrichoides.webp" width="240" alt=""> | Dwarf baby tears<br>`hemianthus_callitrichoides` | *Hemianthus callitrichoides* | Zoetwater | 2–5 cm | Voorgrond |
-| <img src="docs/thumbs/plants/cryptocoryne_parva.webp" width="240" alt=""> | Dwarf cryptocoryne<br>`cryptocoryne_parva` | *Cryptocoryne parva* | Zoetwater | 5–8 cm | Voorgrond |
-| <img src="docs/thumbs/plants/eleocharis_parvula.webp" width="240" alt=""> | Dwarf hairgrass<br>`eleocharis_parvula` | *Eleocharis parvula* | Zoetwater | 5–10 cm | Voorgrond |
-| <img src="docs/thumbs/plants/sagittaria_subulata.webp" width="240" alt=""> | Dwarf sagittaria<br>`sagittaria_subulata` | *Sagittaria subulata* | Zoetwater | 10–30 cm | Voorgrond |
-| <img src="docs/thumbs/plants/vallisneria_spiralis.webp" width="240" alt=""> | Eelgrass<br>`vallisneria_spiralis` | *Vallisneria spiralis* | Zoetwater, Brakwater | 30–60 cm | Achtergrond |
-| <img src="docs/thumbs/plants/halimeda_opuntia.webp" width="240" alt=""> | Halimeda<br>`halimeda_opuntia` | *Halimeda opuntia* | Zeewater | 5–15 cm | Voorgrond |
-| <img src="docs/thumbs/plants/hygrophila_polysperma.webp" width="240" alt=""> | Indian swampweed<br>`hygrophila_polysperma` | *Hygrophila polysperma* | Zoetwater | 20–50 cm | Achtergrond |
-| <img src="docs/thumbs/plants/microsorum_pteropus.webp" width="240" alt=""> | Java fern<br>`microsorum_pteropus` | *Microsorum pteropus* | Zoetwater | 20–30 cm | Epifyt |
-| <img src="docs/thumbs/plants/vesicularia_dubyana.webp" width="240" alt=""> | Java moss<br>`vesicularia_dubyana` | *Vesicularia dubyana* | Zoetwater | 3–5 cm | Epifyt |
-| <img src="docs/thumbs/plants/aegagropila_linnaei.webp" width="240" alt=""> | Marimo moss ball<br>`aegagropila_linnaei` | *Aegagropila linnaei* | Zoetwater | 3–10 cm | Voorgrond |
-| <img src="docs/thumbs/plants/glossostigma_elatinoides.webp" width="240" alt=""> | Mud mudwort<br>`glossostigma_elatinoides` | *Glossostigma elatinoides* | Zoetwater | 2–5 cm | Voorgrond |
-| <img src="docs/thumbs/plants/rhizophora_mangle.webp" width="240" alt=""> | Red mangrove<br>`rhizophora_mangle` | *Rhizophora mangle* | Brakwater, Zeewater | 30–100 cm | Middengrond |
-| <img src="docs/thumbs/plants/rotala_rotundifolia.webp" width="240" alt=""> | Roundleaf toothcup<br>`rotala_rotundifolia` | *Rotala rotundifolia* | Zoetwater | 20–50 cm | Achtergrond |
-| <img src="docs/thumbs/plants/staurogyne_repens.webp" width="240" alt=""> | Staurogyne<br>`staurogyne_repens` | *Staurogyne repens* | Zoetwater | 5–10 cm | Voorgrond |
-| <img src="docs/thumbs/plants/thalassia_testudinum.webp" width="240" alt=""> | Turtle grass<br>`thalassia_testudinum` | *Thalassia testudinum* | Zeewater | 10–30 cm | Voorgrond |
-| <img src="docs/thumbs/plants/pistia_stratiotes.webp" width="240" alt=""> | Water lettuce<br>`pistia_stratiotes` | *Pistia stratiotes* | Zoetwater | 5–15 cm | Drijvend |
-| <img src="docs/thumbs/plants/cryptocoryne_wendtii.webp" width="240" alt=""> | Wendt's cryptocoryne<br>`cryptocoryne_wendtii` | *Cryptocoryne wendtii* | Zoetwater | 10–20 cm | Middengrond |
+| <img src="plants/limnobium_laevigatum/thumb.webp" width="160" alt=""> | Amazon frogbit<br>`limnobium_laevigatum` | *Limnobium laevigatum* | Zoetwater | 5–10 cm | Drijvend |
+| <img src="plants/echinodorus_bleheri/thumb.webp" width="160" alt=""> | Amazon sword<br>`echinodorus_bleheri` | *Echinodorus bleheri* | Zoetwater | 30–50 cm | Middengrond |
+| <img src="plants/limnophila_sessiliflora/thumb.webp" width="160" alt=""> | Ambulia<br>`limnophila_sessiliflora` | *Limnophila sessiliflora* | Zoetwater | 20–40 cm | Achtergrond |
+| <img src="plants/anubias_barteri/thumb.webp" width="160" alt=""> | Anubias<br>`anubias_barteri` | *Anubias barteri* | Zoetwater | 10–25 cm | Epifyt |
+| <img src="plants/egeria_densa/thumb.webp" width="160" alt=""> | Brazilian waterweed<br>`egeria_densa` | *Egeria densa* | Zoetwater | 30–100 cm | Achtergrond |
+| <img src="plants/bucephalandra/thumb.webp" width="160" alt=""> | Bucephalandra<br>`bucephalandra` | *Bucephalandra sp.* | Zoetwater | 5–15 cm | Epifyt |
+| <img src="plants/cabomba_caroliniana/thumb.webp" width="160" alt=""> | Carolina fanwort<br>`cabomba_caroliniana` | *Cabomba caroliniana* | Zoetwater | 30–60 cm | Achtergrond |
+| <img src="plants/caulerpa_prolifera/thumb.webp" width="160" alt=""> | Caulerpa<br>`caulerpa_prolifera` | *Caulerpa prolifera* | Zeewater | 5–20 cm | Voorgrond |
+| <img src="plants/chaetomorpha_linum/thumb.webp" width="160" alt=""> | Chaeto<br>`chaetomorpha_linum` | *Chaetomorpha linum* | Zeewater | 5–30 cm | Voorgrond |
+| <img src="plants/cryptocoryne_ciliata/thumb.webp" width="160" alt=""> | Ciliated cryptocoryne<br>`cryptocoryne_ciliata` | *Cryptocoryne ciliata* | Brakwater, Zoetwater | 20–40 cm | Middengrond |
+| <img src="plants/ludwigia_repens/thumb.webp" width="160" alt=""> | Creeping primrose willow<br>`ludwigia_repens` | *Ludwigia repens* | Zoetwater | 20–40 cm | Middengrond |
+| <img src="plants/lemna_minor/thumb.webp" width="160" alt=""> | Duckweed<br>`lemna_minor` | *Lemna minor* | Zoetwater | 0.5–1 cm | Drijvend |
+| <img src="plants/hemianthus_callitrichoides/thumb.webp" width="160" alt=""> | Dwarf baby tears<br>`hemianthus_callitrichoides` | *Hemianthus callitrichoides* | Zoetwater | 2–5 cm | Voorgrond |
+| <img src="plants/cryptocoryne_parva/thumb.webp" width="160" alt=""> | Dwarf cryptocoryne<br>`cryptocoryne_parva` | *Cryptocoryne parva* | Zoetwater | 5–8 cm | Voorgrond |
+| <img src="plants/eleocharis_parvula/thumb.webp" width="160" alt=""> | Dwarf hairgrass<br>`eleocharis_parvula` | *Eleocharis parvula* | Zoetwater | 5–10 cm | Voorgrond |
+| <img src="plants/sagittaria_subulata/thumb.webp" width="160" alt=""> | Dwarf sagittaria<br>`sagittaria_subulata` | *Sagittaria subulata* | Zoetwater | 10–30 cm | Voorgrond |
+| <img src="plants/vallisneria_spiralis/thumb.webp" width="160" alt=""> | Eelgrass<br>`vallisneria_spiralis` | *Vallisneria spiralis* | Zoetwater, Brakwater | 30–60 cm | Achtergrond |
+| <img src="plants/halimeda_opuntia/thumb.webp" width="160" alt=""> | Halimeda<br>`halimeda_opuntia` | *Halimeda opuntia* | Zeewater | 5–15 cm | Voorgrond |
+| <img src="plants/hygrophila_polysperma/thumb.webp" width="160" alt=""> | Indian swampweed<br>`hygrophila_polysperma` | *Hygrophila polysperma* | Zoetwater | 20–50 cm | Achtergrond |
+| <img src="plants/microsorum_pteropus/thumb.webp" width="160" alt=""> | Java fern<br>`microsorum_pteropus` | *Microsorum pteropus* | Zoetwater | 20–30 cm | Epifyt |
+| <img src="plants/vesicularia_dubyana/thumb.webp" width="160" alt=""> | Java moss<br>`vesicularia_dubyana` | *Vesicularia dubyana* | Zoetwater | 3–5 cm | Epifyt |
+| <img src="plants/aegagropila_linnaei/thumb.webp" width="160" alt=""> | Marimo moss ball<br>`aegagropila_linnaei` | *Aegagropila linnaei* | Zoetwater | 3–10 cm | Voorgrond |
+| <img src="plants/glossostigma_elatinoides/thumb.webp" width="160" alt=""> | Mud mudwort<br>`glossostigma_elatinoides` | *Glossostigma elatinoides* | Zoetwater | 2–5 cm | Voorgrond |
+| <img src="plants/rhizophora_mangle/thumb.webp" width="160" alt=""> | Red mangrove<br>`rhizophora_mangle` | *Rhizophora mangle* | Brakwater, Zeewater | 30–100 cm | Middengrond |
+| <img src="plants/rotala_rotundifolia/thumb.webp" width="160" alt=""> | Roundleaf toothcup<br>`rotala_rotundifolia` | *Rotala rotundifolia* | Zoetwater | 20–50 cm | Achtergrond |
+| <img src="plants/staurogyne_repens/thumb.webp" width="160" alt=""> | Staurogyne<br>`staurogyne_repens` | *Staurogyne repens* | Zoetwater | 5–10 cm | Voorgrond |
+| <img src="plants/thalassia_testudinum/thumb.webp" width="160" alt=""> | Turtle grass<br>`thalassia_testudinum` | *Thalassia testudinum* | Zeewater | 10–30 cm | Voorgrond |
+| <img src="plants/pistia_stratiotes/thumb.webp" width="160" alt=""> | Water lettuce<br>`pistia_stratiotes` | *Pistia stratiotes* | Zoetwater | 5–15 cm | Drijvend |
+| <img src="plants/cryptocoryne_wendtii/thumb.webp" width="160" alt=""> | Wendt's cryptocoryne<br>`cryptocoryne_wendtii` | *Cryptocoryne wendtii* | Zoetwater | 10–20 cm | Middengrond |
 
 ## Ongewervelden (32)
 
