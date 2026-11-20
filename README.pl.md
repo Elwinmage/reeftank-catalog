@@ -101,7 +101,7 @@ Integracja pobiera wydania tego repozytorium i aktualizuje je (`update.reeftank_
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Turquoise rainbowfish<br>`melanotaenia_lacustris` | *Melanotaenia lacustris* | Słodkowodna | 8–12 cm | Ławica · chowa się w nocy |
 | <img src="fish/pomacanthus_imperator_adult/thumb.webp" width="72" alt=""> | Ustniczek cesarski (dorosły)<br>`pomacanthus_imperator_adult` | *Pomacanthus imperator* | Morska | 25–38 cm | Pływa w toni wodnej · chowa się w nocy |
 | <img src="fish/pomacanthus_imperator/thumb.webp" width="72" alt=""> | Ustniczek cesarski (młody)<br>`pomacanthus_imperator` | *Pomacanthus imperator* | Morska | 6–12 cm | Pływa w toni wodnej · chowa się w nocy |
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Valentini puffer<br>`canthigaster_valentini` | *Canthigaster valentini* | Morska | 8–10 cm | Pływa w toni wodnej · chowa się w nocy |
+| <img src="fish/canthigaster_valentini/thumb.webp" width="72" alt=""> | Valentini puffer<br>`canthigaster_valentini` | *Canthigaster valentini* | Morska | 8–10 cm | Pływa w toni wodnej · chowa się w nocy |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Violet goby<br>`gobioides_broussonnetii` | *Gobioides broussonnetii* | Słonawa | 30–50 cm | Żyje na piasku · żyje w norze · odpoczywa w nocy na dnie |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | White cloud mountain minnow<br>`tanichthys_albonubes` | *Tanichthys albonubes* | Słodkowodna | 3–4 cm | Ławica · chowa się w nocy |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Yasha goby<br>`stonogobiops_yasha` | *Stonogobiops yasha* | Morska | 6–8 cm | Żyje na piasku · żyje w norze · odpoczywa w nocy na dnie |

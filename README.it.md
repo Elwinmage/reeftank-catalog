@@ -101,7 +101,7 @@ L'integrazione scarica le release di questo repository e le mantiene aggiornate 
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Threespot dascyllus<br>`dascyllus_trimaculatus` | *Dascyllus trimaculatus* | Marino | 10–14 cm | Stazionario · resta sospeso di notte |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Tiger barb<br>`puntigrus_tetrazona` | *Puntigrus tetrazona* | Acqua dolce | 5–7 cm | In banco · si nasconde di notte |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Turquoise rainbowfish<br>`melanotaenia_lacustris` | *Melanotaenia lacustris* | Acqua dolce | 8–12 cm | In banco · si nasconde di notte |
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Valentini puffer<br>`canthigaster_valentini` | *Canthigaster valentini* | Marino | 8–10 cm | Nuotatore di acque libere · si nasconde di notte |
+| <img src="fish/canthigaster_valentini/thumb.webp" width="72" alt=""> | Valentini puffer<br>`canthigaster_valentini` | *Canthigaster valentini* | Marino | 8–10 cm | Nuotatore di acque libere · si nasconde di notte |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Violet goby<br>`gobioides_broussonnetii` | *Gobioides broussonnetii* | Salmastro | 30–50 cm | Vive sulla sabbia · vive in una tana · riposa sul fondo di notte |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | White cloud mountain minnow<br>`tanichthys_albonubes` | *Tanichthys albonubes* | Acqua dolce | 3–4 cm | In banco · si nasconde di notte |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Yasha goby<br>`stonogobiops_yasha` | *Stonogobiops yasha* | Marino | 6–8 cm | Vive sulla sabbia · vive in una tana · riposa sul fondo di notte |

@@ -25,7 +25,7 @@ L'intégration télécharge les versions publiées de ce dépôt et les tient à
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Blennie bicolore<br>`ecsenius_bicolor` | *Ecsenius bicolor* | Marine | 8–10 cm | Vit près du fond · se cache la nuit |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Blennie tondeuse<br>`salarias_fasciatus` | *Salarias fasciatus* | Marine | 12–14 cm | Vit près du fond · se cache la nuit |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Botia clown<br>`chromobotia_macracanthus` | *Chromobotia macracanthus* | Eau douce | 15–30 cm | Vit près du fond · se cache la nuit |
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Canthigaster de Valentin<br>`canthigaster_valentini` | *Canthigaster valentini* | Marine | 8–10 cm | Nageur de pleine eau · se cache la nuit |
+| <img src="fish/canthigaster_valentini/thumb.webp" width="72" alt=""> | Canthigaster de Valentin<br>`canthigaster_valentini` | *Canthigaster valentini* | Marine | 8–10 cm | Nageur de pleine eau · se cache la nuit |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Cardinal pyjama<br>`sphaeramia_nematoptera` | *Sphaeramia nematoptera* | Marine | 8–10 cm | Stationnaire · reste en pleine eau la nuit |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Cardinal à bande jaune<br>`ostorhinchus_cyanosoma` | *Ostorhinchus cyanosoma* | Marine | 7–8 cm | Stationnaire · reste en pleine eau la nuit |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Chirurgien bleu<br>`paracanthurus_hepatus` | *Paracanthurus hepatus* | Marine | 20–30 cm | Nageur de pleine eau · se cache la nuit |

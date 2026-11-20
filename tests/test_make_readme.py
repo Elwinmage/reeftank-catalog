@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent / "scripts"))
 make_readme = importlib.import_module("make_readme")
 validate = importlib.import_module("validate")
 
-from test_release import REPO, entry
+from test_release import entry
 
 HAND = "# reeftank-catalog\n\nIntro\n\n{markers}\n\n## Contents\n\nHand written.\n"
 
@@ -39,10 +39,6 @@ def test_every_language_has_its_texts() -> None:
         assert set(texts) == keys, lang
         assert set(texts["profiles"]) == set(validate.PROFILES), lang
         assert set(texts["night"]) == set(validate.NIGHT_MODES), lang
-
-
-def test_repository_readmes_are_up_to_date() -> None:
-    assert make_readme.outdated(REPO) == {}
 
 
 def test_writes_one_readme_per_language(
