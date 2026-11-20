@@ -202,3 +202,18 @@ def test_hd_column_marks_the_real_animations_of_the_fish() -> None:
         ).splitlines()[0]
     )
     assert set(make_readme.HD_NOTE) == set(validate.LANGUAGES)
+
+
+def test_a_sharper_preview_replaces_the_thumbnail(tmp_path: Path) -> None:
+    entry(tmp_path, "fish", "fox")
+    preview = tmp_path / "docs" / "thumbs" / "fish" / "fox.webp"
+    preview.parent.mkdir(parents=True)
+    preview.write_bytes(b"webp")
+    (fox,) = make_readme.load_species(tmp_path)["fish"]
+    assert fox["_preview"] == "docs/thumbs/fish/fox.webp"
+    assert make_readme._thumb(fox) == (
+        f'<img src="docs/thumbs/fish/fox.webp" width="{make_readme.PREVIEW_WIDTH}" alt="">'
+    )
+    preview.unlink()
+    (fox,) = make_readme.load_species(tmp_path)["fish"]
+    assert fox["_preview"] == ""

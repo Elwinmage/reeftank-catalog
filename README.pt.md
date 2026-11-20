@@ -23,7 +23,7 @@ Cada peixe é uma folha de imagens (um atlas WebP) e um descritor com os seus cl
 |  | Nome | Nome científico | Água | Tamanho | Comportamento | HD |
 |---|---|---|---|---|---|---|
 | <img src="fish/pterophyllum_scalare/thumb.webp" width="160" alt=""> | Angelfish<br>`pterophyllum_scalare` | *Pterophyllum scalare* | Água doce | 12–15 cm | Nadador de águas abertas · esconde-se à noite |  |
-| <img src="fish/pseudanthias/thumb.webp" width="160" alt=""> | Antias<br>`pseudanthias` | *Pseudanthias sp.* | Marinho | 8–14 cm | Em cardume · esconde-se à noite | ✔ |
+| <img src="docs/thumbs/fish/pseudanthias.webp" width="240" alt=""> | Antias<br>`pseudanthias` | *Pseudanthias sp.* | Marinho | 8–14 cm | Em cardume · esconde-se à noite | ✔ |
 | <img src="fish/periophthalmus_barbarus/thumb.webp" width="160" alt=""> | Atlantic mudskipper<br>`periophthalmus_barbarus` | *Periophthalmus barbarus* | Salobra | 10–15 cm | Vive junto ao fundo · esconde-se à noite |  |
 | <img src="fish/toxotes_jaculatrix/thumb.webp" width="160" alt=""> | Banded archerfish<br>`toxotes_jaculatrix` | *Toxotes jaculatrix* | Salobra | 15–25 cm | Nadador de águas abertas · esconde-se à noite |  |
 | <img src="fish/amblygobius_phalaena/thumb.webp" width="160" alt=""> | Banded goby<br>`amblygobius_phalaena` | *Amblygobius phalaena* | Marinho | 8–10 cm | Vive na areia · descansa no fundo à noite |  |
@@ -42,7 +42,7 @@ Cada peixe é uma folha de imagens (um atlas WebP) e um descritor com os seus cl
 | <img src="fish/apistogramma_cacatuoides/thumb.webp" width="160" alt=""> | Cockatoo dwarf cichlid<br>`apistogramma_cacatuoides` | *Apistogramma cacatuoides* | Água doce | 5–9 cm | Vive junto ao fundo · esconde-se à noite |  |
 | <img src="fish/poecilia_sphenops/thumb.webp" width="160" alt=""> | Common molly<br>`poecilia_sphenops` | *Poecilia sphenops* | Água doce, Salobra | 6–10 cm | Em cardume · esconde-se à noite |  |
 | <img src="fish/chelmon_rostratus/thumb.webp" width="160" alt=""> | Copperband butterflyfish<br>`chelmon_rostratus` | *Chelmon rostratus* | Marinho | 15–20 cm | Nadador de águas abertas · esconde-se à noite |  |
-| <img src="fish/chromis_viridis/thumb.webp" width="160" alt=""> | Cromis-verde<br>`chromis_viridis` | *Chromis viridis* | Marinho | 5–8 cm | Em cardume · esconde-se à noite | ✔ |
+| <img src="docs/thumbs/fish/chromis_viridis.webp" width="240" alt=""> | Cromis-verde<br>`chromis_viridis` | *Chromis viridis* | Marinho | 5–8 cm | Em cardume · esconde-se à noite | ✔ |
 | <img src="fish/pseudotropheus_demasoni/thumb.webp" width="160" alt=""> | Demasoni cichlid<br>`pseudotropheus_demasoni` | *Pseudotropheus demasoni* | Água doce | 7–8 cm | Nadador de águas abertas · esconde-se à noite |  |
 | <img src="fish/chrysiptera_taupou/thumb.webp" width="160" alt=""> | Demisela de Fiji<br>`chrysiptera_taupou` | *Chrysiptera taupou* | Marinho | 6–8 cm | Estacionário · fica perto do seu abrigo · paira na água à noite |  |
 | <img src="fish/symphysodon_aequifasciatus/thumb.webp" width="160" alt=""> | Discus<br>`symphysodon_aequifasciatus` | *Symphysodon aequifasciatus* | Água doce | 15–20 cm | Nadador de águas abertas · esconde-se à noite |  |
@@ -59,7 +59,7 @@ Cada peixe é uma folha de imagens (um atlas WebP) e um descritor com os seus cl
 | <img src="fish/dichotomyctere_nigroviridis/thumb.webp" width="160" alt=""> | Green spotted puffer<br>`dichotomyctere_nigroviridis` | *Dichotomyctere nigroviridis* | Salobra | 10–17 cm | Nadador de águas abertas · esconde-se à noite |  |
 | <img src="fish/xiphophorus_hellerii/thumb.webp" width="160" alt=""> | Green swordtail<br>`xiphophorus_hellerii` | *Xiphophorus hellerii* | Água doce | 6–12 cm | Em cardume · esconde-se à noite |  |
 | <img src="fish/poecilia_reticulata/thumb.webp" width="160" alt=""> | Guppy<br>`poecilia_reticulata` | *Poecilia reticulata* | Água doce | 3–6 cm | Em cardume · esconde-se à noite |  |
-| <img src="fish/valenciennea/thumb.webp" width="160" alt=""> | Góbio-dorminhoco<br>`valenciennea` | *Valenciennea sp.* | Marinho | 10–16 cm | Vive na areia · vive numa toca · descansa no fundo à noite | ✔ |
+| <img src="docs/thumbs/fish/valenciennea.webp" width="240" alt=""> | Góbio-dorminhoco<br>`valenciennea` | *Valenciennea sp.* | Marinho | 10–16 cm | Vive na areia · vive numa toca · descansa no fundo à noite | ✔ |
 | <img src="fish/trigonostigma_heteromorpha/thumb.webp" width="160" alt=""> | Harlequin rasbora<br>`trigonostigma_heteromorpha` | *Trigonostigma heteromorpha* | Água doce | 3–4.5 cm | Em cardume · esconde-se à noite |  |
 | <img src="fish/stigmatogobius_sadanundio/thumb.webp" width="160" alt=""> | Knight goby<br>`stigmatogobius_sadanundio` | *Stigmatogobius sadanundio* | Salobra | 6–8 cm | Vive junto ao fundo · esconde-se à noite |  |
 | <img src="fish/ctenochaetus_strigosus/thumb.webp" width="160" alt=""> | Kole tang<br>`ctenochaetus_strigosus` | *Ctenochaetus strigosus* | Marinho | 12–18 cm | Nadador de águas abertas · esconde-se à noite |  |
@@ -80,12 +80,12 @@ Cada peixe é uma folha de imagens (um atlas WebP) e um descritor com os seus cl
 | <img src="fish/corydoras_panda/thumb.webp" width="160" alt=""> | Panda corydoras<br>`corydoras_panda` | *Corydoras panda* | Água doce | 4–5 cm | Vive junto ao fundo · esconde-se à noite |  |
 | <img src="fish/danio_albolineatus/thumb.webp" width="160" alt=""> | Pearl danio<br>`danio_albolineatus` | *Danio albolineatus* | Água doce | 4–6 cm | Em cardume · esconde-se à noite |  |
 | <img src="fish/trichopodus_leerii/thumb.webp" width="160" alt=""> | Pearl gourami<br>`trichopodus_leerii` | *Trichopodus leerii* | Água doce | 10–12 cm | Nadador de águas abertas · esconde-se à noite |  |
-| <img src="fish/pomacanthus_imperator_adult/thumb.webp" width="160" alt=""> | Peixe-anjo-imperador (adulto)<br>`pomacanthus_imperator_adult` | *Pomacanthus imperator* | Marinho | 25–38 cm | Nadador de águas abertas · esconde-se à noite | ✔ |
-| <img src="fish/pomacanthus_imperator/thumb.webp" width="160" alt=""> | Peixe-anjo-imperador (juvenil)<br>`pomacanthus_imperator` | *Pomacanthus imperator* | Marinho | 6–12 cm | Nadador de águas abertas · esconde-se à noite | ✔ |
-| <img src="fish/pterapogon_kauderni/thumb.webp" width="160" alt=""> | Peixe-cardeal-de-Banggai<br>`pterapogon_kauderni` | *Pterapogon kauderni* | Marinho | 5–8 cm | Estacionário · paira na água à noite | ✔ |
-| <img src="fish/siganus_vulpinus/thumb.webp" width="160" alt=""> | Peixe-coelho cara-de-raposa<br>`siganus_vulpinus` | *Siganus vulpinus* | Marinho | 15–22 cm | Nadador de águas abertas · descansa no fundo à noite | ✔ |
-| <img src="fish/synchiropus_splendidus/thumb.webp" width="160" alt=""> | Peixe-mandarim<br>`synchiropus_splendidus` | *Synchiropus splendidus* | Marinho | 5–8 cm | Vive junto ao fundo · esconde-se à noite | ✔ |
-| <img src="fish/amphiprion/thumb.webp" width="160" alt=""> | Peixe-palhaço<br>`amphiprion` | *Amphiprion sp.* | Marinho | 7–11 cm | Estacionário · paira na água à noite | ✔ |
+| <img src="docs/thumbs/fish/pomacanthus_imperator_adult.webp" width="240" alt=""> | Peixe-anjo-imperador (adulto)<br>`pomacanthus_imperator_adult` | *Pomacanthus imperator* | Marinho | 25–38 cm | Nadador de águas abertas · esconde-se à noite | ✔ |
+| <img src="docs/thumbs/fish/pomacanthus_imperator.webp" width="240" alt=""> | Peixe-anjo-imperador (juvenil)<br>`pomacanthus_imperator` | *Pomacanthus imperator* | Marinho | 6–12 cm | Nadador de águas abertas · esconde-se à noite | ✔ |
+| <img src="docs/thumbs/fish/pterapogon_kauderni.webp" width="240" alt=""> | Peixe-cardeal-de-Banggai<br>`pterapogon_kauderni` | *Pterapogon kauderni* | Marinho | 5–8 cm | Estacionário · paira na água à noite | ✔ |
+| <img src="docs/thumbs/fish/siganus_vulpinus.webp" width="240" alt=""> | Peixe-coelho cara-de-raposa<br>`siganus_vulpinus` | *Siganus vulpinus* | Marinho | 15–22 cm | Nadador de águas abertas · descansa no fundo à noite | ✔ |
+| <img src="docs/thumbs/fish/synchiropus_splendidus.webp" width="240" alt=""> | Peixe-mandarim<br>`synchiropus_splendidus` | *Synchiropus splendidus* | Marinho | 5–8 cm | Vive junto ao fundo · esconde-se à noite | ✔ |
+| <img src="docs/thumbs/fish/amphiprion.webp" width="240" alt=""> | Peixe-palhaço<br>`amphiprion` | *Amphiprion sp.* | Marinho | 7–11 cm | Estacionário · paira na água à noite | ✔ |
 | <img src="fish/rhinecanthus_aculeatus/thumb.webp" width="160" alt=""> | Picasso triggerfish<br>`rhinecanthus_aculeatus` | *Rhinecanthus aculeatus* | Marinho | 20–25 cm | Nadador de águas abertas · esconde-se à noite |  |
 | <img src="fish/cirrhitichthys_oxycephalus/thumb.webp" width="160" alt=""> | Pixy hawkfish<br>`cirrhitichthys_oxycephalus` | *Cirrhitichthys oxycephalus* | Marinho | 8–10 cm | Vive junto ao fundo · esconde-se à noite |  |
 | <img src="fish/acanthurus_leucosternon/thumb.webp" width="160" alt=""> | Powder blue tang<br>`acanthurus_leucosternon` | *Acanthurus leucosternon* | Marinho | 20–23 cm | Nadador de águas abertas · esconde-se à noite |  |

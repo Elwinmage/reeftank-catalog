@@ -22,12 +22,12 @@ Jeder Fisch besteht aus einem Bilderbogen (ein WebP-Atlas) und einem Deskriptor 
 
 |  | Name | Wissenschaftlicher Name | Wasser | Größe | Verhalten | HD |
 |---|---|---|---|---|---|---|
-| <img src="fish/amphiprion/thumb.webp" width="160" alt=""> | Anemonenfisch<br>`amphiprion` | *Amphiprion sp.* | Meerwasser | 7–11 cm | Bleibt an Ort und Stelle · schwebt nachts im Wasser | ✔ |
+| <img src="docs/thumbs/fish/amphiprion.webp" width="240" alt=""> | Anemonenfisch<br>`amphiprion` | *Amphiprion sp.* | Meerwasser | 7–11 cm | Bleibt an Ort und Stelle · schwebt nachts im Wasser | ✔ |
 | <img src="fish/pterophyllum_scalare/thumb.webp" width="160" alt=""> | Angelfish<br>`pterophyllum_scalare` | *Pterophyllum scalare* | Süßwasser | 12–15 cm | Freiwasserschwimmer · versteckt sich nachts |  |
 | <img src="fish/periophthalmus_barbarus/thumb.webp" width="160" alt=""> | Atlantic mudskipper<br>`periophthalmus_barbarus` | *Periophthalmus barbarus* | Brackwasser | 10–15 cm | Bodenbewohner · versteckt sich nachts |  |
 | <img src="fish/toxotes_jaculatrix/thumb.webp" width="160" alt=""> | Banded archerfish<br>`toxotes_jaculatrix` | *Toxotes jaculatrix* | Brackwasser | 15–25 cm | Freiwasserschwimmer · versteckt sich nachts |  |
 | <img src="fish/amblygobius_phalaena/thumb.webp" width="160" alt=""> | Banded goby<br>`amblygobius_phalaena` | *Amblygobius phalaena* | Meerwasser | 8–10 cm | Lebt auf dem Sand · ruht nachts am Boden |  |
-| <img src="fish/pterapogon_kauderni/thumb.webp" width="160" alt=""> | Banggai-Kardinalbarsch<br>`pterapogon_kauderni` | *Pterapogon kauderni* | Meerwasser | 5–8 cm | Bleibt an Ort und Stelle · schwebt nachts im Wasser | ✔ |
+| <img src="docs/thumbs/fish/pterapogon_kauderni.webp" width="240" alt=""> | Banggai-Kardinalbarsch<br>`pterapogon_kauderni` | *Pterapogon kauderni* | Meerwasser | 5–8 cm | Bleibt an Ort und Stelle · schwebt nachts im Wasser | ✔ |
 | <img src="fish/centropyge_bicolor/thumb.webp" width="160" alt=""> | Bicolor angelfish<br>`centropyge_bicolor` | *Centropyge bicolor* | Meerwasser | 10–15 cm | Bleibt an Ort und Stelle · schwebt nachts im Wasser |  |
 | <img src="fish/ecsenius_bicolor/thumb.webp" width="160" alt=""> | Bicolor blenny<br>`ecsenius_bicolor` | *Ecsenius bicolor* | Meerwasser | 8–10 cm | Bodenbewohner · versteckt sich nachts |  |
 | <img src="fish/gymnocorymbus_ternetzi/thumb.webp" width="160" alt=""> | Black skirt tetra<br>`gymnocorymbus_ternetzi` | *Gymnocorymbus ternetzi* | Süßwasser | 5–6 cm | Schwarmfisch · versteckt sich nachts |  |
@@ -49,21 +49,21 @@ Jeder Fisch besteht aus einem Bilderbogen (ein WebP-Atlas) und einem Deskriptor 
 | <img src="fish/labidochromis_caeruleus/thumb.webp" width="160" alt=""> | Electric yellow cichlid<br>`labidochromis_caeruleus` | *Labidochromis caeruleus* | Süßwasser | 8–10 cm | Freiwasserschwimmer · versteckt sich nachts |  |
 | <img src="fish/nematobrycon_palmeri/thumb.webp" width="160" alt=""> | Emperor tetra<br>`nematobrycon_palmeri` | *Nematobrycon palmeri* | Süßwasser | 4–6 cm | Schwarmfisch · versteckt sich nachts |  |
 | <img src="fish/poecilia_wingei/thumb.webp" width="160" alt=""> | Endler's livebearer<br>`poecilia_wingei` | *Poecilia wingei* | Süßwasser | 2–4 cm | Schwarmfisch · versteckt sich nachts |  |
-| <img src="fish/pseudanthias/thumb.webp" width="160" alt=""> | Fahnenbarsch<br>`pseudanthias` | *Pseudanthias sp.* | Meerwasser | 8–14 cm | Schwarmfisch · versteckt sich nachts | ✔ |
+| <img src="docs/thumbs/fish/pseudanthias.webp" width="240" alt=""> | Fahnenbarsch<br>`pseudanthias` | *Pseudanthias sp.* | Meerwasser | 8–14 cm | Schwarmfisch · versteckt sich nachts | ✔ |
 | <img src="fish/chrysiptera_taupou/thumb.webp" width="160" alt=""> | Fidschi-Riffbarsch<br>`chrysiptera_taupou` | *Chrysiptera taupou* | Meerwasser | 6–8 cm | Bleibt an Ort und Stelle · bleibt nahe seinem Unterschlupf · schwebt nachts im Wasser |  |
 | <img src="fish/dichotomyctere_biocellatus/thumb.webp" width="160" alt=""> | Figure-eight puffer<br>`dichotomyctere_biocellatus` | *Dichotomyctere biocellatus* | Brackwasser | 5–6.5 cm | Freiwasserschwimmer · versteckt sich nachts |  |
 | <img src="fish/nemateleotris_magnifica/thumb.webp" width="160" alt=""> | Firefish goby<br>`nemateleotris_magnifica` | *Nemateleotris magnifica* | Meerwasser | 8–10 cm | Bleibt an Ort und Stelle · schwebt nachts im Wasser |  |
 | <img src="fish/centropyge_loricula/thumb.webp" width="160" alt=""> | Flame angelfish<br>`centropyge_loricula` | *Centropyge loricula* | Meerwasser | 8–10 cm | Bleibt an Ort und Stelle · schwebt nachts im Wasser |  |
-| <img src="fish/siganus_vulpinus/thumb.webp" width="160" alt=""> | Fuchsgesicht-Kaninchenfisch<br>`siganus_vulpinus` | *Siganus vulpinus* | Meerwasser | 15–22 cm | Freiwasserschwimmer · ruht nachts am Boden | ✔ |
+| <img src="docs/thumbs/fish/siganus_vulpinus.webp" width="240" alt=""> | Fuchsgesicht-Kaninchenfisch<br>`siganus_vulpinus` | *Siganus vulpinus* | Meerwasser | 15–22 cm | Freiwasserschwimmer · ruht nachts am Boden | ✔ |
 | <img src="fish/cryptocentrus_cinctus/thumb.webp" width="160" alt=""> | Gelbe Symbiosegrundel<br>`cryptocentrus_cinctus` | *Cryptocentrus cinctus* | Meerwasser | 8–10 cm | Lebt auf dem Sand · lebt in einer Höhle im Sand · ruht nachts am Boden |  |
 | <img src="fish/carassius_auratus/thumb.webp" width="160" alt=""> | Goldfish<br>`carassius_auratus` | *Carassius auratus* | Süßwasser | 10–25 cm | Freiwasserschwimmer · versteckt sich nachts |  |
 | <img src="fish/dichotomyctere_nigroviridis/thumb.webp" width="160" alt=""> | Green spotted puffer<br>`dichotomyctere_nigroviridis` | *Dichotomyctere nigroviridis* | Brackwasser | 10–17 cm | Freiwasserschwimmer · versteckt sich nachts |  |
 | <img src="fish/xiphophorus_hellerii/thumb.webp" width="160" alt=""> | Green swordtail<br>`xiphophorus_hellerii` | *Xiphophorus hellerii* | Süßwasser | 6–12 cm | Schwarmfisch · versteckt sich nachts |  |
-| <img src="fish/chromis_viridis/thumb.webp" width="160" alt=""> | Grünes Schwalbenschwänzchen<br>`chromis_viridis` | *Chromis viridis* | Meerwasser | 5–8 cm | Schwarmfisch · versteckt sich nachts | ✔ |
+| <img src="docs/thumbs/fish/chromis_viridis.webp" width="240" alt=""> | Grünes Schwalbenschwänzchen<br>`chromis_viridis` | *Chromis viridis* | Meerwasser | 5–8 cm | Schwarmfisch · versteckt sich nachts | ✔ |
 | <img src="fish/poecilia_reticulata/thumb.webp" width="160" alt=""> | Guppy<br>`poecilia_reticulata` | *Poecilia reticulata* | Süßwasser | 3–6 cm | Schwarmfisch · versteckt sich nachts |  |
 | <img src="fish/trigonostigma_heteromorpha/thumb.webp" width="160" alt=""> | Harlequin rasbora<br>`trigonostigma_heteromorpha` | *Trigonostigma heteromorpha* | Süßwasser | 3–4.5 cm | Schwarmfisch · versteckt sich nachts |  |
-| <img src="fish/pomacanthus_imperator_adult/thumb.webp" width="160" alt=""> | Imperator-Kaiserfisch (adult)<br>`pomacanthus_imperator_adult` | *Pomacanthus imperator* | Meerwasser | 25–38 cm | Freiwasserschwimmer · versteckt sich nachts | ✔ |
-| <img src="fish/pomacanthus_imperator/thumb.webp" width="160" alt=""> | Imperator-Kaiserfisch (Jungtier)<br>`pomacanthus_imperator` | *Pomacanthus imperator* | Meerwasser | 6–12 cm | Freiwasserschwimmer · versteckt sich nachts | ✔ |
+| <img src="docs/thumbs/fish/pomacanthus_imperator_adult.webp" width="240" alt=""> | Imperator-Kaiserfisch (adult)<br>`pomacanthus_imperator_adult` | *Pomacanthus imperator* | Meerwasser | 25–38 cm | Freiwasserschwimmer · versteckt sich nachts | ✔ |
+| <img src="docs/thumbs/fish/pomacanthus_imperator.webp" width="240" alt=""> | Imperator-Kaiserfisch (Jungtier)<br>`pomacanthus_imperator` | *Pomacanthus imperator* | Meerwasser | 6–12 cm | Freiwasserschwimmer · versteckt sich nachts | ✔ |
 | <img src="fish/stigmatogobius_sadanundio/thumb.webp" width="160" alt=""> | Knight goby<br>`stigmatogobius_sadanundio` | *Stigmatogobius sadanundio* | Brackwasser | 6–8 cm | Bodenbewohner · versteckt sich nachts |  |
 | <img src="fish/ctenochaetus_strigosus/thumb.webp" width="160" alt=""> | Kole tang<br>`ctenochaetus_strigosus` | *Ctenochaetus strigosus* | Meerwasser | 12–18 cm | Freiwasserschwimmer · versteckt sich nachts |  |
 | <img src="fish/pelvicachromis_pulcher/thumb.webp" width="160" alt=""> | Kribensis<br>`pelvicachromis_pulcher` | *Pelvicachromis pulcher* | Süßwasser | 8–10 cm | Bodenbewohner · versteckt sich nachts |  |
@@ -72,7 +72,7 @@ Jeder Fisch besteht aus einem Bilderbogen (ein WebP-Atlas) und einem Deskriptor 
 | <img src="fish/hyphessobrycon_pulchripinnis/thumb.webp" width="160" alt=""> | Lemon tetra<br>`hyphessobrycon_pulchripinnis` | *Hyphessobrycon pulchripinnis* | Süßwasser | 3–4.5 cm | Schwarmfisch · versteckt sich nachts |  |
 | <img src="fish/hippocampus_erectus/thumb.webp" width="160" alt=""> | Lined seahorse<br>`hippocampus_erectus` | *Hippocampus erectus* | Meerwasser | 10–15 cm | Bleibt an Ort und Stelle · schwebt nachts im Wasser |  |
 | <img src="fish/aphyosemion_australe/thumb.webp" width="160" alt=""> | Lyretail killifish<br>`aphyosemion_australe` | *Aphyosemion australe* | Süßwasser | 5–6 cm | Bleibt an Ort und Stelle · schwebt nachts im Wasser |  |
-| <img src="fish/synchiropus_splendidus/thumb.webp" width="160" alt=""> | Mandarinfisch<br>`synchiropus_splendidus` | *Synchiropus splendidus* | Meerwasser | 5–8 cm | Bodenbewohner · versteckt sich nachts | ✔ |
+| <img src="docs/thumbs/fish/synchiropus_splendidus.webp" width="240" alt=""> | Mandarinfisch<br>`synchiropus_splendidus` | *Synchiropus splendidus* | Meerwasser | 5–8 cm | Bodenbewohner · versteckt sich nachts | ✔ |
 | <img src="fish/carnegiella_strigata/thumb.webp" width="160" alt=""> | Marbled hatchetfish<br>`carnegiella_strigata` | *Carnegiella strigata* | Süßwasser | 4–5 cm | Schwarmfisch · versteckt sich nachts |  |
 | <img src="fish/premnas_biaculeatus/thumb.webp" width="160" alt=""> | Maroon clownfish<br>`premnas_biaculeatus` | *Premnas biaculeatus* | Meerwasser | 10–15 cm | Bleibt an Ort und Stelle · schwebt nachts im Wasser |  |
 | <img src="fish/elacatinus_oceanops/thumb.webp" width="160" alt=""> | Neon goby<br>`elacatinus_oceanops` | *Elacatinus oceanops* | Meerwasser | 4–6 cm | Bodenbewohner · versteckt sich nachts |  |
@@ -97,7 +97,7 @@ Jeder Fisch besteht aus einem Bilderbogen (ein WebP-Atlas) und einem Deskriptor 
 | <img src="fish/hemigrammus_bleheri/thumb.webp" width="160" alt=""> | Rummy-nose tetra<br>`hemigrammus_bleheri` | *Hemigrammus bleheri* | Süßwasser | 4–5 cm | Schwarmfisch · versteckt sich nachts |  |
 | <img src="fish/poecilia_velifera/thumb.webp" width="160" alt=""> | Sailfin molly<br>`poecilia_velifera` | *Poecilia velifera* | Brackwasser, Süßwasser | 10–15 cm | Schwarmfisch · versteckt sich nachts |  |
 | <img src="fish/zebrasoma_veliferum/thumb.webp" width="160" alt=""> | Sailfin tang<br>`zebrasoma_veliferum` | *Zebrasoma veliferum* | Meerwasser | 25–40 cm | Freiwasserschwimmer · versteckt sich nachts |  |
-| <img src="fish/valenciennea/thumb.webp" width="160" alt=""> | Schläfergrundel<br>`valenciennea` | *Valenciennea sp.* | Meerwasser | 10–16 cm | Lebt auf dem Sand · lebt in einer Höhle im Sand · ruht nachts am Boden | ✔ |
+| <img src="docs/thumbs/fish/valenciennea.webp" width="240" alt=""> | Schläfergrundel<br>`valenciennea` | *Valenciennea sp.* | Meerwasser | 10–16 cm | Lebt auf dem Sand · lebt in einer Höhle im Sand · ruht nachts am Boden | ✔ |
 | <img src="fish/zebrasoma_scopas/thumb.webp" width="160" alt=""> | Scopas tang<br>`zebrasoma_scopas` | *Zebrasoma scopas* | Meerwasser | 15–20 cm | Freiwasserschwimmer · versteckt sich nachts |  |
 | <img src="fish/hyphessobrycon_eques/thumb.webp" width="160" alt=""> | Serpae tetra<br>`hyphessobrycon_eques` | *Hyphessobrycon eques* | Süßwasser | 3–4.5 cm | Schwarmfisch · versteckt sich nachts |  |
 | <img src="fish/crossocheilus_oblongus/thumb.webp" width="160" alt=""> | Siamese algae eater<br>`crossocheilus_oblongus` | *Crossocheilus oblongus* | Süßwasser | 10–15 cm | Freiwasserschwimmer · versteckt sich nachts |  |

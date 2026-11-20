@@ -79,3 +79,40 @@ def test_check_fails_on_a_missing_picture_and_passes_when_present(
     assert not list((tmp_path / "img").iterdir())  # --check writes nothing
     make_demo.main([])
     assert make_demo.main(["--check"]) == 0
+
+
+def test_the_previews_are_made_for_the_species_with_a_plain_atlas() -> None:
+    folders = make_demo.species_with_atlas()
+    assert folders
+    assert all(f.parent.name != "defaults" for f in folders)
+    assert all((f / "species.json").is_file() for f in folders)
+
+
+def test_a_preview_is_sharper_than_the_thumbnail_of_the_card() -> None:
+    folder = make_demo.species_with_atlas()[0]
+    picture = Image.open(io.BytesIO(make_demo.preview(folder)))
+    assert picture.format == "WEBP"
+    assert picture.width == make_demo.PREVIEW_WIDTH > 96
+
+
+def test_a_blank_frame_is_resized_without_a_crop(monkeypatch) -> None:
+    blank = Image.new("RGBA", (40, 20), (0, 0, 0, 0))
+    monkeypatch.setattr(make_demo, "frames_of", lambda folder: ([blank], {}))
+    picture = Image.open(io.BytesIO(make_demo.preview(Path("x"))))
+    assert picture.size == (make_demo.PREVIEW_WIDTH, make_demo.PREVIEW_WIDTH // 2)
+
+
+def test_main_writes_and_checks_the_previews(
+    tmp_path: Path, monkeypatch, capsys
+) -> None:
+    monkeypatch.setattr(make_demo, "ROOT", tmp_path)
+    monkeypatch.setattr(make_demo, "OUT", tmp_path / "img")
+    monkeypatch.setattr(make_demo, "THUMBS", tmp_path / "thumbs")
+    monkeypatch.setattr(make_demo, "render", lambda name, species: b"webp")
+    monkeypatch.setattr(make_demo, "species_with_atlas", lambda: [Path("fish/koi")])
+    monkeypatch.setattr(make_demo, "preview", lambda folder: b"preview")
+    assert make_demo.main(["--check"]) == 1
+    assert "thumbs/fish/koi.webp" in capsys.readouterr().err
+    assert make_demo.main([]) == 0
+    assert (tmp_path / "thumbs" / "fish" / "koi.webp").read_bytes() == b"preview"
+    assert make_demo.main(["--check"]) == 0

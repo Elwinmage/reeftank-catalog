@@ -22,6 +22,10 @@ from PIL import Image, ImageOps
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "docs" / "img"
+#: Sharper pictures for the tables of the README: docs/thumbs/<kind>/<id>.webp
+THUMBS = ROOT / "docs" / "thumbs"
+#: Width of a preview (the thumbnail of the card is only 96 px wide)
+PREVIEW_WIDTH = 240
 #: Species shown in the README: picture name -> species folder
 DEMOS = {
     "demo-emperor-angelfish": "pomacanthus_imperator_adult",
@@ -83,6 +87,31 @@ def render(name: str, species: str) -> bytes:
     return out.getvalue()
 
 
+def preview(folder: Path) -> bytes:
+    """The first frame of an atlas, cropped to the animal, as a README picture."""
+    frames, _ = frames_of(folder)
+    frame = frames[0]
+    box = frame.getchannel("A").getbbox()
+    if box:
+        frame = frame.crop(box)
+    height = round(frame.height * PREVIEW_WIDTH / frame.width)
+    frame = frame.resize((PREVIEW_WIDTH, height), Image.Resampling.LANCZOS)
+    out = io.BytesIO()
+    frame.save(out, format="WEBP", quality=80, method=6)
+    return out.getvalue()
+
+
+def species_with_atlas() -> list[Path]:
+    """Folders of the species with a plain RGBA atlas (not the shade/mask corals)."""
+    found = []
+    for descriptor in sorted(ROOT.glob("*/*/species.json")):
+        desc = json.loads(descriptor.read_text(encoding="utf-8"))
+        plain = "1x" in desc.get("atlas", {}) and "columns" in desc
+        if plain and descriptor.parent.parent.name != "defaults":
+            found.append(descriptor.parent)
+    return found
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=(__doc__ or "").splitlines()[0])
     parser.add_argument("--check", action="store_true")
@@ -98,6 +127,14 @@ def main(argv: list[str] | None = None) -> int:
             continue
         path.write_bytes(data)
         print(f"{path.relative_to(ROOT)}: {len(data) // 1024} KB")
+    for folder in species_with_atlas():
+        path = THUMBS / folder.parent.name / f"{folder.name}.webp"
+        if args.check:
+            if not path.is_file():
+                stale.append(str(path.relative_to(ROOT)))
+            continue
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(preview(folder))
     if stale:
         print("missing: " + ", ".join(stale), file=sys.stderr)
         return 1

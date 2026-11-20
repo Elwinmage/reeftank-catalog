@@ -25,7 +25,7 @@ Każda ryba to arkusz klatek (atlas WebP) i deskryptor z jej klipami: *pływanie
 | <img src="fish/pterophyllum_scalare/thumb.webp" width="160" alt=""> | Angelfish<br>`pterophyllum_scalare` | *Pterophyllum scalare* | Słodkowodna | 12–15 cm | Pływa w toni wodnej · chowa się w nocy |  |
 | <img src="fish/periophthalmus_barbarus/thumb.webp" width="160" alt=""> | Atlantic mudskipper<br>`periophthalmus_barbarus` | *Periophthalmus barbarus* | Słonawa | 10–15 cm | Przydenny · chowa się w nocy |  |
 | <img src="fish/gobiodon_okinawae/thumb.webp" width="160" alt=""> | Babka Okinawska<br>`gobiodon_okinawae` | *Gobiodon okinawae* | Morska | 2.5–3.5 cm | Przydenny · chowa się w nocy |  |
-| <img src="fish/valenciennea/thumb.webp" width="160" alt=""> | Babka piaskowa<br>`valenciennea` | *Valenciennea sp.* | Morska | 10–16 cm | Żyje na piasku · żyje w norze · odpoczywa w nocy na dnie | ✔ |
+| <img src="docs/thumbs/fish/valenciennea.webp" width="240" alt=""> | Babka piaskowa<br>`valenciennea` | *Valenciennea sp.* | Morska | 10–16 cm | Żyje na piasku · żyje w norze · odpoczywa w nocy na dnie | ✔ |
 | <img src="fish/cryptocentrus_cinctus/thumb.webp" width="160" alt=""> | Babka żółta<br>`cryptocentrus_cinctus` | *Cryptocentrus cinctus* | Morska | 8–10 cm | Żyje na piasku · żyje w norze · odpoczywa w nocy na dnie |  |
 | <img src="fish/toxotes_jaculatrix/thumb.webp" width="160" alt=""> | Banded archerfish<br>`toxotes_jaculatrix` | *Toxotes jaculatrix* | Słonawa | 15–25 cm | Pływa w toni wodnej · chowa się w nocy |  |
 | <img src="fish/amblygobius_phalaena/thumb.webp" width="160" alt=""> | Banded goby<br>`amblygobius_phalaena` | *Amblygobius phalaena* | Morska | 8–10 cm | Żyje na piasku · odpoczywa w nocy na dnie |  |
@@ -36,11 +36,11 @@ Każda ryba to arkusz klatek (atlas WebP) i deskryptor z jej klipami: *pływanie
 | <img src="fish/ancistrus/thumb.webp" width="160" alt=""> | Bristlenose pleco<br>`ancistrus` | *Ancistrus sp.* | Słodkowodna | 10–14 cm | Przydenny · chowa się w nocy |  |
 | <img src="fish/corydoras_aeneus/thumb.webp" width="160" alt=""> | Bronze corydoras<br>`corydoras_aeneus` | *Corydoras aeneus* | Słodkowodna | 6–7 cm | Przydenny · chowa się w nocy |  |
 | <img src="fish/brachygobius_xanthozonus/thumb.webp" width="160" alt=""> | Bumblebee goby<br>`brachygobius_xanthozonus` | *Brachygobius xanthozonus* | Słonawa | 3–4 cm | Przydenny · chowa się w nocy |  |
-| <img src="fish/amphiprion/thumb.webp" width="160" alt=""> | Błazenek<br>`amphiprion` | *Amphiprion sp.* | Morska | 7–11 cm | Stoi w miejscu · unosi się w toni w nocy | ✔ |
+| <img src="docs/thumbs/fish/amphiprion.webp" width="240" alt=""> | Błazenek<br>`amphiprion` | *Amphiprion sp.* | Morska | 7–11 cm | Stoi w miejscu · unosi się w toni w nocy | ✔ |
 | <img src="fish/paracheirodon_axelrodi/thumb.webp" width="160" alt=""> | Cardinal tetra<br>`paracheirodon_axelrodi` | *Paracheirodon axelrodi* | Słodkowodna | 3–5 cm | Ławica · chowa się w nocy |  |
 | <img src="fish/danio_margaritatus/thumb.webp" width="160" alt=""> | Celestial pearl danio<br>`danio_margaritatus` | *Danio margaritatus* | Słodkowodna | 2–3 cm | Ławica · chowa się w nocy |  |
 | <img src="fish/pethia_titteya/thumb.webp" width="160" alt=""> | Cherry barb<br>`pethia_titteya` | *Pethia titteya* | Słodkowodna | 4–5 cm | Ławica · chowa się w nocy |  |
-| <img src="fish/chromis_viridis/thumb.webp" width="160" alt=""> | Chromis zielony<br>`chromis_viridis` | *Chromis viridis* | Morska | 5–8 cm | Ławica · chowa się w nocy | ✔ |
+| <img src="docs/thumbs/fish/chromis_viridis.webp" width="240" alt=""> | Chromis zielony<br>`chromis_viridis` | *Chromis viridis* | Morska | 5–8 cm | Ławica · chowa się w nocy | ✔ |
 | <img src="fish/gobiodon_citrinus/thumb.webp" width="160" alt=""> | Citron coral goby<br>`gobiodon_citrinus` | *Gobiodon citrinus* | Morska | 3–5 cm | Przydenny · chowa się w nocy |  |
 | <img src="fish/chromobotia_macracanthus/thumb.webp" width="160" alt=""> | Clown loach<br>`chromobotia_macracanthus` | *Chromobotia macracanthus* | Słodkowodna | 15–30 cm | Przydenny · chowa się w nocy |  |
 | <img src="fish/apistogramma_cacatuoides/thumb.webp" width="160" alt=""> | Cockatoo dwarf cichlid<br>`apistogramma_cacatuoides` | *Apistogramma cacatuoides* | Słodkowodna | 5–9 cm | Przydenny · chowa się w nocy |  |
@@ -60,7 +60,7 @@ Każda ryba to arkusz klatek (atlas WebP) i deskryptor z jej klipami: *pływanie
 | <img src="fish/xiphophorus_hellerii/thumb.webp" width="160" alt=""> | Green swordtail<br>`xiphophorus_hellerii` | *Xiphophorus hellerii* | Słodkowodna | 6–12 cm | Ławica · chowa się w nocy |  |
 | <img src="fish/poecilia_reticulata/thumb.webp" width="160" alt=""> | Guppy<br>`poecilia_reticulata` | *Poecilia reticulata* | Słodkowodna | 3–6 cm | Ławica · chowa się w nocy |  |
 | <img src="fish/trigonostigma_heteromorpha/thumb.webp" width="160" alt=""> | Harlequin rasbora<br>`trigonostigma_heteromorpha` | *Trigonostigma heteromorpha* | Słodkowodna | 3–4.5 cm | Ławica · chowa się w nocy |  |
-| <img src="fish/pterapogon_kauderni/thumb.webp" width="160" alt=""> | Kardynał z Banggai<br>`pterapogon_kauderni` | *Pterapogon kauderni* | Morska | 5–8 cm | Stoi w miejscu · unosi się w toni w nocy | ✔ |
+| <img src="docs/thumbs/fish/pterapogon_kauderni.webp" width="240" alt=""> | Kardynał z Banggai<br>`pterapogon_kauderni` | *Pterapogon kauderni* | Morska | 5–8 cm | Stoi w miejscu · unosi się w toni w nocy | ✔ |
 | <img src="fish/stigmatogobius_sadanundio/thumb.webp" width="160" alt=""> | Knight goby<br>`stigmatogobius_sadanundio` | *Stigmatogobius sadanundio* | Słonawa | 6–8 cm | Przydenny · chowa się w nocy |  |
 | <img src="fish/ctenochaetus_strigosus/thumb.webp" width="160" alt=""> | Kole tang<br>`ctenochaetus_strigosus` | *Ctenochaetus strigosus* | Morska | 12–18 cm | Pływa w toni wodnej · chowa się w nocy |  |
 | <img src="fish/pelvicachromis_pulcher/thumb.webp" width="160" alt=""> | Kribensis<br>`pelvicachromis_pulcher` | *Pelvicachromis pulcher* | Słodkowodna | 8–10 cm | Przydenny · chowa się w nocy |  |
@@ -69,7 +69,7 @@ Każda ryba to arkusz klatek (atlas WebP) i deskryptor z jej klipami: *pływanie
 | <img src="fish/hyphessobrycon_pulchripinnis/thumb.webp" width="160" alt=""> | Lemon tetra<br>`hyphessobrycon_pulchripinnis` | *Hyphessobrycon pulchripinnis* | Słodkowodna | 3–4.5 cm | Ławica · chowa się w nocy |  |
 | <img src="fish/hippocampus_erectus/thumb.webp" width="160" alt=""> | Lined seahorse<br>`hippocampus_erectus` | *Hippocampus erectus* | Morska | 10–15 cm | Stoi w miejscu · unosi się w toni w nocy |  |
 | <img src="fish/aphyosemion_australe/thumb.webp" width="160" alt=""> | Lyretail killifish<br>`aphyosemion_australe` | *Aphyosemion australe* | Słodkowodna | 5–6 cm | Stoi w miejscu · unosi się w toni w nocy |  |
-| <img src="fish/synchiropus_splendidus/thumb.webp" width="160" alt=""> | Mandaryn wspaniały<br>`synchiropus_splendidus` | *Synchiropus splendidus* | Morska | 5–8 cm | Przydenny · chowa się w nocy | ✔ |
+| <img src="docs/thumbs/fish/synchiropus_splendidus.webp" width="240" alt=""> | Mandaryn wspaniały<br>`synchiropus_splendidus` | *Synchiropus splendidus* | Morska | 5–8 cm | Przydenny · chowa się w nocy | ✔ |
 | <img src="fish/carnegiella_strigata/thumb.webp" width="160" alt=""> | Marbled hatchetfish<br>`carnegiella_strigata` | *Carnegiella strigata* | Słodkowodna | 4–5 cm | Ławica · chowa się w nocy |  |
 | <img src="fish/premnas_biaculeatus/thumb.webp" width="160" alt=""> | Maroon clownfish<br>`premnas_biaculeatus` | *Premnas biaculeatus* | Morska | 10–15 cm | Stoi w miejscu · unosi się w toni w nocy |  |
 | <img src="fish/elacatinus_oceanops/thumb.webp" width="160" alt=""> | Neon goby<br>`elacatinus_oceanops` | *Elacatinus oceanops* | Morska | 4–6 cm | Przydenny · chowa się w nocy |  |
@@ -85,7 +85,7 @@ Każda ryba to arkusz klatek (atlas WebP) i deskryptor z jej klipami: *pływanie
 | <img src="fish/cirrhitichthys_oxycephalus/thumb.webp" width="160" alt=""> | Pixy hawkfish<br>`cirrhitichthys_oxycephalus` | *Cirrhitichthys oxycephalus* | Morska | 8–10 cm | Przydenny · chowa się w nocy |  |
 | <img src="fish/chrysiptera_taupou/thumb.webp" width="160" alt=""> | Pomacentrus Fidji<br>`chrysiptera_taupou` | *Chrysiptera taupou* | Morska | 6–8 cm | Stoi w miejscu · trzyma się swojej kryjówki · unosi się w toni w nocy |  |
 | <img src="fish/acanthurus_leucosternon/thumb.webp" width="160" alt=""> | Powder blue tang<br>`acanthurus_leucosternon` | *Acanthurus leucosternon* | Morska | 20–23 cm | Pływa w toni wodnej · chowa się w nocy |  |
-| <img src="fish/pseudanthias/thumb.webp" width="160" alt=""> | Pseudanthias<br>`pseudanthias` | *Pseudanthias sp.* | Morska | 8–14 cm | Ławica · chowa się w nocy | ✔ |
+| <img src="docs/thumbs/fish/pseudanthias.webp" width="240" alt=""> | Pseudanthias<br>`pseudanthias` | *Pseudanthias sp.* | Morska | 8–14 cm | Ławica · chowa się w nocy | ✔ |
 | <img src="fish/nemateleotris_decora/thumb.webp" width="160" alt=""> | Purple firefish<br>`nemateleotris_decora` | *Nemateleotris decora* | Morska | 8–10 cm | Stoi w miejscu · unosi się w toni w nocy |  |
 | <img src="fish/mikrogeophagus_ramirezi/thumb.webp" width="160" alt=""> | Ram cichlid<br>`mikrogeophagus_ramirezi` | *Mikrogeophagus ramirezi* | Słodkowodna | 5–7 cm | Stoi w miejscu · unosi się w toni w nocy |  |
 | <img src="fish/pterois_volitans/thumb.webp" width="160" alt=""> | Red lionfish<br>`pterois_volitans` | *Pterois volitans* | Morska | 25–35 cm | Pływa w toni wodnej · chowa się w nocy |  |
@@ -99,7 +99,7 @@ Każda ryba to arkusz klatek (atlas WebP) i deskryptor z jej klipami: *pływanie
 | <img src="fish/hyphessobrycon_eques/thumb.webp" width="160" alt=""> | Serpae tetra<br>`hyphessobrycon_eques` | *Hyphessobrycon eques* | Słodkowodna | 3–4.5 cm | Ławica · chowa się w nocy |  |
 | <img src="fish/crossocheilus_oblongus/thumb.webp" width="160" alt=""> | Siamese algae eater<br>`crossocheilus_oblongus` | *Crossocheilus oblongus* | Słodkowodna | 10–15 cm | Pływa w toni wodnej · chowa się w nocy |  |
 | <img src="fish/betta_splendens/thumb.webp" width="160" alt=""> | Siamese fighting fish<br>`betta_splendens` | *Betta splendens* | Słodkowodna | 5–7 cm | Stoi w miejscu · trzyma się swojej kryjówki · unosi się w toni w nocy |  |
-| <img src="fish/siganus_vulpinus/thumb.webp" width="160" alt=""> | Sigan lisi<br>`siganus_vulpinus` | *Siganus vulpinus* | Morska | 15–22 cm | Pływa w toni wodnej · odpoczywa w nocy na dnie | ✔ |
+| <img src="docs/thumbs/fish/siganus_vulpinus.webp" width="240" alt=""> | Sigan lisi<br>`siganus_vulpinus` | *Siganus vulpinus* | Morska | 15–22 cm | Pływa w toni wodnej · odpoczywa w nocy na dnie | ✔ |
 | <img src="fish/monodactylus_argenteus/thumb.webp" width="160" alt=""> | Silver moony<br>`monodactylus_argenteus` | *Monodactylus argenteus* | Słonawa, Morska | 15–25 cm | Ławica · chowa się w nocy |  |
 | <img src="fish/pseudocheilinus_hexataenia/thumb.webp" width="160" alt=""> | Six line wrasse<br>`pseudocheilinus_hexataenia` | *Pseudocheilinus hexataenia* | Morska | 7–10 cm | Pływa w toni wodnej · chowa się w nocy |  |
 | <img src="fish/cirrhilabrus_solorensis/thumb.webp" width="160" alt=""> | Solor fairy wrasse<br>`cirrhilabrus_solorensis` | *Cirrhilabrus solorensis* | Morska | 10–12 cm | Pływa w toni wodnej · chowa się w nocy |  |
@@ -110,8 +110,8 @@ Każda ryba to arkusz klatek (atlas WebP) i deskryptor z jej klipami: *pływanie
 | <img src="fish/dascyllus_trimaculatus/thumb.webp" width="160" alt=""> | Threespot dascyllus<br>`dascyllus_trimaculatus` | *Dascyllus trimaculatus* | Morska | 10–14 cm | Stoi w miejscu · unosi się w toni w nocy |  |
 | <img src="fish/puntigrus_tetrazona/thumb.webp" width="160" alt=""> | Tiger barb<br>`puntigrus_tetrazona` | *Puntigrus tetrazona* | Słodkowodna | 5–7 cm | Ławica · chowa się w nocy |  |
 | <img src="fish/melanotaenia_lacustris/thumb.webp" width="160" alt=""> | Turquoise rainbowfish<br>`melanotaenia_lacustris` | *Melanotaenia lacustris* | Słodkowodna | 8–12 cm | Ławica · chowa się w nocy |  |
-| <img src="fish/pomacanthus_imperator_adult/thumb.webp" width="160" alt=""> | Ustniczek cesarski (dorosły)<br>`pomacanthus_imperator_adult` | *Pomacanthus imperator* | Morska | 25–38 cm | Pływa w toni wodnej · chowa się w nocy | ✔ |
-| <img src="fish/pomacanthus_imperator/thumb.webp" width="160" alt=""> | Ustniczek cesarski (młody)<br>`pomacanthus_imperator` | *Pomacanthus imperator* | Morska | 6–12 cm | Pływa w toni wodnej · chowa się w nocy | ✔ |
+| <img src="docs/thumbs/fish/pomacanthus_imperator_adult.webp" width="240" alt=""> | Ustniczek cesarski (dorosły)<br>`pomacanthus_imperator_adult` | *Pomacanthus imperator* | Morska | 25–38 cm | Pływa w toni wodnej · chowa się w nocy | ✔ |
+| <img src="docs/thumbs/fish/pomacanthus_imperator.webp" width="240" alt=""> | Ustniczek cesarski (młody)<br>`pomacanthus_imperator` | *Pomacanthus imperator* | Morska | 6–12 cm | Pływa w toni wodnej · chowa się w nocy | ✔ |
 | <img src="fish/canthigaster_valentini/thumb.webp" width="160" alt=""> | Valentini puffer<br>`canthigaster_valentini` | *Canthigaster valentini* | Morska | 8–10 cm | Pływa w toni wodnej · chowa się w nocy |  |
 | <img src="fish/gobioides_broussonnetii/thumb.webp" width="160" alt=""> | Violet goby<br>`gobioides_broussonnetii` | *Gobioides broussonnetii* | Słonawa | 30–50 cm | Żyje na piasku · żyje w norze · odpoczywa w nocy na dnie |  |
 | <img src="fish/tanichthys_albonubes/thumb.webp" width="160" alt=""> | White cloud mountain minnow<br>`tanichthys_albonubes` | *Tanichthys albonubes* | Słodkowodna | 3–4 cm | Ławica · chowa się w nocy |  |

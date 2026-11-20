@@ -23,15 +23,15 @@ Each fish is a sheet of frames (a WebP atlas) and a descriptor with its clips: *
 |  | Name | Scientific name | Water | Size | Behaviour | HD |
 |---|---|---|---|---|---|---|
 | <img src="fish/pterophyllum_scalare/thumb.webp" width="160" alt=""> | Angelfish<br>`pterophyllum_scalare` | *Pterophyllum scalare* | Freshwater | 12–15 cm | Open-water cruiser · hides at night |  |
-| <img src="fish/pseudanthias/thumb.webp" width="160" alt=""> | Anthias<br>`pseudanthias` | *Pseudanthias sp.* | Marine | 8–14 cm | Shoaling · hides at night | ✔ |
+| <img src="docs/thumbs/fish/pseudanthias.webp" width="240" alt=""> | Anthias<br>`pseudanthias` | *Pseudanthias sp.* | Marine | 8–14 cm | Shoaling · hides at night | ✔ |
 | <img src="fish/periophthalmus_barbarus/thumb.webp" width="160" alt=""> | Atlantic mudskipper<br>`periophthalmus_barbarus` | *Periophthalmus barbarus* | Brackish | 10–15 cm | Bottom dweller · hides at night |  |
 | <img src="fish/toxotes_jaculatrix/thumb.webp" width="160" alt=""> | Banded archerfish<br>`toxotes_jaculatrix` | *Toxotes jaculatrix* | Brackish | 15–25 cm | Open-water cruiser · hides at night |  |
 | <img src="fish/amblygobius_phalaena/thumb.webp" width="160" alt=""> | Banded goby<br>`amblygobius_phalaena` | *Amblygobius phalaena* | Marine | 8–10 cm | Lives on the sand · rests on the bottom at night |  |
-| <img src="fish/pterapogon_kauderni/thumb.webp" width="160" alt=""> | Banggai cardinalfish<br>`pterapogon_kauderni` | *Pterapogon kauderni* | Marine | 5–8 cm | Hovers in place · hovers at night | ✔ |
+| <img src="docs/thumbs/fish/pterapogon_kauderni.webp" width="240" alt=""> | Banggai cardinalfish<br>`pterapogon_kauderni` | *Pterapogon kauderni* | Marine | 5–8 cm | Hovers in place · hovers at night | ✔ |
 | <img src="fish/centropyge_bicolor/thumb.webp" width="160" alt=""> | Bicolor angelfish<br>`centropyge_bicolor` | *Centropyge bicolor* | Marine | 10–15 cm | Hovers in place · hovers at night |  |
 | <img src="fish/ecsenius_bicolor/thumb.webp" width="160" alt=""> | Bicolor blenny<br>`ecsenius_bicolor` | *Ecsenius bicolor* | Marine | 8–10 cm | Bottom dweller · hides at night |  |
 | <img src="fish/gymnocorymbus_ternetzi/thumb.webp" width="160" alt=""> | Black skirt tetra<br>`gymnocorymbus_ternetzi` | *Gymnocorymbus ternetzi* | Freshwater | 5–6 cm | Shoaling · hides at night |  |
-| <img src="fish/chromis_viridis/thumb.webp" width="160" alt=""> | Blue-green chromis<br>`chromis_viridis` | *Chromis viridis* | Marine | 5–8 cm | Shoaling · hides at night | ✔ |
+| <img src="docs/thumbs/fish/chromis_viridis.webp" width="240" alt=""> | Blue-green chromis<br>`chromis_viridis` | *Chromis viridis* | Marine | 5–8 cm | Shoaling · hides at night | ✔ |
 | <img src="fish/labroides_dimidiatus/thumb.webp" width="160" alt=""> | Bluestreak cleaner wrasse<br>`labroides_dimidiatus` | *Labroides dimidiatus* | Marine | 10–12 cm | Open-water cruiser · hides at night |  |
 | <img src="fish/ancistrus/thumb.webp" width="160" alt=""> | Bristlenose pleco<br>`ancistrus` | *Ancistrus sp.* | Freshwater | 10–14 cm | Bottom dweller · hides at night |  |
 | <img src="fish/corydoras_aeneus/thumb.webp" width="160" alt=""> | Bronze corydoras<br>`corydoras_aeneus` | *Corydoras aeneus* | Freshwater | 6–7 cm | Bottom dweller · hides at night |  |
@@ -41,7 +41,7 @@ Each fish is a sheet of frames (a WebP atlas) and a descriptor with its clips: *
 | <img src="fish/pethia_titteya/thumb.webp" width="160" alt=""> | Cherry barb<br>`pethia_titteya` | *Pethia titteya* | Freshwater | 4–5 cm | Shoaling · hides at night |  |
 | <img src="fish/gobiodon_citrinus/thumb.webp" width="160" alt=""> | Citron coral goby<br>`gobiodon_citrinus` | *Gobiodon citrinus* | Marine | 3–5 cm | Bottom dweller · hides at night |  |
 | <img src="fish/chromobotia_macracanthus/thumb.webp" width="160" alt=""> | Clown loach<br>`chromobotia_macracanthus` | *Chromobotia macracanthus* | Freshwater | 15–30 cm | Bottom dweller · hides at night |  |
-| <img src="fish/amphiprion/thumb.webp" width="160" alt=""> | Clownfish<br>`amphiprion` | *Amphiprion sp.* | Marine | 7–11 cm | Hovers in place · hovers at night | ✔ |
+| <img src="docs/thumbs/fish/amphiprion.webp" width="240" alt=""> | Clownfish<br>`amphiprion` | *Amphiprion sp.* | Marine | 7–11 cm | Hovers in place · hovers at night | ✔ |
 | <img src="fish/apistogramma_cacatuoides/thumb.webp" width="160" alt=""> | Cockatoo dwarf cichlid<br>`apistogramma_cacatuoides` | *Apistogramma cacatuoides* | Freshwater | 5–9 cm | Bottom dweller · hides at night |  |
 | <img src="fish/poecilia_sphenops/thumb.webp" width="160" alt=""> | Common molly<br>`poecilia_sphenops` | *Poecilia sphenops* | Freshwater, Brackish | 6–10 cm | Shoaling · hides at night |  |
 | <img src="fish/chelmon_rostratus/thumb.webp" width="160" alt=""> | Copperband butterflyfish<br>`chelmon_rostratus` | *Chelmon rostratus* | Marine | 15–20 cm | Open-water cruiser · hides at night |  |
@@ -49,15 +49,15 @@ Each fish is a sheet of frames (a WebP atlas) and a descriptor with its clips: *
 | <img src="fish/symphysodon_aequifasciatus/thumb.webp" width="160" alt=""> | Discus<br>`symphysodon_aequifasciatus` | *Symphysodon aequifasciatus* | Freshwater | 15–20 cm | Open-water cruiser · hides at night |  |
 | <img src="fish/trichogaster_lalius/thumb.webp" width="160" alt=""> | Dwarf gourami<br>`trichogaster_lalius` | *Trichogaster lalius* | Freshwater | 5–8 cm | Open-water cruiser · hides at night |  |
 | <img src="fish/labidochromis_caeruleus/thumb.webp" width="160" alt=""> | Electric yellow cichlid<br>`labidochromis_caeruleus` | *Labidochromis caeruleus* | Freshwater | 8–10 cm | Open-water cruiser · hides at night |  |
-| <img src="fish/pomacanthus_imperator_adult/thumb.webp" width="160" alt=""> | Emperor angelfish (adult)<br>`pomacanthus_imperator_adult` | *Pomacanthus imperator* | Marine | 25–38 cm | Open-water cruiser · hides at night | ✔ |
-| <img src="fish/pomacanthus_imperator/thumb.webp" width="160" alt=""> | Emperor angelfish (juvenile)<br>`pomacanthus_imperator` | *Pomacanthus imperator* | Marine | 6–12 cm | Open-water cruiser · hides at night | ✔ |
+| <img src="docs/thumbs/fish/pomacanthus_imperator_adult.webp" width="240" alt=""> | Emperor angelfish (adult)<br>`pomacanthus_imperator_adult` | *Pomacanthus imperator* | Marine | 25–38 cm | Open-water cruiser · hides at night | ✔ |
+| <img src="docs/thumbs/fish/pomacanthus_imperator.webp" width="240" alt=""> | Emperor angelfish (juvenile)<br>`pomacanthus_imperator` | *Pomacanthus imperator* | Marine | 6–12 cm | Open-water cruiser · hides at night | ✔ |
 | <img src="fish/nematobrycon_palmeri/thumb.webp" width="160" alt=""> | Emperor tetra<br>`nematobrycon_palmeri` | *Nematobrycon palmeri* | Freshwater | 4–6 cm | Shoaling · hides at night |  |
 | <img src="fish/poecilia_wingei/thumb.webp" width="160" alt=""> | Endler's livebearer<br>`poecilia_wingei` | *Poecilia wingei* | Freshwater | 2–4 cm | Shoaling · hides at night |  |
 | <img src="fish/dichotomyctere_biocellatus/thumb.webp" width="160" alt=""> | Figure-eight puffer<br>`dichotomyctere_biocellatus` | *Dichotomyctere biocellatus* | Brackish | 5–6.5 cm | Open-water cruiser · hides at night |  |
 | <img src="fish/chrysiptera_taupou/thumb.webp" width="160" alt=""> | Fiji devil damselfish<br>`chrysiptera_taupou` | *Chrysiptera taupou* | Marine | 6–8 cm | Hovers in place · stays near its home · hovers at night |  |
 | <img src="fish/nemateleotris_magnifica/thumb.webp" width="160" alt=""> | Firefish goby<br>`nemateleotris_magnifica` | *Nemateleotris magnifica* | Marine | 8–10 cm | Hovers in place · hovers at night |  |
 | <img src="fish/centropyge_loricula/thumb.webp" width="160" alt=""> | Flame angelfish<br>`centropyge_loricula` | *Centropyge loricula* | Marine | 8–10 cm | Hovers in place · hovers at night |  |
-| <img src="fish/siganus_vulpinus/thumb.webp" width="160" alt=""> | Foxface rabbitfish<br>`siganus_vulpinus` | *Siganus vulpinus* | Marine | 15–22 cm | Open-water cruiser · rests on the bottom at night | ✔ |
+| <img src="docs/thumbs/fish/siganus_vulpinus.webp" width="240" alt=""> | Foxface rabbitfish<br>`siganus_vulpinus` | *Siganus vulpinus* | Marine | 15–22 cm | Open-water cruiser · rests on the bottom at night | ✔ |
 | <img src="fish/carassius_auratus/thumb.webp" width="160" alt=""> | Goldfish<br>`carassius_auratus` | *Carassius auratus* | Freshwater | 10–25 cm | Open-water cruiser · hides at night |  |
 | <img src="fish/dichotomyctere_nigroviridis/thumb.webp" width="160" alt=""> | Green spotted puffer<br>`dichotomyctere_nigroviridis` | *Dichotomyctere nigroviridis* | Brackish | 10–17 cm | Open-water cruiser · hides at night |  |
 | <img src="fish/xiphophorus_hellerii/thumb.webp" width="160" alt=""> | Green swordtail<br>`xiphophorus_hellerii` | *Xiphophorus hellerii* | Freshwater | 6–12 cm | Shoaling · hides at night |  |
@@ -71,7 +71,7 @@ Each fish is a sheet of frames (a WebP atlas) and a descriptor with its clips: *
 | <img src="fish/hyphessobrycon_pulchripinnis/thumb.webp" width="160" alt=""> | Lemon tetra<br>`hyphessobrycon_pulchripinnis` | *Hyphessobrycon pulchripinnis* | Freshwater | 3–4.5 cm | Shoaling · hides at night |  |
 | <img src="fish/hippocampus_erectus/thumb.webp" width="160" alt=""> | Lined seahorse<br>`hippocampus_erectus` | *Hippocampus erectus* | Marine | 10–15 cm | Hovers in place · hovers at night |  |
 | <img src="fish/aphyosemion_australe/thumb.webp" width="160" alt=""> | Lyretail killifish<br>`aphyosemion_australe` | *Aphyosemion australe* | Freshwater | 5–6 cm | Hovers in place · hovers at night |  |
-| <img src="fish/synchiropus_splendidus/thumb.webp" width="160" alt=""> | Mandarin dragonet<br>`synchiropus_splendidus` | *Synchiropus splendidus* | Marine | 5–8 cm | Bottom dweller · hides at night | ✔ |
+| <img src="docs/thumbs/fish/synchiropus_splendidus.webp" width="240" alt=""> | Mandarin dragonet<br>`synchiropus_splendidus` | *Synchiropus splendidus* | Marine | 5–8 cm | Bottom dweller · hides at night | ✔ |
 | <img src="fish/carnegiella_strigata/thumb.webp" width="160" alt=""> | Marbled hatchetfish<br>`carnegiella_strigata` | *Carnegiella strigata* | Freshwater | 4–5 cm | Shoaling · hides at night |  |
 | <img src="fish/premnas_biaculeatus/thumb.webp" width="160" alt=""> | Maroon clownfish<br>`premnas_biaculeatus` | *Premnas biaculeatus* | Marine | 10–15 cm | Hovers in place · hovers at night |  |
 | <img src="fish/elacatinus_oceanops/thumb.webp" width="160" alt=""> | Neon goby<br>`elacatinus_oceanops` | *Elacatinus oceanops* | Marine | 4–6 cm | Bottom dweller · hides at night |  |
@@ -102,7 +102,7 @@ Each fish is a sheet of frames (a WebP atlas) and a descriptor with its clips: *
 | <img src="fish/betta_splendens/thumb.webp" width="160" alt=""> | Siamese fighting fish<br>`betta_splendens` | *Betta splendens* | Freshwater | 5–7 cm | Hovers in place · stays near its home · hovers at night |  |
 | <img src="fish/monodactylus_argenteus/thumb.webp" width="160" alt=""> | Silver moony<br>`monodactylus_argenteus` | *Monodactylus argenteus* | Brackish, Marine | 15–25 cm | Shoaling · hides at night |  |
 | <img src="fish/pseudocheilinus_hexataenia/thumb.webp" width="160" alt=""> | Six line wrasse<br>`pseudocheilinus_hexataenia` | *Pseudocheilinus hexataenia* | Marine | 7–10 cm | Open-water cruiser · hides at night |  |
-| <img src="fish/valenciennea/thumb.webp" width="160" alt=""> | Sleeper goby<br>`valenciennea` | *Valenciennea sp.* | Marine | 10–16 cm | Lives on the sand · lives in a burrow · rests on the bottom at night | ✔ |
+| <img src="docs/thumbs/fish/valenciennea.webp" width="240" alt=""> | Sleeper goby<br>`valenciennea` | *Valenciennea sp.* | Marine | 10–16 cm | Lives on the sand · lives in a burrow · rests on the bottom at night | ✔ |
 | <img src="fish/cirrhilabrus_solorensis/thumb.webp" width="160" alt=""> | Solor fairy wrasse<br>`cirrhilabrus_solorensis` | *Cirrhilabrus solorensis* | Marine | 10–12 cm | Open-water cruiser · hides at night |  |
 | <img src="fish/xiphophorus_maculatus/thumb.webp" width="160" alt=""> | Southern platyfish<br>`xiphophorus_maculatus` | *Xiphophorus maculatus* | Freshwater | 4–6 cm | Shoaling · hides at night |  |
 | <img src="fish/synchiropus_picturatus/thumb.webp" width="160" alt=""> | Spotted mandarin<br>`synchiropus_picturatus` | *Synchiropus picturatus* | Marine | 6–8 cm | Bottom dweller · hides at night |  |
