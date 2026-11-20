@@ -18,14 +18,14 @@ The integration downloads the releases of this repository and keeps them up to d
 | <img src="fish/pseudanthias/thumb.webp" width="72" alt=""> | Anthias<br>`pseudanthias` | *Pseudanthias sp.* | Marine | 8–14 cm | Shoaling · hides at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Atlantic mudskipper<br>`periophthalmus_barbarus` | *Periophthalmus barbarus* | Brackish | 10–15 cm | Bottom dweller · hides at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Banded archerfish<br>`toxotes_jaculatrix` | *Toxotes jaculatrix* | Brackish | 15–25 cm | Open-water cruiser · hides at night |
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Banded goby<br>`amblygobius_phalaena` | *Amblygobius phalaena* | Marine | 8–10 cm | Lives on the sand · rests on the bottom at night |
+| <img src="fish/amblygobius_phalaena/thumb.webp" width="72" alt=""> | Banded goby<br>`amblygobius_phalaena` | *Amblygobius phalaena* | Marine | 8–10 cm | Lives on the sand · rests on the bottom at night |
 | <img src="fish/pterapogon_kauderni/thumb.webp" width="72" alt=""> | Banggai cardinalfish<br>`pterapogon_kauderni` | *Pterapogon kauderni* | Marine | 5–8 cm | Hovers in place · hovers at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Bicolor angelfish<br>`centropyge_bicolor` | *Centropyge bicolor* | Marine | 10–15 cm | Hovers in place · hovers at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Bicolor blenny<br>`ecsenius_bicolor` | *Ecsenius bicolor* | Marine | 8–10 cm | Bottom dweller · hides at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Black skirt tetra<br>`gymnocorymbus_ternetzi` | *Gymnocorymbus ternetzi* | Freshwater | 5–6 cm | Shoaling · hides at night |
 | <img src="fish/chromis_viridis/thumb.webp" width="72" alt=""> | Blue-green chromis<br>`chromis_viridis` | *Chromis viridis* | Marine | 5–8 cm | Shoaling · hides at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Bluestreak cleaner wrasse<br>`labroides_dimidiatus` | *Labroides dimidiatus* | Marine | 10–12 cm | Open-water cruiser · hides at night |
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Bristlenose pleco<br>`ancistrus` | *Ancistrus sp.* | Freshwater | 10–14 cm | Bottom dweller · hides at night |
+| <img src="fish/ancistrus/thumb.webp" width="72" alt=""> | Bristlenose pleco<br>`ancistrus` | *Ancistrus sp.* | Freshwater | 10–14 cm | Bottom dweller · hides at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Bronze corydoras<br>`corydoras_aeneus` | *Corydoras aeneus* | Freshwater | 6–7 cm | Bottom dweller · hides at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Bumblebee goby<br>`brachygobius_xanthozonus` | *Brachygobius xanthozonus* | Brackish | 3–4 cm | Bottom dweller · hides at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Cardinal tetra<br>`paracheirodon_axelrodi` | *Paracheirodon axelrodi* | Freshwater | 3–5 cm | Shoaling · hides at night |
@@ -34,7 +34,7 @@ The integration downloads the releases of this repository and keeps them up to d
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Citron coral goby<br>`gobiodon_citrinus` | *Gobiodon citrinus* | Marine | 3–5 cm | Bottom dweller · hides at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Clown loach<br>`chromobotia_macracanthus` | *Chromobotia macracanthus* | Freshwater | 15–30 cm | Bottom dweller · hides at night |
 | <img src="fish/amphiprion/thumb.webp" width="72" alt=""> | Clownfish<br>`amphiprion` | *Amphiprion sp.* | Marine | 7–11 cm | Hovers in place · hovers at night |
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Cockatoo dwarf cichlid<br>`apistogramma_cacatuoides` | *Apistogramma cacatuoides* | Freshwater | 5–9 cm | Bottom dweller · hides at night |
+| <img src="fish/apistogramma_cacatuoides/thumb.webp" width="72" alt=""> | Cockatoo dwarf cichlid<br>`apistogramma_cacatuoides` | *Apistogramma cacatuoides* | Freshwater | 5–9 cm | Bottom dweller · hides at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Common molly<br>`poecilia_sphenops` | *Poecilia sphenops* | Freshwater, Brackish | 6–10 cm | Shoaling · hides at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Copperband butterflyfish<br>`chelmon_rostratus` | *Chelmon rostratus* | Marine | 15–20 cm | Open-water cruiser · hides at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Demasoni cichlid<br>`pseudotropheus_demasoni` | *Pseudotropheus demasoni* | Freshwater | 7–8 cm | Open-water cruiser · hides at night |
@@ -61,7 +61,7 @@ The integration downloads the releases of this repository and keeps them up to d
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Lawnmower blenny<br>`salarias_fasciatus` | *Salarias fasciatus* | Marine | 12–14 cm | Bottom dweller · hides at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Lemon tetra<br>`hyphessobrycon_pulchripinnis` | *Hyphessobrycon pulchripinnis* | Freshwater | 3–4.5 cm | Shoaling · hides at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Lined seahorse<br>`hippocampus_erectus` | *Hippocampus erectus* | Marine | 10–15 cm | Hovers in place · hovers at night |
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Lyretail killifish<br>`aphyosemion_australe` | *Aphyosemion australe* | Freshwater | 5–6 cm | Hovers in place · hovers at night |
+| <img src="fish/aphyosemion_australe/thumb.webp" width="72" alt=""> | Lyretail killifish<br>`aphyosemion_australe` | *Aphyosemion australe* | Freshwater | 5–6 cm | Hovers in place · hovers at night |
 | <img src="fish/synchiropus_splendidus/thumb.webp" width="72" alt=""> | Mandarin dragonet<br>`synchiropus_splendidus` | *Synchiropus splendidus* | Marine | 5–8 cm | Bottom dweller · hides at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Marbled hatchetfish<br>`carnegiella_strigata` | *Carnegiella strigata* | Freshwater | 4–5 cm | Shoaling · hides at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Maroon clownfish<br>`premnas_biaculeatus` | *Premnas biaculeatus* | Marine | 10–15 cm | Hovers in place · hovers at night |
@@ -76,7 +76,7 @@ The integration downloads the releases of this repository and keeps them up to d
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Pearl gourami<br>`trichopodus_leerii` | *Trichopodus leerii* | Freshwater | 10–12 cm | Open-water cruiser · hides at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Picasso triggerfish<br>`rhinecanthus_aculeatus` | *Rhinecanthus aculeatus* | Marine | 20–25 cm | Open-water cruiser · hides at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Pixy hawkfish<br>`cirrhitichthys_oxycephalus` | *Cirrhitichthys oxycephalus* | Marine | 8–10 cm | Bottom dweller · hides at night |
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Powder blue tang<br>`acanthurus_leucosternon` | *Acanthurus leucosternon* | Marine | 20–23 cm | Open-water cruiser · hides at night |
+| <img src="fish/acanthurus_leucosternon/thumb.webp" width="72" alt=""> | Powder blue tang<br>`acanthurus_leucosternon` | *Acanthurus leucosternon* | Marine | 20–23 cm | Open-water cruiser · hides at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Purple firefish<br>`nemateleotris_decora` | *Nemateleotris decora* | Marine | 8–10 cm | Hovers in place · hovers at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Ram cichlid<br>`mikrogeophagus_ramirezi` | *Mikrogeophagus ramirezi* | Freshwater | 5–7 cm | Hovers in place · hovers at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Red lionfish<br>`pterois_volitans` | *Pterois volitans* | Marine | 25–35 cm | Open-water cruiser · hides at night |
@@ -582,6 +582,11 @@ Names and behaviour come from the `species.json` files: never edit the
 generated parts by hand. pre-commit runs it too, and stops the commit when it
 changed a README, so that you add the updated files.
 
+A pull request that only adds a species folder (the editor makes those) does not
+need the READMEs: they are not checked on pull requests, and the `README lists`
+workflow refreshes them on `main` after each merge (its push needs the branch rules
+of `main` to let `github-actions[bot]` push, or to be bypassed by it).
+
 Then run the **Release** workflow (*Actions → Release → Run workflow*) with
 the new version (`2026.10.0`, `2026.10.1`…). It checks the catalog, builds
 one archive per species and the manifest, and publishes the release: every
@@ -665,6 +670,26 @@ pre-commit install          # checks before every commit
 pre-commit run --all-files  # the same, on demand
 ```
 
+### Photos of a whole lot of species
+
+`scripts/generate_stills.py` makes the degraded atlas of every fish that has no
+atlas yet: it asks the photo from Google Gemini (the prompt of
+`prompts/still_photo.json`), checks it, builds the atlas and writes it, with its
+`source`, next to the `species.json`. A species that already has an atlas is left
+alone, so the script can be stopped and started again.
+
+```bash
+export GEMINI_API_KEY=...
+python scripts/generate_stills.py --dry-run               # the species it would do
+python scripts/generate_stills.py --limit 5 --photos photos/
+python scripts/generate_stills.py                         # the whole lot
+python scripts/generate_stills.py --from-photos photos/   # the atlases of the photos kept, no request
+```
+
+`--photos` keeps the photos received (the refused ones too) to look at them; they
+are not committed. A refused photo is asked again, on the other background colour.
+`--from-photos` builds the atlases from the photos kept by an earlier run (the refused ones are checked again), without key nor request. The run stops when the key is refused or the quota is reached: start it again later.
+
 Before each commit, pre-commit:
 
 - refuses video files (source clips stay on your computer) and files over
@@ -672,7 +697,8 @@ Before each commit, pre-commit:
 - checks JSON and YAML, line endings and trailing spaces;
 - lints and formats the scripts (ruff);
 - checks every species (`scripts/validate.py`);
-- updates the species tables of the READMEs (`scripts/make_readme.py`);
+- updates the species tables of the READMEs (`scripts/make_readme.py`; on GitHub, the
+  `README lists` workflow does it after a merge, not the checks of a pull request);
 - runs the tests, with 100 % coverage of the scripts.
 
 Its hooks install their own environment (Pillow, numpy, scipy): no conflict

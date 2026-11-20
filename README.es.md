@@ -18,12 +18,12 @@ La integración descarga las versiones publicadas de este repositorio y las mant
 | <img src="fish/pseudanthias/thumb.webp" width="72" alt=""> | Antias<br>`pseudanthias` | *Pseudanthias sp.* | Marino | 8–14 cm | En cardumen · se esconde de noche |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Atlantic mudskipper<br>`periophthalmus_barbarus` | *Periophthalmus barbarus* | Salobre | 10–15 cm | Vive cerca del fondo · se esconde de noche |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Banded archerfish<br>`toxotes_jaculatrix` | *Toxotes jaculatrix* | Salobre | 15–25 cm | Nadador de aguas abiertas · se esconde de noche |
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Banded goby<br>`amblygobius_phalaena` | *Amblygobius phalaena* | Marino | 8–10 cm | Vive sobre la arena · descansa en el fondo de noche |
+| <img src="fish/amblygobius_phalaena/thumb.webp" width="72" alt=""> | Banded goby<br>`amblygobius_phalaena` | *Amblygobius phalaena* | Marino | 8–10 cm | Vive sobre la arena · descansa en el fondo de noche |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Bicolor angelfish<br>`centropyge_bicolor` | *Centropyge bicolor* | Marino | 10–15 cm | Estacionario · flota en el agua de noche |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Bicolor blenny<br>`ecsenius_bicolor` | *Ecsenius bicolor* | Marino | 8–10 cm | Vive cerca del fondo · se esconde de noche |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Black skirt tetra<br>`gymnocorymbus_ternetzi` | *Gymnocorymbus ternetzi* | Agua dulce | 5–6 cm | En cardumen · se esconde de noche |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Bluestreak cleaner wrasse<br>`labroides_dimidiatus` | *Labroides dimidiatus* | Marino | 10–12 cm | Nadador de aguas abiertas · se esconde de noche |
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Bristlenose pleco<br>`ancistrus` | *Ancistrus sp.* | Agua dulce | 10–14 cm | Vive cerca del fondo · se esconde de noche |
+| <img src="fish/ancistrus/thumb.webp" width="72" alt=""> | Bristlenose pleco<br>`ancistrus` | *Ancistrus sp.* | Agua dulce | 10–14 cm | Vive cerca del fondo · se esconde de noche |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Bronze corydoras<br>`corydoras_aeneus` | *Corydoras aeneus* | Agua dulce | 6–7 cm | Vive cerca del fondo · se esconde de noche |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Bumblebee goby<br>`brachygobius_xanthozonus` | *Brachygobius xanthozonus* | Salobre | 3–4 cm | Vive cerca del fondo · se esconde de noche |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Cardinal tetra<br>`paracheirodon_axelrodi` | *Paracheirodon axelrodi* | Agua dulce | 3–5 cm | En cardumen · se esconde de noche |
@@ -31,7 +31,7 @@ La integración descarga las versiones publicadas de este repositorio y las mant
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Cherry barb<br>`pethia_titteya` | *Pethia titteya* | Agua dulce | 4–5 cm | En cardumen · se esconde de noche |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Citron coral goby<br>`gobiodon_citrinus` | *Gobiodon citrinus* | Marino | 3–5 cm | Vive cerca del fondo · se esconde de noche |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Clown loach<br>`chromobotia_macracanthus` | *Chromobotia macracanthus* | Agua dulce | 15–30 cm | Vive cerca del fondo · se esconde de noche |
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Cockatoo dwarf cichlid<br>`apistogramma_cacatuoides` | *Apistogramma cacatuoides* | Agua dulce | 5–9 cm | Vive cerca del fondo · se esconde de noche |
+| <img src="fish/apistogramma_cacatuoides/thumb.webp" width="72" alt=""> | Cockatoo dwarf cichlid<br>`apistogramma_cacatuoides` | *Apistogramma cacatuoides* | Agua dulce | 5–9 cm | Vive cerca del fondo · se esconde de noche |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Common molly<br>`poecilia_sphenops` | *Poecilia sphenops* | Agua dulce, Salobre | 6–10 cm | En cardumen · se esconde de noche |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Copperband butterflyfish<br>`chelmon_rostratus` | *Chelmon rostratus* | Marino | 15–20 cm | Nadador de aguas abiertas · se esconde de noche |
 | <img src="fish/chromis_viridis/thumb.webp" width="72" alt=""> | Cromis verde<br>`chromis_viridis` | *Chromis viridis* | Marino | 5–8 cm | En cardumen · se esconde de noche |
@@ -57,7 +57,7 @@ La integración descarga las versiones publicadas de este repositorio y las mant
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Lawnmower blenny<br>`salarias_fasciatus` | *Salarias fasciatus* | Marino | 12–14 cm | Vive cerca del fondo · se esconde de noche |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Lemon tetra<br>`hyphessobrycon_pulchripinnis` | *Hyphessobrycon pulchripinnis* | Agua dulce | 3–4.5 cm | En cardumen · se esconde de noche |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Lined seahorse<br>`hippocampus_erectus` | *Hippocampus erectus* | Marino | 10–15 cm | Estacionario · flota en el agua de noche |
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Lyretail killifish<br>`aphyosemion_australe` | *Aphyosemion australe* | Agua dulce | 5–6 cm | Estacionario · flota en el agua de noche |
+| <img src="fish/aphyosemion_australe/thumb.webp" width="72" alt=""> | Lyretail killifish<br>`aphyosemion_australe` | *Aphyosemion australe* | Agua dulce | 5–6 cm | Estacionario · flota en el agua de noche |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Marbled hatchetfish<br>`carnegiella_strigata` | *Carnegiella strigata* | Agua dulce | 4–5 cm | En cardumen · se esconde de noche |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Maroon clownfish<br>`premnas_biaculeatus` | *Premnas biaculeatus* | Marino | 10–15 cm | Estacionario · flota en el agua de noche |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Neon goby<br>`elacatinus_oceanops` | *Elacatinus oceanops* | Marino | 4–6 cm | Vive cerca del fondo · se esconde de noche |
@@ -77,7 +77,7 @@ La integración descarga las versiones publicadas de este repositorio y las mant
 | <img src="fish/pomacanthus_imperator/thumb.webp" width="72" alt=""> | Pez ángel emperador (juvenil)<br>`pomacanthus_imperator` | *Pomacanthus imperator* | Marino | 6–12 cm | Nadador de aguas abiertas · se esconde de noche |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Picasso triggerfish<br>`rhinecanthus_aculeatus` | *Rhinecanthus aculeatus* | Marino | 20–25 cm | Nadador de aguas abiertas · se esconde de noche |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Pixy hawkfish<br>`cirrhitichthys_oxycephalus` | *Cirrhitichthys oxycephalus* | Marino | 8–10 cm | Vive cerca del fondo · se esconde de noche |
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Powder blue tang<br>`acanthurus_leucosternon` | *Acanthurus leucosternon* | Marino | 20–23 cm | Nadador de aguas abiertas · se esconde de noche |
+| <img src="fish/acanthurus_leucosternon/thumb.webp" width="72" alt=""> | Powder blue tang<br>`acanthurus_leucosternon` | *Acanthurus leucosternon* | Marino | 20–23 cm | Nadador de aguas abiertas · se esconde de noche |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Purple firefish<br>`nemateleotris_decora` | *Nemateleotris decora* | Marino | 8–10 cm | Estacionario · flota en el agua de noche |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Ram cichlid<br>`mikrogeophagus_ramirezi` | *Mikrogeophagus ramirezi* | Agua dulce | 5–7 cm | Estacionario · flota en el agua de noche |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Red lionfish<br>`pterois_volitans` | *Pterois volitans* | Marino | 25–35 cm | Nadador de aguas abiertas · se esconde de noche |

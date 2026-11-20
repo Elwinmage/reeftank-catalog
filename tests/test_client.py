@@ -10,6 +10,7 @@ import zipfile
 from pathlib import Path
 from typing import Any
 
+import numpy as np
 import pytest
 
 ROOT = Path(__file__).parent.parent
@@ -242,6 +243,56 @@ def test_the_still_atlas_agrees_with_the_build() -> None:
     frame = Image.new("RGBA", (208, 120), (0, 0, 0, 0))
     frame.paste((200, 90, 30, 255), (40, 30, 170, 90))
     assert still.thumbnail(frame).tobytes() == build_atlas.thumbnail(frame).tobytes()
+
+
+def test_stray_pixels_at_the_edge_are_not_the_fish() -> None:
+    """A model leaves a few off-colour pixels on the last row and column."""
+    from PIL import Image, ImageDraw
+
+    photo = Image.new("RGB", (640, 400), (240, 14, 231))
+    ImageDraw.Draw(photo).ellipse((160, 120, 540, 280), fill=(230, 120, 20))
+    for x in (100, 101, 102, 103, 104):
+        photo.putpixel((x, 399), (200, 60, 180))
+    for y in (50, 51, 52):
+        photo.putpixel((639, y), (200, 60, 180))
+    assert still.check_photo(photo) == []
+    box = still.key_out(photo).getchannel("A").point(still.OPAQUE).getbbox()
+    assert box is not None and box[1] > 100 and box[3] < 300 and box[2] < 560
+    # a fish really cut by the edge is still refused
+    ImageDraw.Draw(photo).rectangle((500, 150, 639, 250), fill=(230, 120, 20))
+    assert "the fish touches the edge of the picture (cut off)" in still.check_photo(
+        photo
+    )
+
+
+def test_marks_away_from_the_fish_are_not_the_fish() -> None:
+    """A smudge in a corner and a written colour code are not part of the photo."""
+    from PIL import Image, ImageDraw
+
+    photo = Image.new("RGB", (1248, 832), (210, 80, 150))
+    draw = ImageDraw.Draw(photo)
+    draw.ellipse((300, 300, 900, 520), fill=(230, 120, 20))
+    draw.polygon([(320, 410), (200, 330), (200, 490)], fill=(230, 120, 20))
+    draw.ellipse((0, 0, 40, 30), fill=(190, 190, 190))  # a smudge in a corner
+    for i in range(6):  # a colour code, written in the opposite corner
+        draw.rectangle((1130 + i * 18, 800, 1140 + i * 18, 831), fill=(10, 10, 10))
+    assert still.check_photo(photo, "magenta") == []
+    box = still.key_out(photo, "magenta").getchannel("A").point(still.OPAQUE).getbbox()
+    assert box is not None
+    assert box[0] > 150 and box[1] > 250 and box[2] < 950 and box[3] < 560
+    # the fins a few pixels apart from the body stay with the fish
+    draw.rectangle((910, 400, 960, 405), fill=(230, 120, 20))
+    box = still.key_out(photo, "magenta").getchannel("A").point(still.OPAQUE).getbbox()
+    assert box is not None and box[2] >= 955
+    # the corners are flat when two of them are marked, not when three are
+    rgb = np.asarray(photo, dtype=float)
+    assert still.corner_spread(rgb) < still.UNIFORM_STD
+    for xy in ((0, 810), (1000, 5)):
+        draw.ellipse((xy[0], xy[1], xy[0] + 19, xy[1] + 19), fill=(10, 200, 10))
+    draw.line((1228, 0, 1247, 19), fill=(10, 10, 10), width=6)
+    assert "background is not uniform in the corners" in still.check_photo(
+        photo, "magenta"
+    )
 
 
 def test_build_still_gives_the_files_and_the_keys() -> None:

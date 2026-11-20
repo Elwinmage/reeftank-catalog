@@ -84,8 +84,9 @@ def test_photo_checks() -> None:
     assert "too small in the picture" in still_atlas.check_photo(tiny)[0]
     noisy = photo()
     for x in range(10):
-        for y in range(10):
-            noisy.putpixel((x, y), (255 - 5 * x * y % 200, 0, 0))
+        for y in range(10):  # three corners are not flat (one or two may be marked)
+            for dx, dy in ((0, 0), (630, 0), (0, 390)):
+                noisy.putpixel((x + dx, y + dy), (255 - 5 * x * y % 200, 0, 0))
     assert "background is not uniform in the corners" in (
         still_atlas.check_photo(noisy, "magenta")
     )

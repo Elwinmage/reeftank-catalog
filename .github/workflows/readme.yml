@@ -1,0 +1,55 @@
+name: README lists
+
+# The species tables of the READMEs are written from the catalog by
+# scripts/make_readme.py. They are refreshed here, after a merge, and not
+# checked on pull requests: a contributor (or the catalog editor) only adds the
+# folder of a species, and two open pull requests never conflict on the READMEs.
+#
+# The push below needs the branch rules of 'main' to let github-actions[bot]
+# push directly (or to be bypassed by it).
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "fish/**"
+      - "corals/**"
+      - "plants/**"
+      - "invertebrates/**"
+      - "defaults/**"
+      - "scripts/make_readme.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# One refresh at a time; a run always starts from the latest main
+concurrency:
+  group: readme-lists
+  cancel-in-progress: false
+
+jobs:
+  readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - name: Install dependencies
+        run: pip install -r requirements.txt jsonschema referencing
+      - name: Refresh the READMEs
+        run: python scripts/make_readme.py
+      - name: Commit the READMEs
+        run: |
+          if git diff --quiet -- 'README*.md'; then
+            echo "READMEs already up to date"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 'README*.md'
+          git commit -m "docs: refresh the species tables of the READMEs"
+          git push origin HEAD:main

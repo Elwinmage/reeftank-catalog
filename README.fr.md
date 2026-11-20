@@ -14,9 +14,9 @@ L'intégration télécharge les versions publiées de ce dépôt et les tient à
 
 |  | Nom | Nom scientifique | Eau | Taille | Comportement |
 |---|---|---|---|---|---|
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Ancistrus<br>`ancistrus` | *Ancistrus sp.* | Eau douce | 10–14 cm | Vit près du fond · se cache la nuit |
+| <img src="fish/ancistrus/thumb.webp" width="72" alt=""> | Ancistrus<br>`ancistrus` | *Ancistrus sp.* | Eau douce | 10–14 cm | Vit près du fond · se cache la nuit |
 | <img src="fish/pseudanthias/thumb.webp" width="72" alt=""> | Anthias<br>`pseudanthias` | *Pseudanthias sp.* | Marine | 8–14 cm | En banc · se cache la nuit |
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Apistogramma<br>`apistogramma_cacatuoides` | *Apistogramma cacatuoides* | Eau douce | 5–9 cm | Vit près du fond · se cache la nuit |
+| <img src="fish/apistogramma_cacatuoides/thumb.webp" width="72" alt=""> | Apistogramma<br>`apistogramma_cacatuoides` | *Apistogramma cacatuoides* | Eau douce | 5–9 cm | Vit près du fond · se cache la nuit |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Arc-en-ciel turquoise<br>`melanotaenia_lacustris` | *Melanotaenia lacustris* | Eau douce | 8–12 cm | En banc · se cache la nuit |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Archer<br>`toxotes_jaculatrix` | *Toxotes jaculatrix* | Saumâtre | 15–25 cm | Nageur de pleine eau · se cache la nuit |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Baliste Picasso<br>`rhinecanthus_aculeatus` | *Rhinecanthus aculeatus* | Marine | 20–25 cm | Nageur de pleine eau · se cache la nuit |
@@ -29,7 +29,7 @@ L'intégration télécharge les versions publiées de ce dépôt et les tient à
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Cardinal pyjama<br>`sphaeramia_nematoptera` | *Sphaeramia nematoptera* | Marine | 8–10 cm | Stationnaire · reste en pleine eau la nuit |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Cardinal à bande jaune<br>`ostorhinchus_cyanosoma` | *Ostorhinchus cyanosoma* | Marine | 7–8 cm | Stationnaire · reste en pleine eau la nuit |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Chirurgien bleu<br>`paracanthurus_hepatus` | *Paracanthurus hepatus* | Marine | 20–30 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Chirurgien bleu poudré<br>`acanthurus_leucosternon` | *Acanthurus leucosternon* | Marine | 20–23 cm | Nageur de pleine eau · se cache la nuit |
+| <img src="fish/acanthurus_leucosternon/thumb.webp" width="72" alt=""> | Chirurgien bleu poudré<br>`acanthurus_leucosternon` | *Acanthurus leucosternon* | Marine | 20–23 cm | Nageur de pleine eau · se cache la nuit |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Chirurgien brun<br>`zebrasoma_scopas` | *Zebrasoma scopas* | Marine | 15–20 cm | Nageur de pleine eau · se cache la nuit |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Chirurgien jaune<br>`zebrasoma_flavescens` | *Zebrasoma flavescens* | Marine | 15–20 cm | Nageur de pleine eau · se cache la nuit |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Chirurgien kole<br>`ctenochaetus_strigosus` | *Ctenochaetus strigosus* | Marine | 12–18 cm | Nageur de pleine eau · se cache la nuit |
@@ -52,7 +52,7 @@ L'intégration télécharge les versions publiées de ce dépôt et les tient à
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Gobie de corail citron<br>`gobiodon_citrinus` | *Gobiodon citrinus* | Marine | 3–5 cm | Vit près du fond · se cache la nuit |
 | <img src="fish/valenciennea/thumb.webp" width="72" alt=""> | Gobie dormeur<br>`valenciennea` | *Valenciennea sp.* | Marine | 10–16 cm | Vit sur le sable · vit dans un terrier · se pose au fond la nuit |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Gobie néon<br>`elacatinus_oceanops` | *Elacatinus oceanops* | Marine | 4–6 cm | Vit près du fond · se cache la nuit |
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Gobie rayé<br>`amblygobius_phalaena` | *Amblygobius phalaena* | Marine | 8–10 cm | Vit sur le sable · se pose au fond la nuit |
+| <img src="fish/amblygobius_phalaena/thumb.webp" width="72" alt=""> | Gobie rayé<br>`amblygobius_phalaena` | *Amblygobius phalaena* | Marine | 8–10 cm | Vit sur le sable · se pose au fond la nuit |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Gobie violet<br>`gobioides_broussonnetii` | *Gobioides broussonnetii* | Saumâtre | 30–50 cm | Vit sur le sable · vit dans un terrier · se pose au fond la nuit |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Gobie à crevette<br>`stonogobiops_yasha` | *Stonogobiops yasha* | Marine | 6–8 cm | Vit sur le sable · vit dans un terrier · se pose au fond la nuit |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Gourami bleu<br>`trichopodus_trichopterus` | *Trichopodus trichopterus* | Eau douce | 10–15 cm | Nageur de pleine eau · se cache la nuit |
@@ -61,7 +61,7 @@ L'intégration télécharge les versions publiées de ce dépôt et les tient à
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Gramma royal<br>`gramma_loreto` | *Gramma loreto* | Marine | 7–8 cm | Stationnaire · reste en pleine eau la nuit |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Guppy<br>`poecilia_reticulata` | *Poecilia reticulata* | Eau douce | 3–6 cm | En banc · se cache la nuit |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Hippocampe<br>`hippocampus_erectus` | *Hippocampus erectus* | Marine | 10–15 cm | Stationnaire · reste en pleine eau la nuit |
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Killi du Cap Lopez<br>`aphyosemion_australe` | *Aphyosemion australe* | Eau douce | 5–6 cm | Stationnaire · reste en pleine eau la nuit |
+| <img src="fish/aphyosemion_australe/thumb.webp" width="72" alt=""> | Killi du Cap Lopez<br>`aphyosemion_australe` | *Aphyosemion australe* | Eau douce | 5–6 cm | Stationnaire · reste en pleine eau la nuit |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Kribensis<br>`pelvicachromis_pulcher` | *Pelvicachromis pulcher* | Eau douce | 8–10 cm | Vit près du fond · se cache la nuit |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Labidochromis jaune<br>`labidochromis_caeruleus` | *Labidochromis caeruleus* | Eau douce | 8–10 cm | Nageur de pleine eau · se cache la nuit |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Labre chrysus<br>`halichoeres_chrysus` | *Halichoeres chrysus* | Marine | 10–12 cm | Nageur de pleine eau · se pose au fond la nuit |

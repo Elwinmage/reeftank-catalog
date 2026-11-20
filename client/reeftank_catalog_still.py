@@ -30,18 +30,18 @@ from dataclasses import dataclass
 from typing import Any
 
 import numpy as np
-from PIL import Image
+from PIL import Image, ImageFilter
 
 #: The prompt that asks an image model for the photo (versioned: `version` changes
 #: with the wording; the same text is prompts/still_photo.json, a test checks it)
 PROMPT: dict[str, Any] = {
-    "version": 1,
+    "version": 2,
     "keys": {"magenta": "flat magenta #FF00FF", "green": "flat green #00FF00"},
     "default_key": "magenta",
     "alternate_key": {
         "green": "pink, red-pink or purple fish: a magenta background would eat them"
     },
-    "template": "Realistic side view of [SPECIE], head to the RIGHT, on a [KEY] background, neutral white studio lighting, no shadow, no [KEY_NAME] tint on the edges of the animal, highest resolution, the animal fills about 70% of the image width, whole animal visible with all its fins, no text, no watermark.",
+    "template": "Realistic side view of [SPECIE], head to the RIGHT, on a [KEY] background (the colour code only tells which colour the background is: never write it, nor any other text, on the image), perfectly flat uniform background without gradient or vignette, neutral white studio lighting, no shadow, no [KEY_NAME] tint on the edges of the animal, highest resolution, the animal fills about 70% of the image width, whole animal visible with all its fins, clean image: no text, no watermark, no mark in the corners.",
 }
 #: Descriptor keys the atlas comes with (the others describe the species)
 GENERATED_KEYS = frozenset(
@@ -75,6 +75,10 @@ EDGE_MARGIN = 2
 UNIFORM_STD = 24.0
 #: Alpha above 10 counts as the fish (lookup table of `Image.point`)
 OPAQUE = [0] * 11 + [255] * 245
+#: Specks thinner than this many pixels are not the fish (a stray pixel at the
+#: edge of a generated picture), and the soft edge kept around what remains
+SPECK = 5
+SOFT_EDGE = 7
 
 
 def render_prompt(
@@ -125,17 +129,27 @@ def _chroma(rgb: np.ndarray, key: Sequence[float]) -> np.ndarray:
     return rgb[..., high].min(axis=-1) - rgb[..., low].max(axis=-1)
 
 
+def _patches(rgb: np.ndarray) -> list[np.ndarray]:
+    n = CORNER
+    return [
+        rgb[:n, :n].reshape(-1, 3),
+        rgb[:n, -n:].reshape(-1, 3),
+        rgb[-n:, :n].reshape(-1, 3),
+        rgb[-n:, -n:].reshape(-1, 3),
+    ]
+
+
 def corners(rgb: np.ndarray) -> np.ndarray:
     """The four corner patches of a picture, as a list of pixels."""
-    n = CORNER
-    return np.concatenate(
-        [
-            rgb[:n, :n].reshape(-1, 3),
-            rgb[:n, -n:].reshape(-1, 3),
-            rgb[-n:, :n].reshape(-1, 3),
-            rgb[-n:, -n:].reshape(-1, 3),
-        ]
-    )
+    return np.concatenate(_patches(rgb))
+
+
+def corner_spread(rgb: np.ndarray) -> float:
+    """How far from flat the corners are: the spread of the patches, but the
+    two worst ones, which an image model may mark (a smudge, a written colour
+    code)."""
+    spreads = sorted(float(p.std(axis=0).max()) for p in _patches(rgb))
+    return spreads[-3]
 
 
 def detect_key(rgb: np.ndarray) -> str | None:
@@ -150,6 +164,74 @@ def detect_key(rgb: np.ndarray) -> str | None:
     return best
 
 
+#: Blobs are looked for on a grid of BLOCK pixels; fish parts closer than
+#: 2 * GAP_BLOCKS * BLOCK pixels count as one fish
+BLOCK = 8
+GAP_BLOCKS = 2
+
+
+def _largest_blob(mask: np.ndarray) -> np.ndarray:
+    """The biggest group of true pixels of a mask, and nothing else.
+
+    An image model leaves marks away from the fish (a smudge in a corner, the
+    colour code written in the picture): the fish is the largest blob. Pieces of
+    the fish a few pixels apart (the tips of the fins) still belong to it.
+    """
+    height, width = mask.shape
+    rows, cols = -(-height // BLOCK), -(-width // BLOCK)
+    padded = np.zeros((rows * BLOCK, cols * BLOCK), dtype=bool)
+    padded[:height, :width] = mask
+    cells = padded.reshape(rows, BLOCK, cols, BLOCK).any(axis=(1, 3))
+    for _ in range(GAP_BLOCKS):  # grow, so that the gaps close
+        grown = cells.copy()
+        grown[1:] |= cells[:-1]
+        grown[:-1] |= cells[1:]
+        grown[:, 1:] |= cells[:, :-1]
+        grown[:, :-1] |= cells[:, 1:]
+        cells = grown
+    label = np.zeros(cells.shape, dtype=np.int32)
+    sizes: list[int] = [0]
+    for start in zip(*np.nonzero(cells), strict=True):
+        if label[start]:
+            continue
+        sizes.append(0)
+        label[start] = len(sizes) - 1
+        todo = [start]
+        while todo:
+            r, c = todo.pop()
+            sizes[-1] += 1
+            for nr, nc in ((r - 1, c), (r + 1, c), (r, c - 1), (r, c + 1)):
+                if (
+                    0 <= nr < rows
+                    and 0 <= nc < cols
+                    and cells[nr, nc]
+                    and not label[nr, nc]
+                ):
+                    label[nr, nc] = label[r, c]
+                    todo.append((nr, nc))
+    if len(sizes) == 1:
+        return np.zeros_like(mask)
+    keep = label == int(np.argmax(sizes))
+    big = np.repeat(np.repeat(keep, BLOCK, axis=0), BLOCK, axis=1)
+    return big[:height, :width]
+
+
+def _fish_zone(raw: np.ndarray) -> np.ndarray:
+    """1 around the fish, 0 elsewhere: what is left once the marks are dropped.
+
+    An image model leaves a few off-colour pixels, mostly on the last row or
+    column; they would stretch the box of the fish to the whole picture. The
+    zone is the fish with its soft edge, found by erasing then growing the
+    pixels that are not the key, keeping the largest blob.
+    """
+    fish = Image.fromarray(((raw > 0.1) * 255).astype(np.uint8), "L")
+    opened = fish.filter(ImageFilter.MinFilter(SPECK)).filter(
+        ImageFilter.MaxFilter(SPECK)
+    )
+    zone = opened.filter(ImageFilter.MaxFilter(SOFT_EDGE))
+    return (_largest_blob(np.asarray(zone) > 0)).astype(np.float64)
+
+
 def key_out(photo: Image.Image, key: str | None = None) -> Image.Image:
     """Remove the flat key colour, keeping soft edges (RGBA)."""
     rgb = np.asarray(photo.convert("RGB"), dtype=np.float64)
@@ -157,7 +239,7 @@ def key_out(photo: Image.Image, key: str | None = None) -> Image.Image:
     colour = np.median(corners(rgb), axis=0)
     norm = max(1.0, float(_chroma(colour, KEYS[name])))
     raw = 1.0 - np.clip(_chroma(rgb, KEYS[name]) / norm, 0, 1)
-    alpha = np.clip((raw - 0.06) / 0.9, 0, 1)
+    alpha = np.clip((raw - 0.06) / 0.9, 0, 1) * _fish_zone(raw)
     solid = np.maximum(raw, 0.05)[..., None]
     pixels = np.clip((rgb - (1 - raw)[..., None] * colour) / solid, 0, 255)
     return Image.fromarray(np.dstack([pixels, alpha * 255]).astype(np.uint8), "RGBA")
@@ -179,7 +261,7 @@ def check_photo(photo: Image.Image, key: str | None = None) -> list[str]:
             *problems,
             "corners are not a flat magenta or green background",
         ]
-    if float(corners(rgb).std(axis=0).max()) > UNIFORM_STD:
+    if corner_spread(rgb) > UNIFORM_STD:
         problems.append("background is not uniform in the corners")
     alpha = key_out(photo, name).getchannel("A").point(OPAQUE)
     box = alpha.getbbox()

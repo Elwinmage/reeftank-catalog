@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "keys": {
     "magenta": "flat magenta #FF00FF",
     "green": "flat green #00FF00"
@@ -8,5 +8,5 @@
   "alternate_key": {
     "green": "pink, red-pink or purple fish: a magenta background would eat them"
   },
-  "template": "Realistic side view of [SPECIE], head to the RIGHT, on a [KEY] background, neutral white studio lighting, no shadow, no [KEY_NAME] tint on the edges of the animal, highest resolution, the animal fills about 70% of the image width, whole animal visible with all its fins, no text, no watermark."
+  "template": "Realistic side view of [SPECIE], head to the RIGHT, on a [KEY] background (the colour code only tells which colour the background is: never write it, nor any other text, on the image), perfectly flat uniform background without gradient or vignette, neutral white studio lighting, no shadow, no [KEY_NAME] tint on the edges of the animal, highest resolution, the animal fills about 70% of the image width, whole animal visible with all its fins, clean image: no text, no watermark, no mark in the corners."
 }

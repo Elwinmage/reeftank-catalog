@@ -18,13 +18,13 @@ Die Integration lädt die Releases dieses Repositorys herunter und hält sie akt
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Angelfish<br>`pterophyllum_scalare` | *Pterophyllum scalare* | Süßwasser | 12–15 cm | Freiwasserschwimmer · versteckt sich nachts |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Atlantic mudskipper<br>`periophthalmus_barbarus` | *Periophthalmus barbarus* | Brackwasser | 10–15 cm | Bodenbewohner · versteckt sich nachts |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Banded archerfish<br>`toxotes_jaculatrix` | *Toxotes jaculatrix* | Brackwasser | 15–25 cm | Freiwasserschwimmer · versteckt sich nachts |
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Banded goby<br>`amblygobius_phalaena` | *Amblygobius phalaena* | Meerwasser | 8–10 cm | Lebt auf dem Sand · ruht nachts am Boden |
+| <img src="fish/amblygobius_phalaena/thumb.webp" width="72" alt=""> | Banded goby<br>`amblygobius_phalaena` | *Amblygobius phalaena* | Meerwasser | 8–10 cm | Lebt auf dem Sand · ruht nachts am Boden |
 | <img src="fish/pterapogon_kauderni/thumb.webp" width="72" alt=""> | Banggai-Kardinalbarsch<br>`pterapogon_kauderni` | *Pterapogon kauderni* | Meerwasser | 5–8 cm | Bleibt an Ort und Stelle · schwebt nachts im Wasser |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Bicolor angelfish<br>`centropyge_bicolor` | *Centropyge bicolor* | Meerwasser | 10–15 cm | Bleibt an Ort und Stelle · schwebt nachts im Wasser |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Bicolor blenny<br>`ecsenius_bicolor` | *Ecsenius bicolor* | Meerwasser | 8–10 cm | Bodenbewohner · versteckt sich nachts |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Black skirt tetra<br>`gymnocorymbus_ternetzi` | *Gymnocorymbus ternetzi* | Süßwasser | 5–6 cm | Schwarmfisch · versteckt sich nachts |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Bluestreak cleaner wrasse<br>`labroides_dimidiatus` | *Labroides dimidiatus* | Meerwasser | 10–12 cm | Freiwasserschwimmer · versteckt sich nachts |
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Bristlenose pleco<br>`ancistrus` | *Ancistrus sp.* | Süßwasser | 10–14 cm | Bodenbewohner · versteckt sich nachts |
+| <img src="fish/ancistrus/thumb.webp" width="72" alt=""> | Bristlenose pleco<br>`ancistrus` | *Ancistrus sp.* | Süßwasser | 10–14 cm | Bodenbewohner · versteckt sich nachts |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Bronze corydoras<br>`corydoras_aeneus` | *Corydoras aeneus* | Süßwasser | 6–7 cm | Bodenbewohner · versteckt sich nachts |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Bumblebee goby<br>`brachygobius_xanthozonus` | *Brachygobius xanthozonus* | Brackwasser | 3–4 cm | Bodenbewohner · versteckt sich nachts |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Cardinal tetra<br>`paracheirodon_axelrodi` | *Paracheirodon axelrodi* | Süßwasser | 3–5 cm | Schwarmfisch · versteckt sich nachts |
@@ -32,7 +32,7 @@ Die Integration lädt die Releases dieses Repositorys herunter und hält sie akt
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Cherry barb<br>`pethia_titteya` | *Pethia titteya* | Süßwasser | 4–5 cm | Schwarmfisch · versteckt sich nachts |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Citron coral goby<br>`gobiodon_citrinus` | *Gobiodon citrinus* | Meerwasser | 3–5 cm | Bodenbewohner · versteckt sich nachts |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Clown loach<br>`chromobotia_macracanthus` | *Chromobotia macracanthus* | Süßwasser | 15–30 cm | Bodenbewohner · versteckt sich nachts |
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Cockatoo dwarf cichlid<br>`apistogramma_cacatuoides` | *Apistogramma cacatuoides* | Süßwasser | 5–9 cm | Bodenbewohner · versteckt sich nachts |
+| <img src="fish/apistogramma_cacatuoides/thumb.webp" width="72" alt=""> | Cockatoo dwarf cichlid<br>`apistogramma_cacatuoides` | *Apistogramma cacatuoides* | Süßwasser | 5–9 cm | Bodenbewohner · versteckt sich nachts |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Common molly<br>`poecilia_sphenops` | *Poecilia sphenops* | Süßwasser, Brackwasser | 6–10 cm | Schwarmfisch · versteckt sich nachts |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Copperband butterflyfish<br>`chelmon_rostratus` | *Chelmon rostratus* | Meerwasser | 15–20 cm | Freiwasserschwimmer · versteckt sich nachts |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Demasoni cichlid<br>`pseudotropheus_demasoni` | *Pseudotropheus demasoni* | Süßwasser | 7–8 cm | Freiwasserschwimmer · versteckt sich nachts |
@@ -61,7 +61,7 @@ Die Integration lädt die Releases dieses Repositorys herunter und hält sie akt
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Lawnmower blenny<br>`salarias_fasciatus` | *Salarias fasciatus* | Meerwasser | 12–14 cm | Bodenbewohner · versteckt sich nachts |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Lemon tetra<br>`hyphessobrycon_pulchripinnis` | *Hyphessobrycon pulchripinnis* | Süßwasser | 3–4.5 cm | Schwarmfisch · versteckt sich nachts |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Lined seahorse<br>`hippocampus_erectus` | *Hippocampus erectus* | Meerwasser | 10–15 cm | Bleibt an Ort und Stelle · schwebt nachts im Wasser |
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Lyretail killifish<br>`aphyosemion_australe` | *Aphyosemion australe* | Süßwasser | 5–6 cm | Bleibt an Ort und Stelle · schwebt nachts im Wasser |
+| <img src="fish/aphyosemion_australe/thumb.webp" width="72" alt=""> | Lyretail killifish<br>`aphyosemion_australe` | *Aphyosemion australe* | Süßwasser | 5–6 cm | Bleibt an Ort und Stelle · schwebt nachts im Wasser |
 | <img src="fish/synchiropus_splendidus/thumb.webp" width="72" alt=""> | Mandarinfisch<br>`synchiropus_splendidus` | *Synchiropus splendidus* | Meerwasser | 5–8 cm | Bodenbewohner · versteckt sich nachts |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Marbled hatchetfish<br>`carnegiella_strigata` | *Carnegiella strigata* | Süßwasser | 4–5 cm | Schwarmfisch · versteckt sich nachts |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Maroon clownfish<br>`premnas_biaculeatus` | *Premnas biaculeatus* | Meerwasser | 10–15 cm | Bleibt an Ort und Stelle · schwebt nachts im Wasser |
@@ -76,7 +76,7 @@ Die Integration lädt die Releases dieses Repositorys herunter und hält sie akt
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Pearl gourami<br>`trichopodus_leerii` | *Trichopodus leerii* | Süßwasser | 10–12 cm | Freiwasserschwimmer · versteckt sich nachts |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Picasso triggerfish<br>`rhinecanthus_aculeatus` | *Rhinecanthus aculeatus* | Meerwasser | 20–25 cm | Freiwasserschwimmer · versteckt sich nachts |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Pixy hawkfish<br>`cirrhitichthys_oxycephalus` | *Cirrhitichthys oxycephalus* | Meerwasser | 8–10 cm | Bodenbewohner · versteckt sich nachts |
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Powder blue tang<br>`acanthurus_leucosternon` | *Acanthurus leucosternon* | Meerwasser | 20–23 cm | Freiwasserschwimmer · versteckt sich nachts |
+| <img src="fish/acanthurus_leucosternon/thumb.webp" width="72" alt=""> | Powder blue tang<br>`acanthurus_leucosternon` | *Acanthurus leucosternon* | Meerwasser | 20–23 cm | Freiwasserschwimmer · versteckt sich nachts |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Purple firefish<br>`nemateleotris_decora` | *Nemateleotris decora* | Meerwasser | 8–10 cm | Bleibt an Ort und Stelle · schwebt nachts im Wasser |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Ram cichlid<br>`mikrogeophagus_ramirezi` | *Mikrogeophagus ramirezi* | Süßwasser | 5–7 cm | Bleibt an Ort und Stelle · schwebt nachts im Wasser |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Red lionfish<br>`pterois_volitans` | *Pterois volitans* | Meerwasser | 25–35 cm | Freiwasserschwimmer · versteckt sich nachts |
