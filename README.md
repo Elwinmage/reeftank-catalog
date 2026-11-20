@@ -135,35 +135,35 @@ Each fish is a sheet of frames (a WebP atlas) and a descriptor with its clips: *
 
 |  | Name | Scientific name | Water | Size | Zone |
 |---|---|---|---|---|---|
-|  | Amazon frogbit<br>`limnobium_laevigatum` | *Limnobium laevigatum* | Freshwater | 5–10 cm | Floating |
-|  | Amazon sword<br>`echinodorus_bleheri` | *Echinodorus bleheri* | Freshwater | 30–50 cm | Midground |
-|  | Ambulia<br>`limnophila_sessiliflora` | *Limnophila sessiliflora* | Freshwater | 20–40 cm | Background |
-|  | Anubias<br>`anubias_barteri` | *Anubias barteri* | Freshwater | 10–25 cm | Epiphyte |
-|  | Brazilian waterweed<br>`egeria_densa` | *Egeria densa* | Freshwater | 30–100 cm | Background |
-|  | Bucephalandra<br>`bucephalandra` | *Bucephalandra sp.* | Freshwater | 5–15 cm | Epiphyte |
-|  | Carolina fanwort<br>`cabomba_caroliniana` | *Cabomba caroliniana* | Freshwater | 30–60 cm | Background |
-|  | Caulerpa<br>`caulerpa_prolifera` | *Caulerpa prolifera* | Marine | 5–20 cm | Foreground |
-|  | Chaeto<br>`chaetomorpha_linum` | *Chaetomorpha linum* | Marine | 5–30 cm | Foreground |
-|  | Ciliated cryptocoryne<br>`cryptocoryne_ciliata` | *Cryptocoryne ciliata* | Brackish, Freshwater | 20–40 cm | Midground |
-|  | Creeping primrose willow<br>`ludwigia_repens` | *Ludwigia repens* | Freshwater | 20–40 cm | Midground |
-|  | Duckweed<br>`lemna_minor` | *Lemna minor* | Freshwater | 0.5–1 cm | Floating |
-|  | Dwarf baby tears<br>`hemianthus_callitrichoides` | *Hemianthus callitrichoides* | Freshwater | 2–5 cm | Foreground |
-|  | Dwarf cryptocoryne<br>`cryptocoryne_parva` | *Cryptocoryne parva* | Freshwater | 5–8 cm | Foreground |
-|  | Dwarf hairgrass<br>`eleocharis_parvula` | *Eleocharis parvula* | Freshwater | 5–10 cm | Foreground |
-|  | Dwarf sagittaria<br>`sagittaria_subulata` | *Sagittaria subulata* | Freshwater | 10–30 cm | Foreground |
-|  | Eelgrass<br>`vallisneria_spiralis` | *Vallisneria spiralis* | Freshwater, Brackish | 30–60 cm | Background |
-|  | Halimeda<br>`halimeda_opuntia` | *Halimeda opuntia* | Marine | 5–15 cm | Foreground |
-|  | Indian swampweed<br>`hygrophila_polysperma` | *Hygrophila polysperma* | Freshwater | 20–50 cm | Background |
-|  | Java fern<br>`microsorum_pteropus` | *Microsorum pteropus* | Freshwater | 20–30 cm | Epiphyte |
-|  | Java moss<br>`vesicularia_dubyana` | *Vesicularia dubyana* | Freshwater | 3–5 cm | Epiphyte |
-|  | Marimo moss ball<br>`aegagropila_linnaei` | *Aegagropila linnaei* | Freshwater | 3–10 cm | Foreground |
-|  | Mud mudwort<br>`glossostigma_elatinoides` | *Glossostigma elatinoides* | Freshwater | 2–5 cm | Foreground |
-|  | Red mangrove<br>`rhizophora_mangle` | *Rhizophora mangle* | Brackish, Marine | 30–100 cm | Midground |
-|  | Roundleaf toothcup<br>`rotala_rotundifolia` | *Rotala rotundifolia* | Freshwater | 20–50 cm | Background |
-|  | Staurogyne<br>`staurogyne_repens` | *Staurogyne repens* | Freshwater | 5–10 cm | Foreground |
-|  | Turtle grass<br>`thalassia_testudinum` | *Thalassia testudinum* | Marine | 10–30 cm | Foreground |
-|  | Water lettuce<br>`pistia_stratiotes` | *Pistia stratiotes* | Freshwater | 5–15 cm | Floating |
-|  | Wendt's cryptocoryne<br>`cryptocoryne_wendtii` | *Cryptocoryne wendtii* | Freshwater | 10–20 cm | Midground |
+| <img src="plants/limnobium_laevigatum/thumb.webp" width="160" alt=""> | Amazon frogbit<br>`limnobium_laevigatum` | *Limnobium laevigatum* | Freshwater | 5–10 cm | Floating |
+| <img src="plants/echinodorus_bleheri/thumb.webp" width="160" alt=""> | Amazon sword<br>`echinodorus_bleheri` | *Echinodorus bleheri* | Freshwater | 30–50 cm | Midground |
+| <img src="plants/limnophila_sessiliflora/thumb.webp" width="160" alt=""> | Ambulia<br>`limnophila_sessiliflora` | *Limnophila sessiliflora* | Freshwater | 20–40 cm | Background |
+| <img src="plants/anubias_barteri/thumb.webp" width="160" alt=""> | Anubias<br>`anubias_barteri` | *Anubias barteri* | Freshwater | 10–25 cm | Epiphyte |
+| <img src="plants/egeria_densa/thumb.webp" width="160" alt=""> | Brazilian waterweed<br>`egeria_densa` | *Egeria densa* | Freshwater | 30–100 cm | Background |
+| <img src="plants/bucephalandra/thumb.webp" width="160" alt=""> | Bucephalandra<br>`bucephalandra` | *Bucephalandra sp.* | Freshwater | 5–15 cm | Epiphyte |
+| <img src="plants/cabomba_caroliniana/thumb.webp" width="160" alt=""> | Carolina fanwort<br>`cabomba_caroliniana` | *Cabomba caroliniana* | Freshwater | 30–60 cm | Background |
+| <img src="plants/caulerpa_prolifera/thumb.webp" width="160" alt=""> | Caulerpa<br>`caulerpa_prolifera` | *Caulerpa prolifera* | Marine | 5–20 cm | Foreground |
+| <img src="plants/chaetomorpha_linum/thumb.webp" width="160" alt=""> | Chaeto<br>`chaetomorpha_linum` | *Chaetomorpha linum* | Marine | 5–30 cm | Foreground |
+| <img src="plants/cryptocoryne_ciliata/thumb.webp" width="160" alt=""> | Ciliated cryptocoryne<br>`cryptocoryne_ciliata` | *Cryptocoryne ciliata* | Brackish, Freshwater | 20–40 cm | Midground |
+| <img src="plants/ludwigia_repens/thumb.webp" width="160" alt=""> | Creeping primrose willow<br>`ludwigia_repens` | *Ludwigia repens* | Freshwater | 20–40 cm | Midground |
+| <img src="plants/lemna_minor/thumb.webp" width="160" alt=""> | Duckweed<br>`lemna_minor` | *Lemna minor* | Freshwater | 0.5–1 cm | Floating |
+| <img src="plants/hemianthus_callitrichoides/thumb.webp" width="160" alt=""> | Dwarf baby tears<br>`hemianthus_callitrichoides` | *Hemianthus callitrichoides* | Freshwater | 2–5 cm | Foreground |
+| <img src="plants/cryptocoryne_parva/thumb.webp" width="160" alt=""> | Dwarf cryptocoryne<br>`cryptocoryne_parva` | *Cryptocoryne parva* | Freshwater | 5–8 cm | Foreground |
+| <img src="plants/eleocharis_parvula/thumb.webp" width="160" alt=""> | Dwarf hairgrass<br>`eleocharis_parvula` | *Eleocharis parvula* | Freshwater | 5–10 cm | Foreground |
+| <img src="plants/sagittaria_subulata/thumb.webp" width="160" alt=""> | Dwarf sagittaria<br>`sagittaria_subulata` | *Sagittaria subulata* | Freshwater | 10–30 cm | Foreground |
+| <img src="plants/vallisneria_spiralis/thumb.webp" width="160" alt=""> | Eelgrass<br>`vallisneria_spiralis` | *Vallisneria spiralis* | Freshwater, Brackish | 30–60 cm | Background |
+| <img src="plants/halimeda_opuntia/thumb.webp" width="160" alt=""> | Halimeda<br>`halimeda_opuntia` | *Halimeda opuntia* | Marine | 5–15 cm | Foreground |
+| <img src="plants/hygrophila_polysperma/thumb.webp" width="160" alt=""> | Indian swampweed<br>`hygrophila_polysperma` | *Hygrophila polysperma* | Freshwater | 20–50 cm | Background |
+| <img src="plants/microsorum_pteropus/thumb.webp" width="160" alt=""> | Java fern<br>`microsorum_pteropus` | *Microsorum pteropus* | Freshwater | 20–30 cm | Epiphyte |
+| <img src="plants/vesicularia_dubyana/thumb.webp" width="160" alt=""> | Java moss<br>`vesicularia_dubyana` | *Vesicularia dubyana* | Freshwater | 3–5 cm | Epiphyte |
+| <img src="plants/aegagropila_linnaei/thumb.webp" width="160" alt=""> | Marimo moss ball<br>`aegagropila_linnaei` | *Aegagropila linnaei* | Freshwater | 3–10 cm | Foreground |
+| <img src="plants/glossostigma_elatinoides/thumb.webp" width="160" alt=""> | Mud mudwort<br>`glossostigma_elatinoides` | *Glossostigma elatinoides* | Freshwater | 2–5 cm | Foreground |
+| <img src="plants/rhizophora_mangle/thumb.webp" width="160" alt=""> | Red mangrove<br>`rhizophora_mangle` | *Rhizophora mangle* | Brackish, Marine | 30–100 cm | Midground |
+| <img src="plants/rotala_rotundifolia/thumb.webp" width="160" alt=""> | Roundleaf toothcup<br>`rotala_rotundifolia` | *Rotala rotundifolia* | Freshwater | 20–50 cm | Background |
+| <img src="plants/staurogyne_repens/thumb.webp" width="160" alt=""> | Staurogyne<br>`staurogyne_repens` | *Staurogyne repens* | Freshwater | 5–10 cm | Foreground |
+| <img src="plants/thalassia_testudinum/thumb.webp" width="160" alt=""> | Turtle grass<br>`thalassia_testudinum` | *Thalassia testudinum* | Marine | 10–30 cm | Foreground |
+| <img src="plants/pistia_stratiotes/thumb.webp" width="160" alt=""> | Water lettuce<br>`pistia_stratiotes` | *Pistia stratiotes* | Freshwater | 5–15 cm | Floating |
+| <img src="plants/cryptocoryne_wendtii/thumb.webp" width="160" alt=""> | Wendt's cryptocoryne<br>`cryptocoryne_wendtii` | *Cryptocoryne wendtii* | Freshwater | 10–20 cm | Midground |
 
 ## Invertebrates (32)
 
@@ -683,7 +683,7 @@ pre-commit run --all-files  # the same, on demand
 
 ### Photos of a whole lot of species
 
-`scripts/generate_stills.py` makes the degraded atlas of every fish that has no
+`scripts/generate_stills.py` makes the degraded atlas of every fish (or plant, with `--section plants`) that has no
 atlas yet: it asks the photo from Google Gemini (the prompt of
 `prompts/still_photo.json`), checks it, builds the atlas and writes it, with its
 `source`, next to the `species.json`. A species that already has an atlas is left
@@ -695,6 +695,20 @@ python scripts/generate_stills.py --dry-run               # the species it would
 python scripts/generate_stills.py --limit 5 --photos photos/
 python scripts/generate_stills.py                         # the whole lot
 python scripts/generate_stills.py --from-photos photos/   # the atlases of the photos kept, no request
+```
+
+The plants have their own prompt, `prompts/still_plant.json`, worded after the
+growth form of the plant (stem plant, rosette, ribbon leaves, carpet, floating,
+epiphyte, moss, alga…): one clean specimen on a flat magenta (green for the red
+plants) background, no roots, no pot. `scripts/plant_prompt.py <id>` prints the
+prompt of a plant. The picture becomes a one-frame atlas (clip `still`) standing on
+the bottom of a square frame, with its thumbnail, shown in the README tables:
+
+```bash
+python scripts/generate_stills.py --section plants --dry-run
+python scripts/generate_stills.py --section plants --photos photos-plants/
+python scripts/generate_stills.py --section plants --only egeria_densa --redo
+python scripts/plant_atlas.py photo.png plants/egeria_densa --source ai-generated --model gemini-2.5-flash-image
 ```
 
 `--photos` keeps the photos received (the refused ones too) to look at them; they

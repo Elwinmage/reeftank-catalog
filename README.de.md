@@ -135,35 +135,35 @@ Jeder Fisch besteht aus einem Bilderbogen (ein WebP-Atlas) und einem Deskriptor 
 
 |  | Name | Wissenschaftlicher Name | Wasser | Größe | Zone |
 |---|---|---|---|---|---|
-|  | Amazon frogbit<br>`limnobium_laevigatum` | *Limnobium laevigatum* | Süßwasser | 5–10 cm | Schwimmpflanze |
-|  | Amazon sword<br>`echinodorus_bleheri` | *Echinodorus bleheri* | Süßwasser | 30–50 cm | Mittelgrund |
-|  | Ambulia<br>`limnophila_sessiliflora` | *Limnophila sessiliflora* | Süßwasser | 20–40 cm | Hintergrund |
-|  | Anubias<br>`anubias_barteri` | *Anubias barteri* | Süßwasser | 10–25 cm | Aufsitzerpflanze |
-|  | Brazilian waterweed<br>`egeria_densa` | *Egeria densa* | Süßwasser | 30–100 cm | Hintergrund |
-|  | Bucephalandra<br>`bucephalandra` | *Bucephalandra sp.* | Süßwasser | 5–15 cm | Aufsitzerpflanze |
-|  | Carolina fanwort<br>`cabomba_caroliniana` | *Cabomba caroliniana* | Süßwasser | 30–60 cm | Hintergrund |
-|  | Caulerpa<br>`caulerpa_prolifera` | *Caulerpa prolifera* | Meerwasser | 5–20 cm | Vordergrund |
-|  | Chaeto<br>`chaetomorpha_linum` | *Chaetomorpha linum* | Meerwasser | 5–30 cm | Vordergrund |
-|  | Ciliated cryptocoryne<br>`cryptocoryne_ciliata` | *Cryptocoryne ciliata* | Brackwasser, Süßwasser | 20–40 cm | Mittelgrund |
-|  | Creeping primrose willow<br>`ludwigia_repens` | *Ludwigia repens* | Süßwasser | 20–40 cm | Mittelgrund |
-|  | Duckweed<br>`lemna_minor` | *Lemna minor* | Süßwasser | 0.5–1 cm | Schwimmpflanze |
-|  | Dwarf baby tears<br>`hemianthus_callitrichoides` | *Hemianthus callitrichoides* | Süßwasser | 2–5 cm | Vordergrund |
-|  | Dwarf cryptocoryne<br>`cryptocoryne_parva` | *Cryptocoryne parva* | Süßwasser | 5–8 cm | Vordergrund |
-|  | Dwarf hairgrass<br>`eleocharis_parvula` | *Eleocharis parvula* | Süßwasser | 5–10 cm | Vordergrund |
-|  | Dwarf sagittaria<br>`sagittaria_subulata` | *Sagittaria subulata* | Süßwasser | 10–30 cm | Vordergrund |
-|  | Eelgrass<br>`vallisneria_spiralis` | *Vallisneria spiralis* | Süßwasser, Brackwasser | 30–60 cm | Hintergrund |
-|  | Halimeda<br>`halimeda_opuntia` | *Halimeda opuntia* | Meerwasser | 5–15 cm | Vordergrund |
-|  | Indian swampweed<br>`hygrophila_polysperma` | *Hygrophila polysperma* | Süßwasser | 20–50 cm | Hintergrund |
-|  | Java fern<br>`microsorum_pteropus` | *Microsorum pteropus* | Süßwasser | 20–30 cm | Aufsitzerpflanze |
-|  | Java moss<br>`vesicularia_dubyana` | *Vesicularia dubyana* | Süßwasser | 3–5 cm | Aufsitzerpflanze |
-|  | Marimo moss ball<br>`aegagropila_linnaei` | *Aegagropila linnaei* | Süßwasser | 3–10 cm | Vordergrund |
-|  | Mud mudwort<br>`glossostigma_elatinoides` | *Glossostigma elatinoides* | Süßwasser | 2–5 cm | Vordergrund |
-|  | Red mangrove<br>`rhizophora_mangle` | *Rhizophora mangle* | Brackwasser, Meerwasser | 30–100 cm | Mittelgrund |
-|  | Roundleaf toothcup<br>`rotala_rotundifolia` | *Rotala rotundifolia* | Süßwasser | 20–50 cm | Hintergrund |
-|  | Staurogyne<br>`staurogyne_repens` | *Staurogyne repens* | Süßwasser | 5–10 cm | Vordergrund |
-|  | Turtle grass<br>`thalassia_testudinum` | *Thalassia testudinum* | Meerwasser | 10–30 cm | Vordergrund |
-|  | Water lettuce<br>`pistia_stratiotes` | *Pistia stratiotes* | Süßwasser | 5–15 cm | Schwimmpflanze |
-|  | Wendt's cryptocoryne<br>`cryptocoryne_wendtii` | *Cryptocoryne wendtii* | Süßwasser | 10–20 cm | Mittelgrund |
+| <img src="plants/limnobium_laevigatum/thumb.webp" width="160" alt=""> | Amazon frogbit<br>`limnobium_laevigatum` | *Limnobium laevigatum* | Süßwasser | 5–10 cm | Schwimmpflanze |
+| <img src="plants/echinodorus_bleheri/thumb.webp" width="160" alt=""> | Amazon sword<br>`echinodorus_bleheri` | *Echinodorus bleheri* | Süßwasser | 30–50 cm | Mittelgrund |
+| <img src="plants/limnophila_sessiliflora/thumb.webp" width="160" alt=""> | Ambulia<br>`limnophila_sessiliflora` | *Limnophila sessiliflora* | Süßwasser | 20–40 cm | Hintergrund |
+| <img src="plants/anubias_barteri/thumb.webp" width="160" alt=""> | Anubias<br>`anubias_barteri` | *Anubias barteri* | Süßwasser | 10–25 cm | Aufsitzerpflanze |
+| <img src="plants/egeria_densa/thumb.webp" width="160" alt=""> | Brazilian waterweed<br>`egeria_densa` | *Egeria densa* | Süßwasser | 30–100 cm | Hintergrund |
+| <img src="plants/bucephalandra/thumb.webp" width="160" alt=""> | Bucephalandra<br>`bucephalandra` | *Bucephalandra sp.* | Süßwasser | 5–15 cm | Aufsitzerpflanze |
+| <img src="plants/cabomba_caroliniana/thumb.webp" width="160" alt=""> | Carolina fanwort<br>`cabomba_caroliniana` | *Cabomba caroliniana* | Süßwasser | 30–60 cm | Hintergrund |
+| <img src="plants/caulerpa_prolifera/thumb.webp" width="160" alt=""> | Caulerpa<br>`caulerpa_prolifera` | *Caulerpa prolifera* | Meerwasser | 5–20 cm | Vordergrund |
+| <img src="plants/chaetomorpha_linum/thumb.webp" width="160" alt=""> | Chaeto<br>`chaetomorpha_linum` | *Chaetomorpha linum* | Meerwasser | 5–30 cm | Vordergrund |
+| <img src="plants/cryptocoryne_ciliata/thumb.webp" width="160" alt=""> | Ciliated cryptocoryne<br>`cryptocoryne_ciliata` | *Cryptocoryne ciliata* | Brackwasser, Süßwasser | 20–40 cm | Mittelgrund |
+| <img src="plants/ludwigia_repens/thumb.webp" width="160" alt=""> | Creeping primrose willow<br>`ludwigia_repens` | *Ludwigia repens* | Süßwasser | 20–40 cm | Mittelgrund |
+| <img src="plants/lemna_minor/thumb.webp" width="160" alt=""> | Duckweed<br>`lemna_minor` | *Lemna minor* | Süßwasser | 0.5–1 cm | Schwimmpflanze |
+| <img src="plants/hemianthus_callitrichoides/thumb.webp" width="160" alt=""> | Dwarf baby tears<br>`hemianthus_callitrichoides` | *Hemianthus callitrichoides* | Süßwasser | 2–5 cm | Vordergrund |
+| <img src="plants/cryptocoryne_parva/thumb.webp" width="160" alt=""> | Dwarf cryptocoryne<br>`cryptocoryne_parva` | *Cryptocoryne parva* | Süßwasser | 5–8 cm | Vordergrund |
+| <img src="plants/eleocharis_parvula/thumb.webp" width="160" alt=""> | Dwarf hairgrass<br>`eleocharis_parvula` | *Eleocharis parvula* | Süßwasser | 5–10 cm | Vordergrund |
+| <img src="plants/sagittaria_subulata/thumb.webp" width="160" alt=""> | Dwarf sagittaria<br>`sagittaria_subulata` | *Sagittaria subulata* | Süßwasser | 10–30 cm | Vordergrund |
+| <img src="plants/vallisneria_spiralis/thumb.webp" width="160" alt=""> | Eelgrass<br>`vallisneria_spiralis` | *Vallisneria spiralis* | Süßwasser, Brackwasser | 30–60 cm | Hintergrund |
+| <img src="plants/halimeda_opuntia/thumb.webp" width="160" alt=""> | Halimeda<br>`halimeda_opuntia` | *Halimeda opuntia* | Meerwasser | 5–15 cm | Vordergrund |
+| <img src="plants/hygrophila_polysperma/thumb.webp" width="160" alt=""> | Indian swampweed<br>`hygrophila_polysperma` | *Hygrophila polysperma* | Süßwasser | 20–50 cm | Hintergrund |
+| <img src="plants/microsorum_pteropus/thumb.webp" width="160" alt=""> | Java fern<br>`microsorum_pteropus` | *Microsorum pteropus* | Süßwasser | 20–30 cm | Aufsitzerpflanze |
+| <img src="plants/vesicularia_dubyana/thumb.webp" width="160" alt=""> | Java moss<br>`vesicularia_dubyana` | *Vesicularia dubyana* | Süßwasser | 3–5 cm | Aufsitzerpflanze |
+| <img src="plants/aegagropila_linnaei/thumb.webp" width="160" alt=""> | Marimo moss ball<br>`aegagropila_linnaei` | *Aegagropila linnaei* | Süßwasser | 3–10 cm | Vordergrund |
+| <img src="plants/glossostigma_elatinoides/thumb.webp" width="160" alt=""> | Mud mudwort<br>`glossostigma_elatinoides` | *Glossostigma elatinoides* | Süßwasser | 2–5 cm | Vordergrund |
+| <img src="plants/rhizophora_mangle/thumb.webp" width="160" alt=""> | Red mangrove<br>`rhizophora_mangle` | *Rhizophora mangle* | Brackwasser, Meerwasser | 30–100 cm | Mittelgrund |
+| <img src="plants/rotala_rotundifolia/thumb.webp" width="160" alt=""> | Roundleaf toothcup<br>`rotala_rotundifolia` | *Rotala rotundifolia* | Süßwasser | 20–50 cm | Hintergrund |
+| <img src="plants/staurogyne_repens/thumb.webp" width="160" alt=""> | Staurogyne<br>`staurogyne_repens` | *Staurogyne repens* | Süßwasser | 5–10 cm | Vordergrund |
+| <img src="plants/thalassia_testudinum/thumb.webp" width="160" alt=""> | Turtle grass<br>`thalassia_testudinum` | *Thalassia testudinum* | Meerwasser | 10–30 cm | Vordergrund |
+| <img src="plants/pistia_stratiotes/thumb.webp" width="160" alt=""> | Water lettuce<br>`pistia_stratiotes` | *Pistia stratiotes* | Süßwasser | 5–15 cm | Schwimmpflanze |
+| <img src="plants/cryptocoryne_wendtii/thumb.webp" width="160" alt=""> | Wendt's cryptocoryne<br>`cryptocoryne_wendtii` | *Cryptocoryne wendtii* | Süßwasser | 10–20 cm | Mittelgrund |
 
 ## Wirbellose (32)
 

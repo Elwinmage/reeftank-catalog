@@ -135,35 +135,35 @@ Każda ryba to arkusz klatek (atlas WebP) i deskryptor z jej klipami: *pływanie
 
 |  | Nazwa | Nazwa naukowa | Woda | Rozmiar | Strefa |
 |---|---|---|---|---|---|
-|  | Amazon frogbit<br>`limnobium_laevigatum` | *Limnobium laevigatum* | Słodkowodna | 5–10 cm | Pływająca |
-|  | Amazon sword<br>`echinodorus_bleheri` | *Echinodorus bleheri* | Słodkowodna | 30–50 cm | Plan środkowy |
-|  | Ambulia<br>`limnophila_sessiliflora` | *Limnophila sessiliflora* | Słodkowodna | 20–40 cm | Tło |
-|  | Anubias<br>`anubias_barteri` | *Anubias barteri* | Słodkowodna | 10–25 cm | Epifit |
-|  | Brazilian waterweed<br>`egeria_densa` | *Egeria densa* | Słodkowodna | 30–100 cm | Tło |
-|  | Bucephalandra<br>`bucephalandra` | *Bucephalandra sp.* | Słodkowodna | 5–15 cm | Epifit |
-|  | Carolina fanwort<br>`cabomba_caroliniana` | *Cabomba caroliniana* | Słodkowodna | 30–60 cm | Tło |
-|  | Caulerpa<br>`caulerpa_prolifera` | *Caulerpa prolifera* | Morska | 5–20 cm | Pierwszy plan |
-|  | Chaeto<br>`chaetomorpha_linum` | *Chaetomorpha linum* | Morska | 5–30 cm | Pierwszy plan |
-|  | Ciliated cryptocoryne<br>`cryptocoryne_ciliata` | *Cryptocoryne ciliata* | Słonawa, Słodkowodna | 20–40 cm | Plan środkowy |
-|  | Creeping primrose willow<br>`ludwigia_repens` | *Ludwigia repens* | Słodkowodna | 20–40 cm | Plan środkowy |
-|  | Duckweed<br>`lemna_minor` | *Lemna minor* | Słodkowodna | 0.5–1 cm | Pływająca |
-|  | Dwarf baby tears<br>`hemianthus_callitrichoides` | *Hemianthus callitrichoides* | Słodkowodna | 2–5 cm | Pierwszy plan |
-|  | Dwarf cryptocoryne<br>`cryptocoryne_parva` | *Cryptocoryne parva* | Słodkowodna | 5–8 cm | Pierwszy plan |
-|  | Dwarf hairgrass<br>`eleocharis_parvula` | *Eleocharis parvula* | Słodkowodna | 5–10 cm | Pierwszy plan |
-|  | Dwarf sagittaria<br>`sagittaria_subulata` | *Sagittaria subulata* | Słodkowodna | 10–30 cm | Pierwszy plan |
-|  | Eelgrass<br>`vallisneria_spiralis` | *Vallisneria spiralis* | Słodkowodna, Słonawa | 30–60 cm | Tło |
-|  | Halimeda<br>`halimeda_opuntia` | *Halimeda opuntia* | Morska | 5–15 cm | Pierwszy plan |
-|  | Indian swampweed<br>`hygrophila_polysperma` | *Hygrophila polysperma* | Słodkowodna | 20–50 cm | Tło |
-|  | Java fern<br>`microsorum_pteropus` | *Microsorum pteropus* | Słodkowodna | 20–30 cm | Epifit |
-|  | Java moss<br>`vesicularia_dubyana` | *Vesicularia dubyana* | Słodkowodna | 3–5 cm | Epifit |
-|  | Marimo moss ball<br>`aegagropila_linnaei` | *Aegagropila linnaei* | Słodkowodna | 3–10 cm | Pierwszy plan |
-|  | Mud mudwort<br>`glossostigma_elatinoides` | *Glossostigma elatinoides* | Słodkowodna | 2–5 cm | Pierwszy plan |
-|  | Red mangrove<br>`rhizophora_mangle` | *Rhizophora mangle* | Słonawa, Morska | 30–100 cm | Plan środkowy |
-|  | Roundleaf toothcup<br>`rotala_rotundifolia` | *Rotala rotundifolia* | Słodkowodna | 20–50 cm | Tło |
-|  | Staurogyne<br>`staurogyne_repens` | *Staurogyne repens* | Słodkowodna | 5–10 cm | Pierwszy plan |
-|  | Turtle grass<br>`thalassia_testudinum` | *Thalassia testudinum* | Morska | 10–30 cm | Pierwszy plan |
-|  | Water lettuce<br>`pistia_stratiotes` | *Pistia stratiotes* | Słodkowodna | 5–15 cm | Pływająca |
-|  | Wendt's cryptocoryne<br>`cryptocoryne_wendtii` | *Cryptocoryne wendtii* | Słodkowodna | 10–20 cm | Plan środkowy |
+| <img src="plants/limnobium_laevigatum/thumb.webp" width="160" alt=""> | Amazon frogbit<br>`limnobium_laevigatum` | *Limnobium laevigatum* | Słodkowodna | 5–10 cm | Pływająca |
+| <img src="plants/echinodorus_bleheri/thumb.webp" width="160" alt=""> | Amazon sword<br>`echinodorus_bleheri` | *Echinodorus bleheri* | Słodkowodna | 30–50 cm | Plan środkowy |
+| <img src="plants/limnophila_sessiliflora/thumb.webp" width="160" alt=""> | Ambulia<br>`limnophila_sessiliflora` | *Limnophila sessiliflora* | Słodkowodna | 20–40 cm | Tło |
+| <img src="plants/anubias_barteri/thumb.webp" width="160" alt=""> | Anubias<br>`anubias_barteri` | *Anubias barteri* | Słodkowodna | 10–25 cm | Epifit |
+| <img src="plants/egeria_densa/thumb.webp" width="160" alt=""> | Brazilian waterweed<br>`egeria_densa` | *Egeria densa* | Słodkowodna | 30–100 cm | Tło |
+| <img src="plants/bucephalandra/thumb.webp" width="160" alt=""> | Bucephalandra<br>`bucephalandra` | *Bucephalandra sp.* | Słodkowodna | 5–15 cm | Epifit |
+| <img src="plants/cabomba_caroliniana/thumb.webp" width="160" alt=""> | Carolina fanwort<br>`cabomba_caroliniana` | *Cabomba caroliniana* | Słodkowodna | 30–60 cm | Tło |
+| <img src="plants/caulerpa_prolifera/thumb.webp" width="160" alt=""> | Caulerpa<br>`caulerpa_prolifera` | *Caulerpa prolifera* | Morska | 5–20 cm | Pierwszy plan |
+| <img src="plants/chaetomorpha_linum/thumb.webp" width="160" alt=""> | Chaeto<br>`chaetomorpha_linum` | *Chaetomorpha linum* | Morska | 5–30 cm | Pierwszy plan |
+| <img src="plants/cryptocoryne_ciliata/thumb.webp" width="160" alt=""> | Ciliated cryptocoryne<br>`cryptocoryne_ciliata` | *Cryptocoryne ciliata* | Słonawa, Słodkowodna | 20–40 cm | Plan środkowy |
+| <img src="plants/ludwigia_repens/thumb.webp" width="160" alt=""> | Creeping primrose willow<br>`ludwigia_repens` | *Ludwigia repens* | Słodkowodna | 20–40 cm | Plan środkowy |
+| <img src="plants/lemna_minor/thumb.webp" width="160" alt=""> | Duckweed<br>`lemna_minor` | *Lemna minor* | Słodkowodna | 0.5–1 cm | Pływająca |
+| <img src="plants/hemianthus_callitrichoides/thumb.webp" width="160" alt=""> | Dwarf baby tears<br>`hemianthus_callitrichoides` | *Hemianthus callitrichoides* | Słodkowodna | 2–5 cm | Pierwszy plan |
+| <img src="plants/cryptocoryne_parva/thumb.webp" width="160" alt=""> | Dwarf cryptocoryne<br>`cryptocoryne_parva` | *Cryptocoryne parva* | Słodkowodna | 5–8 cm | Pierwszy plan |
+| <img src="plants/eleocharis_parvula/thumb.webp" width="160" alt=""> | Dwarf hairgrass<br>`eleocharis_parvula` | *Eleocharis parvula* | Słodkowodna | 5–10 cm | Pierwszy plan |
+| <img src="plants/sagittaria_subulata/thumb.webp" width="160" alt=""> | Dwarf sagittaria<br>`sagittaria_subulata` | *Sagittaria subulata* | Słodkowodna | 10–30 cm | Pierwszy plan |
+| <img src="plants/vallisneria_spiralis/thumb.webp" width="160" alt=""> | Eelgrass<br>`vallisneria_spiralis` | *Vallisneria spiralis* | Słodkowodna, Słonawa | 30–60 cm | Tło |
+| <img src="plants/halimeda_opuntia/thumb.webp" width="160" alt=""> | Halimeda<br>`halimeda_opuntia` | *Halimeda opuntia* | Morska | 5–15 cm | Pierwszy plan |
+| <img src="plants/hygrophila_polysperma/thumb.webp" width="160" alt=""> | Indian swampweed<br>`hygrophila_polysperma` | *Hygrophila polysperma* | Słodkowodna | 20–50 cm | Tło |
+| <img src="plants/microsorum_pteropus/thumb.webp" width="160" alt=""> | Java fern<br>`microsorum_pteropus` | *Microsorum pteropus* | Słodkowodna | 20–30 cm | Epifit |
+| <img src="plants/vesicularia_dubyana/thumb.webp" width="160" alt=""> | Java moss<br>`vesicularia_dubyana` | *Vesicularia dubyana* | Słodkowodna | 3–5 cm | Epifit |
+| <img src="plants/aegagropila_linnaei/thumb.webp" width="160" alt=""> | Marimo moss ball<br>`aegagropila_linnaei` | *Aegagropila linnaei* | Słodkowodna | 3–10 cm | Pierwszy plan |
+| <img src="plants/glossostigma_elatinoides/thumb.webp" width="160" alt=""> | Mud mudwort<br>`glossostigma_elatinoides` | *Glossostigma elatinoides* | Słodkowodna | 2–5 cm | Pierwszy plan |
+| <img src="plants/rhizophora_mangle/thumb.webp" width="160" alt=""> | Red mangrove<br>`rhizophora_mangle` | *Rhizophora mangle* | Słonawa, Morska | 30–100 cm | Plan środkowy |
+| <img src="plants/rotala_rotundifolia/thumb.webp" width="160" alt=""> | Roundleaf toothcup<br>`rotala_rotundifolia` | *Rotala rotundifolia* | Słodkowodna | 20–50 cm | Tło |
+| <img src="plants/staurogyne_repens/thumb.webp" width="160" alt=""> | Staurogyne<br>`staurogyne_repens` | *Staurogyne repens* | Słodkowodna | 5–10 cm | Pierwszy plan |
+| <img src="plants/thalassia_testudinum/thumb.webp" width="160" alt=""> | Turtle grass<br>`thalassia_testudinum` | *Thalassia testudinum* | Morska | 10–30 cm | Pierwszy plan |
+| <img src="plants/pistia_stratiotes/thumb.webp" width="160" alt=""> | Water lettuce<br>`pistia_stratiotes` | *Pistia stratiotes* | Słodkowodna | 5–15 cm | Pływająca |
+| <img src="plants/cryptocoryne_wendtii/thumb.webp" width="160" alt=""> | Wendt's cryptocoryne<br>`cryptocoryne_wendtii` | *Cryptocoryne wendtii* | Słodkowodna | 10–20 cm | Plan środkowy |
 
 ## Bezkręgowce (32)
 

@@ -135,35 +135,35 @@ Chaque poisson est une planche d'images (un atlas WebP) et un descripteur avec s
 
 |  | Nom | Nom scientifique | Eau | Taille | Zone |
 |---|---|---|---|---|---|
-|  | Anubias<br>`anubias_barteri` | *Anubias barteri* | Eau douce | 10–25 cm | Épiphyte |
-|  | Bucéphalandra<br>`bucephalandra` | *Bucephalandra sp.* | Eau douce | 5–15 cm | Épiphyte |
-|  | Cabomba<br>`cabomba_caroliniana` | *Cabomba caroliniana* | Eau douce | 30–60 cm | Arrière-plan |
-|  | Caulerpa<br>`caulerpa_prolifera` | *Caulerpa prolifera* | Marine | 5–20 cm | Premier plan |
-|  | Chaetomorpha<br>`chaetomorpha_linum` | *Chaetomorpha linum* | Marine | 5–30 cm | Premier plan |
-|  | Cryptocoryne ciliata<br>`cryptocoryne_ciliata` | *Cryptocoryne ciliata* | Saumâtre, Eau douce | 20–40 cm | Plan intermédiaire |
-|  | Cryptocoryne parva<br>`cryptocoryne_parva` | *Cryptocoryne parva* | Eau douce | 5–8 cm | Premier plan |
-|  | Cryptocoryne wendtii<br>`cryptocoryne_wendtii` | *Cryptocoryne wendtii* | Eau douce | 10–20 cm | Plan intermédiaire |
-|  | Echinodorus<br>`echinodorus_bleheri` | *Echinodorus bleheri* | Eau douce | 30–50 cm | Plan intermédiaire |
-|  | Eleocharis<br>`eleocharis_parvula` | *Eleocharis parvula* | Eau douce | 5–10 cm | Premier plan |
-|  | Fougère de Java<br>`microsorum_pteropus` | *Microsorum pteropus* | Eau douce | 20–30 cm | Épiphyte |
-|  | Glossostigma<br>`glossostigma_elatinoides` | *Glossostigma elatinoides* | Eau douce | 2–5 cm | Premier plan |
-|  | Halimeda<br>`halimeda_opuntia` | *Halimeda opuntia* | Marine | 5–15 cm | Premier plan |
-|  | Hemianthus<br>`hemianthus_callitrichoides` | *Hemianthus callitrichoides* | Eau douce | 2–5 cm | Premier plan |
-|  | Herbier de tortue<br>`thalassia_testudinum` | *Thalassia testudinum* | Marine | 10–30 cm | Premier plan |
-|  | Hygrophila<br>`hygrophila_polysperma` | *Hygrophila polysperma* | Eau douce | 20–50 cm | Arrière-plan |
-|  | Laitue d'eau<br>`pistia_stratiotes` | *Pistia stratiotes* | Eau douce | 5–15 cm | Flottante |
-|  | Lentille d'eau<br>`lemna_minor` | *Lemna minor* | Eau douce | 0.5–1 cm | Flottante |
-|  | Limnobium<br>`limnobium_laevigatum` | *Limnobium laevigatum* | Eau douce | 5–10 cm | Flottante |
-|  | Limnophila<br>`limnophila_sessiliflora` | *Limnophila sessiliflora* | Eau douce | 20–40 cm | Arrière-plan |
-|  | Ludwigia<br>`ludwigia_repens` | *Ludwigia repens* | Eau douce | 20–40 cm | Plan intermédiaire |
-|  | Marimo<br>`aegagropila_linnaei` | *Aegagropila linnaei* | Eau douce | 3–10 cm | Premier plan |
-|  | Mousse de Java<br>`vesicularia_dubyana` | *Vesicularia dubyana* | Eau douce | 3–5 cm | Épiphyte |
-|  | Palétuvier rouge<br>`rhizophora_mangle` | *Rhizophora mangle* | Saumâtre, Marine | 30–100 cm | Plan intermédiaire |
-|  | Rotala<br>`rotala_rotundifolia` | *Rotala rotundifolia* | Eau douce | 20–50 cm | Arrière-plan |
-|  | Sagittaire naine<br>`sagittaria_subulata` | *Sagittaria subulata* | Eau douce | 10–30 cm | Premier plan |
-|  | Staurogyne<br>`staurogyne_repens` | *Staurogyne repens* | Eau douce | 5–10 cm | Premier plan |
-|  | Vallisnérie<br>`vallisneria_spiralis` | *Vallisneria spiralis* | Eau douce, Saumâtre | 30–60 cm | Arrière-plan |
-|  | Élodée dense<br>`egeria_densa` | *Egeria densa* | Eau douce | 30–100 cm | Arrière-plan |
+| <img src="plants/anubias_barteri/thumb.webp" width="160" alt=""> | Anubias<br>`anubias_barteri` | *Anubias barteri* | Eau douce | 10–25 cm | Épiphyte |
+| <img src="plants/bucephalandra/thumb.webp" width="160" alt=""> | Bucéphalandra<br>`bucephalandra` | *Bucephalandra sp.* | Eau douce | 5–15 cm | Épiphyte |
+| <img src="plants/cabomba_caroliniana/thumb.webp" width="160" alt=""> | Cabomba<br>`cabomba_caroliniana` | *Cabomba caroliniana* | Eau douce | 30–60 cm | Arrière-plan |
+| <img src="plants/caulerpa_prolifera/thumb.webp" width="160" alt=""> | Caulerpa<br>`caulerpa_prolifera` | *Caulerpa prolifera* | Marine | 5–20 cm | Premier plan |
+| <img src="plants/chaetomorpha_linum/thumb.webp" width="160" alt=""> | Chaetomorpha<br>`chaetomorpha_linum` | *Chaetomorpha linum* | Marine | 5–30 cm | Premier plan |
+| <img src="plants/cryptocoryne_ciliata/thumb.webp" width="160" alt=""> | Cryptocoryne ciliata<br>`cryptocoryne_ciliata` | *Cryptocoryne ciliata* | Saumâtre, Eau douce | 20–40 cm | Plan intermédiaire |
+| <img src="plants/cryptocoryne_parva/thumb.webp" width="160" alt=""> | Cryptocoryne parva<br>`cryptocoryne_parva` | *Cryptocoryne parva* | Eau douce | 5–8 cm | Premier plan |
+| <img src="plants/cryptocoryne_wendtii/thumb.webp" width="160" alt=""> | Cryptocoryne wendtii<br>`cryptocoryne_wendtii` | *Cryptocoryne wendtii* | Eau douce | 10–20 cm | Plan intermédiaire |
+| <img src="plants/echinodorus_bleheri/thumb.webp" width="160" alt=""> | Echinodorus<br>`echinodorus_bleheri` | *Echinodorus bleheri* | Eau douce | 30–50 cm | Plan intermédiaire |
+| <img src="plants/eleocharis_parvula/thumb.webp" width="160" alt=""> | Eleocharis<br>`eleocharis_parvula` | *Eleocharis parvula* | Eau douce | 5–10 cm | Premier plan |
+| <img src="plants/microsorum_pteropus/thumb.webp" width="160" alt=""> | Fougère de Java<br>`microsorum_pteropus` | *Microsorum pteropus* | Eau douce | 20–30 cm | Épiphyte |
+| <img src="plants/glossostigma_elatinoides/thumb.webp" width="160" alt=""> | Glossostigma<br>`glossostigma_elatinoides` | *Glossostigma elatinoides* | Eau douce | 2–5 cm | Premier plan |
+| <img src="plants/halimeda_opuntia/thumb.webp" width="160" alt=""> | Halimeda<br>`halimeda_opuntia` | *Halimeda opuntia* | Marine | 5–15 cm | Premier plan |
+| <img src="plants/hemianthus_callitrichoides/thumb.webp" width="160" alt=""> | Hemianthus<br>`hemianthus_callitrichoides` | *Hemianthus callitrichoides* | Eau douce | 2–5 cm | Premier plan |
+| <img src="plants/thalassia_testudinum/thumb.webp" width="160" alt=""> | Herbier de tortue<br>`thalassia_testudinum` | *Thalassia testudinum* | Marine | 10–30 cm | Premier plan |
+| <img src="plants/hygrophila_polysperma/thumb.webp" width="160" alt=""> | Hygrophila<br>`hygrophila_polysperma` | *Hygrophila polysperma* | Eau douce | 20–50 cm | Arrière-plan |
+| <img src="plants/pistia_stratiotes/thumb.webp" width="160" alt=""> | Laitue d'eau<br>`pistia_stratiotes` | *Pistia stratiotes* | Eau douce | 5–15 cm | Flottante |
+| <img src="plants/lemna_minor/thumb.webp" width="160" alt=""> | Lentille d'eau<br>`lemna_minor` | *Lemna minor* | Eau douce | 0.5–1 cm | Flottante |
+| <img src="plants/limnobium_laevigatum/thumb.webp" width="160" alt=""> | Limnobium<br>`limnobium_laevigatum` | *Limnobium laevigatum* | Eau douce | 5–10 cm | Flottante |
+| <img src="plants/limnophila_sessiliflora/thumb.webp" width="160" alt=""> | Limnophila<br>`limnophila_sessiliflora` | *Limnophila sessiliflora* | Eau douce | 20–40 cm | Arrière-plan |
+| <img src="plants/ludwigia_repens/thumb.webp" width="160" alt=""> | Ludwigia<br>`ludwigia_repens` | *Ludwigia repens* | Eau douce | 20–40 cm | Plan intermédiaire |
+| <img src="plants/aegagropila_linnaei/thumb.webp" width="160" alt=""> | Marimo<br>`aegagropila_linnaei` | *Aegagropila linnaei* | Eau douce | 3–10 cm | Premier plan |
+| <img src="plants/vesicularia_dubyana/thumb.webp" width="160" alt=""> | Mousse de Java<br>`vesicularia_dubyana` | *Vesicularia dubyana* | Eau douce | 3–5 cm | Épiphyte |
+| <img src="plants/rhizophora_mangle/thumb.webp" width="160" alt=""> | Palétuvier rouge<br>`rhizophora_mangle` | *Rhizophora mangle* | Saumâtre, Marine | 30–100 cm | Plan intermédiaire |
+| <img src="plants/rotala_rotundifolia/thumb.webp" width="160" alt=""> | Rotala<br>`rotala_rotundifolia` | *Rotala rotundifolia* | Eau douce | 20–50 cm | Arrière-plan |
+| <img src="plants/sagittaria_subulata/thumb.webp" width="160" alt=""> | Sagittaire naine<br>`sagittaria_subulata` | *Sagittaria subulata* | Eau douce | 10–30 cm | Premier plan |
+| <img src="plants/staurogyne_repens/thumb.webp" width="160" alt=""> | Staurogyne<br>`staurogyne_repens` | *Staurogyne repens* | Eau douce | 5–10 cm | Premier plan |
+| <img src="plants/vallisneria_spiralis/thumb.webp" width="160" alt=""> | Vallisnérie<br>`vallisneria_spiralis` | *Vallisneria spiralis* | Eau douce, Saumâtre | 30–60 cm | Arrière-plan |
+| <img src="plants/egeria_densa/thumb.webp" width="160" alt=""> | Élodée dense<br>`egeria_densa` | *Egeria densa* | Eau douce | 30–100 cm | Arrière-plan |
 
 ## Invertébrés (32)
 

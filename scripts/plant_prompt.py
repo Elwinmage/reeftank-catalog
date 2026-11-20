@@ -37,6 +37,12 @@ def plant_key(plant_id: str, prompt: dict[str, Any]) -> str:
     return prompt["species_keys"].get(plant_id, prompt["default_key"])
 
 
+def plant_aspect(plant_id: str, desc: dict[str, Any], prompt: dict[str, Any]) -> str:
+    """The picture ratio to ask for: tall for a stem or a ribbon, else square."""
+    form = plant_form(plant_id, desc, prompt)
+    return str(prompt["aspects"].get(form, prompt["default_aspect"]))
+
+
 def render_prompt(
     plant_id: str,
     desc: dict[str, Any],

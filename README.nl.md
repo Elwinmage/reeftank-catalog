@@ -135,35 +135,35 @@ Elke vis is een blad met beelden (een WebP-atlas) en een descriptor met zijn cli
 
 |  | Naam | Wetenschappelijke naam | Water | Grootte | Zone |
 |---|---|---|---|---|---|
-|  | Amazon frogbit<br>`limnobium_laevigatum` | *Limnobium laevigatum* | Zoetwater | 5–10 cm | Drijvend |
-|  | Amazon sword<br>`echinodorus_bleheri` | *Echinodorus bleheri* | Zoetwater | 30–50 cm | Middengrond |
-|  | Ambulia<br>`limnophila_sessiliflora` | *Limnophila sessiliflora* | Zoetwater | 20–40 cm | Achtergrond |
-|  | Anubias<br>`anubias_barteri` | *Anubias barteri* | Zoetwater | 10–25 cm | Epifyt |
-|  | Brazilian waterweed<br>`egeria_densa` | *Egeria densa* | Zoetwater | 30–100 cm | Achtergrond |
-|  | Bucephalandra<br>`bucephalandra` | *Bucephalandra sp.* | Zoetwater | 5–15 cm | Epifyt |
-|  | Carolina fanwort<br>`cabomba_caroliniana` | *Cabomba caroliniana* | Zoetwater | 30–60 cm | Achtergrond |
-|  | Caulerpa<br>`caulerpa_prolifera` | *Caulerpa prolifera* | Zeewater | 5–20 cm | Voorgrond |
-|  | Chaeto<br>`chaetomorpha_linum` | *Chaetomorpha linum* | Zeewater | 5–30 cm | Voorgrond |
-|  | Ciliated cryptocoryne<br>`cryptocoryne_ciliata` | *Cryptocoryne ciliata* | Brakwater, Zoetwater | 20–40 cm | Middengrond |
-|  | Creeping primrose willow<br>`ludwigia_repens` | *Ludwigia repens* | Zoetwater | 20–40 cm | Middengrond |
-|  | Duckweed<br>`lemna_minor` | *Lemna minor* | Zoetwater | 0.5–1 cm | Drijvend |
-|  | Dwarf baby tears<br>`hemianthus_callitrichoides` | *Hemianthus callitrichoides* | Zoetwater | 2–5 cm | Voorgrond |
-|  | Dwarf cryptocoryne<br>`cryptocoryne_parva` | *Cryptocoryne parva* | Zoetwater | 5–8 cm | Voorgrond |
-|  | Dwarf hairgrass<br>`eleocharis_parvula` | *Eleocharis parvula* | Zoetwater | 5–10 cm | Voorgrond |
-|  | Dwarf sagittaria<br>`sagittaria_subulata` | *Sagittaria subulata* | Zoetwater | 10–30 cm | Voorgrond |
-|  | Eelgrass<br>`vallisneria_spiralis` | *Vallisneria spiralis* | Zoetwater, Brakwater | 30–60 cm | Achtergrond |
-|  | Halimeda<br>`halimeda_opuntia` | *Halimeda opuntia* | Zeewater | 5–15 cm | Voorgrond |
-|  | Indian swampweed<br>`hygrophila_polysperma` | *Hygrophila polysperma* | Zoetwater | 20–50 cm | Achtergrond |
-|  | Java fern<br>`microsorum_pteropus` | *Microsorum pteropus* | Zoetwater | 20–30 cm | Epifyt |
-|  | Java moss<br>`vesicularia_dubyana` | *Vesicularia dubyana* | Zoetwater | 3–5 cm | Epifyt |
-|  | Marimo moss ball<br>`aegagropila_linnaei` | *Aegagropila linnaei* | Zoetwater | 3–10 cm | Voorgrond |
-|  | Mud mudwort<br>`glossostigma_elatinoides` | *Glossostigma elatinoides* | Zoetwater | 2–5 cm | Voorgrond |
-|  | Red mangrove<br>`rhizophora_mangle` | *Rhizophora mangle* | Brakwater, Zeewater | 30–100 cm | Middengrond |
-|  | Roundleaf toothcup<br>`rotala_rotundifolia` | *Rotala rotundifolia* | Zoetwater | 20–50 cm | Achtergrond |
-|  | Staurogyne<br>`staurogyne_repens` | *Staurogyne repens* | Zoetwater | 5–10 cm | Voorgrond |
-|  | Turtle grass<br>`thalassia_testudinum` | *Thalassia testudinum* | Zeewater | 10–30 cm | Voorgrond |
-|  | Water lettuce<br>`pistia_stratiotes` | *Pistia stratiotes* | Zoetwater | 5–15 cm | Drijvend |
-|  | Wendt's cryptocoryne<br>`cryptocoryne_wendtii` | *Cryptocoryne wendtii* | Zoetwater | 10–20 cm | Middengrond |
+| <img src="plants/limnobium_laevigatum/thumb.webp" width="160" alt=""> | Amazon frogbit<br>`limnobium_laevigatum` | *Limnobium laevigatum* | Zoetwater | 5–10 cm | Drijvend |
+| <img src="plants/echinodorus_bleheri/thumb.webp" width="160" alt=""> | Amazon sword<br>`echinodorus_bleheri` | *Echinodorus bleheri* | Zoetwater | 30–50 cm | Middengrond |
+| <img src="plants/limnophila_sessiliflora/thumb.webp" width="160" alt=""> | Ambulia<br>`limnophila_sessiliflora` | *Limnophila sessiliflora* | Zoetwater | 20–40 cm | Achtergrond |
+| <img src="plants/anubias_barteri/thumb.webp" width="160" alt=""> | Anubias<br>`anubias_barteri` | *Anubias barteri* | Zoetwater | 10–25 cm | Epifyt |
+| <img src="plants/egeria_densa/thumb.webp" width="160" alt=""> | Brazilian waterweed<br>`egeria_densa` | *Egeria densa* | Zoetwater | 30–100 cm | Achtergrond |
+| <img src="plants/bucephalandra/thumb.webp" width="160" alt=""> | Bucephalandra<br>`bucephalandra` | *Bucephalandra sp.* | Zoetwater | 5–15 cm | Epifyt |
+| <img src="plants/cabomba_caroliniana/thumb.webp" width="160" alt=""> | Carolina fanwort<br>`cabomba_caroliniana` | *Cabomba caroliniana* | Zoetwater | 30–60 cm | Achtergrond |
+| <img src="plants/caulerpa_prolifera/thumb.webp" width="160" alt=""> | Caulerpa<br>`caulerpa_prolifera` | *Caulerpa prolifera* | Zeewater | 5–20 cm | Voorgrond |
+| <img src="plants/chaetomorpha_linum/thumb.webp" width="160" alt=""> | Chaeto<br>`chaetomorpha_linum` | *Chaetomorpha linum* | Zeewater | 5–30 cm | Voorgrond |
+| <img src="plants/cryptocoryne_ciliata/thumb.webp" width="160" alt=""> | Ciliated cryptocoryne<br>`cryptocoryne_ciliata` | *Cryptocoryne ciliata* | Brakwater, Zoetwater | 20–40 cm | Middengrond |
+| <img src="plants/ludwigia_repens/thumb.webp" width="160" alt=""> | Creeping primrose willow<br>`ludwigia_repens` | *Ludwigia repens* | Zoetwater | 20–40 cm | Middengrond |
+| <img src="plants/lemna_minor/thumb.webp" width="160" alt=""> | Duckweed<br>`lemna_minor` | *Lemna minor* | Zoetwater | 0.5–1 cm | Drijvend |
+| <img src="plants/hemianthus_callitrichoides/thumb.webp" width="160" alt=""> | Dwarf baby tears<br>`hemianthus_callitrichoides` | *Hemianthus callitrichoides* | Zoetwater | 2–5 cm | Voorgrond |
+| <img src="plants/cryptocoryne_parva/thumb.webp" width="160" alt=""> | Dwarf cryptocoryne<br>`cryptocoryne_parva` | *Cryptocoryne parva* | Zoetwater | 5–8 cm | Voorgrond |
+| <img src="plants/eleocharis_parvula/thumb.webp" width="160" alt=""> | Dwarf hairgrass<br>`eleocharis_parvula` | *Eleocharis parvula* | Zoetwater | 5–10 cm | Voorgrond |
+| <img src="plants/sagittaria_subulata/thumb.webp" width="160" alt=""> | Dwarf sagittaria<br>`sagittaria_subulata` | *Sagittaria subulata* | Zoetwater | 10–30 cm | Voorgrond |
+| <img src="plants/vallisneria_spiralis/thumb.webp" width="160" alt=""> | Eelgrass<br>`vallisneria_spiralis` | *Vallisneria spiralis* | Zoetwater, Brakwater | 30–60 cm | Achtergrond |
+| <img src="plants/halimeda_opuntia/thumb.webp" width="160" alt=""> | Halimeda<br>`halimeda_opuntia` | *Halimeda opuntia* | Zeewater | 5–15 cm | Voorgrond |
+| <img src="plants/hygrophila_polysperma/thumb.webp" width="160" alt=""> | Indian swampweed<br>`hygrophila_polysperma` | *Hygrophila polysperma* | Zoetwater | 20–50 cm | Achtergrond |
+| <img src="plants/microsorum_pteropus/thumb.webp" width="160" alt=""> | Java fern<br>`microsorum_pteropus` | *Microsorum pteropus* | Zoetwater | 20–30 cm | Epifyt |
+| <img src="plants/vesicularia_dubyana/thumb.webp" width="160" alt=""> | Java moss<br>`vesicularia_dubyana` | *Vesicularia dubyana* | Zoetwater | 3–5 cm | Epifyt |
+| <img src="plants/aegagropila_linnaei/thumb.webp" width="160" alt=""> | Marimo moss ball<br>`aegagropila_linnaei` | *Aegagropila linnaei* | Zoetwater | 3–10 cm | Voorgrond |
+| <img src="plants/glossostigma_elatinoides/thumb.webp" width="160" alt=""> | Mud mudwort<br>`glossostigma_elatinoides` | *Glossostigma elatinoides* | Zoetwater | 2–5 cm | Voorgrond |
+| <img src="plants/rhizophora_mangle/thumb.webp" width="160" alt=""> | Red mangrove<br>`rhizophora_mangle` | *Rhizophora mangle* | Brakwater, Zeewater | 30–100 cm | Middengrond |
+| <img src="plants/rotala_rotundifolia/thumb.webp" width="160" alt=""> | Roundleaf toothcup<br>`rotala_rotundifolia` | *Rotala rotundifolia* | Zoetwater | 20–50 cm | Achtergrond |
+| <img src="plants/staurogyne_repens/thumb.webp" width="160" alt=""> | Staurogyne<br>`staurogyne_repens` | *Staurogyne repens* | Zoetwater | 5–10 cm | Voorgrond |
+| <img src="plants/thalassia_testudinum/thumb.webp" width="160" alt=""> | Turtle grass<br>`thalassia_testudinum` | *Thalassia testudinum* | Zeewater | 10–30 cm | Voorgrond |
+| <img src="plants/pistia_stratiotes/thumb.webp" width="160" alt=""> | Water lettuce<br>`pistia_stratiotes` | *Pistia stratiotes* | Zoetwater | 5–15 cm | Drijvend |
+| <img src="plants/cryptocoryne_wendtii/thumb.webp" width="160" alt=""> | Wendt's cryptocoryne<br>`cryptocoryne_wendtii` | *Cryptocoryne wendtii* | Zoetwater | 10–20 cm | Middengrond |
 
 ## Ongewervelden (32)
 

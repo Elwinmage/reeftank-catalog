@@ -52,6 +52,7 @@ def make_root(tmp_path: Path, entries: dict[str, Any]) -> Path:
 
 def namespace(**changes: Any) -> argparse.Namespace:
     values: dict[str, Any] = {
+        "section": "fish",
         "model": "gemini-x",
         "only": None,
         "limit": None,
@@ -192,7 +193,7 @@ def test_a_species_gets_its_atlas(
     )
     prompts: list[str] = []
 
-    def fake(prompt: str, model: str, key: str) -> bytes:
+    def fake(prompt: str, model: str, key: str, aspect: str) -> bytes:
         prompts.append(prompt)
         return png()
 
@@ -227,7 +228,7 @@ def test_a_refused_photo_is_asked_again_on_the_other_background(
     )
     prompts: list[str] = []
 
-    def fake(prompt: str, model: str, key: str) -> bytes:
+    def fake(prompt: str, model: str, key: str, aspect: str) -> bytes:
         prompts.append(prompt)
         item = next(answers)
         if isinstance(item, Image.Image):
@@ -254,7 +255,7 @@ def test_failures_are_reported(
 ) -> None:
     root = make_root(tmp_path, {"a": {"kind": "fish"}, "b": {"kind": "fish"}})
 
-    def fake(prompt: str, model: str, key: str) -> bytes:
+    def fake(prompt: str, model: str, key: str, aspect: str) -> bytes:
         raise gen.GenerationError("HTTP 500")
 
     monkeypatch.setattr(gen, "generate", fake)
@@ -273,7 +274,7 @@ def test_the_run_stops_when_the_service_refuses(
     root = make_root(tmp_path, {"a": {"kind": "fish"}, "b": {"kind": "fish"}})
     calls = []
 
-    def fake(prompt: str, model: str, key: str) -> bytes:
+    def fake(prompt: str, model: str, key: str, aspect: str) -> bytes:
         calls.append(prompt)
         raise gen.GenerationError("HTTP 429 quota", fatal=True)
 
@@ -354,3 +355,103 @@ def test_atlases_from_the_photos_of_an_earlier_run(
         gen.main(["--root", str(root), "--from-photos", str(photos), "--only", "c"])
         == 0
     )
+
+
+# -- the plants ----------------------------------------------------------------------
+
+
+def plant_png(
+    key: tuple[int, int, int] = GREEN, size: tuple[int, int] = (600, 800)
+) -> bytes:
+    """A tall plant (a stem with leaves) on a flat background."""
+    image = Image.new("RGB", size, key)
+    draw = ImageDraw.Draw(image)
+    w, h = size
+    draw.rectangle((w / 2 - 8, h * 0.1, w / 2 + 8, h * 0.9), fill=(40, 120, 30))
+    draw.ellipse((w * 0.3, h * 0.15, w * 0.7, h * 0.35), fill=(60, 160, 40))
+    draw.ellipse((w * 0.3, h * 0.5, w * 0.7, h * 0.7), fill=(60, 160, 40))
+    out = io.BytesIO()
+    image.save(out, "PNG")
+    return out.getvalue()
+
+
+def make_plants(tmp_path: Path, entries: dict[str, Any]) -> Path:
+    for name, descriptor in entries.items():
+        folder = tmp_path / "plants" / name
+        folder.mkdir(parents=True)
+        (folder / "species.json").write_text(json.dumps(descriptor))
+    return tmp_path
+
+
+PLANTS = {
+    "egeria_densa": {
+        "kind": "plant",
+        "scientific": "Egeria densa",
+        "zone": "background",
+    },
+    "ludwigia_repens": {
+        "kind": "plant",
+        "scientific": "Ludwigia repens",
+        "zone": "midground",
+    },
+}
+
+
+def test_a_plant_gets_its_atlas_with_the_prompt_of_its_form(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, capsys: Any
+) -> None:
+    root = make_plants(tmp_path, PLANTS)
+    asked: list[tuple[str, str]] = []
+
+    def fake(prompt: str, model: str, key: str, aspect: str) -> bytes:
+        asked.append((prompt, aspect))
+        return plant_png(GREEN if "green" in prompt else MAGENTA)
+
+    monkeypatch.setattr(gen, "generate", fake)
+    monkeypatch.setenv(gen.KEY_ENV, "k")
+    assert gen.run(namespace(section="plants", photos=tmp_path / "photos"), root) == 0
+    assert "plants/egeria_densa: done" in capsys.readouterr().out
+    prompts = {p.split(",")[0]: (p, a) for p, a in asked}
+    egeria, aspect = prompts["Realistic photograph of Egeria densa"]
+    assert "stems" in egeria and "magenta" in egeria and aspect == "3:4"
+    ludwigia, _ = next(v for k, v in prompts.items() if "Ludwigia" in k)
+    assert "flat green #00FF00" in ludwigia  # a red plant starts on green
+    folder = root / "plants" / "egeria_densa"
+    data = json.loads((folder / "species.json").read_text())
+    assert data["degraded"] is True and data["kind"] == "plant"
+    assert data["scientific"] == "Egeria densa" and data["columns"] == 1
+    assert (folder / "egeria_densa.webp").exists() and (folder / "thumb.webp").exists()
+    assert (tmp_path / "photos" / "egeria_densa-1.png").exists()
+
+
+def test_a_refused_plant_is_asked_again_on_the_other_background_and_from_photos(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    root = make_plants(tmp_path, {"egeria_densa": PLANTS["egeria_densa"]})
+    answers = iter([plant_png(GREEN)])  # asked on green after the first failure
+    prompts: list[str] = []
+
+    def fake(prompt: str, model: str, key: str, aspect: str) -> bytes:
+        prompts.append(prompt)
+        return next(answers) if len(prompts) > 1 else b"not an image"
+
+    monkeypatch.setattr(gen, "generate", fake)
+    monkeypatch.setenv(gen.KEY_ENV, "k")
+    photos = tmp_path / "photos"
+    assert gen.run(namespace(section="plants", photos=photos), root) == 0
+    assert "flat green" in prompts[1] and (photos / "egeria_densa-2.png").exists()
+    # from the photos kept: the same entry again, with --redo (a degraded one)
+    monkeypatch.setattr(gen, "generate", lambda *_a: pytest.fail("a request was made"))
+    redo = namespace(section="plants", from_photos=photos, redo=True)
+    assert gen.run(redo, root) == 0
+
+
+def test_the_plant_commands_list_the_plants(tmp_path: Path, capsys: Any) -> None:
+    root = make_plants(tmp_path, PLANTS)
+    assert gen.main(["--root", str(root), "--section", "plants", "--dry-run"]) == 0
+    out = capsys.readouterr().out
+    assert "plants/egeria_densa: Egeria densa" in out and "2 species" in out
+    assert [f.name for f in gen.targets(root, [], False, "plants")] == [
+        "egeria_densa",
+        "ludwigia_repens",
+    ]

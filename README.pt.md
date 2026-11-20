@@ -135,35 +135,35 @@ Cada peixe é uma folha de imagens (um atlas WebP) e um descritor com os seus cl
 
 |  | Nome | Nome científico | Água | Tamanho | Zona |
 |---|---|---|---|---|---|
-|  | Amazon frogbit<br>`limnobium_laevigatum` | *Limnobium laevigatum* | Água doce | 5–10 cm | Flutuante |
-|  | Amazon sword<br>`echinodorus_bleheri` | *Echinodorus bleheri* | Água doce | 30–50 cm | Plano médio |
-|  | Ambulia<br>`limnophila_sessiliflora` | *Limnophila sessiliflora* | Água doce | 20–40 cm | Fundo |
-|  | Anubias<br>`anubias_barteri` | *Anubias barteri* | Água doce | 10–25 cm | Epífita |
-|  | Brazilian waterweed<br>`egeria_densa` | *Egeria densa* | Água doce | 30–100 cm | Fundo |
-|  | Bucephalandra<br>`bucephalandra` | *Bucephalandra sp.* | Água doce | 5–15 cm | Epífita |
-|  | Carolina fanwort<br>`cabomba_caroliniana` | *Cabomba caroliniana* | Água doce | 30–60 cm | Fundo |
-|  | Caulerpa<br>`caulerpa_prolifera` | *Caulerpa prolifera* | Marinho | 5–20 cm | Primeiro plano |
-|  | Chaeto<br>`chaetomorpha_linum` | *Chaetomorpha linum* | Marinho | 5–30 cm | Primeiro plano |
-|  | Ciliated cryptocoryne<br>`cryptocoryne_ciliata` | *Cryptocoryne ciliata* | Salobra, Água doce | 20–40 cm | Plano médio |
-|  | Creeping primrose willow<br>`ludwigia_repens` | *Ludwigia repens* | Água doce | 20–40 cm | Plano médio |
-|  | Duckweed<br>`lemna_minor` | *Lemna minor* | Água doce | 0.5–1 cm | Flutuante |
-|  | Dwarf baby tears<br>`hemianthus_callitrichoides` | *Hemianthus callitrichoides* | Água doce | 2–5 cm | Primeiro plano |
-|  | Dwarf cryptocoryne<br>`cryptocoryne_parva` | *Cryptocoryne parva* | Água doce | 5–8 cm | Primeiro plano |
-|  | Dwarf hairgrass<br>`eleocharis_parvula` | *Eleocharis parvula* | Água doce | 5–10 cm | Primeiro plano |
-|  | Dwarf sagittaria<br>`sagittaria_subulata` | *Sagittaria subulata* | Água doce | 10–30 cm | Primeiro plano |
-|  | Eelgrass<br>`vallisneria_spiralis` | *Vallisneria spiralis* | Água doce, Salobra | 30–60 cm | Fundo |
-|  | Halimeda<br>`halimeda_opuntia` | *Halimeda opuntia* | Marinho | 5–15 cm | Primeiro plano |
-|  | Indian swampweed<br>`hygrophila_polysperma` | *Hygrophila polysperma* | Água doce | 20–50 cm | Fundo |
-|  | Java fern<br>`microsorum_pteropus` | *Microsorum pteropus* | Água doce | 20–30 cm | Epífita |
-|  | Java moss<br>`vesicularia_dubyana` | *Vesicularia dubyana* | Água doce | 3–5 cm | Epífita |
-|  | Marimo moss ball<br>`aegagropila_linnaei` | *Aegagropila linnaei* | Água doce | 3–10 cm | Primeiro plano |
-|  | Mud mudwort<br>`glossostigma_elatinoides` | *Glossostigma elatinoides* | Água doce | 2–5 cm | Primeiro plano |
-|  | Red mangrove<br>`rhizophora_mangle` | *Rhizophora mangle* | Salobra, Marinho | 30–100 cm | Plano médio |
-|  | Roundleaf toothcup<br>`rotala_rotundifolia` | *Rotala rotundifolia* | Água doce | 20–50 cm | Fundo |
-|  | Staurogyne<br>`staurogyne_repens` | *Staurogyne repens* | Água doce | 5–10 cm | Primeiro plano |
-|  | Turtle grass<br>`thalassia_testudinum` | *Thalassia testudinum* | Marinho | 10–30 cm | Primeiro plano |
-|  | Water lettuce<br>`pistia_stratiotes` | *Pistia stratiotes* | Água doce | 5–15 cm | Flutuante |
-|  | Wendt's cryptocoryne<br>`cryptocoryne_wendtii` | *Cryptocoryne wendtii* | Água doce | 10–20 cm | Plano médio |
+| <img src="plants/limnobium_laevigatum/thumb.webp" width="160" alt=""> | Amazon frogbit<br>`limnobium_laevigatum` | *Limnobium laevigatum* | Água doce | 5–10 cm | Flutuante |
+| <img src="plants/echinodorus_bleheri/thumb.webp" width="160" alt=""> | Amazon sword<br>`echinodorus_bleheri` | *Echinodorus bleheri* | Água doce | 30–50 cm | Plano médio |
+| <img src="plants/limnophila_sessiliflora/thumb.webp" width="160" alt=""> | Ambulia<br>`limnophila_sessiliflora` | *Limnophila sessiliflora* | Água doce | 20–40 cm | Fundo |
+| <img src="plants/anubias_barteri/thumb.webp" width="160" alt=""> | Anubias<br>`anubias_barteri` | *Anubias barteri* | Água doce | 10–25 cm | Epífita |
+| <img src="plants/egeria_densa/thumb.webp" width="160" alt=""> | Brazilian waterweed<br>`egeria_densa` | *Egeria densa* | Água doce | 30–100 cm | Fundo |
+| <img src="plants/bucephalandra/thumb.webp" width="160" alt=""> | Bucephalandra<br>`bucephalandra` | *Bucephalandra sp.* | Água doce | 5–15 cm | Epífita |
+| <img src="plants/cabomba_caroliniana/thumb.webp" width="160" alt=""> | Carolina fanwort<br>`cabomba_caroliniana` | *Cabomba caroliniana* | Água doce | 30–60 cm | Fundo |
+| <img src="plants/caulerpa_prolifera/thumb.webp" width="160" alt=""> | Caulerpa<br>`caulerpa_prolifera` | *Caulerpa prolifera* | Marinho | 5–20 cm | Primeiro plano |
+| <img src="plants/chaetomorpha_linum/thumb.webp" width="160" alt=""> | Chaeto<br>`chaetomorpha_linum` | *Chaetomorpha linum* | Marinho | 5–30 cm | Primeiro plano |
+| <img src="plants/cryptocoryne_ciliata/thumb.webp" width="160" alt=""> | Ciliated cryptocoryne<br>`cryptocoryne_ciliata` | *Cryptocoryne ciliata* | Salobra, Água doce | 20–40 cm | Plano médio |
+| <img src="plants/ludwigia_repens/thumb.webp" width="160" alt=""> | Creeping primrose willow<br>`ludwigia_repens` | *Ludwigia repens* | Água doce | 20–40 cm | Plano médio |
+| <img src="plants/lemna_minor/thumb.webp" width="160" alt=""> | Duckweed<br>`lemna_minor` | *Lemna minor* | Água doce | 0.5–1 cm | Flutuante |
+| <img src="plants/hemianthus_callitrichoides/thumb.webp" width="160" alt=""> | Dwarf baby tears<br>`hemianthus_callitrichoides` | *Hemianthus callitrichoides* | Água doce | 2–5 cm | Primeiro plano |
+| <img src="plants/cryptocoryne_parva/thumb.webp" width="160" alt=""> | Dwarf cryptocoryne<br>`cryptocoryne_parva` | *Cryptocoryne parva* | Água doce | 5–8 cm | Primeiro plano |
+| <img src="plants/eleocharis_parvula/thumb.webp" width="160" alt=""> | Dwarf hairgrass<br>`eleocharis_parvula` | *Eleocharis parvula* | Água doce | 5–10 cm | Primeiro plano |
+| <img src="plants/sagittaria_subulata/thumb.webp" width="160" alt=""> | Dwarf sagittaria<br>`sagittaria_subulata` | *Sagittaria subulata* | Água doce | 10–30 cm | Primeiro plano |
+| <img src="plants/vallisneria_spiralis/thumb.webp" width="160" alt=""> | Eelgrass<br>`vallisneria_spiralis` | *Vallisneria spiralis* | Água doce, Salobra | 30–60 cm | Fundo |
+| <img src="plants/halimeda_opuntia/thumb.webp" width="160" alt=""> | Halimeda<br>`halimeda_opuntia` | *Halimeda opuntia* | Marinho | 5–15 cm | Primeiro plano |
+| <img src="plants/hygrophila_polysperma/thumb.webp" width="160" alt=""> | Indian swampweed<br>`hygrophila_polysperma` | *Hygrophila polysperma* | Água doce | 20–50 cm | Fundo |
+| <img src="plants/microsorum_pteropus/thumb.webp" width="160" alt=""> | Java fern<br>`microsorum_pteropus` | *Microsorum pteropus* | Água doce | 20–30 cm | Epífita |
+| <img src="plants/vesicularia_dubyana/thumb.webp" width="160" alt=""> | Java moss<br>`vesicularia_dubyana` | *Vesicularia dubyana* | Água doce | 3–5 cm | Epífita |
+| <img src="plants/aegagropila_linnaei/thumb.webp" width="160" alt=""> | Marimo moss ball<br>`aegagropila_linnaei` | *Aegagropila linnaei* | Água doce | 3–10 cm | Primeiro plano |
+| <img src="plants/glossostigma_elatinoides/thumb.webp" width="160" alt=""> | Mud mudwort<br>`glossostigma_elatinoides` | *Glossostigma elatinoides* | Água doce | 2–5 cm | Primeiro plano |
+| <img src="plants/rhizophora_mangle/thumb.webp" width="160" alt=""> | Red mangrove<br>`rhizophora_mangle` | *Rhizophora mangle* | Salobra, Marinho | 30–100 cm | Plano médio |
+| <img src="plants/rotala_rotundifolia/thumb.webp" width="160" alt=""> | Roundleaf toothcup<br>`rotala_rotundifolia` | *Rotala rotundifolia* | Água doce | 20–50 cm | Fundo |
+| <img src="plants/staurogyne_repens/thumb.webp" width="160" alt=""> | Staurogyne<br>`staurogyne_repens` | *Staurogyne repens* | Água doce | 5–10 cm | Primeiro plano |
+| <img src="plants/thalassia_testudinum/thumb.webp" width="160" alt=""> | Turtle grass<br>`thalassia_testudinum` | *Thalassia testudinum* | Marinho | 10–30 cm | Primeiro plano |
+| <img src="plants/pistia_stratiotes/thumb.webp" width="160" alt=""> | Water lettuce<br>`pistia_stratiotes` | *Pistia stratiotes* | Água doce | 5–15 cm | Flutuante |
+| <img src="plants/cryptocoryne_wendtii/thumb.webp" width="160" alt=""> | Wendt's cryptocoryne<br>`cryptocoryne_wendtii` | *Cryptocoryne wendtii* | Água doce | 10–20 cm | Plano médio |
 
 ## Invertebrados (32)
 

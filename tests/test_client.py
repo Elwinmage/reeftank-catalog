@@ -139,6 +139,8 @@ def test_a_wrong_kind_is_refused() -> None:
 
 def test_a_draft_may_have_no_picture() -> None:
     data = example("plant")
+    for key in rules.PICTURE_KEYS:
+        data.pop(key, None)
     assert not any(key in data for key in rules.PICTURE_KEYS)
     assert report("plants", "x", data).errors == []
 

@@ -9,6 +9,20 @@
     "green": "red, pink or purple plants: a magenta background would eat them"
   },
   "template": "Realistic photograph of [SPECIE], [FORM] Clean cut specimen: no roots, no soil, no substrate, no pot, no rockwork, no driftwood, no cable tie, no other plant, no animal. Natural shape and colours of the species, healthy and saturated, fine detail on the leaf edges and veins, whole specimen visible with all its leaves and tips, nothing cropped. On a [KEY] background (the colour code only tells which colour the background is: never write it, nor any other text, on the image), perfectly flat uniform background without gradient or vignette, no floor line, no shadow, no reflection. Neutral white studio lighting, soft and even, no [KEY_NAME] tint or spill on the edges of the leaves, sharp edges so that the background can be keyed out cleanly. Highest resolution, the specimen fills about 80% of the image height, clean image: no text, no watermark, no mark in the corners.",
+  "default_aspect": "1:1",
+  "aspects": {
+    "stem": "3:4",
+    "ribbon": "3:4",
+    "mangrove": "3:4",
+    "rosette": "1:1",
+    "carpet": "1:1",
+    "floating": "1:1",
+    "duckweed": "1:1",
+    "epiphyte": "1:1",
+    "moss": "1:1",
+    "alga": "3:4",
+    "ball": "1:1"
+  },
   "forms": {
     "stem": "a bunch of 5 to 7 stems with their whole foliage, cut cleanly just below the lowest leaves, standing upright, seen from the side at eye level.",
     "rosette": "one plant seen from the side at eye level: a rosette of leaves rising from a short crown, the crown trimmed flat just under the leaf bases.",

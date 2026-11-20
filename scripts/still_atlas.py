@@ -67,16 +67,9 @@ def source_info(args: argparse.Namespace) -> dict[str, str]:
     return {k: v for k, v in info.items() if v}
 
 
-def write_atlas(
-    photo: Image.Image,
-    folder: Path,
-    source: dict[str, str],
-    length: int,
-    key: str | None,
-) -> dict[str, Any]:
-    """Write the atlas, the thumbnail and the descriptor of an entry."""
+def write_still(still: Any, folder: Path) -> dict[str, Any]:
+    """Write the files and the descriptor of a still (see `build_still`)."""
     folder.mkdir(parents=True, exist_ok=True)
-    still = build_still(photo, folder.name, source, length, key)
     for name, blob in still.files.items():
         (folder / name).write_bytes(blob)
     file = folder / "species.json"
@@ -91,6 +84,17 @@ def write_atlas(
         json.dumps(descriptor, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
     )
     return descriptor
+
+
+def write_atlas(
+    photo: Image.Image,
+    folder: Path,
+    source: dict[str, str],
+    length: int,
+    key: str | None,
+) -> dict[str, Any]:
+    """Write the atlas, the thumbnail and the descriptor of an entry."""
+    return write_still(build_still(photo, folder.name, source, length, key), folder)
 
 
 def has_real_animation(folder: Path) -> bool:

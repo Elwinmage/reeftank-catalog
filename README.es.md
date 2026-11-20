@@ -135,35 +135,35 @@ Cada pez es una hoja de imágenes (un atlas WebP) y un descriptor con sus clips:
 
 |  | Nombre | Nombre científico | Agua | Tamaño | Zona |
 |---|---|---|---|---|---|
-|  | Amazon frogbit<br>`limnobium_laevigatum` | *Limnobium laevigatum* | Agua dulce | 5–10 cm | Flotante |
-|  | Amazon sword<br>`echinodorus_bleheri` | *Echinodorus bleheri* | Agua dulce | 30–50 cm | Plano medio |
-|  | Ambulia<br>`limnophila_sessiliflora` | *Limnophila sessiliflora* | Agua dulce | 20–40 cm | Fondo |
-|  | Anubias<br>`anubias_barteri` | *Anubias barteri* | Agua dulce | 10–25 cm | Epífita |
-|  | Brazilian waterweed<br>`egeria_densa` | *Egeria densa* | Agua dulce | 30–100 cm | Fondo |
-|  | Bucephalandra<br>`bucephalandra` | *Bucephalandra sp.* | Agua dulce | 5–15 cm | Epífita |
-|  | Carolina fanwort<br>`cabomba_caroliniana` | *Cabomba caroliniana* | Agua dulce | 30–60 cm | Fondo |
-|  | Caulerpa<br>`caulerpa_prolifera` | *Caulerpa prolifera* | Marino | 5–20 cm | Primer plano |
-|  | Chaeto<br>`chaetomorpha_linum` | *Chaetomorpha linum* | Marino | 5–30 cm | Primer plano |
-|  | Ciliated cryptocoryne<br>`cryptocoryne_ciliata` | *Cryptocoryne ciliata* | Salobre, Agua dulce | 20–40 cm | Plano medio |
-|  | Creeping primrose willow<br>`ludwigia_repens` | *Ludwigia repens* | Agua dulce | 20–40 cm | Plano medio |
-|  | Duckweed<br>`lemna_minor` | *Lemna minor* | Agua dulce | 0.5–1 cm | Flotante |
-|  | Dwarf baby tears<br>`hemianthus_callitrichoides` | *Hemianthus callitrichoides* | Agua dulce | 2–5 cm | Primer plano |
-|  | Dwarf cryptocoryne<br>`cryptocoryne_parva` | *Cryptocoryne parva* | Agua dulce | 5–8 cm | Primer plano |
-|  | Dwarf hairgrass<br>`eleocharis_parvula` | *Eleocharis parvula* | Agua dulce | 5–10 cm | Primer plano |
-|  | Dwarf sagittaria<br>`sagittaria_subulata` | *Sagittaria subulata* | Agua dulce | 10–30 cm | Primer plano |
-|  | Eelgrass<br>`vallisneria_spiralis` | *Vallisneria spiralis* | Agua dulce, Salobre | 30–60 cm | Fondo |
-|  | Halimeda<br>`halimeda_opuntia` | *Halimeda opuntia* | Marino | 5–15 cm | Primer plano |
-|  | Indian swampweed<br>`hygrophila_polysperma` | *Hygrophila polysperma* | Agua dulce | 20–50 cm | Fondo |
-|  | Java fern<br>`microsorum_pteropus` | *Microsorum pteropus* | Agua dulce | 20–30 cm | Epífita |
-|  | Java moss<br>`vesicularia_dubyana` | *Vesicularia dubyana* | Agua dulce | 3–5 cm | Epífita |
-|  | Marimo moss ball<br>`aegagropila_linnaei` | *Aegagropila linnaei* | Agua dulce | 3–10 cm | Primer plano |
-|  | Mud mudwort<br>`glossostigma_elatinoides` | *Glossostigma elatinoides* | Agua dulce | 2–5 cm | Primer plano |
-|  | Red mangrove<br>`rhizophora_mangle` | *Rhizophora mangle* | Salobre, Marino | 30–100 cm | Plano medio |
-|  | Roundleaf toothcup<br>`rotala_rotundifolia` | *Rotala rotundifolia* | Agua dulce | 20–50 cm | Fondo |
-|  | Staurogyne<br>`staurogyne_repens` | *Staurogyne repens* | Agua dulce | 5–10 cm | Primer plano |
-|  | Turtle grass<br>`thalassia_testudinum` | *Thalassia testudinum* | Marino | 10–30 cm | Primer plano |
-|  | Water lettuce<br>`pistia_stratiotes` | *Pistia stratiotes* | Agua dulce | 5–15 cm | Flotante |
-|  | Wendt's cryptocoryne<br>`cryptocoryne_wendtii` | *Cryptocoryne wendtii* | Agua dulce | 10–20 cm | Plano medio |
+| <img src="plants/limnobium_laevigatum/thumb.webp" width="160" alt=""> | Amazon frogbit<br>`limnobium_laevigatum` | *Limnobium laevigatum* | Agua dulce | 5–10 cm | Flotante |
+| <img src="plants/echinodorus_bleheri/thumb.webp" width="160" alt=""> | Amazon sword<br>`echinodorus_bleheri` | *Echinodorus bleheri* | Agua dulce | 30–50 cm | Plano medio |
+| <img src="plants/limnophila_sessiliflora/thumb.webp" width="160" alt=""> | Ambulia<br>`limnophila_sessiliflora` | *Limnophila sessiliflora* | Agua dulce | 20–40 cm | Fondo |
+| <img src="plants/anubias_barteri/thumb.webp" width="160" alt=""> | Anubias<br>`anubias_barteri` | *Anubias barteri* | Agua dulce | 10–25 cm | Epífita |
+| <img src="plants/egeria_densa/thumb.webp" width="160" alt=""> | Brazilian waterweed<br>`egeria_densa` | *Egeria densa* | Agua dulce | 30–100 cm | Fondo |
+| <img src="plants/bucephalandra/thumb.webp" width="160" alt=""> | Bucephalandra<br>`bucephalandra` | *Bucephalandra sp.* | Agua dulce | 5–15 cm | Epífita |
+| <img src="plants/cabomba_caroliniana/thumb.webp" width="160" alt=""> | Carolina fanwort<br>`cabomba_caroliniana` | *Cabomba caroliniana* | Agua dulce | 30–60 cm | Fondo |
+| <img src="plants/caulerpa_prolifera/thumb.webp" width="160" alt=""> | Caulerpa<br>`caulerpa_prolifera` | *Caulerpa prolifera* | Marino | 5–20 cm | Primer plano |
+| <img src="plants/chaetomorpha_linum/thumb.webp" width="160" alt=""> | Chaeto<br>`chaetomorpha_linum` | *Chaetomorpha linum* | Marino | 5–30 cm | Primer plano |
+| <img src="plants/cryptocoryne_ciliata/thumb.webp" width="160" alt=""> | Ciliated cryptocoryne<br>`cryptocoryne_ciliata` | *Cryptocoryne ciliata* | Salobre, Agua dulce | 20–40 cm | Plano medio |
+| <img src="plants/ludwigia_repens/thumb.webp" width="160" alt=""> | Creeping primrose willow<br>`ludwigia_repens` | *Ludwigia repens* | Agua dulce | 20–40 cm | Plano medio |
+| <img src="plants/lemna_minor/thumb.webp" width="160" alt=""> | Duckweed<br>`lemna_minor` | *Lemna minor* | Agua dulce | 0.5–1 cm | Flotante |
+| <img src="plants/hemianthus_callitrichoides/thumb.webp" width="160" alt=""> | Dwarf baby tears<br>`hemianthus_callitrichoides` | *Hemianthus callitrichoides* | Agua dulce | 2–5 cm | Primer plano |
+| <img src="plants/cryptocoryne_parva/thumb.webp" width="160" alt=""> | Dwarf cryptocoryne<br>`cryptocoryne_parva` | *Cryptocoryne parva* | Agua dulce | 5–8 cm | Primer plano |
+| <img src="plants/eleocharis_parvula/thumb.webp" width="160" alt=""> | Dwarf hairgrass<br>`eleocharis_parvula` | *Eleocharis parvula* | Agua dulce | 5–10 cm | Primer plano |
+| <img src="plants/sagittaria_subulata/thumb.webp" width="160" alt=""> | Dwarf sagittaria<br>`sagittaria_subulata` | *Sagittaria subulata* | Agua dulce | 10–30 cm | Primer plano |
+| <img src="plants/vallisneria_spiralis/thumb.webp" width="160" alt=""> | Eelgrass<br>`vallisneria_spiralis` | *Vallisneria spiralis* | Agua dulce, Salobre | 30–60 cm | Fondo |
+| <img src="plants/halimeda_opuntia/thumb.webp" width="160" alt=""> | Halimeda<br>`halimeda_opuntia` | *Halimeda opuntia* | Marino | 5–15 cm | Primer plano |
+| <img src="plants/hygrophila_polysperma/thumb.webp" width="160" alt=""> | Indian swampweed<br>`hygrophila_polysperma` | *Hygrophila polysperma* | Agua dulce | 20–50 cm | Fondo |
+| <img src="plants/microsorum_pteropus/thumb.webp" width="160" alt=""> | Java fern<br>`microsorum_pteropus` | *Microsorum pteropus* | Agua dulce | 20–30 cm | Epífita |
+| <img src="plants/vesicularia_dubyana/thumb.webp" width="160" alt=""> | Java moss<br>`vesicularia_dubyana` | *Vesicularia dubyana* | Agua dulce | 3–5 cm | Epífita |
+| <img src="plants/aegagropila_linnaei/thumb.webp" width="160" alt=""> | Marimo moss ball<br>`aegagropila_linnaei` | *Aegagropila linnaei* | Agua dulce | 3–10 cm | Primer plano |
+| <img src="plants/glossostigma_elatinoides/thumb.webp" width="160" alt=""> | Mud mudwort<br>`glossostigma_elatinoides` | *Glossostigma elatinoides* | Agua dulce | 2–5 cm | Primer plano |
+| <img src="plants/rhizophora_mangle/thumb.webp" width="160" alt=""> | Red mangrove<br>`rhizophora_mangle` | *Rhizophora mangle* | Salobre, Marino | 30–100 cm | Plano medio |
+| <img src="plants/rotala_rotundifolia/thumb.webp" width="160" alt=""> | Roundleaf toothcup<br>`rotala_rotundifolia` | *Rotala rotundifolia* | Agua dulce | 20–50 cm | Fondo |
+| <img src="plants/staurogyne_repens/thumb.webp" width="160" alt=""> | Staurogyne<br>`staurogyne_repens` | *Staurogyne repens* | Agua dulce | 5–10 cm | Primer plano |
+| <img src="plants/thalassia_testudinum/thumb.webp" width="160" alt=""> | Turtle grass<br>`thalassia_testudinum` | *Thalassia testudinum* | Marino | 10–30 cm | Primer plano |
+| <img src="plants/pistia_stratiotes/thumb.webp" width="160" alt=""> | Water lettuce<br>`pistia_stratiotes` | *Pistia stratiotes* | Agua dulce | 5–15 cm | Flotante |
+| <img src="plants/cryptocoryne_wendtii/thumb.webp" width="160" alt=""> | Wendt's cryptocoryne<br>`cryptocoryne_wendtii` | *Cryptocoryne wendtii* | Agua dulce | 10–20 cm | Plano medio |
 
 ## Invertebrados (32)
 

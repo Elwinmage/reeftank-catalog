@@ -1,5 +1,28 @@
 {
   "kind": "plant",
+  "frame": [
+    320,
+    320
+  ],
+  "columns": 1,
+  "clips": {
+    "still": {
+      "from": 0,
+      "to": 0,
+      "fps": 1,
+      "loop": false
+    }
+  },
+  "atlas": {
+    "1x": "limnophila_sessiliflora.webp"
+  },
+  "thumbnail": "thumb.webp",
+  "degraded": true,
+  "source": {
+    "type": "ai-generated",
+    "model": "gemini-2.5-flash-image",
+    "date": "2026-11-20"
+  },
   "names": {
     "en": "Ambulia",
     "fr": "Limnophila",

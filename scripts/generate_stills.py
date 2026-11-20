@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Make the degraded atlas of every fish without animation, photos from Gemini.
+"""Make the degraded atlas of every fish or plant without one, photos from Gemini.
 
-For each species of `fish/` that has no atlas yet, the photo is asked from a
-Google Gemini image model (the prompt of `prompts/still_photo.json`), checked
-like any photo (`still_atlas.py`), and its degraded atlas is written next to the
-descriptor, with `source` saying which model made it. A species that already has
+For each species of `fish/` (or of `plants/` with `--section plants`) that has no
+atlas yet, the photo is asked from a Google Gemini image model (the prompt of
+`prompts/still_photo.json`, or of `prompts/still_plant.json`, which words a plant
+after its growth form), checked like any photo (`still_atlas.py`,
+`plant_atlas.py`), and its degraded atlas is written next to the descriptor, with
+`source` saying which model made it. A species that already has
 an atlas is left alone: the script can be stopped and started again, it goes on
 with the species still lacking one. An animation made from videos is never
 replaced.
@@ -14,10 +16,13 @@ replaced.
     python scripts/generate_stills.py --limit 5 --photos photos/
     python scripts/generate_stills.py                      # the whole lot
     python scripts/generate_stills.py --only betta_splendens --redo
+    python scripts/generate_stills.py --section plants --photos photos-plants/
+    python scripts/generate_stills.py --section plants --only egeria_densa --redo
     python scripts/generate_stills.py --from-photos photos/    # no request at all
 
 A photo that fails the checks is asked again (up to `--attempts`, alternating the
-magenta and the green background: a pink fish is lost on magenta). `--photos`
+magenta and the green background: a pink fish is lost on magenta; a red plant
+starts on green). `--photos`
 keeps every photo received (the refused ones too) to look at them; they are not
 part of the catalog. `--from-photos` builds the atlases from the photos kept by an
 earlier run (`photos/<id>-<n>.png`, the refused ones too, checked again): no key
@@ -31,6 +36,7 @@ from __future__ import annotations
 import argparse
 import base64
 import binascii
+import functools
 import io
 import json
 import os
@@ -46,6 +52,8 @@ from typing import Any
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import plant_prompt
+from plant_atlas import check_plant_photo, write_plant_atlas
 from still_atlas import check_photo, is_real_animation, render_prompt, write_atlas
 
 GEMINI_URL = (
@@ -58,7 +66,8 @@ BACKGROUNDS = ("magenta", "green")
 #: HTTP statuses after which no other request can work
 FATAL_STATUSES = frozenset({401, 403, 429})
 TIMEOUT = 120
-SECTION = "fish"
+SECTIONS = ("fish", "plants")
+FISH_ASPECT = "3:2"  # a fish is longer than high
 LENGTH = 192  # fish length in the atlas frame, px (see still_atlas.py)
 
 
@@ -99,8 +108,8 @@ def post(url: str, key: str, body: dict[str, Any]) -> dict[str, Any]:
     return payload
 
 
-def generate(prompt: str, model: str, key: str) -> bytes:
-    """The picture Gemini makes of a prompt (3:2, a fish is longer than high)."""
+def generate(prompt: str, model: str, key: str, aspect: str = FISH_ASPECT) -> bytes:
+    """The picture Gemini makes of a prompt (`aspect`: its ratio, 3:2 by default)."""
     payload = post(
         GEMINI_URL.format(model=model),
         key,
@@ -108,7 +117,7 @@ def generate(prompt: str, model: str, key: str) -> bytes:
             "contents": [{"parts": [{"text": prompt}]}],
             "generationConfig": {
                 "responseModalities": ["TEXT", "IMAGE"],
-                "imageConfig": {"aspectRatio": "3:2"},
+                "imageConfig": {"aspectRatio": aspect},
             },
         },
     )
@@ -135,10 +144,12 @@ def read_descriptor(folder: Path) -> dict[str, Any] | None:
     return data if isinstance(data, dict) else None
 
 
-def targets(root: Path, only: list[str], redo: bool) -> list[Path]:
+def targets(
+    root: Path, only: list[str], redo: bool, section: str = "fish"
+) -> list[Path]:
     """The entries to make an atlas for: without one, or degraded with `redo`."""
     found = []
-    for folder in sorted((root / SECTION).iterdir()):
+    for folder in sorted((root / section).iterdir()):
         descriptor = read_descriptor(folder)
         if descriptor is None or (only and folder.name not in only):
             continue
@@ -155,14 +166,46 @@ def species_name(folder: Path) -> str:
     return str(name) if name else folder.name.replace("_", " ").capitalize()
 
 
+@functools.cache
+def plant_spec() -> dict[str, Any]:
+    """The prompt of the plants (see `plant_prompt.py`)."""
+    return json.loads(plant_prompt.PROMPT_FILE.read_text(encoding="utf-8"))
+
+
+def backgrounds_for(folder: Path, section: str) -> list[str]:
+    """The backgrounds asked in turn: a red plant starts on green, the rest on magenta."""
+    first = BACKGROUNDS[0]
+    if section == "plants":
+        first = plant_prompt.plant_key(folder.name, plant_spec())
+    return [first, *(b for b in BACKGROUNDS if b != first)]
+
+
+def request_for(folder: Path, section: str, background: str) -> tuple[str, str]:
+    """The prompt of an entry on a background, and the ratio of the picture."""
+    if section == "plants":
+        spec, desc = plant_spec(), read_descriptor(folder) or {}
+        return (
+            plant_prompt.render_prompt(folder.name, desc, spec, background),
+            plant_prompt.plant_aspect(folder.name, desc, spec),
+        )
+    return render_prompt(species_name(folder), background), FISH_ASPECT
+
+
+def problems_of(photo: Image.Image, background: str, section: str) -> list[str]:
+    """Why a photo does not fit (empty when it does)."""
+    check = check_plant_photo if section == "plants" else check_photo
+    return check(photo, background)
+
+
 def make_atlas(folder: Path, args: argparse.Namespace, api_key: str) -> str | None:
     """Photo and atlas of an entry; None when done, else why it failed."""
-    name = species_name(folder)
     reason = "no attempt"
+    order = backgrounds_for(folder, args.section)
     for attempt in range(args.attempts):
-        background = args.background or BACKGROUNDS[attempt % len(BACKGROUNDS)]
+        background = args.background or order[attempt % len(order)]
+        prompt, aspect = request_for(folder, args.section, background)
         try:
-            blob = generate(render_prompt(name, background), args.model, api_key)
+            blob = generate(prompt, args.model, api_key, aspect)
         except GenerationError as err:
             if err.fatal:
                 raise
@@ -176,7 +219,7 @@ def make_atlas(folder: Path, args: argparse.Namespace, api_key: str) -> str | No
         except (OSError, ValueError):
             reason = "the picture is not an image"
             continue
-        problems = check_photo(photo, background)
+        problems = problems_of(photo, background, args.section)
         if args.photos:
             args.photos.mkdir(parents=True, exist_ok=True)
             suffix = "-refused" if problems else ""
@@ -198,7 +241,10 @@ def build(
         "model": args.model,
         "date": datetime.now(UTC).date().isoformat(),
     }
-    write_atlas(photo, folder, source, LENGTH, background)
+    if args.section == "plants":
+        write_plant_atlas(photo, folder, source, background)
+    else:
+        write_atlas(photo, folder, source, LENGTH, background)
 
 
 def saved_photos(directory: Path, name: str) -> list[tuple[int, Path]]:
@@ -227,10 +273,11 @@ def make_atlas_from_photos(
         except (OSError, ValueError):
             reason = f"{path.name} is not an image"
             continue
-        first = (number - 1) % len(BACKGROUNDS)
-        order = [BACKGROUNDS[first], BACKGROUNDS[1 - first]]
+        base = backgrounds_for(folder, args.section)
+        first = (number - 1) % len(base)
+        order = [base[first], base[1 - first]]
         for background in [args.background] if args.background else order:
-            problems = check_photo(photo, background)
+            problems = problems_of(photo, background, args.section)
             if not problems:
                 build(photo, folder, args, background)
                 return None
@@ -240,12 +287,12 @@ def make_atlas_from_photos(
 
 def run(args: argparse.Namespace, root: Path) -> int:
     """Make the atlases; 0 all done, 1 some failed, 2 stopped by the service."""
-    todo = targets(root, args.only or [], args.redo)
+    todo = targets(root, args.only or [], args.redo, args.section)
     if args.limit:
         todo = todo[: args.limit]
     if args.dry_run:
         for folder in todo:
-            print(f"{SECTION}/{folder.name}: {species_name(folder)}")
+            print(f"{args.section}/{folder.name}: {species_name(folder)}")
         print(f"{len(todo)} species, {len(todo) * args.attempts} requests at most")
         return 0
     if args.from_photos:
@@ -262,10 +309,10 @@ def run(args: argparse.Namespace, root: Path) -> int:
             print(f"stopped on {folder.name}: {err}; start again later")
             return 2
         if reason is None:
-            print(f"{SECTION}/{folder.name}: done")
+            print(f"{args.section}/{folder.name}: done")
         else:
             failed.append(folder.name)
-            print(f"{SECTION}/{folder.name}: failed ({reason})")
+            print(f"{args.section}/{folder.name}: failed ({reason})")
     print(f"{len(todo) - len(failed)} done, {len(failed)} failed")
     return 1 if failed else 0
 
@@ -281,10 +328,10 @@ def run_from_photos(args: argparse.Namespace, todo: list[Path]) -> int:
         reason = make_atlas_from_photos(folder, photos, args)
         if reason is None:
             done += 1
-            print(f"{SECTION}/{folder.name}: done")
+            print(f"{args.section}/{folder.name}: done")
         else:
             failed.append(folder.name)
-            print(f"{SECTION}/{folder.name}: failed ({reason})")
+            print(f"{args.section}/{folder.name}: failed ({reason})")
     print(f"{done} done, {len(failed)} failed, {waiting} without photo")
     return 1 if failed else 0
 
@@ -292,6 +339,9 @@ def run_from_photos(args: argparse.Namespace, todo: list[Path]) -> int:
 def main(argv: list[str] | None = None) -> int:
     """Command line entry point."""
     parser = argparse.ArgumentParser(description=(__doc__ or "").split("\n\n")[0])
+    parser.add_argument(
+        "--section", choices=SECTIONS, default="fish", help="fish (default) or plants"
+    )
     parser.add_argument("--model", default=DEFAULT_MODEL, help="Gemini image model")
     parser.add_argument("--only", nargs="+", metavar="ID", help="these species only")
     parser.add_argument("--limit", type=int, help="at most this many species")
