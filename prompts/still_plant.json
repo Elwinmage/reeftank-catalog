@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "keys": {
+    "magenta": "flat magenta #FF00FF",
+    "green": "flat green #00FF00"
+  },
+  "default_key": "magenta",
+  "alternate_key": {
+    "green": "red, pink or purple plants: a magenta background would eat them"
+  },
+  "template": "Realistic photograph of [SPECIE], [FORM] Clean cut specimen: no roots, no soil, no substrate, no pot, no rockwork, no driftwood, no cable tie, no other plant, no animal. Natural shape and colours of the species, healthy and saturated, fine detail on the leaf edges and veins, whole specimen visible with all its leaves and tips, nothing cropped. On a [KEY] background (the colour code only tells which colour the background is: never write it, nor any other text, on the image), perfectly flat uniform background without gradient or vignette, no floor line, no shadow, no reflection. Neutral white studio lighting, soft and even, no [KEY_NAME] tint or spill on the edges of the leaves, sharp edges so that the background can be keyed out cleanly. Highest resolution, the specimen fills about 80% of the image height, clean image: no text, no watermark, no mark in the corners.",
+  "forms": {
+    "stem": "a bunch of 5 to 7 stems with their whole foliage, cut cleanly just below the lowest leaves, standing upright, seen from the side at eye level.",
+    "rosette": "one plant seen from the side at eye level: a rosette of leaves rising from a short crown, the crown trimmed flat just under the leaf bases.",
+    "ribbon": "a tuft of long ribbon-like leaves standing upright, seen from the side at eye level, cut cleanly at the base.",
+    "carpet": "a small tuft of about 10 short shoots with their leaves, seen from the side at eye level, cut cleanly at the base (a small clump, not a whole carpet).",
+    "floating": "a floating plant seen from slightly above, in three-quarter view, only the leaves or rosette that stay at the water surface, the hanging roots removed.",
+    "duckweed": "a loose cluster of 6 to 10 tiny floating fronds seen from slightly above, the hanging rootlets removed.",
+    "epiphyte": "a clump of leaves on a short trimmed piece of rhizome, seen from the side at eye level, the roots removed (no wood, no rock holding it).",
+    "moss": "a small rounded clump of moss, seen from the side at eye level, cut cleanly at the base.",
+    "alga": "the whole alga (its thallus) seen from the side at eye level, the holdfast removed.",
+    "ball": "one single round ball of filamentous alga, seen from the side at eye level, nothing else.",
+    "mangrove": "a young seedling with its stem and leaves, seen from the side at eye level, the roots removed."
+  },
+  "zone_forms": {
+    "background": "stem",
+    "midground": "rosette",
+    "foreground": "carpet",
+    "floating": "floating",
+    "epiphyte": "epiphyte"
+  },
+  "species_forms": {
+    "aegagropila_linnaei": "ball",
+    "caulerpa_prolifera": "alga",
+    "chaetomorpha_linum": "alga",
+    "cryptocoryne_parva": "rosette",
+    "eleocharis_parvula": "ribbon",
+    "halimeda_opuntia": "alga",
+    "lemna_minor": "duckweed",
+    "ludwigia_repens": "stem",
+    "rhizophora_mangle": "mangrove",
+    "sagittaria_subulata": "ribbon",
+    "staurogyne_repens": "stem",
+    "thalassia_testudinum": "ribbon",
+    "vallisneria_spiralis": "ribbon",
+    "vesicularia_dubyana": "moss"
+  },
+  "species_keys": {
+    "ludwigia_repens": "green",
+    "rotala_rotundifolia": "green"
+  }
+}

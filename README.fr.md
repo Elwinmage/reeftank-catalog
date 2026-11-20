@@ -10,118 +10,126 @@ Espèces de poissons, coraux, plantes et invertébrés pour la vue aquarium de [
 
 L'intégration télécharge les versions publiées de ce dépôt et les tient à jour (`update.reeftank_catalog`, automatique par défaut) : rien à faire côté Home Assistant.
 
+## Comment ça marche
+
+Chaque poisson est une planche d'images (un atlas WebP) et un descripteur avec ses clips : *nage*, *immobile* et *demi-tour*. La carte les enchaîne, et inverse le demi-tour en miroir pour que le poisson revienne comme il est venu. Voici la nage, le demi-tour et le retour de deux espèces :
+
+<table><tr><td align="center"><img src="docs/img/demo-emperor-angelfish.webp" width="288" alt="Poisson-ange empereur"/><br/><sub>Poisson-ange empereur</sub></td><td align="center"><img src="docs/img/demo-clownfish.webp" width="288" alt="Poisson-clown"/><br/><sub>Poisson-clown</sub></td></tr></table>
+
 ## Poissons (102)
 
-|  | Nom | Nom scientifique | Eau | Taille | Comportement |
-|---|---|---|---|---|---|
-| <img src="fish/ancistrus/thumb.webp" width="72" alt=""> | Ancistrus<br>`ancistrus` | *Ancistrus sp.* | Eau douce | 10–14 cm | Vit près du fond · se cache la nuit |
-| <img src="fish/pseudanthias/thumb.webp" width="72" alt=""> | Anthias<br>`pseudanthias` | *Pseudanthias sp.* | Marine | 8–14 cm | En banc · se cache la nuit |
-| <img src="fish/apistogramma_cacatuoides/thumb.webp" width="72" alt=""> | Apistogramma<br>`apistogramma_cacatuoides` | *Apistogramma cacatuoides* | Eau douce | 5–9 cm | Vit près du fond · se cache la nuit |
-| <img src="fish/melanotaenia_lacustris/thumb.webp" width="72" alt=""> | Arc-en-ciel turquoise<br>`melanotaenia_lacustris` | *Melanotaenia lacustris* | Eau douce | 8–12 cm | En banc · se cache la nuit |
-| <img src="fish/toxotes_jaculatrix/thumb.webp" width="72" alt=""> | Archer<br>`toxotes_jaculatrix` | *Toxotes jaculatrix* | Saumâtre | 15–25 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/rhinecanthus_aculeatus/thumb.webp" width="72" alt=""> | Baliste Picasso<br>`rhinecanthus_aculeatus` | *Rhinecanthus aculeatus* | Marine | 20–25 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/pethia_titteya/thumb.webp" width="72" alt=""> | Barbus cerise<br>`pethia_titteya` | *Pethia titteya* | Eau douce | 4–5 cm | En banc · se cache la nuit |
-| <img src="fish/puntigrus_tetrazona/thumb.webp" width="72" alt=""> | Barbus de Sumatra<br>`puntigrus_tetrazona` | *Puntigrus tetrazona* | Eau douce | 5–7 cm | En banc · se cache la nuit |
-| <img src="fish/ecsenius_bicolor/thumb.webp" width="72" alt=""> | Blennie bicolore<br>`ecsenius_bicolor` | *Ecsenius bicolor* | Marine | 8–10 cm | Vit près du fond · se cache la nuit |
-| <img src="fish/salarias_fasciatus/thumb.webp" width="72" alt=""> | Blennie tondeuse<br>`salarias_fasciatus` | *Salarias fasciatus* | Marine | 12–14 cm | Vit près du fond · se cache la nuit |
-| <img src="fish/chromobotia_macracanthus/thumb.webp" width="72" alt=""> | Botia clown<br>`chromobotia_macracanthus` | *Chromobotia macracanthus* | Eau douce | 15–30 cm | Vit près du fond · se cache la nuit |
-| <img src="fish/canthigaster_valentini/thumb.webp" width="72" alt=""> | Canthigaster de Valentin<br>`canthigaster_valentini` | *Canthigaster valentini* | Marine | 8–10 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/sphaeramia_nematoptera/thumb.webp" width="72" alt=""> | Cardinal pyjama<br>`sphaeramia_nematoptera` | *Sphaeramia nematoptera* | Marine | 8–10 cm | Stationnaire · reste en pleine eau la nuit |
-| <img src="fish/ostorhinchus_cyanosoma/thumb.webp" width="72" alt=""> | Cardinal à bande jaune<br>`ostorhinchus_cyanosoma` | *Ostorhinchus cyanosoma* | Marine | 7–8 cm | Stationnaire · reste en pleine eau la nuit |
-| <img src="fish/paracanthurus_hepatus/thumb.webp" width="72" alt=""> | Chirurgien bleu<br>`paracanthurus_hepatus` | *Paracanthurus hepatus* | Marine | 20–30 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/acanthurus_leucosternon/thumb.webp" width="72" alt=""> | Chirurgien bleu poudré<br>`acanthurus_leucosternon` | *Acanthurus leucosternon* | Marine | 20–23 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/zebrasoma_scopas/thumb.webp" width="72" alt=""> | Chirurgien brun<br>`zebrasoma_scopas` | *Zebrasoma scopas* | Marine | 15–20 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/zebrasoma_flavescens/thumb.webp" width="72" alt=""> | Chirurgien jaune<br>`zebrasoma_flavescens` | *Zebrasoma flavescens* | Marine | 15–20 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/ctenochaetus_strigosus/thumb.webp" width="72" alt=""> | Chirurgien kole<br>`ctenochaetus_strigosus` | *Ctenochaetus strigosus* | Marine | 12–18 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/zebrasoma_veliferum/thumb.webp" width="72" alt=""> | Chirurgien à voile<br>`zebrasoma_veliferum` | *Zebrasoma veliferum* | Marine | 25–40 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/chromis_viridis/thumb.webp" width="72" alt=""> | Chromis vert<br>`chromis_viridis` | *Chromis viridis* | Marine | 5–8 cm | En banc · se cache la nuit |
-| <img src="fish/betta_splendens/thumb.webp" width="72" alt=""> | Combattant<br>`betta_splendens` | *Betta splendens* | Eau douce | 5–7 cm | Stationnaire · reste près de son abri · reste en pleine eau la nuit |
-| <img src="fish/corydoras_aeneus/thumb.webp" width="72" alt=""> | Corydoras bronzé<br>`corydoras_aeneus` | *Corydoras aeneus* | Eau douce | 6–7 cm | Vit près du fond · se cache la nuit |
-| <img src="fish/corydoras_panda/thumb.webp" width="72" alt=""> | Corydoras panda<br>`corydoras_panda` | *Corydoras panda* | Eau douce | 4–5 cm | Vit près du fond · se cache la nuit |
-| <img src="fish/danio_margaritatus/thumb.webp" width="72" alt=""> | Danio galaxy<br>`danio_margaritatus` | *Danio margaritatus* | Eau douce | 2–3 cm | En banc · se cache la nuit |
-| <img src="fish/danio_albolineatus/thumb.webp" width="72" alt=""> | Danio perlé<br>`danio_albolineatus` | *Danio albolineatus* | Eau douce | 4–6 cm | En banc · se cache la nuit |
-| <img src="fish/danio_rerio/thumb.webp" width="72" alt=""> | Danio zébré<br>`danio_rerio` | *Danio rerio* | Eau douce | 4–5 cm | En banc · se cache la nuit |
-| <img src="fish/dascyllus_trimaculatus/thumb.webp" width="72" alt=""> | Dascyllus à trois taches<br>`dascyllus_trimaculatus` | *Dascyllus trimaculatus* | Marine | 10–14 cm | Stationnaire · reste en pleine eau la nuit |
-| <img src="fish/pseudotropheus_demasoni/thumb.webp" width="72" alt=""> | Demasoni<br>`pseudotropheus_demasoni` | *Pseudotropheus demasoni* | Eau douce | 7–8 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/chrysiptera_taupou/thumb.webp" width="72" alt=""> | Demoiselle des mers du sud<br>`chrysiptera_taupou` | *Chrysiptera taupou* | Marine | 6–8 cm | Stationnaire · reste près de son abri · reste en pleine eau la nuit |
-| <img src="fish/chrysiptera_parasema/thumb.webp" width="72" alt=""> | Demoiselle à queue jaune<br>`chrysiptera_parasema` | *Chrysiptera parasema* | Marine | 5–6 cm | Stationnaire · reste près de son abri · reste en pleine eau la nuit |
-| <img src="fish/symphysodon_aequifasciatus/thumb.webp" width="72" alt=""> | Discus<br>`symphysodon_aequifasciatus` | *Symphysodon aequifasciatus* | Eau douce | 15–20 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/synchiropus_picturatus/thumb.webp" width="72" alt=""> | Dragonnet psychédélique<br>`synchiropus_picturatus` | *Synchiropus picturatus* | Marine | 6–8 cm | Vit près du fond · se cache la nuit |
-| <img src="fish/poecilia_wingei/thumb.webp" width="72" alt=""> | Endler<br>`poecilia_wingei` | *Poecilia wingei* | Eau douce | 2–4 cm | En banc · se cache la nuit |
-| <img src="fish/brachygobius_xanthozonus/thumb.webp" width="72" alt=""> | Gobie bourdon<br>`brachygobius_xanthozonus` | *Brachygobius xanthozonus* | Saumâtre | 3–4 cm | Vit près du fond · se cache la nuit |
-| <img src="fish/stigmatogobius_sadanundio/thumb.webp" width="72" alt=""> | Gobie chevalier<br>`stigmatogobius_sadanundio` | *Stigmatogobius sadanundio* | Saumâtre | 6–8 cm | Vit près du fond · se cache la nuit |
-| <img src="fish/gobiodon_okinawae/thumb.webp" width="72" alt=""> | Gobie corail jaune<br>`gobiodon_okinawae` | *Gobiodon okinawae* | Marine | 2.5–3.5 cm | Vit près du fond · se cache la nuit |
-| <img src="fish/gobiodon_citrinus/thumb.webp" width="72" alt=""> | Gobie de corail citron<br>`gobiodon_citrinus` | *Gobiodon citrinus* | Marine | 3–5 cm | Vit près du fond · se cache la nuit |
-| <img src="fish/valenciennea/thumb.webp" width="72" alt=""> | Gobie dormeur<br>`valenciennea` | *Valenciennea sp.* | Marine | 10–16 cm | Vit sur le sable · vit dans un terrier · se pose au fond la nuit |
-| <img src="fish/elacatinus_oceanops/thumb.webp" width="72" alt=""> | Gobie néon<br>`elacatinus_oceanops` | *Elacatinus oceanops* | Marine | 4–6 cm | Vit près du fond · se cache la nuit |
-| <img src="fish/amblygobius_phalaena/thumb.webp" width="72" alt=""> | Gobie rayé<br>`amblygobius_phalaena` | *Amblygobius phalaena* | Marine | 8–10 cm | Vit sur le sable · se pose au fond la nuit |
-| <img src="fish/gobioides_broussonnetii/thumb.webp" width="72" alt=""> | Gobie violet<br>`gobioides_broussonnetii` | *Gobioides broussonnetii* | Saumâtre | 30–50 cm | Vit sur le sable · vit dans un terrier · se pose au fond la nuit |
-| <img src="fish/cryptocentrus_cinctus/thumb.webp" width="72" alt=""> | Gobie à bandeau jaune<br>`cryptocentrus_cinctus` | *Cryptocentrus cinctus* | Marine | 8–10 cm | Vit sur le sable · vit dans un terrier · se pose au fond la nuit |
-| <img src="fish/stonogobiops_yasha/thumb.webp" width="72" alt=""> | Gobie à crevette<br>`stonogobiops_yasha` | *Stonogobiops yasha* | Marine | 6–8 cm | Vit sur le sable · vit dans un terrier · se pose au fond la nuit |
-| <img src="fish/trichopodus_trichopterus/thumb.webp" width="72" alt=""> | Gourami bleu<br>`trichopodus_trichopterus` | *Trichopodus trichopterus* | Eau douce | 10–15 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/trichogaster_lalius/thumb.webp" width="72" alt=""> | Gourami nain<br>`trichogaster_lalius` | *Trichogaster lalius* | Eau douce | 5–8 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/trichopodus_leerii/thumb.webp" width="72" alt=""> | Gourami perlé<br>`trichopodus_leerii` | *Trichopodus leerii* | Eau douce | 10–12 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/gramma_loreto/thumb.webp" width="72" alt=""> | Gramma royal<br>`gramma_loreto` | *Gramma loreto* | Marine | 7–8 cm | Stationnaire · reste en pleine eau la nuit |
-| <img src="fish/poecilia_reticulata/thumb.webp" width="72" alt=""> | Guppy<br>`poecilia_reticulata` | *Poecilia reticulata* | Eau douce | 3–6 cm | En banc · se cache la nuit |
-| <img src="fish/hippocampus_erectus/thumb.webp" width="72" alt=""> | Hippocampe<br>`hippocampus_erectus` | *Hippocampus erectus* | Marine | 10–15 cm | Stationnaire · reste en pleine eau la nuit |
-| <img src="fish/aphyosemion_australe/thumb.webp" width="72" alt=""> | Killi du Cap Lopez<br>`aphyosemion_australe` | *Aphyosemion australe* | Eau douce | 5–6 cm | Stationnaire · reste en pleine eau la nuit |
-| <img src="fish/pelvicachromis_pulcher/thumb.webp" width="72" alt=""> | Kribensis<br>`pelvicachromis_pulcher` | *Pelvicachromis pulcher* | Eau douce | 8–10 cm | Vit près du fond · se cache la nuit |
-| <img src="fish/labidochromis_caeruleus/thumb.webp" width="72" alt=""> | Labidochromis jaune<br>`labidochromis_caeruleus` | *Labidochromis caeruleus* | Eau douce | 8–10 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/halichoeres_chrysus/thumb.webp" width="72" alt=""> | Labre chrysus<br>`halichoeres_chrysus` | *Halichoeres chrysus* | Marine | 10–12 cm | Nageur de pleine eau · se pose au fond la nuit |
-| <img src="fish/cirrhilabrus_solorensis/thumb.webp" width="72" alt=""> | Labre de Solor<br>`cirrhilabrus_solorensis` | *Cirrhilabrus solorensis* | Marine | 10–12 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/labroides_dimidiatus/thumb.webp" width="72" alt=""> | Labre nettoyeur<br>`labroides_dimidiatus` | *Labroides dimidiatus* | Marine | 10–12 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/pseudocheilinus_hexataenia/thumb.webp" width="72" alt=""> | Labre à six lignes<br>`pseudocheilinus_hexataenia` | *Pseudocheilinus hexataenia* | Marine | 7–10 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/pangio_kuhlii/thumb.webp" width="72" alt=""> | Loche kuhli<br>`pangio_kuhlii` | *Pangio kuhlii* | Eau douce | 8–12 cm | Vit près du fond · se cache la nuit |
-| <img src="fish/crossocheilus_oblongus/thumb.webp" width="72" alt=""> | Mangeur d'algues siamois<br>`crossocheilus_oblongus` | *Crossocheilus oblongus* | Eau douce | 10–15 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/poecilia_sphenops/thumb.webp" width="72" alt=""> | Molly<br>`poecilia_sphenops` | *Poecilia sphenops* | Eau douce, Saumâtre | 6–10 cm | En banc · se cache la nuit |
-| <img src="fish/poecilia_velifera/thumb.webp" width="72" alt=""> | Molly voile<br>`poecilia_velifera` | *Poecilia velifera* | Saumâtre, Eau douce | 10–15 cm | En banc · se cache la nuit |
-| <img src="fish/monodactylus_argenteus/thumb.webp" width="72" alt=""> | Mono argenté<br>`monodactylus_argenteus` | *Monodactylus argenteus* | Saumâtre, Marine | 15–25 cm | En banc · se cache la nuit |
-| <img src="fish/paracheirodon_innesi/thumb.webp" width="72" alt=""> | Néon bleu<br>`paracheirodon_innesi` | *Paracheirodon innesi* | Eau douce | 3–4 cm | En banc · se cache la nuit |
-| <img src="fish/paracheirodon_axelrodi/thumb.webp" width="72" alt=""> | Néon cardinal<br>`paracheirodon_axelrodi` | *Paracheirodon axelrodi* | Eau douce | 3–5 cm | En banc · se cache la nuit |
-| <img src="fish/opistognathus_aurifrons/thumb.webp" width="72" alt=""> | Opistognathe à tête jaune<br>`opistognathus_aurifrons` | *Opistognathus aurifrons* | Marine | 10–12 cm | Vit sur le sable · vit dans un terrier · se pose au fond la nuit |
-| <img src="fish/astronotus_ocellatus/thumb.webp" width="72" alt=""> | Oscar<br>`astronotus_ocellatus` | *Astronotus ocellatus* | Eau douce | 25–35 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/otocinclus_affinis/thumb.webp" width="72" alt=""> | Otocinclus<br>`otocinclus_affinis` | *Otocinclus affinis* | Eau douce | 3–5 cm | Vit près du fond · se cache la nuit |
-| <img src="fish/xiphophorus_maculatus/thumb.webp" width="72" alt=""> | Platy<br>`xiphophorus_maculatus` | *Xiphophorus maculatus* | Eau douce | 4–6 cm | En banc · se cache la nuit |
-| <img src="fish/hypancistrus_zebra/thumb.webp" width="72" alt=""> | Pléco zèbre<br>`hypancistrus_zebra` | *Hypancistrus zebra* | Eau douce | 7–10 cm | Vit près du fond · se cache la nuit |
-| <img src="fish/synchiropus_splendidus/thumb.webp" width="72" alt=""> | Poisson mandarin<br>`synchiropus_splendidus` | *Synchiropus splendidus* | Marine | 5–8 cm | Vit près du fond · se cache la nuit |
-| <img src="fish/tanichthys_albonubes/thumb.webp" width="72" alt=""> | Poisson nuage blanc<br>`tanichthys_albonubes` | *Tanichthys albonubes* | Eau douce | 3–4 cm | En banc · se cache la nuit |
-| <img src="fish/carassius_auratus/thumb.webp" width="72" alt=""> | Poisson rouge<br>`carassius_auratus` | *Carassius auratus* | Eau douce | 10–25 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/centropyge_bicolor/thumb.webp" width="72" alt=""> | Poisson-ange bicolore<br>`centropyge_bicolor` | *Centropyge bicolor* | Marine | 10–15 cm | Stationnaire · reste en pleine eau la nuit |
-| <img src="fish/pomacanthus_imperator_adult/thumb.webp" width="72" alt=""> | Poisson-ange empereur (adulte)<br>`pomacanthus_imperator_adult` | *Pomacanthus imperator* | Marine | 25–38 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/pomacanthus_imperator/thumb.webp" width="72" alt=""> | Poisson-ange empereur (juvénile)<br>`pomacanthus_imperator` | *Pomacanthus imperator* | Marine | 6–12 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/centropyge_loricula/thumb.webp" width="72" alt=""> | Poisson-ange flamme<br>`centropyge_loricula` | *Centropyge loricula* | Marine | 8–10 cm | Stationnaire · reste en pleine eau la nuit |
-| <img src="fish/pygoplites_diacanthus/thumb.webp" width="72" alt=""> | Poisson-ange royal<br>`pygoplites_diacanthus` | *Pygoplites diacanthus* | Marine | 20–25 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/pterapogon_kauderni/thumb.webp" width="72" alt=""> | Poisson-cardinal de Banggai<br>`pterapogon_kauderni` | *Pterapogon kauderni* | Marine | 5–8 cm | Stationnaire · reste en pleine eau la nuit |
-| <img src="fish/amphiprion/thumb.webp" width="72" alt=""> | Poisson-clown<br>`amphiprion` | *Amphiprion sp.* | Marine | 7–11 cm | Stationnaire · reste en pleine eau la nuit |
-| <img src="fish/premnas_biaculeatus/thumb.webp" width="72" alt=""> | Poisson-clown tomate<br>`premnas_biaculeatus` | *Premnas biaculeatus* | Marine | 10–15 cm | Stationnaire · reste en pleine eau la nuit |
-| <img src="fish/cirrhitichthys_oxycephalus/thumb.webp" width="72" alt=""> | Poisson-faucon pixie<br>`cirrhitichthys_oxycephalus` | *Cirrhitichthys oxycephalus* | Marine | 8–10 cm | Vit près du fond · se cache la nuit |
-| <img src="fish/nemateleotris_magnifica/thumb.webp" width="72" alt=""> | Poisson-flamme<br>`nemateleotris_magnifica` | *Nemateleotris magnifica* | Marine | 8–10 cm | Stationnaire · reste en pleine eau la nuit |
-| <img src="fish/nemateleotris_decora/thumb.webp" width="72" alt=""> | Poisson-flamme pourpre<br>`nemateleotris_decora` | *Nemateleotris decora* | Marine | 8–10 cm | Stationnaire · reste en pleine eau la nuit |
-| <img src="fish/carnegiella_strigata/thumb.webp" width="72" alt=""> | Poisson-hachette<br>`carnegiella_strigata` | *Carnegiella strigata* | Eau douce | 4–5 cm | En banc · se cache la nuit |
-| <img src="fish/siganus_vulpinus/thumb.webp" width="72" alt=""> | Poisson-lapin à tête de renard<br>`siganus_vulpinus` | *Siganus vulpinus* | Marine | 15–22 cm | Nageur de pleine eau · se pose au fond la nuit |
-| <img src="fish/pterois_volitans/thumb.webp" width="72" alt=""> | Poisson-lion volitans<br>`pterois_volitans` | *Pterois volitans* | Marine | 25–35 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/dendrochirus_zebra/thumb.webp" width="72" alt=""> | Poisson-lion zèbre<br>`dendrochirus_zebra` | *Dendrochirus zebra* | Marine | 12–18 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/chelmon_rostratus/thumb.webp" width="72" alt=""> | Poisson-papillon cuivré<br>`chelmon_rostratus` | *Chelmon rostratus* | Marine | 15–20 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/pseudochromis_fridmani/thumb.webp" width="72" alt=""> | Pseudochromis orchidée<br>`pseudochromis_fridmani` | *Pseudochromis fridmani* | Marine | 6–7 cm | Stationnaire · reste près de son abri · reste en pleine eau la nuit |
-| <img src="fish/periophthalmus_barbarus/thumb.webp" width="72" alt=""> | Périophtalme<br>`periophthalmus_barbarus` | *Periophthalmus barbarus* | Saumâtre | 10–15 cm | Vit près du fond · se cache la nuit |
-| <img src="fish/mikrogeophagus_ramirezi/thumb.webp" width="72" alt=""> | Ramirezi<br>`mikrogeophagus_ramirezi` | *Mikrogeophagus ramirezi* | Eau douce | 5–7 cm | Stationnaire · reste en pleine eau la nuit |
-| <img src="fish/trigonostigma_heteromorpha/thumb.webp" width="72" alt=""> | Rasbora arlequin<br>`trigonostigma_heteromorpha` | *Trigonostigma heteromorpha* | Eau douce | 3–4.5 cm | En banc · se cache la nuit |
-| <img src="fish/pterophyllum_scalare/thumb.webp" width="72" alt=""> | Scalaire<br>`pterophyllum_scalare` | *Pterophyllum scalare* | Eau douce | 12–15 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/scatophagus_argus/thumb.webp" width="72" alt=""> | Scat<br>`scatophagus_argus` | *Scatophagus argus* | Saumâtre, Marine | 15–30 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/hyphessobrycon_pulchripinnis/thumb.webp" width="72" alt=""> | Tétra citron<br>`hyphessobrycon_pulchripinnis` | *Hyphessobrycon pulchripinnis* | Eau douce | 3–4.5 cm | En banc · se cache la nuit |
-| <img src="fish/nematobrycon_palmeri/thumb.webp" width="72" alt=""> | Tétra empereur<br>`nematobrycon_palmeri` | *Nematobrycon palmeri* | Eau douce | 4–6 cm | En banc · se cache la nuit |
-| <img src="fish/gymnocorymbus_ternetzi/thumb.webp" width="72" alt=""> | Tétra noir<br>`gymnocorymbus_ternetzi` | *Gymnocorymbus ternetzi* | Eau douce | 5–6 cm | En banc · se cache la nuit |
-| <img src="fish/hyphessobrycon_eques/thumb.webp" width="72" alt=""> | Tétra serpae<br>`hyphessobrycon_eques` | *Hyphessobrycon eques* | Eau douce | 3–4.5 cm | En banc · se cache la nuit |
-| <img src="fish/hemigrammus_bleheri/thumb.webp" width="72" alt=""> | Tétra à nez rouge<br>`hemigrammus_bleheri` | *Hemigrammus bleheri* | Eau douce | 4–5 cm | En banc · se cache la nuit |
-| <img src="fish/dichotomyctere_nigroviridis/thumb.webp" width="72" alt=""> | Tétraodon vert<br>`dichotomyctere_nigroviridis` | *Dichotomyctere nigroviridis* | Saumâtre | 10–17 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/dichotomyctere_biocellatus/thumb.webp" width="72" alt=""> | Tétraodon à huit<br>`dichotomyctere_biocellatus` | *Dichotomyctere biocellatus* | Saumâtre | 5–6.5 cm | Nageur de pleine eau · se cache la nuit |
-| <img src="fish/xiphophorus_hellerii/thumb.webp" width="72" alt=""> | Xipho<br>`xiphophorus_hellerii` | *Xiphophorus hellerii* | Eau douce | 6–12 cm | En banc · se cache la nuit |
+**HD** : une vraie animation, faite à partir de vidéos. Les autres ont une animation simple faite à partir d'une photo, ou le poisson générique.
+
+|  | Nom | Nom scientifique | Eau | Taille | Comportement | HD |
+|---|---|---|---|---|---|---|
+| <img src="fish/ancistrus/thumb.webp" width="160" alt=""> | Ancistrus<br>`ancistrus` | *Ancistrus sp.* | Eau douce | 10–14 cm | Vit près du fond · se cache la nuit |  |
+| <img src="fish/pseudanthias/thumb.webp" width="160" alt=""> | Anthias<br>`pseudanthias` | *Pseudanthias sp.* | Marine | 8–14 cm | En banc · se cache la nuit | ✔ |
+| <img src="fish/apistogramma_cacatuoides/thumb.webp" width="160" alt=""> | Apistogramma<br>`apistogramma_cacatuoides` | *Apistogramma cacatuoides* | Eau douce | 5–9 cm | Vit près du fond · se cache la nuit |  |
+| <img src="fish/melanotaenia_lacustris/thumb.webp" width="160" alt=""> | Arc-en-ciel turquoise<br>`melanotaenia_lacustris` | *Melanotaenia lacustris* | Eau douce | 8–12 cm | En banc · se cache la nuit |  |
+| <img src="fish/toxotes_jaculatrix/thumb.webp" width="160" alt=""> | Archer<br>`toxotes_jaculatrix` | *Toxotes jaculatrix* | Saumâtre | 15–25 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/rhinecanthus_aculeatus/thumb.webp" width="160" alt=""> | Baliste Picasso<br>`rhinecanthus_aculeatus` | *Rhinecanthus aculeatus* | Marine | 20–25 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/pethia_titteya/thumb.webp" width="160" alt=""> | Barbus cerise<br>`pethia_titteya` | *Pethia titteya* | Eau douce | 4–5 cm | En banc · se cache la nuit |  |
+| <img src="fish/puntigrus_tetrazona/thumb.webp" width="160" alt=""> | Barbus de Sumatra<br>`puntigrus_tetrazona` | *Puntigrus tetrazona* | Eau douce | 5–7 cm | En banc · se cache la nuit |  |
+| <img src="fish/ecsenius_bicolor/thumb.webp" width="160" alt=""> | Blennie bicolore<br>`ecsenius_bicolor` | *Ecsenius bicolor* | Marine | 8–10 cm | Vit près du fond · se cache la nuit |  |
+| <img src="fish/salarias_fasciatus/thumb.webp" width="160" alt=""> | Blennie tondeuse<br>`salarias_fasciatus` | *Salarias fasciatus* | Marine | 12–14 cm | Vit près du fond · se cache la nuit |  |
+| <img src="fish/chromobotia_macracanthus/thumb.webp" width="160" alt=""> | Botia clown<br>`chromobotia_macracanthus` | *Chromobotia macracanthus* | Eau douce | 15–30 cm | Vit près du fond · se cache la nuit |  |
+| <img src="fish/canthigaster_valentini/thumb.webp" width="160" alt=""> | Canthigaster de Valentin<br>`canthigaster_valentini` | *Canthigaster valentini* | Marine | 8–10 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/sphaeramia_nematoptera/thumb.webp" width="160" alt=""> | Cardinal pyjama<br>`sphaeramia_nematoptera` | *Sphaeramia nematoptera* | Marine | 8–10 cm | Stationnaire · reste en pleine eau la nuit |  |
+| <img src="fish/ostorhinchus_cyanosoma/thumb.webp" width="160" alt=""> | Cardinal à bande jaune<br>`ostorhinchus_cyanosoma` | *Ostorhinchus cyanosoma* | Marine | 7–8 cm | Stationnaire · reste en pleine eau la nuit |  |
+| <img src="fish/paracanthurus_hepatus/thumb.webp" width="160" alt=""> | Chirurgien bleu<br>`paracanthurus_hepatus` | *Paracanthurus hepatus* | Marine | 20–30 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/acanthurus_leucosternon/thumb.webp" width="160" alt=""> | Chirurgien bleu poudré<br>`acanthurus_leucosternon` | *Acanthurus leucosternon* | Marine | 20–23 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/zebrasoma_scopas/thumb.webp" width="160" alt=""> | Chirurgien brun<br>`zebrasoma_scopas` | *Zebrasoma scopas* | Marine | 15–20 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/zebrasoma_flavescens/thumb.webp" width="160" alt=""> | Chirurgien jaune<br>`zebrasoma_flavescens` | *Zebrasoma flavescens* | Marine | 15–20 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/ctenochaetus_strigosus/thumb.webp" width="160" alt=""> | Chirurgien kole<br>`ctenochaetus_strigosus` | *Ctenochaetus strigosus* | Marine | 12–18 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/zebrasoma_veliferum/thumb.webp" width="160" alt=""> | Chirurgien à voile<br>`zebrasoma_veliferum` | *Zebrasoma veliferum* | Marine | 25–40 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/chromis_viridis/thumb.webp" width="160" alt=""> | Chromis vert<br>`chromis_viridis` | *Chromis viridis* | Marine | 5–8 cm | En banc · se cache la nuit | ✔ |
+| <img src="fish/betta_splendens/thumb.webp" width="160" alt=""> | Combattant<br>`betta_splendens` | *Betta splendens* | Eau douce | 5–7 cm | Stationnaire · reste près de son abri · reste en pleine eau la nuit |  |
+| <img src="fish/corydoras_aeneus/thumb.webp" width="160" alt=""> | Corydoras bronzé<br>`corydoras_aeneus` | *Corydoras aeneus* | Eau douce | 6–7 cm | Vit près du fond · se cache la nuit |  |
+| <img src="fish/corydoras_panda/thumb.webp" width="160" alt=""> | Corydoras panda<br>`corydoras_panda` | *Corydoras panda* | Eau douce | 4–5 cm | Vit près du fond · se cache la nuit |  |
+| <img src="fish/danio_margaritatus/thumb.webp" width="160" alt=""> | Danio galaxy<br>`danio_margaritatus` | *Danio margaritatus* | Eau douce | 2–3 cm | En banc · se cache la nuit |  |
+| <img src="fish/danio_albolineatus/thumb.webp" width="160" alt=""> | Danio perlé<br>`danio_albolineatus` | *Danio albolineatus* | Eau douce | 4–6 cm | En banc · se cache la nuit |  |
+| <img src="fish/danio_rerio/thumb.webp" width="160" alt=""> | Danio zébré<br>`danio_rerio` | *Danio rerio* | Eau douce | 4–5 cm | En banc · se cache la nuit |  |
+| <img src="fish/dascyllus_trimaculatus/thumb.webp" width="160" alt=""> | Dascyllus à trois taches<br>`dascyllus_trimaculatus` | *Dascyllus trimaculatus* | Marine | 10–14 cm | Stationnaire · reste en pleine eau la nuit |  |
+| <img src="fish/pseudotropheus_demasoni/thumb.webp" width="160" alt=""> | Demasoni<br>`pseudotropheus_demasoni` | *Pseudotropheus demasoni* | Eau douce | 7–8 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/chrysiptera_taupou/thumb.webp" width="160" alt=""> | Demoiselle des mers du sud<br>`chrysiptera_taupou` | *Chrysiptera taupou* | Marine | 6–8 cm | Stationnaire · reste près de son abri · reste en pleine eau la nuit |  |
+| <img src="fish/chrysiptera_parasema/thumb.webp" width="160" alt=""> | Demoiselle à queue jaune<br>`chrysiptera_parasema` | *Chrysiptera parasema* | Marine | 5–6 cm | Stationnaire · reste près de son abri · reste en pleine eau la nuit |  |
+| <img src="fish/symphysodon_aequifasciatus/thumb.webp" width="160" alt=""> | Discus<br>`symphysodon_aequifasciatus` | *Symphysodon aequifasciatus* | Eau douce | 15–20 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/synchiropus_picturatus/thumb.webp" width="160" alt=""> | Dragonnet psychédélique<br>`synchiropus_picturatus` | *Synchiropus picturatus* | Marine | 6–8 cm | Vit près du fond · se cache la nuit |  |
+| <img src="fish/poecilia_wingei/thumb.webp" width="160" alt=""> | Endler<br>`poecilia_wingei` | *Poecilia wingei* | Eau douce | 2–4 cm | En banc · se cache la nuit |  |
+| <img src="fish/brachygobius_xanthozonus/thumb.webp" width="160" alt=""> | Gobie bourdon<br>`brachygobius_xanthozonus` | *Brachygobius xanthozonus* | Saumâtre | 3–4 cm | Vit près du fond · se cache la nuit |  |
+| <img src="fish/stigmatogobius_sadanundio/thumb.webp" width="160" alt=""> | Gobie chevalier<br>`stigmatogobius_sadanundio` | *Stigmatogobius sadanundio* | Saumâtre | 6–8 cm | Vit près du fond · se cache la nuit |  |
+| <img src="fish/gobiodon_okinawae/thumb.webp" width="160" alt=""> | Gobie corail jaune<br>`gobiodon_okinawae` | *Gobiodon okinawae* | Marine | 2.5–3.5 cm | Vit près du fond · se cache la nuit |  |
+| <img src="fish/gobiodon_citrinus/thumb.webp" width="160" alt=""> | Gobie de corail citron<br>`gobiodon_citrinus` | *Gobiodon citrinus* | Marine | 3–5 cm | Vit près du fond · se cache la nuit |  |
+| <img src="fish/valenciennea/thumb.webp" width="160" alt=""> | Gobie dormeur<br>`valenciennea` | *Valenciennea sp.* | Marine | 10–16 cm | Vit sur le sable · vit dans un terrier · se pose au fond la nuit | ✔ |
+| <img src="fish/elacatinus_oceanops/thumb.webp" width="160" alt=""> | Gobie néon<br>`elacatinus_oceanops` | *Elacatinus oceanops* | Marine | 4–6 cm | Vit près du fond · se cache la nuit |  |
+| <img src="fish/amblygobius_phalaena/thumb.webp" width="160" alt=""> | Gobie rayé<br>`amblygobius_phalaena` | *Amblygobius phalaena* | Marine | 8–10 cm | Vit sur le sable · se pose au fond la nuit |  |
+| <img src="fish/gobioides_broussonnetii/thumb.webp" width="160" alt=""> | Gobie violet<br>`gobioides_broussonnetii` | *Gobioides broussonnetii* | Saumâtre | 30–50 cm | Vit sur le sable · vit dans un terrier · se pose au fond la nuit |  |
+| <img src="fish/cryptocentrus_cinctus/thumb.webp" width="160" alt=""> | Gobie à bandeau jaune<br>`cryptocentrus_cinctus` | *Cryptocentrus cinctus* | Marine | 8–10 cm | Vit sur le sable · vit dans un terrier · se pose au fond la nuit |  |
+| <img src="fish/stonogobiops_yasha/thumb.webp" width="160" alt=""> | Gobie à crevette<br>`stonogobiops_yasha` | *Stonogobiops yasha* | Marine | 6–8 cm | Vit sur le sable · vit dans un terrier · se pose au fond la nuit |  |
+| <img src="fish/trichopodus_trichopterus/thumb.webp" width="160" alt=""> | Gourami bleu<br>`trichopodus_trichopterus` | *Trichopodus trichopterus* | Eau douce | 10–15 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/trichogaster_lalius/thumb.webp" width="160" alt=""> | Gourami nain<br>`trichogaster_lalius` | *Trichogaster lalius* | Eau douce | 5–8 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/trichopodus_leerii/thumb.webp" width="160" alt=""> | Gourami perlé<br>`trichopodus_leerii` | *Trichopodus leerii* | Eau douce | 10–12 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/gramma_loreto/thumb.webp" width="160" alt=""> | Gramma royal<br>`gramma_loreto` | *Gramma loreto* | Marine | 7–8 cm | Stationnaire · reste en pleine eau la nuit |  |
+| <img src="fish/poecilia_reticulata/thumb.webp" width="160" alt=""> | Guppy<br>`poecilia_reticulata` | *Poecilia reticulata* | Eau douce | 3–6 cm | En banc · se cache la nuit |  |
+| <img src="fish/hippocampus_erectus/thumb.webp" width="160" alt=""> | Hippocampe<br>`hippocampus_erectus` | *Hippocampus erectus* | Marine | 10–15 cm | Stationnaire · reste en pleine eau la nuit |  |
+| <img src="fish/aphyosemion_australe/thumb.webp" width="160" alt=""> | Killi du Cap Lopez<br>`aphyosemion_australe` | *Aphyosemion australe* | Eau douce | 5–6 cm | Stationnaire · reste en pleine eau la nuit |  |
+| <img src="fish/pelvicachromis_pulcher/thumb.webp" width="160" alt=""> | Kribensis<br>`pelvicachromis_pulcher` | *Pelvicachromis pulcher* | Eau douce | 8–10 cm | Vit près du fond · se cache la nuit |  |
+| <img src="fish/labidochromis_caeruleus/thumb.webp" width="160" alt=""> | Labidochromis jaune<br>`labidochromis_caeruleus` | *Labidochromis caeruleus* | Eau douce | 8–10 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/halichoeres_chrysus/thumb.webp" width="160" alt=""> | Labre chrysus<br>`halichoeres_chrysus` | *Halichoeres chrysus* | Marine | 10–12 cm | Nageur de pleine eau · se pose au fond la nuit |  |
+| <img src="fish/cirrhilabrus_solorensis/thumb.webp" width="160" alt=""> | Labre de Solor<br>`cirrhilabrus_solorensis` | *Cirrhilabrus solorensis* | Marine | 10–12 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/labroides_dimidiatus/thumb.webp" width="160" alt=""> | Labre nettoyeur<br>`labroides_dimidiatus` | *Labroides dimidiatus* | Marine | 10–12 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/pseudocheilinus_hexataenia/thumb.webp" width="160" alt=""> | Labre à six lignes<br>`pseudocheilinus_hexataenia` | *Pseudocheilinus hexataenia* | Marine | 7–10 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/pangio_kuhlii/thumb.webp" width="160" alt=""> | Loche kuhli<br>`pangio_kuhlii` | *Pangio kuhlii* | Eau douce | 8–12 cm | Vit près du fond · se cache la nuit |  |
+| <img src="fish/crossocheilus_oblongus/thumb.webp" width="160" alt=""> | Mangeur d'algues siamois<br>`crossocheilus_oblongus` | *Crossocheilus oblongus* | Eau douce | 10–15 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/poecilia_sphenops/thumb.webp" width="160" alt=""> | Molly<br>`poecilia_sphenops` | *Poecilia sphenops* | Eau douce, Saumâtre | 6–10 cm | En banc · se cache la nuit |  |
+| <img src="fish/poecilia_velifera/thumb.webp" width="160" alt=""> | Molly voile<br>`poecilia_velifera` | *Poecilia velifera* | Saumâtre, Eau douce | 10–15 cm | En banc · se cache la nuit |  |
+| <img src="fish/monodactylus_argenteus/thumb.webp" width="160" alt=""> | Mono argenté<br>`monodactylus_argenteus` | *Monodactylus argenteus* | Saumâtre, Marine | 15–25 cm | En banc · se cache la nuit |  |
+| <img src="fish/paracheirodon_innesi/thumb.webp" width="160" alt=""> | Néon bleu<br>`paracheirodon_innesi` | *Paracheirodon innesi* | Eau douce | 3–4 cm | En banc · se cache la nuit |  |
+| <img src="fish/paracheirodon_axelrodi/thumb.webp" width="160" alt=""> | Néon cardinal<br>`paracheirodon_axelrodi` | *Paracheirodon axelrodi* | Eau douce | 3–5 cm | En banc · se cache la nuit |  |
+| <img src="fish/opistognathus_aurifrons/thumb.webp" width="160" alt=""> | Opistognathe à tête jaune<br>`opistognathus_aurifrons` | *Opistognathus aurifrons* | Marine | 10–12 cm | Vit sur le sable · vit dans un terrier · se pose au fond la nuit |  |
+| <img src="fish/astronotus_ocellatus/thumb.webp" width="160" alt=""> | Oscar<br>`astronotus_ocellatus` | *Astronotus ocellatus* | Eau douce | 25–35 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/otocinclus_affinis/thumb.webp" width="160" alt=""> | Otocinclus<br>`otocinclus_affinis` | *Otocinclus affinis* | Eau douce | 3–5 cm | Vit près du fond · se cache la nuit |  |
+| <img src="fish/xiphophorus_maculatus/thumb.webp" width="160" alt=""> | Platy<br>`xiphophorus_maculatus` | *Xiphophorus maculatus* | Eau douce | 4–6 cm | En banc · se cache la nuit |  |
+| <img src="fish/hypancistrus_zebra/thumb.webp" width="160" alt=""> | Pléco zèbre<br>`hypancistrus_zebra` | *Hypancistrus zebra* | Eau douce | 7–10 cm | Vit près du fond · se cache la nuit |  |
+| <img src="fish/synchiropus_splendidus/thumb.webp" width="160" alt=""> | Poisson mandarin<br>`synchiropus_splendidus` | *Synchiropus splendidus* | Marine | 5–8 cm | Vit près du fond · se cache la nuit | ✔ |
+| <img src="fish/tanichthys_albonubes/thumb.webp" width="160" alt=""> | Poisson nuage blanc<br>`tanichthys_albonubes` | *Tanichthys albonubes* | Eau douce | 3–4 cm | En banc · se cache la nuit |  |
+| <img src="fish/carassius_auratus/thumb.webp" width="160" alt=""> | Poisson rouge<br>`carassius_auratus` | *Carassius auratus* | Eau douce | 10–25 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/centropyge_bicolor/thumb.webp" width="160" alt=""> | Poisson-ange bicolore<br>`centropyge_bicolor` | *Centropyge bicolor* | Marine | 10–15 cm | Stationnaire · reste en pleine eau la nuit |  |
+| <img src="fish/pomacanthus_imperator_adult/thumb.webp" width="160" alt=""> | Poisson-ange empereur (adulte)<br>`pomacanthus_imperator_adult` | *Pomacanthus imperator* | Marine | 25–38 cm | Nageur de pleine eau · se cache la nuit | ✔ |
+| <img src="fish/pomacanthus_imperator/thumb.webp" width="160" alt=""> | Poisson-ange empereur (juvénile)<br>`pomacanthus_imperator` | *Pomacanthus imperator* | Marine | 6–12 cm | Nageur de pleine eau · se cache la nuit | ✔ |
+| <img src="fish/centropyge_loricula/thumb.webp" width="160" alt=""> | Poisson-ange flamme<br>`centropyge_loricula` | *Centropyge loricula* | Marine | 8–10 cm | Stationnaire · reste en pleine eau la nuit |  |
+| <img src="fish/pygoplites_diacanthus/thumb.webp" width="160" alt=""> | Poisson-ange royal<br>`pygoplites_diacanthus` | *Pygoplites diacanthus* | Marine | 20–25 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/pterapogon_kauderni/thumb.webp" width="160" alt=""> | Poisson-cardinal de Banggai<br>`pterapogon_kauderni` | *Pterapogon kauderni* | Marine | 5–8 cm | Stationnaire · reste en pleine eau la nuit | ✔ |
+| <img src="fish/amphiprion/thumb.webp" width="160" alt=""> | Poisson-clown<br>`amphiprion` | *Amphiprion sp.* | Marine | 7–11 cm | Stationnaire · reste en pleine eau la nuit | ✔ |
+| <img src="fish/premnas_biaculeatus/thumb.webp" width="160" alt=""> | Poisson-clown tomate<br>`premnas_biaculeatus` | *Premnas biaculeatus* | Marine | 10–15 cm | Stationnaire · reste en pleine eau la nuit |  |
+| <img src="fish/cirrhitichthys_oxycephalus/thumb.webp" width="160" alt=""> | Poisson-faucon pixie<br>`cirrhitichthys_oxycephalus` | *Cirrhitichthys oxycephalus* | Marine | 8–10 cm | Vit près du fond · se cache la nuit |  |
+| <img src="fish/nemateleotris_magnifica/thumb.webp" width="160" alt=""> | Poisson-flamme<br>`nemateleotris_magnifica` | *Nemateleotris magnifica* | Marine | 8–10 cm | Stationnaire · reste en pleine eau la nuit |  |
+| <img src="fish/nemateleotris_decora/thumb.webp" width="160" alt=""> | Poisson-flamme pourpre<br>`nemateleotris_decora` | *Nemateleotris decora* | Marine | 8–10 cm | Stationnaire · reste en pleine eau la nuit |  |
+| <img src="fish/carnegiella_strigata/thumb.webp" width="160" alt=""> | Poisson-hachette<br>`carnegiella_strigata` | *Carnegiella strigata* | Eau douce | 4–5 cm | En banc · se cache la nuit |  |
+| <img src="fish/siganus_vulpinus/thumb.webp" width="160" alt=""> | Poisson-lapin à tête de renard<br>`siganus_vulpinus` | *Siganus vulpinus* | Marine | 15–22 cm | Nageur de pleine eau · se pose au fond la nuit | ✔ |
+| <img src="fish/pterois_volitans/thumb.webp" width="160" alt=""> | Poisson-lion volitans<br>`pterois_volitans` | *Pterois volitans* | Marine | 25–35 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/dendrochirus_zebra/thumb.webp" width="160" alt=""> | Poisson-lion zèbre<br>`dendrochirus_zebra` | *Dendrochirus zebra* | Marine | 12–18 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/chelmon_rostratus/thumb.webp" width="160" alt=""> | Poisson-papillon cuivré<br>`chelmon_rostratus` | *Chelmon rostratus* | Marine | 15–20 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/pseudochromis_fridmani/thumb.webp" width="160" alt=""> | Pseudochromis orchidée<br>`pseudochromis_fridmani` | *Pseudochromis fridmani* | Marine | 6–7 cm | Stationnaire · reste près de son abri · reste en pleine eau la nuit |  |
+| <img src="fish/periophthalmus_barbarus/thumb.webp" width="160" alt=""> | Périophtalme<br>`periophthalmus_barbarus` | *Periophthalmus barbarus* | Saumâtre | 10–15 cm | Vit près du fond · se cache la nuit |  |
+| <img src="fish/mikrogeophagus_ramirezi/thumb.webp" width="160" alt=""> | Ramirezi<br>`mikrogeophagus_ramirezi` | *Mikrogeophagus ramirezi* | Eau douce | 5–7 cm | Stationnaire · reste en pleine eau la nuit |  |
+| <img src="fish/trigonostigma_heteromorpha/thumb.webp" width="160" alt=""> | Rasbora arlequin<br>`trigonostigma_heteromorpha` | *Trigonostigma heteromorpha* | Eau douce | 3–4.5 cm | En banc · se cache la nuit |  |
+| <img src="fish/pterophyllum_scalare/thumb.webp" width="160" alt=""> | Scalaire<br>`pterophyllum_scalare` | *Pterophyllum scalare* | Eau douce | 12–15 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/scatophagus_argus/thumb.webp" width="160" alt=""> | Scat<br>`scatophagus_argus` | *Scatophagus argus* | Saumâtre, Marine | 15–30 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/hyphessobrycon_pulchripinnis/thumb.webp" width="160" alt=""> | Tétra citron<br>`hyphessobrycon_pulchripinnis` | *Hyphessobrycon pulchripinnis* | Eau douce | 3–4.5 cm | En banc · se cache la nuit |  |
+| <img src="fish/nematobrycon_palmeri/thumb.webp" width="160" alt=""> | Tétra empereur<br>`nematobrycon_palmeri` | *Nematobrycon palmeri* | Eau douce | 4–6 cm | En banc · se cache la nuit |  |
+| <img src="fish/gymnocorymbus_ternetzi/thumb.webp" width="160" alt=""> | Tétra noir<br>`gymnocorymbus_ternetzi` | *Gymnocorymbus ternetzi* | Eau douce | 5–6 cm | En banc · se cache la nuit |  |
+| <img src="fish/hyphessobrycon_eques/thumb.webp" width="160" alt=""> | Tétra serpae<br>`hyphessobrycon_eques` | *Hyphessobrycon eques* | Eau douce | 3–4.5 cm | En banc · se cache la nuit |  |
+| <img src="fish/hemigrammus_bleheri/thumb.webp" width="160" alt=""> | Tétra à nez rouge<br>`hemigrammus_bleheri` | *Hemigrammus bleheri* | Eau douce | 4–5 cm | En banc · se cache la nuit |  |
+| <img src="fish/dichotomyctere_nigroviridis/thumb.webp" width="160" alt=""> | Tétraodon vert<br>`dichotomyctere_nigroviridis` | *Dichotomyctere nigroviridis* | Saumâtre | 10–17 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/dichotomyctere_biocellatus/thumb.webp" width="160" alt=""> | Tétraodon à huit<br>`dichotomyctere_biocellatus` | *Dichotomyctere biocellatus* | Saumâtre | 5–6.5 cm | Nageur de pleine eau · se cache la nuit |  |
+| <img src="fish/xiphophorus_hellerii/thumb.webp" width="160" alt=""> | Xipho<br>`xiphophorus_hellerii` | *Xiphophorus hellerii* | Eau douce | 6–12 cm | En banc · se cache la nuit |  |
 
 ## Coraux (1)
 
 |  | Nom | Nom scientifique | Eau | Taille |
 |---|---|---|---|---|
-| <img src="corals/euphyllia_glabrescens/thumb.webp" width="72" alt=""> | Euphyllie torche<br>`euphyllia_glabrescens` | *Euphyllia glabrescens* | Marine | 10–30 cm |
+| <img src="corals/euphyllia_glabrescens/thumb.webp" width="160" alt=""> | Euphyllie torche<br>`euphyllia_glabrescens` | *Euphyllia glabrescens* | Marine | 10–30 cm |
 
 ## Plantes (29)
 

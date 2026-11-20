@@ -64,7 +64,7 @@ def test_writes_one_readme_per_language(
     ) in english
     assert "## Fish (1)" in english and "## Corals (1)" in english
     assert (
-        '| <img src="fish/siganus_vulpinus/thumb.webp" width="72" alt=""> '
+        '| <img src="fish/siganus_vulpinus/thumb.webp" width="160" alt=""> '
         "| Siganus_Vulpinus<br>`siganus_vulpinus` | *Siganus vulpinus* | Marine | 5–8 cm "
         "| Shoaling · stays near its home · hides at night |"
     ) in english
@@ -116,7 +116,7 @@ def test_table_of_partly_described_species(tmp_path: Path) -> None:
     table = make_readme.species_table(species["fish"], "de", "fish")
     # no name: the id; no scientific name, size or behaviour: a dash
     assert (
-        '| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> '
+        '| <img src="defaults/unknown_fish/thumb.webp" width="160" alt=""> '
         "| plain<br>`plain` | — | — | 4 cm | — |"
     ) in table
     # English name when the language is missing, pipes escaped
@@ -160,3 +160,45 @@ def test_translations_keep_the_ecosystem_block(tmp_path: Path) -> None:
     )
     assert make_readme.main(["--root", str(root), "--check"]) == 0
     assert filled in french.read_text(encoding="utf-8")
+
+
+def test_every_language_explains_how_it_works(tmp_path: Path) -> None:
+    """The animated pictures come right after the introduction, in every language."""
+    assert set(make_readme.DEMO) == set(validate.LANGUAGES)
+    root = catalog(tmp_path)
+    rendered = make_readme.render(root)
+    for lang in validate.LANGUAGES:
+        text = rendered[make_readme.readme_name(lang)]
+        title, _, names = make_readme.DEMO[lang]
+        assert text.index("<!-- species:begin") < text.index(f"## {title}")
+        for (src, _), name in zip(make_readme.DEMO_IMAGES, names, strict=True):
+            assert f'<img src="{src}"' in text and f'alt="{name}"' in text
+        # before the first table
+        assert text.index(f"## {title}") < text.index("|---|"), lang
+
+
+def test_hd_column_marks_the_real_animations_of_the_fish() -> None:
+    real = {"id": "a", "_kind": "fish", "atlas": {"1x": "a.webp"}}
+    photo = {
+        "id": "b",
+        "_kind": "fish",
+        "atlas": {"1x": "b.webp"},
+        "degraded": True,
+    }
+    none = {"id": "c", "_kind": "fish"}
+    assert [make_readme.is_hd(d) for d in (real, photo, none)] == [True, False, False]
+    table = make_readme.species_table([real, photo, none], "en", "fish").splitlines()
+    assert table[0].endswith("| HD |")
+    assert [row.split("|")[-2].strip() for row in table[2:]] == [
+        make_readme.HD_MARK,
+        "",
+        "",
+    ]
+    # only the fish have the column, and every language explains it
+    assert (
+        "HD"
+        not in make_readme.species_table(
+            [{**real, "_kind": "corals"}], "en", "corals"
+        ).splitlines()[0]
+    )
+    assert set(make_readme.HD_NOTE) == set(validate.LANGUAGES)
