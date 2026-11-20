@@ -101,7 +101,7 @@ A integração descarrega as versões publicadas deste repositório e mantém-na
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Threespot dascyllus<br>`dascyllus_trimaculatus` | *Dascyllus trimaculatus* | Marinho | 10–14 cm | Estacionário · paira na água à noite |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Tiger barb<br>`puntigrus_tetrazona` | *Puntigrus tetrazona* | Água doce | 5–7 cm | Em cardume · esconde-se à noite |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Turquoise rainbowfish<br>`melanotaenia_lacustris` | *Melanotaenia lacustris* | Água doce | 8–12 cm | Em cardume · esconde-se à noite |
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Valentini puffer<br>`canthigaster_valentini` | *Canthigaster valentini* | Marinho | 8–10 cm | Nadador de águas abertas · esconde-se à noite |
+| <img src="fish/canthigaster_valentini/thumb.webp" width="72" alt=""> | Valentini puffer<br>`canthigaster_valentini` | *Canthigaster valentini* | Marinho | 8–10 cm | Nadador de águas abertas · esconde-se à noite |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Violet goby<br>`gobioides_broussonnetii` | *Gobioides broussonnetii* | Salobra | 30–50 cm | Vive na areia · vive numa toca · descansa no fundo à noite |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | White cloud mountain minnow<br>`tanichthys_albonubes` | *Tanichthys albonubes* | Água doce | 3–4 cm | Em cardume · esconde-se à noite |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Yasha goby<br>`stonogobiops_yasha` | *Stonogobiops yasha* | Marinho | 6–8 cm | Vive na areia · vive numa toca · descansa no fundo à noite |

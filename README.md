@@ -101,7 +101,7 @@ The integration downloads the releases of this repository and keeps them up to d
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Threespot dascyllus<br>`dascyllus_trimaculatus` | *Dascyllus trimaculatus* | Marine | 10–14 cm | Hovers in place · hovers at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Tiger barb<br>`puntigrus_tetrazona` | *Puntigrus tetrazona* | Freshwater | 5–7 cm | Shoaling · hides at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Turquoise rainbowfish<br>`melanotaenia_lacustris` | *Melanotaenia lacustris* | Freshwater | 8–12 cm | Shoaling · hides at night |
-| <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Valentini puffer<br>`canthigaster_valentini` | *Canthigaster valentini* | Marine | 8–10 cm | Open-water cruiser · hides at night |
+| <img src="fish/canthigaster_valentini/thumb.webp" width="72" alt=""> | Valentini puffer<br>`canthigaster_valentini` | *Canthigaster valentini* | Marine | 8–10 cm | Open-water cruiser · hides at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Violet goby<br>`gobioides_broussonnetii` | *Gobioides broussonnetii* | Brackish | 30–50 cm | Lives on the sand · lives in a burrow · rests on the bottom at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | White cloud mountain minnow<br>`tanichthys_albonubes` | *Tanichthys albonubes* | Freshwater | 3–4 cm | Shoaling · hides at night |
 | <img src="defaults/unknown_fish/thumb.webp" width="72" alt=""> | Yasha goby<br>`stonogobiops_yasha` | *Stonogobiops yasha* | Marine | 6–8 cm | Lives on the sand · lives in a burrow · rests on the bottom at night |
