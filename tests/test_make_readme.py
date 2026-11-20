@@ -64,17 +64,16 @@ def test_writes_one_readme_per_language(
     ) in english
     assert "## Fish (1)" in english and "## Corals (1)" in english
     assert (
-        '| <img src="fish/siganus_vulpinus/thumb.webp" width="160" alt=""> '
-        "| <small>Siganus_Vulpinus<br>`siganus_vulpinus`</small> "
-        "| <small>*Siganus vulpinus*</small> | <small>Marine</small> "
-        "| <small>5–8 cm</small> "
-        "| <small>Shoaling · stays near its home · hides at night</small> |"
+        '| <img src="fish/siganus_vulpinus/thumb.webp" width="140" alt=""> '
+        "| <sub>Siganus_Vulpinus<br><code>siganus&#95;<wbr>vulpinus</code></sub> "
+        "| <sub>*Siganus vulpinus*</sub> | <sub>Marine</sub> "
+        "| <sub>5–8 cm</sub> "
+        "| <sub>Shoaling · stays near its home · hides at night</sub> |"
     ) in english
     # corals have no details column
     assert (
-        "| <small>Name</small> | <small>Scientific name</small> "
-        "| <small>Water</small> | <small>Size</small> |\n|---|---|---|---|---|\n"
-        in english
+        "| <sub>Name</sub> | <sub>Scientific name</sub> "
+        "| <sub>Water</sub> | <sub>Size</sub> |\n|---|---|---|---|---|\n" in english
     )
     assert "documentation en anglais" not in english
 
@@ -120,14 +119,14 @@ def test_table_of_partly_described_species(tmp_path: Path) -> None:
     table = make_readme.species_table(species["fish"], "de", "fish")
     # no name: the id; no scientific name, size or behaviour: a dash
     assert (
-        '| <img src="defaults/unknown_fish/thumb.webp" width="160" alt=""> '
-        "| <small>plain<br>`plain`</small> | <small>—</small> | <small>—</small> "
-        "| <small>4 cm</small> | <small>—</small> |"
+        '| <img src="defaults/unknown_fish/thumb.webp" width="140" alt=""> '
+        "| <sub>plain<br><code>plain</code></sub> | <sub>—</sub> | <sub>—</sub> "
+        "| <sub>4 cm</sub> | <sub>—</sub> |"
     ) in table
     # English name when the language is missing, pipes escaped
     assert (
-        "| <small>Odd \\| fish<br>`odd`</small> | <small>—</small> | <small>—</small> "
-        "| <small>—</small> | <small>—</small> |"
+        "| <sub>Odd \\| fish<br><code>odd</code></sub> | <sub>—</sub> | <sub>—</sub> "
+        "| <sub>—</sub> | <sub>—</sub> |"
     ) in table
     assert make_readme.species_table([], "pl", "fish") == "Brak gatunków."
     goby = {"behavior": {"profile": "sand", "burrow": True, "territory_cm": 9}}
