@@ -44,6 +44,9 @@ END = "<!-- species:end -->"
 THUMB_WIDTH = 160
 #: Displayed width of the sharper preview (docs/thumbs, built by make_demo.py)
 PREVIEW_WIDTH = 240
+#: GitHub shrinks a picture to the width of its column, and the column to the text
+#: around it: unbreakable spaces in the header keep the column as wide as the picture
+COLUMN_SPACER = "&nbsp;" * 56
 #: Width of the animated pictures of the "How it works" part
 DEMO_WIDTH = 288
 #: Thumbnail shown for a fish that has no picture yet
@@ -832,7 +835,13 @@ def species_table(entries: list[dict[str, Any]], lang: str, kind: str) -> str:
     if not entries:
         return texts["none"]
     details = DETAILS.get(kind)
-    head = ["", texts["name"], texts["scientific"], texts["water"], texts["size"]]
+    head = [
+        COLUMN_SPACER,
+        texts["name"],
+        texts["scientific"],
+        texts["water"],
+        texts["size"],
+    ]
     if details:
         head.append(texts[details[0]])
     if kind == "fish":

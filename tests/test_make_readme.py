@@ -217,3 +217,11 @@ def test_a_sharper_preview_replaces_the_thumbnail(tmp_path: Path) -> None:
     preview.unlink()
     (fox,) = make_readme.load_species(tmp_path)["fish"]
     assert fox["_preview"] == ""
+
+
+def test_the_picture_column_keeps_its_width() -> None:
+    table = make_readme.species_table([], "en", "fish")
+    assert table == make_readme.TEXTS["en"]["none"]
+    desc = {"id": "x", "_kind": "fish", "_preview": "", "behavior": {"profile": "x"}}
+    header = make_readme.species_table([desc], "en", "fish").splitlines()[0]
+    assert header.startswith("| " + make_readme.COLUMN_SPACER + " |")
