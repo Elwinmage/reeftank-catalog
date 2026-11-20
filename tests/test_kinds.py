@@ -176,8 +176,11 @@ def test_readme_tables_of_plants_and_invertebrates() -> None:
         "zone": "epiphyte",
     }
     table = make_readme.species_table([plant], "fr", "plants")
-    assert "| Eau douce, Saumâtre | — | Épiphyte |" in table
-    assert "| Zone |" in table
+    assert (
+        "| <small>Eau douce, Saumâtre</small> | <small>—</small> "
+        "| <small>Épiphyte</small> |"
+    ) in table
+    assert "| <small>Zone</small> |" in table
     shrimp = {
         "id": "cherry",
         "_kind": "invertebrates",
@@ -185,8 +188,11 @@ def test_readme_tables_of_plants_and_invertebrates() -> None:
         "movement": "glass",
     }
     table = make_readme.species_table([shrimp], "en", "invertebrates")
-    assert "| — | — | — | Detritivore · Cleaner · climbs the glass |" in table
-    assert "| Role |" in table
+    assert (
+        "| <small>—</small> | <small>—</small> | <small>—</small> "
+        "| <small>Detritivore · Cleaner · climbs the glass</small> |"
+    ) in table
+    assert "| <small>Role</small> |" in table
     assert make_readme.invertebrate_details({"role": "x"}, "en") == "—"
     assert make_readme.plant_details({"zone": "sky"}, "en") == "—"
     assert make_readme.water({}, "en") == "—"
