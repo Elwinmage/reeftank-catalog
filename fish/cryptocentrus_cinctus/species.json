@@ -1,0 +1,78 @@
+{
+  "kind": "fish",
+  "frame": [
+    208,
+    108
+  ],
+  "columns": 8,
+  "clips": {
+    "swim": {
+      "from": 0,
+      "to": 42,
+      "fps": 24,
+      "loop": true
+    },
+    "idle": {
+      "from": 43,
+      "to": 87,
+      "fps": 12,
+      "loop": true
+    },
+    "turn": {
+      "from": 88,
+      "to": 113,
+      "fps": 24,
+      "loop": false
+    }
+  },
+  "atlas": {
+    "1x": "cryptocentrus_cinctus.webp"
+  },
+  "facing": "right",
+  "length_frac": 0.9327,
+  "thumbnail": "thumb.webp",
+  "degraded": true,
+  "source": {
+    "type": "ai-generated",
+    "model": "gemini-2.5-flash-image",
+    "date": "2026-11-20"
+  },
+  "names": {
+    "en": "Yellow prawn-goby",
+    "fr": "Gobie à bandeau jaune",
+    "de": "Gelbe Symbiosegrundel",
+    "es": "Gobio centinela amarillo",
+    "it": "Ghiozzo dai cerchi gialli",
+    "nl": "Gele symbiosegrondel",
+    "pl": "Babka żółta",
+    "pt": "Gobi-anfitrião amarelo"
+  },
+  "scientific": "Cryptocentrus cinctus",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    8,
+    10
+  ],
+  "behavior": {
+    "profile": "sand",
+    "band": [
+      0.85,
+      1
+    ],
+    "depth": [
+      0.1,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.5,
+      5
+    ],
+    "turn_rate": 2.5,
+    "burrow": true,
+    "territory_cm": 15
+  },
+  "night": "rest_bottom",
+  "feeding_response": 0.6
+}

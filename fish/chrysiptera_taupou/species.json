@@ -1,0 +1,77 @@
+{
+  "kind": "fish",
+  "frame": [
+    208,
+    108
+  ],
+  "columns": 8,
+  "clips": {
+    "swim": {
+      "from": 0,
+      "to": 42,
+      "fps": 24,
+      "loop": true
+    },
+    "idle": {
+      "from": 43,
+      "to": 87,
+      "fps": 12,
+      "loop": true
+    },
+    "turn": {
+      "from": 88,
+      "to": 113,
+      "fps": 24,
+      "loop": false
+    }
+  },
+  "atlas": {
+    "1x": "chrysiptera_taupou.webp"
+  },
+  "facing": "right",
+  "length_frac": 0.9375,
+  "thumbnail": "thumb.webp",
+  "degraded": true,
+  "source": {
+    "type": "ai-generated",
+    "model": "gemini-2.5-flash-image",
+    "date": "2026-11-20"
+  },
+  "names": {
+    "en": "Fiji devil damselfish",
+    "fr": "Demoiselle des mers du sud",
+    "de": "Fidschi-Riffbarsch",
+    "es": "Damisela de Fiji",
+    "it": "Damigella delle Figi",
+    "nl": "Fiji-juffertje",
+    "pl": "Pomacentrus Fidji",
+    "pt": "Demisela de Fiji"
+  },
+  "scientific": "Chrysiptera taupou",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    6,
+    8
+  ],
+  "behavior": {
+    "profile": "hover",
+    "band": [
+      0.3,
+      0.8
+    ],
+    "depth": [
+      0.2,
+      0.8
+    ],
+    "speed_cm_s": [
+      1,
+      3
+    ],
+    "turn_rate": 3.0,
+    "territory_cm": 20
+  },
+  "night": "hover",
+  "feeding_response": 1.0
+}

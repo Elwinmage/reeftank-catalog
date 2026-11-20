@@ -1,0 +1,76 @@
+{
+  "kind": "fish",
+  "frame": [
+    208,
+    100
+  ],
+  "columns": 8,
+  "clips": {
+    "swim": {
+      "from": 0,
+      "to": 42,
+      "fps": 24,
+      "loop": true
+    },
+    "idle": {
+      "from": 43,
+      "to": 87,
+      "fps": 12,
+      "loop": true
+    },
+    "turn": {
+      "from": 88,
+      "to": 113,
+      "fps": 24,
+      "loop": false
+    }
+  },
+  "atlas": {
+    "1x": "gobiodon_okinawae.webp"
+  },
+  "facing": "right",
+  "length_frac": 0.9423,
+  "thumbnail": "thumb.webp",
+  "degraded": true,
+  "source": {
+    "type": "ai-generated",
+    "model": "gemini-2.5-flash-image",
+    "date": "2026-11-20"
+  },
+  "names": {
+    "en": "Okinawa goby",
+    "fr": "Gobie corail jaune",
+    "de": "Okinawa-Korallengrundel",
+    "es": "Gobio de Okinawa",
+    "it": "Ghiozzo di Okinawa",
+    "nl": "Okinawa-koraalgrondel",
+    "pl": "Babka Okinawska",
+    "pt": "Gobi de Okinawa"
+  },
+  "scientific": "Gobiodon okinawae",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    2.5,
+    3.5
+  ],
+  "behavior": {
+    "profile": "benthic",
+    "band": [
+      0.75,
+      1
+    ],
+    "depth": [
+      0.1,
+      0.9
+    ],
+    "speed_cm_s": [
+      1.5,
+      3
+    ],
+    "turn_rate": 2.2
+  },
+  "night": "hide",
+  "feeding_response": 0.7
+}
