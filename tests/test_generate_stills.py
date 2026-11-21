@@ -424,11 +424,11 @@ def test_a_plant_gets_its_atlas_with_the_prompt_of_its_form(
     assert (tmp_path / "photos" / "egeria_densa-1.png").exists()
 
 
-def test_a_refused_plant_is_asked_again_on_the_other_background_and_from_photos(
+def test_a_refused_plant_is_asked_again_on_its_own_background_and_from_photos(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     root = make_plants(tmp_path, {"egeria_densa": PLANTS["egeria_densa"]})
-    answers = iter([plant_png(GREEN)])  # asked on green after the first failure
+    answers = iter([plant_png(MAGENTA)])  # asked again on magenta, never on green
     prompts: list[str] = []
 
     def fake(prompt: str, model: str, key: str, aspect: str) -> bytes:
@@ -439,11 +439,21 @@ def test_a_refused_plant_is_asked_again_on_the_other_background_and_from_photos(
     monkeypatch.setenv(gen.KEY_ENV, "k")
     photos = tmp_path / "photos"
     assert gen.run(namespace(section="plants", photos=photos), root) == 0
-    assert "flat green" in prompts[1] and (photos / "egeria_densa-2.png").exists()
+    assert all("flat magenta" in p for p in prompts)
+    assert (photos / "egeria_densa-2.png").exists()
     # from the photos kept: the same entry again, with --redo (a degraded one)
     monkeypatch.setattr(gen, "generate", lambda *_a: pytest.fail("a request was made"))
     redo = namespace(section="plants", from_photos=photos, redo=True)
     assert gen.run(redo, root) == 0
+
+
+def test_a_plant_never_goes_to_the_green_background_by_itself() -> None:
+    plants = Path("plants")
+    # a green plant: magenta only; a red one: green only, as `species_keys` says
+    assert gen.backgrounds_for(plants / "egeria_densa", "plants") == ["magenta"]
+    assert gen.backgrounds_for(plants / "ludwigia_repens", "plants") == ["green"]
+    # a fish still goes from one to the other
+    assert gen.backgrounds_for(Path("fish/x"), "fish") == ["magenta", "green"]
 
 
 def test_the_plant_commands_list_the_plants(tmp_path: Path, capsys: Any) -> None:

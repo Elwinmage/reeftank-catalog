@@ -24,70 +24,17 @@ from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "client"))
-from reeftank_catalog_still import (
-    OPAQUE,
-    THUMB_SIZE,
-    Still,
-    encode_webp,
-    thumbnail,
+from reeftank_catalog_plant import (  # noqa: F401 - re-exported for the callers
+    CLIP,
+    FRAME,
+    MIN_SHARE,
+    PAD,
+    SHARE_MESSAGE,
+    build_plant_still,
+    check_plant_photo,
 )
-from still_atlas import KEYS, check_photo, key_out, source_info, write_still
+from still_atlas import KEYS, source_info, write_still
 from validate import LICENSES, SOURCE_TYPES
-
-#: Side of the square frame, px, and the margin kept around the plant
-FRAME = 320
-PAD = 12
-#: A plant fills at least this share of the picture (its larger side)
-MIN_SHARE = 0.4
-SHARE_MESSAGE = "too small in the picture"
-CLIP = {"from": 0, "to": 0, "fps": 1, "loop": False}
-
-
-def check_plant_photo(photo: Image.Image, key: str | None = None) -> list[str]:
-    """Problems that make a photo unfit (empty when fine).
-
-    `check_photo` judges the width of a fish; a plant is judged on its larger
-    side, a stem plant being taller than wide.
-    """
-    problems = [p.replace("fish", "plant") for p in check_photo(photo, key)]
-    kept = [p for p in problems if SHARE_MESSAGE not in p]
-    if len(kept) != len(problems):  # the plant was found: measure it our way
-        box = key_out(photo, key).getchannel("A").point(OPAQUE).getbbox()
-        assert box is not None  # check_photo found it
-        width, height = photo.size
-        if max((box[2] - box[0]) / width, (box[3] - box[1]) / height) < MIN_SHARE:
-            kept.append(f"the plant is {SHARE_MESSAGE} (under {MIN_SHARE:.0%})")
-    return kept
-
-
-def build_plant_still(
-    photo: Image.Image, name: str, source: dict[str, str], key: str | None = None
-) -> Still:
-    """The atlas and the thumbnail of a plant (`name`: its id)."""
-    sub = key_out(photo, key)
-    box = sub.getchannel("A").point(OPAQUE).getbbox() or (0, 0, *sub.size)
-    plant = sub.crop(box)
-    room = FRAME - 2 * PAD
-    scale = min(room / plant.width, room / plant.height)
-    size = (max(1, round(plant.width * scale)), max(1, round(plant.height * scale)))
-    small = plant.convert("RGBa").resize(size, Image.Resampling.LANCZOS).convert("RGBA")
-    frame = Image.new("RGBA", (FRAME, FRAME), (0, 0, 0, 0))
-    frame.paste(small, ((FRAME - size[0]) // 2, FRAME - PAD - size[1]))
-    keys = {
-        "kind": "plant",
-        "frame": [FRAME, FRAME],
-        "columns": 1,
-        "clips": {"still": dict(CLIP)},
-        "atlas": {"1x": f"{name}.webp"},
-        "thumbnail": "thumb.webp",
-        "degraded": True,
-        "source": source,
-    }
-    files = {
-        f"{name}.webp": encode_webp(frame),
-        "thumb.webp": encode_webp(thumbnail(frame, THUMB_SIZE)),
-    }
-    return Still(files, keys)
 
 
 def write_plant_atlas(

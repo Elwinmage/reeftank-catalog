@@ -20,9 +20,12 @@ replaced.
     python scripts/generate_stills.py --section plants --only egeria_densa --redo
     python scripts/generate_stills.py --from-photos photos/    # no request at all
 
-A photo that fails the checks is asked again (up to `--attempts`, alternating the
-magenta and the green background: a pink fish is lost on magenta; a red plant
-starts on green). `--photos`
+A photo that fails the checks is asked again (up to `--attempts`). A fish alternates
+the magenta and the green background: a pink fish is lost on magenta. A plant
+never changes: it stays on its own background, magenta unless `species_keys` of
+`prompts/still_plant.json` names it (a red plant), because a green plant keyed out
+of a green background is eaten with it (grey leaves). `--background green`
+forces the colour of a run. `--photos`
 keeps every photo received (the refused ones too) to look at them; they are not
 part of the catalog. `--from-photos` builds the atlases from the photos kept by an
 earlier run (`photos/<id>-<n>.png`, the refused ones too, checked again): no key
@@ -173,11 +176,15 @@ def plant_spec() -> dict[str, Any]:
 
 
 def backgrounds_for(folder: Path, section: str) -> list[str]:
-    """The backgrounds asked in turn: a red plant starts on green, the rest on magenta."""
-    first = BACKGROUNDS[0]
+    """The backgrounds asked in turn.
+
+    A fish goes from magenta to green (a pink fish is lost on magenta). A plant
+    keeps one background: magenta, or green for the species `species_keys` names
+    (a red plant); the other colour would key out its own leaves.
+    """
     if section == "plants":
-        first = plant_prompt.plant_key(folder.name, plant_spec())
-    return [first, *(b for b in BACKGROUNDS if b != first)]
+        return [plant_prompt.plant_key(folder.name, plant_spec())]
+    return list(BACKGROUNDS)
 
 
 def request_for(folder: Path, section: str, background: str) -> tuple[str, str]:
@@ -262,8 +269,8 @@ def make_atlas_from_photos(
 ) -> str | None:
     """Atlas of an entry from the photos kept for it; None when done, else why not.
 
-    The background of a photo is the one that was asked at its attempt (they
-    alternate), or the other when that one does not fit.
+    The background of a photo is the one that was asked at its attempt (a fish
+    alternates), or the other when that one does not fit. A plant has only its own.
     """
     reason = "no photo fits"
     for number, path in photos:
@@ -275,7 +282,7 @@ def make_atlas_from_photos(
             continue
         base = backgrounds_for(folder, args.section)
         first = (number - 1) % len(base)
-        order = [base[first], base[1 - first]]
+        order = [base[first], *(b for i, b in enumerate(base) if i != first)]
         for background in [args.background] if args.background else order:
             problems = problems_of(photo, background, args.section)
             if not problems:

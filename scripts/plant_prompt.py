@@ -15,32 +15,20 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from pathlib import Path
 from typing import Any
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "client"))
+from reeftank_catalog_plant import (  # noqa: F401 - re-exported
+    plant_aspect,
+    plant_form,
+    plant_key,
+    render_plant_prompt,
+)
+
 ROOT = Path(__file__).resolve().parent.parent
 PROMPT_FILE = ROOT / "prompts" / "still_plant.json"
-
-
-def plant_form(plant_id: str, desc: dict[str, Any], prompt: dict[str, Any]) -> str:
-    """The growth form (key of `forms`) of a plant."""
-    form = prompt["species_forms"].get(plant_id) or prompt["zone_forms"].get(
-        desc.get("zone", "")
-    )
-    if form not in prompt["forms"]:
-        raise ValueError(f"no growth form for plant {plant_id}")
-    return form
-
-
-def plant_key(plant_id: str, prompt: dict[str, Any]) -> str:
-    """The background colour advised for a plant."""
-    return prompt["species_keys"].get(plant_id, prompt["default_key"])
-
-
-def plant_aspect(plant_id: str, desc: dict[str, Any], prompt: dict[str, Any]) -> str:
-    """The picture ratio to ask for: tall for a stem or a ribbon, else square."""
-    form = plant_form(plant_id, desc, prompt)
-    return str(prompt["aspects"].get(form, prompt["default_aspect"]))
 
 
 def render_prompt(
@@ -50,15 +38,7 @@ def render_prompt(
     key: str | None = None,
 ) -> str:
     """The prompt of a plant (`key` forces the background colour)."""
-    key = key or plant_key(plant_id, prompt)
-    if key not in prompt["keys"]:
-        raise ValueError(f"key must be one of {', '.join(prompt['keys'])}")
-    name = desc.get("scientific") or plant_id.replace("_", " ")
-    common = (desc.get("names") or {}).get("en")
-    specie = f"{name} ({common})" if common and common != name else name
-    text = prompt["template"].replace("[SPECIE]", specie)
-    text = text.replace("[FORM]", prompt["forms"][plant_form(plant_id, desc, prompt)])
-    return text.replace("[KEY]", prompt["keys"][key]).replace("[KEY_NAME]", key)
+    return render_plant_prompt(plant_id, desc, key, prompt)
 
 
 def load_plants(root: Path = ROOT) -> dict[str, dict[str, Any]]:
