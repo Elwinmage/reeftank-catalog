@@ -14,7 +14,9 @@ De integratie downloadt de releases van deze repository en houdt ze up-to-date (
 
 Elke vis is een blad met beelden (een WebP-atlas) en een descriptor met zijn clips: *zwemmen*, *stilstaan* en *keren*. De kaart speelt ze achter elkaar af en spiegelt de keer, zodat de vis terugkeert langs dezelfde weg. Hier het zwemmen, de keer en de terugkeer van twee soorten:
 
-<table><tr><td align="center"><img src="docs/img/demo-emperor-angelfish.webp" width="288" alt="Keizersvlinderbaars"/><br/><sub>Keizersvlinderbaars</sub></td><td align="center"><img src="docs/img/demo-clownfish.webp" width="288" alt="Clownvis"/><br/><sub>Clownvis</sub></td></tr></table>
+Een soort zonder video's krijgt een eenvoudiger atlas, gemaakt van één foto (*LD*): het hele lichaam golft, de vinnen bewegen niet. Die gemaakt van video's zijn aangevinkt in de kolom HD van de tabellen hieronder.
+
+<table><tr><th></th><th><sub>Keizersvlinderbaars</sub></th><th><sub>Clownvis</sub></th></tr><tr><td><sub>HD (video's)</sub></td><td align="center"><img src="docs/img/demo-emperor-angelfish.webp" width="288" alt="Keizersvlinderbaars — HD (video's)"/></td><td align="center"><img src="docs/img/demo-clownfish.webp" width="288" alt="Clownvis — HD (video's)"/></td></tr><tr><td><sub>LD (één foto)</sub></td><td align="center"><img src="docs/img/demo-emperor-angelfish-ld.webp" width="288" alt="Keizersvlinderbaars — LD (één foto)"/></td><td align="center"><img src="docs/img/demo-clownfish-ld.webp" width="288" alt="Clownvis — LD (één foto)"/></td></tr></table>
 
 ## Vissen (102)
 

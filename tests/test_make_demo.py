@@ -27,6 +27,28 @@ def test_the_demo_species_exist_and_have_the_clips_they_play() -> None:
 def test_the_pictures_of_the_readme_are_the_ones_built_here() -> None:
     wanted = {f"docs/img/{name}.webp" for name in make_demo.DEMOS}
     assert wanted == {src for src, _ in make_readme.DEMO_IMAGES}
+    # and their low-definition twins have the name the README gives them
+    assert make_demo.LD_SUFFIX == make_readme.DEMO_LD_SUFFIX
+    for src, _ in make_readme.DEMO_IMAGES:
+        assert (ROOT / make_readme.ld_twin(src)).is_file()
+
+
+def test_the_twin_of_a_demo_is_the_atlas_a_single_photo_gives() -> None:
+    folder = ROOT / "fish" / next(iter(make_demo.DEMOS.values()))
+    photo = make_demo.photo_of(folder)
+    assert photo.mode == "RGB" and photo.getpixel((0, 0)) == (255, 0, 255)
+    frames, clips = make_demo.degraded_frames_of(folder)
+    assert {"swim", "idle", "turn"} <= set(clips)
+    assert len(frames) == max(clip["to"] for clip in clips.values()) + 1
+    shown, delay = make_demo.sequence(folder, degraded=True)
+    assert shown[0].width == make_demo.WIDTH and delay > 0
+
+
+def test_a_blank_first_frame_still_makes_a_photo(monkeypatch) -> None:
+    blank = Image.new("RGBA", (40, 20), (0, 0, 0, 0))
+    monkeypatch.setattr(make_demo, "frames_of", lambda folder: ([blank], {}))
+    photo = make_demo.photo_of(Path("x"))
+    assert photo.size[0] > 40 * make_demo.PHOTO_SCALE
 
 
 def test_a_picture_is_an_animation_that_swims_turns_and_comes_back() -> None:
@@ -43,10 +65,11 @@ def test_a_picture_is_an_animation_that_swims_turns_and_comes_back() -> None:
 
 def test_the_committed_pictures_play_and_stay_light() -> None:
     for name in make_demo.DEMOS:
-        path = ROOT / "docs" / "img" / f"{name}.webp"
-        assert 0 < path.stat().st_size < MAX_BYTES, name
-        with Image.open(path) as picture:
-            assert getattr(picture, "n_frames", 1) > 10, name
+        for suffix in ("", make_demo.LD_SUFFIX):
+            path = ROOT / "docs" / "img" / f"{name}{suffix}.webp"
+            assert 0 < path.stat().st_size < MAX_BYTES, path.name
+            with Image.open(path) as picture:
+                assert getattr(picture, "n_frames", 1) > 10, path.name
 
 
 def test_render_makes_an_animated_webp() -> None:
@@ -60,10 +83,12 @@ def test_render_makes_an_animated_webp() -> None:
 def test_main_writes_the_pictures(tmp_path: Path, monkeypatch, capsys) -> None:
     monkeypatch.setattr(make_demo, "ROOT", tmp_path)
     monkeypatch.setattr(make_demo, "OUT", tmp_path / "img")
-    monkeypatch.setattr(make_demo, "render", lambda name, species: b"webp")
+    monkeypatch.setattr(
+        make_demo, "render", lambda name, species, degraded=False: b"webp"
+    )
     assert make_demo.main([]) == 0
     assert {p.name for p in (tmp_path / "img").iterdir()} == {
-        f"{n}.webp" for n in make_demo.DEMOS
+        f"{n}{suffix}.webp" for n in make_demo.DEMOS for suffix in ("", "-ld")
     }
     assert "KB" in capsys.readouterr().out
 
@@ -73,7 +98,9 @@ def test_check_fails_on_a_missing_picture_and_passes_when_present(
 ) -> None:
     monkeypatch.setattr(make_demo, "ROOT", tmp_path)
     monkeypatch.setattr(make_demo, "OUT", tmp_path / "img")
-    monkeypatch.setattr(make_demo, "render", lambda name, species: b"webp")
+    monkeypatch.setattr(
+        make_demo, "render", lambda name, species, degraded=False: b"webp"
+    )
     assert make_demo.main(["--check"]) == 1
     assert "missing: " in capsys.readouterr().err
     assert not list((tmp_path / "img").iterdir())  # --check writes nothing
@@ -108,7 +135,9 @@ def test_main_writes_and_checks_the_previews(
     monkeypatch.setattr(make_demo, "ROOT", tmp_path)
     monkeypatch.setattr(make_demo, "OUT", tmp_path / "img")
     monkeypatch.setattr(make_demo, "THUMBS", tmp_path / "thumbs")
-    monkeypatch.setattr(make_demo, "render", lambda name, species: b"webp")
+    monkeypatch.setattr(
+        make_demo, "render", lambda name, species, degraded=False: b"webp"
+    )
     monkeypatch.setattr(make_demo, "species_with_atlas", lambda: [Path("fish/koi")])
     monkeypatch.setattr(make_demo, "preview", lambda folder: b"preview")
     assert make_demo.main(["--check"]) == 1

@@ -14,7 +14,9 @@ The integration downloads the releases of this repository and keeps them up to d
 
 Each fish is a sheet of frames (a WebP atlas) and a descriptor with its clips: *swim*, *idle* and *turn*. The card plays them one after the other, and mirrors the turn so that the fish comes back the way it came. Here is the swim, the turn and the turn back of two species:
 
-<table><tr><td align="center"><img src="docs/img/demo-emperor-angelfish.webp" width="288" alt="Emperor angelfish"/><br/><sub>Emperor angelfish</sub></td><td align="center"><img src="docs/img/demo-clownfish.webp" width="288" alt="Clownfish"/><br/><sub>Clownfish</sub></td></tr></table>
+A species without videos gets a simpler atlas made from a single photo (*LD*): the whole body bends, the fins do not move. The ones made from videos are ticked in the HD column of the tables below.
+
+<table><tr><th></th><th><sub>Emperor angelfish</sub></th><th><sub>Clownfish</sub></th></tr><tr><td><sub>HD (videos)</sub></td><td align="center"><img src="docs/img/demo-emperor-angelfish.webp" width="288" alt="Emperor angelfish — HD (videos)"/></td><td align="center"><img src="docs/img/demo-clownfish.webp" width="288" alt="Clownfish — HD (videos)"/></td></tr><tr><td><sub>LD (one photo)</sub></td><td align="center"><img src="docs/img/demo-emperor-angelfish-ld.webp" width="288" alt="Emperor angelfish — LD (one photo)"/></td><td align="center"><img src="docs/img/demo-clownfish-ld.webp" width="288" alt="Clownfish — LD (one photo)"/></td></tr></table>
 
 ## Fish (102)
 

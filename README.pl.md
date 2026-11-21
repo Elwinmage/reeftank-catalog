@@ -14,7 +14,9 @@ Integracja pobiera wydania tego repozytorium i aktualizuje je (`update.reeftank_
 
 Każda ryba to arkusz klatek (atlas WebP) i deskryptor z jej klipami: *pływanie*, *postój* i *zawrót*. Karta odtwarza je jeden po drugim, a zawrót odbija lustrzanie, by ryba wróciła tą samą drogą. Oto pływanie, zawrót i powrót dwóch gatunków:
 
-<table><tr><td align="center"><img src="docs/img/demo-emperor-angelfish.webp" width="288" alt="Pokolec cesarski"/><br/><sub>Pokolec cesarski</sub></td><td align="center"><img src="docs/img/demo-clownfish.webp" width="288" alt="Błazenek"/><br/><sub>Błazenek</sub></td></tr></table>
+Gatunek bez nagrań ma prostszy atlas zrobiony z jednego zdjęcia (*LD*): całe ciało się wygina, płetwy się nie ruszają. Atlasy zrobione z nagrań są zaznaczone w kolumnie HD tabel poniżej.
+
+<table><tr><th></th><th><sub>Pokolec cesarski</sub></th><th><sub>Błazenek</sub></th></tr><tr><td><sub>HD (nagrania)</sub></td><td align="center"><img src="docs/img/demo-emperor-angelfish.webp" width="288" alt="Pokolec cesarski — HD (nagrania)"/></td><td align="center"><img src="docs/img/demo-clownfish.webp" width="288" alt="Błazenek — HD (nagrania)"/></td></tr><tr><td><sub>LD (jedno zdjęcie)</sub></td><td align="center"><img src="docs/img/demo-emperor-angelfish-ld.webp" width="288" alt="Pokolec cesarski — LD (jedno zdjęcie)"/></td><td align="center"><img src="docs/img/demo-clownfish-ld.webp" width="288" alt="Błazenek — LD (jedno zdjęcie)"/></td></tr></table>
 
 ## Ryby (102)
 

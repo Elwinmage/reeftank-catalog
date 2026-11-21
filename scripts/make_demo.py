@@ -5,6 +5,12 @@ An atlas is a sheet of frames; the card plays its clips (swim, idle, turn). Here
 the clips are played one after the other into an animated WebP that GitHub shows
 in the README: the fish swims, turns, swims back (the turn mirrored) and loops.
 
+Each demo has a low-definition twin (`<name>-ld.webp`): the atlas a single photo
+of the same fish gives (`client/reeftank_catalog_still.py`, the "degraded" atlas
+of a species without videos), played the same way, so that the README shows the
+difference between an atlas made from videos (HD) and one made from a photo (LD).
+The photo is the first frame of the HD atlas, on a flat magenta background.
+
     python scripts/make_demo.py [--check]
 
 `--check` writes nothing and fails when a picture is missing or out of date (CI).
@@ -21,6 +27,9 @@ from pathlib import Path
 from PIL import Image, ImageOps
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "client"))
+from reeftank_catalog_still import build_still
+
 OUT = ROOT / "docs" / "img"
 #: Sharper pictures for the tables of the README: docs/thumbs/<kind>/<id>.webp
 THUMBS = ROOT / "docs" / "thumbs"
@@ -37,12 +46,17 @@ WIDTH = 144
 QUALITY = 60
 #: One frame out of STEP is kept (the delay is multiplied): a lighter file
 STEP = 2
+#: Suffix of the low-definition twin of a demo, and how the photo it is made of is
+#: drawn: the HD frame enlarged on a flat magenta background, with a margin
+LD_SUFFIX = "-ld"
+PHOTO_SCALE = 4
+PHOTO_MARGIN = 0.25
+MAGENTA = (255, 0, 255, 255)
 
 
-def frames_of(folder: Path) -> tuple[list[Image.Image], dict[str, dict]]:
-    """The frames of an atlas, in order, and its clips."""
-    desc = json.loads((folder / "species.json").read_text(encoding="utf-8"))
-    sheet = Image.open(folder / desc["atlas"]["1x"]).convert("RGBA")
+def _cut(sheet: Image.Image, desc: dict) -> tuple[list[Image.Image], dict[str, dict]]:
+    """The frames of an atlas sheet, in order, and its clips."""
+    sheet = sheet.convert("RGBA")
     width, height = desc["frame"]
     columns = desc["columns"]
     last = max(clip["to"] for clip in desc["clips"].values())
@@ -53,9 +67,40 @@ def frames_of(folder: Path) -> tuple[list[Image.Image], dict[str, dict]]:
     return frames, desc["clips"]
 
 
-def sequence(folder: Path) -> tuple[list[Image.Image], int]:
-    """The frames of the demo (swim, turn, swim, turn back) and the delay of one."""
-    frames, clips = frames_of(folder)
+def frames_of(folder: Path) -> tuple[list[Image.Image], dict[str, dict]]:
+    """The frames of an atlas, in order, and its clips."""
+    desc = json.loads((folder / "species.json").read_text(encoding="utf-8"))
+    return _cut(Image.open(folder / desc["atlas"]["1x"]), desc)
+
+
+def photo_of(folder: Path) -> Image.Image:
+    """A photo of the fish as an image model would give it: side view, flat magenta."""
+    frames, _ = frames_of(folder)
+    fish = frames[0]
+    fish = fish.crop(fish.getchannel("A").getbbox() or (0, 0, *fish.size))
+    fish = fish.resize(
+        (fish.width * PHOTO_SCALE, fish.height * PHOTO_SCALE), Image.Resampling.LANCZOS
+    )
+    margin = round(fish.width * PHOTO_MARGIN)
+    photo = Image.new(
+        "RGBA", (fish.width + 2 * margin, fish.height + 2 * margin), MAGENTA
+    )
+    photo.alpha_composite(fish, (margin, margin))
+    return photo.convert("RGB")
+
+
+def degraded_frames_of(folder: Path) -> tuple[list[Image.Image], dict[str, dict]]:
+    """The frames and clips of the atlas a single photo of the fish gives."""
+    still = build_still(photo_of(folder), "demo", {"type": "photo"}, key="magenta")
+    return _cut(Image.open(io.BytesIO(still.files["demo.webp"])), still.keys)
+
+
+def sequence(folder: Path, degraded: bool = False) -> tuple[list[Image.Image], int]:
+    """The frames of the demo (swim, turn, swim, turn back) and the delay of one.
+
+    `degraded`: the atlas a single photo gives, instead of the one made from videos.
+    """
+    frames, clips = (degraded_frames_of if degraded else frames_of)(folder)
     swim = frames[clips["swim"]["from"] : clips["swim"]["to"] + 1]
     turn = frames[clips["turn"]["from"] : clips["turn"]["to"] + 1]
     mirrored = [ImageOps.mirror(frame) for frame in turn]
@@ -70,8 +115,8 @@ def sequence(folder: Path) -> tuple[list[Image.Image], int]:
     return shown, round(1000 * STEP / clips["swim"]["fps"])
 
 
-def render(name: str, species: str) -> bytes:
-    shown, delay = sequence(ROOT / "fish" / species)
+def render(name: str, species: str, degraded: bool = False) -> bytes:
+    shown, delay = sequence(ROOT / "fish" / species, degraded)
     out = io.BytesIO()
     shown[0].save(
         out,
@@ -119,14 +164,15 @@ def main(argv: list[str] | None = None) -> int:
     OUT.mkdir(parents=True, exist_ok=True)
     stale = []
     for name, species in DEMOS.items():
-        path = OUT / f"{name}.webp"
-        data = render(name, species)
-        if args.check:
-            if not path.is_file():
-                stale.append(path.name)
-            continue
-        path.write_bytes(data)
-        print(f"{path.relative_to(ROOT)}: {len(data) // 1024} KB")
+        for degraded in (False, True):
+            path = OUT / f"{name}{LD_SUFFIX if degraded else ''}.webp"
+            if args.check:
+                if not path.is_file():
+                    stale.append(path.name)
+                continue
+            data = render(name, species, degraded)
+            path.write_bytes(data)
+            print(f"{path.relative_to(ROOT)}: {len(data) // 1024} KB")
     for folder in species_with_atlas():
         path = THUMBS / folder.parent.name / f"{folder.name}.webp"
         if args.check:

@@ -14,7 +14,9 @@ La integración descarga las versiones publicadas de este repositorio y las mant
 
 Cada pez es una hoja de imágenes (un atlas WebP) y un descriptor con sus clips: *nadar*, *quieto* y *giro*. La tarjeta los encadena y refleja el giro para que el pez vuelva por donde vino. Aquí están el nado, el giro y la vuelta de dos especies:
 
-<table><tr><td align="center"><img src="docs/img/demo-emperor-angelfish.webp" width="288" alt="Pez ángel emperador"/><br/><sub>Pez ángel emperador</sub></td><td align="center"><img src="docs/img/demo-clownfish.webp" width="288" alt="Pez payaso"/><br/><sub>Pez payaso</sub></td></tr></table>
+Una especie sin vídeos tiene un atlas más sencillo hecho a partir de una sola foto (*LD*): todo el cuerpo ondula, las aletas no se mueven. Los hechos a partir de vídeos están marcados en la columna HD de las tablas de abajo.
+
+<table><tr><th></th><th><sub>Pez ángel emperador</sub></th><th><sub>Pez payaso</sub></th></tr><tr><td><sub>HD (vídeos)</sub></td><td align="center"><img src="docs/img/demo-emperor-angelfish.webp" width="288" alt="Pez ángel emperador — HD (vídeos)"/></td><td align="center"><img src="docs/img/demo-clownfish.webp" width="288" alt="Pez payaso — HD (vídeos)"/></td></tr><tr><td><sub>LD (una foto)</sub></td><td align="center"><img src="docs/img/demo-emperor-angelfish-ld.webp" width="288" alt="Pez ángel emperador — LD (una foto)"/></td><td align="center"><img src="docs/img/demo-clownfish-ld.webp" width="288" alt="Pez payaso — LD (una foto)"/></td></tr></table>
 
 ## Peces (102)
 

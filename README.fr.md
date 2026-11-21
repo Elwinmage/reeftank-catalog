@@ -14,7 +14,9 @@ L'intégration télécharge les versions publiées de ce dépôt et les tient à
 
 Chaque poisson est une planche d'images (un atlas WebP) et un descripteur avec ses clips : *nage*, *immobile* et *demi-tour*. La carte les enchaîne, et inverse le demi-tour en miroir pour que le poisson revienne comme il est venu. Voici la nage, le demi-tour et le retour de deux espèces :
 
-<table><tr><td align="center"><img src="docs/img/demo-emperor-angelfish.webp" width="288" alt="Poisson-ange empereur"/><br/><sub>Poisson-ange empereur</sub></td><td align="center"><img src="docs/img/demo-clownfish.webp" width="288" alt="Poisson-clown"/><br/><sub>Poisson-clown</sub></td></tr></table>
+Une espèce sans vidéos a un atlas plus simple, fait à partir d'une seule photo (*LD*) : tout le corps ondule, les nageoires ne bougent pas. Ceux faits à partir de vidéos sont cochés dans la colonne HD des tableaux ci-dessous.
+
+<table><tr><th></th><th><sub>Poisson-ange empereur</sub></th><th><sub>Poisson-clown</sub></th></tr><tr><td><sub>HD (vidéos)</sub></td><td align="center"><img src="docs/img/demo-emperor-angelfish.webp" width="288" alt="Poisson-ange empereur — HD (vidéos)"/></td><td align="center"><img src="docs/img/demo-clownfish.webp" width="288" alt="Poisson-clown — HD (vidéos)"/></td></tr><tr><td><sub>LD (une photo)</sub></td><td align="center"><img src="docs/img/demo-emperor-angelfish-ld.webp" width="288" alt="Poisson-ange empereur — LD (une photo)"/></td><td align="center"><img src="docs/img/demo-clownfish-ld.webp" width="288" alt="Poisson-clown — LD (une photo)"/></td></tr></table>
 
 ## Poissons (102)
 

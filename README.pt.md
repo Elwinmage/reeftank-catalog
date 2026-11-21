@@ -14,7 +14,9 @@ A integração descarrega as versões publicadas deste repositório e mantém-na
 
 Cada peixe é uma folha de imagens (um atlas WebP) e um descritor com os seus clipes: *nadar*, *parado* e *meia-volta*. O cartão encadeia-os e espelha a meia-volta para que o peixe regresse pelo mesmo caminho. Eis o nado, a meia-volta e o regresso de duas espécies:
 
-<table><tr><td align="center"><img src="docs/img/demo-emperor-angelfish.webp" width="288" alt="Peixe-anjo imperador"/><br/><sub>Peixe-anjo imperador</sub></td><td align="center"><img src="docs/img/demo-clownfish.webp" width="288" alt="Peixe-palhaço"/><br/><sub>Peixe-palhaço</sub></td></tr></table>
+Uma espécie sem vídeos tem um atlas mais simples feito a partir de uma só fotografia (*LD*): o corpo todo ondula, as barbatanas não se mexem. Os feitos a partir de vídeos estão assinalados na coluna HD das tabelas abaixo.
+
+<table><tr><th></th><th><sub>Peixe-anjo imperador</sub></th><th><sub>Peixe-palhaço</sub></th></tr><tr><td><sub>HD (vídeos)</sub></td><td align="center"><img src="docs/img/demo-emperor-angelfish.webp" width="288" alt="Peixe-anjo imperador — HD (vídeos)"/></td><td align="center"><img src="docs/img/demo-clownfish.webp" width="288" alt="Peixe-palhaço — HD (vídeos)"/></td></tr><tr><td><sub>LD (uma foto)</sub></td><td align="center"><img src="docs/img/demo-emperor-angelfish-ld.webp" width="288" alt="Peixe-anjo imperador — LD (uma foto)"/></td><td align="center"><img src="docs/img/demo-clownfish-ld.webp" width="288" alt="Peixe-palhaço — LD (uma foto)"/></td></tr></table>
 
 ## Peixes (102)
 

@@ -171,15 +171,21 @@ def test_translations_keep_the_ecosystem_block(tmp_path: Path) -> None:
 
 def test_every_language_explains_how_it_works(tmp_path: Path) -> None:
     """The animated pictures come right after the introduction, in every language."""
-    assert set(make_readme.DEMO) == set(validate.LANGUAGES)
+    assert set(make_readme.DEMO) == set(validate.LANGUAGES) == set(make_readme.DEMO_LD)
     root = catalog(tmp_path)
     rendered = make_readme.render(root)
     for lang in validate.LANGUAGES:
         text = rendered[make_readme.readme_name(lang)]
         title, _, names = make_readme.DEMO[lang]
         assert text.index("<!-- species:begin") < text.index(f"## {title}")
+        sentence, hd, ld = make_readme.DEMO_LD[lang]
+        assert sentence in text
         for (src, _), name in zip(make_readme.DEMO_IMAGES, names, strict=True):
-            assert f'<img src="{src}"' in text and f'alt="{name}"' in text
+            # the atlas made from videos, then the one a single photo gives
+            assert f'<img src="{src}"' in text and f'alt="{name} — {hd}"' in text
+            twin = make_readme.ld_twin(src)
+            assert f'<img src="{twin}"' in text and f'alt="{name} — {ld}"' in text
+            assert text.index(f'"{src}"') < text.index(f'"{twin}"')
         # before the first table
         assert text.index(f"## {title}") < text.index("|---|"), lang
 

@@ -148,6 +148,85 @@ DEMO: dict[str, tuple[str, str, tuple[str, str]]] = {
     ),
 }
 
+#: Low-definition twin of a demo picture (scripts/make_demo.py writes both)
+DEMO_LD_SUFFIX = "-ld"
+#: The comparison of the two kinds of atlas, by language: the sentence after the
+#: explanation, then the labels of the rows (from videos, from a single photo)
+DEMO_LD: dict[str, tuple[str, str, str]] = {
+    "en": (
+        (
+            "A species without videos gets a simpler atlas made from a single photo "
+            "(*LD*): the whole body bends, the fins do not move. The ones made from "
+            "videos are ticked in the HD column of the tables below."
+        ),
+        "HD (videos)",
+        "LD (one photo)",
+    ),
+    "fr": (
+        (
+            "Une espèce sans vidéos a un atlas plus simple, fait à partir d'une seule "
+            "photo (*LD*) : tout le corps ondule, les nageoires ne bougent pas. Ceux "
+            "faits à partir de vidéos sont cochés dans la colonne HD des tableaux ci-dessous."
+        ),
+        "HD (vidéos)",
+        "LD (une photo)",
+    ),
+    "de": (
+        (
+            "Eine Art ohne Videos erhält einen einfacheren Atlas aus einem einzigen "
+            "Foto (*LD*): Der ganze Körper biegt sich, die Flossen bewegen sich nicht. "
+            "Die aus Videos erstellten sind in der Spalte HD der Tabellen unten abgehakt."
+        ),
+        "HD (Videos)",
+        "LD (ein Foto)",
+    ),
+    "es": (
+        (
+            "Una especie sin vídeos tiene un atlas más sencillo hecho a partir de una "
+            "sola foto (*LD*): todo el cuerpo ondula, las aletas no se mueven. Los "
+            "hechos a partir de vídeos están marcados en la columna HD de las tablas de abajo."
+        ),
+        "HD (vídeos)",
+        "LD (una foto)",
+    ),
+    "it": (
+        (
+            "Una specie senza video ha un atlante più semplice ricavato da una sola "
+            "foto (*LD*): tutto il corpo ondeggia, le pinne non si muovono. Quelli "
+            "ricavati da video sono spuntati nella colonna HD delle tabelle qui sotto."
+        ),
+        "HD (video)",
+        "LD (una foto)",
+    ),
+    "nl": (
+        (
+            "Een soort zonder video's krijgt een eenvoudiger atlas, gemaakt van één "
+            "foto (*LD*): het hele lichaam golft, de vinnen bewegen niet. Die gemaakt "
+            "van video's zijn aangevinkt in de kolom HD van de tabellen hieronder."
+        ),
+        "HD (video's)",
+        "LD (één foto)",
+    ),
+    "pl": (
+        (
+            "Gatunek bez nagrań ma prostszy atlas zrobiony z jednego zdjęcia (*LD*): "
+            "całe ciało się wygina, płetwy się nie ruszają. Atlasy zrobione z nagrań "
+            "są zaznaczone w kolumnie HD tabel poniżej."
+        ),
+        "HD (nagrania)",
+        "LD (jedno zdjęcie)",
+    ),
+    "pt": (
+        (
+            "Uma espécie sem vídeos tem um atlas mais simples feito a partir de uma só "
+            "fotografia (*LD*): o corpo todo ondula, as barbatanas não se mexem. Os "
+            "feitos a partir de vídeos estão assinalados na coluna HD das tabelas abaixo."
+        ),
+        "HD (vídeos)",
+        "LD (uma foto)",
+    ),
+}
+
 #: Markers of the "Related projects" block, written by
 #: reeftank/scripts/gen_ecosystem.py (another repository): kept as they are
 ECO_BEGIN = "<!-- ecosystem:start -->"
@@ -892,15 +971,26 @@ def language_bar(lang: str) -> str:
     return " ".join(links)
 
 
+def ld_twin(src: str) -> str:
+    """The low-definition twin of a demo picture (the atlas of a single photo)."""
+    stem, dot, ext = src.rpartition(".")
+    return f"{stem}{DEMO_LD_SUFFIX}{dot}{ext}"
+
+
 def demo(lang: str) -> str:
-    """The "How it works" part: the animated pictures of two species."""
+    """The "How it works" part: two species, from videos (HD) and from a photo (LD)."""
     title, text, names = DEMO[lang]
-    cells = "".join(
-        f'<td align="center"><img src="{src}" width="{DEMO_WIDTH}" '
-        f'alt="{name}"/><br/><sub>{name}</sub></td>'
-        for (src, _), name in zip(DEMO_IMAGES, names, strict=True)
-    )
-    return f"## {title}\n\n{text}\n\n<table><tr>{cells}</tr></table>"
+    sentence, hd, ld = DEMO_LD[lang]
+    head = "<th></th>" + "".join(f"<th><sub>{name}</sub></th>" for name in names)
+    rows = [f"<tr>{head}</tr>"]
+    for label, twin in ((hd, False), (ld, True)):
+        cells = "".join(
+            f'<td align="center"><img src="{ld_twin(src) if twin else src}" '
+            f'width="{DEMO_WIDTH}" alt="{name} — {label}"/></td>'
+            for (src, _), name in zip(DEMO_IMAGES, names, strict=True)
+        )
+        rows.append(f"<tr><td><sub>{label}</sub></td>{cells}</tr>")
+    return f"## {title}\n\n{text}\n\n{sentence}\n\n<table>{''.join(rows)}</table>"
 
 
 def block(species: dict[str, list[dict[str, Any]]], lang: str) -> str:

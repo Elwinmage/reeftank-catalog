@@ -14,7 +14,9 @@ Die Integration lädt die Releases dieses Repositorys herunter und hält sie akt
 
 Jeder Fisch besteht aus einem Bilderbogen (ein WebP-Atlas) und einem Deskriptor mit seinen Clips: *schwimmen*, *ruhen* und *wenden*. Die Karte spielt sie nacheinander ab und spiegelt die Wende, damit der Fisch auf demselben Weg zurückkehrt. Hier das Schwimmen, die Wende und die Rückwende zweier Arten:
 
-<table><tr><td align="center"><img src="docs/img/demo-emperor-angelfish.webp" width="288" alt="Kaiser-Kaiserfisch"/><br/><sub>Kaiser-Kaiserfisch</sub></td><td align="center"><img src="docs/img/demo-clownfish.webp" width="288" alt="Clownfisch"/><br/><sub>Clownfisch</sub></td></tr></table>
+Eine Art ohne Videos erhält einen einfacheren Atlas aus einem einzigen Foto (*LD*): Der ganze Körper biegt sich, die Flossen bewegen sich nicht. Die aus Videos erstellten sind in der Spalte HD der Tabellen unten abgehakt.
+
+<table><tr><th></th><th><sub>Kaiser-Kaiserfisch</sub></th><th><sub>Clownfisch</sub></th></tr><tr><td><sub>HD (Videos)</sub></td><td align="center"><img src="docs/img/demo-emperor-angelfish.webp" width="288" alt="Kaiser-Kaiserfisch — HD (Videos)"/></td><td align="center"><img src="docs/img/demo-clownfish.webp" width="288" alt="Clownfisch — HD (Videos)"/></td></tr><tr><td><sub>LD (ein Foto)</sub></td><td align="center"><img src="docs/img/demo-emperor-angelfish-ld.webp" width="288" alt="Kaiser-Kaiserfisch — LD (ein Foto)"/></td><td align="center"><img src="docs/img/demo-clownfish-ld.webp" width="288" alt="Clownfisch — LD (ein Foto)"/></td></tr></table>
 
 ## Fische (102)
 

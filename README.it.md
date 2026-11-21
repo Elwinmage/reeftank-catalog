@@ -14,7 +14,9 @@ L'integrazione scarica le release di questo repository e le mantiene aggiornate 
 
 Ogni pesce è un foglio di immagini (un atlante WebP) e un descrittore con le sue clip: *nuoto*, *fermo* e *virata*. La scheda le concatena e specchia la virata perché il pesce torni da dove è venuto. Ecco il nuoto, la virata e il ritorno di due specie:
 
-<table><tr><td align="center"><img src="docs/img/demo-emperor-angelfish.webp" width="288" alt="Pesce angelo imperatore"/><br/><sub>Pesce angelo imperatore</sub></td><td align="center"><img src="docs/img/demo-clownfish.webp" width="288" alt="Pesce pagliaccio"/><br/><sub>Pesce pagliaccio</sub></td></tr></table>
+Una specie senza video ha un atlante più semplice ricavato da una sola foto (*LD*): tutto il corpo ondeggia, le pinne non si muovono. Quelli ricavati da video sono spuntati nella colonna HD delle tabelle qui sotto.
+
+<table><tr><th></th><th><sub>Pesce angelo imperatore</sub></th><th><sub>Pesce pagliaccio</sub></th></tr><tr><td><sub>HD (video)</sub></td><td align="center"><img src="docs/img/demo-emperor-angelfish.webp" width="288" alt="Pesce angelo imperatore — HD (video)"/></td><td align="center"><img src="docs/img/demo-clownfish.webp" width="288" alt="Pesce pagliaccio — HD (video)"/></td></tr><tr><td><sub>LD (una foto)</sub></td><td align="center"><img src="docs/img/demo-emperor-angelfish-ld.webp" width="288" alt="Pesce angelo imperatore — LD (una foto)"/></td><td align="center"><img src="docs/img/demo-clownfish-ld.webp" width="288" alt="Pesce pagliaccio — LD (una foto)"/></td></tr></table>
 
 ## Pesci (102)
 
