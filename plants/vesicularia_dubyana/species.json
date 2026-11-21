@@ -19,9 +19,10 @@
   "thumbnail": "thumb.webp",
   "degraded": true,
   "source": {
-    "type": "ai-generated",
-    "model": "gemini-2.5-flash-image",
-    "date": "2026-11-20"
+    "type": "photo",
+    "author": "Elwinmage",
+    "license": "CC BY 4.0",
+    "date": "2026-11-21"
   },
   "names": {
     "en": "Java moss",
