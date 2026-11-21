@@ -1,9 +1,12 @@
 name: README lists
 
 # The species tables of the READMEs are written from the catalog by
-# scripts/make_readme.py. They are refreshed here, after a merge, and not
-# checked on pull requests: a contributor (or the catalog editor) only adds the
-# folder of a species, and two open pull requests never conflict on the READMEs.
+# scripts/make_readme.py, with the pictures scripts/make_demo.py draws from the
+# atlases (docs/thumbs/<kind>/<id>.webp, and the animations of docs/img). Both
+# are refreshed here, after a merge, and not checked on pull requests: a
+# contributor (or the catalog editor) only adds or changes the folder of a
+# species, and two open pull requests never conflict on the READMEs or on the
+# pictures. The pictures come first: the tables only show a picture that exists.
 #
 # The push below needs the branch rules of 'main' to let github-actions[bot]
 # push directly (or to be bypassed by it).
@@ -18,6 +21,7 @@ on:
       - "invertebrates/**"
       - "defaults/**"
       - "scripts/make_readme.py"
+      - "scripts/make_demo.py"
   workflow_dispatch:
 
 permissions:
@@ -40,16 +44,19 @@ jobs:
           python-version: "3.13"
       - name: Install dependencies
         run: pip install -r requirements.txt jsonschema referencing
+      # a new or redrawn atlas gets its picture in the tables (a new one is untracked)
+      - name: Refresh the pictures of the READMEs
+        run: python scripts/make_demo.py
       - name: Refresh the READMEs
         run: python scripts/make_readme.py
-      - name: Commit the READMEs
+      - name: Commit the READMEs and their pictures
         run: |
-          if git diff --quiet -- 'README*.md'; then
-            echo "READMEs already up to date"
+          git add 'README*.md' docs/thumbs docs/img
+          if git diff --cached --quiet; then
+            echo "READMEs and pictures already up to date"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add 'README*.md'
-          git commit -m "docs: refresh the species tables of the READMEs"
+          git commit -m "docs: refresh the species tables of the READMEs and their pictures"
           git push origin HEAD:main

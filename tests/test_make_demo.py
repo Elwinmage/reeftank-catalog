@@ -116,3 +116,15 @@ def test_main_writes_and_checks_the_previews(
     assert make_demo.main([]) == 0
     assert (tmp_path / "thumbs" / "fish" / "koi.webp").read_bytes() == b"preview"
     assert make_demo.main(["--check"]) == 0
+
+
+def test_the_pictures_are_redrawn_after_a_merge():
+    """A merged atlas gets its picture: the README workflow draws, then commits it."""
+    workflow = (ROOT / ".github" / "workflows" / "readme.yml").read_text("utf-8")
+    assert "scripts/make_demo.py" in workflow.split("jobs:")[0]  # a change triggers it
+    steps = workflow.split("jobs:")[1]
+    assert steps.index("python scripts/make_demo.py") < steps.index(
+        "python scripts/make_readme.py"
+    )
+    assert "git add 'README*.md' docs/thumbs docs/img" in steps
+    assert "git diff --cached --quiet" in steps  # a new picture is untracked
