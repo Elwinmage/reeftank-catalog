@@ -299,6 +299,7 @@ corals/<id>/
   thumb.webp          # in the default colours
 scripts/
   build_atlas.py      # clips -> atlas + descriptor + thumbnail
+  wan_clips.py        # clips made by Wan (ComfyUI) -> staged atlas -> catalog
   validate.py         # checks every entry
   make_release.py     # archives + manifest of a release
 ```
@@ -716,6 +717,38 @@ python scripts/plant_atlas.py photo.png plants/egeria_densa --source ai-generate
 `--photos` keeps the photos received (the refused ones too) to look at them; they
 are not committed. A refused photo is asked again, on the other background colour.
 `--from-photos` builds the atlases from the photos kept by an earlier run (the refused ones are checked again), without key nor request. The run stops when the key is refused or the quota is reached: start it again later.
+
+### Animations made on your own GPU (Wan, ComfyUI)
+
+`scripts/wan_clips.py` replaces the degraded atlas of a fish by a real animation:
+its three clips are made by Wan, run by a local ComfyUI, from the reference photo
+`generate_stills.py --photos photos/` kept (first and last frame: the swim and the
+idle start and end on the photo, the turn ends on its mirror, as
+`build_atlas.py --auto` expects). The prompts are those of `prompts/wan_clips.json`.
+The new atlas is staged in `clips/<id>/build/` and only goes to `fish/` once
+accepted, after a look at it played in a loop next to the current one.
+
+```bash
+# once: export the tuned workflow (Workflow > Export (API)), put the placeholders in it
+python scripts/wan_clips.py template ~/Downloads/workflow_api.json
+python scripts/wan_clips.py todo                    # the fish without a real animation
+python scripts/wan_clips.py generate --limit 3      # clips, then the staged atlas
+python scripts/wan_clips.py generate --limit 3 --gemini  # a photo asked to Gemini when none was kept
+python scripts/wan_clips.py review                  # each one in a loop: accept or redo
+python scripts/wan_clips.py preview betta_splendens # just look at one
+python scripts/wan_clips.py redo betta_splendens --clips turn
+python scripts/wan_clips.py accept betta_splendens
+```
+
+`template` prints which input of which node became which placeholder
+(`{{FIRST_FRAME}}`, `{{LAST_FRAME}}`, `{{PROMPT}}`, `{{NEGATIVE}}`, `{{SEED}}`,
+`{{WIDTH}}`, `{{HEIGHT}}`, `{{LENGTH}}` or `{{DURATION}}`, `{{PREFIX}}`): check it,
+and edit `clips/wan_workflow.json` by hand if needed. `generate` skips the clips
+already made and stops when ComfyUI cannot be reached (exit 2): start it again.
+A fish without a kept photo is skipped, unless `--gemini` (with `GEMINI_API_KEY`):
+its photo is then asked and checked as `generate_stills.py` does, and kept in
+`photos/`, without touching its degraded atlas.
+The clips, recipes and previews stay in `clips/` (not committed).
 
 Before each commit, pre-commit:
 
