@@ -41,5 +41,7 @@
     20,
     30
   ],
-  "zone": "epiphyte"
+  "zone": "epiphyte",
+  "flex": 0.2,
+  "period_s": 4.5
 }

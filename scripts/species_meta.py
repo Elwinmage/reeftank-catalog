@@ -2,8 +2,8 @@
 """Export and import the description of the species (not their pictures).
 
 The description is the part of `species.json` written by hand: names, size,
-water types, behaviour, night mode, feeding response, palette, plant zone,
-invertebrate role... The rest (clips, atlas, frame, degraded, source) comes
+water types, behaviour, night mode, feeding response, palette, plant zone and
+sway, invertebrate role... The rest (clips, atlas, frame, degraded, source) comes
 from the build and is left alone.
 
     python scripts/species_meta.py export [--out species-meta.tgz]
@@ -71,6 +71,8 @@ TEMPLATES: dict[str, dict[str, Any]] = {
         "water_types": None,
         "size_cm": None,
         "zone": None,
+        "flex": None,
+        "period_s": None,
     },
     "invertebrates": {
         "names": {},

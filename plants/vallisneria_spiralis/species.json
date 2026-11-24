@@ -43,5 +43,7 @@
     30,
     60
   ],
-  "zone": "background"
+  "zone": "background",
+  "flex": 0.9,
+  "period_s": 3.5
 }

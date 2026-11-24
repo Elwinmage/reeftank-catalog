@@ -42,5 +42,6 @@
     3,
     5
   ],
-  "zone": "epiphyte"
+  "zone": "epiphyte",
+  "flex": 0
 }

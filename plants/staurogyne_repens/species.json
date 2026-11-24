@@ -41,5 +41,7 @@
     5,
     10
   ],
-  "zone": "foreground"
+  "zone": "foreground",
+  "flex": 0.25,
+  "period_s": 3.2
 }

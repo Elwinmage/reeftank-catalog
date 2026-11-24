@@ -39,6 +39,18 @@
         "epiphyte"
       ]
     },
+    "flex": {
+      "description": "How far the current bends it: 0 stiff (a moss, a calcified alga), 1 very supple (long ribbon leaves). The card makes the sway itself from a still picture. Left out for a floating plant, which wanders along the surface instead of bending.",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "period_s": {
+      "description": "Time of one sway, seconds, with the current at rest: long leaves wave slowly, fine stems quiver. Left out when the plant does not bend.",
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "maximum": 60
+    },
     "atlas": {
       "description": "Atlas files by name (built).",
       "type": "object",

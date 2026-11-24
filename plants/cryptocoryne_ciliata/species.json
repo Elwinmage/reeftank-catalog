@@ -42,5 +42,7 @@
     20,
     40
   ],
-  "zone": "midground"
+  "zone": "midground",
+  "flex": 0.4,
+  "period_s": 4.0
 }

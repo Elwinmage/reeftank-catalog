@@ -42,5 +42,6 @@
     3,
     10
   ],
-  "zone": "foreground"
+  "zone": "foreground",
+  "flex": 0
 }

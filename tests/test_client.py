@@ -145,6 +145,22 @@ def test_a_draft_may_have_no_picture() -> None:
     assert report("plants", "x", data).errors == []
 
 
+def test_the_sway_of_a_plant_is_within_bounds() -> None:
+    """`flex` is a share, `period_s` a time: the card reads them as such."""
+    data = example("plant")
+    data["flex"] = 0.9
+    data["period_s"] = 3.5
+    assert report("plants", "x", data).errors == []
+    # A plant that does not bend says so; one that bends says how long a sway
+    data["flex"] = 0
+    data.pop("period_s")
+    assert report("plants", "x", data).errors == []
+    for flex in (-0.1, 1.5):
+        assert report("plants", "x", {**data, "flex": flex}).errors
+    for period in (0, -1):
+        assert report("plants", "x", {**data, "period_s": period}).errors
+
+
 def test_files_of_an_entry() -> None:
     check = rules.Report()
     files = {"x.webp": 10, "bad name.png": 1, "notes.txt": 1}
