@@ -1,27 +1,28 @@
 {
   "kind": "fish",
   "frame": [
-    208,
-    96
+    204,
+    84
   ],
-  "columns": 8,
+  "columns": 6,
   "clips": {
     "swim": {
       "from": 0,
-      "to": 42,
-      "fps": 24,
-      "loop": true
+      "to": 13,
+      "fps": 16,
+      "loop": true,
+      "pingpong": true
     },
     "idle": {
-      "from": 43,
-      "to": 87,
-      "fps": 12,
+      "from": 14,
+      "to": 62,
+      "fps": 16,
       "loop": true
     },
     "turn": {
-      "from": 88,
-      "to": 113,
-      "fps": 24,
+      "from": 63,
+      "to": 81,
+      "fps": 16,
       "loop": false
     }
   },
@@ -29,14 +30,12 @@
     "1x": "ancistrus.webp"
   },
   "facing": "right",
-  "length_frac": 0.9327,
-  "thumbnail": "thumb.webp",
-  "degraded": true,
   "source": {
     "type": "ai-generated",
-    "model": "gemini-2.5-flash-image",
-    "date": "2026-11-20"
+    "model": "wan2.1-vace-14b",
+    "date": "2026-11-23"
   },
+  "length_frac": 0.9412,
   "names": {
     "en": "Bristlenose pleco",
     "fr": "Ancistrus",
@@ -72,5 +71,6 @@
     "turn_rate": 2.2
   },
   "night": "hide",
-  "feeding_response": 0.7
+  "feeding_response": 0.7,
+  "thumbnail": "thumb.webp"
 }

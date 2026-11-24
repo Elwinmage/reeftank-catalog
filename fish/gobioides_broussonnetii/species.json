@@ -1,27 +1,27 @@
 {
   "kind": "fish",
   "frame": [
-    208,
-    72
+    244,
+    56
   ],
-  "columns": 8,
+  "columns": 5,
   "clips": {
     "swim": {
       "from": 0,
-      "to": 42,
-      "fps": 24,
+      "to": 30,
+      "fps": 16,
       "loop": true
     },
     "idle": {
-      "from": 43,
-      "to": 87,
-      "fps": 12,
+      "from": 31,
+      "to": 79,
+      "fps": 16,
       "loop": true
     },
     "turn": {
-      "from": 88,
-      "to": 113,
-      "fps": 24,
+      "from": 80,
+      "to": 103,
+      "fps": 16,
       "loop": false
     }
   },
@@ -29,14 +29,12 @@
     "1x": "gobioides_broussonnetii.webp"
   },
   "facing": "right",
-  "length_frac": 0.9375,
-  "thumbnail": "thumb.webp",
-  "degraded": true,
   "source": {
     "type": "ai-generated",
-    "model": "gemini-2.5-flash-image",
-    "date": "2026-11-20"
+    "model": "wan2.1-vace-14b",
+    "date": "2026-11-23"
   },
+  "length_frac": 0.7869,
   "names": {
     "en": "Violet goby",
     "fr": "Gobie violet",
@@ -74,5 +72,6 @@
     "territory_cm": 15
   },
   "night": "rest_bottom",
-  "feeding_response": 0.6
+  "feeding_response": 0.6,
+  "thumbnail": "thumb.webp"
 }

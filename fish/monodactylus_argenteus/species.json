@@ -2,26 +2,26 @@
   "kind": "fish",
   "frame": [
     208,
-    156
+    168
   ],
-  "columns": 8,
+  "columns": 10,
   "clips": {
     "swim": {
       "from": 0,
-      "to": 42,
-      "fps": 24,
+      "to": 29,
+      "fps": 16,
       "loop": true
     },
     "idle": {
-      "from": 43,
-      "to": 87,
-      "fps": 12,
+      "from": 30,
+      "to": 78,
+      "fps": 16,
       "loop": true
     },
     "turn": {
-      "from": 88,
-      "to": 113,
-      "fps": 24,
+      "from": 79,
+      "to": 100,
+      "fps": 16,
       "loop": false
     }
   },
@@ -29,14 +29,12 @@
     "1x": "monodactylus_argenteus.webp"
   },
   "facing": "right",
-  "length_frac": 0.9327,
-  "thumbnail": "thumb.webp",
-  "degraded": true,
   "source": {
     "type": "ai-generated",
-    "model": "gemini-2.5-flash-image",
-    "date": "2026-11-20"
+    "model": "wan2.1-vace-14b",
+    "date": "2026-11-23"
   },
+  "length_frac": 0.9231,
   "names": {
     "en": "Silver moony",
     "fr": "Mono argenté",
@@ -78,5 +76,6 @@
     }
   },
   "night": "hide",
-  "feeding_response": 0.9
+  "feeding_response": 0.9,
+  "thumbnail": "thumb.webp"
 }

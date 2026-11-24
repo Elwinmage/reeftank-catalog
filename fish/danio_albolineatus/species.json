@@ -1,27 +1,27 @@
 {
   "kind": "fish",
   "frame": [
-    208,
-    88
+    200,
+    80
   ],
-  "columns": 8,
+  "columns": 6,
   "clips": {
     "swim": {
       "from": 0,
-      "to": 42,
-      "fps": 24,
+      "to": 15,
+      "fps": 16,
       "loop": true
     },
     "idle": {
-      "from": 43,
-      "to": 87,
-      "fps": 12,
+      "from": 16,
+      "to": 64,
+      "fps": 16,
       "loop": true
     },
     "turn": {
-      "from": 88,
-      "to": 113,
-      "fps": 24,
+      "from": 65,
+      "to": 85,
+      "fps": 16,
       "loop": false
     }
   },
@@ -29,14 +29,12 @@
     "1x": "danio_albolineatus.webp"
   },
   "facing": "right",
-  "length_frac": 0.9423,
-  "thumbnail": "thumb.webp",
-  "degraded": true,
   "source": {
     "type": "ai-generated",
-    "model": "gemini-2.5-flash-image",
-    "date": "2026-11-20"
+    "model": "wan2.1-vace-14b",
+    "date": "2026-11-23"
   },
+  "length_frac": 0.96,
   "names": {
     "en": "Pearl danio",
     "fr": "Danio perlé",
@@ -77,5 +75,6 @@
     }
   },
   "night": "hide",
-  "feeding_response": 0.9
+  "feeding_response": 0.9,
+  "thumbnail": "thumb.webp"
 }

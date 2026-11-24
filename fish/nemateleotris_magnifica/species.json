@@ -1,27 +1,28 @@
 {
   "kind": "fish",
   "frame": [
-    208,
-    92
+    204,
+    88
   ],
-  "columns": 8,
+  "columns": 6,
   "clips": {
     "swim": {
       "from": 0,
-      "to": 42,
-      "fps": 24,
+      "to": 32,
+      "fps": 16,
       "loop": true
     },
     "idle": {
-      "from": 43,
-      "to": 87,
-      "fps": 12,
-      "loop": true
+      "from": 33,
+      "to": 54,
+      "fps": 16,
+      "loop": true,
+      "pingpong": true
     },
     "turn": {
-      "from": 88,
-      "to": 113,
-      "fps": 24,
+      "from": 55,
+      "to": 73,
+      "fps": 16,
       "loop": false
     }
   },
@@ -29,14 +30,12 @@
     "1x": "nemateleotris_magnifica.webp"
   },
   "facing": "right",
-  "length_frac": 0.9423,
-  "thumbnail": "thumb.webp",
-  "degraded": true,
   "source": {
     "type": "ai-generated",
-    "model": "gemini-2.5-flash-image",
-    "date": "2026-11-20"
+    "model": "wan2.1-vace-14b",
+    "date": "2026-11-23"
   },
+  "length_frac": 0.9412,
   "names": {
     "en": "Firefish goby",
     "fr": "Poisson-flamme",
@@ -72,5 +71,6 @@
     "turn_rate": 3.0
   },
   "night": "hover",
-  "feeding_response": 1.0
+  "feeding_response": 1.0,
+  "thumbnail": "thumb.webp"
 }

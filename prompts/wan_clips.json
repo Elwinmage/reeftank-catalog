@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "model": "wan2.1-vace-14b",
+  "fps": 16,
+  "size": [
+    832,
+    480
+  ],
+  "clips": {
+    "swim": {
+      "frames": 33,
+      "last": "same",
+      "prompt": "Side view of a [SPECIE] swimming in place on a perfectly flat, uniform, bright [BACKGROUND] background, evenly lit from edge to edge, as if on a treadmill. Strict profile, head to the right, the body stays centered at the same size and height. Steady regular tail beat, the fins move naturally, smooth continuous motion. Fixed camera, soft even studio lighting on the fish, natural colors, sharp focus from head to tail."
+    },
+    "idle": {
+      "frames": 49,
+      "last": "same",
+      "prompt": "Side view of a [SPECIE] hovering in place on a perfectly flat, uniform, bright [BACKGROUND] background, evenly lit from edge to edge. Strict profile, head to the right, the body stays still and centered. The pectoral fins scull gently, the dorsal and anal fins ripple slightly, the tail sways very little, the gills and the mouth open and close slowly. Calm slow motion, fixed camera, soft even studio lighting on the fish, natural colors, sharp focus."
+    },
+    "turn": {
+      "frames": 49,
+      "last": "mirror",
+      "prompt": "A [SPECIE] on a perfectly flat, uniform, bright [BACKGROUND] background, evenly lit from edge to edge, in profile facing right. It slowly turns in place toward the camera, shows a front three-quarter view, and keeps turning until it is in profile facing left. It stays at the same place, size and height. Smooth continuous motion, gentle tail beat, fixed camera, soft even studio lighting on the fish, natural colors."
+    }
+  },
+  "negative": "vignette, gradient background, dark corners, desaturated background, dull background, oversaturated fish, neon colors, color shift, blurry, motion blur, distorted body, deformed fins, extra fins, extra fish, flicker, sudden jump, camera movement, zoom, water, bubbles, shadow, text, watermark"
+}

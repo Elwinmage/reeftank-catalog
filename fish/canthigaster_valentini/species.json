@@ -1,5 +1,40 @@
 {
   "kind": "fish",
+  "frame": [
+    200,
+    96
+  ],
+  "columns": 7,
+  "clips": {
+    "swim": {
+      "from": 0,
+      "to": 32,
+      "fps": 16,
+      "loop": true
+    },
+    "idle": {
+      "from": 33,
+      "to": 81,
+      "fps": 16,
+      "loop": true
+    },
+    "turn": {
+      "from": 82,
+      "to": 101,
+      "fps": 16,
+      "loop": false
+    }
+  },
+  "atlas": {
+    "1x": "canthigaster_valentini.webp"
+  },
+  "facing": "right",
+  "source": {
+    "type": "ai-generated",
+    "model": "wan2.1-vace-14b",
+    "date": "2026-11-23"
+  },
+  "length_frac": 0.96,
   "names": {
     "en": "Valentini puffer",
     "fr": "Canthigaster de Valentin",
@@ -36,42 +71,5 @@
   },
   "night": "hide",
   "feeding_response": 0.9,
-  "frame": [
-    208,
-    116
-  ],
-  "columns": 8,
-  "clips": {
-    "swim": {
-      "from": 0,
-      "to": 42,
-      "fps": 24,
-      "loop": true
-    },
-    "idle": {
-      "from": 43,
-      "to": 87,
-      "fps": 12,
-      "loop": true
-    },
-    "turn": {
-      "from": 88,
-      "to": 113,
-      "fps": 24,
-      "loop": false
-    }
-  },
-  "atlas": {
-    "1x": "canthigaster_valentini.webp"
-  },
-  "facing": "right",
-  "length_frac": 0.9375,
-  "thumbnail": "thumb.webp",
-  "degraded": true,
-  "source": {
-    "type": "photo",
-    "author": "Elwinmage",
-    "license": "CC BY 4.0",
-    "date": "2026-11-20"
-  }
+  "thumbnail": "thumb.webp"
 }

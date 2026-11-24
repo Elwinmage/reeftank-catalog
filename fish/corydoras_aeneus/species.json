@@ -1,27 +1,27 @@
 {
   "kind": "fish",
   "frame": [
-    208,
-    112
+    204,
+    92
   ],
-  "columns": 8,
+  "columns": 7,
   "clips": {
     "swim": {
       "from": 0,
-      "to": 42,
-      "fps": 24,
+      "to": 32,
+      "fps": 16,
       "loop": true
     },
     "idle": {
-      "from": 43,
-      "to": 87,
-      "fps": 12,
+      "from": 33,
+      "to": 64,
+      "fps": 16,
       "loop": true
     },
     "turn": {
-      "from": 88,
-      "to": 113,
-      "fps": 24,
+      "from": 65,
+      "to": 87,
+      "fps": 16,
       "loop": false
     }
   },
@@ -29,14 +29,12 @@
     "1x": "corydoras_aeneus.webp"
   },
   "facing": "right",
-  "length_frac": 0.9471,
-  "thumbnail": "thumb.webp",
-  "degraded": true,
   "source": {
     "type": "ai-generated",
-    "model": "gemini-2.5-flash-image",
-    "date": "2026-11-20"
+    "model": "wan2.1-vace-14b",
+    "date": "2026-11-23"
   },
+  "length_frac": 0.9412,
   "names": {
     "en": "Bronze corydoras",
     "fr": "Corydoras bronzé",
@@ -72,5 +70,6 @@
     "turn_rate": 2.2
   },
   "night": "hide",
-  "feeding_response": 0.7
+  "feeding_response": 0.7,
+  "thumbnail": "thumb.webp"
 }

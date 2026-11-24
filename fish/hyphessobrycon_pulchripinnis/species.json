@@ -1,27 +1,28 @@
 {
   "kind": "fish",
   "frame": [
-    208,
-    124
+    260,
+    116
   ],
-  "columns": 8,
+  "columns": 6,
   "clips": {
     "swim": {
       "from": 0,
-      "to": 42,
-      "fps": 24,
+      "to": 32,
+      "fps": 16,
       "loop": true
     },
     "idle": {
-      "from": 43,
-      "to": 87,
-      "fps": 12,
-      "loop": true
+      "from": 33,
+      "to": 55,
+      "fps": 16,
+      "loop": true,
+      "pingpong": true
     },
     "turn": {
-      "from": 88,
-      "to": 113,
-      "fps": 24,
+      "from": 56,
+      "to": 79,
+      "fps": 16,
       "loop": false
     }
   },
@@ -29,14 +30,12 @@
     "1x": "hyphessobrycon_pulchripinnis.webp"
   },
   "facing": "right",
-  "length_frac": 0.9423,
-  "thumbnail": "thumb.webp",
-  "degraded": true,
   "source": {
     "type": "ai-generated",
-    "model": "gemini-2.5-flash-image",
-    "date": "2026-11-20"
+    "model": "wan2.1-vace-14b",
+    "date": "2026-11-23"
   },
+  "length_frac": 0.7385,
   "names": {
     "en": "Lemon tetra",
     "fr": "Tétra citron",
@@ -77,5 +76,6 @@
     }
   },
   "night": "hide",
-  "feeding_response": 0.9
+  "feeding_response": 0.9,
+  "thumbnail": "thumb.webp"
 }

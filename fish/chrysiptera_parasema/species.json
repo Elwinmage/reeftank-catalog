@@ -1,27 +1,28 @@
 {
   "kind": "fish",
   "frame": [
-    208,
-    116
+    212,
+    104
   ],
-  "columns": 8,
+  "columns": 7,
   "clips": {
     "swim": {
       "from": 0,
-      "to": 42,
-      "fps": 24,
-      "loop": true
+      "to": 15,
+      "fps": 16,
+      "loop": true,
+      "pingpong": true
     },
     "idle": {
-      "from": 43,
-      "to": 87,
-      "fps": 12,
+      "from": 16,
+      "to": 64,
+      "fps": 16,
       "loop": true
     },
     "turn": {
-      "from": 88,
-      "to": 113,
-      "fps": 24,
+      "from": 65,
+      "to": 84,
+      "fps": 16,
       "loop": false
     }
   },
@@ -29,14 +30,12 @@
     "1x": "chrysiptera_parasema.webp"
   },
   "facing": "right",
-  "length_frac": 0.9423,
-  "thumbnail": "thumb.webp",
-  "degraded": true,
   "source": {
     "type": "ai-generated",
-    "model": "gemini-2.5-flash-image",
-    "date": "2026-11-20"
+    "model": "wan2.1-vace-14b",
+    "date": "2026-11-23"
   },
+  "length_frac": 0.9057,
   "names": {
     "en": "Yellowtail blue damselfish",
     "fr": "Demoiselle à queue jaune",
@@ -73,5 +72,6 @@
     "territory_cm": 20
   },
   "night": "hover",
-  "feeding_response": 1.0
+  "feeding_response": 1.0,
+  "thumbnail": "thumb.webp"
 }

@@ -21,8 +21,14 @@ The key is found on the frame borders (`--key auto`), or given
 
 Every clip is placed on one common scale, so that the fish keeps its size
 from one clip to the other: the fish length is measured on the clip (median
-over its frames, or over its first frames for a clip played once, like a
-turn) and brought to `--length` pixels, centred in the frame. The frame size
+over its frames; for a clip played once, like a turn, on the profile before
+it turns: the source's first frames, or the clip's first frame when it turns
+from the start) and brought to `--length` pixels, centred in the frame. A
+turn also follows the framing drift of the source (a camera that zooms or
+slides during the turn, as video models often do): its first and
+last frames are brought to the profile length and position, the frames
+between them are interpolated, so the turn joins the other clips without a
+jump in size. The frame size
 fits the largest extent of every clip, and the descriptor tells the card the
 share of the frame width the fish length takes (`length_frac`).
 
@@ -455,11 +461,58 @@ def alpha_box(frame: Image.Image) -> tuple[int, int, int, int] | None:
 
 @dataclass
 class Placement:
-    """How a clip maps onto the frame: source centre and scale."""
+    """How a clip maps onto the frame: source centre and scale.
+
+    frames: one placement per frame, for a clip whose framing drifts;
+    none when the whole clip shares this one.
+    """
 
     cx: float
     cy: float
     scale: float
+    frames: list[Placement] | None = None
+
+    def at(self, index: int) -> Placement:
+        """Placement of one frame of the clip."""
+        return self.frames[index] if self.frames else self
+
+
+# Profile length of a turn end, as a share of the reference profile, for the
+# end to be taken as a profile (outside: the end is still turning, the
+# reference framing is kept for it)
+PROFILE_SHARE = (0.75, 1.33)
+
+
+def follow_framing(
+    frames: Sequence[Image.Image], reference: tuple[float, float, float], length: int
+) -> list[Placement] | None:
+    """Per-frame placements of a turn whose framing drifts.
+
+    reference: profile length and centre of the fish in the source. The
+    first and last frames, still in profile, are measured: each is brought
+    to `length` pixels and centred, the frames between are interpolated.
+    None when no end differs from the reference.
+    """
+    size, cx, cy = reference
+
+    def end(frame: Image.Image) -> tuple[float, float, float]:
+        box = alpha_box(frame)
+        if box:
+            span = float(box[2] - box[0])
+            if PROFILE_SHARE[0] <= span / size <= PROFILE_SHARE[1]:
+                return span, (box[0] + box[2]) / 2, (box[1] + box[3]) / 2
+        return size, cx, cy
+
+    first, last = end(frames[0]), end(frames[-1])
+    if first == last == (size, cx, cy):
+        return None
+    count = len(frames)
+    placements = []
+    for index in range(count):
+        t = index / (count - 1) if count > 1 else 0.0
+        span, fx, fy = (a + (b - a) * t for a, b in zip(first, last, strict=True))
+        placements.append(Placement(fx, fy, length / span))
+    return placements
 
 
 def measure(frames: Sequence[Image.Image], once: bool) -> tuple[float, float, float]:
@@ -485,11 +538,12 @@ def frame_size(
 ) -> tuple[int, int]:
     """Smallest frame (multiple of 4) holding every placed frame."""
     half_w = half_h = 1.0
-    for clip, place in zip(clips, placements, strict=True):
-        for frame in clip.frames:
+    for clip, placement in zip(clips, placements, strict=True):
+        for index, frame in enumerate(clip.frames):
             box = alpha_box(frame) or frame.getchannel("A").getbbox()
             if not box:
                 continue
+            place = placement.at(index)
             half_w = max(
                 half_w,
                 abs(box[0] - place.cx) * place.scale,
@@ -548,9 +602,17 @@ def prepare_fish(
             if isinstance(clip_key, tuple):
                 sample = [chroma_key(f, clip_key) for f in sample]
             size, cx, cy = measure(sample, once=True)
+            drift = follow_framing(frames, (size, cx, cy), length)
+        elif mode == "once":
+            # A turn starting on the reference picture: measured on its first
+            # frame only, the next ones already turn (a median over them
+            # would shrink the length and blow the turn up)
+            size, cx, cy = measure(frames[:1], once=True)
+            drift = follow_framing(frames, (size, cx, cy), length)
         else:
-            size, cx, cy = measure(frames, once=mode == "once")
-        placements.append(Placement(cx, cy, length / size))
+            size, cx, cy = measure(frames, once=False)
+            drift = None
+        placements.append(Placement(cx, cy, length / size, drift))
     return clips, placements
 
 
@@ -1067,7 +1129,10 @@ def write_entry(
         out_clips = []
         for n, c in enumerate(clips):
             frames = (
-                [place(f, placements[n], size, zoom) for f in c.frames]
+                [
+                    place(f, placements[n].at(i), size, zoom)
+                    for i, f in enumerate(c.frames)
+                ]
                 if placements is not None
                 else fit(c.frames, size)
             )

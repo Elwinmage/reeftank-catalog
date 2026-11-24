@@ -641,3 +641,91 @@ def test_coral_double_resolution_and_recipe_frame(tmp_path: Path) -> None:
     assert desc["frame"] == [16, 8]
     assert desc["atlas"]["shade_2x"] == "c.shade@2x.webp"
     assert (out / "c" / "c.mask@2x.png").is_file()
+
+
+def test_turn_follows_framing_drift(tmp_path: Path) -> None:
+    """A turn whose camera zooms in joins the other clips at the same size."""
+    swim = tmp_path / "swim"
+    turn = tmp_path / "turn"
+    swim.mkdir()
+    turn.mkdir()
+    for n in range(4):
+        fish_frame(length=120).save(swim / f"{n:03d}.png")
+    # profile frames, then a turn zoomed in by 10 % and drifting to the right,
+    # back in profile (still zoomed) on its last frame
+    lengths = [120, 120, 120, 132, 90, 50, 90, 131]
+    for n, length in enumerate(lengths):
+        dx = 0 if n < 3 else 8
+        frame = fish_frame(300, 150, length)
+        shifted = Image.new("RGB", frame.size, MAGENTA)
+        shifted.paste(frame, (dx, 0))
+        shifted.save(turn / f"{n:03d}.png")
+    specs = [
+        build_atlas.parse_clip(f"swim={swim}"),
+        build_atlas.parse_clip(f"turn={turn}:24:once:3-7"),
+    ]
+    clips, places = build_atlas.prepare_fish(specs, "auto", length=64)
+    assert places[0].frames is None
+    assert places[1].frames is not None and len(places[1].frames) == 5
+    size = build_atlas.frame_size(clips, places)
+    body = lambda box: box[2] - box[0]
+    centre = lambda box: (box[0] + box[2]) / 2
+    swim_box = build_atlas.alpha_box(
+        build_atlas.place(clips[0].frames[0], places[0], size)
+    )
+    assert swim_box
+    turn_frames = clips[1].frames
+    for index in (0, len(turn_frames) - 1):
+        box = build_atlas.alpha_box(
+            build_atlas.place(turn_frames[index], places[1].at(index), size)
+        )
+        assert box
+        # same length and position as the swim, despite the zoom and drift
+        assert abs(body(box) - body(swim_box)) <= 2
+        assert abs(centre(box) - centre(swim_box)) <= 2
+    # the frames between are interpolated
+    scales = [p.scale for p in places[1].frames]
+    assert scales[0] <= scales[2] <= scales[-1] or scales[0] >= scales[2] >= scales[-1]
+
+
+def test_turn_without_drift_keeps_one_placement() -> None:
+    frames = [build_atlas.chroma_key(fish_frame(length=120), MAGENTA)] * 3
+    size, cx, cy = build_atlas.measure(frames, once=True)
+    assert build_atlas.follow_framing(frames, (size, cx, cy), 64) is None
+    # ends out of profile (or empty) keep the reference framing
+    blank = Image.new("RGBA", (200, 100))
+    front = build_atlas.chroma_key(fish_frame(length=40), MAGENTA)
+    assert build_atlas.follow_framing([blank, front], (size, cx, cy), 64) is None
+    single = build_atlas.follow_framing(
+        [build_atlas.chroma_key(fish_frame(length=130), MAGENTA)], (size, cx, cy), 64
+    )
+    assert single and len(single) == 1 and single[0].at(0) is single[0]
+
+
+def test_turn_from_first_frame_keeps_its_size(tmp_path: Path) -> None:
+    """A turn turning from its first frame is measured on that frame only."""
+    swim = tmp_path / "swim"
+    turn = tmp_path / "turn"
+    swim.mkdir()
+    turn.mkdir()
+    for n in range(4):
+        fish_frame(length=120).save(swim / f"{n:03d}.png")
+    # narrows at once (a median over the first frames would be too short)
+    for n, length in enumerate([120, 110, 90, 70, 50, 40, 60, 90, 112, 121]):
+        fish_frame(300, 150, length).save(turn / f"{n:03d}.png")
+    specs = [
+        build_atlas.parse_clip(f"swim={swim}"),
+        build_atlas.parse_clip(f"turn={turn}:24:once"),
+    ]
+    clips, places = build_atlas.prepare_fish(specs, "auto", length=64)
+    size = build_atlas.frame_size(clips, places)
+    body = lambda box: box[2] - box[0]
+    swim_box = build_atlas.alpha_box(
+        build_atlas.place(clips[0].frames[0], places[0], size)
+    )
+    assert swim_box
+    for index in (0, len(clips[1].frames) - 1):
+        box = build_atlas.alpha_box(
+            build_atlas.place(clips[1].frames[index], places[1].at(index), size)
+        )
+        assert box and abs(body(box) - body(swim_box)) <= 2
