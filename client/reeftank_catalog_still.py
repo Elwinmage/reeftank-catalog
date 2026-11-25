@@ -164,6 +164,27 @@ def detect_key(rgb: np.ndarray) -> str | None:
     return best
 
 
+def nearest_key(rgb: np.ndarray) -> str:
+    """The key colour the corners are closest to, however washed out.
+
+    `detect_key` only names a background saturated enough to be keyed out
+    safely, and says nothing otherwise. An image model, though, often answers
+    with a dusty pink or a sage green: unmistakably one of the two, but far
+    from the colour asked for. This says which one it is, so that a prompt
+    built around such a picture can name the colour that is really in it —
+    telling a video model the background is magenta while it is shown a green
+    one leaves it reconciling the two instead of animating the animal.
+    """
+    median = np.median(corners(rgb), axis=0)
+    return max(
+        KEYS,
+        key=lambda name: (
+            float(_chroma(median, KEYS[name]))
+            / float(_chroma(np.array(KEYS[name], dtype=np.float64), KEYS[name]))
+        ),
+    )
+
+
 #: Blobs are looked for on a grid of BLOCK pixels; fish parts closer than
 #: 2 * GAP_BLOCKS * BLOCK pixels count as one fish
 BLOCK = 8

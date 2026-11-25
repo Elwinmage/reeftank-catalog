@@ -18,6 +18,7 @@ from PIL import Image, ImageDraw
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "scripts"))
 wan = importlib.import_module("wan_clips")
+validate = importlib.import_module("validate")
 
 MAGENTA = (255, 0, 255)
 
@@ -459,7 +460,12 @@ def test_generate_preview_review_accept(
     # review: an unknown answer, then redo the turn
     answers = iter(["what", "r turn"])
     args = argparse.Namespace(
-        work=catalog / "clips", root=catalog, only=None, player=None, no_open=True
+        work=catalog / "clips",
+        root=catalog,
+        only=None,
+        player=None,
+        no_open=True,
+        section="fish",
     )
     assert wan.review(args, ask=lambda _: next(answers)) == 0
     assert not (clips / "turn.gif").exists() and not (clips / "build").exists()
@@ -524,6 +530,24 @@ def test_generate_redo_build_accept_commands(
     assert run(catalog, "generate", "--only", "betta") == 0
     assert run(catalog, "accept", "betta") == 0
     assert "validate.py" in capsys.readouterr().out
+
+
+def test_accept_without_ids(
+    catalog: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """`accept` with no id takes every staged species, and none of them twice."""
+    template_file(catalog)
+    monkeypatch.setattr(wan, "_call", FakeComfy())
+    assert run(catalog, "accept") == 0
+    assert "nothing staged" in capsys.readouterr().out
+    assert run(catalog, "generate", "--limit", "2", "--poll", "0") == 0
+    assert run(catalog, "accept") == 0
+    printed = capsys.readouterr().out
+    assert "accepted ->" in printed and "validate.py" in printed
+    assert run(catalog, "accept") == 0
+    assert "nothing staged" in capsys.readouterr().out
 
 
 def test_todo_ready_and_prompt(
@@ -743,3 +767,264 @@ def test_unmix_and_missing_rembg(monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.setitem(sys.modules, "rembg", None)
     with pytest.raises(SystemExit, match="rembg"):
         wan.matte_session("isnet-general-use")
+
+
+# -- the invertebrates ---------------------------------------------------------------
+
+#: The wording of a section that words its clips after the form of the animal
+INVERT_SPEC = {
+    **SPEC,
+    "clips": {
+        "swim": {"frames": 33, "last": "same", "prompt": "walk [SPECIE]: [MOTION]"},
+        "idle": {"frames": 50, "last": "same", "prompt": "still [SPECIE]: [MOTION]"},
+        "turn": {"frames": 49, "last": "mirror", "prompt": "turn [SPECIE]: [MOTION]"},
+    },
+    "motions": {
+        "swim": {"shrimp": "it walks", "crab": "it sidles", "hermit": "it drags"},
+        "idle": {"shrimp": "it grooms", "crab": "it picks", "hermit": "it rests"},
+        "turn": {"shrimp": "it turns", "crab": "it pivots", "hermit": "it wheels"},
+    },
+}
+
+
+@pytest.fixture
+def inverts(catalog: Path) -> Path:
+    """The catalog, with a shrimp and a crab to animate, and a snail that is not."""
+    entries = {
+        "lysmata_debelius": {"movement": "decor", "scientific": "Lysmata debelius"},
+        "mithraculus_sculptus": {"movement": "decor", "scientific": "Mithraculus"},
+        "nerita": {"movement": "glass", "scientific": "Nerita sp."},
+    }
+    for entry_id, extra in entries.items():
+        folder = catalog / "invertebrates" / entry_id
+        folder.mkdir(parents=True)
+        desc = {
+            "kind": "invertebrate",
+            "role": ["cleaner"],
+            "names": dict.fromkeys(validate.LANGUAGES, entry_id),
+            "water_types": ["marine"],
+            "size_cm": [2, 5],
+            **extra,
+        }
+        (folder / "species.json").write_text(json.dumps(desc), encoding="utf-8")
+    (catalog / "invert_prompts.json").write_text(
+        json.dumps(INVERT_SPEC), encoding="utf-8"
+    )
+    photos = catalog / "photos"
+    fish(size=(150, 100)).save(photos / "lysmata_debelius-1.png")
+    return catalog
+
+
+def run_invert(catalog: Path, *argv: str) -> int:
+    return wan.main(
+        [
+            "--root",
+            str(catalog),
+            "--section",
+            "invertebrates",
+            "--prompts",
+            str(catalog / "invert_prompts.json"),
+            *argv,
+        ]
+    )
+
+
+def test_the_real_invertebrate_prompts_file() -> None:
+    spec = wan.load_spec(wan.PROMPT_FILES["invertebrates"])
+    assert set(spec["clips"]) == set(wan.CLIP_NAMES)
+    assert wan.animated_forms(spec) == {"shrimp", "crab", "hermit"}
+    for clip in wan.CLIP_NAMES:
+        text = wan.clip_prompt(spec, clip, "Lysmata debelius", "green", "shrimp")
+        assert "[" not in text and "Lysmata debelius" in text
+        assert "bright green background" in text
+    # The fish keep their own wording, with no form to name
+    fish_spec = wan.load_spec()
+    assert wan.animated_forms(fish_spec) is None
+    assert "[" not in wan.clip_prompt(fish_spec, "swim", "Betta", "magenta")
+
+
+def test_the_motion_of_the_clip_follows_the_form(inverts: Path) -> None:
+    prompt = wan.clip_prompt(INVERT_SPEC, "swim", "Lysmata", "magenta", "shrimp")
+    assert prompt == "walk Lysmata: it walks"
+    assert "it sidles" in wan.clip_prompt(
+        INVERT_SPEC, "swim", "Mithraculus", "magenta", "crab"
+    )
+    assert "it wheels" in wan.clip_prompt(
+        INVERT_SPEC, "turn", "Clibanarius", "magenta", "hermit"
+    )
+    # An animal nobody films is refused, with the ones that are
+    with pytest.raises(SystemExit, match="no swim for a snail"):
+        wan.clip_prompt(INVERT_SPEC, "swim", "Nerita sp.", "magenta", "snail")
+    with pytest.raises(SystemExit, match="without a form"):
+        wan.clip_prompt(INVERT_SPEC, "swim", "Nerita sp.", "magenta")
+
+
+def test_the_form_of_an_entry(inverts: Path) -> None:
+    assert wan.entry_form(inverts, "invertebrates", "lysmata_debelius") == "shrimp"
+    assert wan.entry_form(inverts, "invertebrates", "mithraculus_sculptus") == "crab"
+    assert wan.entry_form(inverts, "invertebrates", "nerita") == "snail"
+    # A fish has no form to name
+    assert wan.entry_form(inverts, "fish", "betta") is None
+
+
+def test_only_the_filmed_forms_are_to_animate(inverts: Path) -> None:
+    forms = wan.animated_forms(INVERT_SPEC)
+    found = wan.targets(inverts, None, "invertebrates", forms)
+    assert [f.name for f in found] == ["lysmata_debelius", "mithraculus_sculptus"]
+    # Without the filter every entry is there, the snail included
+    assert len(wan.targets(inverts, None, "invertebrates")) == 3
+    # A snail is never asked for, even by name
+    assert wan.targets(inverts, ["nerita"], "invertebrates", forms) == []
+
+
+def test_the_commands_list_and_print_the_invertebrates(
+    inverts: Path, capsys: pytest.CaptureFixture[str]
+) -> None:
+    assert run_invert(inverts, "todo") == 0
+    out = capsys.readouterr().out
+    assert "lysmata_debelius" in out and "nerita" not in out
+    assert "2 invertebrates without a real animation" in out
+    assert run_invert(inverts, "prompt", "mithraculus_sculptus", "idle") == 0
+    assert "it picks" in capsys.readouterr().out
+
+
+def test_the_section_chooses_its_wording(inverts: Path) -> None:
+    # No --prompts: the file of the section, and its motions
+    assert wan.main(["--root", str(inverts), "--section", "invertebrates", "todo"]) == 0
+    assert wan.main(["--root", str(inverts), "todo"]) == 0
+
+
+def test_a_shrimp_goes_through_to_the_catalog(
+    inverts: Path, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
+) -> None:
+    comfy = FakeComfy()
+    monkeypatch.setattr(wan, "_call", comfy)
+    workflow = template_file(inverts)
+    capsys.readouterr()
+    assert (
+        run_invert(
+            inverts,
+            "generate",
+            "--only",
+            "lysmata_debelius",
+            "--workflow",
+            str(workflow),
+            "--seed",
+            "1",
+        )
+        == 0
+    )
+    out = capsys.readouterr().out
+    assert "lysmata_debelius: staged" in out
+    # The clips were asked with the walk of a shrimp
+    asked = [q["4"]["inputs"]["text"] for q in comfy.queued]
+    assert any("it walks" in text for text in asked)
+    assert all("[" not in text for text in asked)
+    # The staged entry is an invertebrate, and it keeps what the catalog says
+    staged = inverts / "clips" / "lysmata_debelius" / "build" / "lysmata_debelius"
+    built = json.loads((staged / "species.json").read_text())
+    assert built["kind"] == "invertebrate" and built["role"] == ["cleaner"]
+    assert built["movement"] == "decor" and "swim" in built["clips"]
+    assert built["atlas"] == {"1x": "lysmata_debelius.webp"}
+    assert run_invert(inverts, "accept", "lysmata_debelius") == 0
+    target = inverts / "invertebrates" / "lysmata_debelius"
+    kept = json.loads((target / "species.json").read_text())
+    assert kept["kind"] == "invertebrate" and kept["scientific"] == "Lysmata debelius"
+    assert (target / "lysmata_debelius.webp").exists()
+    assert validate.check_entry(target, "invertebrates") == []
+
+
+def test_a_fish_is_never_staged_as_an_invertebrate(
+    inverts: Path, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
+) -> None:
+    """The clips of both sections live side by side: the catalog sorts them out."""
+    comfy = FakeComfy()
+    monkeypatch.setattr(wan, "_call", comfy)
+    workflow = template_file(inverts)
+    # a fish and a shrimp, both with their clips made and staged
+    assert run(inverts, "generate", "--only", "betta", "--workflow", str(workflow)) == 0
+    assert (
+        run_invert(
+            inverts,
+            "generate",
+            "--only",
+            "lysmata_debelius",
+            "--workflow",
+            str(workflow),
+        )
+        == 0
+    )
+    capsys.readouterr()
+
+    # Each section sees only its own, and `gallery` with it
+    assert [f.name for f in wan.work_entries(inverts / "clips", None, inverts)] == [
+        "betta"
+    ]
+    staged = wan.staged_entries(inverts / "clips", None, inverts, "invertebrates")
+    assert [f.name for f in staged] == ["lysmata_debelius"]
+    assert run_invert(inverts, "gallery", "--no-open") == 0
+    out = capsys.readouterr().out
+    assert "lysmata_debelius: ready" in out and "betta" not in out
+
+    # `build` of one section leaves the other alone: the fish keeps its kind
+    assert run_invert(inverts, "build") == 0
+    assert "1 staged" in capsys.readouterr().out
+    fish_built = inverts / "clips" / "betta" / "build" / "betta" / "species.json"
+    assert json.loads(fish_built.read_text())["kind"] == "fish"
+    # Without a catalog to ask, every work folder is there
+    assert len(wan.work_entries(inverts / "clips")) == 2
+
+
+def test_preview_against_the_still_picture_being_replaced(
+    inverts: Path, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
+) -> None:
+    """The catalog holds a still atlas until the animation lands: it is shown too."""
+    invert_atlas = importlib.import_module("invert_atlas")
+    entry = inverts / "invertebrates" / "lysmata_debelius"
+    still = invert_atlas.write_invert_atlas(
+        fish(size=(600, 400)), entry, {"type": "ai-generated", "date": "2026-11-24"}
+    )
+    assert list(still["clips"]) == ["still"]
+
+    # The still alone plays: a single frame, and its mirror
+    alone = wan.timeline(entry)
+    assert alone and len({f.tobytes() for f in alone}) == 2
+
+    comfy = FakeComfy()
+    monkeypatch.setattr(wan, "_call", comfy)
+    workflow = template_file(inverts)
+    assert (
+        run_invert(
+            inverts,
+            "generate",
+            "--only",
+            "lysmata_debelius",
+            "--workflow",
+            str(workflow),
+        )
+        == 0
+    )
+    capsys.readouterr()
+    assert run_invert(inverts, "preview", "lysmata_debelius", "--no-open") == 0
+    assert "preview.html" in capsys.readouterr().out
+    assert (inverts / "clips" / "lysmata_debelius" / "preview.webp").exists()
+
+
+def test_the_clip_is_told_the_colour_the_picture_really_has(tmp_path: Path) -> None:
+    """An image model gives a washed out key: the prompt must still name it.
+
+    Telling a video model the background is magenta while it is shown a green
+    one leaves it reconciling the two instead of animating the animal.
+    """
+    folder = tmp_path / "clips" / "x"
+    folder.mkdir(parents=True)
+    # a sage green, as a model answers when asked for #00FF00
+    fish(key=(148, 204, 141)).save(folder / "reference.png")
+    name, colour = wan.reference_background(folder)
+    assert name == "green" and colour == (148, 204, 141)
+    # a dusty pink, for magenta
+    fish(key=(225, 115, 165)).save(folder / "reference.png")
+    assert wan.reference_background(folder)[0] == "magenta"
+    # and a clean key is named as before
+    fish(key=(0, 255, 0)).save(folder / "reference.png")
+    assert wan.reference_background(folder)[0] == "green"

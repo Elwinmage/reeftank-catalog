@@ -1,0 +1,45 @@
+{
+  "version": 5,
+  "model": "wan2.1-vace-14b",
+  "fps": 16,
+  "strength": 0.7,
+  "size": [
+    832,
+    480
+  ],
+  "clips": {
+    "swim": {
+      "frames": 81,
+      "last": "same",
+      "prompt": "Side view of a [SPECIE] walking on the spot on a perfectly flat, uniform, bright [BACKGROUND] background, evenly lit from edge to edge, as if on a treadmill. Strict profile, head to the right. [MOTION] Fixed camera, soft even studio lighting on the animal, natural colors, sharp focus."
+    },
+    "idle": {
+      "frames": 49,
+      "last": "same",
+      "prompt": "Side view of a [SPECIE] standing still on a perfectly flat, uniform, bright [BACKGROUND] background, evenly lit from edge to edge. Strict profile, head to the right, the body stays in place and centered, the legs planted. [MOTION] Calm slow motion, fixed camera, soft even studio lighting on the animal, natural colors, sharp focus."
+    },
+    "turn": {
+      "frames": 49,
+      "last": "mirror",
+      "prompt": "A [SPECIE] on a perfectly flat, uniform, bright [BACKGROUND] background, evenly lit from edge to edge, in profile facing right. [MOTION] Smooth continuous motion, fixed camera, soft even studio lighting on the animal, natural colors."
+    }
+  },
+  "motions": {
+    "swim": {
+      "shrimp": "Its walking legs step one after another, each leg lifting clear of the ground, reaching forward and setting down again, so a wave of steps runs forward along the body.",
+      "crab": "Its walking legs step one after another, each leg lifting clear of the ground, reaching sideways and setting down again, the body rocking slightly at each step.",
+      "hermit": "Its walking legs step one after another, each leg lifting clear of the ground, reaching forward and setting down again, the body rocking slightly at each step; the shell it carries simply follows along."
+    },
+    "idle": {
+      "shrimp": "It grooms where it stands: the antennae sweep slowly, the maxillipeds pick near the mouth, the pleopods fan gently and the tail fan opens and closes.",
+      "crab": "It feeds where it stands: the claws pick slowly in front of the mouth, the mouthparts work and the eyestalks turn a little.",
+      "hermit": "It stays where it stands with its shell resting, the antennae sweeping slowly and the small claw picking near the mouth."
+    },
+    "turn": {
+      "shrimp": "It slowly walks round on the spot, shows a front three-quarter view, and keeps turning until it is in profile facing left. It stays at the same place, size and height.",
+      "crab": "It slowly pivots on the spot, shows a front three-quarter view, and keeps turning until it is in profile facing left. It stays at the same place, size and height.",
+      "hermit": "It slowly walks round on the spot carrying its shell, shows a front three-quarter view, and keeps turning until it is in profile facing left. It stays at the same place, size and height."
+    }
+  },
+  "negative": "vignette, gradient background, dark corners, desaturated background, dull background, oversaturated animal, neon colors, color shift, blurry, motion blur, distorted body, deformed legs, extra legs, extra claws, extra antennae, missing legs, extra animal, fish, swimming away, flicker, sudden jump, camera movement, zoom, water, bubbles, sand, rock, shadow, text, watermark"
+}

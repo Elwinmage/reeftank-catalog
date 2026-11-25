@@ -1,5 +1,40 @@
 {
   "kind": "invertebrate",
+  "frame": [
+    216,
+    120
+  ],
+  "columns": 8,
+  "clips": {
+    "swim": {
+      "from": 0,
+      "to": 39,
+      "fps": 8,
+      "loop": true
+    },
+    "idle": {
+      "from": 40,
+      "to": 86,
+      "fps": 16,
+      "loop": true
+    },
+    "turn": {
+      "from": 87,
+      "to": 106,
+      "fps": 16,
+      "loop": false
+    }
+  },
+  "atlas": {
+    "1x": "paguristes_cadenati.webp"
+  },
+  "facing": "right",
+  "source": {
+    "type": "ai-generated",
+    "model": "wan2.1-vace-14b",
+    "date": "2026-11-25"
+  },
+  "length_frac": 0.8889,
   "names": {
     "en": "Scarlet reef hermit",
     "fr": "Bernard-l'ermite à pattes rouges",
@@ -21,5 +56,6 @@
   "role": [
     "scavenger"
   ],
-  "movement": "ground"
+  "movement": "ground",
+  "thumbnail": "thumb.webp"
 }

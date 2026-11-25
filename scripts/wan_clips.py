@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Real animations of the fish that only have a degraded atlas, made with Wan on your GPU.
+"""Real animations of the animals that only have a degraded atlas, made with Wan on your GPU.
 
 A fish whose atlas comes from a single photo (`"degraded": true`, see
 `generate_stills.py`) gets its three clips from Wan, run by a local ComfyUI, with
@@ -8,6 +8,13 @@ photo (seamless loops), the turn starts on it and ends on its mirror. That is
 what `build_atlas.py --auto` expects; it builds the atlas. The new animation is
 staged next to the clips and only goes to the catalog once accepted, after a look
 at it played in a loop.
+
+`--section invertebrates` animates the shrimps, the crabs and the hermit crabs
+instead of the fish: the same three clips (`swim` is their walk, `idle` and
+`turn`), worded for the animal by `prompts/wan_invert.json`, which carries one
+motion sentence per form (shrimp, crab, hermit) on top of its clip prompts. The
+snails, the stars, the urchins and the sessile species are never animated this
+way: their still picture is what the card makes their motion from.
 
 The reference photo of a species is the one `generate_stills.py --photos photos/`
 kept (`photos/<id>-<n>.png`, the accepted ones first). With `generate --gemini`
@@ -40,7 +47,8 @@ It writes `clips/wan_workflow.json`, the copy where the values the script gives
 are placeholders, and prints what it changed: `{{FIRST_FRAME}}`,
 `{{LAST_FRAME}}` (the images of the two Load Image), `{{PROMPT}}`,
 `{{NEGATIVE}}`, `{{SEED}}`, `{{WIDTH}}`, `{{HEIGHT}}`, `{{LENGTH}}` (frames) or
-`{{DURATION}}` (seconds), `{{PREFIX}}` (the file name of Save Video). Check its
+`{{DURATION}}` (seconds), `{{STRENGTH}}` (how closely the model has to follow the
+two reference frames), `{{PREFIX}}` (the file name of Save Video). Check its
 report (the first and last images in particular) and edit the copy by hand if
 needed: any input value written as one of these placeholders is filled.
 
@@ -56,8 +64,16 @@ Commands
     python scripts/wan_clips.py review                   # look, accept or redo
     python scripts/wan_clips.py gallery --no-open        # every new one, one page
     python scripts/wan_clips.py accept betta_splendens   # into fish/
+    python scripts/wan_clips.py accept                   # all that is staged
     python scripts/wan_clips.py redo betta_splendens --clips turn
     python scripts/wan_clips.py build --only betta_splendens  # after a recipe edit
+
+Every command takes `--section invertebrates` to work on the shrimps, the crabs
+and the hermit crabs instead of the fish:
+
+    python scripts/wan_clips.py --section invertebrates todo
+    python scripts/wan_clips.py --section invertebrates prompt neocaridina_davidi swim
+    python scripts/wan_clips.py --section invertebrates generate --limit 3 --gemini
 
 `generate` skips the clips already made, so it can be stopped and started again
 (ComfyUI killed for want of memory, say); it stops the run when ComfyUI cannot
@@ -109,11 +125,21 @@ import build_atlas
 import generate_stills as stills
 from generate_stills import read_descriptor, saved_photos, species_name
 from make_demo import frames_of
-from reeftank_catalog_still import corners, is_real_animation
+from reeftank_catalog_invert import invert_form
+from reeftank_catalog_still import corners, is_real_animation, nearest_key
 from reeftank_catalog_still import detect_key as photo_key
+from validate import KINDS
 
 ROOT = Path(__file__).resolve().parent.parent
 PROMPT_FILE = ROOT / "prompts" / "wan_clips.json"
+#: Wording of the clips, by section (the fish by default)
+PROMPT_FILES = {
+    "fish": PROMPT_FILE,
+    "invertebrates": ROOT / "prompts" / "wan_invert.json",
+}
+SECTIONS = tuple(PROMPT_FILES)
+#: `swim` is the walk of an invertebrate: the name is kept so that the whole
+#: chain (this script, `build_atlas.py`, the card) reads one set of clips.
 CLIP_NAMES = ("swim", "idle", "turn")
 DEFAULT_COMFY = "http://127.0.0.1:8188"
 WORKFLOW_NAME = "wan_workflow.json"
@@ -132,6 +158,7 @@ PLACEHOLDERS = (
     "HEIGHT",
     "LENGTH",
     "DURATION",
+    "STRENGTH",
     "PREFIX",
 )
 REQUIRED = ("FIRST_FRAME", "LAST_FRAME", "PROMPT")
@@ -162,18 +189,59 @@ def load_spec(path: Path = PROMPT_FILE) -> dict[str, Any]:
 
 
 def clip_prompt(
-    spec: dict[str, Any], clip: str, species: str, background: str = "magenta"
+    spec: dict[str, Any],
+    clip: str,
+    species: str,
+    background: str = "magenta",
+    form: str | None = None,
 ) -> str:
-    """The prompt of a clip for a species, on its background colour."""
+    """The prompt of a clip for a species, on its background colour.
+
+    A section whose wording carries `motions` (the invertebrates) puts the
+    sentence of the animal's form into its clip prompts: a shrimp walks on its
+    legs, a crab sideways, a hermit crab drags its shell.
+    """
     prompt = str(spec["clips"][clip]["prompt"]).replace("[SPECIE]", species)
+    motions = spec.get("motions", {}).get(clip)
+    if motions:
+        if form not in motions:
+            raise SystemExit(
+                f"{species}: no {clip} for a {form or 'species without a form'} "
+                f"(animated with clips: {', '.join(motions)})"
+            )
+        prompt = prompt.replace("[MOTION]", str(motions[form]))
     return prompt.replace("[BACKGROUND]", background)
 
 
+def entry_form(root: Path, section: str, entry_id: str) -> str | None:
+    """The form of an entry (shrimp, crab...), None outside the invertebrates."""
+    if section != "invertebrates":
+        return None
+    return invert_form(entry_id, read_descriptor(root / section / entry_id) or {})
+
+
 def reference_background(folder: Path) -> tuple[str, tuple[int, int, int]]:
-    """Name (magenta, green) and actual colour of the background of a reference."""
+    """Name (magenta, green) and actual colour of the background of a reference.
+
+    The colour an image model gives is rarely the pure key it was asked for,
+    and `detect_key` names only the saturated ones. The prompt of a clip has
+    to name the colour the video model is actually shown, so a background it
+    will not name is read as the nearer of the two keys rather than magenta.
+    """
     rgb = np.asarray(Image.open(folder / "reference.png").convert("RGB"))
     colour = tuple(int(v) for v in np.median(corners(rgb), axis=0))
-    return photo_key(rgb) or "magenta", (colour[0], colour[1], colour[2])
+    return photo_key(rgb) or nearest_key(rgb), (colour[0], colour[1], colour[2])
+
+
+def clip_strength(spec: dict[str, Any]) -> float:
+    """How closely the model has to follow the two reference frames, 0 to 1.
+
+    A control model (VACE) told to follow them exactly has only one cheap way to
+    reach the same pose it started from: barely move. Lowering this gives the
+    prompt room, which the fish do not need (they undulate, a small motion) but
+    the walking invertebrates do.
+    """
+    return float(spec.get("strength", 1.0))
 
 
 def duration_of(spec: dict[str, Any], clip: str) -> float | int:
@@ -182,12 +250,36 @@ def duration_of(spec: dict[str, Any], clip: str) -> float | int:
     return int(seconds) if seconds.is_integer() else round(seconds, 3)
 
 
-def targets(root: Path, only: list[str] | None = None) -> list[Path]:
-    """The fish without a real animation (degraded atlas, or none)."""
+def animated_forms(spec: dict[str, Any]) -> set[str] | None:
+    """The forms a wording makes clips for; None when every entry is animated.
+
+    Only the shrimps, the crabs and the hermit crabs are worth filming: a
+    snail, a starfish or an urchin is drawn from its still picture and the
+    card gives it its own slow motion.
+    """
+    motions = spec.get("motions")
+    if not motions:
+        return None
+    return set.intersection(*(set(clip) for clip in motions.values()))
+
+
+def targets(
+    root: Path,
+    only: list[str] | None = None,
+    section: str = "fish",
+    forms: set[str] | None = None,
+) -> list[Path]:
+    """The entries without a real animation (degraded atlas, or none).
+
+    `forms` keeps only the entries whose form is filmed at all (see
+    `animated_forms`); an entry left out is never asked for, even by `--only`.
+    """
     found = []
-    for folder in sorted((root / "fish").iterdir()):
+    for folder in sorted((root / section).iterdir()):
         descriptor = read_descriptor(folder)
         if descriptor is None or (only and folder.name not in only):
+            continue
+        if forms is not None and invert_form(folder.name, descriptor) not in forms:
             continue
         if not is_real_animation(descriptor):
             found.append(folder)
@@ -205,9 +297,15 @@ def reference_photo(photos: Path, entry_id: str) -> Path | None:
 
 
 def ask_photo(
-    folder: Path, photos: Path, key: str, model: str, attempts: int, delay: float
+    folder: Path,
+    photos: Path,
+    key: str,
+    model: str,
+    attempts: int,
+    delay: float,
+    section: str = "fish",
 ) -> Path | None:
-    """A new reference photo of a fish from Gemini, kept in `photos`.
+    """A new reference photo of an entry from Gemini, kept in `photos`.
 
     The prompt and the checks are those of `generate_stills.py` (magenta, then
     green background); every photo received is kept, the refused ones as
@@ -218,7 +316,7 @@ def ask_photo(
     number = max((n for n, _ in saved_photos(photos, folder.name)), default=0)
     for attempt in range(attempts):
         background = stills.BACKGROUNDS[attempt % len(stills.BACKGROUNDS)]
-        prompt, aspect = stills.request_for(folder, "fish", background)
+        prompt, aspect = stills.request_for(folder, section, background)
         number += 1
         try:
             blob = stills.generate(prompt, model, key, aspect)
@@ -234,7 +332,7 @@ def ask_photo(
             print(f"{folder.name}: the picture is not an image")
             continue
         time.sleep(delay)
-        problems = stills.problems_of(photo, background, "fish")
+        problems = stills.problems_of(photo, background, section)
         path = photos / f"{folder.name}-{number}{'-refused' if problems else ''}.png"
         photo.save(path)
         if not problems:
@@ -416,6 +514,7 @@ def make_template(workflow: dict[str, Any]) -> tuple[dict[str, Any], list[str]]:
             ("height", "HEIGHT"),
             ("length", "LENGTH"),
             ("duration", "DURATION"),
+            ("strength", "STRENGTH"),
         ):
             value = inputs.get(key)
             if isinstance(value, int | float) and not isinstance(value, bool):
@@ -599,6 +698,7 @@ def make_clip(
     clip: str,
     species: str,
     args: argparse.Namespace,
+    form: str | None = None,
 ) -> Path:
     """Have ComfyUI make one clip of a species; the video written."""
     entry_id = folder.name
@@ -610,7 +710,7 @@ def make_clip(
     seed = args.seed if args.seed is not None else random.randrange(1 << 48)
     width, height = (int(v) for v in spec["size"])
     background = reference_background(folder)[0]
-    prompt = clip_prompt(spec, clip, species, background)
+    prompt = clip_prompt(spec, clip, species, background, form)
     values = {
         "FIRST_FRAME": first,
         "LAST_FRAME": last,
@@ -621,6 +721,7 @@ def make_clip(
         "HEIGHT": height,
         "LENGTH": int(spec["clips"][clip]["frames"]),
         "DURATION": duration_of(spec, clip),
+        "STRENGTH": clip_strength(spec),
         "PREFIX": f"reeftank/{entry_id}_{clip}",
     }
     prompt_id = queue(base, fill(workflow, values))
@@ -632,6 +733,7 @@ def make_clip(
         "seed": seed,
         "prompt": prompt,
         "frames": values["LENGTH"],
+        "strength": values["STRENGTH"],
         "date": datetime.now(UTC).isoformat(timespec="seconds"),
     }
     _write_json(folder / "wan.json", log)
@@ -704,7 +806,11 @@ def _matte_fresh(out: Path, video: Path) -> bool:
 
 
 def stage(
-    root: Path, folder: Path, model: str = DEFAULT_MATTE, gpu: bool = False
+    root: Path,
+    folder: Path,
+    model: str = DEFAULT_MATTE,
+    gpu: bool = False,
+    section: str = "fish",
 ) -> Path:
     """Build the atlas of a species folder next to its clips; the staged entry.
 
@@ -737,11 +843,13 @@ def stage(
     if staged.exists():
         shutil.rmtree(staged)
     staged.mkdir(parents=True)
-    current = root / "fish" / entry_id / "species.json"
+    current = root / section / entry_id / "species.json"
     if current.exists():
         # the descriptive fields (names, behaviour...) of the catalog are kept
         shutil.copy2(current, staged / "species.json")
-    build_atlas.main(["fish", entry_id, "--recipe", str(recipe), "--out", str(out)])
+    build_atlas.main(
+        [KINDS[section], entry_id, "--recipe", str(recipe), "--out", str(out)]
+    )
     return staged
 
 
@@ -754,7 +862,7 @@ def generate(args: argparse.Namespace) -> int:
         raise SystemExit(
             f"{args.workflow}: no {', '.join(map(_token, missing))} (see `template`)"
         )
-    todo = targets(args.root, args.only)
+    todo = targets(args.root, args.only, args.section, animated_forms(spec))
     if args.limit:
         todo = todo[: args.limit]
     size = (int(spec["size"][0]), int(spec["size"][1]))
@@ -776,6 +884,7 @@ def generate(args: argparse.Namespace) -> int:
                     args.gemini_model,
                     args.attempts,
                     args.delay,
+                    args.section,
                 )
             except stills.GenerationError as err:
                 print(f"stopped on {entry.name}: {err}; start again later")
@@ -792,19 +901,26 @@ def generate(args: argparse.Namespace) -> int:
             prepare_references(photo, folder, size)
         write_meta(folder, spec)
         species = species_name(entry)
+        form = entry_form(args.root, args.section, entry.name)
         try:
             for clip in args.clips:
                 if clip_file(folder, clip) and not args.redo:
                     continue
                 print(f"{entry.name}: {clip}...", flush=True)
                 video = make_clip(
-                    args.comfy, workflow, spec, folder, clip, species, args
+                    args.comfy, workflow, spec, folder, clip, species, args, form
                 )
                 print(f"{entry.name}: {clip} -> {video}")
             if all(clip_file(folder, c) for c in CLIP_NAMES):
                 if args.redo:
                     (folder / f"{entry.name}.json").unlink(missing_ok=True)
-                stage(args.root, folder, args.matte_model, args.matte_gpu)
+                stage(
+                    args.root,
+                    folder,
+                    args.matte_model,
+                    args.matte_gpu,
+                    args.section,
+                )
                 print(f"{entry.name}: staged, see `preview {entry.name}`")
             done += 1
         except ComfyError as err:
@@ -820,33 +936,60 @@ def generate(args: argparse.Namespace) -> int:
 def build(args: argparse.Namespace) -> int:
     """`build`: stage again the species whose three clips are made."""
     built = 0
-    for folder in sorted(p for p in args.work.iterdir() if p.is_dir()):
-        if args.only and folder.name not in args.only:
-            continue
+    for folder in work_entries(args.work, args.only, args.root, args.section):
         if all(clip_file(folder, c) for c in CLIP_NAMES):
-            stage(args.root, folder, args.matte_model, args.matte_gpu)
+            stage(args.root, folder, args.matte_model, args.matte_gpu, args.section)
             built += 1
     print(f"{built} staged")
     return 0
 
 
-def staged_entries(work: Path, only: list[str] | None = None) -> list[Path]:
-    """The species folders with a staged atlas."""
+def in_section(root: Path, section: str, folder: Path) -> bool:
+    """Whether a work folder belongs to a section: its id is in that catalog.
+
+    The clips of every section live side by side in the work folder, so the
+    commands that walk it (`build`, `review`, `gallery`) ask the catalog which
+    section an id belongs to: a fish is never staged as an invertebrate.
+    """
+    return (root / section / folder.name).is_dir()
+
+
+def work_entries(
+    work: Path,
+    only: list[str] | None = None,
+    root: Path | None = None,
+    section: str = "fish",
+) -> list[Path]:
+    """The work folders of a section (every one of them without `root`)."""
     if not work.is_dir():
         return []
     return [
         folder
         for folder in sorted(p for p in work.iterdir() if p.is_dir())
-        if (folder / "build" / folder.name / "species.json").exists()
-        and (not only or folder.name in only)
+        if (not only or folder.name in only)
+        and (root is None or in_section(root, section, folder))
     ]
 
 
-def accept(root: Path, folder: Path) -> Path:
+def staged_entries(
+    work: Path,
+    only: list[str] | None = None,
+    root: Path | None = None,
+    section: str = "fish",
+) -> list[Path]:
+    """The species folders of a section with a staged atlas."""
+    return [
+        folder
+        for folder in work_entries(work, only, root, section)
+        if (folder / "build" / folder.name / "species.json").exists()
+    ]
+
+
+def accept(root: Path, folder: Path, section: str = "fish") -> Path:
     """Put the staged atlas of a species in the catalog; the catalog folder."""
     entry_id = folder.name
     staged = folder / "build" / entry_id
-    target = root / "fish" / entry_id
+    target = root / section / entry_id
     target.mkdir(parents=True, exist_ok=True)
     built = json.loads((staged / "species.json").read_text(encoding="utf-8"))
     # what the catalog says of the species now wins (edited since the staging)
@@ -892,19 +1035,24 @@ def _clip_frames(
 
 
 def timeline(folder: Path, fps: int = PREVIEW_FPS) -> list[Image.Image]:
-    """The frames of an atlas played at `fps`: swims, idle, turn, back, turn back."""
+    """The frames of an atlas played at `fps`: swims, idle, turn, back, turn back.
+
+    The atlas an animation replaces is often the still picture of the species,
+    which holds none of those clips: whatever single clip it has is played in
+    their place, so the two sides of a preview can still be compared.
+    """
     frames, clips = frames_of(folder)
-    parts: list[tuple[list[Image.Image], int]] = []
-    swim = _clip_frames(frames, clips.get("swim"))
-    turn = _clip_frames(frames, clips.get("turn"))
+    moving = "swim" if "swim" in clips else next(iter(clips), "")
     rate = {name: int(clip.get("fps", fps)) for name, clip in clips.items()}
-    parts += [(swim, rate["swim"])] * PREVIEW_SWIMS
-    if "idle" in clips:
+    pace = rate.get(moving, fps)
+    swim = _clip_frames(frames, clips.get(moving))
+    turn = _clip_frames(frames, clips.get("turn")) if moving != "turn" else []
+    parts: list[tuple[list[Image.Image], int]] = [(swim, pace)] * PREVIEW_SWIMS
+    if "idle" in clips and moving != "idle":
         parts.append((_clip_frames(frames, clips["idle"]), rate["idle"]))
     if turn:
         parts.append((turn, rate["turn"]))
-    flipped = [ImageOps.mirror(f) for f in swim]
-    parts += [(flipped, rate["swim"])] * PREVIEW_SWIMS
+    parts += [([ImageOps.mirror(f) for f in swim], pace)] * PREVIEW_SWIMS
     if turn:
         parts.append(([ImageOps.mirror(f) for f in turn], rate["turn"]))
     shown: list[Image.Image] = []
@@ -980,7 +1128,7 @@ def preview(args: argparse.Namespace, folder: Path) -> Path:
     if not (staged / "species.json").exists():
         raise SystemExit(f"{folder.name}: nothing staged (run generate or build)")
     out = render_preview(
-        staged, args.root / "fish" / folder.name, folder / "preview.webp"
+        staged, args.root / args.section / folder.name, folder / "preview.webp"
     )
     print(f"{folder.name}: {out}")
     if not args.no_open:
@@ -997,7 +1145,7 @@ def gallery(args: argparse.Namespace) -> Path | None:
     """
     entries = [
         f
-        for f in staged_entries(args.work, args.only)
+        for f in staged_entries(args.work, args.only, args.root, args.section)
         if args.all or not (f / "accepted").exists()
     ]
     if not entries:
@@ -1037,7 +1185,9 @@ def gallery(args: argparse.Namespace) -> Path | None:
 def review(args: argparse.Namespace, ask: Callable[[str], str] = input) -> int:
     """`review`: every staged species not accepted yet, shown then judged."""
     pending = [
-        f for f in staged_entries(args.work, args.only) if not (f / "accepted").exists()
+        f
+        for f in staged_entries(args.work, args.only, args.root, args.section)
+        if not (f / "accepted").exists()
     ]
     if not pending:
         print("nothing to review")
@@ -1053,7 +1203,10 @@ def review(args: argparse.Namespace, ask: Callable[[str], str] = input) -> int:
             )
             word, *rest = answer.split() or [""]
             if word in ("a", "accept"):
-                print(f"{folder.name}: accepted -> {accept(args.root, folder)}")
+                print(
+                    f"{folder.name}: accepted -> "
+                    f"{accept(args.root, folder, args.section)}"
+                )
             elif word in ("r", "redo"):
                 clips = [c for c in rest if c in CLIP_NAMES] or list(CLIP_NAMES)
                 redo(folder, clips)
@@ -1073,7 +1226,9 @@ def review(args: argparse.Namespace, ask: Callable[[str], str] = input) -> int:
 
 def todo(args: argparse.Namespace) -> int:
     """`todo`: the fish to animate and where each one stands."""
-    entries = targets(args.root, args.only)
+    entries = targets(
+        args.root, args.only, args.section, animated_forms(load_spec(args.prompts))
+    )
     for entry in entries:
         folder = args.work / entry.name
         made = [c for c in CLIP_NAMES if clip_file(folder, c)]
@@ -1091,7 +1246,7 @@ def todo(args: argparse.Namespace) -> int:
         else:
             state = "no photo"
         print(f"{entry.name:<40} {state}")
-    print(f"{len(entries)} fish without a real animation")
+    print(f"{len(entries)} {args.section} without a real animation")
     return 0
 
 
@@ -1101,14 +1256,22 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--root", type=Path, default=ROOT, help="the catalog")
     parser.add_argument("--work", type=Path, help="clips folder (default: clips/)")
     parser.add_argument("--photos", type=Path, help="photos kept (default: photos/)")
-    parser.add_argument("--prompts", type=Path, default=PROMPT_FILE)
+    parser.add_argument(
+        "--section",
+        choices=SECTIONS,
+        default="fish",
+        help="fish (default) or invertebrates",
+    )
+    parser.add_argument(
+        "--prompts", type=Path, help="default: the wording of the section"
+    )
     commands = parser.add_subparsers(dest="command", required=True)
 
     def with_only(sub: argparse.ArgumentParser) -> argparse.ArgumentParser:
         sub.add_argument("--only", nargs="+", metavar="ID", help="these species only")
         return sub
 
-    with_only(commands.add_parser("todo", help="the fish to animate"))
+    with_only(commands.add_parser("todo", help="the species to animate"))
     sub = commands.add_parser("prompt", help="print the prompt of a clip")
     sub.add_argument("id")
     sub.add_argument("clip", choices=CLIP_NAMES)
@@ -1150,7 +1313,7 @@ def main(argv: list[str] | None = None) -> int:
         sub.add_argument("--player", help="viewer command (default: xdg-open)")
         sub.add_argument("--no-open", action="store_true", help="only write it")
     sub = commands.add_parser("accept", help="put staged atlases in the catalog")
-    sub.add_argument("ids", nargs="+")
+    sub.add_argument("ids", nargs="*", help="none: every staged species not accepted")
     sub = commands.add_parser("redo", help="drop clips to make them again")
     sub.add_argument("id")
     sub.add_argument("--clips", nargs="+", choices=CLIP_NAMES, default=list(CLIP_NAMES))
@@ -1158,16 +1321,25 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     args.work = args.work or args.root / "clips"
     args.photos = args.photos or args.root / "photos"
+    args.prompts = args.prompts or PROMPT_FILES[args.section]
 
     if args.command == "todo":
         return todo(args)
     if args.command == "prompt":
-        folder = args.root / "fish" / args.id
+        folder = args.root / args.section / args.id
         background = "magenta"
         if (args.work / args.id / "reference.png").exists():
             background = reference_background(args.work / args.id)[0]
         spec = load_spec(args.prompts)
-        print(clip_prompt(spec, args.clip, species_name(folder), background))
+        print(
+            clip_prompt(
+                spec,
+                args.clip,
+                species_name(folder),
+                background,
+                entry_form(args.root, args.section, args.id),
+            )
+        )
         return 0
     if args.command == "template":
         result, report = make_template(load_workflow(args.export))
@@ -1191,11 +1363,25 @@ def main(argv: list[str] | None = None) -> int:
         gallery(args)
         return 0
     if args.command == "accept":
+        folders = []
         for entry_id in args.ids:
             folder = args.work / entry_id
             if not (folder / "build" / entry_id / "species.json").exists():
                 raise SystemExit(f"{entry_id}: nothing staged")
-            print(f"{entry_id}: accepted -> {accept(args.root, folder)}")
+            folders.append(folder)
+        if not args.ids:  # no id: every staged species of the section, once each
+            folders = [
+                f
+                for f in staged_entries(args.work, None, args.root, args.section)
+                if not (f / "accepted").exists()
+            ]
+            if not folders:
+                print("nothing staged")
+                return 0
+        for folder in folders:
+            print(
+                f"{folder.name}: accepted -> {accept(args.root, folder, args.section)}"
+            )
         print("now: python scripts/validate.py, then commit")
         return 0
     redo(args.work / args.id, args.clips)

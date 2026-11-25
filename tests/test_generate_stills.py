@@ -465,3 +465,104 @@ def test_the_plant_commands_list_the_plants(tmp_path: Path, capsys: Any) -> None
         "egeria_densa",
         "ludwigia_repens",
     ]
+
+
+# -- the invertebrates ---------------------------------------------------------------
+
+
+def invert_png(
+    key: tuple[int, int, int] = MAGENTA, size: tuple[int, int] = (900, 600)
+) -> bytes:
+    """A wide animal (a shell with a foot) on a flat background."""
+    image = Image.new("RGB", size, key)
+    draw = ImageDraw.Draw(image)
+    w, h = size
+    draw.ellipse((w * 0.15, h * 0.25, w * 0.85, h * 0.75), fill=(190, 120, 60))
+    draw.rectangle((w * 0.2, h * 0.6, w * 0.8, h * 0.72), fill=(210, 190, 170))
+    out = io.BytesIO()
+    image.save(out, "PNG")
+    return out.getvalue()
+
+
+def make_inverts(tmp_path: Path, entries: dict[str, Any]) -> Path:
+    for name, descriptor in entries.items():
+        folder = tmp_path / "invertebrates" / name
+        folder.mkdir(parents=True)
+        (folder / "species.json").write_text(json.dumps(descriptor))
+    return tmp_path
+
+
+INVERTS = {
+    "nerita": {
+        "kind": "invertebrate",
+        "scientific": "Nerita sp.",
+        "movement": "glass",
+        "role": ["algae_eater"],
+    },
+    "neocaridina_davidi": {
+        "kind": "invertebrate",
+        "scientific": "Neocaridina davidi",
+        "movement": "ground",
+        "role": ["detritivore"],
+    },
+}
+
+
+def test_an_invertebrate_gets_its_atlas_with_the_prompt_of_its_form(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, capsys: Any
+) -> None:
+    root = make_inverts(tmp_path, INVERTS)
+    asked: list[tuple[str, str]] = []
+
+    def fake(prompt: str, model: str, key: str, aspect: str) -> bytes:
+        asked.append((prompt, aspect))
+        return invert_png(GREEN if "green" in prompt else MAGENTA)
+
+    monkeypatch.setattr(gen, "generate", fake)
+    monkeypatch.setenv(gen.KEY_ENV, "k")
+    assert (
+        gen.run(namespace(section="invertebrates", photos=tmp_path / "photos"), root)
+        == 0
+    )
+    assert "invertebrates/nerita: done" in capsys.readouterr().out
+    prompts = {p.split(",")[0]: (p, a) for p, a in asked}
+    snail, aspect = prompts["Realistic photograph of Nerita sp."]
+    # A snail: three-quarter view, square picture, on magenta
+    assert "one adult snail" in snail and "magenta" in snail and aspect == "1:1"
+    shrimp, shrimp_aspect = next(v for k, v in prompts.items() if "Neocaridina" in k)
+    # A shrimp: side view, head to the right, wide picture, and green because
+    # a cherry shrimp would be eaten by magenta
+    assert "one adult shrimp" in shrimp and "head to the right" in shrimp
+    assert shrimp_aspect == "3:2" and "flat green #00FF00" in shrimp
+    folder = root / "invertebrates" / "nerita"
+    data = json.loads((folder / "species.json").read_text())
+    assert data["degraded"] is True and data["kind"] == "invertebrate"
+    assert data["scientific"] == "Nerita sp." and data["columns"] == 1
+    assert data["role"] == ["algae_eater"] and data["movement"] == "glass"
+    assert (folder / "nerita.webp").exists() and (folder / "thumb.webp").exists()
+    assert (tmp_path / "photos" / "nerita-1.png").exists()
+
+
+def test_an_invertebrate_keeps_the_background_of_its_species() -> None:
+    inverts = Path("invertebrates")
+    # a brown snail: magenta; a cherry shrimp: green, as `species_keys` says
+    assert gen.backgrounds_for(inverts / "nerita", "invertebrates") == ["magenta"]
+    assert gen.backgrounds_for(inverts / "neocaridina_davidi", "invertebrates") == [
+        "green"
+    ]
+
+
+def test_an_invertebrate_photo_is_checked_as_an_invertebrate() -> None:
+    tiny = Image.new("RGB", (900, 600), MAGENTA)
+    ImageDraw.Draw(tiny).rectangle((430, 280, 470, 320), fill=(190, 120, 60))
+    problems = gen.problems_of(tiny, "magenta", "invertebrates")
+    assert any("invertebrate" in p for p in problems)
+
+
+def test_the_invertebrate_commands_list_them(tmp_path: Path, capsys: Any) -> None:
+    root = make_inverts(tmp_path, INVERTS)
+    assert (
+        gen.main(["--root", str(root), "--section", "invertebrates", "--dry-run"]) == 0
+    )
+    out = capsys.readouterr().out
+    assert "invertebrates/nerita: Nerita sp." in out and "2 species" in out

@@ -55,7 +55,9 @@ from typing import Any
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import invert_prompt
 import plant_prompt
+from invert_atlas import check_invert_photo, write_invert_atlas
 from plant_atlas import check_plant_photo, write_plant_atlas
 from still_atlas import check_photo, is_real_animation, render_prompt, write_atlas
 
@@ -69,7 +71,7 @@ BACKGROUNDS = ("magenta", "green")
 #: HTTP statuses after which no other request can work
 FATAL_STATUSES = frozenset({401, 403, 429})
 TIMEOUT = 120
-SECTIONS = ("fish", "plants")
+SECTIONS = ("fish", "plants", "invertebrates")
 FISH_ASPECT = "3:2"  # a fish is longer than high
 LENGTH = 192  # fish length in the atlas frame, px (see still_atlas.py)
 
@@ -175,15 +177,24 @@ def plant_spec() -> dict[str, Any]:
     return json.loads(plant_prompt.PROMPT_FILE.read_text(encoding="utf-8"))
 
 
+@functools.cache
+def invert_spec() -> dict[str, Any]:
+    """The prompt of the invertebrates (see `invert_prompt.py`)."""
+    return json.loads(invert_prompt.PROMPT_FILE.read_text(encoding="utf-8"))
+
+
 def backgrounds_for(folder: Path, section: str) -> list[str]:
     """The backgrounds asked in turn.
 
     A fish goes from magenta to green (a pink fish is lost on magenta). A plant
-    keeps one background: magenta, or green for the species `species_keys` names
-    (a red plant); the other colour would key out its own leaves.
+    and an invertebrate keep one background: magenta, or green for the species
+    `species_keys` names (a red one); the other colour would key out the animal
+    or the leaves themselves.
     """
     if section == "plants":
         return [plant_prompt.plant_key(folder.name, plant_spec())]
+    if section == "invertebrates":
+        return [invert_prompt.invert_key(folder.name, invert_spec())]
     return list(BACKGROUNDS)
 
 
@@ -195,12 +206,22 @@ def request_for(folder: Path, section: str, background: str) -> tuple[str, str]:
             plant_prompt.render_prompt(folder.name, desc, spec, background),
             plant_prompt.plant_aspect(folder.name, desc, spec),
         )
+    if section == "invertebrates":
+        spec, desc = invert_spec(), read_descriptor(folder) or {}
+        return (
+            invert_prompt.render_prompt(folder.name, desc, spec, background),
+            invert_prompt.invert_aspect(folder.name, desc, spec),
+        )
     return render_prompt(species_name(folder), background), FISH_ASPECT
+
+
+#: How a photo is checked, by section (a fish by default)
+CHECKS = {"plants": check_plant_photo, "invertebrates": check_invert_photo}
 
 
 def problems_of(photo: Image.Image, background: str, section: str) -> list[str]:
     """Why a photo does not fit (empty when it does)."""
-    check = check_plant_photo if section == "plants" else check_photo
+    check = CHECKS.get(section, check_photo)
     return check(photo, background)
 
 
@@ -250,6 +271,8 @@ def build(
     }
     if args.section == "plants":
         write_plant_atlas(photo, folder, source, background)
+    elif args.section == "invertebrates":
+        write_invert_atlas(photo, folder, source, background)
     else:
         write_atlas(photo, folder, source, LENGTH, background)
 
@@ -347,7 +370,10 @@ def main(argv: list[str] | None = None) -> int:
     """Command line entry point."""
     parser = argparse.ArgumentParser(description=(__doc__ or "").split("\n\n")[0])
     parser.add_argument(
-        "--section", choices=SECTIONS, default="fish", help="fish (default) or plants"
+        "--section",
+        choices=SECTIONS,
+        default="fish",
+        help="fish (default), plants or invertebrates",
     )
     parser.add_argument("--model", default=DEFAULT_MODEL, help="Gemini image model")
     parser.add_argument("--only", nargs="+", metavar="ID", help="these species only")

@@ -1,5 +1,42 @@
 {
   "kind": "invertebrate",
+  "frame": [
+    220,
+    104
+  ],
+  "columns": 7,
+  "clips": {
+    "swim": {
+      "from": 0,
+      "to": 40,
+      "fps": 16,
+      "loop": true,
+      "pingpong": true
+    },
+    "idle": {
+      "from": 41,
+      "to": 68,
+      "fps": 16,
+      "loop": true,
+      "pingpong": true
+    },
+    "turn": {
+      "from": 69,
+      "to": 91,
+      "fps": 16,
+      "loop": false
+    }
+  },
+  "atlas": {
+    "1x": "lysmata_amboinensis.webp"
+  },
+  "facing": "right",
+  "source": {
+    "type": "ai-generated",
+    "model": "wan2.1-vace-14b",
+    "date": "2026-11-25"
+  },
+  "length_frac": 0.8727,
   "names": {
     "en": "Scarlet cleaner shrimp",
     "fr": "Crevette nettoyeuse",
@@ -21,5 +58,6 @@
   "role": [
     "cleaner"
   ],
-  "movement": "decor"
+  "movement": "decor",
+  "thumbnail": "thumb.webp"
 }

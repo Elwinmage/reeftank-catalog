@@ -171,38 +171,38 @@ A species without videos gets a simpler atlas made from a single photo (*LD*): t
 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | <sub>Name</sub> | <sub>Scientific name</sub> | <sub>Water</sub> | <sub>Size</sub> | <sub>Role</sub> |
 |---|---|---|---|---|---|
-|  | <sub>Amano shrimp<br><code>caridina&#95;<wbr>multidentata</code></sub> | <sub>*Caridina multidentata*</sub> | <sub>Freshwater</sub> | <sub>3–5 cm</sub> | <sub>Algae eater · crawls on the bottom</sub> |
-|  | <sub>Assassin snail<br><code>clea&#95;<wbr>helena</code></sub> | <sub>*Clea helena*</sub> | <sub>Freshwater</sub> | <sub>2–3 cm</sub> | <sub>Predator · crawls on the bottom</sub> |
-|  | <sub>Astraea snail<br><code>astraea&#95;<wbr>tecta</code></sub> | <sub>*Astraea tecta*</sub> | <sub>Marine</sub> | <sub>2–4 cm</sub> | <sub>Algae eater · lives on the decor</sub> |
-|  | <sub>Bamboo shrimp<br><code>atyopsis&#95;<wbr>moluccensis</code></sub> | <sub>*Atyopsis moluccensis*</sub> | <sub>Freshwater</sub> | <sub>6–8 cm</sub> | <sub>Filter feeder · lives on the decor</sub> |
-|  | <sub>Banded coral shrimp<br><code>stenopus&#95;<wbr>hispidus</code></sub> | <sub>*Stenopus hispidus*</sub> | <sub>Marine</sub> | <sub>6–8 cm</sub> | <sub>Cleaner · lives on the decor</sub> |
-|  | <sub>Blue-legged hermit crab<br><code>clibanarius&#95;<wbr>tricolor</code></sub> | <sub>*Clibanarius tricolor*</sub> | <sub>Marine</sub> | <sub>2–3 cm</sub> | <sub>Scavenger · crawls on the bottom</sub> |
-|  | <sub>Boring giant clam<br><code>tridacna&#95;<wbr>crocea</code></sub> | <sub>*Tridacna crocea*</sub> | <sub>Marine</sub> | <sub>5–15 cm</sub> | <sub>Filter feeder · sessile</sub> |
-|  | <sub>Cerith snail<br><code>cerithium</code></sub> | <sub>*Cerithium sp.*</sub> | <sub>Marine</sub> | <sub>2–3 cm</sub> | <sub>Detritivore · crawls on the bottom</sub> |
-|  | <sub>Cherry shrimp<br><code>neocaridina&#95;<wbr>davidi</code></sub> | <sub>*Neocaridina davidi*</sub> | <sub>Freshwater</sub> | <sub>2–3.5 cm</sub> | <sub>Detritivore · crawls on the bottom</sub> |
-|  | <sub>Christmas tree worm<br><code>spirobranchus&#95;<wbr>giganteus</code></sub> | <sub>*Spirobranchus giganteus*</sub> | <sub>Marine</sub> | <sub>3–5 cm</sub> | <sub>Filter feeder · sessile</sub> |
-|  | <sub>Collector urchin<br><code>tripneustes&#95;<wbr>gratilla</code></sub> | <sub>*Tripneustes gratilla*</sub> | <sub>Marine</sub> | <sub>10–15 cm</sub> | <sub>Algae eater · lives on the decor</sub> |
-|  | <sub>Crystal red shrimp<br><code>caridina&#95;<wbr>cantonensis</code></sub> | <sub>*Caridina cantonensis*</sub> | <sub>Freshwater</sub> | <sub>2–3 cm</sub> | <sub>Detritivore · crawls on the bottom</sub> |
-|  | <sub>Emerald crab<br><code>mithraculus&#95;<wbr>sculptus</code></sub> | <sub>*Mithraculus sculptus*</sub> | <sub>Marine</sub> | <sub>3–4 cm</sub> | <sub>Algae eater · lives on the decor</sub> |
-|  | <sub>Feather duster worm<br><code>sabellastarte</code></sub> | <sub>*Sabellastarte sp.*</sub> | <sub>Marine</sub> | <sub>5–10 cm</sub> | <sub>Filter feeder · sessile</sub> |
-|  | <sub>Fire shrimp<br><code>lysmata&#95;<wbr>debelius</code></sub> | <sub>*Lysmata debelius*</sub> | <sub>Marine</sub> | <sub>5–6 cm</sub> | <sub>Cleaner · lives on the decor</sub> |
-|  | <sub>Harlequin shrimp<br><code>hymenocera&#95;<wbr>picta</code></sub> | <sub>*Hymenocera picta*</sub> | <sub>Marine</sub> | <sub>4–6 cm</sub> | <sub>Predator · crawls on the bottom</sub> |
-|  | <sub>Malaysian trumpet snail<br><code>melanoides&#95;<wbr>tuberculata</code></sub> | <sub>*Melanoides tuberculata*</sub> | <sub>Freshwater</sub> | <sub>2–3 cm</sub> | <sub>Detritivore · crawls on the bottom</sub> |
-|  | <sub>Marbled shrimp<br><code>saron&#95;<wbr>marmoratus</code></sub> | <sub>*Saron marmoratus*</sub> | <sub>Marine</sub> | <sub>5–7 cm</sub> | <sub>Scavenger · lives on the decor</sub> |
-|  | <sub>Marine nerite<br><code>nerita</code></sub> | <sub>*Nerita sp.*</sub> | <sub>Marine</sub> | <sub>2–3 cm</sub> | <sub>Algae eater · climbs the glass</sub> |
-|  | <sub>Mystery snail<br><code>pomacea&#95;<wbr>bridgesii</code></sub> | <sub>*Pomacea bridgesii*</sub> | <sub>Freshwater</sub> | <sub>4–5 cm</sub> | <sub>Scavenger · crawls on the bottom</sub> |
-|  | <sub>Nassarius snail<br><code>nassarius</code></sub> | <sub>*Nassarius sp.*</sub> | <sub>Marine</sub> | <sub>2–4 cm</sub> | <sub>Scavenger · crawls on the bottom</sub> |
-|  | <sub>Pencil urchin<br><code>prionocidaris&#95;<wbr>baculosa</code></sub> | <sub>*Prionocidaris baculosa*</sub> | <sub>Marine</sub> | <sub>8–10 cm</sub> | <sub>Algae eater · lives on the decor</sub> |
-|  | <sub>Peppermint shrimp<br><code>lysmata&#95;<wbr>wurdemanni</code></sub> | <sub>*Lysmata wurdemanni*</sub> | <sub>Marine</sub> | <sub>3–5 cm</sub> | <sub>Cleaner · lives on the decor</sub> |
-|  | <sub>Ramshorn snail<br><code>planorbella&#95;<wbr>duryi</code></sub> | <sub>*Planorbella duryi*</sub> | <sub>Freshwater</sub> | <sub>2–3 cm</sub> | <sub>Detritivore · climbs the glass</sub> |
-|  | <sub>Sand-sifting starfish<br><code>archaster&#95;<wbr>typicus</code></sub> | <sub>*Archaster typicus*</sub> | <sub>Marine</sub> | <sub>6–10 cm</sub> | <sub>Detritivore · crawls on the bottom</sub> |
-|  | <sub>Scarlet cleaner shrimp<br><code>lysmata&#95;<wbr>amboinensis</code></sub> | <sub>*Lysmata amboinensis*</sub> | <sub>Marine</sub> | <sub>5–6 cm</sub> | <sub>Cleaner · lives on the decor</sub> |
-|  | <sub>Scarlet reef hermit<br><code>paguristes&#95;<wbr>cadenati</code></sub> | <sub>*Paguristes cadenati*</sub> | <sub>Marine</sub> | <sub>3–4 cm</sub> | <sub>Scavenger · crawls on the bottom</sub> |
-|  | <sub>Sea cucumber<br><code>holothuria</code></sub> | <sub>*Holothuria sp.*</sub> | <sub>Marine</sub> | <sub>15–30 cm</sub> | <sub>Detritivore · crawls on the bottom</sub> |
-|  | <sub>Serpent star<br><code>ophiolepis&#95;<wbr>superba</code></sub> | <sub>*Ophiolepis superba*</sub> | <sub>Marine</sub> | <sub>8–12 cm</sub> | <sub>Scavenger · crawls on the bottom</sub> |
-|  | <sub>Trochus snail<br><code>tectus&#95;<wbr>fenestratus</code></sub> | <sub>*Tectus fenestratus*</sub> | <sub>Marine</sub> | <sub>4–6 cm</sub> | <sub>Algae eater · lives on the decor</sub> |
-|  | <sub>Turbo snail<br><code>turbo&#95;<wbr>fluctuosus</code></sub> | <sub>*Turbo fluctuosus*</sub> | <sub>Marine</sub> | <sub>4–8 cm</sub> | <sub>Algae eater · climbs the glass</sub> |
-|  | <sub>Zebra nerite<br><code>neritina&#95;<wbr>natalensis</code></sub> | <sub>*Neritina natalensis*</sub> | <sub>Freshwater</sub> | <sub>2–3 cm</sub> | <sub>Algae eater · climbs the glass</sub> |
+| <img src="invertebrates/caridina_multidentata/thumb.webp" width="140" alt=""> | <sub>Amano shrimp<br><code>caridina&#95;<wbr>multidentata</code></sub> | <sub>*Caridina multidentata*</sub> | <sub>Freshwater</sub> | <sub>3–5 cm</sub> | <sub>Algae eater · crawls on the bottom</sub> |
+| <img src="invertebrates/clea_helena/thumb.webp" width="140" alt=""> | <sub>Assassin snail<br><code>clea&#95;<wbr>helena</code></sub> | <sub>*Clea helena*</sub> | <sub>Freshwater</sub> | <sub>2–3 cm</sub> | <sub>Predator · crawls on the bottom</sub> |
+| <img src="invertebrates/astraea_tecta/thumb.webp" width="140" alt=""> | <sub>Astraea snail<br><code>astraea&#95;<wbr>tecta</code></sub> | <sub>*Astraea tecta*</sub> | <sub>Marine</sub> | <sub>2–4 cm</sub> | <sub>Algae eater · lives on the decor</sub> |
+| <img src="invertebrates/atyopsis_moluccensis/thumb.webp" width="140" alt=""> | <sub>Bamboo shrimp<br><code>atyopsis&#95;<wbr>moluccensis</code></sub> | <sub>*Atyopsis moluccensis*</sub> | <sub>Freshwater</sub> | <sub>6–8 cm</sub> | <sub>Filter feeder · lives on the decor</sub> |
+| <img src="invertebrates/stenopus_hispidus/thumb.webp" width="140" alt=""> | <sub>Banded coral shrimp<br><code>stenopus&#95;<wbr>hispidus</code></sub> | <sub>*Stenopus hispidus*</sub> | <sub>Marine</sub> | <sub>6–8 cm</sub> | <sub>Cleaner · lives on the decor</sub> |
+| <img src="invertebrates/clibanarius_tricolor/thumb.webp" width="140" alt=""> | <sub>Blue-legged hermit crab<br><code>clibanarius&#95;<wbr>tricolor</code></sub> | <sub>*Clibanarius tricolor*</sub> | <sub>Marine</sub> | <sub>2–3 cm</sub> | <sub>Scavenger · crawls on the bottom</sub> |
+| <img src="invertebrates/tridacna_crocea/thumb.webp" width="140" alt=""> | <sub>Boring giant clam<br><code>tridacna&#95;<wbr>crocea</code></sub> | <sub>*Tridacna crocea*</sub> | <sub>Marine</sub> | <sub>5–15 cm</sub> | <sub>Filter feeder · sessile</sub> |
+| <img src="invertebrates/cerithium/thumb.webp" width="140" alt=""> | <sub>Cerith snail<br><code>cerithium</code></sub> | <sub>*Cerithium sp.*</sub> | <sub>Marine</sub> | <sub>2–3 cm</sub> | <sub>Detritivore · crawls on the bottom</sub> |
+| <img src="invertebrates/neocaridina_davidi/thumb.webp" width="140" alt=""> | <sub>Cherry shrimp<br><code>neocaridina&#95;<wbr>davidi</code></sub> | <sub>*Neocaridina davidi*</sub> | <sub>Freshwater</sub> | <sub>2–3.5 cm</sub> | <sub>Detritivore · crawls on the bottom</sub> |
+| <img src="invertebrates/spirobranchus_giganteus/thumb.webp" width="140" alt=""> | <sub>Christmas tree worm<br><code>spirobranchus&#95;<wbr>giganteus</code></sub> | <sub>*Spirobranchus giganteus*</sub> | <sub>Marine</sub> | <sub>3–5 cm</sub> | <sub>Filter feeder · sessile</sub> |
+| <img src="invertebrates/tripneustes_gratilla/thumb.webp" width="140" alt=""> | <sub>Collector urchin<br><code>tripneustes&#95;<wbr>gratilla</code></sub> | <sub>*Tripneustes gratilla*</sub> | <sub>Marine</sub> | <sub>10–15 cm</sub> | <sub>Algae eater · lives on the decor</sub> |
+| <img src="invertebrates/caridina_cantonensis/thumb.webp" width="140" alt=""> | <sub>Crystal red shrimp<br><code>caridina&#95;<wbr>cantonensis</code></sub> | <sub>*Caridina cantonensis*</sub> | <sub>Freshwater</sub> | <sub>2–3 cm</sub> | <sub>Detritivore · crawls on the bottom</sub> |
+| <img src="invertebrates/mithraculus_sculptus/thumb.webp" width="140" alt=""> | <sub>Emerald crab<br><code>mithraculus&#95;<wbr>sculptus</code></sub> | <sub>*Mithraculus sculptus*</sub> | <sub>Marine</sub> | <sub>3–4 cm</sub> | <sub>Algae eater · lives on the decor</sub> |
+| <img src="invertebrates/sabellastarte/thumb.webp" width="140" alt=""> | <sub>Feather duster worm<br><code>sabellastarte</code></sub> | <sub>*Sabellastarte sp.*</sub> | <sub>Marine</sub> | <sub>5–10 cm</sub> | <sub>Filter feeder · sessile</sub> |
+| <img src="invertebrates/lysmata_debelius/thumb.webp" width="140" alt=""> | <sub>Fire shrimp<br><code>lysmata&#95;<wbr>debelius</code></sub> | <sub>*Lysmata debelius*</sub> | <sub>Marine</sub> | <sub>5–6 cm</sub> | <sub>Cleaner · lives on the decor</sub> |
+| <img src="invertebrates/hymenocera_picta/thumb.webp" width="140" alt=""> | <sub>Harlequin shrimp<br><code>hymenocera&#95;<wbr>picta</code></sub> | <sub>*Hymenocera picta*</sub> | <sub>Marine</sub> | <sub>4–6 cm</sub> | <sub>Predator · crawls on the bottom</sub> |
+| <img src="invertebrates/melanoides_tuberculata/thumb.webp" width="140" alt=""> | <sub>Malaysian trumpet snail<br><code>melanoides&#95;<wbr>tuberculata</code></sub> | <sub>*Melanoides tuberculata*</sub> | <sub>Freshwater</sub> | <sub>2–3 cm</sub> | <sub>Detritivore · crawls on the bottom</sub> |
+| <img src="invertebrates/saron_marmoratus/thumb.webp" width="140" alt=""> | <sub>Marbled shrimp<br><code>saron&#95;<wbr>marmoratus</code></sub> | <sub>*Saron marmoratus*</sub> | <sub>Marine</sub> | <sub>5–7 cm</sub> | <sub>Scavenger · lives on the decor</sub> |
+| <img src="invertebrates/nerita/thumb.webp" width="140" alt=""> | <sub>Marine nerite<br><code>nerita</code></sub> | <sub>*Nerita sp.*</sub> | <sub>Marine</sub> | <sub>2–3 cm</sub> | <sub>Algae eater · climbs the glass</sub> |
+| <img src="invertebrates/pomacea_bridgesii/thumb.webp" width="140" alt=""> | <sub>Mystery snail<br><code>pomacea&#95;<wbr>bridgesii</code></sub> | <sub>*Pomacea bridgesii*</sub> | <sub>Freshwater</sub> | <sub>4–5 cm</sub> | <sub>Scavenger · crawls on the bottom</sub> |
+| <img src="invertebrates/nassarius/thumb.webp" width="140" alt=""> | <sub>Nassarius snail<br><code>nassarius</code></sub> | <sub>*Nassarius sp.*</sub> | <sub>Marine</sub> | <sub>2–4 cm</sub> | <sub>Scavenger · crawls on the bottom</sub> |
+| <img src="invertebrates/prionocidaris_baculosa/thumb.webp" width="140" alt=""> | <sub>Pencil urchin<br><code>prionocidaris&#95;<wbr>baculosa</code></sub> | <sub>*Prionocidaris baculosa*</sub> | <sub>Marine</sub> | <sub>8–10 cm</sub> | <sub>Algae eater · lives on the decor</sub> |
+| <img src="invertebrates/lysmata_wurdemanni/thumb.webp" width="140" alt=""> | <sub>Peppermint shrimp<br><code>lysmata&#95;<wbr>wurdemanni</code></sub> | <sub>*Lysmata wurdemanni*</sub> | <sub>Marine</sub> | <sub>3–5 cm</sub> | <sub>Cleaner · lives on the decor</sub> |
+| <img src="invertebrates/planorbella_duryi/thumb.webp" width="140" alt=""> | <sub>Ramshorn snail<br><code>planorbella&#95;<wbr>duryi</code></sub> | <sub>*Planorbella duryi*</sub> | <sub>Freshwater</sub> | <sub>2–3 cm</sub> | <sub>Detritivore · climbs the glass</sub> |
+| <img src="invertebrates/archaster_typicus/thumb.webp" width="140" alt=""> | <sub>Sand-sifting starfish<br><code>archaster&#95;<wbr>typicus</code></sub> | <sub>*Archaster typicus*</sub> | <sub>Marine</sub> | <sub>6–10 cm</sub> | <sub>Detritivore · crawls on the bottom</sub> |
+| <img src="invertebrates/lysmata_amboinensis/thumb.webp" width="140" alt=""> | <sub>Scarlet cleaner shrimp<br><code>lysmata&#95;<wbr>amboinensis</code></sub> | <sub>*Lysmata amboinensis*</sub> | <sub>Marine</sub> | <sub>5–6 cm</sub> | <sub>Cleaner · lives on the decor</sub> |
+| <img src="invertebrates/paguristes_cadenati/thumb.webp" width="140" alt=""> | <sub>Scarlet reef hermit<br><code>paguristes&#95;<wbr>cadenati</code></sub> | <sub>*Paguristes cadenati*</sub> | <sub>Marine</sub> | <sub>3–4 cm</sub> | <sub>Scavenger · crawls on the bottom</sub> |
+| <img src="invertebrates/holothuria/thumb.webp" width="140" alt=""> | <sub>Sea cucumber<br><code>holothuria</code></sub> | <sub>*Holothuria sp.*</sub> | <sub>Marine</sub> | <sub>15–30 cm</sub> | <sub>Detritivore · crawls on the bottom</sub> |
+| <img src="invertebrates/ophiolepis_superba/thumb.webp" width="140" alt=""> | <sub>Serpent star<br><code>ophiolepis&#95;<wbr>superba</code></sub> | <sub>*Ophiolepis superba*</sub> | <sub>Marine</sub> | <sub>8–12 cm</sub> | <sub>Scavenger · crawls on the bottom</sub> |
+| <img src="invertebrates/tectus_fenestratus/thumb.webp" width="140" alt=""> | <sub>Trochus snail<br><code>tectus&#95;<wbr>fenestratus</code></sub> | <sub>*Tectus fenestratus*</sub> | <sub>Marine</sub> | <sub>4–6 cm</sub> | <sub>Algae eater · lives on the decor</sub> |
+| <img src="invertebrates/turbo_fluctuosus/thumb.webp" width="140" alt=""> | <sub>Turbo snail<br><code>turbo&#95;<wbr>fluctuosus</code></sub> | <sub>*Turbo fluctuosus*</sub> | <sub>Marine</sub> | <sub>4–8 cm</sub> | <sub>Algae eater · climbs the glass</sub> |
+| <img src="invertebrates/neritina_natalensis/thumb.webp" width="140" alt=""> | <sub>Zebra nerite<br><code>neritina&#95;<wbr>natalensis</code></sub> | <sub>*Neritina natalensis*</sub> | <sub>Freshwater</sub> | <sub>2–3 cm</sub> | <sub>Algae eater · climbs the glass</sub> |
 
 Species assets are under **CC BY 4.0**, scripts under MIT: see [LICENSE.md](LICENSE.md).
 
@@ -739,11 +739,13 @@ python scripts/wan_clips.py gallery --no-open       # or all of them on one page
 python scripts/wan_clips.py preview betta_splendens # just look at one
 python scripts/wan_clips.py redo betta_splendens --clips turn
 python scripts/wan_clips.py accept betta_splendens
+python scripts/wan_clips.py accept                 # all that is staged
 ```
 
 `template` prints which input of which node became which placeholder
 (`{{FIRST_FRAME}}`, `{{LAST_FRAME}}`, `{{PROMPT}}`, `{{NEGATIVE}}`, `{{SEED}}`,
-`{{WIDTH}}`, `{{HEIGHT}}`, `{{LENGTH}}` or `{{DURATION}}`, `{{PREFIX}}`): check it,
+`{{WIDTH}}`, `{{HEIGHT}}`, `{{LENGTH}}` or `{{DURATION}}`, `{{STRENGTH}}`,
+`{{PREFIX}}`): check it,
 and edit `clips/wan_workflow.json` by hand if needed. `generate` skips the clips
 already made and stops when ComfyUI cannot be reached (exit 2): start it again.
 The fish is cut out of each frame by a background removal model (rembg, to

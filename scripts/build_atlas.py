@@ -577,7 +577,7 @@ def prepare_fish(
     key: tuple[int, int, int] | str | None = "auto",
     length: int = DEFAULT_LENGTH,
 ) -> tuple[list[Clip], list[Placement]]:
-    """Read, cut out and measure the clips of a fish."""
+    """Read, cut out and measure the clips of an animal (fish, invertebrate)."""
     clips: list[Clip] = []
     placements: list[Placement] = []
     for spec in specs:
@@ -1117,10 +1117,16 @@ def write_entry(
 ) -> Path:
     """Write the atlas pictures and the descriptor of a catalog entry.
 
-    placements: for a fish, how every clip maps onto the frame (common
-    scale); without them, frames are fitted into the frame size.
+    placements: for an animal (a fish, an invertebrate), how every clip maps
+    onto the frame (common scale); without them, frames are fitted into the
+    frame size.
     hd: also write a double resolution atlas (for very large sprites).
+
+    A coral is the one laid out apart: its atlas is split into a shade and a
+    mask so that the card can tint it. A fish and an invertebrate share the
+    same plain atlas.
     """
+    coral = kind == "coral"
     folder = out / entry_id
     folder.mkdir(parents=True, exist_ok=True)
 
@@ -1145,12 +1151,12 @@ def write_entry(
     atlas_1x = build_atlas(scaled(1), frame, columns)
 
     descriptor: dict[str, Any] = {
-        "kind": "fish" if kind == "fish" else "coral",
+        "kind": kind,
         "frame": list(frame),
         "columns": atlas_1x.columns,
         "clips": atlas_1x.clips,
     }
-    if kind == "fish":
+    if not coral:
         save_webp(atlas_1x.sheet, folder / f"{entry_id}.webp")
         descriptor["atlas"] = {"1x": f"{entry_id}.webp"}
         if atlas_2x is not None:
@@ -1187,7 +1193,7 @@ def write_entry(
     x = (index % atlas_1x.columns) * frame[0]
     y = (index // atlas_1x.columns) * frame[1]
     first = atlas_1x.sheet.crop((x, y, x + frame[0], y + frame[1]))
-    if kind != "fish":
+    if coral:
         first = coral_preview(first, descriptor.get("palette"))
     thumbnail(first).save(folder / "thumb.webp", format="WEBP", quality=85, method=6)
     descriptor["thumbnail"] = "thumb.webp"
@@ -1287,7 +1293,7 @@ def main(argv: list[str] | None = None) -> int:
         return _print_loops(largs.source, largs.min, largs.max)
 
     parser = argparse.ArgumentParser(description=(__doc__ or "").split("\n\n")[0])
-    parser.add_argument("kind", choices=["fish", "coral"])
+    parser.add_argument("kind", choices=["fish", "coral", "invertebrate"])
     parser.add_argument("id", help="catalog id (folder name), ex: chromis_viridis")
     parser.add_argument(
         "--clip",
@@ -1326,8 +1332,8 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     if args.auto:
-        if args.kind != "fish":
-            parser.error("--auto is for fish")
+        if args.kind == "coral":
+            parser.error("--auto is not for corals")
         args.recipe = write_auto_recipe(args.auto, args.id)
     recipe = read_recipe(args.recipe) if args.recipe else {}
     specs: list[ClipSpec] = list(recipe.get("clips", []))
@@ -1346,7 +1352,7 @@ def main(argv: list[str] | None = None) -> int:
         frame_spec = f"{frame_spec[0]}x{frame_spec[1]}"
 
     placements: list[Placement] | None = None
-    if args.kind == "fish":
+    if args.kind != "coral":
         key = parse_key(str(args.key or recipe.get("key", "auto")))
         length = int(args.length or recipe.get("length", DEFAULT_LENGTH))
         clips, placements = prepare_fish(specs, key, length)

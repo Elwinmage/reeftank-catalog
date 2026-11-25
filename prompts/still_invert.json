@@ -1,0 +1,101 @@
+{
+  "version": 2,
+  "keys": {
+    "magenta": "flat magenta #FF00FF",
+    "green": "flat green #00FF00"
+  },
+  "default_key": "magenta",
+  "alternate_key": {
+    "green": "red, pink or purple species: a magenta background would eat them"
+  },
+  "template": "Realistic photograph of [SPECIE], [FORM] One single adult specimen, alive and healthy: no substrate, no sand, no rock, no coral, no plant, no shell other than its own, no hand, no other animal. Natural shape and colours of the species, saturated, fine detail on the shell, the carapace or the spines, every appendage complete and clear of the body, nothing cropped. On a [KEY] background (the colour code only tells which colour the background is: never write it, nor any other text, on the image), perfectly flat uniform background without gradient or vignette, no floor line, no shadow, no reflection. Neutral white studio lighting, soft and even, no [KEY_NAME] tint or spill on the edges of the animal, sharp edges so that the background can be keyed out cleanly. Highest resolution, the specimen fills about 70% of the image, centred, with a clear margin of empty background on every side (no leg, antenna, spine or arm touches the edge of the picture), clean image: no text, no watermark, no mark in the corners.",
+  "default_aspect": "1:1",
+  "default_view": "side",
+  "aspects": {
+    "shrimp": "3:2",
+    "crab": "1:1",
+    "hermit": "1:1",
+    "snail": "1:1",
+    "urchin": "1:1",
+    "cucumber": "3:2",
+    "worm": "3:4",
+    "clam": "1:1",
+    "star": "1:1",
+    "brittle_star": "1:1"
+  },
+  "forms": {
+    "shrimp": "one adult shrimp standing on the ground on its walking legs, seen from the side at eye level, head to the right, caught mid-stride with its legs clearly separated and spread apart under the body, neither tucked nor bunched together, and not swimming or floating. Every leg, claw and antenna complete and clear of the body, the rostrum and the tail fan whole.",
+    "crab": "one adult crab standing high on its legs, seen from the side at eye level in three-quarter view, head to the right, caught mid-stride with its legs clearly separated and spread apart, its claws held forward, the carapace and all its legs visible.",
+    "hermit": "one adult hermit crab walking, seen from the side at eye level, head to the right, caught mid-stride with its walking legs out of the shell, clearly separated and spread apart, the shell whole with its pattern and the legs, claws and eyestalks clear of it.",
+    "snail": "one adult snail seen in three-quarter view from slightly above, moving to the right, the shell whole with its pattern and its spire, the foot out of the shell and the tentacles extended.",
+    "urchin": "one adult sea urchin seen from the side at eye level, the whole test with its spines evenly spread all around it, nothing cropped.",
+    "cucumber": "one adult sea cucumber seen from the side at eye level, laid out straight, head to the right, the whole body with its tube feet and its papillae.",
+    "worm": "one adult tube worm seen from the side at eye level, its feather crown wide open and whole, the tube hidden or trimmed away, nothing cropped.",
+    "clam": "one adult clam seen in three-quarter view from slightly above, the shell half open with its mantle fully spread and its pattern visible, the byssus threads and the rock removed.",
+    "star": "one adult starfish seen from straight above, flat and symmetrical, all its arms whole and spread apart, nothing cropped.",
+    "brittle_star": "one adult brittle star seen from straight above, its central disc flat and its thin arms spread apart and whole, nothing cropped."
+  },
+  "views": {
+    "shrimp": "side",
+    "crab": "side",
+    "hermit": "side",
+    "snail": "side",
+    "urchin": "side",
+    "cucumber": "side",
+    "worm": "side",
+    "clam": "side",
+    "star": "above",
+    "brittle_star": "above"
+  },
+  "movement_forms": {
+    "ground": "snail",
+    "glass": "snail",
+    "decor": "snail",
+    "sessile": "worm",
+    "swim": "shrimp"
+  },
+  "species_forms": {
+    "archaster_typicus": "star",
+    "astraea_tecta": "snail",
+    "atyopsis_moluccensis": "shrimp",
+    "caridina_cantonensis": "shrimp",
+    "caridina_multidentata": "shrimp",
+    "cerithium": "snail",
+    "clea_helena": "snail",
+    "clibanarius_tricolor": "hermit",
+    "holothuria": "cucumber",
+    "hymenocera_picta": "shrimp",
+    "lysmata_amboinensis": "shrimp",
+    "lysmata_debelius": "shrimp",
+    "lysmata_wurdemanni": "shrimp",
+    "melanoides_tuberculata": "snail",
+    "mithraculus_sculptus": "crab",
+    "nassarius": "snail",
+    "neocaridina_davidi": "shrimp",
+    "nerita": "snail",
+    "neritina_natalensis": "snail",
+    "ophiolepis_superba": "brittle_star",
+    "paguristes_cadenati": "hermit",
+    "planorbella_duryi": "snail",
+    "pomacea_bridgesii": "snail",
+    "prionocidaris_baculosa": "urchin",
+    "sabellastarte": "worm",
+    "saron_marmoratus": "shrimp",
+    "spirobranchus_giganteus": "worm",
+    "stenopus_hispidus": "shrimp",
+    "tectus_fenestratus": "snail",
+    "tridacna_crocea": "clam",
+    "tripneustes_gratilla": "urchin",
+    "turbo_fluctuosus": "snail"
+  },
+  "species_keys": {
+    "caridina_cantonensis": "green",
+    "hymenocera_picta": "green",
+    "lysmata_amboinensis": "green",
+    "lysmata_debelius": "green",
+    "lysmata_wurdemanni": "green",
+    "neocaridina_davidi": "green",
+    "paguristes_cadenati": "green",
+    "stenopus_hispidus": "green"
+  }
+}

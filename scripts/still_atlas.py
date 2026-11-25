@@ -43,6 +43,7 @@ from reeftank_catalog_still import (  # noqa: F401 (the tests and users read the
     detect_key,
     is_real_animation,
     key_out,
+    nearest_key,
 )
 from reeftank_catalog_still import render_prompt as render_template
 from validate import LICENSES, SOURCE_TYPES

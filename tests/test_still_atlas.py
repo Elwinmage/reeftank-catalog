@@ -53,6 +53,15 @@ def test_key_detection_and_removal() -> None:
     assert still_atlas.detect_key(np.asarray(photo(MAGENTA), dtype=float)) == "magenta"
     assert still_atlas.detect_key(np.asarray(photo(GREEN), dtype=float)) == "green"
     assert still_atlas.detect_key(np.full((50, 50, 3), 128.0)) is None
+    # An image model answers with a washed out key more often than not: too
+    # pale to be named safely, but never in doubt as to which one it is
+    dusty = np.asarray(photo((225, 115, 165)), dtype=float)
+    sage = np.asarray(photo((148, 204, 141)), dtype=float)
+    assert still_atlas.detect_key(dusty) is None
+    assert still_atlas.detect_key(sage) is None
+    assert still_atlas.nearest_key(dusty) == "magenta"
+    assert still_atlas.nearest_key(sage) == "green"
+    assert still_atlas.nearest_key(np.asarray(photo(GREEN), dtype=float)) == "green"
     out = still_atlas.key_out(photo())
     assert out.getpixel((2, 2))[3] == 0
     assert out.getpixel((320, 200))[3] == 255
