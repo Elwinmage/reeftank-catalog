@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 7,
   "model": "wan2.1-vace-14b",
   "fps": 16,
   "strength": 0.7,
@@ -41,5 +41,11 @@
       "hermit": "It slowly walks round on the spot carrying its shell, shows a front three-quarter view, and keeps turning until it is in profile facing left. It stays at the same place, size and height."
     }
   },
-  "negative": "vignette, gradient background, dark corners, desaturated background, dull background, oversaturated animal, neon colors, color shift, blurry, motion blur, distorted body, deformed legs, extra legs, extra claws, extra antennae, missing legs, extra animal, fish, swimming away, flicker, sudden jump, camera movement, zoom, water, bubbles, sand, rock, shadow, text, watermark"
+  "negative": "vignette, gradient background, dark corners, desaturated background, dull background, oversaturated animal, neon colors, color shift, blurry, motion blur, distorted body, claw used as a leg, mammal leg, paw, knee, quadruped, galloping, deformed legs, extra legs, extra claws, extra antennae, missing legs, extra animal, fish, swimming away, flicker, sudden jump, camera movement, zoom, water, bubbles, sand, rock, shadow, text, watermark",
+  "species_motions": {
+    "alpheus_bellulus": {
+      "swim": "Its four pairs of small walking legs step one after another under the body, each pair lifting clear of the ground, reaching forward and setting down again, in a wave running forward along the underside.",
+      "idle": "It grooms where it stands: the antennae sweep slowly and the maxillipeds pick near the mouth. The big claw stays shut and still, held clear of the ground and never used as a leg."
+    }
+  }
 }

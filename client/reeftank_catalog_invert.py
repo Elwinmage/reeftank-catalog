@@ -124,6 +124,7 @@ INVERT_PROMPT: dict[str, Any] = {
         "swim": "shrimp",
     },
     "species_forms": {
+        "alpheus_bellulus": "shrimp",
         "archaster_typicus": "star",
         "astraea_tecta": "snail",
         "atyopsis_moluccensis": "shrimp",

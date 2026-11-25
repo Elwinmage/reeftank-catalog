@@ -167,11 +167,12 @@ Una especie sin vídeos tiene un atlas más sencillo hecho a partir de una sola 
 | <img src="docs/thumbs/plants/staurogyne_repens.webp" width="140" alt=""> | <sub>Staurogyne<br><code>staurogyne&#95;<wbr>repens</code></sub> | <sub>*Staurogyne repens*</sub> | <sub>Agua dulce</sub> | <sub>5–10 cm</sub> | <sub>Primer plano</sub> |
 | <img src="docs/thumbs/plants/vallisneria_spiralis.webp" width="140" alt=""> | <sub>Vallisneria<br><code>vallisneria&#95;<wbr>spiralis</code></sub> | <sub>*Vallisneria spiralis*</sub> | <sub>Agua dulce, Salobre</sub> | <sub>30–60 cm</sub> | <sub>Fondo</sub> |
 
-## Invertebrados (32)
+## Invertebrados (33)
 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | <sub>Nombre</sub> | <sub>Nombre científico</sub> | <sub>Agua</sub> | <sub>Tamaño</sub> | <sub>Función</sub> |
 |---|---|---|---|---|---|
 | <img src="docs/thumbs/invertebrates/tridacna_crocea.webp" width="140" alt=""> | <sub>Almeja gigante perforadora<br><code>tridacna&#95;<wbr>crocea</code></sub> | <sub>*Tridacna crocea*</sub> | <sub>Marino</sub> | <sub>5–15 cm</sub> | <sub>Filtrador · sésil</sub> |
+| <img src="invertebrates/alpheus_bellulus/thumb.webp" width="140" alt=""> | <sub>Camarón pistola tigre<br><code>alpheus&#95;<wbr>bellulus</code></sub> | <sub>*Alpheus bellulus*</sub> | <sub>Marino</sub> | <sub>4–5 cm</sub> | <sub>Detritívoro · Carroñero · se desplaza por el fondo</sub> |
 | <img src="docs/thumbs/invertebrates/clibanarius_tricolor.webp" width="140" alt=""> | <sub>Cangrejo ermitaño de patas azules<br><code>clibanarius&#95;<wbr>tricolor</code></sub> | <sub>*Clibanarius tricolor*</sub> | <sub>Marino</sub> | <sub>2–3 cm</sub> | <sub>Carroñero · se desplaza por el fondo</sub> |
 | <img src="docs/thumbs/invertebrates/paguristes_cadenati.webp" width="140" alt=""> | <sub>Cangrejo ermitaño escarlata<br><code>paguristes&#95;<wbr>cadenati</code></sub> | <sub>*Paguristes cadenati*</sub> | <sub>Marino</sub> | <sub>3–4 cm</sub> | <sub>Carroñero · se desplaza por el fondo</sub> |
 | <img src="docs/thumbs/invertebrates/mithraculus_sculptus.webp" width="140" alt=""> | <sub>Cangrejo esmeralda<br><code>mithraculus&#95;<wbr>sculptus</code></sub> | <sub>*Mithraculus sculptus*</sub> | <sub>Marino</sub> | <sub>3–4 cm</sub> | <sub>Comedor de algas · vive en la decoración</sub> |

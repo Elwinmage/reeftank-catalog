@@ -167,7 +167,7 @@ Une espèce sans vidéos a un atlas plus simple, fait à partir d'une seule phot
 | <img src="docs/thumbs/plants/vallisneria_spiralis.webp" width="140" alt=""> | <sub>Vallisnérie<br><code>vallisneria&#95;<wbr>spiralis</code></sub> | <sub>*Vallisneria spiralis*</sub> | <sub>Eau douce, Saumâtre</sub> | <sub>30–60 cm</sub> | <sub>Arrière-plan</sub> |
 | <img src="docs/thumbs/plants/egeria_densa.webp" width="140" alt=""> | <sub>Élodée dense<br><code>egeria&#95;<wbr>densa</code></sub> | <sub>*Egeria densa*</sub> | <sub>Eau douce</sub> | <sub>30–100 cm</sub> | <sub>Arrière-plan</sub> |
 
-## Invertébrés (32)
+## Invertébrés (33)
 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | <sub>Nom</sub> | <sub>Nom scientifique</sub> | <sub>Eau</sub> | <sub>Taille</sub> | <sub>Rôle</sub> |
 |---|---|---|---|---|---|
@@ -186,6 +186,7 @@ Une espèce sans vidéos a un atlas plus simple, fait à partir d'une seule phot
 | <img src="docs/thumbs/invertebrates/caridina_cantonensis.webp" width="140" alt=""> | <sub>Crevette cristal rouge<br><code>caridina&#95;<wbr>cantonensis</code></sub> | <sub>*Caridina cantonensis*</sub> | <sub>Eau douce</sub> | <sub>2–3 cm</sub> | <sub>Détritivore · se déplace sur le fond</sub> |
 | <img src="docs/thumbs/invertebrates/lysmata_amboinensis.webp" width="140" alt=""> | <sub>Crevette nettoyeuse<br><code>lysmata&#95;<wbr>amboinensis</code></sub> | <sub>*Lysmata amboinensis*</sub> | <sub>Marine</sub> | <sub>5–6 cm</sub> | <sub>Nettoyeur · vit sur le décor</sub> |
 | <img src="docs/thumbs/invertebrates/lysmata_wurdemanni.webp" width="140" alt=""> | <sub>Crevette peppermint<br><code>lysmata&#95;<wbr>wurdemanni</code></sub> | <sub>*Lysmata wurdemanni*</sub> | <sub>Marine</sub> | <sub>3–5 cm</sub> | <sub>Nettoyeur · vit sur le décor</sub> |
+| <img src="invertebrates/alpheus_bellulus/thumb.webp" width="140" alt=""> | <sub>Crevette pistolet tigre<br><code>alpheus&#95;<wbr>bellulus</code></sub> | <sub>*Alpheus bellulus*</sub> | <sub>Marine</sub> | <sub>4–5 cm</sub> | <sub>Détritivore · Charognard · se déplace sur le fond</sub> |
 | <img src="docs/thumbs/invertebrates/lysmata_debelius.webp" width="140" alt=""> | <sub>Crevette sang de feu<br><code>lysmata&#95;<wbr>debelius</code></sub> | <sub>*Lysmata debelius*</sub> | <sub>Marine</sub> | <sub>5–6 cm</sub> | <sub>Nettoyeur · vit sur le décor</sub> |
 | <img src="docs/thumbs/invertebrates/saron_marmoratus.webp" width="140" alt=""> | <sub>Crevette Saron<br><code>saron&#95;<wbr>marmoratus</code></sub> | <sub>*Saron marmoratus*</sub> | <sub>Marine</sub> | <sub>5–7 cm</sub> | <sub>Charognard · vit sur le décor</sub> |
 | <img src="docs/thumbs/invertebrates/cerithium.webp" width="140" alt=""> | <sub>Cérithe<br><code>cerithium</code></sub> | <sub>*Cerithium sp.*</sub> | <sub>Marine</sub> | <sub>2–3 cm</sub> | <sub>Détritivore · se déplace sur le fond</sub> |

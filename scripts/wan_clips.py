@@ -194,22 +194,30 @@ def clip_prompt(
     species: str,
     background: str = "magenta",
     form: str | None = None,
+    entry_id: str | None = None,
 ) -> str:
     """The prompt of a clip for a species, on its background colour.
 
     A section whose wording carries `motions` (the invertebrates) puts the
     sentence of the animal's form into its clip prompts: a shrimp walks on its
     legs, a crab sideways, a hermit crab drags its shell.
+
+    A species the sentence of its form does not fit has its own in
+    `species_motions`. The pistol shrimp is the reason: told that its legs lift
+    clear of the ground and reach forward, the model walks it on the biggest
+    limb it can see, which is the snapping claw, and builds a four-legged
+    animal around it.
     """
     prompt = str(spec["clips"][clip]["prompt"]).replace("[SPECIE]", species)
     motions = spec.get("motions", {}).get(clip)
     if motions:
-        if form not in motions:
+        own = spec.get("species_motions", {}).get(entry_id or "", {}).get(clip)
+        if own is None and form not in motions:
             raise SystemExit(
                 f"{species}: no {clip} for a {form or 'species without a form'} "
                 f"(animated with clips: {', '.join(motions)})"
             )
-        prompt = prompt.replace("[MOTION]", str(motions[form]))
+        prompt = prompt.replace("[MOTION]", str(motions[form] if own is None else own))
     return prompt.replace("[BACKGROUND]", background)
 
 
@@ -710,7 +718,7 @@ def make_clip(
     seed = args.seed if args.seed is not None else random.randrange(1 << 48)
     width, height = (int(v) for v in spec["size"])
     background = reference_background(folder)[0]
-    prompt = clip_prompt(spec, clip, species, background, form)
+    prompt = clip_prompt(spec, clip, species, background, form, entry_id)
     values = {
         "FIRST_FRAME": first,
         "LAST_FRAME": last,
@@ -1338,6 +1346,7 @@ def main(argv: list[str] | None = None) -> int:
                 species_name(folder),
                 background,
                 entry_form(args.root, args.section, args.id),
+                args.id,
             )
         )
         return 0

@@ -167,7 +167,7 @@ Eine Art ohne Videos erhält einen einfacheren Atlas aus einem einzigen Foto (*L
 | <img src="docs/thumbs/plants/sagittaria_subulata.webp" width="140" alt=""> | <sub>Zwerg-Pfeilkraut<br><code>sagittaria&#95;<wbr>subulata</code></sub> | <sub>*Sagittaria subulata*</sub> | <sub>Süßwasser</sub> | <sub>10–30 cm</sub> | <sub>Vordergrund</sub> |
 | <img src="docs/thumbs/plants/cryptocoryne_parva.webp" width="140" alt=""> | <sub>Zwerg-Wasserkelch<br><code>cryptocoryne&#95;<wbr>parva</code></sub> | <sub>*Cryptocoryne parva*</sub> | <sub>Süßwasser</sub> | <sub>5–8 cm</sub> | <sub>Vordergrund</sub> |
 
-## Wirbellose (32)
+## Wirbellose (33)
 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | <sub>Name</sub> | <sub>Wissenschaftlicher Name</sub> | <sub>Wasser</sub> | <sub>Größe</sub> | <sub>Rolle</sub> |
 |---|---|---|---|---|---|
@@ -198,6 +198,7 @@ Eine Art ohne Videos erhält einen einfacheren Atlas aus einem einzigen Foto (*L
 | <img src="docs/thumbs/invertebrates/ophiolepis_superba.webp" width="140" alt=""> | <sub>Schlangenstern<br><code>ophiolepis&#95;<wbr>superba</code></sub> | <sub>*Ophiolepis superba*</sub> | <sub>Meerwasser</sub> | <sub>8–12 cm</sub> | <sub>Aasfresser · läuft am Boden</sub> |
 | <img src="docs/thumbs/invertebrates/holothuria.webp" width="140" alt=""> | <sub>Seegurke<br><code>holothuria</code></sub> | <sub>*Holothuria sp.*</sub> | <sub>Meerwasser</sub> | <sub>15–30 cm</sub> | <sub>Detritusfresser · läuft am Boden</sub> |
 | <img src="docs/thumbs/invertebrates/mithraculus_sculptus.webp" width="140" alt=""> | <sub>Smaragdkrabbe<br><code>mithraculus&#95;<wbr>sculptus</code></sub> | <sub>*Mithraculus sculptus*</sub> | <sub>Meerwasser</sub> | <sub>3–4 cm</sub> | <sub>Algenfresser · lebt auf dem Dekor</sub> |
+| <img src="invertebrates/alpheus_bellulus/thumb.webp" width="140" alt=""> | <sub>Tiger-Pistolenkrebs<br><code>alpheus&#95;<wbr>bellulus</code></sub> | <sub>*Alpheus bellulus*</sub> | <sub>Meerwasser</sub> | <sub>4–5 cm</sub> | <sub>Detritusfresser · Aasfresser · läuft am Boden</sub> |
 | <img src="docs/thumbs/invertebrates/tectus_fenestratus.webp" width="140" alt=""> | <sub>Trochus-Schnecke<br><code>tectus&#95;<wbr>fenestratus</code></sub> | <sub>*Tectus fenestratus*</sub> | <sub>Meerwasser</sub> | <sub>4–6 cm</sub> | <sub>Algenfresser · lebt auf dem Dekor</sub> |
 | <img src="docs/thumbs/invertebrates/turbo_fluctuosus.webp" width="140" alt=""> | <sub>Turbo-Schnecke<br><code>turbo&#95;<wbr>fluctuosus</code></sub> | <sub>*Turbo fluctuosus*</sub> | <sub>Meerwasser</sub> | <sub>4–8 cm</sub> | <sub>Algenfresser · klettert an der Scheibe</sub> |
 | <img src="docs/thumbs/invertebrates/spirobranchus_giganteus.webp" width="140" alt=""> | <sub>Weihnachtsbaumwurm<br><code>spirobranchus&#95;<wbr>giganteus</code></sub> | <sub>*Spirobranchus giganteus*</sub> | <sub>Meerwasser</sub> | <sub>3–5 cm</sub> | <sub>Filtrierer · festsitzend</sub> |

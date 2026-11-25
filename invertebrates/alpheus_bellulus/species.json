@@ -1,0 +1,62 @@
+{
+  "kind": "invertebrate",
+  "frame": [
+    200,
+    80
+  ],
+  "columns": 7,
+  "clips": {
+    "swim": {
+      "from": 0,
+      "to": 39,
+      "fps": 8,
+      "loop": true
+    },
+    "idle": {
+      "from": 40,
+      "to": 71,
+      "fps": 16,
+      "loop": true
+    },
+    "turn": {
+      "from": 72,
+      "to": 93,
+      "fps": 16,
+      "loop": false
+    }
+  },
+  "atlas": {
+    "1x": "alpheus_bellulus.webp"
+  },
+  "facing": "right",
+  "source": {
+    "type": "ai-generated",
+    "model": "wan2.1-vace-14b",
+    "date": "2026-11-25"
+  },
+  "length_frac": 0.96,
+  "names": {
+    "en": "Tiger pistol shrimp",
+    "fr": "Crevette pistolet tigre",
+    "de": "Tiger-Pistolenkrebs",
+    "es": "Camarón pistola tigre",
+    "it": "Gambero pistola tigre",
+    "nl": "Tijgerpistoolgarnaal",
+    "pl": "Krewetka pistoletowa tygrysia",
+    "pt": "Camarão-pistola-tigre"
+  },
+  "scientific": "Alpheus bellulus",
+  "water_types": [
+    "marine"
+  ],
+  "size_cm": [
+    4,
+    5
+  ],
+  "role": [
+    "detritivore",
+    "scavenger"
+  ],
+  "movement": "ground",
+  "thumbnail": "thumb.webp"
+}

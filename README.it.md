@@ -167,7 +167,7 @@ Una specie senza video ha un atlante più semplice ricavato da una sola foto (*L
 | <img src="docs/thumbs/plants/staurogyne_repens.webp" width="140" alt=""> | <sub>Staurogyne<br><code>staurogyne&#95;<wbr>repens</code></sub> | <sub>*Staurogyne repens*</sub> | <sub>Acqua dolce</sub> | <sub>5–10 cm</sub> | <sub>Primo piano</sub> |
 | <img src="docs/thumbs/plants/vallisneria_spiralis.webp" width="140" alt=""> | <sub>Vallisneria<br><code>vallisneria&#95;<wbr>spiralis</code></sub> | <sub>*Vallisneria spiralis*</sub> | <sub>Acqua dolce, Salmastro</sub> | <sub>30–60 cm</sub> | <sub>Sfondo</sub> |
 
-## Invertebrati (32)
+## Invertebrati (33)
 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | <sub>Nome</sub> | <sub>Nome scientifico</sub> | <sub>Acqua</sub> | <sub>Taglia</sub> | <sub>Ruolo</sub> |
 |---|---|---|---|---|---|
@@ -181,6 +181,7 @@ Una specie senza video ha un atlante più semplice ricavato da una sola foto (*L
 | <img src="docs/thumbs/invertebrates/lysmata_debelius.webp" width="140" alt=""> | <sub>Gambero fuoco<br><code>lysmata&#95;<wbr>debelius</code></sub> | <sub>*Lysmata debelius*</sub> | <sub>Marino</sub> | <sub>5–6 cm</sub> | <sub>Pulitore · vive sull'arredo</sub> |
 | <img src="docs/thumbs/invertebrates/saron_marmoratus.webp" width="140" alt=""> | <sub>Gambero marmorizzato<br><code>saron&#95;<wbr>marmoratus</code></sub> | <sub>*Saron marmoratus*</sub> | <sub>Marino</sub> | <sub>5–7 cm</sub> | <sub>Spazzino · vive sull'arredo</sub> |
 | <img src="docs/thumbs/invertebrates/lysmata_wurdemanni.webp" width="140" alt=""> | <sub>Gambero peppermint<br><code>lysmata&#95;<wbr>wurdemanni</code></sub> | <sub>*Lysmata wurdemanni*</sub> | <sub>Marino</sub> | <sub>3–5 cm</sub> | <sub>Pulitore · vive sull'arredo</sub> |
+| <img src="invertebrates/alpheus_bellulus/thumb.webp" width="140" alt=""> | <sub>Gambero pistola tigre<br><code>alpheus&#95;<wbr>bellulus</code></sub> | <sub>*Alpheus bellulus*</sub> | <sub>Marino</sub> | <sub>4–5 cm</sub> | <sub>Detritivoro · Spazzino · si muove sul fondo</sub> |
 | <img src="docs/thumbs/invertebrates/lysmata_amboinensis.webp" width="140" alt=""> | <sub>Gambero pulitore scarlatto<br><code>lysmata&#95;<wbr>amboinensis</code></sub> | <sub>*Lysmata amboinensis*</sub> | <sub>Marino</sub> | <sub>5–6 cm</sub> | <sub>Pulitore · vive sull'arredo</sub> |
 | <img src="docs/thumbs/invertebrates/mithraculus_sculptus.webp" width="140" alt=""> | <sub>Granchio smeraldo<br><code>mithraculus&#95;<wbr>sculptus</code></sub> | <sub>*Mithraculus sculptus*</sub> | <sub>Marino</sub> | <sub>3–4 cm</sub> | <sub>Mangiatore di alghe · vive sull'arredo</sub> |
 | <img src="docs/thumbs/invertebrates/clea_helena.webp" width="140" alt=""> | <sub>Lumaca assassina<br><code>clea&#95;<wbr>helena</code></sub> | <sub>*Clea helena*</sub> | <sub>Acqua dolce</sub> | <sub>2–3 cm</sub> | <sub>Predatore · si muove sul fondo</sub> |

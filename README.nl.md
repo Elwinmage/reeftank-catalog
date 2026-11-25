@@ -167,7 +167,7 @@ Een soort zonder video's krijgt een eenvoudiger atlas, gemaakt van één foto (*
 | <img src="docs/thumbs/plants/vallisneria_spiralis.webp" width="140" alt=""> | <sub>Vallisneria<br><code>vallisneria&#95;<wbr>spiralis</code></sub> | <sub>*Vallisneria spiralis*</sub> | <sub>Zoetwater, Brakwater</sub> | <sub>30–60 cm</sub> | <sub>Achtergrond</sub> |
 | <img src="docs/thumbs/plants/pistia_stratiotes.webp" width="140" alt=""> | <sub>Watersla<br><code>pistia&#95;<wbr>stratiotes</code></sub> | <sub>*Pistia stratiotes*</sub> | <sub>Zoetwater</sub> | <sub>5–15 cm</sub> | <sub>Drijvend</sub> |
 
-## Ongewervelden (32)
+## Ongewervelden (33)
 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | <sub>Naam</sub> | <sub>Wetenschappelijke naam</sub> | <sub>Water</sub> | <sub>Grootte</sub> | <sub>Rol</sub> |
 |---|---|---|---|---|---|
@@ -195,6 +195,7 @@ Een soort zonder video's krijgt een eenvoudiger atlas, gemaakt van één foto (*
 | <img src="docs/thumbs/invertebrates/paguristes_cadenati.webp" width="140" alt=""> | <sub>Scharlaken kluizenaar<br><code>paguristes&#95;<wbr>cadenati</code></sub> | <sub>*Paguristes cadenati*</sub> | <sub>Zeewater</sub> | <sub>3–4 cm</sub> | <sub>Aaseter · kruipt over de bodem</sub> |
 | <img src="docs/thumbs/invertebrates/ophiolepis_superba.webp" width="140" alt=""> | <sub>Slangster<br><code>ophiolepis&#95;<wbr>superba</code></sub> | <sub>*Ophiolepis superba*</sub> | <sub>Zeewater</sub> | <sub>8–12 cm</sub> | <sub>Aaseter · kruipt over de bodem</sub> |
 | <img src="docs/thumbs/invertebrates/mithraculus_sculptus.webp" width="140" alt=""> | <sub>Smaragdkrab<br><code>mithraculus&#95;<wbr>sculptus</code></sub> | <sub>*Mithraculus sculptus*</sub> | <sub>Zeewater</sub> | <sub>3–4 cm</sub> | <sub>Algeneter · leeft op het decor</sub> |
+| <img src="invertebrates/alpheus_bellulus/thumb.webp" width="140" alt=""> | <sub>Tijgerpistoolgarnaal<br><code>alpheus&#95;<wbr>bellulus</code></sub> | <sub>*Alpheus bellulus*</sub> | <sub>Zeewater</sub> | <sub>4–5 cm</sub> | <sub>Detrituseter · Aaseter · kruipt over de bodem</sub> |
 | <img src="docs/thumbs/invertebrates/tectus_fenestratus.webp" width="140" alt=""> | <sub>Trochus-slak<br><code>tectus&#95;<wbr>fenestratus</code></sub> | <sub>*Tectus fenestratus*</sub> | <sub>Zeewater</sub> | <sub>4–6 cm</sub> | <sub>Algeneter · leeft op het decor</sub> |
 | <img src="docs/thumbs/invertebrates/turbo_fluctuosus.webp" width="140" alt=""> | <sub>Turbo-slak<br><code>turbo&#95;<wbr>fluctuosus</code></sub> | <sub>*Turbo fluctuosus*</sub> | <sub>Zeewater</sub> | <sub>4–8 cm</sub> | <sub>Algeneter · klimt tegen het glas</sub> |
 | <img src="docs/thumbs/invertebrates/tripneustes_gratilla.webp" width="140" alt=""> | <sub>Verzamelaarszee-egel<br><code>tripneustes&#95;<wbr>gratilla</code></sub> | <sub>*Tripneustes gratilla*</sub> | <sub>Zeewater</sub> | <sub>10–15 cm</sub> | <sub>Algeneter · leeft op het decor</sub> |

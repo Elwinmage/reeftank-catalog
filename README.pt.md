@@ -167,7 +167,7 @@ Uma espécie sem vídeos tem um atlas mais simples feito a partir de uma só fot
 | <img src="docs/thumbs/plants/staurogyne_repens.webp" width="140" alt=""> | <sub>Staurogyne<br><code>staurogyne&#95;<wbr>repens</code></sub> | <sub>*Staurogyne repens*</sub> | <sub>Água doce</sub> | <sub>5–10 cm</sub> | <sub>Primeiro plano</sub> |
 | <img src="docs/thumbs/plants/vallisneria_spiralis.webp" width="140" alt=""> | <sub>Vallisneria<br><code>vallisneria&#95;<wbr>spiralis</code></sub> | <sub>*Vallisneria spiralis*</sub> | <sub>Água doce, Salobra</sub> | <sub>30–60 cm</sub> | <sub>Fundo</sub> |
 
-## Invertebrados (32)
+## Invertebrados (33)
 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | <sub>Nome</sub> | <sub>Nome científico</sub> | <sub>Água</sub> | <sub>Tamanho</sub> | <sub>Função</sub> |
 |---|---|---|---|---|---|
@@ -182,6 +182,7 @@ Uma espécie sem vídeos tem um atlas mais simples feito a partir de uma só fot
 | <img src="docs/thumbs/invertebrates/lysmata_debelius.webp" width="140" alt=""> | <sub>Camarão-fogo<br><code>lysmata&#95;<wbr>debelius</code></sub> | <sub>*Lysmata debelius*</sub> | <sub>Marinho</sub> | <sub>5–6 cm</sub> | <sub>Limpador · vive na decoração</sub> |
 | <img src="docs/thumbs/invertebrates/lysmata_amboinensis.webp" width="140" alt=""> | <sub>Camarão-limpador-escarlate<br><code>lysmata&#95;<wbr>amboinensis</code></sub> | <sub>*Lysmata amboinensis*</sub> | <sub>Marinho</sub> | <sub>5–6 cm</sub> | <sub>Limpador · vive na decoração</sub> |
 | <img src="docs/thumbs/invertebrates/saron_marmoratus.webp" width="140" alt=""> | <sub>Camarão-marmoreado<br><code>saron&#95;<wbr>marmoratus</code></sub> | <sub>*Saron marmoratus*</sub> | <sub>Marinho</sub> | <sub>5–7 cm</sub> | <sub>Necrófago · vive na decoração</sub> |
+| <img src="invertebrates/alpheus_bellulus/thumb.webp" width="140" alt=""> | <sub>Camarão-pistola-tigre<br><code>alpheus&#95;<wbr>bellulus</code></sub> | <sub>*Alpheus bellulus*</sub> | <sub>Marinho</sub> | <sub>4–5 cm</sub> | <sub>Detritívoro · Necrófago · desloca-se no fundo</sub> |
 | <img src="docs/thumbs/invertebrates/astraea_tecta.webp" width="140" alt=""> | <sub>Caracol Astraea<br><code>astraea&#95;<wbr>tecta</code></sub> | <sub>*Astraea tecta*</sub> | <sub>Marinho</sub> | <sub>2–4 cm</sub> | <sub>Comedor de algas · vive na decoração</sub> |
 | <img src="docs/thumbs/invertebrates/nassarius.webp" width="140" alt=""> | <sub>Caracol Nassarius<br><code>nassarius</code></sub> | <sub>*Nassarius sp.*</sub> | <sub>Marinho</sub> | <sub>2–4 cm</sub> | <sub>Necrófago · desloca-se no fundo</sub> |
 | <img src="docs/thumbs/invertebrates/tectus_fenestratus.webp" width="140" alt=""> | <sub>Caracol trochus<br><code>tectus&#95;<wbr>fenestratus</code></sub> | <sub>*Tectus fenestratus*</sub> | <sub>Marinho</sub> | <sub>4–6 cm</sub> | <sub>Comedor de algas · vive na decoração</sub> |

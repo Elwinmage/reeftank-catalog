@@ -859,6 +859,25 @@ def test_the_motion_of_the_clip_follows_the_form(inverts: Path) -> None:
         wan.clip_prompt(INVERT_SPEC, "swim", "Nerita sp.", "magenta")
 
 
+def test_a_species_may_word_its_own_motion(inverts: Path) -> None:
+    """`species_motions` beats the sentence of the form, clip by clip."""
+    spec = {**INVERT_SPEC, "species_motions": {"alpheus": {"swim": "it tiptoes"}}}
+    assert wan.clip_prompt(spec, "swim", "Alpheus", "magenta", "shrimp", "alpheus") == (
+        "walk Alpheus: it tiptoes"
+    )
+    # the clips it says nothing about, and the other species, keep their form
+    assert "it grooms" in wan.clip_prompt(
+        spec, "idle", "Alpheus", "magenta", "shrimp", "alpheus"
+    )
+    assert "it walks" in wan.clip_prompt(
+        spec, "swim", "Lysmata", "magenta", "shrimp", "lysmata"
+    )
+    # its own sentence is enough: the form it is filed under no longer matters
+    assert "it tiptoes" in wan.clip_prompt(
+        spec, "swim", "Alpheus", "magenta", "snail", "alpheus"
+    )
+
+
 def test_the_form_of_an_entry(inverts: Path) -> None:
     assert wan.entry_form(inverts, "invertebrates", "lysmata_debelius") == "shrimp"
     assert wan.entry_form(inverts, "invertebrates", "mithraculus_sculptus") == "crab"

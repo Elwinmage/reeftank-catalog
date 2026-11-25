@@ -167,7 +167,7 @@ A species without videos gets a simpler atlas made from a single photo (*LD*): t
 | <img src="docs/thumbs/plants/pistia_stratiotes.webp" width="140" alt=""> | <sub>Water lettuce<br><code>pistia&#95;<wbr>stratiotes</code></sub> | <sub>*Pistia stratiotes*</sub> | <sub>Freshwater</sub> | <sub>5–15 cm</sub> | <sub>Floating</sub> |
 | <img src="docs/thumbs/plants/cryptocoryne_wendtii.webp" width="140" alt=""> | <sub>Wendt's cryptocoryne<br><code>cryptocoryne&#95;<wbr>wendtii</code></sub> | <sub>*Cryptocoryne wendtii*</sub> | <sub>Freshwater</sub> | <sub>10–20 cm</sub> | <sub>Midground</sub> |
 
-## Invertebrates (32)
+## Invertebrates (33)
 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | <sub>Name</sub> | <sub>Scientific name</sub> | <sub>Water</sub> | <sub>Size</sub> | <sub>Role</sub> |
 |---|---|---|---|---|---|
@@ -200,6 +200,7 @@ A species without videos gets a simpler atlas made from a single photo (*LD*): t
 | <img src="docs/thumbs/invertebrates/paguristes_cadenati.webp" width="140" alt=""> | <sub>Scarlet reef hermit<br><code>paguristes&#95;<wbr>cadenati</code></sub> | <sub>*Paguristes cadenati*</sub> | <sub>Marine</sub> | <sub>3–4 cm</sub> | <sub>Scavenger · crawls on the bottom</sub> |
 | <img src="docs/thumbs/invertebrates/holothuria.webp" width="140" alt=""> | <sub>Sea cucumber<br><code>holothuria</code></sub> | <sub>*Holothuria sp.*</sub> | <sub>Marine</sub> | <sub>15–30 cm</sub> | <sub>Detritivore · crawls on the bottom</sub> |
 | <img src="docs/thumbs/invertebrates/ophiolepis_superba.webp" width="140" alt=""> | <sub>Serpent star<br><code>ophiolepis&#95;<wbr>superba</code></sub> | <sub>*Ophiolepis superba*</sub> | <sub>Marine</sub> | <sub>8–12 cm</sub> | <sub>Scavenger · crawls on the bottom</sub> |
+| <img src="invertebrates/alpheus_bellulus/thumb.webp" width="140" alt=""> | <sub>Tiger pistol shrimp<br><code>alpheus&#95;<wbr>bellulus</code></sub> | <sub>*Alpheus bellulus*</sub> | <sub>Marine</sub> | <sub>4–5 cm</sub> | <sub>Detritivore · Scavenger · crawls on the bottom</sub> |
 | <img src="docs/thumbs/invertebrates/tectus_fenestratus.webp" width="140" alt=""> | <sub>Trochus snail<br><code>tectus&#95;<wbr>fenestratus</code></sub> | <sub>*Tectus fenestratus*</sub> | <sub>Marine</sub> | <sub>4–6 cm</sub> | <sub>Algae eater · lives on the decor</sub> |
 | <img src="docs/thumbs/invertebrates/turbo_fluctuosus.webp" width="140" alt=""> | <sub>Turbo snail<br><code>turbo&#95;<wbr>fluctuosus</code></sub> | <sub>*Turbo fluctuosus*</sub> | <sub>Marine</sub> | <sub>4–8 cm</sub> | <sub>Algae eater · climbs the glass</sub> |
 | <img src="docs/thumbs/invertebrates/neritina_natalensis.webp" width="140" alt=""> | <sub>Zebra nerite<br><code>neritina&#95;<wbr>natalensis</code></sub> | <sub>*Neritina natalensis*</sub> | <sub>Freshwater</sub> | <sub>2–3 cm</sub> | <sub>Algae eater · climbs the glass</sub> |

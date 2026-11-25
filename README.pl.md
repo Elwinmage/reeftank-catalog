@@ -167,7 +167,7 @@ Gatunek bez nagrań ma prostszy atlas zrobiony z jednego zdjęcia (*LD*): całe 
 | <img src="docs/thumbs/plants/thalassia_testudinum.webp" width="140" alt=""> | <sub>Trawa żółwia<br><code>thalassia&#95;<wbr>testudinum</code></sub> | <sub>*Thalassia testudinum*</sub> | <sub>Morska</sub> | <sub>10–30 cm</sub> | <sub>Pierwszy plan</sub> |
 | <img src="docs/thumbs/plants/echinodorus_bleheri.webp" width="140" alt=""> | <sub>Żabienica amazońska<br><code>echinodorus&#95;<wbr>bleheri</code></sub> | <sub>*Echinodorus bleheri*</sub> | <sub>Słodkowodna</sub> | <sub>30–50 cm</sub> | <sub>Plan środkowy</sub> |
 
-## Bezkręgowce (32)
+## Bezkręgowce (33)
 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | <sub>Nazwa</sub> | <sub>Nazwa naukowa</sub> | <sub>Woda</sub> | <sub>Rozmiar</sub> | <sub>Rola</sub> |
 |---|---|---|---|---|---|
@@ -184,6 +184,7 @@ Gatunek bez nagrań ma prostszy atlas zrobiony z jednego zdjęcia (*LD*): całe 
 | <img src="docs/thumbs/invertebrates/saron_marmoratus.webp" width="140" alt=""> | <sub>Krewetka marmurkowa<br><code>saron&#95;<wbr>marmoratus</code></sub> | <sub>*Saron marmoratus*</sub> | <sub>Morska</sub> | <sub>5–7 cm</sub> | <sub>Padlinożerca · żyje na dekoracjach</sub> |
 | <img src="docs/thumbs/invertebrates/lysmata_debelius.webp" width="140" alt=""> | <sub>Krewetka ognista<br><code>lysmata&#95;<wbr>debelius</code></sub> | <sub>*Lysmata debelius*</sub> | <sub>Morska</sub> | <sub>5–6 cm</sub> | <sub>Sprzątacz · żyje na dekoracjach</sub> |
 | <img src="docs/thumbs/invertebrates/lysmata_wurdemanni.webp" width="140" alt=""> | <sub>Krewetka peppermint<br><code>lysmata&#95;<wbr>wurdemanni</code></sub> | <sub>*Lysmata wurdemanni*</sub> | <sub>Morska</sub> | <sub>3–5 cm</sub> | <sub>Sprzątacz · żyje na dekoracjach</sub> |
+| <img src="invertebrates/alpheus_bellulus/thumb.webp" width="140" alt=""> | <sub>Krewetka pistoletowa tygrysia<br><code>alpheus&#95;<wbr>bellulus</code></sub> | <sub>*Alpheus bellulus*</sub> | <sub>Morska</sub> | <sub>4–5 cm</sub> | <sub>Detrytusożerca · Padlinożerca · porusza się po dnie</sub> |
 | <img src="docs/thumbs/invertebrates/neocaridina_davidi.webp" width="140" alt=""> | <sub>Krewetka wiśniowa<br><code>neocaridina&#95;<wbr>davidi</code></sub> | <sub>*Neocaridina davidi*</sub> | <sub>Słodkowodna</sub> | <sub>2–3.5 cm</sub> | <sub>Detrytusożerca · porusza się po dnie</sub> |
 | <img src="docs/thumbs/invertebrates/nerita.webp" width="140" alt=""> | <sub>Nerytka morska<br><code>nerita</code></sub> | <sub>*Nerita sp.*</sub> | <sub>Morska</sub> | <sub>2–3 cm</sub> | <sub>Glonojad · wspina się po szybie</sub> |
 | <img src="docs/thumbs/invertebrates/neritina_natalensis.webp" width="140" alt=""> | <sub>Nerytka zebra<br><code>neritina&#95;<wbr>natalensis</code></sub> | <sub>*Neritina natalensis*</sub> | <sub>Słodkowodna</sub> | <sub>2–3 cm</sub> | <sub>Glonojad · wspina się po szybie</sub> |
