@@ -460,6 +460,7 @@ Next to the clips, a `meta.json` merged into the descriptor:
 | `behavior.turn_rate` | how fast it turns, radians per second |
 | `behavior.territory_cm` | optional: the species stays within this distance of its home (a burrow, a host anemone), placed per inventory line in the editor, else picked at random |
 | `behavior.burrow` | optional, `true`: lives in a burrow in the sand at its home (watchman gobies, sleeper gobies): in it at night, mostly only its head out during the day, sometimes out around it, sometimes back in; out for the food |
+| `behavior.digs` | optional, `true`: digs that burrow (a jawfish, a pistol shrimp). Now and then it works at the mouth of the hole, half out, and pushes out the sand it shifts, in puffs. Needs `burrow` |
 | `behavior.shoal` | `cohesion` (1), `alignment` (0.8), `separation` (1.2) for a school |
 | `night` | `hide` (behind the decor), `hover`, `rest_bottom` |
 | `feeding_response` | 0 ignores the food … 1 rushes to it |

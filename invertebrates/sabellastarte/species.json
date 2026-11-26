@@ -44,5 +44,7 @@
   "role": [
     "filter_feeder"
   ],
-  "movement": "sessile"
+  "movement": "sessile",
+  "flex": 0.55,
+  "period_s": 2.5
 }

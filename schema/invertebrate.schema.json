@@ -58,6 +58,70 @@
         "swim"
       ]
     },
+    "behavior": {
+      "description": "How it goes about on its surface. Everything here is optional: left out, the card reads what suits the `movement` of the species.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "profile": {
+          "description": "cruiser: patrols; benthic: over the decor, with stops; hover: stays in place; sand: on the sand line, with stops. Defaults from `movement`: sand for the ground and the glass, benthic for the decor, cruiser for a swimmer.",
+          "enum": [
+            "cruiser",
+            "benthic",
+            "hover",
+            "sand"
+          ]
+        },
+        "band": {
+          "description": "Height in the tank it keeps to: [from, to] within 0..1 (0 surface, 1 bottom). Only read for a swimmer.",
+          "$ref": "common.schema.json#/$defs/unit_range"
+        },
+        "depth": {
+          "description": "Depth in the tank it keeps to: [from, to] within 0..1 (0 front glass, 1 back). Only read for a swimmer.",
+          "$ref": "common.schema.json#/$defs/unit_range"
+        },
+        "speed_cm_s": {
+          "description": "Pace in cm/s: [min, max]. Left out, the card takes what suits the surface (a snail on the glass is slower than a shrimp on the rock).",
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0.1
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "turn_rate": {
+          "description": "How fast it turns, radians per second (higher is faster).",
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "territory_cm": {
+          "description": "Radius it keeps to around its home, in cm (the home is placed per inventory line in the editor, else picked at random).",
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "burrow": {
+          "description": "true: lives in a burrow in the sand at its home: in it at night, mostly only its front out during the day, sometimes out around it, sometimes back in.",
+          "type": "boolean"
+        },
+        "digs": {
+          "description": "true: digs its burrow (a pistol shrimp). Now and then it works at the mouth of the hole, half out, and pushes out the sand it shifts, in puffs. Needs `burrow`.",
+          "type": "boolean"
+        }
+      }
+    },
+    "flex": {
+      "description": "How far the current bends it: 0 stiff (a shell, a clam), 1 very supple (the feather crown of a tube worm). Only read for a sessile species drawn from a still picture: the card makes the sway itself. Left out for one that does not bend, and for a species that walks (its clips hold its motion).",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "period_s": {
+      "description": "Time of one sway, seconds, with the current at rest: a wide crown waves slowly, a fine one quivers. Left out when it does not bend.",
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "maximum": 60
+    },
     "atlas": {
       "description": "Atlas files by name (built).",
       "type": "object",

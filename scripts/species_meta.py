@@ -82,6 +82,8 @@ TEMPLATES: dict[str, dict[str, Any]] = {
         "role": None,
         "movement": None,
         "palette": None,
+        "flex": None,
+        "period_s": None,
     },
 }
 

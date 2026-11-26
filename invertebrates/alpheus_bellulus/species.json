@@ -58,5 +58,11 @@
     "scavenger"
   ],
   "movement": "ground",
+  "behavior": {
+    "profile": "sand",
+    "territory_cm": 12,
+    "burrow": true,
+    "digs": true
+  },
   "thumbnail": "thumb.webp"
 }

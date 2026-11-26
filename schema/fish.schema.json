@@ -54,11 +54,11 @@
           ]
         },
         "band": {
-          "description": "Share of the tank length the fish uses: [from, to] within 0..1.",
+          "description": "Height in the tank the fish keeps to: [from, to] within 0..1 (0 surface, 1 bottom).",
           "$ref": "common.schema.json#/$defs/unit_range"
         },
         "depth": {
-          "description": "Share of the tank height the fish uses: [from, to] within 0..1 (0 top, 1 bottom).",
+          "description": "Depth in the tank the fish keeps to: [from, to] within 0..1 (0 front glass, 1 back).",
           "$ref": "common.schema.json#/$defs/unit_range"
         },
         "speed_cm_s": {
@@ -82,7 +82,11 @@
           "exclusiveMinimum": 0
         },
         "burrow": {
-          "description": "Digs into the sand.",
+          "description": "Lives in a burrow in the sand at its home.",
+          "type": "boolean"
+        },
+        "digs": {
+          "description": "true: digs its burrow (a jawfish). Now and then it works at the mouth of the hole and pushes out the sand it shifts, in puffs. Needs `burrow`.",
           "type": "boolean"
         },
         "shoal": {
